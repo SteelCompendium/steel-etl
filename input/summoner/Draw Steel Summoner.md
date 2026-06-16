@@ -348,14 +348,14 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 
 **Starting Characteristics:** You start with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) of 2, and you can choose one of the following arrays for your other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
-- 2, 2, −1, −1
-- 2, 1, 1, −1
+- 2, 2, -1, -1
+- 2, 1, 1, -1
 - 2, 1, 0, 0
 - 1, 1, 1, 0
 
-**Weak [Potency](scc:mcdm.heroes.v1/rule.character/potency):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 2
+**Weak [Potency](scc:mcdm.heroes.v1/rule.character/potency):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) - 2
 
-**Average [Potency](scc:mcdm.heroes.v1/rule.character/potency):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 1
+**Average [Potency](scc:mcdm.heroes.v1/rule.character/potency):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) - 1
 
 **Strong [Potency](scc:mcdm.heroes.v1/rule.character/potency):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
@@ -799,7 +799,7 @@ This vaguely humanoid form is warped and distorted by a demon nestled inside the
 |:--------:|:--------------:|:----------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **0**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Extended Barbed Strike**
 >
@@ -818,7 +818,7 @@ The rasquine are skulking demons that shimmer in the light. They teleport into p
 |:--------:|:--------------:|:-------------------------:|:-:|:-----------------------------:|
 | **1S**<br>Size | **4**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **—**<br>Immunity | **Teleport**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **−1**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **+2**<br>Presence |
+| **-1**<br>Might | **0**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **+2**<br>Presence |
 
 > ⭐️ **Skulker**
 >
@@ -837,7 +837,7 @@ Razors appear to be a diminutive variant of the ruinant demon. Their bodies are 
 |:-----:|:--------------:|:------------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **0**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **0**<br>Might | **+2**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Teeth!**
 >
@@ -861,7 +861,7 @@ These minor demons resemble larger pitlings. They can spit a nerve-numbing phleg
 |:----------------:|:--------------:|:----------------:|:-:|:-------------------------:|
 | **1S**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **2**<br>Stability | **5**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Poison**<br>Free Strike Damage Type |
-| **0**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **0**<br>Presence |
+| **0**<br>Might | **+2**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **0**<br>Presence |
 
 > ⭐️ **Splash Strike**
 >
@@ -880,7 +880,7 @@ Ensnarers knot and twist their bodies together to form heaving, heavy musilexes.
 |:--------------:|:--------------:|:------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **6**<br>Speed | **6 \| 6**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **0**<br>Presence |
+| **+2**<br>Might | **+1**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **0**<br>Presence |
 
 > ⭐️ **Mawful Strike**
 >
@@ -899,7 +899,7 @@ The bengrul is an undulating heap of glass and flesh. They shatter pieces of the
 |:---------------:|:--------------:|:------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Psychic**<br>Free Strike Damage Type |
-| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **0**<br>Presence |
+| **+2**<br>Might | **+1**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **0**<br>Presence |
 
 > 🏹 **Mind Twist 2d10 + R (Signature Ability)**
 >
@@ -955,7 +955,7 @@ The gales are twisting ribbons of cloud and debris endlessly dancing in place. T
 |:----------:|:---------------:|:------------------------:|:-:|:-----------------------------:|
 | **1S**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Sonic R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
-| **−2**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+| **-2**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Cutting the Air**
 >
@@ -974,7 +974,7 @@ A fire plume burns so bright that their true shape is hard to discern from the f
 |:----------:|:----------------:|:--------------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **Fire R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
-| **−2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+| **-2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
 
 > ⭐️ **Spitfire Strike**
 >
@@ -993,7 +993,7 @@ These massive clods of animated stone roll upon smaller piles of rocks that coul
 |:---------------:|:-----------------:|:-------------------------:|:-:|:-----------------------------:|
 | **2**<br>Size | **4**<br>Speed | **3**<br>Stamina | **R**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+| **+2**<br>Might | **-2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Obstruct**
 >
@@ -1021,7 +1021,7 @@ The crux is a curtain of billowing hot ash with an avian head. They cover their 
 |:-----------:|:---------------------:|:---------------:|:-:|:-------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **0**<br>Stability | **5**<br>Free Strike |
 | **Fire R, Sonic R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **−2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+| **-2**<br>Might | **-2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Soot Strike**
 >
@@ -1040,7 +1040,7 @@ This elemental is a long, serpentine creature of heated rock. Flows of magma dro
 |:-------------:|:-----------------------:|:--------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **2**<br>Stability | **4**<br>Free Strike |
 | **Fire R**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
-| **+2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+| **+2**<br>Might | **-2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
 
 > 🏹 **Molten Strike 2d10 + R (Signature Ability)**
 >
@@ -1069,7 +1069,7 @@ The desolations have vaguely humanoid sand forms with no legs. Their glass hose 
 |:------------------:|:----------------------:|:------------:|:-:|:-------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **Sonic R**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+1**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **−2**<br>Presence |
+| **+1**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **-2**<br>Presence |
 
 > ⭐️ **Burying Strike**
 >
@@ -1097,7 +1097,7 @@ These nixies are especially tiny. Their hair grows longer than their bodies and 
 |:--------------:|:---:|:---------------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **−2**<br>Might | **−1**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+| **-2**<br>Might | **-1**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Water Weird**
 >
@@ -1120,7 +1120,7 @@ The bellringers are glowing pixies that jingle as they fly. Historically, these 
 |:----------------:|:---:|:------------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **−3**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+| **-3**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
 
 > ⭐️ **Ringing Strike**
 >
@@ -1128,7 +1128,7 @@ The bellringers are glowing pixies that jingle as they fly. Historically, these 
 
 > ⭐️ **Fairy Chime**
 >
-> Each ally within 1 square of a bellringer has a +1 to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw). Each enemy within 1 square of a bellringer has a −1 to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw).
+> Each ally within 1 square of a bellringer has a +1 to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw). Each enemy within 1 square of a bellringer has a -1 to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw).
 
 > ⭐️ **Minuscule**
 >
@@ -1143,7 +1143,7 @@ Dandeknights are sprite warriors whose dragonfly wingbeats emit a tonal drone. T
 |:-----------------:|:---:|:------------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **0**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Magic Strike**
 >
@@ -1171,7 +1171,7 @@ This pixie flies on a delicate array of vibrant flower petals for wings. The col
 |:-------------:|:---:|:----------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **0**<br>Stability | **5**<br>Free Strike |
 | **Acid R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Acid**<br>Free Strike Damage Type |
-| **−3**<br>Might | **0**<br>Agility | **+1**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+| **-3**<br>Might | **0**<br>Agility | **+1**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
 
 > 🏹 **Burning/Healing Rain 2d10 + R (Signature Ability)**
 >
@@ -1200,7 +1200,7 @@ Loftlillies lazily drift through the air in flower cups. They sip on toxic necta
 |:---------------:|:---:|:-----------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **0**<br>Stability | **4**<br>Free Strike |
 | **Poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Poison**<br>Free Strike Damage Type |
-| **−2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+| **-2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
 
 > ⭐️ **Floating Toxins**
 >
@@ -1219,7 +1219,7 @@ The orchiguard is a sprite surrounded by a wheel of shields. They are usually cr
 |:-----------------:|:---:|:---------------:|:-:|:-------------------------:|
 | **1S**<br>Size | **6**<br>Speed | **8 \| 8**<br>Stamina | **2**<br>Stability | **4**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **0**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Fairy Guard**
 >
@@ -1243,7 +1243,7 @@ Husks have stiff corpses that snap and crackle with each sudden movement. Corros
 |:----:|:------:|:-------------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **3**<br>Stamina | **1**<br>Stability | **1**<br>Free Strike |
 | **Damage 2, Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
-| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **0**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Rotting Strike**
 >
@@ -1258,7 +1258,7 @@ The shrieker expresses their unending pain in a way that can be heard and felt f
 |:--------:|:------:|:---------------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **4**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
-| **−2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+| **-2**<br>Might | **-2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
 
 > ⭐️ **Howling Strike**
 >
@@ -1277,7 +1277,7 @@ These autonomous bone networks fall just short of replicating the structure they
 |:--------:|:------:|:-------------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **0**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Bonetrops**
 >
@@ -1324,7 +1324,7 @@ Shades are a form of umbral stalker that float free from any floor or surface. T
 |:-------------:|:------:|:---------------:|:-:|:-------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
-| **−2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+| **-2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
 
 > ⭐️ **Shadow Strike**
 >
@@ -1343,7 +1343,7 @@ These massive, animated ogre corpses still maintain their incredible grip streng
 |:---------------:|:------:|:---------------:|:-:|:-------------------------:|
 | **2**<br>Size | **5**<br>Speed | **8 \| 8**<br>Stamina | **R**<br>Stability | **1**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+| **+2**<br>Might | **-2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Zombie Clutch**
 >
@@ -1603,7 +1603,7 @@ The vibrant waters of Arcadia pour through a hole in reality and pool into a ver
 >
 > ⭐️ **Folly Field**
 >
-> Each non-fey enemy that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the pond has a −1 penalty to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) and resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency) until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+> Each non-fey enemy that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the pond has a -1 penalty to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) and resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency) until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: monster-group | @domain: fixture | @category: undead -->
 ##### Undead Portfolio Fixture
@@ -1664,7 +1664,7 @@ A spewler's mouth makes up most of its size. They unleash torrents of acid and b
 |:---------------:|:--------------:|:-----------------:|:-:|:---------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Acid**<br>Free Strike Damage Type |
-| **−2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **+3**<br>Intuition | **+3**<br>Presence |
+| **-2**<br>Might | **0**<br>Agility | **-1**<br>Reason | **+3**<br>Intuition | **+3**<br>Presence |
 
 > ⭐️ **Gushing Strike**
 >
@@ -1710,7 +1710,7 @@ The violents are lanky, oily bipeds with bright red flesh that contort and snap 
 |:-------:|:--------------:|:---------------:|:-:|:---------------------------:|
 | **1M**<br>Size | **7**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | - | **Holy 1**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
-| **+2**<br>Might | **+3**<br>Agility | **0**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **+3**<br>Agility | **0**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Transforming Strike**
 >
@@ -1738,7 +1738,7 @@ The silks are akin to baby spiders ballooning through the air on strands of webb
 |:------------:|:-----------------------------:|:-----------------:|:-:|:---------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
 | **Poison R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **−1**<br>Might | **+2**<br>Agility | **+3**<br>Reason | **0**<br>Intuition | **−1**<br>Presence |
+| **-1**<br>Might | **+2**<br>Agility | **+3**<br>Reason | **0**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Entangling Strike**
 >
@@ -1757,7 +1757,7 @@ The manes of these equine sludge dwellers extend and hook into things like stron
 |:----------------------:|:-----------------------------:|:------------:|:-:|:---------------------------:|
 | **2**<br>Size | **4**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **R**<br>Stability | **4**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+3**<br>Might | **−2**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **−2**<br>Presence |
+| **+3**<br>Might | **-2**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **-2**<br>Presence |
 
 > ⭐️ **Encroaching Strike**
 >
@@ -1776,7 +1776,7 @@ This elemental is a pure-white vulpine with six legs that freely sprints through
 |:-------------:|:---------------------------:|:----------------:|:-:|:---------------------------:|
 | **1S**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **Sonic R, Cold R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Cold**<br>Free Strike Damage Type |
-| **−1**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+3**<br>Presence |
+| **-1**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+3**<br>Presence |
 
 > 🏹 **Freezing Howl 2d10 + R (Signature Ability)**
 >
@@ -1810,7 +1810,7 @@ Hemloches are spotted nixies whose long, wavy hair endlessly bobs and flows into
 |:--------------:|:---:|:------------:|:-:|:---------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
 | **—**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **Lightning**<br>Free Strike Damage Type |
-| **−2**<br>Might | **0**<br>Agility | **+1**<br>Reason | **+3**<br>Intuition | **+2**<br>Presence |
+| **-2**<br>Might | **0**<br>Agility | **+1**<br>Reason | **+3**<br>Intuition | **+2**<br>Presence |
 
 > ⭐️ **Water Weird**
 >
@@ -1833,7 +1833,7 @@ Foxglows are masked sprites that leave behind an evanescent trail of tiny glowin
 |:--------------:|:---:|:---------------:|:-:|:---------------------------:|
 | **1T**<br>Size | **8**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **0**<br>Stability | **4**<br>Free Strike |
 | **Fire R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
-| **−1**<br>Might | **+3**<br>Agility | **0**<br>Reason | **+1**<br>Intuition | **+2**<br>Presence |
+| **-1**<br>Might | **+3**<br>Agility | **0**<br>Reason | **+1**<br>Intuition | **+2**<br>Presence |
 
 > ⭐️ **Flash Strike**
 >
@@ -1890,7 +1890,7 @@ The preserved dead, bound for eternal rest, know only violence when robbed of th
 |:--------------:|:-------------:|:------------:|:-:|:---------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **2**<br>Stability | **3**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **Fire 1**<br>Weakness | **Poison**<br>Free Strike Damage Type |
-| **+2**<br>Might | **−1**<br>Agility | **+1**<br>Reason | **+3**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **-1**<br>Agility | **+1**<br>Reason | **+3**<br>Intuition | **-1**<br>Presence |
 
 > 🏹 **Fetid Bindings 2d10 + R (Signature Ability)**
 >
@@ -1919,7 +1919,7 @@ Mournlings are hulking amalgams of mismatched cadavers with tear-stained trenche
 |:-------------------:|:------:|:-----------------:|:-:|:---------------------------:|
 | **2**<br>Size | **4**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **R**<br>Stability | **3**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
-| **+3**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+1**<br>Intuition | **−2**<br>Presence |
+| **+3**<br>Might | **+2**<br>Agility | **-1**<br>Reason | **+1**<br>Intuition | **-2**<br>Presence |
 
 > ⭐️ **Always Crying**
 >
@@ -1942,7 +1942,7 @@ Phase ghouls are bilocated undead caught between two different manifolds, rapidl
 |:-----------:|:------:|:--------------:|:-:|:---------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **Teleport**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **+3**<br>Agility | **−2**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+| **+2**<br>Might | **+3**<br>Agility | **-2**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Leaping Strike**
 >
@@ -2191,7 +2191,7 @@ This cherubin creature is bloated and warped by demonic energy. The lights from 
 |:----------------:|:--------------:|:--------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **5**<br>Speed | **17 \| 17**<br>Stamina | **0**<br>Stability | **7**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | - | **Holy 1**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
-| **0**<br>Might | **0**<br>Agility | **−1**<br>Reason | **+4**<br>Intuition | **+3**<br>Presence |
+| **0**<br>Might | **0**<br>Agility | **-1**<br>Reason | **+4**<br>Intuition | **+3**<br>Presence |
 
 > 🏹 **Blighted Strike 2d10 + R (Signature Ability)**
 >
@@ -2224,7 +2224,7 @@ The gorrre demons evoke features of rhino and orangutan while clad in heavy armo
 |:------:|:--------------:|:------------:|:-:|:-------------------------:|
 | **2**<br>Size | **5**<br>Speed | **17 \| 17**<br>Stamina | **2**<br>Stability | **8**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+4**<br>Might | **+3**<br>Agility | **0**<br>Reason | **−1**<br>Intuition | **0**<br>Presence |
+| **+4**<br>Might | **+3**<br>Agility | **0**<br>Reason | **-1**<br>Intuition | **0**<br>Presence |
 
 > ⭐️ **Gorrring Strike**
 >
@@ -2247,7 +2247,7 @@ It's difficult to identify the base nature of a vicisittante apart from an ever-
 |:------------:|:--------------:|:--------------:|:-:|:-------------------------:|
 | **2**<br>Size | **10**<br>Speed | **17 \| 17**<br>Stamina | **0**<br>Stability | **7**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Psychic**<br>Free Strike Damage Type |
-| **+3**<br>Might | **+4**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **−1**<br>Presence |
+| **+3**<br>Might | **+4**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **-1**<br>Presence |
 
 > 🏹 **Cerebral Flay 2d10 + R (Signature Ability)**
 >
@@ -2281,7 +2281,7 @@ Iron reavers are long, gnashing lines of centipede-like bladed legs. Their bodie
 |:-----------:|:-----------------------------:|:--------------:|:-:|:---------------------------:|
 | **1L**<br>Size | **6**<br>Speed | **10 \| 10 \| 10**<br>Stamina | **R**<br>Stability | **6**<br>Free Strike |
 | **Poison R**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+3**<br>Might | **+4**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **−1**<br>Presence |
+| **+3**<br>Might | **+4**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Decentralized Segments**
 >
@@ -2357,7 +2357,7 @@ Corallias are saltwater nixies with coarse, coral-like skin and curly hair with 
 |:--------------:|:---:|:--------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **17 \| 17**<br>Stamina | **0**<br>Stability | **7**<br>Free Strike |
 | **Lightning R**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **Lightning**<br>Free Strike Damage Type |
-| **−2**<br>Might | **+3**<br>Agility | **+3**<br>Reason | **+4**<br>Intuition | **+1**<br>Presence |
+| **-2**<br>Might | **+3**<br>Agility | **+3**<br>Reason | **+4**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Water Weird**
 >
@@ -2380,7 +2380,7 @@ The belladonix are found among the elite guard of fey monarchs and carry themsel
 |:----------------:|:---:|:----------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **16 \| 16**<br>Stamina | **0**<br>Stability | **8**<br>Free Strike |
 | **Poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Poison**<br>Free Strike Damage Type |
-| **−2**<br>Might | **+2**<br>Agility | **+4**<br>Reason | **0**<br>Intuition | **+4**<br>Presence |
+| **-2**<br>Might | **+2**<br>Agility | **+4**<br>Reason | **0**<br>Intuition | **+4**<br>Presence |
 
 > 🏹 **A Thorn, Woe to the Pricked 2d10 + R (Signature Ability)**
 >
@@ -2485,7 +2485,7 @@ Zombie titan is a catchall for undead giants, patchwork ogres and mournlings, or
 |:------------:|:------:|:---------------:|:-:|:------------------------:|
 | **4**<br>Size | **4**<br>Speed | **40**<br>Stamina | **R**<br>Stability | **7**<br>Free Strike |
 | **Corruption R, poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+4**<br>Might | **−3**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **+3**<br>Presence |
+| **+4**<br>Might | **-3**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **+3**<br>Presence |
 
 > ⭐️ **Big Stomp**
 >
@@ -3565,7 +3565,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 |:-:|:---------------:|:---------------------------:|:-:|:-:|
 | **1M**<br>Size | **5**<br>Speed | **21**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **Fire 2**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **−1**<br>Might | **0**<br>Agility | **+2**<br>Reason | **+2**<br>Intuition | **0**<br>Presence |
+| **-1**<br>Might | **0**<br>Agility | **+2**<br>Reason | **+2**<br>Intuition | **0**<br>Presence |
 
 > ⭐️ **Demon Summoner**
 >
@@ -3598,7 +3598,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 |:-:|:--------------:|:------------------------:|:-:|:-:|
 | **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **0**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **0**<br>Might | **+2**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Teeth!**
 >
@@ -3643,7 +3643,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 |:-:|:--------------:|:---------------:|:-:|:-:|
 | **1M**<br>Size | **7**<br>Speed | **7 \| 7 \| 7**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | - | **Holy 1**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
-| **+2**<br>Might | **+3**<br>Agility | **0**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **+3**<br>Agility | **0**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Transforming Strike**
 >
@@ -3704,7 +3704,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 |:-:|:--------------:|:------------:|:-:|:-:|
 | **2**<br>Size | **5**<br>Speed | **27 \| 27**<br>Stamina | **2**<br>Stability | **8**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+4**<br>Might | **+3**<br>Agility | **0**<br>Reason | **−1**<br>Intuition | **0**<br>Presence |
+| **+4**<br>Might | **+3**<br>Agility | **0**<br>Reason | **-1**<br>Intuition | **0**<br>Presence |
 
 > ⭐️ **Gorrring Strike**
 >
@@ -3783,7 +3783,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 |:-:|:------:|:------------------------:|:-:|:----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Corruption 2, poison 2**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **−2**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **−2**<br>Presence |
+| **-2**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **-2**<br>Presence |
 
 > ⭐️ **Bonetrops**
 >
@@ -3796,7 +3796,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 |:-:|:------:|:---------------:|:-:|:------------------------:|
 | **2**<br>Size | **5**<br>Speed | **8 \| 8**<br>Stamina | **2**<br>Stability | **4**<br>Free Strike |
 | **Corruption 2, poison 2**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+| **+2**<br>Might | **-2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Zombie Clutch**
 >
@@ -3813,7 +3813,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 |:-:|:-------------:|:------------:|:-:|:--------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **2**<br>Stability | **3**<br>Free Strike |
 | **Corruption 2, poison 2**<br>Immunity | **—**<br>Movement | - | **Fire 1**<br>Weakness | **Poison**<br>Free Strike Damage Type |
-| **+2**<br>Might | **−1**<br>Agility | **+1**<br>Reason | **+3**<br>Intuition | **−1**<br>Presence |
+| **+2**<br>Might | **-1**<br>Agility | **+1**<br>Reason | **+3**<br>Intuition | **-1**<br>Presence |
 
 > 🗡 **Fetid Bindings 2d10 + 3 (Signature Ability)**
 >
@@ -3896,7 +3896,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 |:-:|:------:|:------------------------:|:-:|:----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **3**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Corruption 3, poison 3**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **−1**<br>Might | **+3**<br>Agility | **+1**<br>Reason | **+1**<br>Intuition | **−1**<br>Presence |
+| **-1**<br>Might | **+3**<br>Agility | **+1**<br>Reason | **+1**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Bonetrops**
 >
@@ -3934,7 +3934,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 |:-:|:------:|:-----------------:|:-:|:--------------------------:|
 | **2**<br>Size | **5**<br>Speed | **6 \| 6 \| 6**<br>Stamina | **3**<br>Stability | **3**<br>Free Strike |
 | **Corruption 3, poison 3**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
-| **+3**<br>Might | **+3**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **−1**<br>Presence |
+| **+3**<br>Might | **+3**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **-1**<br>Presence |
 
 > ⭐️ **Always Crying**
 >
@@ -4163,7 +4163,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 |:-:|:------:|:-----------------:|:-:|:--------------------------:|
 | **2**<br>Size | **5**<br>Speed | **10 \| 10 \| 10**<br>Stamina | **5**<br>Stability | **3**<br>Free Strike |
 | **Corruption 5, poison 5**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
-| **+5**<br>Might | **+5**<br>Agility | **−2**<br>Reason | **+4**<br>Intuition | **+1**<br>Presence |
+| **+5**<br>Might | **+5**<br>Agility | **-2**<br>Reason | **+4**<br>Intuition | **+1**<br>Presence |
 
 > ⭐️ **Always Crying**
 >
@@ -4184,7 +4184,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 |:-:|:------:|:---------------:|:-:|:-----------------------:|
 | **4**<br>Size | **4**<br>Speed | **50**<br>Stamina | **5**<br>Stability | **7**<br>Free Strike |
 | **Corruption 5, poison 5**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **+5**<br>Might | **−1**<br>Agility | **+2**<br>Reason | **+4**<br>Intuition | **+5**<br>Presence |
+| **+5**<br>Might | **-1**<br>Agility | **+2**<br>Reason | **+4**<br>Intuition | **+5**<br>Presence |
 
 > ⭐️ **Big Stomp**
 >
@@ -4421,7 +4421,7 @@ The following pixie bellringer has been converted from a [summoner](scc:mcdm.sum
 |:-:|:---:|:----------------------:|:-:|:---------------------:|
 | **1T**<br>Size | **5**<br>Speed | **7**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **—**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | - |
-| **−3**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+| **-3**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
 
 With Captain: +2 bonus to speed
 
@@ -4441,7 +4441,7 @@ With Captain: +2 bonus to speed
 
 > ⭐️ **Fairy Chime**
 >
-> Each ally within 1 square of a bellringer has a +1 to saving throws. Each enemy within 1 square of a bellringer has a −1 to saving throws.
+> Each ally within 1 square of a bellringer has a +1 to saving throws. Each enemy within 1 square of a bellringer has a -1 to saving throws.
 
 > ⭐️ **Minuscule**
 >
