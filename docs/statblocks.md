@@ -107,9 +107,9 @@ machinery) that `StatblockParser` likewise folds into the `monster.*` family via
 - `domain == "minion"` → `monster.minion.summoner.<portfolio>.statblock/<id>`
 - `domain == "champion"` → `monster.champion.summoner.<portfolio>.statblock/<id>`
 - `domain == "rival"` → the Rival Summoner NPC (any `organization` other than
-  `Minion`) → `monster.rivals.<echelon>.statblock/<id>` (sits beside the Monsters-book
+  `Minion`) → `monster.rival.<echelon>.statblock/<id>` (sits beside the Monsters-book
   rivals); its summoned creatures (`organization == Minion`) →
-  `monster.rivals.<echelon>.summoner.minion/<id>`. The source `@category: summoner` is
+  `monster.rival.<echelon>.summoner.minion/<id>`. The source `@category: summoner` is
   dropped; `@subcategory` is the echelon.
 
 The `summoner` class segment is hardcoded (these `@domain` values appear only in the
@@ -232,13 +232,13 @@ with a label derived from the page's `scc` code:
 
 | SCC type-path (under `mcdm.summoner.v1/`) | Eyebrow |
 |---|---|
-| `monster.rivals.{ech}.summoner.minion` | `Rival Summoner Summon · Echelon N` |
-| `monster.rivals.{ech}.statblock` | `Rival Summoner · Echelon N` |
+| `monster.rival.{ech}.summoner.minion` | `Rival Summoner Summon · Echelon N` |
+| `monster.rival.{ech}.statblock` | `Rival Summoner · Echelon N` |
 | `monster.minion.summoner.{circle}.statblock` | `Summoner Minion · {Circle}` |
 | `monster.champion.summoner.{circle}.statblock` | `Summoner Champion · {Circle}` |
 
 ⚠️ Gated on the `mcdm.summoner.` **source** prefix so the look-alike Monsters-book
-`mcdm.monsters.v1/monster.rivals.{ech}.statblock` tree — which keeps its real
+`mcdm.monsters.v1/monster.rival.{ech}.statblock` tree — which keeps its real
 "Humanoid, Rival" keywords — is untouched. Like the bestiary-card label it is
 `scc`-derived, so no data/schema change. Spec:
 `docs/superpowers/specs/2026-06-15-summoner-statblock-provenance-eyebrow-design.md`.
