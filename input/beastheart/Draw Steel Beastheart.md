@@ -279,13 +279,13 @@ As a beastheart, you face the world's dangers alongside your wild companion. Wit
 
 **Starting Characteristics:** You start with a Might of 2 and an Intuition of 2, and can choose one of the following arrays for your other characteristic scores:
 
-- 2, −1, −1
-- 1, 1, −1
+- 2, -1, -1
+- 1, 1, -1
 - 1, 0, 0
 
-**Weak Potency:** Might − 2
+**Weak Potency:** Might - 2
 
-**Average Potency:** Might − 1
+**Average Potency:** Might - 1
 
 **Strong Potency:** Might
 
@@ -359,7 +359,7 @@ With the Director's permission, you can also change the damage types of your com
 |:------------------------:|:-----------------:|:-------------------------------------------------------------:|:-------------------:|:------------------------:|
 |      **1L**<br>Size      |  **5**<br>Speed   |                    **= yours**<br>Stamina                     | **2**<br>Stability  | **1 + M**<br>Free Strike |
 | **Poison 3**<br>Immunity | **—**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness)**<br>Skills |                     |                          |
-|     **+2**<br>Might      | **+1**<br>Agility |                       **−1**<br>Reason                        | **+2**<br>Intuition |    **+2**<br>Presence    |
+|     **+2**<br>Might      | **+1**<br>Agility |                       **-1**<br>Reason                        | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: petrify -->
 ##### Petrify
@@ -404,7 +404,7 @@ While the basilisk is rampaging, you and the basilisk have damage immunity 10 as
 |:-----------------:|:---------------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1L**<br>Size   |    **5**<br>Speed     |                     **= yours**<br>Stamina                      | **2**<br>Stability  | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate)**<br>Skills |                     |                          |
-|  **+2**<br>Might  |   **+1**<br>Agility   |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
+|  **+2**<br>Might  |   **+1**<br>Agility   |                        **-1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: backhand -->
 ##### Backhand
@@ -449,7 +449,7 @@ While the bear is rampaging, you gain a +1 bonus to distance with melee weapon a
 |:-----------------:|:-----------------:|:-------------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |  **5**<br>Speed   |                 **= yours**<br>Stamina                  | **2**<br>Stability  | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | **[Search](scc:mcdm.heroes.v1/skill.intrigue/search)**<br>Skills |                     |                          |
-|  **+2**<br>Might  | **+1**<br>Agility |                    **−1**<br>Reason                     | **+2**<br>Intuition |    **+2**<br>Presence    |
+|  **+2**<br>Might  | **+1**<br>Agility |                    **-1**<br>Reason                     | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: gore -->
 ##### Gore
@@ -494,7 +494,7 @@ Whenever you or the boar use an ability that deals damage while the boar is ramp
 |:-----------------:|:-------------------:|:-------------------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |   **7**<br>Speed    |                    **= yours**<br>Stamina                     | **0**<br>Stability  | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness)**<br>Skills |                     |                          |
-|  **+2**<br>Might  |  **+1**<br>Agility  |                       **−1**<br>Reason                        | **+2**<br>Intuition |    **+1**<br>Presence    |
+|  **+2**<br>Might  |  **+1**<br>Agility  |                       **-1**<br>Reason                        | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: flurry-of-wings -->
 ##### Flurry of Wings
@@ -539,7 +539,7 @@ While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 |:-----------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill.intrigue/track)**<br>Skills |                     |                          |
-|  **+2**<br>Might  | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
+|  **+2**<br>Might  | **+2**<br>Agility |                   **-1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: terrible-claws -->
 ##### Terrible Claws
@@ -584,7 +584,7 @@ The deinonychus's claws slash at creatures underfoot. When the deinonychus moves
 |:---------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
 |                                                                   **1M**<br>Size                                                                    |   **5**<br>Speed    |                     **= yours**<br>Stamina                      | **1**<br>Stability  | **1 + M**<br>Free Strike |
 | **Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.companion.beastheart.drake.level-1/elementally-attuned))**<br>Immunity | **Fly**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate)**<br>Skills |                     |                          |
-|                                                                   **+2**<br>Might                                                                   |  **+1**<br>Agility  |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
+|                                                                   **+2**<br>Might                                                                   |  **+1**<br>Agility  |                        **-1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: drake-breath -->
 ##### Drake Breath
@@ -634,7 +634,7 @@ While the drake is rampaging, you and the drake have immunity all to the drake's
 |:---------------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |       **1M**<br>Size        |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
 | **Lightning 3**<br>Immunity | **—**<br>Movement | **[Magic](scc:mcdm.heroes.v1/skill.lore/magic)**<br>Skills |                     |                          |
-|       **+2**<br>Might       | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
+|       **+2**<br>Might       | **+2**<br>Agility |                   **-1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: static-shock -->
 ##### Static Shock
@@ -679,7 +679,7 @@ While the spark is rampaging, you and the spark can [shift](scc:mcdm.heroes.v1/m
 |:----------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |     **1L**<br>Size     |  **5**<br>Speed   |                **= yours**<br>Stamina                 | **2**<br>Stability  | **1 + M**<br>Free Strike |
 | **Acid 3**<br>Immunity | **—**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak)**<br>Skills |                     |                          |
-|    **+2**<br>Might     | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
+|    **+2**<br>Might     | **+2**<br>Agility |                   **-1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: absorb -->
 ##### Absorb
@@ -724,7 +724,7 @@ While the ball is rampaging, you and the ball have acid immunity 10, and wheneve
 |:----------------------:|:-----------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
 |     **1M**<br>Size     |  **7**<br>Speed   |                     **= yours**<br>Stamina                      | **1**<br>Stability  | **1 + M**<br>Free Strike |
 | **Fire 3**<br>Immunity | **—**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate)**<br>Skills |                     |                          |
-|    **+2**<br>Might     | **+2**<br>Agility |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+1**<br>Presence    |
+|    **+2**<br>Might     | **+2**<br>Agility |                        **-1**<br>Reason                         | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: fire-breath -->
 ##### Fire Breath
@@ -769,7 +769,7 @@ While the hellhound is rampaging, you and the hellhound are surrounded by an aur
 |:-----------------:|:-----------------:|:---------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1L**<br>Size   |  **7**<br>Speed   |               **= yours**<br>Stamina                | **2**<br>Stability  | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | **[Hide](scc:mcdm.heroes.v1/skill.intrigue/hide)**<br>Skills |                     |                          |
-|  **+2**<br>Might  | **+1**<br>Agility |                  **−1**<br>Reason                   | **+2**<br>Intuition |    **+2**<br>Presence    |
+|  **+2**<br>Might  | **+1**<br>Agility |                  **-1**<br>Reason                   | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: sparking-tail-whip -->
 ##### Sparking Tail Whip
@@ -814,7 +814,7 @@ While the lightbender is rampaging, your grip on spatial reality is [weakened](s
 |:-----------------:|:---------------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |    **7**<br>Speed     |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak)**<br>Skills |                     |                          |
-|  **+2**<br>Might  |   **+2**<br>Agility   |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
+|  **+2**<br>Might  |   **+2**<br>Agility   |                   **-1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: pounce -->
 ##### Pounce
@@ -859,7 +859,7 @@ While the panther is rampaging, you and the panther are invisible and can move t
 |:-----------------:|:---------------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |    **5**<br>Speed     |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak)**<br>Skills |                     |                          |
-|  **+2**<br>Might  |   **+2**<br>Agility   |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
+|  **+2**<br>Might  |   **+2**<br>Agility   |                   **-1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: web-shot -->
 ##### Web Shot
@@ -904,7 +904,7 @@ Whenever you or the spider deals damage with a maneuver while the spider is ramp
 |:------------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |      **1S**<br>Size      |  **5**<br>Speed   |                **= yours**<br>Stamina                 | **0**<br>Stability  | **1 + M**<br>Free Strike |
 | **Poison 3**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill.intrigue/track)**<br>Skills |                     |                          |
-|     **+2**<br>Might      | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
+|     **+2**<br>Might      | **+2**<br>Agility |                   **-1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: spore-puff -->
 ##### Spore Puff
@@ -949,7 +949,7 @@ While the sporeling is rampaging, you and the sporeling sprout rootlike, grippin
 |:-----------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill.intrigue/track)**<br>Skills |                     |                          |
-|  **+2**<br>Might  | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
+|  **+2**<br>Might  | **+2**<br>Agility |                   **-1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: clamping-jaws -->
 ##### Clamping Jaws
