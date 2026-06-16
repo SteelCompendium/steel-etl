@@ -23,7 +23,7 @@ func TestStatblockParser(t *testing.T) {
 	sec := newSection("Goblin Cursespitter", 7, map[string]string{"type": "statblock"}, body)
 
 	ctx := context.NewContextStack(nil)
-	ctx.Push(2, map[string]string{"category": "goblins"})
+	ctx.Push(2, map[string]string{"category": "goblin"})
 
 	p := &StatblockParser{}
 	got, err := p.Parse(ctx, sec)
@@ -34,8 +34,8 @@ func TestStatblockParser(t *testing.T) {
 	if got.ItemID != "goblin-cursespitter" {
 		t.Errorf("ItemID: got %q", got.ItemID)
 	}
-	if strings.Join(got.TypePath, "/") != "monster/goblins/statblock" {
-		t.Errorf("TypePath: got %v, want [monster goblins statblock]", got.TypePath)
+	if strings.Join(got.TypePath, "/") != "monster/goblin/statblock" {
+		t.Errorf("TypePath: got %v, want [monster goblin statblock]", got.TypePath)
 	}
 	if got.Frontmatter["type"] != "statblock" {
 		t.Errorf("type: got %v", got.Frontmatter["type"])
@@ -59,7 +59,7 @@ func TestStatblockParser(t *testing.T) {
 
 func TestMonsterParser(t *testing.T) {
 	sec := newSection("Goblins", 2, map[string]string{
-		"type": "monster", "category": "goblins",
+		"type": "monster", "category": "goblin",
 	}, "Goblins are small and crafty...")
 
 	p := &MonsterParser{}
@@ -67,7 +67,7 @@ func TestMonsterParser(t *testing.T) {
 	if err != nil {
 		t.Fatalf("parse: %v", err)
 	}
-	if got.ItemID != "goblins" {
+	if got.ItemID != "goblin" {
 		t.Errorf("ItemID: got %q", got.ItemID)
 	}
 	if strings.Join(got.TypePath, "/") != "monster/group" {
@@ -86,7 +86,7 @@ func TestFeatureblockParser(t *testing.T) {
 		map[string]string{"type": "featureblock"}, body)
 
 	ctx := context.NewContextStack(nil)
-	ctx.Push(2, map[string]string{"category": "goblins"})
+	ctx.Push(2, map[string]string{"category": "goblin"})
 
 	p := &FeatureblockParser{}
 	got, err := p.Parse(ctx, sec)
@@ -96,8 +96,8 @@ func TestFeatureblockParser(t *testing.T) {
 	if got.ItemID != "goblin-malice" {
 		t.Errorf("ItemID: got %q (want goblin-malice)", got.ItemID)
 	}
-	if strings.Join(got.TypePath, "/") != "monster/goblins" {
-		t.Errorf("TypePath: got %v, want [monster goblins]", got.TypePath)
+	if strings.Join(got.TypePath, "/") != "monster/goblin" {
+		t.Errorf("TypePath: got %v, want [monster goblin]", got.TypePath)
 	}
 	if got.Frontmatter["type"] != "featureblock" {
 		t.Errorf("type: got %v", got.Frontmatter["type"])
@@ -179,7 +179,7 @@ func TestFeatureblockParser_Metadata(t *testing.T) {
 		t.Run(tt.heading, func(t *testing.T) {
 			sec := newSection(tt.heading, 9, map[string]string{"type": "featureblock"}, body)
 			ctx := context.NewContextStack(nil)
-			ctx.Push(2, map[string]string{"category": "basilisks"})
+			ctx.Push(2, map[string]string{"category": "basilisk"})
 
 			p := &FeatureblockParser{}
 			got, err := p.Parse(ctx, sec)
