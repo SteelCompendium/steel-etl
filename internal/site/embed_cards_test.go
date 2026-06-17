@@ -165,24 +165,80 @@ func TestSpliceCards(t *testing.T) {
 	}
 }
 
+func TestSpliceCards_NestedStandalone(t *testing.T) {
+	// A companion statblock (standalone) with its abilities AND a nested
+	// advancement-features featureblock (also standalone) under it. The statblock
+	// card holds the abilities but NOT the featureblock, so the swallow must stop
+	// at the featureblock, which then gets its own card.
+	body := strings.Join([]string{
+		`### Bear {data-scc="S"}`, "",
+		"raw statblock grid markdown", "",
+		`#### Backhand {data-scc="A"}`, "",
+		"ability markdown", "",
+		`#### Bear Advancement Features {data-scc="F"}`, "",
+		`##### Foe Thresher {data-scc="FT"}`, "",
+		"foe thresher markdown with a [link](../../bad/path.md)", "",
+		`### Boar {data-scc="S2"}`, "",
+		"boar grid markdown",
+	}, "\n")
+	cards := map[string]cardEntry{
+		"S":  {html: "<div>BEAR-SB</div>", standalone: true},
+		"A":  {html: "<article>BACKHAND</article>"}, // ability, in the statblock card
+		"F":  {html: "<div>BEAR-FEATUREBLOCK</div>", standalone: true},
+		"S2": {html: "<div>BOAR-SB</div>", standalone: true},
+		// "FT" has no leaf (embedded in the featureblock) — absent from the map.
+	}
+	got, n := spliceCards(body, "", "", cards)
+	if n != 3 { // Bear statblock, Bear featureblock, Boar statblock
+		t.Fatalf("spliced %d, want 3", n)
+	}
+	for _, want := range []string{"BEAR-SB", "BEAR-FEATUREBLOCK", "BOAR-SB",
+		`### Bear {data-scc="S"}`, `#### Bear Advancement Features {data-scc="F"}`, `### Boar {data-scc="S2"}`} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q in:\n%s", want, got)
+		}
+	}
+	// The featureblock was NOT eaten by the statblock; the orphaned Foe Thresher
+	// markdown (and its broken link) is swallowed by the featureblock card.
+	for _, gone := range []string{"raw statblock grid markdown", "ability markdown",
+		`##### Foe Thresher`, "foe thresher markdown", "bad/path.md"} {
+		if strings.Contains(got, gone) {
+			t.Errorf("should have been swallowed: %q", gone)
+		}
+	}
+}
+
 func TestRebaseLinks(t *testing.T) {
-	// A companion card's links are relative to its own deep URL dir; when spliced
-	// into the shallower class page they must be rebased.
-	html := `<a href="../../../../movement/teleport/">x</a> <a href="../../../../rule/combat/ranged.md">y</a> <a href="#frag">f</a> <a href="https://x.io/">e</a>`
-	got := rebaseLinks(html, "Browse/monster/companion/beastheart/basilisk", "Browse/class/beastheart")
-	// teleport: leaf 4-up -> Browse/movement/teleport ; from container -> ../../movement/teleport/
-	if !strings.Contains(got, `href="../../movement/teleport/"`) {
-		t.Errorf("teleport not rebased: %s", got)
+	// Leaf URL dir Browse/monster/companion/beastheart/basilisk (file dir
+	// Browse/monster/companion/beastheart); container Browse/class/beastheart
+	// (file dir Browse/class).
+	from, to := "Browse/monster/companion/beastheart/basilisk", "Browse/class/beastheart"
+
+	// (1) Directory-style href (a final URL): rebased against the URL dir.
+	//     leaf 4-up -> Browse/movement/teleport ; from container URL dir -> ../../movement/teleport/
+	if got := rebaseLinks(`<a href="../../../../movement/teleport/">x</a>`, from, to); !strings.Contains(got, `href="../../movement/teleport/"`) {
+		t.Errorf("directory href not URL-rebased: %s", got)
 	}
-	if !strings.Contains(got, `href="../../rule/combat/ranged.md"`) {
-		t.Errorf("ranged.md not rebased: %s", got)
+	// (2) Markdown directory link (final URL): rebased against the URL dir.
+	if got := rebaseLinks(`[t](../../../../movement/teleport/)`, from, to); !strings.Contains(got, `](../../movement/teleport/)`) {
+		t.Errorf("markdown directory link not URL-rebased: %s", got)
 	}
-	// Anchor-only and external links are left untouched.
-	if !strings.Contains(got, `href="#frag"`) || !strings.Contains(got, `href="https://x.io/"`) {
+	// (3) Markdown .md link: MkDocs resolves it from the FILE dir. leaf file dir
+	//     3-up -> Browse/movement/forced-movement.md ; from container file dir (Browse/class) -> ../movement/forced-movement.md
+	if got := rebaseLinks(`[m](../../../movement/forced-movement.md)`, from, to); !strings.Contains(got, `](../movement/forced-movement.md)`) {
+		t.Errorf("markdown .md link not file-rebased: %s", got)
+	}
+	// (4) href .md link: also file-dir based.
+	if got := rebaseLinks(`<a href="../../../condition/prone.md">p</a>`, from, to); !strings.Contains(got, `href="../condition/prone.md"`) {
+		t.Errorf("href .md link not file-rebased: %s", got)
+	}
+	// (5) Anchor-only and external links untouched.
+	ext := `<a href="#frag">f</a> <a href="https://x.io/">e</a>`
+	if got := rebaseLinks(ext, from, to); !strings.Contains(got, `href="#frag"`) || !strings.Contains(got, `href="https://x.io/"`) {
 		t.Errorf("anchor/external altered: %s", got)
 	}
-	// Identical dirs: a no-op.
-	if rebaseLinks(html, "a/b", "a/b") != html {
+	// (6) Identical dirs: a no-op.
+	if s := `<a href="../x/">y</a>`; rebaseLinks(s, "a/b", "a/b") != s {
 		t.Error("same-dir rebase should be a no-op")
 	}
 }

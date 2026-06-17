@@ -105,8 +105,11 @@ func headingLevel(line string) int {
 // hrefSrcRe matches a relative-or-absolute href/src attribute value.
 var hrefSrcRe = regexp.MustCompile(`(href|src)="([^"]*)"`)
 
+// embedMdLinkRe matches a Markdown link target: the "](target)" tail of [text](target).
+var embedMdLinkRe = regexp.MustCompile(`\]\(([^)\s]+)\)`)
+
 // rebaseURL re-expresses a relative link authored against fromDir so it resolves
-// the same from toDir (both docs-relative URL directories). Absolute, protocol,
+// the same from toDir (both docs-relative directories). Absolute, protocol,
 // anchor-only, and special-scheme values pass through unchanged.
 func rebaseURL(val, fromDir, toDir string) string {
 	if val == "" || strings.HasPrefix(val, "/") || strings.HasPrefix(val, "#") ||
@@ -134,21 +137,43 @@ func rebaseURL(val, fromDir, toDir string) string {
 	return rel + suffix
 }
 
-// rebaseLinks rewrites every relative href/src in a transcluded card from the
-// leaf's URL directory (fromDir) to the container's (toDir). A no-op when the
-// directories match.
-func rebaseLinks(html, fromDir, toDir string) string {
-	if fromDir == toDir {
+// rebaseLinks rewrites every relative link in a transcluded card from the leaf's
+// location (fromURLDir) to the container's (toURLDir), in both href/src
+// attributes and Markdown "](target)" tails. A link is rebased against one of
+// two bases by form: a `.md` target is resolved by MkDocs relative to the source
+// FILE directory (path.Dir of the URL dir), while every other relative target is
+// a final URL relative to the page's URL directory (which, with directory URLs,
+// includes the page name as a segment). A no-op when the directories match.
+func rebaseLinks(html, fromURLDir, toURLDir string) string {
+	if fromURLDir == toURLDir {
 		return html
 	}
-	return hrefSrcRe.ReplaceAllStringFunc(html, func(m string) string {
-		sub := hrefSrcRe.FindStringSubmatch(m)
-		nv := rebaseURL(sub[2], fromDir, toDir)
-		if nv == sub[2] {
-			return m
+	fromFileDir, toFileDir := path.Dir(fromURLDir), path.Dir(toURLDir)
+	rebase := func(val string) string {
+		p := val
+		if k := strings.IndexAny(val, "#?"); k >= 0 {
+			p = val[:k]
 		}
-		return sub[1] + `="` + nv + `"`
+		if strings.HasSuffix(p, ".md") {
+			return rebaseURL(val, fromFileDir, toFileDir)
+		}
+		return rebaseURL(val, fromURLDir, toURLDir)
+	}
+	html = hrefSrcRe.ReplaceAllStringFunc(html, func(m string) string {
+		sub := hrefSrcRe.FindStringSubmatch(m)
+		if nv := rebase(sub[2]); nv != sub[2] {
+			return sub[1] + `="` + nv + `"`
+		}
+		return m
 	})
+	html = embedMdLinkRe.ReplaceAllStringFunc(html, func(m string) string {
+		sub := embedMdLinkRe.FindStringSubmatch(m)
+		if nv := rebase(sub[1]); nv != sub[1] {
+			return "](" + nv + ")"
+		}
+		return m
+	})
+	return html
 }
 
 // subtreeHasStandalone reports whether any {data-scc} heading in lines maps to a
@@ -191,27 +216,40 @@ func spliceCards(body, ownSCC, containerDir string, cards map[string]cardEntry) 
 			out = append(out, line) // keep + descend; children may be card-able
 			continue
 		}
-		// Sub-tree extent: from the next line up to (not incl.) the next heading
-		// whose level <= this heading's level.
-		j := i + 1
-		for j < len(lines) {
-			if lv := headingLevel(lines[j]); lv > 0 && lv <= level {
+		// Full sub-tree extent: from the next line up to (not incl.) the next
+		// heading whose level <= this heading's level. Used for the descend test.
+		full := i + 1
+		for full < len(lines) {
+			if lv := headingLevel(lines[full]); lv > 0 && lv <= level {
 				break
 			}
-			j++
+			full++
 		}
 		// A recursive container whose sub-tree holds a standalone item cannot be
 		// monolithically carded (its leaf card omits that item) — descend so the
 		// inner item gets its own card.
-		if !entry.standalone && subtreeHasStandalone(lines[i+1:j], cards) {
+		if !entry.standalone && subtreeHasStandalone(lines[i+1:full], cards) {
 			out = append(out, line)
 			continue
+		}
+		// Swallow extent: like full, but also stop before a nested standalone item
+		// (a statblock/featureblock the card can't contain — it gets its own card
+		// next). A companion's advancement-features featureblock is nested under
+		// its statblock heading, so without this the statblock card would eat it.
+		sw := i + 1
+		for sw < full {
+			if hm := dataSCCHeadingRe.FindStringSubmatch(lines[sw]); hm != nil {
+				if e, ok := cards[hm[2]]; ok && e.standalone {
+					break
+				}
+			}
+			sw++
 		}
 		// Keep the heading, drop the inlined sub-tree, insert the card (with its
 		// relative links rebased to the container's depth).
 		out = append(out, line, "", rebaseLinks(entry.html, entry.dir, containerDir), "")
 		spliced++
-		i = j - 1
+		i = sw - 1
 	}
 	return strings.Join(out, "\n"), spliced
 }
