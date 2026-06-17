@@ -280,10 +280,21 @@ is correct because feature/trait/ability leaf cards are *recursive* — they
 already nest their feature/ability descendants. But those cards can **not**
 reproduce a `statblock`/`featureblock`/`feature-group` descendant (those are
 frontmatter-driven). So a "standalone" card (those four types) is never
-swallowed: when a recursive feature's sub-tree contains one, the pass **descends**
-into the feature instead of carding it monolithically, letting the inner
-statblock/featureblock get its own card (e.g. summoner minion statblocks nested
-under a Portfolio feature; beastheart companion `.sb-wrap` cards). The card
-renderers are untouched — finished HTML is relocated. The shared `PageBody` that
-feeds the `data/` repos is never modified. Design:
+swallowed, two ways: (a) when a *recursive* feature's sub-tree contains one, the
+pass **descends** into the feature instead of carding it monolithically (e.g.
+summoner minion statblocks nested under a Portfolio feature); and (b) the swallow
+of *any* card **stops before a nested standalone** descendant so it gets its own
+card (e.g. a beastheart companion's advancement-features `featureblock`, nested
+under its statblock heading — without the stop the statblock card would eat it).
+
+**Link rebasing.** A leaf card's relative links were computed against the leaf's
+location, so transcluding it verbatim into a container at a different depth would
+404. `rebaseLinks` rewrites each link to the container's location, choosing the
+base by form: a `.md` link is resolved by MkDocs relative to the source *file*
+directory, while every other relative link is a final URL relative to the page's
+*URL* directory. Both `href`/`src` attributes and Markdown `](target)` tails are
+handled. A clean `mkdocs build` (0 broken-link warnings) is the regression guard.
+
+The card renderers are untouched — finished HTML is relocated. The shared
+`PageBody` that feeds the `data/` repos is never modified. Design:
 `docs/superpowers/specs/2026-06-16-inline-item-cards-design.md`.
