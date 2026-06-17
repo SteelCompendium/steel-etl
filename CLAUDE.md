@@ -50,6 +50,7 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/site/ability_cards.go` | Renders `type: ability` page bodies into `.sc-ability` cards; shared power-roll tier helpers |
 | `internal/site/statblock_page.go` | Parses `type: statblock` page bodies → the `sbIsland` model (stat grid + blockquote features) |
 | `internal/site/statblock_card.go` | Renders an `sbIsland` into the build-time `.sb-wrap` HTML card (Go port of `steel-statblock.js`) |
+| `internal/site/embed_cards.go` | Site-only post-pass: transcludes finished leaf cards inline on container pages by `{data-scc}` code (Browse via `embed_card_sections`) |
 | `internal/site/trait_cards.go` | Renders `type: trait` page bodies into recessed `.sc-trait` niches |
 | `internal/site/feature_index.go` | Folder/preview-card index pages for the nested feature/treasure/rule trees |
 | `internal/site/cards_book.go` | `.sc-card` index cards for the Books tab (`bookCard`, `chapterCard`) |

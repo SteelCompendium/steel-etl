@@ -261,3 +261,29 @@ It is **idempotent** (guards on an existing `## Summons` heading / `sb-backlink`
 when there is no `monster/rivals` tree (e.g. the Monsters/Summoner books are absent), and
 makes **no SCC/schema/data change** — the relationship is derived purely from the on-disk
 tree. The `.sb-backlink` style lives in `v2/docs/stylesheets/steel-statblock.css`.
+
+## Inline item cards (`embed_cards.go`)
+
+A site-only `Build()` post-pass (after index generation, before the
+frontmatter-only passes) that makes a container page — a `RenderSubtree` body
+such as a class page — show its embedded items as the same High-Fantasy Steel
+cards their own leaf pages show, instead of plain inlined markdown. It builds a
+`scc → card-HTML` map from every card-able leaf (`type` ∈
+ability/feature/trait/statblock/featureblock/dynamic-terrain/feature-group) in
+the configured sections (`embed_card_sections`, default `["Browse"]`), then for
+each `{data-scc="X"}` heading in a container page keeps the heading (so the TOC
+entry + per-heading `/scc/` permalink survive) and replaces its inlined sub-tree
+with the mapped card.
+
+**Swallow vs. descend.** Replacing a heading swallows its inlined sub-tree, which
+is correct because feature/trait/ability leaf cards are *recursive* — they
+already nest their feature/ability descendants. But those cards can **not**
+reproduce a `statblock`/`featureblock`/`feature-group` descendant (those are
+frontmatter-driven). So a "standalone" card (those four types) is never
+swallowed: when a recursive feature's sub-tree contains one, the pass **descends**
+into the feature instead of carding it monolithically, letting the inner
+statblock/featureblock get its own card (e.g. summoner minion statblocks nested
+under a Portfolio feature; beastheart companion `.sb-wrap` cards). The card
+renderers are untouched — finished HTML is relocated. The shared `PageBody` that
+feeds the `data/` repos is never modified. Design:
+`docs/superpowers/specs/2026-06-16-inline-item-cards-design.md`.

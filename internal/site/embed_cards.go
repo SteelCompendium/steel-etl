@@ -12,6 +12,7 @@ package site
 import (
 	"fmt"
 	"os"
+	"path"
 	"path/filepath"
 	"regexp"
 	"strings"
@@ -55,10 +56,13 @@ var standaloneType = map[string]bool{
 
 // cardEntry is a leaf's finished card HTML plus whether it is a standalone card
 // (statblock/featureblock/feature-group) that an ancestor feature card cannot
-// contain.
+// contain, plus the leaf's URL directory (docs-relative path, ".md" stripped)
+// that its relative links were computed against — needed to rebase those links
+// when the card is transcluded into a container page at a different depth.
 type cardEntry struct {
 	html       string
 	standalone bool
+	dir        string
 }
 
 // leafCard extracts a card-able leaf page's scc code and its card entry (the
@@ -98,6 +102,55 @@ func headingLevel(line string) int {
 	return 0
 }
 
+// hrefSrcRe matches a relative-or-absolute href/src attribute value.
+var hrefSrcRe = regexp.MustCompile(`(href|src)="([^"]*)"`)
+
+// rebaseURL re-expresses a relative link authored against fromDir so it resolves
+// the same from toDir (both docs-relative URL directories). Absolute, protocol,
+// anchor-only, and special-scheme values pass through unchanged.
+func rebaseURL(val, fromDir, toDir string) string {
+	if val == "" || strings.HasPrefix(val, "/") || strings.HasPrefix(val, "#") ||
+		strings.Contains(val, "://") || strings.HasPrefix(val, "mailto:") ||
+		strings.HasPrefix(val, "tel:") || strings.HasPrefix(val, "data:") {
+		return val
+	}
+	pathPart, suffix := val, ""
+	if k := strings.IndexAny(val, "#?"); k >= 0 {
+		pathPart, suffix = val[:k], val[k:]
+	}
+	if pathPart == "" {
+		return val
+	}
+	trailing := strings.HasSuffix(pathPart, "/")
+	target := path.Clean(path.Join(fromDir, pathPart))
+	rel, err := filepath.Rel(toDir, target)
+	if err != nil {
+		return val
+	}
+	rel = filepath.ToSlash(rel)
+	if trailing && !strings.HasSuffix(rel, "/") {
+		rel += "/"
+	}
+	return rel + suffix
+}
+
+// rebaseLinks rewrites every relative href/src in a transcluded card from the
+// leaf's URL directory (fromDir) to the container's (toDir). A no-op when the
+// directories match.
+func rebaseLinks(html, fromDir, toDir string) string {
+	if fromDir == toDir {
+		return html
+	}
+	return hrefSrcRe.ReplaceAllStringFunc(html, func(m string) string {
+		sub := hrefSrcRe.FindStringSubmatch(m)
+		nv := rebaseURL(sub[2], fromDir, toDir)
+		if nv == sub[2] {
+			return m
+		}
+		return sub[1] + `="` + nv + `"`
+	})
+}
+
 // subtreeHasStandalone reports whether any {data-scc} heading in lines maps to a
 // standalone card (statblock/featureblock/feature-group) in cards.
 func subtreeHasStandalone(lines []string, cards map[string]cardEntry) bool {
@@ -118,8 +171,10 @@ func subtreeHasStandalone(lines []string, cards map[string]cardEntry) bool {
 // into instead: a heading whose code is absent/own, and a recursive container
 // (feature/ability/trait) whose sub-tree contains a standalone card its leaf
 // card cannot reproduce — descending lets that inner statblock/featureblock get
-// its own card. Returns the new body and the number of cards spliced.
-func spliceCards(body, ownSCC string, cards map[string]cardEntry) (string, int) {
+// its own card. Each spliced card's relative links are rebased from the leaf's
+// URL directory to containerDir. Returns the new body and the number of cards
+// spliced.
+func spliceCards(body, ownSCC, containerDir string, cards map[string]cardEntry) (string, int) {
 	lines := strings.Split(body, "\n")
 	out := make([]string, 0, len(lines))
 	spliced := 0
@@ -152,8 +207,9 @@ func spliceCards(body, ownSCC string, cards map[string]cardEntry) (string, int) 
 			out = append(out, line)
 			continue
 		}
-		// Keep the heading, drop the inlined sub-tree, insert the card.
-		out = append(out, line, "", entry.html, "")
+		// Keep the heading, drop the inlined sub-tree, insert the card (with its
+		// relative links rebased to the container's depth).
+		out = append(out, line, "", rebaseLinks(entry.html, entry.dir, containerDir), "")
 		spliced++
 		i = j - 1
 	}
@@ -188,6 +244,9 @@ func embedItemCards(cfg *Config) (int, []string) {
 				return nil
 			}
 			if scc, entry, ok := leafCard(string(data)); ok {
+				if rel, rErr := filepath.Rel(cfg.DocsDir, path); rErr == nil {
+					entry.dir = strings.TrimSuffix(filepath.ToSlash(rel), ".md")
+				}
 				cards[scc] = entry
 			}
 			return nil
@@ -212,7 +271,11 @@ func embedItemCards(cfg *Config) (int, []string) {
 				return nil
 			}
 			ownSCC := strings.TrimSpace(parseFrontmatterField(fm, "scc"))
-			newBody, n := spliceCards(body, ownSCC, cards)
+			containerDir := ""
+			if rel, rErr := filepath.Rel(cfg.DocsDir, path); rErr == nil {
+				containerDir = strings.TrimSuffix(filepath.ToSlash(rel), ".md")
+			}
+			newBody, n := spliceCards(body, ownSCC, containerDir, cards)
 			if n == 0 {
 				return nil
 			}

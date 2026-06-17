@@ -110,7 +110,7 @@ func TestSpliceCards(t *testing.T) {
 		// "U" intentionally absent — not card-able.
 	}
 
-	got, n := spliceCards(body, "x/class.censor", cards)
+	got, n := spliceCards(body, "x/class.censor", "", cards)
 	if n != 4 { // W, J, CO, M (P is descended, not carded)
 		t.Fatalf("spliced %d cards, want 4", n)
 	}
@@ -165,6 +165,28 @@ func TestSpliceCards(t *testing.T) {
 	}
 }
 
+func TestRebaseLinks(t *testing.T) {
+	// A companion card's links are relative to its own deep URL dir; when spliced
+	// into the shallower class page they must be rebased.
+	html := `<a href="../../../../movement/teleport/">x</a> <a href="../../../../rule/combat/ranged.md">y</a> <a href="#frag">f</a> <a href="https://x.io/">e</a>`
+	got := rebaseLinks(html, "Browse/monster/companion/beastheart/basilisk", "Browse/class/beastheart")
+	// teleport: leaf 4-up -> Browse/movement/teleport ; from container -> ../../movement/teleport/
+	if !strings.Contains(got, `href="../../movement/teleport/"`) {
+		t.Errorf("teleport not rebased: %s", got)
+	}
+	if !strings.Contains(got, `href="../../rule/combat/ranged.md"`) {
+		t.Errorf("ranged.md not rebased: %s", got)
+	}
+	// Anchor-only and external links are left untouched.
+	if !strings.Contains(got, `href="#frag"`) || !strings.Contains(got, `href="https://x.io/"`) {
+		t.Errorf("anchor/external altered: %s", got)
+	}
+	// Identical dirs: a no-op.
+	if rebaseLinks(html, "a/b", "a/b") != html {
+		t.Error("same-dir rebase should be a no-op")
+	}
+}
+
 func TestEmbedItemCards(t *testing.T) {
 	docs := t.TempDir()
 	browse := filepath.Join(docs, "Browse")
@@ -176,7 +198,10 @@ func TestEmbedItemCards(t *testing.T) {
 		}
 	}
 
-	leaf := "---\nname: Repent\nscc: x/feature.ability.censor.level-1/repent\ntype: ability\n---\n\n# Repent\n\n---\n\n<article class=\"sc-ability\">REPENT-CARD</article>\n"
+	// The leaf is at Browse/feature/ability/censor/level-1/repent (URL dir depth
+	// 6); its link is relative to that. Spliced into Browse/class/censor (depth
+	// 3) the link must be rebased.
+	leaf := "---\nname: Repent\nscc: x/feature.ability.censor.level-1/repent\ntype: ability\n---\n\n# Repent\n\n---\n\n<article class=\"sc-ability\"><a href=\"../../../../../rule/combat/ranged/\">ranged</a> REPENT-CARD</article>\n"
 	if err := os.WriteFile(filepath.Join(leafDir, "repent.md"), []byte(leaf), 0644); err != nil {
 		t.Fatal(err)
 	}
@@ -206,6 +231,11 @@ func TestEmbedItemCards(t *testing.T) {
 	gs := string(got)
 	if !strings.Contains(gs, "REPENT-CARD") {
 		t.Error("class page should contain the transcluded card")
+	}
+	// Link rebased from the leaf's depth-6 URL dir to the container's depth-3:
+	// both resolve to Browse/rule/combat/ranged, so from class/censor it is ../../rule/...
+	if !strings.Contains(gs, `href="../../rule/combat/ranged/"`) {
+		t.Errorf("transcluded link not rebased to container depth:\n%s", gs)
 	}
 	if strings.Contains(gs, "repent inlined markdown body") {
 		t.Error("inlined markdown should have been replaced")
