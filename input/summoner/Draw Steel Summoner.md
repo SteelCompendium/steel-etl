@@ -678,6 +678,7 @@ You aren't affected by excess [damage](scc:mcdm.heroes.v1/rule.damage/damage) af
 
 Additionally, you can use light armor [treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) and light weapon [treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) while you don't have a kit.
 
+<!-- --> 
 > **Minions and Treasures**
 >
 > [Treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in Draw Steel are typically worded for you to use, which might create ambiguity for a [summoner](scc:mcdm.summoner.v1/class/summoner) managing an army. You can use the following guidelines to ensure the treasures you come across in your adventures do what they were intended to do.
