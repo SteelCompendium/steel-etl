@@ -162,14 +162,20 @@ Both patterns: the child ability is parsed by `AbilityParser`, stored in `Parsed
 
 Blockquote headings (`> ######`) get context-aware tree levels (previous regular heading + 1, capped at 6) so they nest as proper children of their parent sections.
 
-**Callout suppression (`@type: callout | @owner: self|loose`).** A body-level blockquote
-tagged `<!-- @type: callout | @owner: loose -->` is incidental to the header it sits under
-(publisher whitespace fill); `stripLooseCallouts` (`internal/content/callout.go`) drops it
-from the **root body** of a `RenderSubtree` render only — so it disappears from that
-section's own narrow page but survives on broader, book-faithful pages (class/chapter). The
-hook is the `isRoot` flag in `nodeBody` (`render_subtree.go`). `@owner: self` callouts are
-never stripped; `@owner` is required (`validate` warns otherwise). The owner value space is
-open for a later coarser scope or SCC reference. Grammar: `ANNOTATION-GUIDE.md`; design:
+**Callout suppression + aside rendering (`@type: callout | @owner: self|loose`).** A
+body-level blockquote tagged `<!-- @type: callout | @owner: loose -->` is incidental to the
+header it sits under (publisher whitespace fill); `stripLooseCallouts`
+(`internal/content/callout.go`) drops it from the **root body** of a `RenderSubtree` render
+only (via the `isRoot` flag in `nodeBody`, `render_subtree.go`) — so it disappears from that
+section's own narrow page but is still present on broader pages (class/chapter), where the
+section is a descendant. `@owner: self` callouts are never stripped; `@owner` is required
+(`validate` warns otherwise). **Every feature page is card-rendered** (Browse leaf, Browse
+class, *and* Read chapter all run the `.sc-trait` builder — there is no book-faithful prose
+page), so a callout that survives into a card body is rendered as a recessed `.sc-callout`
+**aside** by `renderTraitCallout` (`internal/site/trait_cards.go`, detected via
+`content.IsCalloutComment`), not leaked as escaped comment/quote text. Styling:
+`v2/docs/stylesheets/steel-traits.css` (`.sc-callout*`). The `@owner` value space is open
+for a later coarser scope or SCC reference. Grammar: `ANNOTATION-GUIDE.md`; design:
 `docs/superpowers/specs/2026-06-17-callout-annotation-owner-suppression-design.md`.
 
 ## Card ⇄ data field parity
