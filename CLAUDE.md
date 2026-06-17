@@ -162,6 +162,16 @@ Both patterns: the child ability is parsed by `AbilityParser`, stored in `Parsed
 
 Blockquote headings (`> ######`) get context-aware tree levels (previous regular heading + 1, capped at 6) so they nest as proper children of their parent sections.
 
+**Callout suppression (`@type: callout | @owner: self|loose`).** A body-level blockquote
+tagged `<!-- @type: callout | @owner: loose -->` is incidental to the header it sits under
+(publisher whitespace fill); `stripLooseCallouts` (`internal/content/callout.go`) drops it
+from the **root body** of a `RenderSubtree` render only — so it disappears from that
+section's own narrow page but survives on broader, book-faithful pages (class/chapter). The
+hook is the `isRoot` flag in `nodeBody` (`render_subtree.go`). `@owner: self` callouts are
+never stripped; `@owner` is required (`validate` warns otherwise). The owner value space is
+open for a later coarser scope or SCC reference. Grammar: `ANNOTATION-GUIDE.md`; design:
+`docs/superpowers/specs/2026-06-17-callout-annotation-owner-suppression-design.md`.
+
 ## Card ⇄ data field parity
 
 Index/preview cards (`internal/site/cards.go`, `feature_index.go`, …) are
