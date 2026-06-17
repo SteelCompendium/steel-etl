@@ -26,6 +26,12 @@ type Config struct {
 	// SearchExclude lists sections where pages get search: exclude: true frontmatter
 	SearchExclude []string `yaml:"search_exclude"`
 
+	// EmbedCardSections lists section names (e.g. "Browse") whose container
+	// pages get embeddable items (abilities/features/traits/statblocks/
+	// featureblocks) replaced inline with their finished leaf cards
+	// (embed_cards.go). Empty means the default ["Browse"]. Site-only.
+	EmbedCardSections []string `yaml:"embed_card_sections,omitempty"`
+
 	// StaticContent is a directory whose contents are copied over docs (overrides)
 	StaticContent string `yaml:"static_content"`
 
