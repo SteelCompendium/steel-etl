@@ -221,3 +221,54 @@ func TestRenderSubtree_NilMapEmitsNoMarkers(t *testing.T) {
 		t.Error("heading should still render with a nil map")
 	}
 }
+
+func TestRenderSubtree_CalloutSuppression(t *testing.T) {
+	loose := "<!-- @type: callout | @owner: loose -->\n> **Incidental**\n> just landed here"
+	self := "<!-- @type: callout | @owner: self -->\n> **Alt Rule**\n> use this instead"
+
+	t.Run("loose callout stripped from root body", func(t *testing.T) {
+		sec := &parser.Section{
+			Heading: "Leader Formation", HeadingLevel: 4,
+			Annotation: map[string]string{"type": "feature"},
+			BodySource: "Feature text.\n\n" + loose,
+		}
+		got := RenderSubtree(sec, nil)
+		if strings.Contains(got, "Incidental") {
+			t.Errorf("loose callout should be stripped from root body, got:\n%s", got)
+		}
+		if !strings.Contains(got, "Feature text.") {
+			t.Errorf("feature text missing, got:\n%s", got)
+		}
+	})
+
+	t.Run("loose callout kept in descendant body", func(t *testing.T) {
+		parent := &parser.Section{
+			Heading: "Summoner", HeadingLevel: 2,
+			Annotation: map[string]string{"type": "class"},
+			BodySource: "Class intro.",
+			Children: []*parser.Section{
+				{
+					Heading: "Leader Formation", HeadingLevel: 4,
+					Annotation: map[string]string{"type": "feature"},
+					BodySource: "Feature text.\n\n" + loose,
+				},
+			},
+		}
+		got := RenderSubtree(parent, nil)
+		if !strings.Contains(got, "Incidental") {
+			t.Errorf("loose callout should survive in descendant body, got:\n%s", got)
+		}
+	})
+
+	t.Run("self callout kept in root body", func(t *testing.T) {
+		sec := &parser.Section{
+			Heading: "Some Rule", HeadingLevel: 4,
+			Annotation: map[string]string{"type": "feature"},
+			BodySource: "Rule text.\n\n" + self,
+		}
+		got := RenderSubtree(sec, nil)
+		if !strings.Contains(got, "Alt Rule") {
+			t.Errorf("self callout should be kept on its own page, got:\n%s", got)
+		}
+	})
+}

@@ -33,7 +33,7 @@ func RenderSubtree(section *parser.Section, sccBySection map[*parser.Section]str
 func renderSubtree(section *parser.Section, rootLevel int, sccBySection map[*parser.Section]string) string {
 	var parts []string
 
-	if body := nodeBody(section); body != "" {
+	if body := nodeBody(section, section.HeadingLevel == rootLevel); body != "" {
 		parts = append(parts, body)
 	}
 
@@ -62,11 +62,16 @@ func renderSubtree(section *parser.Section, rootLevel int, sccBySection map[*par
 
 // nodeBody returns a section's immediate body, un-blockquoted for ability
 // sections (whose statblocks are blockquoted in source), with any overflow
-// (7+ hash) heading demoted to bold.
-func nodeBody(section *parser.Section) string {
+// (7+ hash) heading demoted to bold. When isRoot is true (this section is the
+// page's own root, not a descendant), incidental `@owner: loose` callouts are
+// stripped — they belong to the section's broader context, not to its own page.
+func nodeBody(section *parser.Section, isRoot bool) string {
 	body := section.BodySource
 	if section.Type() == "ability" {
 		body = stripBlockquotePrefix(body)
+	}
+	if isRoot {
+		body = stripLooseCallouts(body)
 	}
 	return demoteOverflowHeadings(body)
 }
