@@ -222,6 +222,33 @@ Notes:
 ### Rivals-1st Echelon
 ```
 
+### Body-level directives
+
+Unlike every type above, some annotations sit **inside a section body** (before a
+block), not on a heading — they do not mint a section, entity, or SCC code.
+
+| @type | Use for | Required fields |
+|-------|---------|-----------------|
+| `callout` | A book callout (blockquote) whose visibility should depend on the page | `@owner` |
+
+```
+<!-- @type: callout | @owner: loose -->
+> **Minions and Treasures**
+> ...
+```
+
+`@owner` records what the callout semantically belongs to:
+
+- **`self`** — belongs to the immediate enclosing header (e.g. a rule that offers an
+  alternative override). **Always shown**, including on that header's own entity page.
+- **`loose`** — incidental; the publisher just placed it in available whitespace. **Hidden
+  on the section's own entity page** (the narrow Browse leaf), but still shown on broader,
+  book-faithful pages (the class page, the Read chapter).
+
+`@owner` is **required** on a callout — `validate` warns if it is missing or set to an
+unknown value. Untagged blockquotes are never affected. Design + render rule:
+`docs/superpowers/specs/2026-06-17-callout-annotation-owner-suppression-design.md`.
+
 ## Annotation Patterns
 
 ### Class section (Fury as example)
