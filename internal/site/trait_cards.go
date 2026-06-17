@@ -20,6 +20,8 @@ import (
 	"html"
 	"regexp"
 	"strings"
+
+	"github.com/SteelCompendium/steel-etl/internal/content"
 )
 
 var (
@@ -185,6 +187,8 @@ func renderTraitBody(intro string, children []*traitNode) (body string, leadPros
 			b.WriteString(renderTraitList(tp))
 		case "table":
 			b.WriteString(renderTraitTable(tp))
+		case "callout":
+			b.WriteString(renderTraitCallout(tp))
 		case "leadin":
 			fmt.Fprintf(&b, "<p class=\"sc-trait__leadin\"><span class=\"sc-trait__dia\"></span>%s</p>\n", traitInline(collapseLines(tp)))
 		case "benefit", "drawback":
@@ -215,6 +219,8 @@ func renderTraitBody(intro string, children []*traitNode) (body string, leadPros
 // classifyTraitBlock buckets one intro paragraph block.
 func classifyTraitBlock(tp string) string {
 	switch {
+	case isCalloutBlock(tp):
+		return "callout"
 	case isItalicPara(tp):
 		return "flavor"
 	case isTableBlock(tp):
@@ -233,6 +239,76 @@ func classifyTraitBlock(tp string) string {
 	default:
 		return "text"
 	}
+}
+
+// calloutTitleRe pulls the bold title from a callout's first de-quoted line.
+var calloutTitleRe = regexp.MustCompile(`^\*\*(.+?)\*\*$`)
+
+// isCalloutBlock reports whether a body block is a `@type: callout` annotation
+// comment followed by its blockquote (the comment is the first non-blank line).
+func isCalloutBlock(tp string) bool {
+	for _, ln := range strings.Split(tp, "\n") {
+		t := strings.TrimSpace(ln)
+		if t == "" {
+			continue
+		}
+		return content.IsCalloutComment(t)
+	}
+	return false
+}
+
+// renderTraitCallout renders a `@type: callout` block as a recessed `.sc-callout`
+// aside. It drops the annotation comment, strips the leading `>` blockquote markers,
+// takes the first **bold** line as the title, and renders the remaining blocks
+// (paragraphs + bullet lists) as the aside body — so callout content reads as a
+// proper sidebar instead of leaking comment/quote markers as escaped text.
+func renderTraitCallout(block string) string {
+	// Drop the annotation comment line(s); de-blockquote the remainder.
+	var md []string
+	for _, ln := range strings.Split(block, "\n") {
+		t := strings.TrimSpace(ln)
+		if content.IsCalloutComment(t) {
+			continue
+		}
+		t = strings.TrimPrefix(t, ">")
+		t = strings.TrimPrefix(t, " ")
+		md = append(md, t)
+	}
+	body := strings.TrimSpace(strings.Join(md, "\n"))
+
+	var title string
+	var rest []string
+	titleTaken := false
+	for _, blk := range paraSplitRe.Split(body, -1) {
+		tb := strings.TrimSpace(blk)
+		if tb == "" {
+			continue
+		}
+		if !titleTaken {
+			titleTaken = true
+			if m := calloutTitleRe.FindStringSubmatch(tb); m != nil {
+				title = m[1]
+				continue
+			}
+		}
+		rest = append(rest, tb)
+	}
+
+	var b strings.Builder
+	b.WriteString("<aside class=\"sc-callout\" data-action=\"callout\">\n")
+	if title != "" {
+		b.WriteString("<div class=\"sc-callout__title\"><span class=\"sc-callout__dia\"></span>" + traitInline(title) + "</div>\n")
+	}
+	b.WriteString("<div class=\"sc-callout__body\">\n")
+	for _, blk := range rest {
+		if isListBlock(blk) {
+			b.WriteString(renderTraitList(blk))
+		} else {
+			b.WriteString("<p>" + traitInline(collapseLines(blk)) + "</p>\n")
+		}
+	}
+	b.WriteString("</div>\n</aside>\n")
+	return b.String()
 }
 
 // isTraitLeadin reports whether a prose paragraph is the "You gain the following

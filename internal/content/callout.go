@@ -38,6 +38,13 @@ type CalloutAnnotation struct {
 	OwnerKnown bool // Owner is in calloutKnownOwners
 }
 
+// IsCalloutComment reports whether a line is a `@type: callout` annotation comment
+// (any @owner). The site card builder uses this to render a surviving callout block
+// as an aside instead of leaking its comment/blockquote markers as text.
+func IsCalloutComment(line string) bool {
+	return calloutCommentLineRe.MatchString(strings.TrimSpace(line))
+}
+
 // isLooseCalloutComment reports whether a single line is a callout comment with
 // @owner: loose.
 func isLooseCalloutComment(line string) bool {

@@ -317,3 +317,39 @@ b body`
 		t.Errorf("B should be a leaf sibling of A")
 	}
 }
+
+// A callout block embedded in a feature body must render as a recessed
+// `.sc-callout` aside — never leak its `<!--` comment or `>` blockquote markers
+// as escaped text in a lead-in paragraph (the bug on the class/chapter pages).
+func TestRenderTraitCard_CalloutBecomesAside(t *testing.T) {
+	fm := "class: summoner\nname: Leader Formation\ntype: feature"
+	body := "\nYou aren't affected by excess damage.\n\n" +
+		"<!-- @type: callout | @owner: loose -->\n" +
+		"> **Minions and Treasures**\n" +
+		">\n" +
+		"> [Treasures](../x.md) are worded for you to use.\n" +
+		">\n" +
+		"> - First guideline.\n" +
+		"> - Second guideline.\n"
+	got := renderTraitCard(fm, body)
+
+	if !strings.Contains(got, `<aside class="sc-callout"`) {
+		t.Errorf("callout should render as an .sc-callout aside\n%s", got)
+	}
+	if !strings.Contains(got, "Minions and Treasures") {
+		t.Errorf("callout title missing\n%s", got)
+	}
+	if strings.Contains(got, "&lt;!--") || strings.Contains(got, "@type: callout") {
+		t.Errorf("callout comment must not leak as text\n%s", got)
+	}
+	if strings.Contains(got, "&gt;") {
+		t.Errorf("blockquote markers must not leak as escaped text\n%s", got)
+	}
+	if !strings.Contains(got, "<li>First guideline.</li>") {
+		t.Errorf("callout body list should render as <ul>/<li>\n%s", got)
+	}
+	// The feature's own prose still renders normally.
+	if !strings.Contains(got, "You aren&#39;t affected by excess damage.") {
+		t.Errorf("feature prose missing\n%s", got)
+	}
+}
