@@ -6,6 +6,7 @@
   "role": "Support",
   "roleKey": "support",
   "ev": "4",
+  "cost": "",
   "defenses": [
     {
       "l": "Size",

@@ -80,7 +80,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 	},
 	"statblock": {
 		"name": true, "type": true, "level": true, "role": true,
-		"organization": true, "keywords": true, "ev": true, "stamina": true,
+		"organization": true, "keywords": true, "ev": true, "cost": true, "stamina": true,
 		"immunities": true, "weaknesses": true, "speed": true, "movement": true,
 		"size": true, "stability": true, "free_strike": true,
 		"might": true, "agility": true, "reason": true, "intuition": true, "presence": true,

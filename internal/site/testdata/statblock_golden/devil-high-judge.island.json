@@ -6,6 +6,7 @@
   "role": "Leader",
   "roleKey": "leader",
   "ev": "32",
+  "cost": "",
   "defenses": [
     {
       "l": "Size",

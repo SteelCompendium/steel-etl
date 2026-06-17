@@ -52,6 +52,75 @@ func TestParseStatGridEscapedPipeStamina(t *testing.T) {
 	}
 }
 
+// summonerCostGrids exercise the Summoner-book header column layout (canonical,
+// post column-fix): the trailing cell holds an in-play summon cost ("N essence …",
+// "N Malice …") rather than an Encounter Value, so it lands in `cost`, not `ev`.
+// Rivals keep a real "EV …" cell, which must still resolve to `ev` (not `cost`).
+func TestParseStatGridCostVsEV(t *testing.T) {
+	tests := []struct {
+		name     string
+		header   string
+		wantEV   string
+		wantCost string
+		wantOrg  string
+		wantRole string
+		wantLvl  int
+		wantKW   []string
+	}{
+		{
+			name:     "summoner minion essence cost",
+			header:   "| Abyssal, Demon | - | - | Minion Brute | 3 essence for two minions |",
+			wantCost: "3 essence for two minions",
+			wantOrg:  "Minion", wantRole: "Brute",
+			wantKW: []string{"Abyssal", "Demon"},
+		},
+		{
+			name:     "rival keeps EV",
+			header:   "| Humanoid, Rival | - | Level 2 | Elite Controller | EV 16 |",
+			wantEV:   "16",
+			wantOrg:  "Elite", wantRole: "Controller", wantLvl: 2,
+			wantKW: []string{"Humanoid", "Rival"},
+		},
+		{
+			name:     "retainer has neither",
+			header:   "| Devil, Infernal | - | Level 1 | Retainer Controller | - |",
+			wantOrg:  "Retainer", wantRole: "Controller", wantLvl: 1,
+			wantKW: []string{"Devil", "Infernal"},
+		},
+		{
+			name:     "rival minion malice cost",
+			header:   "| Undead | - | - | Minion Defender | 2 Malice for two minions |",
+			wantCost: "2 Malice for two minions",
+			wantOrg:  "Minion", wantRole: "Defender",
+			wantKW: []string{"Undead"},
+		},
+	}
+	for _, tc := range tests {
+		t.Run(tc.name, func(t *testing.T) {
+			grid := tc.header + "\n|:-:|:-:|:-:|:-:|:-:|\n"
+			got := parseStatGrid(grid).header
+			if got.ev != tc.wantEV {
+				t.Errorf("ev: got %q, want %q", got.ev, tc.wantEV)
+			}
+			if got.cost != tc.wantCost {
+				t.Errorf("cost: got %q, want %q", got.cost, tc.wantCost)
+			}
+			if got.organization != tc.wantOrg {
+				t.Errorf("org: got %q, want %q", got.organization, tc.wantOrg)
+			}
+			if got.role != tc.wantRole {
+				t.Errorf("role: got %q, want %q", got.role, tc.wantRole)
+			}
+			if got.level != tc.wantLvl {
+				t.Errorf("level: got %d, want %d", got.level, tc.wantLvl)
+			}
+			if !reflect.DeepEqual(got.keywords, tc.wantKW) {
+				t.Errorf("keywords: got %v, want %v", got.keywords, tc.wantKW)
+			}
+		})
+	}
+}
+
 const cursespitterFeatures = "" +
 	"> 🏹 **Eye of Surlach (Signature Ability)**\n" +
 	">\n" +

@@ -96,6 +96,12 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	if grid.header.ev != "" {
 		fm["ev"] = grid.header.ev
 	}
+	// Non-EV summon cost (Summoner book) — kept distinct from ev so consumers know
+	// whether the value is an Encounter Value or a gametime cost. Cleared for
+	// fixtures in applyFixtureGrid.
+	if grid.header.cost != "" {
+		fm["cost"] = grid.header.cost
+	}
 
 	// String labels.
 	for label, key := range map[string]string{
@@ -332,6 +338,7 @@ var (
 // header parse derives from the first grid cell.
 func applyFixtureGrid(fm map[string]any, body string) {
 	delete(fm, "keywords")
+	delete(fm, "cost") // a fixture's 2-col grid has no summon cost cell
 
 	for _, line := range strings.Split(body, "\n") {
 		t := strings.TrimSpace(line)

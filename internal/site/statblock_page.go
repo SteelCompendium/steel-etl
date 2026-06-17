@@ -82,6 +82,7 @@ type sbIsland struct {
 	Role            string      `json:"role"`
 	RoleKey         string      `json:"roleKey"`
 	EV              string      `json:"ev"`
+	Cost            string      `json:"cost"`
 	Defenses        []sbLV      `json:"defenses"`
 	Meta            sbMeta      `json:"meta"`
 	Characteristics []sbChar    `json:"characteristics"`
@@ -181,6 +182,7 @@ func buildStatblockIsland(fm, body string) sbIsland {
 		Role:     roleDisplay,
 		RoleKey:  roleKey,
 		EV:       strings.TrimSpace(parseFrontmatterField(fm, "ev")),
+		Cost:     strings.TrimSpace(parseFrontmatterField(fm, "cost")),
 		Defenses: []sbLV{
 			{L: "Size", V: orDash(parseFrontmatterField(fm, "size"))},
 			{L: "Speed", V: orDash(parseFrontmatterField(fm, "speed"))},
