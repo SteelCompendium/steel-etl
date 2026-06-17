@@ -21,15 +21,24 @@ func TestLeafCard(t *testing.T) {
 	// A card-able leaf as buildSection writes it: frontmatter + injected H1
 	// + hr + the finished card HTML.
 	ability := "---\nname: Repent\nscc: x/feature.ability.censor.level-1/repent\ntype: ability\n---\n\n# Repent\n\n---\n\n<article class=\"sc-ability\">REPENT CARD</article>"
-	scc, card, ok := leafCard(ability)
+	scc, entry, ok := leafCard(ability)
 	if !ok {
 		t.Fatal("expected card-able ability leaf")
 	}
 	if scc != "x/feature.ability.censor.level-1/repent" {
 		t.Errorf("scc = %q", scc)
 	}
-	if card != `<article class="sc-ability">REPENT CARD</article>` {
-		t.Errorf("card = %q (H1/hr not stripped?)", card)
+	if entry.html != `<article class="sc-ability">REPENT CARD</article>` {
+		t.Errorf("card = %q (H1/hr not stripped?)", entry.html)
+	}
+	if entry.standalone {
+		t.Error("ability is a recursive-container type, not standalone")
+	}
+
+	// A statblock leaf is card-able AND standalone (a feature card can't hold it).
+	statblock := "---\nname: Ensnarer\nscc: x/monster.minion.summoner.demon.statblock/ensnarer\ntype: statblock\n---\n\n# Ensnarer\n\n---\n\n<div class=\"sb-wrap\">SB</div>"
+	if _, e, ok := leafCard(statblock); !ok || !e.standalone {
+		t.Errorf("statblock should be card-able + standalone (ok=%v standalone=%v)", ok, e.standalone)
 	}
 
 	// A non-card-able type (a class container page) is rejected.
@@ -76,22 +85,34 @@ func TestSpliceCards(t *testing.T) {
 		"",
 		"unknown body",
 		"",
+		`### Portfolio {data-scc="P"}`,
+		"",
+		"portfolio flavor prose",
+		"",
+		"#### Demon Signature Minion",
+		"",
+		`##### Ensnarer {data-scc="M"}`,
+		"",
+		"ensnarer inlined statblock markdown",
+		"",
 		`### Censor Order {data-scc="CO"}`,
 		"",
 		"order inlined body",
 	}, "\n")
 
-	cards := map[string]string{
-		"W":  "<section>WRATH-CARD</section>",
-		"J":  "<section>JUDGMENT-CARD</section>",
-		"CO": "<section>ORDER-CARD</section>",
-		// "JA" intentionally absent — it is swallowed under J.
+	cards := map[string]cardEntry{
+		"W":  {html: "<section>WRATH-CARD</section>"},
+		"J":  {html: "<section>JUDGMENT-CARD</section>"},
+		"JA": {html: "<section>JUDGMENT-ABILITY-CARD</section>"}, // present, but swallowed under J (recursive feature card already holds it)
+		"CO": {html: "<section>ORDER-CARD</section>"},
+		"P":  {html: "<section>PORTFOLIO-CARD</section>"},        // a feature whose sub-tree holds a standalone statblock
+		"M":  {html: "<div>ENSNARER-SB</div>", standalone: true}, // minion statblock
 		// "U" intentionally absent — not card-able.
 	}
 
 	got, n := spliceCards(body, "x/class.censor", cards)
-	if n != 3 {
-		t.Fatalf("spliced %d cards, want 3", n)
+	if n != 4 { // W, J, CO, M (P is descended, not carded)
+		t.Fatalf("spliced %d cards, want 4", n)
 	}
 
 	// Structural headings + page body preserved.
@@ -110,10 +131,12 @@ func TestSpliceCards(t *testing.T) {
 			t.Errorf("missing kept heading/card %q", keep)
 		}
 	}
-	// Inlined markdown bodies of replaced items are gone (swallowed).
+	// Inlined markdown bodies of replaced items are gone (swallowed). The nested
+	// ability under Judgment is swallowed and NOT separately carded (no dup).
 	for _, gone := range []string{
 		"wrath inlined body", "combat sub body", "#### Wrath in Combat",
-		"ability inlined body", `#### Judgment {data-scc="JA"}`, "order inlined body",
+		"ability inlined body", `#### Judgment {data-scc="JA"}`, "JUDGMENT-ABILITY-CARD",
+		"order inlined body",
 	} {
 		if strings.Contains(got, gone) {
 			t.Errorf("inlined body %q should have been swallowed", gone)
@@ -122,6 +145,23 @@ func TestSpliceCards(t *testing.T) {
 	// Unknown (non-card-able) heading + its body left untouched.
 	if !strings.Contains(got, `### Unknown {data-scc="U"}`) || !strings.Contains(got, "unknown body") {
 		t.Error("non-card-able heading must be left intact with its body")
+	}
+	// Portfolio (a feature with a standalone statblock descendant) is NOT carded
+	// monolithically — it is descended so the inner statblock gets its own card.
+	if strings.Contains(got, "PORTFOLIO-CARD") {
+		t.Error("Portfolio should be descended, not carded (would hide its minion statblock)")
+	}
+	for _, keep := range []string{
+		`### Portfolio {data-scc="P"}`, "portfolio flavor prose",
+		"#### Demon Signature Minion", `##### Ensnarer {data-scc="M"}`, "ENSNARER-SB",
+	} {
+		if !strings.Contains(got, keep) {
+			t.Errorf("descend-mode should keep %q", keep)
+		}
+	}
+	// The minion statblock's own inlined markdown is swallowed by ITS card.
+	if strings.Contains(got, "ensnarer inlined statblock markdown") {
+		t.Error("statblock inlined markdown should be replaced by its card")
 	}
 }
 

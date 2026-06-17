@@ -28,7 +28,8 @@ func embedCardSections(cfg *Config) []string {
 // cardableType is the set of frontmatter `type` values whose leaf page body is
 // a finished card eligible for inline transclusion. Mirrors the leaf transforms
 // in buildSection (ability_cards.go: ability/feature/trait; statblock_card.go:
-// statblock; featureblock_page.go: featureblock/dynamic-terrain).
+// statblock; featureblock_page.go: featureblock/dynamic-terrain;
+// companion_statblock.go: feature-group → the beastheart companion .sb-wrap).
 var cardableType = map[string]bool{
 	"ability":         true,
 	"feature":         true,
@@ -36,25 +37,48 @@ var cardableType = map[string]bool{
 	"statblock":       true,
 	"featureblock":    true,
 	"dynamic-terrain": true,
+	"feature-group":   true,
 }
 
-// leafCard extracts a card-able leaf page's scc code and its card HTML (the file
-// body with the injected "# Name\n\n---\n\n" head stripped). ok=false for pages
-// whose type is not card-able or that lack an scc.
-func leafCard(content string) (scc, card string, ok bool) {
+// standaloneType is the subset of card-able types whose card is NOT reproduced
+// by a recursive feature/trait card (those are frontmatter-driven: statblock,
+// featureblock, companion). A recursive feature card embeds its feature/ability
+// descendants but never these, so a standalone item must get its own card and
+// must never be swallowed by an ancestor feature — see spliceCards. Summoner
+// minions (type statblock nested under a feature) are the motivating case.
+var standaloneType = map[string]bool{
+	"statblock":       true,
+	"featureblock":    true,
+	"dynamic-terrain": true,
+	"feature-group":   true,
+}
+
+// cardEntry is a leaf's finished card HTML plus whether it is a standalone card
+// (statblock/featureblock/feature-group) that an ancestor feature card cannot
+// contain.
+type cardEntry struct {
+	html       string
+	standalone bool
+}
+
+// leafCard extracts a card-able leaf page's scc code and its card entry (the
+// file body with the injected "# Name\n\n---\n\n" head stripped). ok=false for
+// pages whose type is not card-able or that lack an scc.
+func leafCard(content string) (scc string, entry cardEntry, ok bool) {
 	fm, body := splitFrontmatter(content)
 	if fm == "" {
-		return "", "", false
+		return "", cardEntry{}, false
 	}
-	if !cardableType[strings.TrimSpace(parseFrontmatterField(fm, "type"))] {
-		return "", "", false
+	t := strings.TrimSpace(parseFrontmatterField(fm, "type"))
+	if !cardableType[t] {
+		return "", cardEntry{}, false
 	}
 	scc = strings.TrimSpace(parseFrontmatterField(fm, "scc"))
 	if scc == "" {
-		return "", "", false
+		return "", cardEntry{}, false
 	}
-	card = strings.TrimSpace(stripLeadingHeading(strings.TrimLeft(body, "\n")))
-	return scc, card, true
+	html := strings.TrimSpace(stripLeadingHeading(strings.TrimLeft(body, "\n")))
+	return scc, cardEntry{html: html, standalone: standaloneType[t]}, true
 }
 
 // dataSCCHeadingRe matches an ATX heading carrying a {data-scc="<code>"}
@@ -74,13 +98,28 @@ func headingLevel(line string) int {
 	return 0
 }
 
+// subtreeHasStandalone reports whether any {data-scc} heading in lines maps to a
+// standalone card (statblock/featureblock/feature-group) in cards.
+func subtreeHasStandalone(lines []string, cards map[string]cardEntry) bool {
+	for _, line := range lines {
+		if m := dataSCCHeadingRe.FindStringSubmatch(line); m != nil {
+			if e, ok := cards[m[2]]; ok && e.standalone {
+				return true
+			}
+		}
+	}
+	return false
+}
+
 // spliceCards rewrites a container page body: for every {data-scc} heading whose
 // code is a card-able leaf in cards (and is not the page's own code), the
 // heading is kept and its inlined sub-tree (down to the next heading of level <=
-// its own) is replaced by the leaf card. Headings whose code is absent, or that
-// carry no code, are left intact and descended into. Returns the new body and
-// the number of cards spliced.
-func spliceCards(body, ownSCC string, cards map[string]string) (string, int) {
+// its own) is replaced by the leaf card. Two cases are left intact and descended
+// into instead: a heading whose code is absent/own, and a recursive container
+// (feature/ability/trait) whose sub-tree contains a standalone card its leaf
+// card cannot reproduce — descending lets that inner statblock/featureblock get
+// its own card. Returns the new body and the number of cards spliced.
+func spliceCards(body, ownSCC string, cards map[string]cardEntry) (string, int) {
 	lines := strings.Split(body, "\n")
 	out := make([]string, 0, len(lines))
 	spliced := 0
@@ -92,22 +131,31 @@ func spliceCards(body, ownSCC string, cards map[string]string) (string, int) {
 			continue
 		}
 		level, code := len(m[1]), m[2]
-		card, ok := cards[code]
+		entry, ok := cards[code]
 		if !ok || code == ownSCC {
 			out = append(out, line) // keep + descend; children may be card-able
 			continue
 		}
-		// Card-able: keep the heading, drop its inlined sub-tree, insert the card.
-		out = append(out, line, "", card, "")
-		spliced++
-		// Skip the swallowed sub-tree: every following line up to (not incl.) the
-		// next heading whose level <= this heading's level.
-		for i+1 < len(lines) {
-			if lv := headingLevel(lines[i+1]); lv > 0 && lv <= level {
+		// Sub-tree extent: from the next line up to (not incl.) the next heading
+		// whose level <= this heading's level.
+		j := i + 1
+		for j < len(lines) {
+			if lv := headingLevel(lines[j]); lv > 0 && lv <= level {
 				break
 			}
-			i++
+			j++
 		}
+		// A recursive container whose sub-tree holds a standalone item cannot be
+		// monolithically carded (its leaf card omits that item) — descend so the
+		// inner item gets its own card.
+		if !entry.standalone && subtreeHasStandalone(lines[i+1:j], cards) {
+			out = append(out, line)
+			continue
+		}
+		// Keep the heading, drop the inlined sub-tree, insert the card.
+		out = append(out, line, "", entry.html, "")
+		spliced++
+		i = j - 1
 	}
 	return strings.Join(out, "\n"), spliced
 }
@@ -127,8 +175,8 @@ func embedItemCards(cfg *Config) (int, []string) {
 
 	var errs []string
 
-	// Pass A: scc -> card HTML, from every card-able leaf page.
-	cards := map[string]string{}
+	// Pass A: scc -> card entry, from every card-able leaf page.
+	cards := map[string]cardEntry{}
 	for _, dir := range dirs {
 		filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
 			if err != nil || info.IsDir() || !strings.HasSuffix(path, ".md") {
@@ -139,8 +187,8 @@ func embedItemCards(cfg *Config) (int, []string) {
 				errs = append(errs, fmt.Sprintf("embed read %s: %v", path, rErr))
 				return nil
 			}
-			if scc, card, ok := leafCard(string(data)); ok {
-				cards[scc] = card
+			if scc, entry, ok := leafCard(string(data)); ok {
+				cards[scc] = entry
 			}
 			return nil
 		})
