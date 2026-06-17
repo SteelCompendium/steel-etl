@@ -796,7 +796,7 @@ Select two of the following [signature minions](scc:mcdm.summoner.v1/feature.sum
 
 This vaguely humanoid form is warped and distorted by a demon nestled inside them. They extend long tongues from multiple orifices to drag victims in close.
 
-| Ensnarer | Abyssal, Demon | Signature Minion Brute | - | 1 essence per minion summoned |
+| Abyssal, Demon | - | - | Signature Minion Brute | 1 essence per minion summoned |
 |:--------:|:--------------:|:----------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -815,7 +815,7 @@ This vaguely humanoid form is warped and distorted by a demon nestled inside the
 
 The rasquine are skulking demons that shimmer in the light. They teleport into position before biting the necks of their prey.
 
-| Rasquine | Abyssal, Demon | Signature Minion Ambusher | - | 1 essence per minion summoned |
+| Abyssal, Demon | - | - | Signature Minion Ambusher | 1 essence per minion summoned |
 |:--------:|:--------------:|:-------------------------:|:-:|:-----------------------------:|
 | **1S**<br>Size | **4**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **—**<br>Immunity | **Teleport**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -834,7 +834,7 @@ The rasquine are skulking demons that shimmer in the light. They teleport into p
 
 Razors appear to be a diminutive variant of the ruinant demon. Their bodies are swift, tumbling mounds of scarred flesh and deadly claws.
 
-| Razor | Abyssal, Demon | Signature Minion Harrier | - | 1 essence per minion summoned |
+| Abyssal, Demon | - | - | Signature Minion Harrier | 1 essence per minion summoned |
 |:-----:|:--------------:|:------------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -858,7 +858,7 @@ Choose two of the following minions. You can use Call Forth to summon the listed
 
 These minor demons resemble larger pitlings. They can spit a nerve-numbing phlegm at long distance that makes it easy to catch their next meal.
 
-| Archer Spittlich | Abyssal, Demon | Minion Artillery | - | 3 essence for two minions |
+| Abyssal, Demon | - | - | Minion Artillery | 3 essence for two minions |
 |:----------------:|:--------------:|:----------------:|:-:|:-------------------------:|
 | **1S**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **2**<br>Stability | **5**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Poison**<br>Free Strike Damage Type |
@@ -877,7 +877,7 @@ These minor demons resemble larger pitlings. They can spit a nerve-numbing phleg
 
 Ensnarers knot and twist their bodies together to form heaving, heavy musilexes. They're compelled to drag everything in toward their body.
 
-| Fanged Musilex | Abyssal, Demon | Minion Brute | - | 3 essence for two minions |
+| Abyssal, Demon | - | - | Minion Brute | 3 essence for two minions |
 |:--------------:|:--------------:|:------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **6**<br>Speed | **6 \| 6**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -896,7 +896,7 @@ Ensnarers knot and twist their bodies together to form heaving, heavy musilexes.
 
 The bengrul is an undulating heap of glass and flesh. They shatter pieces of themselves to disrupt senses and inflict grisly wounds on their prey.
 
-| Twisted Bengrul | Abyssal, Demon | Minion Hexer | - | 3 essence for two minions |
+| Abyssal, Demon | - | - | Minion Hexer | 3 essence for two minions |
 |:---------------:|:--------------:|:------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Psychic**<br>Free Strike Damage Type |
@@ -931,7 +931,7 @@ You gain the elemental mote and can choose one of the following [signature minio
 
 This near-pure form of autonomous essence just barely maintains their form. They can shift their nature to match their surroundings.
 
-| Elemental Mote | Elemental | Signature Minion Hexer | - | 1 essence per minion summoned |
+| Elemental | - | - | Signature Minion Hexer | 1 essence per minion summoned |
 |:--------------:|:---------:|:----------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -952,7 +952,7 @@ This near-pure form of autonomous essence just barely maintains their form. They
 
 The gales are twisting ribbons of cloud and debris endlessly dancing in place. They disrupt the air and allow their allies to move freely.
 
-| Brisk Gale | Elemental (Air) | Signature Minion Harrier | - | 1 essence per minion summoned |
+| Elemental (Air) | - | - | Signature Minion Harrier | 1 essence per minion summoned |
 |:----------:|:---------------:|:------------------------:|:-:|:-----------------------------:|
 | **1S**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Sonic R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
@@ -971,7 +971,7 @@ The gales are twisting ribbons of cloud and debris endlessly dancing in place. T
 
 A fire plume burns so bright that their true shape is hard to discern from the flames. They sputter and spit motes of fire in high arcs.
 
-| Fire Plume | Elemental (Fire) | Signature Minion Artillery | - | 1 essence per minion summoned |
+| Elemental (Fire) | - | - | Signature Minion Artillery | 1 essence per minion summoned |
 |:----------:|:----------------:|:--------------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **Fire R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
@@ -990,7 +990,7 @@ A fire plume burns so bright that their true shape is hard to discern from the f
 
 These massive clods of animated stone roll upon smaller piles of rocks that could be perceived as limbs. Walking boulders are useful for taking up space and forming barricades.
 
-| Walking Boulder | Elemental (Earth) | Signature Minion Defender | - | 1 essence per minion summoned |
+| Elemental (Earth) | - | - | Signature Minion Defender | 1 essence per minion summoned |
 |:---------------:|:-----------------:|:-------------------------:|:-:|:-----------------------------:|
 | **2**<br>Size | **4**<br>Speed | **3**<br>Stamina | **R**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1018,7 +1018,7 @@ Choose two of the following minions. You can use Call Forth to summon the listed
 
 The crux is a curtain of billowing hot ash with an avian head. They cover their victims in a burning cloak of charcoal and soot.
 
-| Crux of Ash | Elemental (Fire, Air) | Minion Ambusher | - | 3 essence for two minions |
+| Elemental (Fire, Air) | - | - | Minion Ambusher | 3 essence for two minions |
 |:-----------:|:---------------------:|:---------------:|:-:|:-------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **0**<br>Stability | **5**<br>Free Strike |
 | **Fire R, Sonic R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1037,7 +1037,7 @@ The crux is a curtain of billowing hot ash with an avian head. They cover their 
 
 This elemental is a long, serpentine creature of heated rock. Flows of magma drool trails of lava from their fangs after biting their prey.
 
-| Flow of Magma | Elemental (Fire, Earth) | Minion Harrier | - | 3 essence for two minions |
+| Elemental (Fire, Earth) | - | - | Minion Harrier | 3 essence for two minions |
 |:-------------:|:-----------------------:|:--------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **2**<br>Stability | **4**<br>Free Strike |
 | **Fire R**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
@@ -1066,7 +1066,7 @@ This elemental is a long, serpentine creature of heated rock. Flows of magma dro
 
 The desolations have vaguely humanoid sand forms with no legs. Their glass hose “arms” shift and bristle before firing high pressure streams of sand at their foes.
 
-| Desolation of Sand | Elemental (Air, Earth) | Minion Hexer | - | 3 essence for two minions |
+| Elemental (Air, Earth) | - | - | Minion Hexer | 3 essence for two minions |
 |:------------------:|:----------------------:|:------------:|:-:|:-------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **Sonic R**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1094,7 +1094,7 @@ Select two of the following [signature minions](scc:mcdm.summoner.v1/feature.sum
 
 These nixies are especially tiny. Their hair grows longer than their bodies and curls into reeds. The water soakreeds swim in tends to turn thick and cling to surfaces.
 
-| Nixie Soakreed | Fey | Signature Minion Controller | - | 1 essence per minion summoned |
+| Fey | - | - | Signature Minion Controller | 1 essence per minion summoned |
 |:--------------:|:---:|:---------------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1117,7 +1117,7 @@ These nixies are especially tiny. Their hair grows longer than their bodies and 
 
 The bellringers are glowing pixies that jingle as they fly. Historically, these pixies worked alongside bowman to ensure their arrows struck true.
 
-| Pixie Bellringer | Fey | Signature Minion Support | - | 1 essence per minion summoned |
+| Fey | - | - | Signature Minion Support | 1 essence per minion summoned |
 |:----------------:|:---:|:------------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1140,7 +1140,7 @@ The bellringers are glowing pixies that jingle as they fly. Historically, these 
 
 Dandeknights are sprite warriors whose dragonfly wingbeats emit a tonal drone. They're usually clad in tassels that shift color as they swing their weapons.
 
-| Sprite Dandeknight | Fey | Signature Minion Harrier | - | 1 essence per minion summoned |
+| Fey | - | - | Signature Minion Harrier | 1 essence per minion summoned |
 |:-----------------:|:---:|:------------------------:|:-:|:-----------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1168,7 +1168,7 @@ Choose two of the following minions. You can use Call Forth to summon the listed
 
 This pixie flies on a delicate array of vibrant flower petals for wings. The color drains from their wings as they call forth acid rain showers.
 
-| Pixie Hydrain | Fey | Minion Artillery | - | 3 essence for two minions |
+| Fey | - | - | Minion Artillery | 3 essence for two minions |
 |:-------------:|:---:|:----------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **0**<br>Stability | **5**<br>Free Strike |
 | **Acid R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Acid**<br>Free Strike Damage Type |
@@ -1197,7 +1197,7 @@ This pixie flies on a delicate array of vibrant flower petals for wings. The col
 
 Loftlillies lazily drift through the air in flower cups. They sip on toxic nectar to emit a powerful haze from their skin.
 
-| Pixie Loftlilly | Fey | Minion Controller | - | 3 essence for two minions |
+| Fey | - | - | Minion Controller | 3 essence for two minions |
 |:---------------:|:---:|:-----------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **0**<br>Stability | **4**<br>Free Strike |
 | **Poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Poison**<br>Free Strike Damage Type |
@@ -1216,7 +1216,7 @@ Loftlillies lazily drift through the air in flower cups. They sip on toxic necta
 
 The orchiguard is a sprite surrounded by a wheel of shields. They are usually crushed by the pressures of their own impenetrable defenses before ever being felled by enemy hands.
 
-| Sprite Orchiguard | Fey | Minion Defender | - | 3 essence for two minions |
+| Fey | - | - | Minion Defender | 3 essence for two minions |
 |:-----------------:|:---:|:---------------:|:-:|:-------------------------:|
 | **1S**<br>Size | **6**<br>Speed | **8 \| 8**<br>Stamina | **2**<br>Stability | **4**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1240,7 +1240,7 @@ Select two of the following [signature minions](scc:mcdm.summoner.v1/feature.sum
 
 Husks have stiff corpses that snap and crackle with each sudden movement. Corrosive breath endlessly billows from their slackjawed faces.
 
-| Husk | Undead | Signature Minion Defender | - | 1 essence per minion summoned |
+| Undead | - | - | Signature Minion Defender | 1 essence per minion summoned |
 |:----:|:------:|:-------------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **3**<br>Stamina | **1**<br>Stability | **1**<br>Free Strike |
 | **Damage 2, Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
@@ -1255,7 +1255,7 @@ Husks have stiff corpses that snap and crackle with each sudden movement. Corros
 
 The shrieker expresses their unending pain in a way that can be heard and felt for miles. A white-hot fire smolders within each of their sunken eye sockets.
 
-| Shrieker | Undead | Signature Minion Artillery | - | 1 essence per minion summoned |
+| Undead | - | - | Signature Minion Artillery | 1 essence per minion summoned |
 |:--------:|:------:|:---------------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **4**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
@@ -1274,7 +1274,7 @@ The shrieker expresses their unending pain in a way that can be heard and felt f
 
 These autonomous bone networks fall just short of replicating the structure they had in life. Skeleton bones are especially brittle and can splinter into huge shards when met with enough force.
 
-| Skeleton | Undead | Signature Minion Harrier | - | 1 essence per minion summoned |
+| Undead | - | - | Signature Minion Harrier | 1 essence per minion summoned |
 |:--------:|:------:|:-------------------------:|:-:|:-----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1294,7 +1294,7 @@ Choose two of the following minions. You can use Call Forth to summon the listed
 
 The grave knights are zombie warriors that continue to fight after death. Any blood spilled at a grave knight's hand runs pitch black.
 
-| Grave Knight | Undead | Minion Brute | - | 3 essence for two minions |
+| Undead | - | - | Minion Brute | 3 essence for two minions |
 |:------------:|:------:|:------------:|:-:|:-------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **6 \| 6**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1321,7 +1321,7 @@ The grave knights are zombie warriors that continue to fight after death. Any bl
 
 Shades are a form of umbral stalker that float free from any floor or surface. They can bend their appearance to completely vanish in the light.
 
-| Stalker Shade | Undead | Minion Ambusher | - | 3 essence for two minions |
+| Undead | - | - | Minion Ambusher | 3 essence for two minions |
 |:-------------:|:------:|:---------------:|:-:|:-------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
@@ -1340,7 +1340,7 @@ Shades are a form of umbral stalker that float free from any floor or surface. T
 
 These massive, animated ogre corpses still maintain their incredible grip strength. When a lumberer falls, they'll take anything within reach down with them.
 
-| Zombie Lumberer | Undead | Minion Defender | - | 3 essence for two minions |
+| Undead | - | - | Minion Defender | 3 essence for two minions |
 |:---------------:|:------:|:---------------:|:-:|:-------------------------:|
 | **2**<br>Size | **5**<br>Speed | **8 \| 8**<br>Stamina | **R**<br>Stability | **1**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1661,7 +1661,7 @@ Choose one of the following minions.
 
 A spewler's mouth makes up most of its size. They unleash torrents of acid and bile from their pitless stomachs before consuming their prey with bag-like maws.
 
-| Gushing Spewler | Abyssal, Demon | Minion Controller | - | 5 essence for three minions |
+| Abyssal, Demon | - | - | Minion Controller | 5 essence for three minions |
 |:---------------:|:--------------:|:-----------------:|:-:|:---------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Acid**<br>Free Strike Damage Type |
@@ -1684,7 +1684,7 @@ A spewler's mouth makes up most of its size. They unleash torrents of acid and b
 
 Chimors have no true shape; their bodies restructure and change endlessly. Pieces of the chimor demon snap off inside their prey, causing their bodies to also restructure from the inside out.
 
-| Hulking Chimor | Abyssal, Demon | Minion Defender | - | 5 essence for three minions |
+| Abyssal, Demon | - | - | Minion Defender | 5 essence for three minions |
 |:--------------:|:--------------:|:---------------:|:-:|:---------------------------:|
 | **2**<br>Size | **5**<br>Speed | **7 \| 7 \| 7**<br>Stamina | **3**<br>Stability | **3**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1707,7 +1707,7 @@ Chimors have no true shape; their bodies restructure and change endlessly. Piece
 
 The violents are lanky, oily bipeds with bright red flesh that contort and snap their bodies into unassuming objects. Their mimicry is particularly precise, to the point where it's unclear whether their victims die from the surprise or the violent transformation process first.
 
-| Violent | Abyssal, Demon | Minion Ambusher | - | 5 essence for three minions |
+| Abyssal, Demon | - | - | Minion Ambusher | 5 essence for three minions |
 |:-------:|:--------------:|:---------------:|:-:|:---------------------------:|
 | **1M**<br>Size | **7**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | - | **Holy 1**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
@@ -1735,7 +1735,7 @@ Choose one of the following minions.
 
 The silks are akin to baby spiders ballooning through the air on strands of webbing. They spin silk from their legs as they fly, eventually turning huge swaths of the environment into tangled web mazes.
 
-| Dancing Silk | Elemental (Earth, Air, Green) | Minion Controller | - | 5 essence for three minions |
+| Elemental (Earth, Air, Green) | - | - | Minion Controller | 5 essence for three minions |
 |:------------:|:-----------------------------:|:-----------------:|:-:|:---------------------------:|
 | **1T**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
 | **Poison R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1754,7 +1754,7 @@ The silks are akin to baby spiders ballooning through the air on strands of webb
 
 The manes of these equine sludge dwellers extend and hook into things like strong, fraying arms. This allows the principle of the swamp to either pull themselves onto dry land, or pull their prey into the dank depths.
 
-| Principle of the Swamp | Elemental (Green, Water, Rot) | Minion Brute | - | 5 essence for three minions |
+| Elemental (Green, Water, Rot) | - | - | Minion Brute | 5 essence for three minions |
 |:----------------------:|:-----------------------------:|:------------:|:-:|:---------------------------:|
 | **2**<br>Size | **4**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **R**<br>Stability | **4**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1773,7 +1773,7 @@ The manes of these equine sludge dwellers extend and hook into things like stron
 
 This elemental is a pure-white vulpine with six legs that freely sprints through the air. Their howls are telepathic, washing over the receivers with a strong chill and a wave of goosebumps.
 
-| Quiet of Snow | Elemental (Air, Rot, Water) | Minion Artillery | - | 5 essence for three minions |
+| Elemental (Air, Rot, Water) | - | - | Minion Artillery | 5 essence for three minions |
 |:-------------:|:---------------------------:|:----------------:|:-:|:---------------------------:|
 | **1S**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **Sonic R, Cold R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Cold**<br>Free Strike Damage Type |
@@ -1807,7 +1807,7 @@ Choose one of the following minions.
 
 Hemloches are spotted nixies whose long, wavy hair endlessly bobs and flows into the water surrounding them. Any sailor caught in a whirlpool created by hemloches knows that their ship won't survive the encounter.
 
-| Nixie Hemloche | Fey | Minion Hexer | - | 5 essence for three minions |
+| Fey | - | - | Minion Hexer | 5 essence for three minions |
 |:--------------:|:---:|:------------:|:-:|:---------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
 | **—**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **Lightning**<br>Free Strike Damage Type |
@@ -1830,7 +1830,7 @@ Hemloches are spotted nixies whose long, wavy hair endlessly bobs and flows into
 
 Foxglows are masked sprites that leave behind an evanescent trail of tiny glowing orbs as they fly. They beat their wings at a frequency that completely blocks out all nearby noise.
 
-| Sprite Foxglow | Fey | Minion Ambusher | - | 5 essence for three minions |
+| Fey | - | - | Minion Ambusher | 5 essence for three minions |
 |:--------------:|:---:|:---------------:|:-:|:---------------------------:|
 | **1T**<br>Size | **8**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **0**<br>Stability | **4**<br>Free Strike |
 | **Fire R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
@@ -1853,7 +1853,7 @@ Foxglows are masked sprites that leave behind an evanescent trail of tiny glowin
 
 The collective of blood-eyed pixie warriors that make up a rosenthall are also known as rosies. It's said that some rosenthall armies contain thousands of pixies and can span half the length of a wode.
 
-| Pixie Rosenthall | Fey, Swarm | Minion Harrier | - | 5 essence for three minions |
+| Fey, Swarm | - | - | Minion Harrier | 5 essence for three minions |
 |:----------------:|:----------:|:--------------:|:-:|:---------------------------:|
 | **2**<br>Size | **6**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **1**<br>Stability | **3**<br>Free Strike |
 | **—**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -1887,7 +1887,7 @@ Choose one of the following minions.
 
 The preserved dead, bound for eternal rest, know only violence when robbed of their future. Accursed mummies use their wrappings to bind others to the same fate.
 
-| Accursed Mummy | Mummy, Undead | Minion Hexer | - | 5 essence for three minions |
+| Mummy, Undead | - | - | Minion Hexer | 5 essence for three minions |
 |:--------------:|:-------------:|:------------:|:-:|:---------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **2**<br>Stability | **3**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **Fire 1**<br>Weakness | **Poison**<br>Free Strike Damage Type |
@@ -1916,7 +1916,7 @@ The preserved dead, bound for eternal rest, know only violence when robbed of th
 
 Mournlings are hulking amalgams of mismatched cadavers with tear-stained trenches where their cheeks used to be. Their crying shakes enemies to their bone and renders them struggling to move.
 
-| Ceaseless Mournling | Undead | Minion Controller | - | 5 essence for three minions |
+| Undead | - | - | Minion Controller | 5 essence for three minions |
 |:-------------------:|:------:|:-----------------:|:-:|:---------------------------:|
 | **2**<br>Size | **4**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **R**<br>Stability | **3**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
@@ -1939,7 +1939,7 @@ Mournlings are hulking amalgams of mismatched cadavers with tear-stained trenche
 
 Phase ghouls are bilocated undead caught between two different manifolds, rapidly flickering between them. They almost appear transparent save for their long, bright blue tongues that appears to lag behind their movements by a full second.
 
-| Phase Ghoul | Undead | Minion Harrier | - | 5 essence for three minions |
+| Undead | - | - | Minion Harrier | 5 essence for three minions |
 |:-----------:|:------:|:--------------:|:-:|:---------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
 | **Corruption R, Poison R**<br>Immunity | **Teleport**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -2188,7 +2188,7 @@ Choose one of the following minions.
 
 This cherubin creature is bloated and warped by demonic energy. The lights from their myriad eyes have all but gone out, now resembling pustules across their body.
 
-| Faded Blightling | Abyssal, Demon | Minion Support | - | 7 essence for two minions |
+| Abyssal, Demon | - | - | Minion Support | 7 essence for two minions |
 |:----------------:|:--------------:|:--------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **5**<br>Speed | **17 \| 17**<br>Stamina | **0**<br>Stability | **7**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | - | **Holy 1**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
@@ -2221,7 +2221,7 @@ This cherubin creature is bloated and warped by demonic energy. The lights from 
 
 The gorrre demons evoke features of rhino and orangutan while clad in heavy armor. They've been utilized as jail guards by devils, as few prisoners can ever hope to outrun a monster with unlimited endurance.
 
-| Gorrre | Abyssal, Demon | Minion Brute | - | 7 essence for two minions |
+| Abyssal, Demon | - | - | Minion Brute | 7 essence for two minions |
 |:------:|:--------------:|:------------:|:-:|:-------------------------:|
 | **2**<br>Size | **5**<br>Speed | **17 \| 17**<br>Stamina | **2**<br>Stability | **8**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -2244,7 +2244,7 @@ The gorrre demons evoke features of rhino and orangutan while clad in heavy armo
 
 It's difficult to identify the base nature of a vicisittante apart from an ever-changing mass of burning flesh. Any surface they touch immediately scars as the demon leaves parts of themselves behind.
 
-| Vicisittante | Abyssal, Demon | Minion Harrier | - | 7 essence for two minions |
+| Abyssal, Demon | - | - | Minion Harrier | 7 essence for two minions |
 |:------------:|:--------------:|:--------------:|:-:|:-------------------------:|
 | **2**<br>Size | **10**<br>Speed | **17 \| 17**<br>Stamina | **0**<br>Stability | **7**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Psychic**<br>Free Strike Damage Type |
@@ -2278,7 +2278,7 @@ Choose one of the following minions.
 
 Iron reavers are long, gnashing lines of centipede-like bladed legs. Their bodies endlessly shed metal shavings and hard sheets of iron as they move.
 
-| Iron Reaver | Elemental (Earth, Fire, Void) | Minion Harrier | - | 7 essence for three minions |
+| Elemental (Earth, Fire, Void) | - | - | Minion Harrier | 7 essence for three minions |
 |:-----------:|:-----------------------------:|:--------------:|:-:|:---------------------------:|
 | **1L**<br>Size | **6**<br>Speed | **10 \| 10 \| 10**<br>Stamina | **R**<br>Stability | **6**<br>Free Strike |
 | **Poison R**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -2301,7 +2301,7 @@ Iron reavers are long, gnashing lines of centipede-like bladed legs. Their bodie
 
 These faceless suits of armor have visible rivers of deep red blood flowing throughout their being. Their blood has a powerful pull to it, causing any open wounds nearby to rip deeper and leak toward the knight.
 
-| Knight of Blood | Elemental (Earth, Fire, Rot, Water) | Minion Controller | - | 7 essence for two minions |
+| Elemental (Earth, Fire, Rot, Water) | - | - | Minion Controller | 7 essence for two minions |
 |:---------------:|:-----------------------------------:|:-----------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **6**<br>Speed | **16 \| 16**<br>Stamina | **R**<br>Stability | **7**<br>Free Strike |
 | **Corruption R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
@@ -2320,7 +2320,7 @@ These faceless suits of armor have visible rivers of deep red blood flowing thro
 
 These elementals are blazing white avian-shaped beings that are nearly impossible to perceive directly. Between a light of the sun's talons is a massive glowing sword that can split the heaviest of defenses asunder.
 
-| Light of the Sun | Elemental (Air, Green, Fire, Void) | Minion Support | - | 7 essence for two minions |
+| Elemental (Air, Green, Fire, Void) | - | - | Minion Support | 7 essence for two minions |
 |:----------------:|:----------------------------------:|:--------------:|:-:|:-------------------------:|
 | **2**<br>Size | **6**<br>Speed | **17 \| 17**<br>Stamina | **0**<br>Stability | **7**<br>Free Strike |
 | **Corruption R, fire R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
@@ -2354,7 +2354,7 @@ Choose one of the following minions.
 
 Corallias are saltwater nixies with coarse, coral-like skin and curly hair with hooked ends. Their salty tears are used to hallow places of worship and ward off demons.
 
-| Nixie Corallia | Fey | Minion Support | - | 7 essence for two minions |
+| Fey | - | - | Minion Support | 7 essence for two minions |
 |:--------------:|:---:|:--------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **17 \| 17**<br>Stamina | **0**<br>Stability | **7**<br>Free Strike |
 | **Lightning R**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **Lightning**<br>Free Strike Damage Type |
@@ -2377,7 +2377,7 @@ Corallias are saltwater nixies with coarse, coral-like skin and curly hair with 
 
 The belladonix are found among the elite guard of fey monarchs and carry themselves like royalty. Their moth-like wings ooze with vibrant colors and are barbed; the poison within threatening to completely shift the reality of their victims.
 
-| Pixie Belladonix | Fey | Minion Artillery | - | 7 essence for two minions |
+| Fey | - | - | Minion Artillery | 7 essence for two minions |
 |:----------------:|:---:|:----------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **16 \| 16**<br>Stamina | **0**<br>Stability | **8**<br>Free Strike |
 | **Poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Poison**<br>Free Strike Damage Type |
@@ -2406,7 +2406,7 @@ The belladonix are found among the elite guard of fey monarchs and carry themsel
 
 These brawny sprites wear heavy beetle armor and have a halo hovering away from their backs where their wings used to be. The faster the halo spins, the more power the olyender generates, enabling them to stand toe to toe with giants.
 
-| Sprite Olyender | Fey | Minion Brute | - | 7 essence for two minions |
+| Fey | - | - | Minion Brute | 7 essence for two minions |
 |:---------------:|:---:|:------------:|:-:|:-------------------------:|
 | **1T**<br>Size | **6**<br>Speed | **17 \| 17**<br>Stamina | **R**<br>Stability | **8**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -2434,7 +2434,7 @@ Choose one of the following minions.
 
 A false vampire is a bestial, bipedal ghoul that draws life from liquified remains. In death, their hands curl into thick hooks, their bodies turn a putrid red-green as if wearing a dress suit, and their mouth twists and extends into a large feeding needle that can pierce steel.
 
-| False Vampire | Undead | Minion Brute | - | 7 essence for two minions |
+| Undead | - | - | Minion Brute | 7 essence for two minions |
 |:-------------:|:------:|:------------:|:-:|:-------------------------:|
 | **1L**<br>Size | **6**<br>Speed | **17 \| 17**<br>Stamina | **2**<br>Stability | **8**<br>Free Strike |
 | **Corruption R, poison R**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **Acid**<br>Free Strike Damage Type |
@@ -2453,7 +2453,7 @@ A false vampire is a bestial, bipedal ghoul that draws life from liquified remai
 
 These phantoms puppet the remnants of their corporeal forms. Unlike other spirits, the ripper tears the reality around them and leaves behind distorted or uneven "bumps" in the air, which can affect stone, metal, and flesh.
 
-| Phantom of the Ripper | Undead | Minion Ambusher | - | 7 essence for two minions |
+| Undead | - | - | Minion Ambusher | 7 essence for two minions |
 |:---------------------:|:------:|:---------------:|:-:|:-------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **17 \| 17**<br>Stamina | **1**<br>Stability | **8**<br>Free Strike |
 | **Corruption R, poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -2482,7 +2482,7 @@ These phantoms puppet the remnants of their corporeal forms. Unlike other spirit
 
 Zombie titan is a catchall for undead giants, patchwork ogres and mournlings, or amalgamations of a graveyard's entire population. The titan lumbers and slumps across battlefields, wanting desperately to collapse and crash into the earth like a sea of flesh and bone.
 
-| Zombie Titan | Undead | Minion Defender | - | 7 essence for one minion |
+| Undead | - | - | Minion Defender | 7 essence for one minion |
 |:------------:|:------:|:---------------:|:-:|:------------------------:|
 | **4**<br>Size | **4**<br>Speed | **40**<br>Stamina | **R**<br>Stability | **7**<br>Free Strike |
 | **Corruption R, poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -2744,7 +2744,7 @@ The demon lord's Aspect enjoys bringing enemies in close with their appendages o
 <!-- @type: statblock -->
 ####### Demon Lord's Aspect
 
-| — | Abyssal, Demon | Champion | - | 9 essence for one champion |
+| Abyssal, Demon | - | - | Champion | 9 essence for one champion |
 |:-:|:--------------:|:--------:|:-:|:--------------------------:|
 | **2**<br>Size | **5**<br>Speed | **SPECIAL**<br>Stamina | **2**<br>Stability | **9**<br>Free Strike |
 | **Corruption 5**<br>Immunity | **Teleport**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
@@ -2814,7 +2814,7 @@ As a harbinger of ruin, the dragon's Portent has incredibly potent impact and co
 <!-- @type: statblock -->
 ####### Dragon's Portent
 
-| — | Dragon, Elemental | Champion | - | 9 essence for one champion |
+| Dragon, Elemental | - | - | Champion | 9 essence for one champion |
 |:-:|:-----------------:|:--------:|:-:|:--------------------------:|
 | **2**<br>Size | **6**<br>Speed | **SPECIAL**<br>Stamina | **4**<br>Stability | **9**<br>Free Strike |
 | **Affinity 5**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Affinity**<br>Free Strike Damage Type |
@@ -2880,7 +2880,7 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 <!-- @type: statblock -->
 ####### Celestial Attendant
 
-| — | Fey | Champion | - | 9 essence for one champion |
+| Fey | - | - | Champion | 9 essence for one champion |
 |:-:|:---:|:--------:|:-:|:--------------------------:|
 | **2**<br>Size | **7**<br>Speed | **SPECIAL**<br>Stamina | **0**<br>Stability | **9**<br>Free Strike |
 | **Damage 2**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Poison**<br>Free Strike Damage Type |
@@ -2950,7 +2950,7 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 <!-- @type: statblock -->
 ####### Avatar of Death
 
-| — | Undead | Champion | - | 9 essence for one champion |
+| Undead | - | - | Champion | 9 essence for one champion |
 |:-:|:------:|:--------:|:-:|:--------------------------:|
 | **2**<br>Size | **6**<br>Speed | **SPECIAL**<br>Stamina | **3**<br>Stability | **9**<br>Free Strike |
 | **Corruption 5, poison 5**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Holy**<br>Free Strike Damage Type |
@@ -3562,7 +3562,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 <!-- @type: statblock -->
 ####### Devil Detective
 
-| — | Devil, Infernal | Level 1 Controller Retainer | - | - |
+| Devil, Infernal | - | Level 1 | Controller Retainer | - |
 |:-:|:---------------:|:---------------------------:|:-:|:-:|
 | **1M**<br>Size | **5**<br>Speed | **21**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **Fire 2**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3595,7 +3595,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 <!-- @type: statblock -->
 ####### Razor
 
-| — | Abyssal, Demon | Signature Minion Harrier | - | - |
+| Abyssal, Demon | - | - | Signature Minion Harrier | - |
 |:-:|:--------------:|:------------------------:|:-:|:-:|
 | **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3640,7 +3640,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 <!-- @type: statblock -->
 ####### Violent
 
-| — | Abyssal, Demon | Minion Ambusher | - | - |
+| Abyssal, Demon | - | - | Minion Ambusher | - |
 |:-:|:--------------:|:---------------:|:-:|:-:|
 | **1M**<br>Size | **7**<br>Speed | **7 \| 7 \| 7**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | - | **Holy 1**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
@@ -3701,7 +3701,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 <!-- @type: statblock -->
 ####### Gorrre
 
-| — | Abyssal, Demon | Minion Brute | - | - |
+| Abyssal, Demon | - | - | Minion Brute | - |
 |:-:|:--------------:|:------------:|:-:|:-:|
 | **2**<br>Size | **5**<br>Speed | **27 \| 27**<br>Stamina | **2**<br>Stability | **8**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3729,7 +3729,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Rival Summoner
 
-| — | Humanoid, Rival | Level 2 Elite Controller | - | EV 16 |
+| Humanoid, Rival | - | Level 2 | Elite Controller | EV 16 |
 |:-:|:---------------:|:------------------------:|:-:|:-----:|
 | **1M**<br>Size | **5**<br>Speed | **60**<br>Stamina | **0**<br>Stability | **5**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3780,7 +3780,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Skeleton
 
-| — | Undead | Signature Minion Harrier | - | 1 Malice per minion summoned |
+| Undead | - | - | Signature Minion Harrier | 1 Malice per minion summoned |
 |:-:|:------:|:------------------------:|:-:|:----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Corruption 2, poison 2**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3793,7 +3793,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Zombie Lumberer
 
-| — | Undead | Minion Defender | - | 2 Malice for two minions |
+| Undead | - | - | Minion Defender | 2 Malice for two minions |
 |:-:|:------:|:---------------:|:-:|:------------------------:|
 | **2**<br>Size | **5**<br>Speed | **8 \| 8**<br>Stamina | **2**<br>Stability | **4**<br>Free Strike |
 | **Corruption 2, poison 2**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3810,7 +3810,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Accursed Mummy
 
-| — | Mummy, Undead | Minion Hexer | - | 3 Malice for three minions |
+| Mummy, Undead | - | - | Minion Hexer | 3 Malice for three minions |
 |:-:|:-------------:|:------------:|:-:|:--------------------------:|
 | **1M**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **2**<br>Stability | **3**<br>Free Strike |
 | **Corruption 2, poison 2**<br>Immunity | **—**<br>Movement | - | **Fire 1**<br>Weakness | **Poison**<br>Free Strike Damage Type |
@@ -3840,7 +3840,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Rival Summoner
 
-| — | Humanoid, Rival | Level 5 Elite Controller | - | EV 28 |
+| Humanoid, Rival | - | Level 5 | Elite Controller | EV 28 |
 |:-:|:---------------:|:------------------------:|:-:|:-----:|
 | **1M**<br>Size | **5**<br>Speed | **120**<br>Stamina | **0**<br>Stability | **6**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3893,7 +3893,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Skeleton
 
-| — | Undead | Signature Minion Harrier | - | 1 Malice per minion summoned |
+| Undead | - | - | Signature Minion Harrier | 1 Malice per minion summoned |
 |:-:|:------:|:------------------------:|:-:|:----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **3**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Corruption 3, poison 3**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3906,7 +3906,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Grave Knight
 
-| — | Undead | Minion Brute | - | 2 Malice for two minions |
+| Undead | - | - | Minion Brute | 2 Malice for two minions |
 |:-:|:------:|:------------:|:-:|:------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **9 \| 9**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
 | **Corruption 3, poison 3**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -3931,7 +3931,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Ceaseless Mournling
 
-| — | Undead | Minion Controller | - | 4 Malice for three minions |
+| Undead | - | - | Minion Controller | 4 Malice for three minions |
 |:-:|:------:|:-----------------:|:-:|:--------------------------:|
 | **2**<br>Size | **5**<br>Speed | **6 \| 6 \| 6**<br>Stamina | **3**<br>Stability | **3**<br>Free Strike |
 | **Corruption 3, poison 3**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
@@ -3955,7 +3955,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Rival Summoner
 
-| — | Humanoid, Rival | Level 8 Elite Controller | - | EV 40 |
+| Humanoid, Rival | - | Level 8 | Elite Controller | EV 40 |
 |:-:|:---------------:|:------------------------:|:-:|:-----:|
 | **1M**<br>Size | **5**<br>Speed | **180**<br>Stamina | **0**<br>Stability | **8**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -4006,7 +4006,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Skeleton
 
-| — | Undead | Signature Minion Harrier | - | 1 Malice per minion summoned |
+| Undead | - | - | Signature Minion Harrier | 1 Malice per minion summoned |
 |:-:|:------:|:------------------------:|:-:|:----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **4**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Corruption 4, poison 4**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -4019,7 +4019,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Zombie Lumberer
 
-| — | Undead | Minion Defender | - | 2 Malice for two minions |
+| Undead | - | - | Minion Defender | 2 Malice for two minions |
 |:-:|:------:|:---------------:|:-:|:------------------------:|
 | **2**<br>Size | **5**<br>Speed | **14 \| 14**<br>Stamina | **4**<br>Stability | **4**<br>Free Strike |
 | **Corruption 4, poison 4**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -4036,7 +4036,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Ceaseless Mournling
 
-| — | Undead | Minion Controller | - | 4 Malice for three minions |
+| Undead | - | - | Minion Controller | 4 Malice for three minions |
 |:-:|:------:|:-----------------:|:-:|:--------------------------:|
 | **2**<br>Size | **5**<br>Speed | **8 \| 8 \| 8**<br>Stamina | **4**<br>Stability | **3**<br>Free Strike |
 | **Corruption 4, poison 4**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
@@ -4057,7 +4057,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### False Vampire
 
-| — | Undead | Minion Brute | - | 6 Malice for two minions |
+| Undead | - | - | Minion Brute | 6 Malice for two minions |
 |:-:|:------:|:------------:|:-:|:------------------------:|
 | **1L**<br>Size | **6**<br>Speed | **22 \| 22**<br>Stamina | **2**<br>Stability | **8**<br>Free Strike |
 | **Corruption 4, poison 4**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **Acid**<br>Free Strike Damage Type |
@@ -4077,7 +4077,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Rival Summoner
 
-| — | Humanoid, Rival | Level 10 Elite Controller | - | EV 48 |
+| Humanoid, Rival | - | Level 10 | Elite Controller | EV 48 |
 |:-:|:---------------:|:-------------------------:|:-:|:-----:|
 | **1M**<br>Size | **5**<br>Speed | **220**<br>Stamina | **0**<br>Stability | **10**<br>Free Strike |
 | **Damage 2**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -4122,7 +4122,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Skeleton
 
-| — | Undead | Signature Minion Harrier | - | 1 Malice per minion summoned |
+| Undead | - | - | Signature Minion Harrier | 1 Malice per minion summoned |
 |:-:|:------:|:------------------------:|:-:|:----------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **5**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
 | **Corruption 5, poison 5**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -4135,7 +4135,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Grave Knight
 
-| — | Undead | Minion Brute | - | 2 Malice for two minions |
+| Undead | - | - | Minion Brute | 2 Malice for two minions |
 |:-:|:------:|:------------:|:-:|:------------------------:|
 | **1M**<br>Size | **6**<br>Speed | **15 \| 15**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
 | **Corruption 5, poison 5**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -4160,7 +4160,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Ceaseless Mournling
 
-| — | Undead | Minion Controller | - | 4 Malice for three minions |
+| Undead | - | - | Minion Controller | 4 Malice for three minions |
 |:-:|:------:|:-----------------:|:-:|:--------------------------:|
 | **2**<br>Size | **5**<br>Speed | **10 \| 10 \| 10**<br>Stamina | **5**<br>Stability | **3**<br>Free Strike |
 | **Corruption 5, poison 5**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
@@ -4181,7 +4181,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 <!-- @type: statblock -->
 ####### Zombie Titan
 
-| — | Undead | Minion Defender | - | 6 Malice for one minion |
+| Undead | - | - | Minion Defender | 6 Malice for one minion |
 |:-:|:------:|:---------------:|:-:|:-----------------------:|
 | **4**<br>Size | **4**<br>Speed | **50**<br>Stamina | **5**<br>Stability | **7**<br>Free Strike |
 | **Corruption 5, poison 5**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
@@ -4418,7 +4418,7 @@ The following pixie bellringer has been converted from a [summoner](scc:mcdm.sum
 <!-- @type: statblock -->
 ####### Pixie Bellringer (Converted)
 
-| — | Fey | Level 3 Minion Support | - | EV 5 for Four minions |
+| Fey | - | Level 3 | Minion Support | EV 5 for Four minions |
 |:-:|:---:|:----------------------:|:-:|:---------------------:|
 | **1T**<br>Size | **5**<br>Speed | **7**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
 | **—**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | - |

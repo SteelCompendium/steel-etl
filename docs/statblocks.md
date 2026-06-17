@@ -55,6 +55,25 @@ book-faithful everything-inline view lives on the Read tab's `chapter/monsters` 
 `ParseStatblockFeatures` + `transformStatblock` build the SDK `statblock.schema.json`
 JSON with a `features[]` array.
 
+**Header-row layout is fixed (canonical, 5 columns):**
+`| keywords | - | Level N | Org Role | EV/cost |`. The grid's label/value rows
+(`**value**<br>Label`) are position-independent so `parseStatGrid` reads them anywhere,
+but the **header row is positional** — keywords come from cell 0, the trailing cell is
+the EV/cost. The Summoner book was originally transcribed with a different column order
+(name in cell 0, keywords in cell 1, level+role combined, no `EV` prefix); that was
+**corrected in the input** (`input/summoner/Draw Steel Summoner.md`) rather than teaching
+the parser a second layout. Keep new statblock headers in the canonical order.
+
+**`ev` vs `cost` (the trailing header cell).** The last column is either an Encounter
+Value — written with a literal `EV` prefix (`EV 3 for 4 minions`, `EV 156`, `EV -`),
+parsed into `ev` — or, first seen in the Summoner book, a **gametime summon cost** in
+plain language (`3 essence for two minions`, `2 Malice for two minions`, `9 essence for
+one champion`), parsed into the separate `cost` field. The distinction is deterministic
+(the `EV` marker), so Monsters parse byte-for-byte as before. Both are optional strings in
+`statblock.schema.json` (both copies); the v2 card renders `cost` in the EV slot without
+the `EV` prefix (`.sb__cost`), and a level-less statblock (summoner minions/champions)
+omits the `Level` line entirely. `Champion` is a known organization.
+
 **Site rendering (build-time HTML, 2026-06-14).** `type: statblock` pages no longer
 emit a JSON island. `buildStatblockIslandPage` (`internal/site/statblock_page.go`,
 the parse stage) hands the `sbIsland` to `renderStatblockCard`

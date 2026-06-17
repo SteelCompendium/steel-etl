@@ -6,6 +6,7 @@
   "role": "Brute",
   "roleKey": "brute",
   "ev": "",
+  "cost": "",
   "defenses": [
     {
       "l": "Size",

@@ -13,6 +13,7 @@ type statHeader struct {
 	organization string
 	role         string
 	ev           string
+	cost         string
 }
 
 // statGrid is the fully parsed stat grid: header row + label→value map.
@@ -42,6 +43,7 @@ func linkDisplay(s string) string { return mdLinkRe.ReplaceAllString(s, "$1") }
 var knownOrganizations = map[string]bool{
 	"Minion": true, "Horde": true, "Platoon": true,
 	"Elite": true, "Solo": true, "Leader": true, "Retainer": true,
+	"Champion": true, // Summoner book Portfolio Champions
 }
 
 var knownRoles = map[string]bool{
@@ -356,6 +358,20 @@ func parseStatGrid(grid string) statGrid {
 	}
 	if m := evRe.FindStringSubmatch(joined); m != nil {
 		out.header.ev = strings.TrimSpace(m[1])
+	}
+	// Cost vs EV (trailing header cell). The last column carries either an
+	// Encounter Value ("EV 3 …", captured above as ev) or — first seen in the
+	// Summoner book — a gametime summon cost written in plain language ("3 essence
+	// for two minions", "2 Malice for two minions", "9 essence for one champion").
+	// Storing the non-EV form as a distinct `cost` lets consumers tell the two
+	// apart: ev is the Director's encounter-budget cost to field the creature;
+	// cost is the in-play cost to summon it. The cell must be plain text — a
+	// "**…**<br>Label" value cell (e.g. the summoner fixture's 2-column grid) is
+	// not a cost.
+	if out.header.ev == "" && len(header) > 0 {
+		if last := linkDisplay(strings.TrimSpace(header[len(header)-1])); last != "" && last != "-" && last != "—" && !strings.Contains(last, "**") {
+			out.header.cost = last
+		}
 	}
 	// Role cell is the one (besides the EV cell) containing an org/role word.
 	for _, cell := range header {

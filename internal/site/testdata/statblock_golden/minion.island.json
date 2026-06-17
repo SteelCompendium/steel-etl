@@ -6,6 +6,7 @@
   "role": "Minion Harrier",
   "roleKey": "harrier",
   "ev": "3",
+  "cost": "",
   "defenses": [
     {
       "l": "Size",

@@ -272,11 +272,23 @@ func renderStatblockHead(d sbIsland) string {
 	ev := ""
 	if strings.TrimSpace(d.EV) != "" {
 		ev = `<div class="sb__ev">EV ` + sbEsc(d.EV) + `</div>`
+	} else if strings.TrimSpace(d.Cost) != "" {
+		// Summoner-book statblocks bought with a gametime resource rather than EV
+		// (e.g. "3 essence for two minions") carry a generic cost; render it in the
+		// EV slot without the "EV" prefix.
+		ev = `<div class="sb__ev sb__cost">` + sbEsc(d.Cost) + `</div>`
+	}
+	// Summoner minions/champions carry no level; omit the "Level" line entirely
+	// rather than render a bare "Level " label. (Every monster statblock has a
+	// level, so this only affects the Summoner book.)
+	level := ""
+	if strings.TrimSpace(d.Level) != "" {
+		level = `<div class="sb__level">Level ` + sbEsc(d.Level) + `</div>`
 	}
 	return `<header class="sb__head"><div class="sb__head-row">` +
 		`<div class="sb__identity"><div class="sb__kw">` + sbEsc(d.Ancestry) + `</div>` +
 		`<h2 class="sb__name">` + sbEsc(d.Name) + `</h2></div>` +
-		`<div class="sb__class"><div class="sb__level">Level ` + sbEsc(d.Level) + `</div>` +
+		`<div class="sb__class">` + level +
 		`<div class="sb__role" data-role="` + sbEsc(d.RoleKey) + `">` + sbEsc(d.Role) + `</div>` +
 		ev + `</div></div></header>`
 }
