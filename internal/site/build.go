@@ -32,6 +32,7 @@ type BuildResult struct {
 	IndexPages     int
 	SCCStubs       int
 	PrintingStamps int
+	EmbeddedCards  int
 	Errors         []string
 }
 
@@ -115,6 +116,15 @@ func Build(cfg *Config) (*BuildResult, error) {
 	} else if ok {
 		result.IndexPages++
 	}
+
+	// Inline item cards: over the configured sections (default Browse), replace
+	// each embeddable item inlined in a container page (its {data-scc} heading)
+	// with that item's finished leaf card. Runs after every leaf + index page is
+	// written; before the frontmatter-only passes below. Site-only — the data/
+	// repos are produced by the pipeline and are unaffected.
+	embedCount, embedErrs := embedItemCards(cfg)
+	result.EmbeddedCards = embedCount
+	result.Errors = append(result.Errors, embedErrs...)
 
 	// Apply search exclusion
 	for _, sectionName := range cfg.SearchExclude {
