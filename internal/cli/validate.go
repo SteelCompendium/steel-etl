@@ -110,6 +110,24 @@ func runValidate(cmd *cobra.Command, args []string) error {
 				}
 			}
 
+			for _, ca := range content.ScanCallouts(sec.BodySource) {
+				if !ca.HasOwner {
+					issues = append(issues, validationIssue{
+						level:   "warn",
+						heading: sec.Heading,
+						hlevel:  sec.HeadingLevel,
+						msg:     "callout missing @owner (expected self|loose)",
+					})
+				} else if !ca.OwnerKnown {
+					issues = append(issues, validationIssue{
+						level:   "warn",
+						heading: sec.Heading,
+						hlevel:  sec.HeadingLevel,
+						msg:     fmt.Sprintf("callout has unknown @owner: %q (expected self|loose)", ca.Owner),
+					})
+				}
+			}
+
 			walkSections(sec.Children, depth+1)
 		}
 	}
