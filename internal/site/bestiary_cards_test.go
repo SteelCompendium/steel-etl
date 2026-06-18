@@ -335,6 +335,33 @@ func TestTerrainCard_StatsShape(t *testing.T) {
 	}
 }
 
+// A dynamic-terrain Size stat can be a descriptive value carrying a markdown
+// link (e.g. lava's "One or more squares of [difficult terrain](…)"). The card's
+// stat grid must render that link as a real <a> — not leak the escaped markdown
+// as plaintext. The link target is dirURL-rewritten (no extra "../"): the index
+// page sits in the same dir as the leaf source, so a leaf-relative link is valid
+// from the index verbatim.
+const terrainLinkedSizeFM = `level: 3
+name: Lava
+terrain_type: Hazard
+role: Hexer
+stats:
+    - name: EV
+      value: "4"
+    - name: Size
+      value: One or more squares of [difficult terrain](../../movement/difficult-terrain.md)
+`
+
+func TestTerrainCard_SizeLinkRendered(t *testing.T) {
+	got := terrainCard(terrainLinkedSizeFM, "Molten rock wells up.", "lava.md", "Lava")
+	if !strings.Contains(got, `<a href="../../movement/difficult-terrain/">difficult terrain</a>`) {
+		t.Errorf("terrainCard Size link not rendered as <a> in:\n%s", got)
+	}
+	if strings.Contains(got, "[difficult terrain]") {
+		t.Errorf("terrainCard leaked escaped markdown link as plaintext in:\n%s", got)
+	}
+}
+
 func TestUsesFolderIndex_Bestiary(t *testing.T) {
 	for _, dir := range []string{"/x/monster", "/x/dynamic-terrain", "/x/retainer"} {
 		if !usesFolderIndex(dir) {

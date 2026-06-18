@@ -520,6 +520,18 @@ type statCell struct {
 	val, label, cls, title string
 }
 
+// statValueHTML renders a stat-grid value. A value carrying a markdown link —
+// e.g. a dynamic-terrain Size, "One or more squares of [difficult terrain](…)" —
+// is rendered to real HTML via inlineMD so the link resolves (dirURL-rewritten)
+// and stays clickable; link-free values keep the literal-escaped path unchanged.
+// inlineMD itself falls back to an escaped literal on any render error.
+func statValueHTML(v string) string {
+	if mdLinkRe.MatchString(v) {
+		return inlineMD(v)
+	}
+	return html.EscapeString(v)
+}
+
 // statsBlock renders an N-column stat grid. Each entry is {value, label, extraClass}.
 func statsBlock(stats [][3]string) string {
 	cells := make([]statCell, len(stats))
@@ -553,7 +565,7 @@ func statsCells(cells []statCell) string {
 			vcls, title = "v has-tip", " title=\""+html.EscapeString(c.title)+"\""
 		}
 		fmt.Fprintf(&sb, "    <div class=\"%s\"><div class=\"%s\"%s%s>%s</div><div class=\"l\">%s</div></div>\n",
-			cls, vcls, style, title, html.EscapeString(c.val), html.EscapeString(c.label))
+			cls, vcls, style, title, statValueHTML(c.val), html.EscapeString(c.label))
 	}
 	sb.WriteString("  </div>\n")
 	return sb.String()
