@@ -136,7 +136,7 @@ func TestGodParserIDOverride(t *testing.T) {
 // TestProjectParserRegistered confirms the new parsers are wired into the registry.
 func TestProjectGodRegistered(t *testing.T) {
 	r := NewRegistry()
-	for _, typ := range []string{"project", "god"} {
+	for _, typ := range []string{"project", "god", "saint"} {
 		if !r.Has(typ) {
 			t.Errorf("registry missing parser for %q", typ)
 		}
