@@ -532,6 +532,26 @@ func statValueHTML(v string) string {
 	return html.EscapeString(v)
 }
 
+// statLedger renders {label, value} pairs as a vertical label↔value ledger
+// (.sc-card__ledger): label left in the small-caps field font, value right,
+// each row rule-separated. Unlike statsBlock's fixed N-column grid, the ledger
+// lets long descriptive values (terrain EV/Size, a linked Size) wrap and read
+// cleanly. Values render via statValueHTML so an embedded markdown link becomes
+// a real, clickable anchor; labels are plain text.
+func statLedger(rows [][2]string) string {
+	if len(rows) == 0 {
+		return ""
+	}
+	var sb strings.Builder
+	sb.WriteString("  <div class=\"sc-card__ledger\">\n")
+	for _, r := range rows {
+		fmt.Fprintf(&sb, "    <div class=\"sc-card__lrow\"><span class=\"k\">%s</span><span class=\"v\">%s</span></div>\n",
+			html.EscapeString(r[0]), statValueHTML(r[1]))
+	}
+	sb.WriteString("  </div>\n")
+	return sb.String()
+}
+
 // statsBlock renders an N-column stat grid. Each entry is {value, label, extraClass}.
 func statsBlock(stats [][3]string) string {
 	cells := make([]statCell, len(stats))

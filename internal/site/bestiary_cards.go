@@ -79,36 +79,19 @@ func statField(fm, scalarKey, statName string) string {
 //
 // Terrain EV/Size are sometimes compact codes ("12", "1S") and sometimes
 // descriptive phrases ("4 per 10 x 10 patch", "One or more squares of difficult
-// terrain"). Compact values stay in the tight 1/N stat grid; descriptive ones
-// (and anything carrying a link) break out into full-width labeled lines so the
-// prose — and its link — isn't crushed into a third of the card width.
+// terrain") that a fixed-column stat grid crushes. Stats render as a label↔value
+// ledger (the same readable register the leaf page uses) so short and long
+// values sit together cleanly; a linked Size becomes a real clickable anchor.
 func terrainCard(fm, body, file, name string) string {
-	var grid [][3]string
-	var lines string
-	for _, s := range [][2]string{
+	inner := statLedger([][2]string{
 		{"Level", orDash(parseFrontmatterField(fm, "level"))},
 		{"EV", orDash(statField(fm, "ev", "EV"))},
 		{"Size", orDash(statField(fm, "size", "Size"))},
-	} {
-		if label, val := s[0], s[1]; isDescriptiveStat(val) {
-			lines += lineBlock(label, statValueHTML(val))
-		} else {
-			grid = append(grid, [3]string{val, label, ""})
-		}
-	}
-	inner := statsBlock(grid) + lines
+	})
 	if f := cardFlavor(fm, body); f != "" {
 		inner += flavorDiv(f, 160)
 	}
 	return card(file, "skull", withSource(fm, "Dynamic Terrain"), name, inner)
-}
-
-// isDescriptiveStat reports whether a stat value is a descriptive phrase rather
-// than a compact code — true when it carries whitespace or an embedded markdown
-// link. Compact codes ("1S", "12", "—") render in the stat grid; descriptive
-// values get a full-width line so they read instead of ellipsizing.
-func isDescriptiveStat(v string) bool {
-	return strings.ContainsAny(v, " \t") || mdLinkRe.MatchString(v)
 }
 
 // statblockPreviewCard builds the sbIsland for a statblock leaf and renders the
