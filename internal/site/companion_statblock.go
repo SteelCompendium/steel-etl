@@ -8,7 +8,8 @@ package site
 // page (replacing the raw table) and as the .sb-prev preview on the index. The
 // advancement-features section (## … {data-scc=…advancement-features…}) is left
 // verbatim — its card quality is a separate task. SITE-ONLY: shared data repos
-// untouched. Reuses parseAbilityTable / parseStatblockIslandFeature / resolveSbLinks.
+// untouched. Reuses parseAbilityTable / parseStatblockIslandFeature; link targets
+// stay raw in the island and resolve at render (richSb), like monster statblocks.
 
 import (
 	"regexp"
@@ -17,7 +18,7 @@ import (
 
 // companionGrid is the parsed companion stat table: header keywords + level, and
 // a label→value map across the three data rows (Size…Presence; values keep any
-// markdown link, resolved later by resolveSbLinks).
+// markdown link, resolved later by richSb at render).
 type companionGrid struct {
 	keywords string
 	level    string
@@ -104,7 +105,7 @@ func buildCompanionStatblockIsland(fm, baseBody string) sbIsland {
 	}
 	metaVal := func(label string) string {
 		if v := strings.TrimSpace(g.cells[label]); v != "" {
-			return resolveSbLinks(v)
+			return v // raw markdown link; richSb (via sbMetaCell) resolves it at render
 		}
 		return "—"
 	}

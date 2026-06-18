@@ -78,10 +78,14 @@ omits the `Level` line entirely. `Champion` is a known organization.
 emit a JSON island. `buildStatblockIslandPage` (`internal/site/statblock_page.go`,
 the parse stage) hands the `sbIsland` to `renderStatblockCard`
 (`internal/site/statblock_card.go`), which emits the finished `.sb-wrap` DOM at build
-time — the same DOM `v2/docs/javascripts/steel-statblock.js` used to build client-side
-(now slimmed to wire-only: collapsible bands + sticky header). Equivalence is locked
-by `TestStatblockCard_GoldenEquivalence` (golden HTML captured from the old JS
-renderer; inputs under `internal/site/testdata/statblock_golden/`). This is the
+time — the DOM `v2/docs/javascripts/steel-statblock.js` once built client-side. That
+script is now **retired** (FOLLOWUPS #10.1, 2026-06-18): the collapsible Villain/Malice
+bands are native `<details>`/`<summary>` and the sticky mini-header is a CSS
+scroll-driven animation, so statblocks need no client JS. Equivalence is locked by
+`TestStatblockCard_GoldenEquivalence` — the golden HTML was originally captured from the
+old JS renderer and is now a committed snapshot of `renderStatblockCard` (regenerate
+with `STEEL_UPDATE_GOLDEN=1` after an intentional DOM change; inputs under
+`internal/site/testdata/statblock_golden/`). This is the
 `featureblock_page.go` model and unblocks embedding statblock cards inline on any page.
 Design: workspace `docs/superpowers/specs/2026-06-14-statblock-build-time-render-design.md`
 (cross-repo spec, so it lives at the workspace root, not under `steel-etl/`).

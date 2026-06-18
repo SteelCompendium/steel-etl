@@ -87,13 +87,13 @@
       },
       "sections": [
         {
-          "label": "[End Effect](../end-effect/)",
+          "label": "[End Effect](end-effect.md)",
           "text": "The effect ends."
         }
       ],
       "enhancements": [
         {
-          "cost": "2 [Malice](../malice/)",
+          "cost": "2 [Malice](malice.md)",
           "text": "The target is weakened."
         }
       ]
@@ -102,7 +102,7 @@
       "kind": "villain",
       "action": "villain",
       "name": "Final Judgment",
-      "cost": "[Villain Action](../villain-action/) 3",
+      "cost": "[Villain Action](villain-action.md) 3",
       "keywords": [
         "Magic"
       ],
@@ -118,13 +118,13 @@
     {
       "kind": "passive",
       "action": "passive",
-      "name": "[Solo](../solo/) Monster",
+      "name": "[Solo](solo.md) Monster",
       "body": "This creature acts alone."
     },
     {
       "kind": "passive",
       "action": "passive",
-      "name": "[End Effect](../end-effect/)",
+      "name": "[End Effect](end-effect.md)",
       "body": "At the end of each turn, the creature can take damage to end an effect."
     }
   ]

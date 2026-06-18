@@ -162,7 +162,7 @@ func TestParseCompanionGrid_Panther(t *testing.T) {
 			t.Errorf("cell[%q] = %q, want %q", k, g.cells[k], v)
 		}
 	}
-	// Skills keeps its markdown link (resolved later by resolveSbLinks).
+	// Skills keeps its markdown link (resolved later by richSb at render).
 	if !strings.Contains(g.cells["Skills"], "[Sneak](") {
 		t.Errorf("skills cell = %q, want a Sneak link", g.cells["Skills"])
 	}

@@ -284,14 +284,15 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 	// Trailing "(…)" → Signature / cost / Villain Action N. A balanced-paren
 	// split so a link's own "(…)" inside the group — e.g. "(2 [Malice](url))"
 	// or "([Villain Action](url) 3)" — doesn't truncate it.
-	// Match on the link-stripped text but keep the resolved link for display.
+	// Match on the link-stripped text but keep the raw link for display (richSb
+	// resolves it at render).
 	if base, inner, ok := splitTrailingParen(name); ok {
 		name = base
 		inner = strings.TrimSpace(inner)
 		if strings.EqualFold(linkText(inner), "Signature Ability") {
 			f.Cost = "Signature"
 		} else {
-			f.Cost = resolveSbLinks(inner)
+			f.Cost = inner
 		}
 	}
 
@@ -302,7 +303,7 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 		diceFormula = linkText(strings.TrimSpace(dm[2]))
 	}
 	// The base name may itself be a link (e.g. "[Solo](url) Monster").
-	f.Name = resolveSbLinks(name)
+	f.Name = name
 
 	var (
 		tableSeen bool
@@ -330,10 +331,10 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 				usage = act
 			}
 			if dist != "" {
-				f.Distance = resolveSbLinks(dist)
+				f.Distance = dist
 			}
 			if tgt != "" {
-				f.Target = resolveSbLinks(tgt)
+				f.Target = tgt
 			}
 			tableSeen = true
 			continue
@@ -368,11 +369,12 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 			label := strings.TrimSpace(m[1])
 			text := collapseLines(m[2])
 			// Classify on the link-stripped label ("2 [Malice](url)" → "2 Malice")
-			// but keep the resolved link on the stored cost/label for display.
+			// but keep the raw link on the stored cost/label for display (richSb
+			// resolves it at render).
 			if sbCostLabelRe.MatchString(linkText(label)) {
-				f.Enhancements = append(f.Enhancements, sbEnh{Cost: resolveSbLinks(label), Text: resolveSbLinks(text)})
+				f.Enhancements = append(f.Enhancements, sbEnh{Cost: label, Text: text})
 			} else {
-				f.Sections = append(f.Sections, sbSection{Label: resolveSbLinks(label), Text: resolveSbLinks(text)})
+				f.Sections = append(f.Sections, sbSection{Label: label, Text: text})
 			}
 			continue
 		}
@@ -384,28 +386,28 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 	if !tableSeen {
 		// No keyword/usage table → a passive trait (Monsters book trait home).
 		f.Kind, f.Action = "passive", "passive"
-		f.Body = resolveSbLinks(strings.Join(prose, "\n\n"))
+		f.Body = strings.Join(prose, "\n\n")
 		return f, true
 	}
 
 	f.Action, f.Kind = sbActionKind(usage, f.Cost)
 	if usage != "" && usage != "-" {
-		// Resolve any link in the usage cell the same way distance/target are
-		// (a few cells link "Triggered Action" etc.); richSb (statblock_card.go)
-		// turns the [text](href) into a working <a> at build time.
-		f.Usage = resolveSbLinks(usage)
+		// A few usage cells link "Triggered Action" etc.; the raw [text](target)
+		// is stored verbatim and richSb (statblock_card.go) resolves it to a
+		// working <a> at render, the same as distance/target.
+		f.Usage = usage
 	}
 	if tiersSeen {
 		t := map[string]string{}
 		for i, key := range []string{"low", "mid", "high"} {
 			if tiers[i] != "" {
-				t[key] = resolveSbLinks(tiers[i])
+				t[key] = tiers[i]
 			}
 		}
 		f.PowerRoll = &sbPowerRoll{Formula: formula, Tiers: t}
 	}
 	if len(prose) > 0 {
-		f.Trailing = resolveSbLinks(strings.Join(prose, " "))
+		f.Trailing = strings.Join(prose, " ")
 	}
 	return f, true
 }
@@ -465,19 +467,6 @@ func splitTrailingParen(s string) (base, inner string, ok bool) {
 		}
 	}
 	return s, "", false
-}
-
-// resolveSbLinks rewrites each markdown link's TARGET in a feature text field
-// to the directory-URL form MkDocs serves, keeping the [text](href) markdown so
-// richSb (statblock_card.go) emits a working <a>. The card is raw HTML that
-// MkDocs never post-processes, so — exactly like the ability cards (cardHref) —
-// we resolve the ".md" + use_directory_urls depth here. (Feature text is
-// link-swept; frontmatter is not, so meta/ancestry need no resolution.)
-func resolveSbLinks(s string) string {
-	return mdLinkRe.ReplaceAllStringFunc(s, func(m string) string {
-		sub := mdLinkRe.FindStringSubmatch(m)
-		return "[" + sub[1] + "](" + cardHref(sub[2]) + ")"
-	})
 }
 
 func joinOrDash(list []string) string {
