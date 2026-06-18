@@ -27226,6 +27226,7 @@ The legendary heroes of the elves are once-mortal heroes who now dwell in Arcadi
 
 The [high elf](scc.v1:mcdm.heroes.v1/ancestry/high-elf) heroes detailed in this book are A Sea of Suns, the Taste of Morning, and Ripples of Honey on a Shore of Gold. The [wode elf](scc.v1:mcdm.heroes.v1/ancestry/wode-elf) heroes are Yllin Dyrvis, Thyll Hylacae, and Illwyv li Orchiax.
 
+<!-- @type: saint | @id: a-sea-of-suns | @patron: val -->
 ##### A Sea of Suns
 
 **Domains:** Creation, Life
@@ -27238,6 +27239,7 @@ The Composer discovered, or invented, the power of music to manipulate reality. 
 
 _1. If this story wasn't invented by the [dwarves](scc.v1:mcdm.heroes.v1/ancestry/dwarf) or [humans](scc.v1:mcdm.heroes.v1/ancestry/human), it must at least have passed through one of their cultures. The celestials did not reckon time the way younger species do and would not have said "for an entire century."_
 
+<!-- @type: saint | @id: the-taste-of-morning | @patron: val -->
 ##### The Taste of Morning
 
 **Domains:** Creation, Knowledge
@@ -27248,6 +27250,7 @@ Credited with building the first library, most scholars consider this a real, hi
 
 He canonized the idea that knowledge, truth, was a kind of beauty. The Library of Morning was a temple to thought, wisdom, scholarship. It contained plays, poems, histories, treatises on the nature of reality. The knowledge held within was incalculable. Legends say it held codices written by the elder dragons, though modern scholars suspect this is a literary conceit, as there is no evidence the elder dragons bothered with writing.
 
+<!-- @type: saint | @id: ripples-of-honey-on-a-shore-of-gold | @patron: val -->
 ##### Ripples of Honey on a Shore of Gold
 
 **Domains:** Life, Protection
@@ -27256,6 +27259,7 @@ Ripples of Honey on a Shore of Gold, also known as Warkiller, the Diplomat, was 
 
 In the end, her efforts failed, and the elder dragons live no more in this world. Like Val, the Diplomat hated war so much, after her failure she sought to pen a new codex. A work so powerful it would bind the world. The Codex Pax Universalis would banish the concept of war from [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden). Alas, in the end she realized there was only one way to finish her great work, and she was not willing to take that final step.
 
+<!-- @type: saint | @id: yllin-dyrvis | @patron: val -->
 ##### Yllin Dyrvis
 
 **Domains:** Knowledge, Nature
@@ -27264,6 +27268,7 @@ Yllin Dyrvis, also known as the Beast Heart, the Wodespeaker, the Warden, witnes
 
 To this day, many ages of the world later, the [wode elves](scc.v1:mcdm.heroes.v1/ancestry/wode-elf) consider themselves the stewards of the speaking creatures, and those creatures rely upon the [wode elves](scc.v1:mcdm.heroes.v1/ancestry/wode-elf) for protection.
 
+<!-- @type: saint | @id: thyll-hylacae | @patron: val -->
 ##### Thyll Hylacae
 
 **Domains:** Life, Nature
@@ -27272,6 +27277,7 @@ Thyll Hylacae, the Forestal, Apothachron, also known as the Sacrifice. Thyll spo
 
 Though she was mighty in warlore, she could not be everywhere. In the end, she sacrificed herself for the trees, the ritual she performed uplifted a small population of trees, creating the derwic—the thinking speaking tree-peoples few of whom remain in [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden).
 
+<!-- @type: saint | @id: illwyv-li-orchiax | @patron: val -->
 ##### Illwyv li Orchiax
 
 **Domains:** Nature, Protection
@@ -27293,6 +27299,7 @@ Ord values integrity, honor, faithfulness to an ideal. Courage in battle and fai
 
 The following heroes are venerated by many [dwarves](scc.v1:mcdm.heroes.v1/ancestry/dwarf) and others who follow Ord.
 
+<!-- @type: saint | @id: zarok-the-law-giver | @patron: ord -->
 ##### Zarok the Law-Giver
 
 **Domains:** Protection, War
@@ -27309,6 +27316,7 @@ Zarok teaches that all people should be equal under the law. His is the principl
 
 Zarok's *The Conversations* are still quoted today. There is a long legal tradition, when a prestigious lawyer in [Capital](scc.v1:mcdm.heroes.v1/rule.world/capital) wishes to write an amicus brief without revealing their identity, they sign it "Z."
 
+<!-- @type: saint | @id: valak-koth-the-seeker | @patron: ord -->
 ##### Valak-koth the Seeker
 
 **Domains:** Knowledge, Sun
@@ -27319,6 +27327,7 @@ She would run, heedless of danger, into the dark caves below and wherever she po
 
 Valak-koth teaches bravery in the face of the unknown, the virtue of curiosity, to seek endlessly and quest for knowledge, not to fear the darkness. To bring light into dark places. Valak-koth it was who first discovered the World Below, the Dark Under All, though it was not recognized as a separate manifold until after her death. After her death, the original Sungem she found refused to dim. It was enshrined in her temple-tomb, now lost along with the ancient stone [dwarf](scc.v1:mcdm.heroes.v1/ancestry/dwarf) city of Kas Koriar.
 
+<!-- @type: saint | @id: stakros-the-engineer | @patron: ord -->
 ##### Stakros the Engineer
 
 **Domains:** Creation, Knowledge
@@ -27348,6 +27357,7 @@ Uniquely among the Elder Creator Gods, Kul does not desire worship finds it dist
 
 The following heroes are venerated by many [orcs](scc.v1:mcdm.heroes.v1/ancestry/orc) and others who follow Kul.
 
+<!-- @type: saint | @id: khorvath-who-slew-a-thousand | @patron: kul -->
 ##### Khorvath Who Slew a Thousand
 
 **Domains:** Sun, War
@@ -27396,6 +27406,7 @@ Khorvath Who Slew a Thousand would probably prefer to be remembered as she was i
 
 Voyrik gave his warleader's torque to her son, who grew to lead the Lightning first as warleader, then chieftain. He was a good ruler for the Lightning.
 
+<!-- @type: saint | @id: grole-the-one-handed | @patron: kul -->
 ##### Grole the One-Handed
 
 **Domains:** Life, War
@@ -27408,6 +27419,7 @@ Grole teaches the extraordinary deeds common people can accomplish if they cast 
 
 Grole is the orcish hero of those facing impossible decisions. He is favored by most orcish leaders. Grole teaches that, even alone, even against impossible odds, extraordinary [victories](scc.v1:mcdm.heroes.v1/rule.resource/victories) are possible. [Censors](scc.v1:mcdm.heroes.v1/class/censor) of Grole often dip their left hand in ink before battle to symbolize Grole's missing hand.
 
+<!-- @type: saint | @id: khravila-who-ran-forty-leagues | @patron: kul -->
 ##### Khravila Who Ran Forty Leagues
 
 **Domains:** Knowledge, Trickery
@@ -27436,6 +27448,7 @@ The [hakaan](scc.v1:mcdm.heroes.v1/ancestry/hakaan) know they are descended from
 
 [Hakaan](scc.v1:mcdm.heroes.v1/ancestry/hakaan) [conduits](scc.v1:mcdm.heroes.v1/class/conduit) and [censors](scc.v1:mcdm.heroes.v1/class/censor) venerate [hakaan](scc.v1:mcdm.heroes.v1/ancestry/hakaan) heroes who, after doing great deeds in life, were chosen by the gods to take their place among the stars, becoming constellations. They see the stars at night as a complex map of legendary [hakaan](scc.v1:mcdm.heroes.v1/ancestry/hakaan) heroes, and their own ancestors who watch from above.
 
+<!-- @type: saint | @id: mahsiti-the-weaver | @patron: kul -->
 ##### Mahsiti the Weaver
 
 **Domains:** Creation, Knowledge, Trickery
@@ -27452,6 +27465,7 @@ When the enemy army arrived, they found the clan's villages empty, and did not n
 
 Mahsiti teaches that art and science, creativity and knowledge, are the same thing. Those who follow her teachings believe that the act of creating, of bringing a new idea or work of art into being, is the act of participating in the same process the gods used to create the world.
 
+<!-- @type: saint | @id: prexaspes-the-stargazer | @patron: kul -->
 ##### Prexaspes the Stargazer
 
 **Domains:** Nature, Protection, Sun
@@ -27470,6 +27484,7 @@ Though he died in the act, Prexaspes saved his people becoming a hero of all [ha
 
 Prexaspes teaches that nature is a moral good and is worth defending, and that the sun is the source of power for all life on [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden).
 
+<!-- @type: saint | @id: atossa-the-shepherd | @patron: kul -->
 ##### Atossa the Shepherd
 
 **Domains:** Fate, Protection, Trickery
@@ -27511,7 +27526,7 @@ Like the other gods of the timescape, the Lords of Hell are too busy to attend t
 
 Like [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden), there are dozens of [saints](scc.v1:mcdm.heroes.v1/rule.world/saint) in Hell, some obscure. These three are some of the most popular and the most likely [saints](scc.v1:mcdm.heroes.v1/rule.world/saint) for a [conduit](scc.v1:mcdm.heroes.v1/class/conduit) or [censor](scc.v1:mcdm.heroes.v1/class/censor) to follow.
 
-<!-- @type: god | @id: thellasko -->
+<!-- @type: saint | @id: thellasko | @name: Thellasko the Great Designer | @patron: lords-of-hell -->
 #### Thellasko the Great Designer
 
 **Domains:** Knowledge, War
@@ -27534,6 +27549,7 @@ Thellasko was granted sainthood on his deathbed after a generation of successful
 
 Thellasko teaches the virtue of accepting the battle as it is, not as you wish it might be. To take action based on available data, not what tradition says. That wars are not won based solely on the size of one's army, but based on which side is best able to bring its force to bear against the opponent.
 
+<!-- @type: saint | @id: uryal-the-subtle | @patron: lords-of-hell -->
 ##### Uryal the Subtle
 
 **Domains:** Knowledge, Trickery
@@ -27558,6 +27574,7 @@ be used to achieve one's ends. Uryal teaches the virtue of flexibility of charac
 
 Uryal is the [Saint](scc.v1:mcdm.heroes.v1/rule.world/saint) of Hell's diplomatic corps. His *unofficial* motto, falsely attributed to him but oft-repeated: "*Do unto the other guy as he would do unto you. But do it to him first.*"
 
+<!-- @type: saint | @id: kuryalka-the-false-principle | @patron: lords-of-hell -->
 ##### Kuryalka the False Principle
 
 **Domains:** Death, Trickery
@@ -27601,6 +27618,7 @@ A knight following Adûn spends their time aiding others through hard work, insp
 
 Adûn and [Cavall](scc.v1:mcdm.heroes.v1/god/cavall) are brothers and the line between them is not a sharply defined one. Truth and justice are close companions.
 
+<!-- @type: saint | @id: gaed-the-confessor | @patron: adun -->
 ##### Gaed the Confessor
 
 **Domains:** Love, Protection
@@ -27619,6 +27637,7 @@ It was Gaed, son of Malgen, son of Germoc, who entered the tavern—it was Saint
 
 Gaed teaches the virtue of being true to one's principles even—especially—when doing so is the most difficult thing in the world. The title "confessor" is granted to those who persisted in their faith in public, even when doing so was dangerous or deadly.
 
+<!-- @type: saint | @id: gryffyn-the-stout | @patron: adun -->
 ##### Gryffyn the Stout
 
 **Domains:** Creation, Life
@@ -27656,6 +27675,7 @@ A watchhouse chaplain is almost certainly a priest of Cavall. A rector serving a
 
 Brother to [Adûn](scc.v1:mcdm.heroes.v1/god/adun) and patron of the country of Corwell, Cavall also believes that people, no matter how vile, can be bettered. "Let the law judge," said Saint Llewellyn, "Let us forgive."
 
+<!-- @type: saint | @id: llewellyn-the-valiant | @patron: cavall -->
 ##### Llewellyn the Valiant
 
 **Domains:** Life, Protection
@@ -27700,6 +27720,7 @@ Llewellyn and Silverheart had rid the people of their cursed, hateful duke.
 
 Saint Llewellyn is Cavall's greatest [saint](scc.v1:mcdm.heroes.v1/rule.world/saint). He teaches that the greatest loyalty is to the well-being of the people, and that it is the responsibility of the strong to protect the weak. That the only proper use of power is in pursuit of justice.
 
+<!-- @type: saint | @id: gwenllian-the-fell-handed | @patron: cavall -->
 ##### Gwenllian the Fell-Handed
 
 **Domains:** Protection, War
@@ -27759,6 +27780,7 @@ Some of Salorna's priests are [conduits](scc.v1:mcdm.heroes.v1/class/conduit); s
 
 Salorna has few [censors](scc.v1:mcdm.heroes.v1/class/censor), but not none! Favoring light armor and [ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) weapons, her [censors](scc.v1:mcdm.heroes.v1/class/censor) are often mistaken for rangers. They seek to punish those who hunt for sport, or those who would defile the natural order.
 
+<!-- @type: saint | @id: draighen-the-warden | @patron: salorna -->
 ##### Draighen the Warden
 
 **Domains:** Nature, Sun
@@ -27779,6 +27801,7 @@ The elves were properly chastised and realized their shame. Though the derwic di
 
 Draighen teaches solutions can always be found if people are willing to talk. That even the darkest forest is not a thing to be threatened by if you carry wisdom and an open heart with you. That the proper reaction to unknown territory is curiosity.
 
+<!-- @type: saint | @id: eriarwen-the-wroth | @patron: salorna -->
 ##### Eriarwen the Wroth
 
 **Domains:** Nature, Storm
@@ -27842,6 +27865,7 @@ Like Cyrvis, his priests worship in secret. Like Cyrvis, folk hate [followers](s
 
 Nikros's [censors](scc.v1:mcdm.heroes.v1/class/censor) take what they want, ignore the law heedless of consequence, and teach that all folk should live thus. To subjugate one's will to the law, or the community, or the family, is to be weak! Weakness is a disease and it must be eradicated!
 
+<!-- @type: saint | @id: pentalion-the-paladin | @patron: nikros -->
 ##### Pentalion the Paladin
 
 **Domains:** Death, War
@@ -27871,6 +27895,7 @@ It is dangerous to worship Cyrvis in public, but those who gain power through hi
 
 His churches are often underground—in dungeons, cellars. His priests worship in secret, plotting against those with power, or those who are merely popular. To be liked and loved is reason enough for a [follower](scc.v1:mcdm.heroes.v1/rule.general/follower) of Cyrvis to hate you.
 
+<!-- @type: saint | @id: eseld-of-the-eye | @patron: cyrvis -->
 ##### Eseld of the Eye
 
 **Domains:** Knowledge, Trickery
@@ -27930,6 +27955,7 @@ She is a stellar nursery leaving a trail of infant stars in her wake. Hers is th
 
 She is the goddess of creation and for some of her [followers](scc.v1:mcdm.heroes.v1/rule.general/follower), life itself, as her children's energies feed all life on all worlds. Her priests teach that life is the opposite of entropy, and the natural byproduct of her solar incubator.
 
+<!-- @type: saint | @id: lady-magnetar | @name: Lady Magnetar | @patron: nebular -->
 ##### The Calling of Lady Magnetar
 
 **Domains:** Life, Sun
@@ -27981,6 +28007,7 @@ OV is the god of navigators and those who seek safe passage through treacherous 
 
 When a [time raider](scc.v1:mcdm.heroes.v1/ancestry/time-raider) swears, "OV [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide) me," the meaning is not, "Show me the right thing to do." But: "Show me a way out of this mess."
 
+<!-- @type: saint | @id: chokassa-the-time-rider | @name: Cho'kassa the Time Rider | @patron: ov -->
 ##### The Calling of Cho'kassa the Time Rider
 
 **Domains:** Storm, Sun
