@@ -47,7 +47,7 @@ wasted land.
 
 Finally, the Circle of Spring—celebrated and benign, lauded in folklore
 and often mistaken for [elementalists](scc.v1:mcdm.heroes.v1/class/elementalist)—call forth fey animations from
-Arcadia, the home of [Val](scc.v1:mcdm.heroes.v1/god/val), god of the elves.
+Arcadia, the home of [Val](scc.v1:mcdm.heroes.v1/religion.god/val), god of the elves.
 
 There are rumors of another organization of summoners, though
 whether it exists and, if it exists, what it calls itself is not well-known.
