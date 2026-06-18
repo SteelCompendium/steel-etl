@@ -165,7 +165,12 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 				chapterOrder++
 			}
 
-			if parsed.TypePath != nil && parsed.ItemID != "" {
+			// `@classify: false` sections are parsed and rendered in place but never
+			// classified: no SCC code, no registry entry, no leaf page, so they get
+			// no Browse page or Bestiary row. A statblock so marked still renders as
+			// an inline card on its container page (RenderSubtree stamps a
+			// data-sb-inline marker; the v2 embed_cards post-pass builds the card).
+			if parsed.TypePath != nil && parsed.ItemID != "" && !section.NoClassify() {
 				sccCode := scc.Classify(bookSource, parsed.TypePath, parsed.ItemID)
 				parsed.Frontmatter["scc"] = sccCode
 				sccRegistry.Add(sccCode)
