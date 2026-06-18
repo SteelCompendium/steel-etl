@@ -39,7 +39,7 @@ just run gen --config pipeline.yaml  # Run with args
 | `input/heroes/Draw Steel Heroes.md` | Annotated source — hand-maintained, canonical (the former `annotate_heroes.py` generator was retired; the `.md` holds ~4,055 cross-reference links and annotations that live only here) |
 | `input/monsters/Draw Steel Monsters.md` | Annotated Monsters book source. Hand-maintained going forward; the initial annotation pass was bootstrapped by a since-removed `annotate_monsters.pl` (by-heading-level: H2→monster group, H7→statblock, H9→featureblock/terrain). |
 | `internal/cli/*.go` | CLI commands: gen, validate, classify, strip, site |
-| `internal/content/registry.go` | Content parser registry (25 parsers) |
+| `internal/content/registry.go` | Content parser registry (26 parsers) |
 | `internal/pipeline/pipeline.go` | Main pipeline: parse -> classify -> generate |
 | `internal/scc/registry.go` | SCC registry with freeze enforcement |
 | `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
@@ -136,6 +136,12 @@ Site-side, the landing is **relocated to the group index**
 (`<root>/group/<member>.md` → `<root>/<member>/index.md`) with its intro lore folded
 above the listing — mechanics in [`docs/site-builder.md`](docs/site-builder.md) →
 "Group-landing relocation".
+
+**Religion namespace (`religion.*`).** Gods (`GodParser`) and saints (`SaintParser`,
+added 2026-06-18) share a `religion.*` prefix — `religion.god/<id>` + `religion.saint/<id>`,
+flat within each type, with `religion.domain`/`order`/`pantheon` reserved (not minted).
+Patron/pantheon/domains/alignment are **frontmatter**, never path nesting. See the workspace
+`docs/scc-reference.md` → "Gods & Religion".
 
 ## Feature taxonomy (feature / ability / trait)
 

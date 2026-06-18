@@ -194,12 +194,28 @@ as `feature-group` → `ability`).
 | `movement` | Movement types (Shift, Teleport...) | Description |
 | `negotiation` | Negotiation motivations/pitfalls | Description |
 | `project` | Downtime projects (Build Airship, Craft Treasure...) | Name, description |
-| `god` | Deities (Val, Cavall, Adûn...) | Name, description |
+| `god` | Deities (Val, Cavall, Adûn...) | Name, domains, pantheon, alignment, god_class |
+| `saint` | Legendary heroes / saints (Llewellyn, Zarok, Thellasko...) | Name, domains, patron |
 
-> `project` and `god` were added 2026-05-29 (`internal/content/project.go`, `god.go`)
-> to classify downtime projects and deities that previously had no matching type.
-> Both produce flat `mcdm.heroes.v1/<type>/<id>` codes. Use `@id` for clean slugs
-> when the heading would slugify poorly (e.g. `@id: adun` for "Adûn").
+> `project` was added 2026-05-29 (`internal/content/project.go`); it produces flat
+> `mcdm.heroes.v1/project/<id>` codes.
+>
+> **Religion namespace (`god` / `saint`).** As of 2026-06-18 gods and saints live under
+> a shared `religion.*` namespace: `religion.god/<id>` and `religion.saint/<id>` (flat
+> within each type). `religion.domain` / `religion.order` / `religion.pantheon` are
+> **reserved** for future content — do not mint them yet. Relationships are **frontmatter
+> links, never path nesting** (a saint's patron god is the explicit `@patron` annotation,
+> not its document position — several saints sit as siblings of their god). Annotations:
+>
+> - `god`: `@id`, optional `@name` (display override where the heading differs, e.g.
+>   "Devil Gods" → Lords of Hell), `@pantheon`, `@alignment` (`good`/`evil`/`devil`),
+>   `@god_class` (`elder`/`younger`/`space`/`devil`). Domains read from the
+>   `**Domains:**` body line.
+> - `saint`: `@id`, optional `@name`, `@patron` (a `religion.god` id, or plain text if
+>   no god entity). Domains read from the `**Domains:**` body line.
+>
+> Use `@id` for clean slugs when the heading would slugify poorly (e.g. `@id: adun` for
+> "Adûn"). See `docs/scc-reference.md` → "Gods & Religion".
 
 ### Monsters (`mcdm.monsters.v1`)
 
