@@ -279,6 +279,52 @@ func TestStatblockParser_Retainer(t *testing.T) {
 	}
 }
 
+func TestFeatureblockParser_RetainerAdvancement(t *testing.T) {
+	ctx := context.NewContextStack(nil)
+	ctx.Push(4, map[string]string{"domain": "retainer"})
+	// Level label must be inside a blockquote for fbLevelLabelRe to match via ParseRichFeatures.
+	body := "> **Level 4 Retainer Advancement Ability**\n>\n" +
+		"> 🗡 **Leaping Attack (Encounter)**\n>\n> **Effect:** Jump and strike."
+	sec := &parser.Section{Heading: "Angulotl Hopper Advancement Features", HeadingLevel: 6,
+		Annotation: map[string]string{"id": "angulotl-hopper"}, BodySource: body}
+	got, err := (&FeatureblockParser{}).Parse(ctx, sec)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if strings.Join(got.TypePath, "/") != "monster/retainer/advancement-features" {
+		t.Errorf("TypePath = %v, want [monster retainer advancement-features]", got.TypePath)
+	}
+	if got.ItemID != "angulotl-hopper" {
+		t.Errorf("ItemID = %q, want angulotl-hopper", got.ItemID)
+	}
+	feats, _ := got.Frontmatter["features"].([]map[string]any)
+	if len(feats) == 0 {
+		t.Fatalf("expected inline features, got %v", got.Frontmatter["features"])
+	}
+	if lv, _ := feats[0]["level"].(int); lv != 4 {
+		t.Errorf("member level = %v, want 4 (fbLevelLabelRe must attach it)", feats[0]["level"])
+	}
+}
+
+func TestFeatureblockParser_RoleAdvancement(t *testing.T) {
+	ctx := context.NewContextStack(nil)
+	ctx.Push(4, map[string]string{"domain": "retainer", "category": "role-advancement"})
+	sec := &parser.Section{Heading: "Ambusher Abilities", HeadingLevel: 5,
+		Annotation: map[string]string{"id": "ambusher"},
+		BodySource: "> **Level 4 Role Advancement Ability**\n>\n" +
+			"> 🗡 **Go for the Jugular (Encounter)**\n>\n> **Effect:** Bleed."}
+	got, err := (&FeatureblockParser{}).Parse(ctx, sec)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if strings.Join(got.TypePath, "/") != "monster/retainer/role-advancement" {
+		t.Errorf("TypePath = %v, want [monster retainer role-advancement]", got.TypePath)
+	}
+	if got.ItemID != "ambusher" {
+		t.Errorf("ItemID = %q, want ambusher", got.ItemID)
+	}
+}
+
 func TestStatblockParser_SummonerRival(t *testing.T) {
 	npcBody := "| — | Humanoid, Rival | Level 2 Elite Controller | - | EV 16 |\n" +
 		"|:-:|:-:|:-:|:-:|:-:|\n" +

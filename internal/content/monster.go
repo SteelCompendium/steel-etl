@@ -238,6 +238,28 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 		}, nil
 	}
 
+	// Retainer advancement / role-advancement containers (Monsters book, Plan 6).
+	// Under @domain: retainer this featureblock is either a per-retainer
+	// "<Name> Advancement Features" block, or — when the enclosing group carries
+	// @category: role-advancement — a per-role "<Role> Abilities" block. Members are
+	// inline abilities (uncoded; the malice/terrain/fixture model); their leveled
+	// bands come from the **Level N … Advancement Ability** bold labels.
+	if domain, category, _ := statblockDomain(ctx, section.HeadingLevel); domain == "retainer" {
+		if feats := ParseRichFeatures(body); len(feats) > 0 {
+			fm["features"] = RichFeatureMaps(feats)
+		}
+		kind := "advancement-features"
+		if category == "role-advancement" {
+			kind = "role-advancement"
+		}
+		return &ParsedContent{
+			Frontmatter: fm,
+			Body:        body,
+			TypePath:    compactPath("monster", "retainer", kind),
+			ItemID:      id,
+		}, nil
+	}
+
 	// kind: any "malice" mention in the heading marks a malice block ("Basilisk
 	// Malice (Malice Features)", "Basic Malice"); everything else is a named
 	// feature block ("Tactical Stance (Ajax Feature)").
