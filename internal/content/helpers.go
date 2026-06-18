@@ -5,12 +5,14 @@ import (
 	"strings"
 
 	"github.com/SteelCompendium/steel-etl/internal/context"
+	"github.com/SteelCompendium/steel-etl/internal/parser"
 )
 
 var (
-	nonAlphaNum  = regexp.MustCompile(`[^a-z0-9]+`)
-	leadTrail    = regexp.MustCompile(`^-+|-+$`)
-	costSuffixRe = regexp.MustCompile(`\s*\(\d+\s+\w+\)\s*$`)
+	nonAlphaNum   = regexp.MustCompile(`[^a-z0-9]+`)
+	leadTrail     = regexp.MustCompile(`^-+|-+$`)
+	costSuffixRe  = regexp.MustCompile(`\s*\(\d+\s+\w+\)\s*$`)
+	domainsLineRe = regexp.MustCompile(`(?m)^\*\*Domains:\*\*\s*(.+)$`)
 )
 
 // findAncestorID walks the context stack upward from the given level, looking
@@ -32,6 +34,34 @@ func findAncestorID(ctx *context.ContextStack, fromLevel int, targetType string)
 // "Alacrity of the Heart (11 Piety)" → "Alacrity of the Heart"
 func CleanHeading(s string) string {
 	return strings.TrimSpace(costSuffixRe.ReplaceAllString(s, ""))
+}
+
+// extractDomains pulls the comma-separated domain list from a god/saint body's
+// "**Domains:**" line into a trimmed slice. Returns nil when the line is absent.
+func extractDomains(body string) []string {
+	m := domainsLineRe.FindStringSubmatch(body)
+	if m == nil {
+		return nil
+	}
+	var out []string
+	for _, part := range strings.Split(m[1], ",") {
+		if v := strings.TrimSpace(part); v != "" {
+			out = append(out, v)
+		}
+	}
+	return out
+}
+
+// headingName returns the entity's display name: the @name annotation override
+// when present (used where the book heading differs from the entity, e.g. the
+// "Devil Gods" section that defines the Lords of Hell), else the cleaned heading.
+func headingName(s *parser.Section) string {
+	if s.Annotation != nil {
+		if n := strings.TrimSpace(s.Annotation["name"]); n != "" {
+			return n
+		}
+	}
+	return CleanHeading(s.Heading)
 }
 
 // Slugify converts a heading text to a URL-friendly slug.

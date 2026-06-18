@@ -1,6 +1,10 @@
 package content
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/SteelCompendium/steel-etl/internal/parser"
+)
 
 func TestSlugify(t *testing.T) {
 	tests := []struct {
@@ -50,5 +54,41 @@ func TestCleanHeading(t *testing.T) {
 		if got != tt.want {
 			t.Errorf("CleanHeading(%q) = %q, want %q", tt.input, got, tt.want)
 		}
+	}
+}
+
+func TestExtractDomains(t *testing.T) {
+	cases := []struct {
+		name string
+		body string
+		want []string
+	}{
+		{"standard line", "**Domains:** Creation, Life, Love, Protection\n\nProse.", []string{"Creation", "Life", "Love", "Protection"}},
+		{"two domains", "**Domains:** Life, War", []string{"Life", "War"}},
+		{"no line", "Just prose, no domains.", nil},
+		{"trims spaces", "**Domains:**  Sun ,  Storm ", []string{"Sun", "Storm"}},
+	}
+	for _, c := range cases {
+		t.Run(c.name, func(t *testing.T) {
+			got := extractDomains(c.body)
+			if len(got) != len(c.want) {
+				t.Fatalf("extractDomains() = %v, want %v", got, c.want)
+			}
+			for i := range got {
+				if got[i] != c.want[i] {
+					t.Errorf("extractDomains()[%d] = %q, want %q", i, got[i], c.want[i])
+				}
+			}
+		})
+	}
+}
+
+func TestHeadingName(t *testing.T) {
+	if got := headingName(&parser.Section{Heading: "Val"}); got != "Val" {
+		t.Errorf("headingName plain = %q, want Val", got)
+	}
+	s := &parser.Section{Heading: "Devil Gods", Annotation: map[string]string{"name": "Lords of Hell"}}
+	if got := headingName(s); got != "Lords of Hell" {
+		t.Errorf("headingName override = %q, want Lords of Hell", got)
 	}
 }
