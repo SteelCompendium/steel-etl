@@ -510,3 +510,18 @@ func TestBuildCardsContent_GodAndProject(t *testing.T) {
 		t.Errorf("project leaf dir should render sc-card grid:\n%s", got)
 	}
 }
+
+func TestSaintCard(t *testing.T) {
+	fm := "name: Llewellyn the Valiant\ntype: saint\npatron: cavall\n"
+	body := "**Domains:** Life, Protection\n\nA legendary knight of Cavall."
+	out := saintCard(fm, body, "llewellyn-the-valiant.md", "Llewellyn the Valiant")
+	if !strings.Contains(out, "Llewellyn the Valiant") {
+		t.Errorf("saintCard missing name:\n%s", out)
+	}
+	if !strings.Contains(out, "Saint") {
+		t.Errorf("saintCard missing type label:\n%s", out)
+	}
+	if !strings.Contains(out, "Domains") {
+		t.Errorf("saintCard missing Domains line:\n%s", out)
+	}
+}

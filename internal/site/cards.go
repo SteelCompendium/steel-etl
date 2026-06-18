@@ -41,7 +41,7 @@ var richCardTypes = map[string]bool{
 	"kit": true, "class": true, "ancestry": true, "career": true,
 	"treasure": true, "perk": true, "title": true, "complication": true,
 	"culture": true, "condition": true, "skill": true,
-	"movement": true, "negotiation": true, "god": true, "project": true,
+	"movement": true, "negotiation": true, "god": true, "saint": true, "project": true,
 }
 
 // sbPreviewCardTypes are leaf dirs that render their statblock leaves as rich
@@ -162,6 +162,8 @@ func cardFor(t, dirName, fm, body, file, name string) string {
 		return cultureCard(fm, body, file, name)
 	case "god":
 		return godCard(fm, body, file, name)
+	case "saint":
+		return saintCard(fm, body, file, name)
 	case "project":
 		return projectCard(fm, body, file, name)
 	case "dynamic-terrain":
@@ -431,6 +433,23 @@ func godCard(fm, body, file, name string) string {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
 	return card(file, "god", "God", name, inner)
+}
+
+// saintCard renders a saint (legendary hero): the Domains line + flavor prose,
+// mirroring godCard. Patron is a frontmatter relationship and is not surfaced on
+// the index card (it shows on the leaf page / is available to future tooling).
+func saintCard(fm, body, file, name string) string {
+	inner := ""
+	if v := bodyLabeledLine(body, "Domains"); v != "" {
+		inner += lineBlock("Domains", inlineMD(v))
+	}
+	if f := firstUnlabeledProse(body); f != "" {
+		inner += flavorDiv(f, 240)
+	}
+	if inner == "" {
+		inner = blurbBlock(bodyBlurb(body, 96))
+	}
+	return card(file, "god", "Saint", name, inner)
 }
 
 // projectCard renders a downtime project: flavor + the Project Goal stat and the
