@@ -312,6 +312,26 @@ func TestBuildFeatureIndex_PreviewCards(t *testing.T) {
 	}
 }
 
+// A hub-and-spoke companion level dir (feature/companion/<class>/<species>/level-N)
+// has no literal "trait" path segment, so klassFromDir yields "" — the title must
+// drop the dangling em-dash and read just "Level N", not " — Level N".
+func TestBuildFeatureIndex_PreviewCards_CompanionLevelTitle(t *testing.T) {
+	root := t.TempDir()
+	lvlDir := filepath.Join(root, "feature", "companion", "beastheart", "wolf", "level-6")
+	writeFile(t, filepath.Join(lvlDir, "call-of-the-wild.md"), traitLeaf("Call of the Wild", ""))
+
+	content, ok := buildFeatureIndexContent(lvlDir, "level-6", []string{"call-of-the-wild.md"}, nil)
+	if !ok {
+		t.Fatal("expected preview-card index for companion level dir")
+	}
+	if !strings.Contains(content, "# Level 6\n") {
+		t.Errorf("companion level title should be %q, got:\n%s", "# Level 6", content)
+	}
+	if strings.Contains(content, "— Level 6") {
+		t.Errorf("companion level title has dangling em-dash:\n%s", content)
+	}
+}
+
 func TestBuildFeatureIndex_SearchIslandOnLanding(t *testing.T) {
 	root := t.TempDir()
 	featureDir := filepath.Join(root, "feature")

@@ -257,9 +257,14 @@ func buildPreviewIndex(dir, dirName string, files []string, kind string) string 
 }
 
 // previewTitle composes the page H1. Level pages get a "<Class> — Level N" title;
-// flat ancestry/kit pages use their own name.
+// flat ancestry/kit pages use their own name. Hub-and-spoke paths with no literal
+// kind segment (e.g. feature/companion/beastheart/wolf/level-6) yield an empty
+// klass — drop the dangling em-dash and use just "Level N".
 func previewTitle(dir, dirName, klass string) string {
 	if levelDirRe.MatchString(dirName) {
+		if klass == "" {
+			return dirToTitle(dirName)
+		}
 		return klass + " — " + dirToTitle(dirName)
 	}
 	return dirToTitle(dirName)
