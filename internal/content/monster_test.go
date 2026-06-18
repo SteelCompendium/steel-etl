@@ -262,6 +262,23 @@ func TestStatblockParser_SummonerMinionChampion(t *testing.T) {
 	}
 }
 
+func TestStatblockParser_Retainer(t *testing.T) {
+	ctx := context.NewContextStack(nil)
+	ctx.Push(4, map[string]string{"domain": "retainer"}) // mirrors `#### Retainer Statblocks`
+	sec := &parser.Section{Heading: "Angulotl Hopper", HeadingLevel: 6,
+		BodySource: "|  Angulotl, Humanoid | - | Level 1 | Harrier Retainer | EV - |\n\n> 🗡 **Leapfrog (Signature Ability)**\n>\n> **Effect:** Jump."}
+	got, err := (&StatblockParser{}).Parse(ctx, sec)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if strings.Join(got.TypePath, "/") != "monster/retainer/statblock" {
+		t.Errorf("TypePath = %v, want [monster retainer statblock]", got.TypePath)
+	}
+	if got.ItemID != "angulotl-hopper" {
+		t.Errorf("ItemID = %q, want angulotl-hopper", got.ItemID)
+	}
+}
+
 func TestStatblockParser_SummonerRival(t *testing.T) {
 	npcBody := "| — | Humanoid, Rival | Level 2 Elite Controller | - | EV 16 |\n" +
 		"|:-:|:-:|:-:|:-:|:-:|\n" +

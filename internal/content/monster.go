@@ -106,6 +106,9 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	// book, so the "summoner" class segment is hardcoded; revisit if another book
 	// gains minions/champions.
 	switch domain {
+	case "retainer":
+		// Monsters-book retainers join the monster.* family (Plan 6).
+		typePath = compactPath("monster", "retainer", category, subcategory, "statblock")
 	case "minion":
 		typePath = compactPath("monster", "minion", "summoner", category, "statblock")
 	case "champion":
