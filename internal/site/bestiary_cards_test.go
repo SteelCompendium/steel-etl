@@ -73,12 +73,17 @@ size: One square that can't be moved through
 
 func TestTerrainCard(t *testing.T) {
 	got := terrainCard(pillarFM, "This stone pillar can be toppled.", "pillar.md", "Pillar")
+	// Level/EV are compact → stat grid; the descriptive Size phrase → full-width line.
 	for _, want := range []string{`href="pillar/"`, `Dynamic Terrain`,
-		`<div class="sc-card__name">Pillar</div>`, `>EV</div>`, `>Level</div>`, `>Size</div>`,
+		`<div class="sc-card__name">Pillar</div>`, `>EV</div>`, `>Level</div>`,
+		`<div class="sc-card__line"><b>Size</b> One square that can&#39;t be moved through</div>`,
 		`<div class="sc-card__flavor">`, `stone pillar`} {
 		if !strings.Contains(got, want) {
 			t.Errorf("terrainCard missing %q in:\n%s", want, got)
 		}
+	}
+	if strings.Contains(got, `<div class="l">Size</div>`) {
+		t.Errorf("descriptive Size should be a line, not a crushed grid cell:\n%s", got)
 	}
 }
 
@@ -319,6 +324,36 @@ func TestTerrainStat(t *testing.T) {
 	}
 }
 
+// Mixed stats: compact Level stays in the grid; descriptive EV/Size phrases
+// (which carry whitespace) break out into full-width lines instead of being
+// squished into 1/3-width grid cells.
+const terrainMixedFM = `level: 3
+name: Lava
+stats:
+    - name: EV
+      value: 4 per 10 x 10 patch
+    - name: Size
+      value: One or more squares of difficult terrain
+`
+
+func TestTerrainCard_DescriptiveStatsAsLines(t *testing.T) {
+	got := terrainCard(terrainMixedFM, "Molten rock.", "lava.md", "Lava")
+	for _, want := range []string{
+		`<div class="l">Level</div>`, // compact → grid
+		`<div class="sc-card__line"><b>EV</b> 4 per 10 x 10 patch</div>`,
+		`<div class="sc-card__line"><b>Size</b> One or more squares of difficult terrain</div>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("terrainCard (mixed) missing %q in:\n%s", want, got)
+		}
+	}
+	for _, bad := range []string{`<div class="l">EV</div>`, `<div class="l">Size</div>`} {
+		if strings.Contains(got, bad) {
+			t.Errorf("descriptive stat should not render as a grid cell (%q):\n%s", bad, got)
+		}
+	}
+}
+
 func TestTerrainCard_StatsShape(t *testing.T) {
 	got := terrainCard(terrainStatsFM, "An angry beehive hovers nearby.", "angry-beehive.md", "Angry Beehive")
 	for _, want := range []string{
@@ -354,8 +389,10 @@ stats:
 
 func TestTerrainCard_SizeLinkRendered(t *testing.T) {
 	got := terrainCard(terrainLinkedSizeFM, "Molten rock wells up.", "lava.md", "Lava")
-	if !strings.Contains(got, `<a href="../../movement/difficult-terrain/">difficult terrain</a>`) {
-		t.Errorf("terrainCard Size link not rendered as <a> in:\n%s", got)
+	// The descriptive, link-bearing Size renders as a full-width line (not a
+	// crushed grid cell), with the link as a real <a>.
+	if !strings.Contains(got, `<div class="sc-card__line"><b>Size</b> One or more squares of <a href="../../movement/difficult-terrain/">difficult terrain</a></div>`) {
+		t.Errorf("terrainCard Size link not rendered as a full-width line in:\n%s", got)
 	}
 	if strings.Contains(got, "[difficult terrain]") {
 		t.Errorf("terrainCard leaked escaped markdown link as plaintext in:\n%s", got)
