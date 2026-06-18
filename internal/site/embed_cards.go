@@ -16,6 +16,9 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
+
+	"github.com/SteelCompendium/steel-etl/internal/content"
+	"gopkg.in/yaml.v3"
 )
 
 // embedCardSections returns the configured section names, defaulting to Browse.
@@ -88,6 +91,12 @@ func leafCard(content string) (scc string, entry cardEntry, ok bool) {
 // dataSCCHeadingRe matches an ATX heading carrying a {data-scc="<code>"}
 // attr_list marker (the per-item markers RenderSubtree stamps on descendants).
 var dataSCCHeadingRe = regexp.MustCompile(`^(#{1,6})\s+.*\{data-scc="([^"]+)"\}\s*$`)
+
+// dataSBInlineHeadingRe matches the heading of an unclassified inline statblock
+// (`@type: statblock | @classify: false`): RenderSubtree stamps it with
+// {data-sb-inline="true"} instead of a {data-scc} code. Group 1 is the level,
+// group 2 the (already-cleaned) statblock name.
+var dataSBInlineHeadingRe = regexp.MustCompile(`^(#{1,6})\s+(.*?)\s*\{data-sb-inline="true"\}\s*$`)
 
 // atxHeadingRe matches any ATX heading line; len(submatch 1) is the level.
 // Headings deeper than H6 were already demoted to bold by RenderSubtree
@@ -189,6 +198,30 @@ func subtreeHasStandalone(lines []string, cards map[string]cardEntry) bool {
 	return false
 }
 
+// inlineStatblockCard renders an unclassified inline statblock straight from the
+// book markdown that sits under its heading — no leaf page, no SCC. It parses the
+// stat grid into the same field set a real leaf carries (content.ParseStatblockFields),
+// serializes it as frontmatter, and runs the standard buildStatblockIslandPage so
+// the card is byte-identical to a classified statblock's. Returns "" if the region
+// doesn't parse as a statblock (caller then leaves the raw markdown in place). The
+// body's links are already resolved relative to the container page, so no rebase is
+// needed. Note: with no scc, buildStatblockIslandPage skips the feature cache and the
+// summoner eyebrow falls back to the keyword line.
+func inlineStatblockCard(name, body string) string {
+	fields := content.ParseStatblockFields(name, body)
+	fmBytes, err := yaml.Marshal(fields)
+	if err != nil {
+		return ""
+	}
+	doc := "---\n" + string(fmBytes) + "---\n\n" + body
+	rendered, ok := buildStatblockIslandPage([]byte(doc))
+	if !ok {
+		return ""
+	}
+	_, cardBody := splitFrontmatter(string(rendered))
+	return strings.TrimSpace(cardBody)
+}
+
 // spliceCards rewrites a container page body: for every {data-scc} heading whose
 // code is a card-able leaf in cards (and is not the page's own code), the
 // heading is kept and its inlined sub-tree (down to the next heading of level <=
@@ -205,6 +238,28 @@ func spliceCards(body, ownSCC, containerDir string, cards map[string]cardEntry) 
 	spliced := 0
 	for i := 0; i < len(lines); i++ {
 		line := lines[i]
+		// Unclassified inline statblock: render the region under the heading into a
+		// card from its own markdown (no leaf/SCC to look up). Keep a clean heading
+		// (marker stripped) for the TOC entry, then replace the region with the card.
+		if sm := dataSBInlineHeadingRe.FindStringSubmatch(line); sm != nil {
+			level, name := len(sm[1]), strings.TrimSpace(sm[2])
+			end := i + 1
+			for end < len(lines) {
+				if lv := headingLevel(lines[end]); lv > 0 && lv <= level {
+					break
+				}
+				end++
+			}
+			card := inlineStatblockCard(name, strings.Join(lines[i+1:end], "\n"))
+			if card == "" {
+				out = append(out, line) // not a parseable statblock; leave raw region
+				continue
+			}
+			out = append(out, sm[1]+" "+name, "", card, "")
+			spliced++
+			i = end - 1
+			continue
+		}
 		m := dataSCCHeadingRe.FindStringSubmatch(line)
 		if m == nil {
 			out = append(out, line)
@@ -305,7 +360,7 @@ func embedItemCards(cfg *Config) (int, []string) {
 				return nil
 			}
 			fm, body := splitFrontmatter(string(data))
-			if fm == "" || !strings.Contains(body, `{data-scc="`) {
+			if fm == "" || (!strings.Contains(body, `{data-scc="`) && !strings.Contains(body, `{data-sb-inline="`)) {
 				return nil
 			}
 			ownSCC := strings.TrimSpace(parseFrontmatterField(fm, "scc"))

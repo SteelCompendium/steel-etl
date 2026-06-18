@@ -175,6 +175,73 @@ func splitOnTitles(block string) []string {
 	return blocks
 }
 
+// ParseStatblockFields parses a creature statblock's stat grid (header row +
+// label cells) into the frontmatter fields shared by the data output and the
+// inline-card renderer. It covers only the universal creature fields; domain/SCC
+// classification and fixture handling stay in StatblockParser.Parse. The v2
+// embed_cards post-pass reuses this to build an inline `.sb-wrap` card for an
+// unclassified (`@classify: false`) statblock straight from its book markdown.
+func ParseStatblockFields(name, body string) map[string]any {
+	grid := parseStatGrid(body)
+
+	fm := map[string]any{
+		"name": name,
+		"type": "statblock",
+	}
+	if grid.header.level > 0 {
+		fm["level"] = grid.header.level
+	}
+	if grid.header.role != "" {
+		fm["role"] = grid.header.role
+	}
+	if grid.header.organization != "" {
+		fm["organization"] = grid.header.organization
+	}
+	if len(grid.header.keywords) > 0 {
+		fm["keywords"] = grid.header.keywords
+	}
+	if grid.header.ev != "" {
+		fm["ev"] = grid.header.ev
+	}
+	// Non-EV summon cost (Summoner book) — kept distinct from ev so consumers know
+	// whether the value is an Encounter Value or a gametime cost. Cleared for
+	// fixtures in applyFixtureGrid.
+	if grid.header.cost != "" {
+		fm["cost"] = grid.header.cost
+	}
+
+	// String labels.
+	for label, key := range map[string]string{
+		"Stamina": "stamina", "Size": "size", "Movement": "movement",
+	} {
+		if v, ok := grid.labels[label]; ok && v != "-" {
+			fm[key] = v
+		}
+	}
+	// Integer labels.
+	for label, key := range map[string]string{
+		"Speed": "speed", "Stability": "stability", "Free Strike": "free_strike",
+		"Might": "might", "Agility": "agility", "Reason": "reason",
+		"Intuition": "intuition", "Presence": "presence",
+	} {
+		if n, ok := intField(grid.labels[label]); ok {
+			fm[key] = n
+		}
+	}
+	// Immunity / Weakness become arrays (split on comma).
+	if v, ok := grid.labels["Immunity"]; ok && v != "-" {
+		fm["immunities"] = splitCommaList(v)
+	}
+	if v, ok := grid.labels["Weakness"]; ok && v != "-" {
+		fm["weaknesses"] = splitCommaList(v)
+	}
+	if v, ok := grid.labels["With Captain"]; ok && v != "-" {
+		fm["with_captain"] = v
+	}
+
+	return fm
+}
+
 // ParseStatblockFeatures parses the feature blockquotes of a statblock body into
 // SDK-feature maps (matching feature.schema.json shape).
 func ParseStatblockFeatures(body string) []map[string]any {

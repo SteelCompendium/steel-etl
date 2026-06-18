@@ -24,6 +24,11 @@ import (
 // turns the marker into a data-scc attribute on the rendered <hN> without
 // affecting the toc-generated heading id.
 //
+// An unclassified inline statblock (a `@type: statblock | @classify: false`
+// descendant — has no SCC code, so never appears in sccBySection) instead gets a
+// `{data-sb-inline="true"}` marker. The v2 embed_cards post-pass keys off it to
+// build a .sb-wrap card from the inline markdown; data/ keeps the raw table.
+//
 // scc: links in bodies are left in their raw form; the md-linked generator
 // resolves them relative to the page's own SCC code.
 func RenderSubtree(section *parser.Section, sccBySection map[*parser.Section]string) string {
@@ -48,6 +53,12 @@ func renderSubtree(section *parser.Section, rootLevel int, sccBySection map[*par
 		heading := strings.Repeat("#", level) + " " + CleanHeading(child.Heading)
 		if code := sccBySection[child]; code != "" {
 			heading += ` {data-scc="` + code + `"}`
+		} else if child.Type() == "statblock" && child.NoClassify() {
+			// Unclassified inline statblock (@classify: false): no SCC code, so it
+			// carries a data-sb-inline marker instead. The raw stat table + feature
+			// blockquotes still render here verbatim (faithful for the data/ output);
+			// the v2 embed_cards post-pass upgrades the marked region to a .sb-wrap card.
+			heading += ` {data-sb-inline="true"}`
 		}
 		childBody := renderSubtree(child, rootLevel, sccBySection)
 		if childBody != "" {

@@ -61,6 +61,15 @@ HTML comments placed immediately before a heading. The annotation applies to tha
 |-------|-------------|-------------|
 | `@scc` | Replace the auto-derived canonical SCC entirely | When auto-classification is wrong or ambiguous |
 | `@scc-alias` | Add an additional lookup alias for this item | Cross-references, redirects, shared abilities |
+| `@classify: false` | Parse and render the section in place but do **not** classify it — no SCC code, no leaf page, no Browse page, no Bestiary row | An illustrative/duplicate block the book reproduces (e.g. a conversion example) that should render but not become its own catalogued entity |
+
+`@classify: false` suppresses the entire classification step for a section while
+leaving parsing and rendering intact. For a **statblock** it still renders as an
+inline `.sb-wrap` card on every page that contains it: RenderSubtree stamps the
+heading with `{data-sb-inline="true"}` (instead of an SCC marker) and the v2
+`embed_cards` post-pass builds the card from the inline markdown. Motivating case:
+the Summoner book's "Pixie Bellringer (Converted)" minion-conversion example, which
+the book prints a second time and which should not double up in the Bestiary.
 
 See `plans/architecture-redesign/scc-taxonomy.md` for the full SCC taxonomy and classification rules.
 

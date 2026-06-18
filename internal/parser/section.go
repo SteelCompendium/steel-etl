@@ -27,6 +27,15 @@ func (s *Section) Type() string {
 	return s.Annotation["type"]
 }
 
+// NoClassify reports whether the section carries `@classify: false`, meaning it
+// should be parsed and rendered in place but NOT classified as its own entity
+// (no SCC code, no leaf page, no Browse/Bestiary presence). A statblock so
+// marked still renders as an inline `.sb-wrap` card on the page that contains it
+// (see RenderSubtree's data-sb-inline marker + the v2 embed_cards post-pass).
+func (s *Section) NoClassify() bool {
+	return s.Annotation != nil && s.Annotation["classify"] == "false"
+}
+
 // ID returns the @id annotation value, or empty string if unset.
 func (s *Section) ID() string {
 	if s.Annotation == nil {
