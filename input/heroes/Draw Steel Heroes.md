@@ -27211,7 +27211,7 @@ The Deities and Domains table and the [Saints](scc.v1:mcdm.heroes.v1/rule.world/
 | Yllin Dyrvis                        | Knowledge, Nature             |
 | Zarok the Law-Giver                 | Protection, War               |
 
-<!-- @type: god | @id: val -->
+<!-- @type: god | @id: val | @pantheon: arcadia | @alignment: good | @god_class: elder -->
 ### Val
 
 **Domains:** Creation, Knowledge, Life, Nature, Protection
@@ -27280,7 +27280,7 @@ Illwyv li Orchiax, the Moonknight, Marshall of the Gloaming, Manslayer. When [hu
 
 Illwyv it was who first realized the folly of treating with these creatures. A great hunter of the Quercus Court, she gathered her band of elite Helriath Harriers and made war on the [humans](scc.v1:mcdm.heroes.v1/ancestry/human) who would kill the wode.
 
-<!-- @type: god | @id: ord -->
+<!-- @type: god | @id: ord | @pantheon: dwarf | @alignment: good | @god_class: elder -->
 ### Ord
 
 **Domains:** Creation, Knowledge, Protection, Sun, War
@@ -27331,7 +27331,7 @@ After the war, Stakros turned his [talents](scc.v1:mcdm.heroes.v1/class/talent) 
 
 Stakros teaches the value of knowledge for knowledge's sake, and the power of the mind to overcome any obstacle. He also teaches that knowledge is power, and in unready hands can only be dangerous.
 
-<!-- @type: god | @id: kul -->
+<!-- @type: god | @id: kul | @pantheon: orc | @alignment: good | @god_class: elder -->
 ### Kul
 
 **Domains:** Knowledge, Life, Sun, Trickery, War
@@ -27498,6 +27498,7 @@ That night, there was a new constellation in the sky.
 
 Atossa teaches that it is not for the shepherd to judge the flock—only to protect and care for them. Even though they might be foolish, or cowardly. "Let the gods judge," Atossa said. "We have sheep to worry after."
 
+<!-- @type: god | @id: lords-of-hell | @name: Lords of Hell | @pantheon: hell | @alignment: devil | @god_class: devil -->
 ### Devil Gods
 
 [Devil](scc.v1:mcdm.heroes.v1/ancestry/devil) heroes in [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden) usually serve the gods and [saints](scc.v1:mcdm.heroes.v1/rule.world/saint) of the culture in which they were raised. Few [devils](scc.v1:mcdm.heroes.v1/ancestry/devil) in [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden) are from the Seven Cities, most are descended from [devils](scc.v1:mcdm.heroes.v1/ancestry/devil) who were stranded on [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden) hundreds or thousands of years ago. [Devils](scc.v1:mcdm.heroes.v1/ancestry/devil) who are from the Seven Cities have their own unique pantheon.
@@ -27585,7 +27586,7 @@ Some of them take it more seriously than others though. People in the most dista
 
 Like all peoples of [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden), the people of [Vasloria](scc.v1:mcdm.heroes.v1/rule.world/vasloria) are well aware there are other gods. They do not particularly think their gods are *better*, just, "These are the local ones who matter to us." A priest of [Cavall](scc.v1:mcdm.heroes.v1/god/cavall) who journeyed far from Corwell and found themselves in the distant desert land Khemhara could still act as a [conduit](scc.v1:mcdm.heroes.v1/class/conduit) of Saint Llewellyn the Valiant, but they would look around the Heliopolis and see the animal-headed gods of the Khemharans and the astonishing feats of masonry and astronomy the Khemharans achieved and think: "Well. Obviously the gods of [Vasloria](scc.v1:mcdm.heroes.v1/rule.world/vasloria) aren't that big a deal here, but these gods certainly are!" The peoples of each region of [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden) prefer their own gods because they understand them best, not because they think they are "more powerful."
 
-<!-- @type: god | @id: adun -->
+<!-- @type: god | @id: adun | @pantheon: vasloria | @alignment: good | @god_class: younger -->
 #### Adûn
 
 **Domains:** Creation, Life, Love, Protection
@@ -27642,7 +27643,7 @@ Fleeing across the bridge, the refugees found the body of Gryffyn, author of thi
 
 Saint Gryffyn the Stout teaches that despair is the enemy of action. That unyielding endurance is the cure for impossible odds. That more than sword and spell, hard work is the savior of the people.
 
-<!-- @type: god | @id: cavall -->
+<!-- @type: god | @id: cavall | @pantheon: vasloria | @alignment: good | @god_class: younger -->
 #### Cavall
 
 **Domains:** Life, Love, Protection, War
@@ -27739,7 +27740,7 @@ Twelve days after they rode out, Zür returned with Lady Gwenllian's body on her
 
 Gwenllian is the [saint](scc.v1:mcdm.heroes.v1/rule.world/saint) of those who stand watch, of all those who must carry a burden ceaselessly. Gwenllian teaches that vigilance is its own reward.
 
-<!-- @type: god | @id: salorna -->
+<!-- @type: god | @id: salorna | @pantheon: vasloria | @alignment: good | @god_class: younger -->
 #### Salorna
 
 **Domains:** Life, Nature, Storm, Sun
@@ -27824,6 +27825,7 @@ Eriarwen teaches that nature holds the power to destroy—that Mother Nature is 
 
 Most heroes are hero-heroes, but some heroes are anti-heroes, and some are anti-villains! This section presents one archetypal [saint](scc.v1:mcdm.heroes.v1/rule.world/saint) from each of [Vasloria](scc.v1:mcdm.heroes.v1/rule.world/vasloria)'s evil gods; the brothers Nikros and Cyrvis for those players who wish to play such heroes.
 
+<!-- @type: god | @id: nikros | @pantheon: vasloria | @alignment: evil | @god_class: younger -->
 ##### Nikros the Tyrant
 
 **Domains:** Death, Fate, Storm, War
@@ -27856,6 +27858,7 @@ Savior to all, Pentalion was made a [saint](scc.v1:mcdm.heroes.v1/rule.world/sai
 
 Saint Pentalion teaches that one should bide their time and build their power before striking. That treachery in service to growing your own power is no vice.
 
+<!-- @type: god | @id: cyrvis | @pantheon: vasloria | @alignment: evil | @god_class: younger -->
 ##### Cyrvis
 
 **Domains:** Death, Fate, Knowledge, Trickery
@@ -27916,7 +27919,7 @@ But most citizens of the timescape do not carry the gods with them in their dail
 
 The closest analog to worship in [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden) to be found in the upper worlds would be in Alloy, the City at the Center of the Timescape. The great port city where civilizations across the timescape come to trade is also a city of temples. Temples to every god and [saint](scc.v1:mcdm.heroes.v1/rule.world/saint) and hero and herald in the timescape—some dead, some forgotten—can be found somewhere in the ancient city's limits. Folk from [Orden](scc.v1:mcdm.heroes.v1/rule.world/orden) arriving in Alloy (an incredibly rare event, as it takes enormous energies to lift one's ship up out of the slow-time of the lower words) remark at how familiar Alloy seems to them. It is a city where the upper and lower worlds mingle and steel sabers sometimes cross with swords made of hard light.
 
-<!-- @type: god | @id: nebular -->
+<!-- @type: god | @id: nebular | @pantheon: timescape | @alignment: good | @god_class: space -->
 #### Nebular the Star Mother
 
 **Domains:** Creation, Life, Love, Sun
@@ -27965,7 +27968,7 @@ The [memonek](scc.v1:mcdm.heroes.v1/ancestry/memonek) officers and soldiers of U
 
 Lady Magnetar is the Herald of Nebulon the Star Mother aiding those who fight in the cause of light and life and order. She is invoked whenever a great sacrifice must be made. "Lady Magnetar, let my sacrifice not be in vain."
 
-<!-- @type: god | @id: ov -->
+<!-- @type: god | @id: ov | @pantheon: timescape | @alignment: good | @god_class: space -->
 #### OV the Wave Pilot
 
 **Domains:** Fate, Knowledge, Storm, Sun
