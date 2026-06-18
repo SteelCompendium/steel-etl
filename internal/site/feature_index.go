@@ -71,7 +71,8 @@ func usesFolderIndex(dir string) bool {
 		switch p {
 		case "feature", "treasure", "skill", "rule",
 			"monster", "dynamic-terrain", "retainer",
-			"minion", "fixture", "champion", "rival":
+			"minion", "fixture", "champion", "rival",
+			"religion":
 			return true
 		}
 	}
@@ -161,6 +162,10 @@ func folderCrestIcon(parentDir, childDir string) string {
 		return "perk"
 	case "artifact":
 		return "title"
+	case "god":
+		return "god" // hands-pray crest, matching the god leaf cards
+	case "saint":
+		return "title" // laurel — venerated heroes, distinct from gods
 	}
 	switch {
 	case strings.Contains(slash, "/feature/ability"):
@@ -205,6 +210,9 @@ func folderIntro(dir, dirName string) string {
 		return "Hazards, fieldworks, mechanisms, and other interactive terrain. Pick a category to browse."
 	case dirName == "retainer":
 		return "Retainers your heroes can recruit to fight alongside them."
+	case dirName == "religion":
+		return "The deities of Orden and the legendary heroes who carry out their will. Pick the " +
+			"**gods** or their **saints** to browse."
 	}
 	return ""
 }

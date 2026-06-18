@@ -484,3 +484,26 @@ func TestBuildFeatureIndex_TreasureLeafFallsThrough(t *testing.T) {
 	}
 	_ = os.Stat // keep os import if unused elsewhere
 }
+
+func TestUsesFolderIndex_Religion(t *testing.T) {
+	// The religion umbrella (Browse/religion, children god/ + saint/) must route
+	// through the .sc-folder card renderer, like feature/treasure/rule trees.
+	if !usesFolderIndex("Browse/religion") {
+		t.Error("usesFolderIndex(Browse/religion) = false, want true")
+	}
+	// Leaf grids stay flat .sc-card (handled by buildCardsContent), but the path
+	// still contains a religion segment — that's fine; they have files, not subdirs,
+	// so buildFeatureIndexContent's subdir gate skips them regardless.
+	if !usesFolderIndex("Browse/religion/god") {
+		t.Error("usesFolderIndex(Browse/religion/god) = false, want true (segment match)")
+	}
+}
+
+func TestFolderCrestIcon_Religion(t *testing.T) {
+	cases := map[string]string{"god": "god", "saint": "title"}
+	for child, want := range cases {
+		if got := folderCrestIcon("Browse/religion", child); got != want {
+			t.Errorf("folderCrestIcon(religion, %q) = %q, want %q", child, got, want)
+		}
+	}
+}
