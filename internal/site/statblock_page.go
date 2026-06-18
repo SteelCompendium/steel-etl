@@ -77,6 +77,7 @@ type sbFeature struct {
 type sbIsland struct {
 	ID              string      `json:"id"`
 	Name            string      `json:"name"`
+	Flavor          string      `json:"flavor,omitempty"`
 	Ancestry        string      `json:"ancestry"`
 	Level           string      `json:"level"`
 	Role            string      `json:"role"`
@@ -177,6 +178,7 @@ func buildStatblockIsland(fm, body string) sbIsland {
 	return sbIsland{
 		ID:       slugify(name),
 		Name:     name,
+		Flavor:   strings.TrimSpace(parseFrontmatterField(fm, "flavor")),
 		Ancestry: ancestry,
 		Level:    strings.TrimSpace(parseFrontmatterField(fm, "level")),
 		Role:     roleDisplay,

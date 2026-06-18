@@ -336,6 +336,11 @@ func renderStatblockCard(d sbIsland) string {
 	b.WriteString(renderStatblockSticky(d))
 	b.WriteString(`<article class="sb md-typeset" data-role="` + sbEsc(d.RoleKey) + `">`)
 	b.WriteString(renderStatblockHead(d))
+	if f := strings.TrimSpace(d.Flavor); f != "" {
+		// Flavor prose under the name, before the stat row (book layout) — e.g.
+		// Summoner portfolio summons describe the creature here.
+		b.WriteString(`<div class="sb__flavor">` + richSb(f) + `</div>`)
+	}
 	b.WriteString(renderStatblockDefenses(d.Defenses))
 	b.WriteString(renderStatblockMeta(d.Meta))
 	b.WriteString(renderStatblockChars(d.Characteristics))

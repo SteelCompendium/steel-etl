@@ -8,7 +8,7 @@ import (
 // Keys are only emitted when present in frontmatter, so fixture-only fields
 // (statblock_kind, terrain_type — Summoner book) are absent from normal statblocks.
 var statblockScalarKeys = []string{
-	"name", "type", "level", "role", "organization", "keywords", "ev", "cost",
+	"name", "type", "flavor", "level", "role", "organization", "keywords", "ev", "cost",
 	"stamina", "speed", "movement", "size", "stability", "free_strike",
 	"might", "agility", "reason", "intuition", "presence",
 	"immunities", "weaknesses", "with_captain",

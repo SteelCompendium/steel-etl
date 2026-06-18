@@ -37,6 +37,26 @@ func TestParseStatGrid(t *testing.T) {
 	}
 }
 
+// TestParseStatblockFields_Flavor verifies the leading prose paragraph (the
+// flavor text under a statblock heading, before the stat grid) is lifted into the
+// `flavor` frontmatter field so it survives the v2 .sb-wrap card render — first
+// seen on Summoner-book portfolio summons (e.g. the Ensnarer).
+func TestParseStatblockFields_Flavor(t *testing.T) {
+	const flavor = "This vaguely humanoid form is warped and distorted by a demon nestled inside them."
+	body := flavor + "\n\n" + cursespitterGrid
+	fm := ParseStatblockFields("Ensnarer", body)
+	if fm["flavor"] != flavor {
+		t.Errorf("flavor: got %q, want %q", fm["flavor"], flavor)
+	}
+}
+
+func TestParseStatblockFields_NoFlavorWhenAbsent(t *testing.T) {
+	fm := ParseStatblockFields("Cursespitter", cursespitterGrid)
+	if v, ok := fm["flavor"]; ok {
+		t.Errorf("flavor present when body has no leading prose: %q", v)
+	}
+}
+
 // escapedPipeGrid models a summoner minion grid where Stamina holds three
 // echelon values joined by escaped pipes ("4 \| 4 \| 4"). The escaped pipes are
 // literal cell content, not column separators.

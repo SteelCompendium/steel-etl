@@ -284,6 +284,10 @@ var (
 func applyFixtureGrid(fm map[string]any, body string) {
 	delete(fm, "keywords")
 	delete(fm, "cost") // a fixture's 2-col grid has no summon cost cell
+	// A fixture's body opens with the italic "*Hazard Support*" role line, which
+	// firstFlavorParagraph would mis-lift as flavor (the fixture's real lore lives
+	// on its monster-group container, not the statblock). Drop the bogus value.
+	delete(fm, "flavor")
 
 	for _, line := range strings.Split(body, "\n") {
 		t := strings.TrimSpace(line)
