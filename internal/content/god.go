@@ -11,7 +11,7 @@ type GodParser struct{}
 func (p *GodParser) Type() string { return "god" }
 
 func (p *GodParser) Parse(ctx *context.ContextStack, section *parser.Section) (*ParsedContent, error) {
-	name := CleanHeading(section.Heading)
+	name := headingName(section)
 
 	id := section.ID()
 	if id == "" {
@@ -22,11 +22,19 @@ func (p *GodParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 		"name": name,
 		"type": "god",
 	}
+	if d := extractDomains(section.FullBodySource()); d != nil {
+		fm["domains"] = d
+	}
+	for _, key := range []string{"pantheon", "alignment", "god_class"} {
+		if v, ok := section.Annotation[key]; ok && v != "" {
+			fm[key] = v
+		}
+	}
 
 	return &ParsedContent{
 		Frontmatter: fm,
 		Body:        section.FullBodySource(),
-		TypePath:    []string{"god"},
+		TypePath:    []string{"religion", "god"},
 		ItemID:      id,
 	}, nil
 }

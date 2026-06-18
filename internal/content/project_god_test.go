@@ -68,8 +68,48 @@ func TestGodParser(t *testing.T) {
 	if result.ItemID != "cavall" {
 		t.Errorf("ItemID = %q, want %q", result.ItemID, "cavall")
 	}
-	if len(result.TypePath) != 1 || result.TypePath[0] != "god" {
-		t.Errorf("TypePath = %v, want [god]", result.TypePath)
+	if len(result.TypePath) != 2 || result.TypePath[0] != "religion" || result.TypePath[1] != "god" {
+		t.Errorf("TypePath = %v, want [religion god]", result.TypePath)
+	}
+}
+
+func TestGodParserFrontmatter(t *testing.T) {
+	section := &parser.Section{
+		Heading:    "Cavall",
+		Annotation: map[string]string{"type": "god", "id": "cavall", "pantheon": "vasloria", "alignment": "good", "god_class": "younger"},
+		BodySource: "**Domains:** Life, Love, Protection, War\n\nThe god of duty.",
+	}
+	result, err := (&GodParser{}).Parse(context.NewContextStack(nil), section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	if result.Frontmatter["pantheon"] != "vasloria" {
+		t.Errorf("pantheon = %v, want vasloria", result.Frontmatter["pantheon"])
+	}
+	if result.Frontmatter["alignment"] != "good" {
+		t.Errorf("alignment = %v, want good", result.Frontmatter["alignment"])
+	}
+	if result.Frontmatter["god_class"] != "younger" {
+		t.Errorf("god_class = %v, want younger", result.Frontmatter["god_class"])
+	}
+	domains, _ := result.Frontmatter["domains"].([]string)
+	if len(domains) != 4 || domains[0] != "Life" || domains[3] != "War" {
+		t.Errorf("domains = %v, want [Life Love Protection War]", result.Frontmatter["domains"])
+	}
+}
+
+func TestGodParserNameOverride(t *testing.T) {
+	section := &parser.Section{
+		Heading:    "Devil Gods",
+		Annotation: map[string]string{"type": "god", "id": "lords-of-hell", "name": "Lords of Hell"},
+		BodySource: "The seven Archdukes of Hell.",
+	}
+	result, _ := (&GodParser{}).Parse(context.NewContextStack(nil), section)
+	if result.Frontmatter["name"] != "Lords of Hell" {
+		t.Errorf("name = %v, want Lords of Hell", result.Frontmatter["name"])
+	}
+	if result.ItemID != "lords-of-hell" {
+		t.Errorf("ItemID = %q, want lords-of-hell", result.ItemID)
 	}
 }
 
