@@ -179,6 +179,65 @@ func TestStatblockCard_GoldenEquivalence(t *testing.T) {
 	}
 }
 
+// flavorPage is a summoner portfolio summon with a flavor paragraph under the
+// heading (in the `flavor` frontmatter field, where the parser lifts it).
+const flavorPage = `---
+name: Ensnarer
+organization: Minion
+role: Brute
+flavor: This vaguely humanoid form is warped and distorted by a demon nestled inside them.
+size: 1M
+speed: 5
+stamina: "2"
+stability: "0"
+free_strike: "2"
+might: "2"
+agility: "0"
+reason: "-1"
+intuition: "-1"
+presence: "-1"
+keywords:
+    - Demon
+type: statblock
+---
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the ensnarer can't be hidden from them.
+`
+
+// TestStatblockCard_RendersFlavor locks the fix for the missing summon flavor
+// text: buildStatblockIsland must read `flavor` from frontmatter and
+// renderStatblockCard must emit it as an .sb__flavor block between the head and
+// the stat row (matching the book layout: flavor under the name, before stats).
+func TestStatblockCard_RendersFlavor(t *testing.T) {
+	isl := islandFor(flavorPage)
+	if isl.Flavor == "" {
+		t.Fatal("buildStatblockIsland did not populate Flavor from frontmatter")
+	}
+	html := renderStatblockCard(isl)
+	if !strings.Contains(html, `class="sb__flavor"`) {
+		t.Errorf("card missing sb__flavor block:\n%s", html)
+	}
+	if !strings.Contains(html, "vaguely humanoid form") {
+		t.Errorf("card missing flavor text:\n%s", html)
+	}
+	headIdx := strings.Index(html, "sb__head")
+	flavorIdx := strings.Index(html, "sb__flavor")
+	defIdx := strings.Index(html, "sb__defenses")
+	if headIdx < 0 || flavorIdx < 0 || defIdx < 0 || !(headIdx < flavorIdx && flavorIdx < defIdx) {
+		t.Errorf("sb__flavor not positioned between head and defenses (head=%d flavor=%d def=%d)", headIdx, flavorIdx, defIdx)
+	}
+}
+
+// TestStatblockCard_NoFlavorBlockWhenAbsent guards against an empty .sb__flavor
+// shell on the many statblocks that have no flavor paragraph.
+func TestStatblockCard_NoFlavorBlockWhenAbsent(t *testing.T) {
+	if strings.Contains(renderStatblockCard(islandFor(minionPage)), "sb__flavor") {
+		t.Error("card emitted sb__flavor block when no flavor present")
+	}
+}
+
 func TestRenderStatblockHead_OmitsEmptyEV(t *testing.T) {
 	withEV := renderStatblockHead(sbIsland{Name: "X", Level: "1", Role: "Brute", RoleKey: "brute", EV: "32"})
 	if !strings.Contains(withEV, "EV 32") {

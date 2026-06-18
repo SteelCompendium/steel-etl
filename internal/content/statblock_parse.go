@@ -228,6 +228,14 @@ func ParseStatblockFields(name, body string) map[string]any {
 			fm[key] = n
 		}
 	}
+	// Flavor: the prose paragraph under the heading, before the stat grid (e.g.
+	// Summoner portfolio summons describe the creature there). Lifted into
+	// frontmatter so it survives the v2 .sb-wrap card render, which rebuilds the
+	// body from structured fields. Mirrors the featureblock parser (monster.go).
+	if flavor := firstFlavorParagraph(body); flavor != "" {
+		fm["flavor"] = flavor
+	}
+
 	// Immunity / Weakness become arrays (split on comma).
 	if v, ok := grid.labels["Immunity"]; ok && v != "-" {
 		fm["immunities"] = splitCommaList(v)
