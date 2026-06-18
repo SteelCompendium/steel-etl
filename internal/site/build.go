@@ -1155,7 +1155,9 @@ var typeTitles = map[string]string{
 	"rule":         "Rules",
 	"monster":      "Monsters",
 	"negotiation":  "Negotiations",
-	"god":          "Gods and Religion",
+	"religion":     "Gods & Religion",
+	"god":          "Gods",
+	"saint":        "Saints",
 	"project":      "Downtime Projects",
 }
 

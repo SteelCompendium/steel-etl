@@ -1427,3 +1427,16 @@ func TestFlattenAdvancementFeaturesPath(t *testing.T) {
 		}
 	}
 }
+
+func TestDirToTitleReligion(t *testing.T) {
+	cases := map[string]string{
+		"religion": "Gods & Religion",
+		"god":      "Gods",
+		"saint":    "Saints",
+	}
+	for dir, want := range cases {
+		if got := dirToTitle(dir); got != want {
+			t.Errorf("dirToTitle(%q) = %q, want %q", dir, got, want)
+		}
+	}
+}
