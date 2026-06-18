@@ -137,13 +137,15 @@ panel (no synthesized header).
 
 ### `internal/site/statblock_page.go`
 
-`buildStatblockIslandPage`: rewrites each `type: statblock` *page body* into a
-`<script class="sc-statblock-data">` JSON island (stats from frontmatter; features
-parsed from the body blockquotes — richer than the SDK statblock JSON: keeps
-Effect/Trigger sections, Malice enhancements, trailing notes). Hooked in
-`buildSection` next to `buildAbilityCardPage` (before `injectH1`). The island is
-mounted client-side by `v2/docs/javascripts/steel-statblock.js` (`window.SCStatblock`)
-into the High-Fantasy Steel `.sb-wrap` DOM styled by
+`buildStatblockIslandPage`: rewrites each `type: statblock` *page body* into the
+finished High-Fantasy Steel `.sb-wrap` HTML at **build time** (stats from frontmatter;
+features parsed from the body blockquotes — richer than the SDK statblock JSON: keeps
+Effect/Trigger sections, Malice enhancements, trailing notes). The parse stage builds an
+`sbIsland` and hands it to `renderStatblockCard` (`statblock_card.go`); hooked in
+`buildSection` next to `buildAbilityCardPage` (before `injectH1`). No client JS is
+involved (the former JSON island + `steel-statblock.js` were retired — build-time HTML
+2026-06-14, then the wire script itself 2026-06-18: native `<details>` bands + CSS
+scroll-driven sticky header). The `.sb-wrap` DOM is styled by
 `v2/docs/stylesheets/steel-statblock.css` — per the approved 2026-06-11 design handoff,
 archived at workspace `reference/design-system/handoff/redesign/statblocks/README.md`
 (DOM + `data-sb-*` preference contract). Reuses ability-card body helpers

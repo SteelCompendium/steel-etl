@@ -148,14 +148,30 @@ func normalizeStatblockHTML(s string) string {
 	return strings.TrimSpace(s)
 }
 
+// TestStatblockCard_GoldenEquivalence locks renderStatblockCard's DOM against the
+// committed golden.html snapshots. The goldens were ORIGINALLY browser-captured from
+// the (now-retired) JS render() to prove the build-time port matched it byte-for-byte;
+// since that JS renderer is gone, the goldens are now a committed snapshot of the Go
+// renderer itself and serve as a regression lock. After an INTENTIONAL DOM change
+// (e.g. the <details> bands), regenerate with STEEL_UPDATE_GOLDEN=1 and eyeball the
+// diff. (capture-statblock-golden.cjs is a historical relic — it calls the deleted
+// window.SCStatblock.render and no longer runs.)
 func TestStatblockCard_GoldenEquivalence(t *testing.T) {
+	update := os.Getenv("STEEL_UPDATE_GOLDEN") == "1"
 	for name, page := range goldenFixtures {
 		t.Run(name, func(t *testing.T) {
-			want, err := os.ReadFile(filepath.Join(goldenDir, name+".golden.html"))
-			if err != nil {
-				t.Fatalf("%v (run the capture script — Task 2)", err)
-			}
 			got := renderStatblockCard(islandFor(page))
+			path := filepath.Join(goldenDir, name+".golden.html")
+			if update {
+				if err := os.WriteFile(path, []byte(got+"\n"), 0644); err != nil {
+					t.Fatal(err)
+				}
+				return
+			}
+			want, err := os.ReadFile(path)
+			if err != nil {
+				t.Fatalf("%v (regenerate with STEEL_UPDATE_GOLDEN=1)", err)
+			}
 			if g, w := normalizeStatblockHTML(got), normalizeStatblockHTML(string(want)); g != w {
 				t.Errorf("renderStatblockCard != golden for %s\n--- got ---\n%s\n--- want ---\n%s", name, g, w)
 			}

@@ -176,9 +176,9 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	if sug.Action != "triggered" {
 		t.Errorf("suggestion action = %q", sug.Action)
 	}
-	// A linked usage cell keeps its link, resolved to the directory-URL form the
-	// island serves (same treatment as distance/target) — not stripped to text.
-	if want := "[Triggered action](../../../rule/combat/triggered-action/)"; sug.Usage != want {
+	// A linked usage cell keeps its raw markdown link (same treatment as
+	// distance/target) — not stripped to text; richSb resolves it at render.
+	if want := "[Triggered action](../../rule/combat/triggered-action.md)"; sug.Usage != want {
 		t.Errorf("suggestion usage = %q, want %q", sug.Usage, want)
 	}
 	if sug.Cost != "2 Malice" {
@@ -250,8 +250,9 @@ func TestBuildStatblockIslandPage_EmitsCard(t *testing.T) {
 // linkedFieldsPage exercises every feature field that can carry a source link:
 // the title's parenthetical (Signature / Malice cost / Villain Action — with the
 // link's own "(…)" nested inside the group), the enhancement cost, a section
-// label, and a feature name that is itself a link. Links arrive as resolved
-// relative ".md" links (the gen link-sweep) and must come out as directory URLs.
+// label, and a feature name that is itself a link. Links arrive as relative ".md"
+// links (the gen link-sweep) and are stored RAW in the island; richSb resolves
+// them to directory URLs at render (asserted at the end of the test).
 const linkedFieldsPage = `---
 name: Link Test Monster
 organization: ""
@@ -293,7 +294,7 @@ type: statblock
 > At the end of each turn, the creature can take damage to end an effect.
 `
 
-func TestBuildStatblockIsland_ResolvesLinksInAllFields(t *testing.T) {
+func TestBuildStatblockIsland_PreservesRawLinksInAllFields(t *testing.T) {
 	fm, body := splitFrontmatter(linkedFieldsPage)
 	isl := buildStatblockIsland(fm, body)
 
@@ -305,14 +306,14 @@ func TestBuildStatblockIsland_ResolvesLinksInAllFields(t *testing.T) {
 	if bite.Cost != "Signature" {
 		t.Errorf("bite cost = %q, want Signature", bite.Cost)
 	}
-	// ── enhancement cost: "2 [Malice](…)" link resolved, not stripped/raw ──
+	// ── enhancement cost: "2 [Malice](…)" link kept raw, not stripped ──
 	if len(bite.Enhancements) != 1 {
 		t.Fatalf("bite enhancements = %+v", bite.Enhancements)
 	}
-	if want := "2 [Malice](../malice/)"; bite.Enhancements[0].Cost != want {
+	if want := "2 [Malice](malice.md)"; bite.Enhancements[0].Cost != want {
 		t.Errorf("enhancement cost = %q, want %q", bite.Enhancements[0].Cost, want)
 	}
-	// ── section label: "[End Effect](…)" link resolved ──
+	// ── section label: "[End Effect](…)" link kept raw ──
 	var endEff *sbSection
 	for i := range bite.Sections {
 		if strings.Contains(bite.Sections[i].Label, "End Effect") {
@@ -322,12 +323,12 @@ func TestBuildStatblockIsland_ResolvesLinksInAllFields(t *testing.T) {
 	if endEff == nil {
 		t.Fatalf("End Effect section missing; sections = %+v", bite.Sections)
 	}
-	if want := "[End Effect](../end-effect/)"; endEff.Label != want {
+	if want := "[End Effect](end-effect.md)"; endEff.Label != want {
 		t.Errorf("section label = %q, want %q", endEff.Label, want)
 	}
 
 	// ── villain action: linked "[Villain Action](…) 3" still classifies villain,
-	//    cost keeps the resolved link, name cleaned ──
+	//    cost keeps the raw link, name cleaned ──
 	vj := featureByName(isl.Features, "Final Judgment")
 	if vj == nil {
 		t.Fatal("Final Judgment missing (linked villain paren broke title split)")
@@ -335,25 +336,43 @@ func TestBuildStatblockIsland_ResolvesLinksInAllFields(t *testing.T) {
 	if vj.Kind != "villain" || vj.Action != "villain" {
 		t.Errorf("villain kind/action = %q/%q", vj.Kind, vj.Action)
 	}
-	if want := "[Villain Action](../villain-action/) 3"; vj.Cost != want {
+	if want := "[Villain Action](villain-action.md) 3"; vj.Cost != want {
 		t.Errorf("villain cost = %q, want %q", vj.Cost, want)
 	}
 
-	// ── feature name that is itself a link (no paren) is resolved ──
-	solo := featureByName(isl.Features, "[Solo](../solo/) Monster")
+	// ── feature name that is itself a link (no paren) is kept raw ──
+	solo := featureByName(isl.Features, "[Solo](solo.md) Monster")
 	if solo == nil {
 		t.Fatalf("link-named trait missing; names = %v", featureNames(isl.Features))
 	}
 
 	// ── feature whose ENTIRE title is a link: the link's own "(url)" must not be
 	//    mistaken for a trailing cost parenthetical (would yield name "[End Effect]"
-	//    + a bare-URL cost). Name stays the resolved link; no cost. ──
-	ee := featureByName(isl.Features, "[End Effect](../end-effect/)")
+	//    + a bare-URL cost). Name stays the raw link; no cost. ──
+	ee := featureByName(isl.Features, "[End Effect](end-effect.md)")
 	if ee == nil {
 		t.Fatalf("link-only-titled trait missing; names = %v", featureNames(isl.Features))
 	}
 	if ee.Cost != "" {
 		t.Errorf("link-only title produced spurious cost = %q", ee.Cost)
+	}
+
+	// ── render resolves the raw targets to served directory URLs (richSb →
+	//    cardHref), the single resolve point that replaced the old parse-time
+	//    resolveSbLinks pre-pass. ──
+	card := renderStatblockCard(isl)
+	for _, want := range []string{
+		`href="../malice/"`,
+		`href="../end-effect/"`,
+		`href="../villain-action/"`,
+		`href="../solo/"`,
+	} {
+		if !strings.Contains(card, want) {
+			t.Errorf("rendered card missing resolved link %s", want)
+		}
+	}
+	if strings.Contains(card, ".md\"") {
+		t.Error("rendered card still contains an unresolved .md href")
 	}
 }
 

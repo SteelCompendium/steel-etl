@@ -2,12 +2,14 @@ package site
 
 // High-Fantasy Steel STATBLOCK cards rendered at BUILD TIME.
 //
-// renderStatblockCard is a 1:1 Go port of v2/docs/javascripts/steel-statblock.js's
-// render()/renderFeature()/… It emits the same .sb-wrap DOM the client script used
-// to build, so steel-statblock.css and the data-sb-* preference system are unchanged
-// and the slimmed client script only wires interactivity (collapsible bands + sticky
-// header). Equivalence is locked by TestStatblockCard_GoldenEquivalence against HTML
-// captured from the (previous) JS renderer. See the workspace-root spec
+// renderStatblockCard began as a 1:1 Go port of v2/docs/javascripts/steel-statblock.js's
+// render()/renderFeature()/…, emitting the same .sb-wrap DOM, so steel-statblock.css and
+// the data-sb-* preference system are unchanged. That client script is now RETIRED
+// (FOLLOWUPS #10.1): bands render as native <details>/<summary> and the sticky mini-header
+// is a CSS scroll-driven animation, so statblocks ship with no JS. Equivalence is locked
+// by TestStatblockCard_GoldenEquivalence — the golden was originally captured from the JS
+// renderer and is now a committed snapshot of this function (regenerate via
+// STEEL_UPDATE_GOLDEN=1 after an intentional DOM change). See the workspace-root spec
 // docs/superpowers/specs/2026-06-14-statblock-build-time-render-design.md.
 //
 // The input sbIsland and its parsing (buildStatblockIsland, statblock_page.go) are
@@ -16,8 +18,9 @@ package site
 // DELIBERATE DIVERGENCE from the ability_cards.go family (sbEsc/richSb/sbCostBadge
 // vs html.EscapeString/richInline/costBadge): do NOT "unify" them. These mirror the
 // JS renderer's esc()/rich() exactly — sbEsc escapes only & < > " (NOT ', which
-// html.EscapeString would), and richSb keeps the already-resolved href verbatim
-// (richInline re-runs cardHref). Equality with the captured golden depends on it.
+// html.EscapeString would) and emits the sb-term anchor class. Like richInline,
+// richSb resolves the link target through cardHref; the model carries raw `.md`
+// targets. Equality with the captured golden depends on the esc()/class divergence.
 
 import (
 	"fmt"
@@ -58,12 +61,18 @@ func sbEsc(s string) string {
 	return strings.NewReplacer("&", "&amp;", "<", "&lt;", ">", "&gt;", `"`, "&quot;").Replace(s)
 }
 
-// richSb matches the JS rich(): esc, then [text](href) → sb-term anchor, then
-// **bold** → <b>. Links are ALREADY resolved (resolveSbLinks in the parse stage),
-// so the href passes through unchanged — no cardHref here.
+// richSb matches the JS rich(): esc, then [text](target) → sb-term anchor, then
+// **bold** → <b>. The model holds raw `.md` link targets (the parse stage no
+// longer pre-resolves them), so — like richInline (ability_cards.go) — we resolve
+// the target to its served directory-URL via cardHref here, at the single render
+// point. sbEsc (not html.EscapeString) and the sb-term class are the deliberate
+// JS-port divergences locked by the golden test; do NOT unify with richInline.
 func richSb(s string) string {
 	s = sbEsc(s)
-	s = sbRichLinkRe.ReplaceAllString(s, `<a class="sb-term" href="${2}">${1}</a>`)
+	s = sbRichLinkRe.ReplaceAllStringFunc(s, func(m string) string {
+		sub := sbRichLinkRe.FindStringSubmatch(m)
+		return `<a class="sb-term" href="` + cardHref(sub[2]) + `">` + sub[1] + `</a>`
+	})
 	s = sbRichBoldRe.ReplaceAllString(s, `<b>${1}</b>`)
 	return s
 }
@@ -192,17 +201,18 @@ func renderStatblockFeature(f sbFeature) string {
 	return b.String()
 }
 
-// renderStatblockBand ports band(): a collapsible Villain/Malice section. Emitted
-// open (data-open="true"); the slim client script toggles it.
+// renderStatblockBand emits a collapsible Villain/Malice section as a native
+// <details> (open by default) so it needs no JS — the browser toggles it and
+// steel-statblock.css drives the chevron off [open]. The <summary> is the head.
 func renderStatblockBand(kind, title, glyph, introHTML, featuresHTML string) string {
-	return `<section class="sb__band sb__band--` + kind + `" data-open="true">` +
-		`<button type="button" class="sb__band-head" aria-expanded="true">` +
+	return `<details class="sb__band sb__band--` + kind + `" open>` +
+		`<summary class="sb__band-head">` +
 		`<span class="sc-crest sb__band-crest"><span class="sb__band-glyph">` + glyph + `</span></span>` +
 		`<span class="sb__band-title">` + sbEsc(title) + `</span>` +
 		`<span class="sb__band-chev" aria-hidden="true">▾</span>` +
-		`</button>` +
+		`</summary>` +
 		`<div class="sb__band-body">` + introHTML + featuresHTML + `</div>` +
-		`</section>`
+		`</details>`
 }
 
 func sbMetaCell(label, value string) string {

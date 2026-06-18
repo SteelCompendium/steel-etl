@@ -99,7 +99,7 @@
       "action": "triggered",
       "name": "Devilish Suggestion",
       "cost": "2 Malice",
-      "usage": "[Triggered action](../../../rule/combat/triggered-action/)",
+      "usage": "[Triggered action](../../rule/combat/triggered-action.md)",
       "keywords": [
         "Magic",
         "Ranged"
