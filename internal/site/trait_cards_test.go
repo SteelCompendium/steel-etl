@@ -394,3 +394,24 @@ func TestRenderTraitCard_CalloutBecomesAside(t *testing.T) {
 		t.Errorf("feature prose missing\n%s", got)
 	}
 }
+
+// A Summoner circle feature gets the "circle" qualifier between the class name and
+// the noun: "Summoner Circle Feature".
+func TestTraitEyebrow_CircleFeature(t *testing.T) {
+	fm := "class: summoner\ntype: feature\nfeature_source: circle\n"
+	if got := traitEyebrow(fm); got != "Summoner Circle Feature" {
+		t.Errorf("traitEyebrow = %q, want %q", got, "Summoner Circle Feature")
+	}
+}
+
+// A base Summoner feature (feature_source: summoner or absent) keeps "Summoner Feature".
+func TestTraitEyebrow_SummonerFeatureUnchanged(t *testing.T) {
+	for _, fm := range []string{
+		"class: summoner\ntype: feature\nfeature_source: summoner\n",
+		"class: summoner\ntype: feature\n", // absent
+	} {
+		if got := traitEyebrow(fm); got != "Summoner Feature" {
+			t.Errorf("traitEyebrow(%q) = %q, want %q", fm, got, "Summoner Feature")
+		}
+	}
+}

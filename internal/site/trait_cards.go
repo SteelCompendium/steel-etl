@@ -432,6 +432,12 @@ func traitEyebrow(fm string) string {
 			break
 		}
 	}
+	// feature_source qualifier: "circle" → "<Class> Circle Feature". The "summoner"
+	// base track (and absence) keeps the bare "<Class> Feature". Forward-compatible
+	// with Phase-2 "circle-of-<name>" slugs (title-cased the same way).
+	if fs := strings.TrimSpace(parseFrontmatterField(fm, "feature_source")); fs != "" && fs != "summoner" && source != "" {
+		source = strings.TrimSpace(source + " " + titleCase(strings.ReplaceAll(fs, "-", " ")))
+	}
 	label := strings.TrimSpace(source + " " + featureNoun(parseFrontmatterField(fm, "type")))
 	if sub := strings.TrimSpace(parseFrontmatterField(fm, "subclass")); sub != "" {
 		label += " · " + titleCase(strings.ReplaceAll(sub, "-", " "))
