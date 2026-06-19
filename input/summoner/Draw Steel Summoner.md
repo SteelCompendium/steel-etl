@@ -388,6 +388,7 @@ The [summoner](scc.v1:mcdm.summoner.v1/class/summoner) is an example of a master
 
 If you are new to Draw Steel, we recommend checking out The Delian Tomb starter adventure, which includes a step-by-step tutorial on how to play the game and breaks down all the working parts of a hero. Save Broadhurst first, and then you hurry back here!
 
+<!-- @type: feature-group | @level: 1 -->
 ### 1st-Level Features
 
 As a [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -1467,7 +1468,7 @@ The target's [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) can inflict I <
 
 **Effect:** This [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) deals an additional 2 [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) for each ally [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to you.
 
-<!-- @type: feature | @id: 2nd-level-features | @level: 2 -->
+<!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
 
 As a 2nd-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -1953,7 +1954,7 @@ Phase ghouls are bilocated undead caught between two different manifolds, rapidl
 >
 > The ghoul takes no [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) from [falling](scc.v1:mcdm.heroes.v1/rule.health/falling) and always lands on their feet.
 
-<!-- @type: feature | @id: 3rd-level-features | @level: 3 -->
+<!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
 
 As a 3rd-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -2050,7 +2051,7 @@ These [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) die at
 - **12-16:** 12 + R [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage); R < AVERAGE [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) (save ends)
 - **17+:** 16 + R [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage); R < STRONG [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) (save ends)
 
-<!-- @type: feature | @id: 4th-level-features | @level: 4 -->
+<!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
 
 As a 4th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -2101,7 +2102,7 @@ You gain any one [perk](scc.v1:mcdm.summoner.v1/feature.summoner.level-4/perk) o
 
 You gain one skill of your choice.
 
-<!-- @type: feature | @id: 5th-level-features | @level: 5 -->
+<!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
 
 As a 5th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -2500,7 +2501,7 @@ Zombie titan is a catchall for undead giants, patchwork ogres and mournlings, or
 >
 > When the titan is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), their space becomes [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain). If a creature was [prone](scc.v1:mcdm.heroes.v1/condition/prone) underneath the titan when the titan is killed, they take 10 [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) and are [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) (save ends).
 
-<!-- @type: feature | @id: 6th-level-features | @level: 6 -->
+<!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
 
 As a 6th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -2613,7 +2614,7 @@ Each target is R < AVERAGE [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) 
 
 Until the end of the encounter, whenever a target gets a [tier](scc.v1:mcdm.heroes.v1/rule.dice/tier-outcome) 1 result on a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike), they deal half [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage). If a target was striking a creature [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to one of their allies, they target their ally instead.
 
-<!-- @type: feature | @id: 7th-level-features | @level: 7 -->
+<!-- @type: feature-group | @level: 7 -->
 ### 7th-Level Features
 
 As a 7th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -2658,7 +2659,7 @@ You can't use this feature again until you gain a new level, or until you spend 
 
 You gain one skill of your choice.
 
-<!-- @type: feature | @id: 8th-level-features | @level: 8 -->
+<!-- @type: feature-group | @level: 8 -->
 ### 8th-Level Features
 
 As an 8th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -3010,7 +3011,7 @@ Stamina: Your maximum Stamina
 >
 > **Effect:** 9 holy [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage). Each target is vertically [pulled](scc.v1:mcdm.heroes.v1/movement/forced-movement) a number of squares equal to their [size](scc.v1:mcdm.heroes.v1/rule.character/size) straight down, ignoring [stability](scc.v1:mcdm.heroes.v1/rule.character/stability). If the target would be [force moved](scc.v1:mcdm.heroes.v1/movement/forced-movement) into the ground, they are buried beneath the ground instead.
 
-<!-- @type: feature | @id: 9th-level-features | @level: 9 -->
+<!-- @type: feature-group | @level: 9 -->
 ### 9th-Level Features
 
 As a 9th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
@@ -3091,7 +3092,7 @@ A leader or a solo enemy in the area that has R, I, or P < AVERAGE is [weakened]
 
 You can change the [damage type](scc.v1:mcdm.heroes.v1/rule.damage/damage-type) to be a type that your champion deals on their stat block (see [Portfolio Champion](scc.v1:mcdm.summoner.v1/feature.summoner.level-8/portfolio-champion)). For each enemy reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) by this ability, an ally within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) can move up to their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed).
 
-<!-- @type: feature | @id: 10th-level-features | @level: 10 -->
+<!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
 
 As a 10th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
