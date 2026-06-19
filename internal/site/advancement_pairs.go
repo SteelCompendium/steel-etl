@@ -22,6 +22,22 @@ import (
 
 const advFeatSuffix = "-advancement-features"
 
+// roleAdvSubdir is the one subdir a flattened pair dir may carry without losing
+// its pair-grid index: the retainer role-advancement landing (Plan 6). It sits
+// beside the 21 base+advancement pairs under monster/retainer/ and is surfaced
+// as a folder card rather than disqualifying the pairing.
+const roleAdvSubdir = "role-advancement"
+
+// hasRoleAdvSubdir reports whether subdirs contains the role-advancement landing.
+func hasRoleAdvSubdir(subdirs []string) bool {
+	for _, s := range subdirs {
+		if s == roleAdvSubdir {
+			return true
+		}
+	}
+	return false
+}
+
 // advPair is one base entity and its advancement-features sibling. base is "" for
 // an orphan advancement page (no base); adv is "" for a base with no advancement.
 type advPair struct {
@@ -44,7 +60,16 @@ func advancementPairs(files, subdirs []string) ([]advPair, bool) {
 			bases = append(bases, f)
 		}
 	}
-	if len(advByBase) == 0 || len(subdirs) > 0 {
+	// A `role-advancement` subdir (retainers) is an expected companion to the
+	// pairs, not a disqualifier; any OTHER subdir means this isn't a pure
+	// flattened pair dir, so fall through to the generic builders.
+	extraSubdirs := 0
+	for _, s := range subdirs {
+		if s != roleAdvSubdir {
+			extraSubdirs++
+		}
+	}
+	if len(advByBase) == 0 || extraSubdirs > 0 {
 		return nil, false
 	}
 	sort.Slice(bases, func(i, j int) bool { return naturalLess(bases[i], bases[j]) })
@@ -122,6 +147,8 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 	baseEyebrow, icon := "Companion", "paw"
 	if pathHasSegment(dir, "fixture") {
 		baseEyebrow, icon = "Fixture", "skull"
+	} else if pathHasSegment(dir, "retainer") {
+		baseEyebrow, icon = "Retainer", "sword-cross"
 	}
 
 	cardName := func(file string) string {
@@ -170,6 +197,13 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 		}
 	}
 	sb.WriteString("</div>\n")
+	// Retainers carry a sibling role-advancement landing (the 9 role groups);
+	// surface it as a folder card below the base+advancement pairs.
+	if hasRoleAdvSubdir(subdirs) {
+		sb.WriteString("\n<div class=\"sc-folders\">\n")
+		sb.WriteString(folderCard(roleAdvSubdir+"/", "sword-cross", "Role Advancement Abilities", 0))
+		sb.WriteString("</div>\n")
+	}
 	return sb.String(), true
 }
 
@@ -191,6 +225,11 @@ func advancementPairNavOrder(files, subdirs []string) ([]string, bool) {
 		if p.adv != "" {
 			order = append(order, p.adv)
 		}
+	}
+	// Keep the role-advancement landing in the sidebar (an explicit nav: list
+	// excludes anything not named); it sorts last, after the pairs.
+	if hasRoleAdvSubdir(subdirs) {
+		order = append(order, roleAdvSubdir)
 	}
 	return order, true
 }

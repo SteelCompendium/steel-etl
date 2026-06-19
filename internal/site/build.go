@@ -589,8 +589,8 @@ func groupLandingIndexDest(relPath string) (string, bool) {
 // hoistStatblockPath drops a non-leaf "statblock" (or fixture "featureblock")
 // segment under the monster/ or retainer/ trees, so a Browse page sits directly
 // under its group (monster/<group>/<item>, monster/<group>/<echelon>/<item>,
-// retainer/<item>, monster/fixture/<element>/<item>) instead of behind a
-// redundant statblock/ or featureblock/ folder. The SCC CODE keeps its
+// monster/retainer/<item>, retainer/summoner/<item>, monster/fixture/<element>/<item>)
+// instead of behind a redundant statblock/ or featureblock/ folder. The SCC CODE keeps its
 // `.statblock`/`.featureblock` segment — this is a deliberate code≠path
 // divergence affecting only the site URL/sidebar. Only the four summoner
 // fixtures carry a `.featureblock` path segment (malice/terrain blocks classify
@@ -622,7 +622,8 @@ func hoistStatblockPath(relPath string) string {
 // folder in the bestiary tree, folding its name into the leaf filename
 // (<id>.md → <id>-advancement-features.md) so the page sits beside its base
 // entity instead of in an advancement-features/ sub-folder. Used by beastheart
-// companions and summoner fixtures. Like hoistStatblockPath this is a deliberate
+// companions, summoner fixtures, and Monsters-book retainers (Plan 6). Like
+// hoistStatblockPath this is a deliberate
 // code≠path divergence: the SCC CODE keeps its `.advancement-features` segment;
 // only the Browse URL/sidebar changes. The slug deliberately echoes the SCC
 // segment so the URL keeps a breadcrumb back to the code. Non-matching paths

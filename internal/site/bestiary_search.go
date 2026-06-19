@@ -42,6 +42,11 @@ func bestiaryItemType(relSlash, fmType string) string {
 	switch {
 	case fmType == "statblock" && strings.HasPrefix(relSlash, "retainer/"):
 		return "retainer"
+	case fmType == "statblock" && strings.HasPrefix(relSlash, "monster/retainer/"):
+		// Monsters-book retainers joined the monster.* family (Plan 6) but keep
+		// their own "retainer" bestiary facet. Their sibling advancement-features
+		// and role-advancement pages are type:featureblock → excluded by default.
+		return "retainer"
 	case fmType == "statblock" && (strings.HasPrefix(relSlash, "monster/") ||
 		strings.HasPrefix(relSlash, "minion/") || strings.HasPrefix(relSlash, "fixture/") ||
 		strings.HasPrefix(relSlash, "champion/") || strings.HasPrefix(relSlash, "rival/")):
