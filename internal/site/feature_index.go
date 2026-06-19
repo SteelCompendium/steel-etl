@@ -295,9 +295,10 @@ func klassFromDir(dir, kind string) string {
 type browseItem struct {
 	Kind     string   `json:"kind"`
 	Name     string   `json:"name"`
-	Klass    string   `json:"klass,omitempty"`
-	Subclass string   `json:"subclass,omitempty"`
-	Source   string   `json:"source,omitempty"` // class | ancestry | kit | other
+	Klass         string `json:"klass,omitempty"`
+	Subclass      string `json:"subclass,omitempty"`
+	FeatureSource string `json:"feature_source,omitempty"` // summoner | circle (Summoner book)
+	Source        string `json:"source,omitempty"`         // class | ancestry | kit | other
 	Level    int      `json:"level"`
 	Action   string   `json:"action,omitempty"`
 	Cost     string   `json:"cost,omitempty"`
@@ -317,9 +318,10 @@ type browseItem struct {
 // rendered HTML body) into a browseItem.
 func extractPreviewItem(fm, body, kind, klassFallback string) browseItem {
 	it := browseItem{
-		Klass:    klassFromMeta(fm, klassFallback),
-		Source:   sourceFromMeta(fm),
-		Subclass: titleCase(strings.ReplaceAll(strings.TrimSpace(parseFrontmatterField(fm, "subclass")), "-", " ")),
+		Klass:         klassFromMeta(fm, klassFallback),
+		Source:        sourceFromMeta(fm),
+		Subclass:      titleCase(strings.ReplaceAll(strings.TrimSpace(parseFrontmatterField(fm, "subclass")), "-", " ")),
+		FeatureSource: strings.TrimSpace(parseFrontmatterField(fm, "feature_source")),
 	}
 
 	it.Kind = strings.TrimSpace(parseFrontmatterField(fm, "type"))
