@@ -289,6 +289,27 @@ Rival statblocks appear across four echelons; each entry in the rival section is
 | Glade Pond | Fey fixture | `mcdm.summoner.v1/fixture.fey.statblock/glade-pond` |
 | Barrow Gates | Undead fixture | `mcdm.summoner.v1/fixture.undead.statblock/barrow-gates` |
 
+### Fixture Advancement Features (12 terms)
+
+Each fixture's Level-5/9 advancement features are individually coded (base-inclusive,
+mirroring companion advancement features). `size-increase` repeats across all four
+fixtures but lives in four distinct `<category>.<base>` namespaces, so there is no collision.
+
+| Display Name | Portfolio/Kind | SCC Code |
+|-------------|----------------|----------|
+| Soul Rancor | The Boil, Level 5 | `mcdm.summoner.v1/feature.fixture.demon.the-boil.level-5/soul-rancor` |
+| Size Increase | The Boil, Level 9 | `mcdm.summoner.v1/feature.fixture.demon.the-boil.level-9/size-increase` |
+| Fester Field | The Boil, Level 9 | `mcdm.summoner.v1/feature.fixture.demon.the-boil.level-9/fester-field` |
+| Terra Resonance | Primordial Crystal, Level 5 | `mcdm.summoner.v1/feature.fixture.elemental.primordial-crystal.level-5/terra-resonance` |
+| Size Increase | Primordial Crystal, Level 9 | `mcdm.summoner.v1/feature.fixture.elemental.primordial-crystal.level-9/size-increase` |
+| Magnified Strike | Primordial Crystal, Level 9 | `mcdm.summoner.v1/feature.fixture.elemental.primordial-crystal.level-9/magnified-strike` |
+| Garden of Jest | Glade Pond, Level 5 | `mcdm.summoner.v1/feature.fixture.fey.glade-pond.level-5/garden-of-jest` |
+| Size Increase | Glade Pond, Level 9 | `mcdm.summoner.v1/feature.fixture.fey.glade-pond.level-9/size-increase` |
+| Folly Field | Glade Pond, Level 9 | `mcdm.summoner.v1/feature.fixture.fey.glade-pond.level-9/folly-field` |
+| Memento Mori | Barrow Gates, Level 5 | `mcdm.summoner.v1/feature.fixture.undead.barrow-gates.level-5/memento-mori` |
+| Size Increase | Barrow Gates, Level 9 | `mcdm.summoner.v1/feature.fixture.undead.barrow-gates.level-9/size-increase` |
+| Open the Gates | Barrow Gates, Level 9 | `mcdm.summoner.v1/feature.fixture.undead.barrow-gates.level-9/open-the-gates` |
+
 ### Champions (4 terms)
 
 | Display Name | Portfolio/Kind | SCC Code |
