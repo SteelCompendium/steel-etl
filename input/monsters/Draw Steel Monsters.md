@@ -27234,6 +27234,7 @@ A 4th-level hero trains a striped condor griffon, a level 2 [elite](scc.v1:mcdm.
 
 At level 3, the griffon gains a +2 damage bonus to their [free strikes](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike), a +9 bonus to [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) (giving them [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) 39), and a +1 damage bonus to their [signature ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability) for a tier 2 or tier 3 outcome. At level 4, the griffon gains the level 4 [brute](scc.v1:mcdm.monsters.v1/rule.role/brute) ability Big Windup (see Big Windup), another + 9 bonus to [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) (for [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) 48), and a +1 damage bonus to their [signature ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability) for all tier outcomes. This gives them a total damage bonus to their [signature ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability) of +1 for tier 1 outcomes and +2 for tier 2 and tier 3 outcomes.
 
+<!-- @type: monster-group | @domain: retainer | @category: role-advancement -->
 #### Role Advancement Abilities
 
 When a retainer reaches level 4, 7, or 10, they can gain one of the following abilities based on their role, rather than gaining the retainer advancement ability presented alongside their stat block. A retainer qualifies only for the role advancement ability that matches their role and level.
@@ -27254,9 +27255,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 | 9     | +2 damage bonus to free strikes                                            | +9            | -                                             | +1                                                |
 | 10    | Level 10 retainer advancement ability or level 10 role advancement ability | +9            | +1                                            | +1                                                |
 
+<!-- @type: featureblock | @id: ambusher -->
 ##### Ambusher Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > 🗡 **Go for the Jugular (Encounter)**
 >
@@ -27272,7 +27274,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If the target is [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) or the retainer had an edge on the power roll, the retainer gains 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge).
 
-######## Level 7 Role Advancement Ability
+> **Level 7 Role Advancement Ability**
 
 > ⚔️ **Hamstring Slice (Encounter)**
 >
@@ -27288,7 +27290,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The retainer and their mentor can each move up to their speed.
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > ⚔️ **Hold 'Em Down (Encounter)**
 >
@@ -27304,9 +27306,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The retainer gains 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge) when any creature makes a strike against a target [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) this way.
 
+<!-- @type: featureblock | @id: artillery -->
 ##### Artillery Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > ❗️ **Supporting Volley**
 >
@@ -27318,7 +27321,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The retainer makes a ranged [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
-######## Level 7 Role Advancement Ability
+> **Level 7 Role Advancement Ability**
 
 > 🔳 **Line 'Em Up (Encounter)**
 >
@@ -27332,7 +27335,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 11 damage; M < AVERAGE [prone](scc.v1:mcdm.heroes.v1/condition/prone)
 > - **17+:** 16 damage; M < STRONG [prone](scc.v1:mcdm.heroes.v1/condition/prone)
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > 🏹 **Ricochet Shot (Encounter)**
 >
@@ -27348,9 +27351,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The retainer can target a second creature or object within 5 squares of the original target and that has line of effect to the original target. The retainer doesn't need line of effect to the second target but must be aware of their location.
 
+<!-- @type: featureblock | @id: brute -->
 ##### Brute Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > 👤 **Big Windup**
 >
@@ -27360,7 +27364,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** Until the start of the retainer's next turn, strikes made against the retainer gain an edge. At the start of the retainer's next turn, they gain 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge), and any ability they use before the end of their turn that [force moves](scc.v1:mcdm.heroes.v1/movement/forced-movement) a creature can move that creature 2 additional squares.
 
-######## Level 7 Role Advancement Ability
+> **Level 7 Role Advancement Ability**
 
 > 🗡 **Overhand Swat (Encounter)**
 >
@@ -27376,7 +27380,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If the target ends any [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) from this ability in a square [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the retainer's mentor, the mentor can make a melee [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > ❇️ **Dizzying Sweep (Encounter)**
 >
@@ -27392,9 +27396,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The retainer is [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) until the end of their next turn.
 
+<!-- @type: featureblock | @id: controller -->
 ##### Controller Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > 🔳 **Elemental Blast (Encounter)**
 >
@@ -27410,7 +27415,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** When the retainer uses this ability, they can choose for it to deal one of the following damage types: acid, cold, fire, lightning, poison, or sonic.
 
-######## Level 7 Role Advancement Ability
+> **Level 7 Role Advancement Ability**
 
 > 🔳 **Oil Slick (Encounter)**
 >
@@ -27426,7 +27431,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The area is [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Any enemy has fire weakness 5 while in the area, and any enemy who ends their turn in the area and has no movement remaining falls [prone](scc.v1:mcdm.heroes.v1/condition/prone).
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > 🏹 **Shattering Shards (Encounter)**
 >
@@ -27444,9 +27449,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The area within 2 squares of the target is [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain), and each enemy in the area takes the same damage the object took.
 
+<!-- @type: featureblock | @id: defender -->
 ##### Defender Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > ❗️ **Watch Out! (Encounter)**
 >
@@ -27458,7 +27464,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The retainer [pushes](scc.v1:mcdm.heroes.v1/movement/forced-movement) the target or the attacking creature up to 2 squares. If that moves the mentor out of distance of the strike, the strike has no effect.
 
-######## Level 7 Role Advancement Ability
+> **Level 7 Role Advancement Ability**
 
 > 🗡 **It's Me You Want! (Encounter)**
 >
@@ -27472,7 +27478,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 11 damage; [taunted](scc.v1:mcdm.heroes.v1/condition/taunted) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends)
 > - **17+:** 16 damage; [taunted](scc.v1:mcdm.heroes.v1/condition/taunted) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends)
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > 🗡 **Last Stand (Encounter)**
 >
@@ -27488,9 +27494,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The retainer and their mentor each gain 10 [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, each [winded](scc.v1:mcdm.heroes.v1/rule.health/winded) ally within 2 squares of the retainer can spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries).
 
+<!-- @type: featureblock | @id: harrier -->
 ##### Harrier Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > 🗡 **Tackle (Encounter)**
 >
@@ -27504,7 +27511,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 9 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 2
 > - **17+:** 12 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 4
 
-######## Level 7 Role Advancement Ability
+> **Level 7 Role Advancement Ability**
 
 > 🗡 **Meet You There (Encounter)**
 >
@@ -27520,7 +27527,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** Before or after the strike, the retainer and their mentor can each [shift](scc.v1:mcdm.heroes.v1/movement/shifting) up to their speed.
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > ❇️ **Nab and Stab (Encounter)**
 >
@@ -27536,9 +27543,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The retainer [shifts](scc.v1:mcdm.heroes.v1/movement/shifting) up to 2 squares, and can move a creature [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) using this ability with them.
 
+<!-- @type: featureblock | @id: hexer -->
 ##### Hexer Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > 🏹 **Backfire Curse (Encounter)**
 >
@@ -27570,7 +27578,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** While the target is [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) this way, if they end their turn without moving on that turn, they are no longer [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) and are [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends).
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > 🏹 **Mazed (Encounter)**
 >
@@ -27586,9 +27594,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** While mazed, the target is [dazed](scc.v1:mcdm.heroes.v1/condition/dazed). Additionally, at the end of each of the mazed target's turns, the retainer can cause the target to move up to their speed in a straight line in a direction of the retainer's choice. This is not [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement), and the movement ends if it would cause the target to enter [difficult](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) or damaging terrain.
 
+<!-- @type: featureblock | @id: mount -->
 ##### Mount Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > 🗡 **Cavalry Charge (Encounter)**
 >
@@ -27604,7 +27613,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If this ability is used as part of the [Charge](scc.v1:mcdm.heroes.v1/feature.common.main-actions/charge) main action, the mount's rider can use a free triggered action to make a melee [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the same target.
 
-######## Level 7 Role Advancement Ability
+> **Level 7 Role Advancement Ability**
 
 > 👤 **Giddyup! (Encounter)**
 >
@@ -27614,7 +27623,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The mount [shifts](scc.v1:mcdm.heroes.v1/movement/shifting) twice their speed. They can jump as part of this movement.
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > ❇️ **Rearing Trample (Encounter)**
 >
@@ -27630,9 +27639,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** A target knocked [prone](scc.v1:mcdm.heroes.v1/condition/prone) this way or who is already [prone](scc.v1:mcdm.heroes.v1/condition/prone) takes an extra 5 damage.
 
+<!-- @type: featureblock | @id: support -->
 ##### Support Abilities
 
-######## Level 4 Role Advancement Ability
+> **Level 4 Role Advancement Ability**
 
 > 🗡 **Battlefield Medic**
 >
@@ -27642,7 +27652,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The target spends a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries), and ability rolls against the target take a bane until the start of the retainer's next turn.
 
-######## Level 7 Role Advancement Ability
+> **Level 7 Role Advancement Ability**
 
 > 🏹 **Focus Fire (Encounter)**
 >
@@ -27658,7 +27668,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** One ally within distance gains 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge).
 
-######## Level 10 Role Advancement Ability
+> **Level 10 Role Advancement Ability**
 
 > 🗡 **Back from the Dead (Encounter)**
 >
