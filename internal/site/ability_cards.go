@@ -35,18 +35,46 @@ import (
 // the caller writes it unchanged. The frontmatter is preserved verbatim; injectH1
 // (called next in buildSection) prepends the "# Name" MkDocs needs for the
 // title/nav/TOC, which the CSS hides.
-func buildAbilityCardPage(data []byte) ([]byte, bool) {
+func buildAbilityCardPage(data []byte, standalone map[string]bool) ([]byte, bool) {
 	fm, body := splitFrontmatter(string(data))
 	var card string
 	switch parseFrontmatterField(fm, "type") {
 	case "ability":
 		card = renderAbilityCard(fm, body)
 	case "trait", "feature":
+		// A feature/trait page whose subtree contains a STANDALONE item
+		// (statblock/featureblock/dynamic-terrain/feature-group) is left uncarded:
+		// renderTraitCard would render those items as generic .sc-trait niches —
+		// mangling their `>`-blockquote stat/feature content into escaped text —
+		// AND consume the {data-scc} markers the embedItemCards post-pass needs.
+		// Leaving the raw markdown lets embed render the subtree: it splices the
+		// proper statblock/featureblock cards and re-cards the non-standalone
+		// sub-features, exactly as it already does on type: class pages. See
+		// docs/superpowers/specs/2026-06-16-inline-item-cards-design.md.
+		if bodyHasStandaloneDescendant(body, standalone) {
+			return data, false
+		}
 		card = renderTraitCard(fm, body)
 	default:
 		return data, false
 	}
 	return []byte("---\n" + fm + "\n---\n\n" + card), true
+}
+
+// bodyHasStandaloneDescendant reports whether a feature/trait page body carries a
+// {data-scc} descendant heading whose code names a standalone leaf
+// (statblock/featureblock/dynamic-terrain/feature-group, per standaloneType). The
+// page's own code is never standalone, so it never matches itself.
+func bodyHasStandaloneDescendant(body string, standalone map[string]bool) bool {
+	if len(standalone) == 0 {
+		return false
+	}
+	for _, line := range strings.Split(body, "\n") {
+		if m := dataSCCHeadingRe.FindStringSubmatch(line); m != nil && standalone[m[2]] {
+			return true
+		}
+	}
+	return false
 }
 
 // ── action type → eyebrow label + crest glyph ───────────────────────────────

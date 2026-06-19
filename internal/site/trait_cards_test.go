@@ -31,12 +31,53 @@ func TestTraitEyebrow_AncestryTraitSaysTrait(t *testing.T) {
 // A plain feature (type: feature) routes through the recessed niche, same as a trait.
 func TestBuildAbilityCardPage_PlainFeature(t *testing.T) {
 	page := "---\ntype: feature\nname: A Beyonding of Vision\n---\n\nYour void sense reaches further.\n"
-	out, ok := buildAbilityCardPage([]byte(page))
+	out, ok := buildAbilityCardPage([]byte(page), nil)
 	if !ok {
 		t.Fatal("expected plain feature to be rendered as a card")
 	}
 	if !strings.Contains(string(out), "sc-trait") {
 		t.Errorf("plain feature should render the recessed .sc-trait niche\n%s", string(out))
+	}
+}
+
+// A feature page whose subtree contains a standalone item (statblock/featureblock)
+// must be left UNCARDED so the embedItemCards post-pass can splice the proper item
+// cards. Otherwise renderTraitCard renders the item as a generic .sc-trait niche —
+// mangling its blockquote stat/feature content — and consumes the {data-scc}
+// markers embed needs. (Bug: summoner fixture featureblocks like "The Boil"
+// rendered as a Feature inside the 2nd-Level Features card.)
+func TestBuildAbilityCardPage_DefersStandaloneDescendantToEmbed(t *testing.T) {
+	page := "---\ntype: feature\nname: 2nd-Level Features\n" +
+		"scc: mcdm.summoner.v1/feature.summoner.level-2/2nd-level-features\n---\n\n" +
+		"As a 2nd-level summoner, you gain the following features.\n\n" +
+		"##### The Boil {data-scc=\"mcdm.summoner.v1/monster.fixture.demon.featureblock/the-boil\"}\n\n" +
+		"> ⭐️ **Hunger Thrush**\n>\n> Each enemy nearby is taunted.\n"
+	standalone := map[string]bool{
+		"mcdm.summoner.v1/monster.fixture.demon.featureblock/the-boil": true,
+	}
+	out, ok := buildAbilityCardPage([]byte(page), standalone)
+	if ok {
+		t.Fatalf("feature with a standalone descendant must be left uncarded for embed\n%s", string(out))
+	}
+	if !strings.Contains(string(out), `{data-scc="mcdm.summoner.v1/monster.fixture.demon.featureblock/the-boil"}`) {
+		t.Errorf("the {data-scc} marker must survive for the embed post-pass\n%s", string(out))
+	}
+	if strings.Contains(string(out), "sc-trait") {
+		t.Errorf("a standalone-bearing feature must NOT be pre-rendered into a trait card\n%s", string(out))
+	}
+}
+
+// A feature with NO standalone descendants is still carded, even when a standalone
+// set is supplied (only matching descendants defer to embed).
+func TestBuildAbilityCardPage_CardsPlainFeatureDespiteStandaloneSet(t *testing.T) {
+	page := "---\ntype: feature\nname: Perk\n---\n\nYou gain a perk of your choice.\n"
+	standalone := map[string]bool{"mcdm.x.v1/monster.cat.statblock/unrelated": true}
+	out, ok := buildAbilityCardPage([]byte(page), standalone)
+	if !ok {
+		t.Fatal("a feature without standalone descendants should still be carded")
+	}
+	if !strings.Contains(string(out), "sc-trait") {
+		t.Errorf("plain feature should render the .sc-trait niche\n%s", string(out))
 	}
 }
 

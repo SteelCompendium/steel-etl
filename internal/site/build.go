@@ -55,9 +55,16 @@ func Build(cfg *Config) (*BuildResult, error) {
 		return nil, fmt.Errorf("walk source: %w", err)
 	}
 
+	// Codes whose own page is a standalone card (statblock/featureblock/…). A
+	// feature/trait container holding one of these as a descendant is left uncarded
+	// in buildSection so the embedItemCards post-pass renders it. Built once over
+	// every entry (the set must be complete before any section renders, since a
+	// Browse feature references Browse fixture leaves in arbitrary walk order).
+	standalone := standaloneCodeSet(entries)
+
 	// Map files to sections
 	for _, section := range cfg.Sections {
-		count, errs := buildSection(cfg, section, entries)
+		count, errs := buildSection(cfg, section, entries, standalone)
 		result.CopiedFiles += count
 		result.Errors = append(result.Errors, errs...)
 		result.Sections++
@@ -197,8 +204,31 @@ func walkSourceDirs(dirs []string) ([]sourceEntry, error) {
 	return all, nil
 }
 
+// standaloneCodeSet scans the source entries for pages whose own frontmatter type
+// is a standalone card (statblock/featureblock/dynamic-terrain/feature-group, per
+// standaloneType in embed_cards.go) and returns the set of their scc codes. Used
+// by buildAbilityCardPage to leave feature/trait containers that hold such a
+// descendant for the embedItemCards post-pass instead of carding them inline.
+func standaloneCodeSet(entries []sourceEntry) map[string]bool {
+	set := map[string]bool{}
+	for _, e := range entries {
+		data, err := os.ReadFile(e.absPath)
+		if err != nil {
+			continue
+		}
+		fm, _ := splitFrontmatter(string(data))
+		if fm == "" || !standaloneType[strings.TrimSpace(parseFrontmatterField(fm, "type"))] {
+			continue
+		}
+		if scc := strings.TrimSpace(parseFrontmatterField(fm, "scc")); scc != "" {
+			set[scc] = true
+		}
+	}
+	return set
+}
+
 // buildSection copies matching files from source into the section directory.
-func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (int, []string) {
+func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, standalone map[string]bool) (int, []string) {
 	sectionDir := filepath.Join(cfg.DocsDir, section.Name)
 	count := 0
 	var errs []string
@@ -264,7 +294,7 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 		// Ability/trait pages → high-fantasy steel `.sc-ability` card (site-only;
 		// shared data repos untouched). Runs before injectH1 so the card becomes
 		// the page body and injectH1 still prepends the "# Name" MkDocs needs.
-		if card, ok := buildAbilityCardPage(data); ok {
+		if card, ok := buildAbilityCardPage(data, standalone); ok {
 			data = card
 		}
 
