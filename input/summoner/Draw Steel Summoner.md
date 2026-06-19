@@ -393,7 +393,7 @@ If you are new to Draw Steel, we recommend checking out The Delian Tomb starter 
 
 As a [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
 
-<!-- @type: feature | @id: summoner-circle | @level: 1 -->
+<!-- @type: feature | @id: summoner-circle | @level: 1 | @feature_source: circle -->
 ### Summoner Circle
 
 You've learned the art of summoning from a member of a loose network of summoners called a circle. Each circle specializes in a distinct [portfolio](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/portfolio) of creatures you can call into existence. Choose a summoner circle from the following options, each of which grants you a communication feature (*Quick Build:* Circle of Graves.)
@@ -584,7 +584,7 @@ You can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) into squares that conta
 
 **1 Essence:** An adjacent ally can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) alongside you during this movement. They must end their movement in an unoccupied square adjacent to the last minion you moved through.
 
-<!-- @type: feature | @id: 1st-level-circle-features | @level: 1 -->
+<!-- @type: feature | @id: 1st-level-circle-features | @level: 1 | @feature_source: circle -->
 ### 1st-Level Circle Features
 
 Your circle grants you features as shown on the 1st-Level Summoner Circle Features table.
@@ -773,7 +773,7 @@ You have the following triggered action.
 
 **Spend 1 Essence:** Instead of commanding an existing minion, you summon a signature minion into an unoccupied space [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the target to take the strike.
 
-<!-- @type: feature | @id: portfolio | @level: 1 -->
+<!-- @type: feature | @id: portfolio | @level: 1 | @feature_source: circle -->
 ### Portfolio
 
 Your portfolio comprises the minions you've learned to summon. Each summoner circle specializes in a portfolio of creatures with which the summoner can build their armies, as shown on the Summoner Circle Portfolio table. Your circle allows you to select minions to add to your own portfolio.
@@ -1478,7 +1478,7 @@ As a 2nd-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the 
 
 You gain an [intrigue](scc.v1:mcdm.heroes.v1/skill.group/intrigue), [lore](scc.v1:mcdm.heroes.v1/skill.group/lore), or supernatural [perk](scc.v1:mcdm.summoner.v1/feature.summoner.level-2/perk) of your choice. See Perks in Draw Steel: Heroes for more information.
 
-<!-- @type: feature | @id: summoners-dominion | @level: 2 -->
+<!-- @type: feature | @id: summoners-dominion | @level: 2 | @feature_source: circle -->
 #### Summoner's Dominion
 
 Your circle allows you to call forth a piece of your [portfolio's](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/portfolio) dominion like any [minion](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions).
@@ -1647,7 +1647,7 @@ Tall iron gates from the Necropolitan Ruins arise from the earth as wailing spir
 >
 > You can use [Rise!](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/rise) as a [free triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) each time an enemy dies within 3 squares of the gates while you have [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to the gates.
 
-<!-- @type: feature | @id: new-portfolio-minion | @level: 2 -->
+<!-- @type: feature | @id: new-portfolio-minion | @level: 2 | @feature_source: circle -->
 #### New Portfolio Minion
 
 Your circle allows you to select new [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) to add to your [portfolio](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/portfolio).
@@ -2107,7 +2107,7 @@ You gain one skill of your choice.
 
 As a 5th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the following features.
 
-<!-- @type: feature | @id: 5th-level-circle-feature | @level: 5 -->
+<!-- @type: feature | @id: 5th-level-circle-feature | @level: 5 | @feature_source: circle -->
 ### 5th-Level Circle Feature
 
 Your circle grants you a feature as shown on the 5th-Level Summoner Circle Features table.
@@ -2174,7 +2174,7 @@ As a maneuver, you can command one or more of your demon [minions](scc.v1:mcdm.s
 
 Additionally, whenever one of your demon [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) Death Snaps, their target is P < WEAK affected by a [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) the [minion](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) was suffering from. The [potency](scc.v1:mcdm.heroes.v1/rule.character/potency) increases by 1 on each subsequent Death Snap the target takes [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) from in the same [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) (maximum +2).
 
-<!-- @type: feature | @id: new-portfolio-minion | @level: 5 -->
+<!-- @type: feature | @id: new-portfolio-minion | @level: 5 | @feature_source: circle -->
 #### New Portfolio Minion
 
 Your circle allows you to select new [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) to add to your [portfolio](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/portfolio).
@@ -2511,7 +2511,7 @@ As a 6th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the 
 
 You gain an [interpersonal](scc.v1:mcdm.heroes.v1/skill.group/interpersonal), [lore](scc.v1:mcdm.heroes.v1/skill.group/lore), or supernatural perk of your choice. See Perks in Draw Steel: Heroes for more information.
 
-<!-- @type: feature | @id: return-to-the-source | @level: 6 -->
+<!-- @type: feature | @id: return-to-the-source | @level: 6 | @feature_source: circle -->
 #### Return to the Source
 
 You can translate yourself and your allies into the space that your minions come from, as if summoning in reverse.
@@ -2669,7 +2669,7 @@ As an 8th-level [summoner](scc.v1:mcdm.summoner.v1/class/summoner), you gain the
 
 You gain any one perk of your choice. See Perks in Draw Steel: Heroes for more information.
 
-<!-- @type: feature | @id: 8th-level-circle-feature | @level: 8 -->
+<!-- @type: feature | @id: 8th-level-circle-feature | @level: 8 | @feature_source: circle -->
 #### 8th-Level Circle Feature
 
 Your circle grants you a feature as shown on the 8th-Level Summoner Circle Features table.
@@ -2717,7 +2717,7 @@ You aren't affected by excess [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage)
 
 Additionally, you and each of your undead minions ignore [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) rolled as a d3 or a d6 and [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) from environmental effects while you are not [winded](scc.v1:mcdm.heroes.v1/rule.health/winded).
 
-<!-- @type: feature | @id: portfolio-champion | @level: 8 -->
+<!-- @type: feature | @id: portfolio-champion | @level: 8 | @feature_source: circle -->
 #### Portfolio Champion
 
 Your circle now allows you to add a champion to your portfolio. Champions follow the same rules as your other minions, with the following exceptions:
