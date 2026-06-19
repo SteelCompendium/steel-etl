@@ -128,25 +128,21 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	if strings.TrimSpace(parseFrontmatterField(fm, "statblock_kind")) == "fixture" {
 		return data, false
 	}
-	// Retainer advancement abilities (H6 "Level N Retainer Advancement Ability"
-	// headings) are split out: the island is built from the pre-advancement base
-	// so they no longer pollute the feature list, and they re-emit as a Forged
-	// Band card below the statblock (Plan 4). Non-retainer statblocks: base ==
-	// body, no groups, no-op.
-	base, advGroups := splitRetainerAdvancement(body)
 	// Build-time HTML card (the featureblock_page.go model): renderStatblockCard
 	// emits the same .sb-wrap DOM steel-statblock.js used to build client-side, so
 	// the card can later be embedded inline on any page. Contiguous (no blank
 	// lines) so md_in_html passes it through verbatim.
-	island := buildStatblockIsland(fm, base)
+	//
+	// Retainer advancement is no longer split out here: as of Plan 6 each retainer's
+	// advancement abilities are a real `monster.retainer.advancement-features/<id>`
+	// featureblock entity (its own paired page), so the statblock body holds only the
+	// innate abilities and renders straight through.
+	island := buildStatblockIsland(fm, body)
 	if scc := strings.TrimSpace(parseFrontmatterField(fm, "scc")); scc != "" {
 		statblockFeatureCache[scc] = island.Features
 	}
 	card := renderStatblockCard(island)
-	// Retainer advancement abilities render as a Forged Band card below the
-	// statblock (Plan 4, renderRetainerAdvancement); "" for non-retainers.
-	adv := renderRetainerAdvancement(fm, advGroups)
-	return []byte("---\n" + fm + "\n---\n\n" + card + "\n" + adv), true
+	return []byte("---\n" + fm + "\n---\n\n" + card), true
 }
 
 func buildStatblockIsland(fm, body string) sbIsland {

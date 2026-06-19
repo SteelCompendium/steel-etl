@@ -95,12 +95,10 @@ var goldenFixtures = map[string]string{
 const goldenDir = "testdata/statblock_golden"
 
 // islandFor reproduces exactly what buildStatblockIslandPage feeds the renderer:
-// split frontmatter, strip retainer-advancement (a no-op for these fixtures),
-// then build the island.
+// split frontmatter, then build the island from the full body.
 func islandFor(page string) sbIsland {
 	fm, body := splitFrontmatter(page)
-	base, _ := splitRetainerAdvancement(body)
-	return buildStatblockIsland(fm, base)
+	return buildStatblockIsland(fm, body)
 }
 
 // TestStatblockGolden_WriteIslandInputs regenerates the committed island JSON
