@@ -312,6 +312,10 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 			data = card
 		}
 
+		// Fixture base pages → embed their sibling advancement-features card inline
+		// (build-time on-page embedding; the embed_cards post-pass does the transclude).
+		data = embedFixtureAdvancement(data)
+
 		// Beastheart companion feature-group pages → the .sb-wrap statblock card
 		// (replacing the raw stat table), keeping the advancement-features section.
 		// Site-only; runs before injectH1 like the cards above.
@@ -644,6 +648,29 @@ func flattenAdvancementFeaturesPath(relPath string) string {
 		}
 	}
 	return relPath
+}
+
+// embedFixtureAdvancement appends a {data-scc} embed marker for a fixture base's
+// sibling advancement-features card so the embed_cards post-pass transcludes it
+// inline on the base page (companion-style on-page embedding, requested 2026-06-19).
+// Fixtures' advancement block is a parse-SIBLING of the base, so RenderSubtree
+// never carries its marker (unlike beastheart companions, where it nests); we
+// synthesize one here. The advancement code is the base code with
+// `.featureblock/<id>` → `.advancement-features/<id>`. Non-fixture-base pages
+// (no `monster.fixture.*.featureblock/` scc) are returned unchanged.
+func embedFixtureAdvancement(data []byte) []byte {
+	fm, _ := splitFrontmatter(string(data))
+	if fm == "" {
+		return data
+	}
+	scc := strings.TrimSpace(parseFrontmatterField(fm, "scc"))
+	if !strings.Contains(scc, "monster.fixture.") || !strings.Contains(scc, ".featureblock/") {
+		return data
+	}
+	advCode := strings.Replace(scc, ".featureblock/", ".advancement-features/", 1)
+	name := strings.TrimSpace(parseFrontmatterField(fm, "name"))
+	marker := fmt.Sprintf("\n\n## %s Advancement Features {data-scc=\"%s\"}\n", name, advCode)
+	return append(data, []byte(marker)...)
 }
 
 // mergeGroupLanding folds a relocated group-landing page (placed at dir/index.md
