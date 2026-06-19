@@ -34,4 +34,11 @@ type ParsedContent struct {
 	// Children holds parsed sub-content that should be embedded in the parent.
 	// For example, a kit's signature ability is stored under "signature_ability".
 	Children map[string]*ParsedContent
+
+	// CodedChildren holds extra entities the parser mints from a container's body
+	// (e.g. fixture advancement members parsed from blockquotes) that are NOT real
+	// document sections but still get their own SCC code + leaf page. The pipeline
+	// classifies and writes each one after the parent. Distinct from Children
+	// (which is embed-only). See docs/superpowers/specs/2026-06-19-fixture-advancement-coded-members-design.md §5.
+	CodedChildren []*ParsedContent
 }

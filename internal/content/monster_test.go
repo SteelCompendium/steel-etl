@@ -373,3 +373,76 @@ func TestStatblockParser_SummonerRival(t *testing.T) {
 		})
 	}
 }
+
+func TestFeatureblockParser_FixtureAdvancementCodedChildren(t *testing.T) {
+	// The advancement featureblock body: two leveled bands, three members, each
+	// member preceded by its inline annotation (the source form, Task 3).
+	body := strings.Join([]string{
+		"> **Level 5 Fixture Advancement Feature**",
+		"",
+		"<!-- @type: feature | @id: soul-rancor | @level: 5 -->",
+		"> ⭐️ **Soul Rancor**",
+		">",
+		"> You gain a surge the first time your demon minions deal 3+ damage.",
+		"",
+		"> **Level 9 Fixture Advancement Feature**",
+		"",
+		"<!-- @type: feature | @id: size-increase | @level: 9 -->",
+		"> ⭐️ **Size Increase**",
+		">",
+		"> The boil is now size 3.",
+		"",
+		"<!-- @type: feature | @id: fester-field | @level: 9 -->",
+		"> ⭐️ **Fester Field**",
+		">",
+		"> Each non-abyssal enemy within 3 squares takes 5 corruption damage.",
+	}, "\n")
+	fb := newSection("The Boil Advancement Features", 6,
+		map[string]string{"type": "featureblock", "id": "the-boil"}, body)
+
+	ctx := context.NewContextStack(nil)
+	ctx.Push(3, map[string]string{"domain": "fixture", "category": "demon"})
+
+	p := &FeatureblockParser{}
+	got, err := p.Parse(ctx, fb)
+	if err != nil {
+		t.Fatal(err)
+	}
+	// Container code unchanged (Plan 5c).
+	if gotPath := strings.Join(got.TypePath, "/"); gotPath != "monster/fixture/demon/advancement-features" {
+		t.Errorf("container TypePath = %q, want monster/fixture/demon/advancement-features", gotPath)
+	}
+	if got.ItemID != "the-boil" {
+		t.Errorf("container ItemID = %q, want the-boil", got.ItemID)
+	}
+	// The card still gets its inline features[].
+	if feats, ok := got.Frontmatter["features"].([]map[string]any); !ok || len(feats) != 3 {
+		t.Fatalf("features = %v, want 3 inline members", got.Frontmatter["features"])
+	}
+	// And each member is now a coded child with a base-inclusive, leveled path.
+	if len(got.CodedChildren) != 3 {
+		t.Fatalf("CodedChildren = %d, want 3", len(got.CodedChildren))
+	}
+	want := []struct {
+		path, id string
+	}{
+		{"feature/fixture/demon/the-boil/level-5", "soul-rancor"},
+		{"feature/fixture/demon/the-boil/level-9", "size-increase"},
+		{"feature/fixture/demon/the-boil/level-9", "fester-field"},
+	}
+	for i, w := range want {
+		c := got.CodedChildren[i]
+		if gotPath := strings.Join(c.TypePath, "/"); gotPath != w.path {
+			t.Errorf("child[%d] TypePath = %q, want %q", i, gotPath, w.path)
+		}
+		if c.ItemID != w.id {
+			t.Errorf("child[%d] ItemID = %q, want %q", i, c.ItemID, w.id)
+		}
+		if c.Frontmatter["type"] != "feature" {
+			t.Errorf("child[%d] type = %v, want feature", i, c.Frontmatter["type"])
+		}
+		if strings.TrimSpace(c.Body) == "" {
+			t.Errorf("child[%d] Body is empty, want the member prose", i)
+		}
+	}
+}

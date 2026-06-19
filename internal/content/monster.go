@@ -231,14 +231,20 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 	// has domain=fixture, this sibling featureblock carries the Level-5/9
 	// advancement features for the fixture entity (Plan 5c).
 	if domain, category, _ := statblockDomain(ctx, section.HeadingLevel); domain == "fixture" {
-		if feats := ParseRichFeatures(body); len(feats) > 0 {
+		// Members stay inline (the card's features[]) AND become coded children:
+		// each mints feature.fixture.<category>.<base>.level-N/<id> + its own leaf
+		// page (parser-emitted, not a tree section — the level-6 cap forbids
+		// nesting them under this block). Spec §5; container code unchanged.
+		feats := ParseRichFeatures(body)
+		if len(feats) > 0 {
 			fm["features"] = RichFeatureMaps(feats)
 		}
 		return &ParsedContent{
-			Frontmatter: fm,
-			Body:        body,
-			TypePath:    compactPath("monster", "fixture", category, "advancement-features"),
-			ItemID:      id,
+			Frontmatter:   fm,
+			Body:          body,
+			TypePath:      compactPath("monster", "fixture", category, "advancement-features"),
+			ItemID:        id,
+			CodedChildren: fixtureCodedChildren(feats, fixtureMemberAnnotations(body), category, id),
 		}, nil
 	}
 
@@ -391,4 +397,62 @@ func collectChildFeatures(section *parser.Section) []RichFeature {
 		}
 	}
 	return out
+}
+
+// fixtureMemberAnn is one advancement member's explicit identity from its inline
+// annotation (`<!-- @type: feature | @id: … | @level: … -->`), in document order.
+type fixtureMemberAnn struct {
+	id    string
+	level int
+}
+
+// fixtureMemberAnnotations returns the per-member @type:feature annotations found
+// in a fixture advancement-features body, in document order — one per `> ⭐️`
+// member. ParseRichFeatures yields the members in the same order, so the two lists
+// zip by index (see fixtureCodedChildren).
+func fixtureMemberAnnotations(body string) []fixtureMemberAnn {
+	var out []fixtureMemberAnn
+	for _, a := range parser.ExtractAnnotations(body) {
+		if a.Fields["type"] != "feature" {
+			continue
+		}
+		m := fixtureMemberAnn{id: strings.TrimSpace(a.Fields["id"])}
+		if lv := strings.TrimSpace(a.Fields["level"]); lv != "" {
+			m.level, _ = strconv.Atoi(lv)
+		}
+		out = append(out, m)
+	}
+	return out
+}
+
+// fixtureCodedChildren builds one coded child per advancement member:
+// feature.fixture.<category>.<baseID>.level-N/<memberID>. Member id/level come
+// from the inline annotation when present, else derive (slug of name + band level).
+func fixtureCodedChildren(feats []RichFeature, anns []fixtureMemberAnn, category, baseID string) []*ParsedContent {
+	var children []*ParsedContent
+	for i, f := range feats {
+		memberID := Slugify(f.Name)
+		level := f.Level
+		if i < len(anns) {
+			if anns[i].id != "" {
+				memberID = anns[i].id
+			}
+			if anns[i].level != 0 {
+				level = anns[i].level
+			}
+		}
+		fm := map[string]any{"name": f.Name, "type": "feature"}
+		typePath := []string{"feature", "fixture", category, baseID}
+		if level != 0 {
+			fm["level"] = level
+			typePath = append(typePath, "level-"+strconv.Itoa(level))
+		}
+		children = append(children, &ParsedContent{
+			Frontmatter: fm,
+			Body:        strings.TrimSpace(f.Body),
+			TypePath:    compactPath(typePath...),
+			ItemID:      memberID,
+		})
+	}
+	return children
 }
