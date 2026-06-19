@@ -446,3 +446,58 @@ func TestFeatureblockParser_FixtureAdvancementCodedChildren(t *testing.T) {
 		}
 	}
 }
+
+func TestFixtureAdvancementCodedChildren_ViaParseDocument(t *testing.T) {
+	src := []byte(strings.Join([]string{
+		"<!-- @type: monster-group | @domain: fixture | @category: demon -->",
+		"##### Demon Portfolio Fixture", "", "Lore.", "",
+		"<!-- @type: statblock -->",
+		"####### The Boil", "", "*Hazard Support*", "",
+		"| **Stamina:** 20 + your level | **Size:** 2 |",
+		"|------------------------------|------------:|", "",
+		"> ⭐️ **Hunger Thrush**", ">", "> Inline base ability.", "",
+		"<!-- @type: featureblock | @id: the-boil -->",
+		"####### The Boil Advancement Features", "",
+		"> **Level 5 Fixture Advancement Feature**", ">",
+		"<!-- @type: feature | @id: soul-rancor | @level: 5 -->",
+		"> ⭐️ **Soul Rancor**", ">", "> Surge body.", "",
+		"> **Level 9 Fixture Advancement Feature**", ">",
+		"<!-- @type: feature | @id: fester-field | @level: 9 -->",
+		"> ⭐️ **Fester Field**", ">", "> Corruption body.", "",
+	}, "\n"))
+
+	doc, err := parser.ParseDocument(src)
+	if err != nil {
+		t.Fatal(err)
+	}
+	// Find the advancement featureblock section in the parsed tree.
+	var fb *parser.Section
+	var walk func(ss []*parser.Section)
+	walk = func(ss []*parser.Section) {
+		for _, s := range ss {
+			if s.Type() == "featureblock" && s.ID() == "the-boil" {
+				fb = s
+			}
+			walk(s.Children)
+		}
+	}
+	walk(doc.Sections)
+	if fb == nil {
+		t.Fatal("advancement featureblock @id:the-boil not found in parsed tree")
+	}
+
+	ctx := context.NewContextStack(nil)
+	ctx.Push(3, map[string]string{"domain": "fixture", "category": "demon"})
+	got, err := (&FeatureblockParser{}).Parse(ctx, fb)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(got.CodedChildren) != 2 {
+		t.Fatalf("CodedChildren = %d, want 2", len(got.CodedChildren))
+	}
+	if strings.Join(got.CodedChildren[0].TypePath, "/") != "feature/fixture/demon/the-boil/level-5" ||
+		got.CodedChildren[0].ItemID != "soul-rancor" {
+		t.Errorf("child[0] = %v/%q, want feature/fixture/demon/the-boil/level-5/soul-rancor",
+			got.CodedChildren[0].TypePath, got.CodedChildren[0].ItemID)
+	}
+}
