@@ -1,9 +1,40 @@
 package content
 
 import (
+	"strings"
+
 	"github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
 )
+
+// featureSource returns the feature_source frontmatter value for a feature or
+// ability. It is Summoner-book-only: non-Summoner books get "" (field omitted).
+// Within the Summoner book the value comes from the section's own
+// @feature_source annotation or an inherited ancestor's (via the context stack,
+// mirroring @level propagation); unmarked Summoner features default to
+// "summoner". Only FeatureParser/AbilityParser call this, so statblock/
+// featureblock/monster-group descendants never inherit it. The value space is
+// forward-compatible with Phase-2 "circle-of-<name>" slugs. See
+// docs/superpowers/specs/2026-06-18-summoner-feature-source-design.md.
+func featureSource(ctx *context.ContextStack, section *parser.Section) string {
+	book, _ := ctx.Lookup(section.HeadingLevel, "book")
+	if !strings.HasPrefix(book, "mcdm.summoner.") {
+		return ""
+	}
+	// The section's own @feature_source wins (the explicit-mark features such as
+	// Summoner's Dominion), then an inherited container's (the circle-lookup
+	// containers). Checking the section directly avoids depending on the pipeline
+	// having pushed this section's own annotation onto the stack first.
+	if section.Annotation != nil {
+		if v, ok := section.Annotation["feature_source"]; ok && v != "" {
+			return v
+		}
+	}
+	if v, ok := ctx.Lookup(section.HeadingLevel, "feature_source"); ok && v != "" {
+		return v
+	}
+	return "summoner"
+}
 
 // FeatureGroupParser handles @type: feature-group sections.
 // Container that provides level context to children.
@@ -106,6 +137,9 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	// Subclass is reference metadata only — surfaced in frontmatter, never in the path.
 	if v, ok := section.Annotation["subclass"]; ok && v != "" {
 		fm["subclass"] = parseSubclass(v)
+	}
+	if fs := featureSource(ctx, section); fs != "" {
+		fm["feature_source"] = fs
 	}
 
 	// Build the hub-and-spoke type path. The base case is unmarked; the `trait`

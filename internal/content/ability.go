@@ -98,6 +98,10 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 		fm["companion"] = companionID
 	}
 
+	if fs := featureSource(ctx, section); fs != "" {
+		fm["feature_source"] = fs
+	}
+
 	// Build type path: feature.ability.{parent}.level-{N}
 	// Companion abilities use feature.ability.companion.beastheart.{species}.level-{N}
 	// (the class segment mirrors FeatureParser's companion path; empty-class guard prevents
