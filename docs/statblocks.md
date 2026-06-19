@@ -220,6 +220,22 @@ sibling at `…/<element>/advancement-features/<id>`. `bestiaryItemType` indexes
 a searchable `"fixture"` facet (the advancement-features sibling is excluded). Plan:
 `docs/superpowers/plans/2026-06-14-fixture-featureblock-restructure.md`.
 
+**Coded advancement members + on-page embed (2026-06-19 — ROADMAP #16).** Each fixture's
+Level-5/9 advancement members are now individually coded
+`feature.fixture.<element>.<base-id>.level-N/<member-id>` (×12) with their own leaf pages.
+Because input headers stay faithful to the PDF (fixture group is H5) and the advancement
+featureblock is a parse-**sibling** of the base — not a child — the level-6 cap forbids
+nesting members under it. So members keep their `> ⭐️ **Name**` blockquote form (plus a
+per-member inline `@type: feature` annotation) and the `FeatureblockParser` fixture branch
+emits them as **parser-emitted coded children** (`ParsedContent.CodedChildren`,
+`fixtureCodedChildren`/`fixtureMemberAnnotations` in `monster.go`); the pipeline walk **and**
+`CollectSCCCodes` classify + write them as leaves. No `collectDeepHeadings`/`ContextStack`
+change. The advancement card is **embedded on the base fixture page** at build time via
+`embedFixtureAdvancement` (`build.go`) injecting the `{data-scc}` marker the `embed_cards`
+post-pass transcludes; the group-index base+advancement pairing is **kept** (full companion
+parity). Base/container codes unchanged. Spec:
+`docs/superpowers/specs/2026-06-19-fixture-advancement-coded-members-design.md`.
+
 ## Retainers (Plan 6 — shipped 2026-06-18)
 
 The Monsters-book retainers joined the `monster.*` family and their advancement/role groups
