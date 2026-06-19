@@ -156,6 +156,10 @@ func runValidate(cmd *cobra.Command, args []string) error {
 	}
 	walkSections(doc.Sections, 0)
 
+	// Summoner-only: cross-check feature_source against the advancement table.
+	// No-op for books without a "Summoner Advancement" table.
+	issues = append(issues, checkSummonerFeatureSource(source, doc)...)
+
 	// --- 3. Run the pipeline to check SCC stability ---
 	if sccStable {
 		registryPath := ""
