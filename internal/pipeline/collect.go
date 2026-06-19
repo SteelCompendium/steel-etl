@@ -80,6 +80,22 @@ func CollectSCCCodes(cfg *Config, inputPath string) (*CollectResult, error) {
 				result.Codes = append(result.Codes, sccCode)
 			}
 
+			// Parser-emitted coded children (e.g. fixture advancement members) get
+			// their own codes too — mirror the main pipeline walk so --scc-stable
+			// and other collect-based callers see them.
+			for _, child := range parsed.CodedChildren {
+				if child.TypePath == nil || child.ItemID == "" {
+					continue
+				}
+				childCode := scc.Classify(bookSource, child.TypePath, child.ItemID)
+				if prevHeading, exists := seen[childCode]; exists {
+					result.Duplicates = append(result.Duplicates,
+						fmt.Sprintf("%s: %q and %q", childCode, fmt.Sprint(child.Frontmatter["name"]), prevHeading))
+				}
+				seen[childCode] = fmt.Sprint(child.Frontmatter["name"])
+				result.Codes = append(result.Codes, childCode)
+			}
+
 			walk(section.Children)
 		}
 	}
