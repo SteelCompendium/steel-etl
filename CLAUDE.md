@@ -166,6 +166,8 @@ Kits and non-ability features can embed child abilities as structured nested obj
 
 Both patterns: the child ability is parsed by `AbilityParser`, stored in `ParsedContent.Children`, and embedded by the SDK transformer. The child ability also gets its own standalone output file when the pipeline walks the section tree.
 
+⚠️ **`ParsedContent.Children` (embed-only) vs `ParsedContent.CodedChildren` (own code + leaf).** `Children` is a render/SDK embed; it mints no code (the child's standalone page comes from being a *real section* the walk visits). `CodedChildren` (added 2026-06-19, ROADMAP #16) is for entities a parser mints from a container's **body** — they are NOT document sections, so the pipeline must classify + write them explicitly: it does so in **both** the main classify walk (`internal/pipeline/pipeline.go`) **and** `CollectSCCCodes` (`internal/pipeline/collect.go` — used by `validate --scc-stable`; keep the two in sync or the codes look "missing"). Today only the fixture advancement branch uses it (`fixtureCodedChildren` in `monster.go`); it generalizes to any coded blockquote member (malice/terrain/retainer abilities — ROADMAP #15).
+
 Blockquote headings (`> ######`) get context-aware tree levels (previous regular heading + 1, capped at 6) so they nest as proper children of their parent sections.
 
 **Callout suppression + aside rendering (`@type: callout | @owner: self|loose`).** A
