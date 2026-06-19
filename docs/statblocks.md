@@ -9,10 +9,12 @@ book (statblocks)"; this file holds the full detail.
 The Monsters book uses **H7 for statblocks and H9 for malice/terrain blocks** — heading
 levels goldmark doesn't parse (CommonMark caps at H6). `collectDeepHeadings`
 (`internal/parser/document.go`) captures these at level 6; **H8 is intentionally not
-collected** so retainer advancement sub-blocks fold into their parent statblock's body.
-Those folded H8 lines (`######## Level N … Advancement Ability`) would otherwise render
-as literal `########` (CommonMark caps at H6), so `RenderSubtree`'s
-`demoteOverflowHeadings` rewrites any 7+-hash body line to a **bold** label.
+collected** — any folded H8 body line (`########` …) would otherwise render as literal
+`########` (CommonMark caps at H6), so `RenderSubtree`'s `demoteOverflowHeadings` rewrites
+any 7+-hash body line to a **bold** label. (Retainer/role advancement abilities used to
+rely on this; Plan 6 — 2026-06-18 — instead moved their `######## Level N …` separators
+into sibling `@type: featureblock` sections as **blockquote** labels `> **Level N …**`, the
+form `ParseRichFeatures` collects. See "Retainers" below.)
 
 Parsers: `monster` (group lore page + `category` context), `statblock`, `featureblock`
 (malice), `dynamic-terrain`, and the non-code `monster-group` container
@@ -26,20 +28,21 @@ the Bestiary group index `monster/<category>/index.md` by the site builder — s
 `monster.<category>[.<subcategory>].statblock/<id>`; malice featureblocks are
 `monster.<category>[.<subcategory>]/<id>`. `<subcategory>` is an echelon
 (`1st-echelon`…) for Rivals/Demons/Undead/War Dogs whose statblock names repeat per
-echelon. Retainers are `retainer.statblock/<id>`; terrain is
-`dynamic-terrain.<category>/<id>`.
+echelon. Monsters-book retainers are `monster.retainer.statblock/<id>` with coded
+`monster.retainer.advancement-features/<id>` + `monster.retainer.role-advancement/<role>`
+container siblings (Plan 6 — see "Retainers" below); terrain is `dynamic-terrain.<category>/<id>`.
 
 **Note (code≠path):** the SCC codes keep their `.statblock` segment, but the **site URL
 hoists `statblock/` away** (2026-06-10) so Browse pages sit directly under the group —
-`monster/<group>/<id>`, `monster/<group>/<echelon>/<id>`, `retainer/<id>` (via
-`hoistStatblockPath` in `internal/site/build.go`; the group-landing assembler splits
-statblocks vs. featureblocks by frontmatter `type`).
+`monster/<group>/<id>`, `monster/<group>/<echelon>/<id>`, `monster/retainer/<id>`,
+`retainer/summoner/<id>` (via `hoistStatblockPath` in `internal/site/build.go`; the
+group-landing assembler splits statblocks vs. featureblocks by frontmatter `type`).
 
 ## Site placement
 
-Monster pages live on the **Browse** tab (`monster/`, `dynamic-terrain/`, `retainer/`;
-moved there from the old Bestiary browser 2026-06-10 — presentation/URL only, no SCC
-re-mint). The pipeline still skips `RenderSubtree` for `@type: monster`, so the lore
+Monster pages live on the **Browse** tab (`monster/` — including `monster/retainer/` since
+Plan 6 — `dynamic-terrain/`, and `retainer/` for the summoner subgroup; moved there from the
+old Bestiary browser 2026-06-10 — presentation/URL only, no SCC re-mint). The pipeline still skips `RenderSubtree` for `@type: monster`, so the lore
 `Body` is the group page's prose; the **site builder** then assembles the group landing
 (lore + featureblock cards + statblock preview cards) via
 `internal/site/bestiary_cards.go`. The roots render `.sc-folder` cards. The
@@ -217,17 +220,37 @@ sibling at `…/<element>/advancement-features/<id>`. `bestiaryItemType` indexes
 a searchable `"fixture"` facet (the advancement-features sibling is excluded). Plan:
 `docs/superpowers/plans/2026-06-14-fixture-featureblock-restructure.md`.
 
-**Plan 4 (retainer advancement split) — shipped.** `internal/site/retainer_page.go`
-`splitRetainerAdvancement` cuts a retainer statblock body at the
-`**Level N Retainer Advancement Ability**` bold-label separators (these are the H8
-headings demoted by `demoteOverflowHeadings`; the regex also tolerates the `######`
-heading form the md-dse-linked variant keeps). `buildStatblockIslandPage` rebuilds the
-creature JSON island from the pre-advancement base (so advancement abilities no longer
-pollute its feature list) and appends a single "Advancement Abilities" Forged Band card
-(`renderRetainerAdvancement` → `renderFeatureblockCard`, with each tier stamped onto a
-`Level > 0` `.fb__band--adv` band). Role accent + eyebrow read the per-item `role:` /
-`organization:` scalars. Non-retainer statblocks are a no-op. Plan 6 (retainer rework —
-own `advancement-features` codes, mirroring companions/fixtures) remains.
+## Retainers (Plan 6 — shipped 2026-06-18)
+
+The Monsters-book retainers joined the `monster.*` family and their advancement/role groups
+became **coded container entities** (members inline/uncoded), exactly like fixtures (5c):
+
+- `monster.retainer.statblock/<id>` (×21) — `StatblockParser` `domain == "retainer"` branch.
+  The base body keeps only the innate abilities, so `buildStatblockIslandPage` →
+  `renderStatblockCard` produces the normal creature `.sb-wrap` card.
+- `monster.retainer.advancement-features/<id>` (×21) and
+  `monster.retainer.role-advancement/<role>` (×9) — `FeatureblockParser` `domain == "retainer"`
+  branch (the role kind fires when the enclosing group carries `@category: role-advancement`).
+  Members come from `ParseRichFeatures(body)`; their `Level > 0` `.fb__band--adv` tiers render
+  via the shared `buildFeatureblockPage` on each entity's own paired page.
+
+**Source shape:** each retainer's `######## Level N Retainer Advancement Ability` H8 headings
+were moved into a sibling `<!-- @type: featureblock | @id: <slug> -->` `####### <Name>
+Advancement Features` section and rewritten as **blockquote** labels `> **Level N …**` — the
+`@id` must equal the base slug so the codes pair, and the label must be blockquoted because
+`ParseRichFeatures`/`splitBlockquoteBlocks` only see `>` lines (a standalone bold line is
+invisible). The 9 `##### <Role> Abilities` groups sit under a `@type: monster-group |
+@domain: retainer | @category: role-advancement` container, each annotated
+`@type: featureblock | @id: <role>`.
+
+**Site:** `monster/retainer/` pairs base+advancement via `buildAdvancementPairContent` (which
+tolerates the one `role-advancement/` subdir and surfaces it as a folder card) with a base-first
+`.nav.yml`; `bestiaryItemType` keeps the `retainer` facet for the base and excludes the
+featureblock siblings. **Plan 4's `internal/site/retainer_page.go` body split is retired.**
+
+**Deferred (ROADMAP #15):** per-ability coding (each base/advancement/role ability its own
+`feature.ability.*`) needs the header-levels rework — abilities are H8 siblings of the H7
+statblock today, so they cannot nest under it as real sections.
 
 ## Summoner book reuse
 
@@ -243,8 +266,9 @@ to the same bestiary cards
 (`bestiary_search.go`). `bestiarySource`/`withSource` (`bestiary_cards.go`) mark them
 **"Summoner · &lt;label&gt;"** on the card — derived from the `scc:` book prefix
 (`mcdm.summoner.`), so no data/schema change — to distinguish them from Monsters-book
-creatures. The mixed `retainer/` root (monster retainers + the summoner subgroup)
-renders monster retainer cards plus a `Summoner` folder card.
+creatures. Since Plan 6 moved the Monsters-book retainers to `monster/retainer/`, the
+`retainer/` Browse root now holds **only** the summoner subgroup
+(`retainer/summoner/<id>`).
 
 **Statblock head eyebrow (provenance).** The `sb__kw` line above the creature
 name (rendered by `statblock_card.go`) is `—` or junk for these summoner
