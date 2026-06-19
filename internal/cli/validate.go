@@ -3,6 +3,7 @@ package cli
 import (
 	"fmt"
 	"os"
+	"regexp"
 
 	"github.com/spf13/cobra"
 
@@ -11,6 +12,18 @@ import (
 	"github.com/SteelCompendium/steel-etl/internal/pipeline"
 	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
+
+// levelGroupingFeatureIDRe matches the "Nth-Level Features" grouping-header id
+// shape (plural "features"). A section annotated @type: feature with such an id is
+// almost certainly a structural grouping that should be @type: feature-group (no
+// page/SCC code) — the Heroes convention. The singular / circle lookup ids
+// (5th-level-circle-feature, 1st-level-circle-features) deliberately do not match.
+var levelGroupingFeatureIDRe = regexp.MustCompile(`^\d+(?:st|nd|rd|th)-level-features$`)
+
+// isLevelGroupingFeatureID reports whether a feature @id is grouping-shaped.
+func isLevelGroupingFeatureID(id string) bool {
+	return levelGroupingFeatureIDRe.MatchString(id)
+}
 
 var validateCmd = &cobra.Command{
 	Use:   "validate [file]",
@@ -107,6 +120,16 @@ func runValidate(cmd *cobra.Command, args []string) error {
 					})
 				} else {
 					parsedOK++
+					if typeName == "feature" {
+						if id, ok := sec.Annotation["id"]; ok && isLevelGroupingFeatureID(id) {
+							issues = append(issues, validationIssue{
+								level:   "warn",
+								heading: sec.Heading,
+								hlevel:  sec.HeadingLevel,
+								msg:     fmt.Sprintf("feature @id %q is a level grouping; use @type: feature-group (no page/SCC code)", id),
+							})
+						}
+					}
 				}
 			}
 
