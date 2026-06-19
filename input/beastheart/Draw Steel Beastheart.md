@@ -318,6 +318,7 @@ The Beastheart is an example of a master class in *Draw Steel*. Master classes a
 
 If you're new to *Draw Steel*, we recommend checking out *[The Delian Tomb](https://shop.mcdmproductions.com/products/the-delian-tomb-pdf)* starter adventure, which includes a step-by-step tutorial on how to play the game and breaks down all the working parts of a hero. Save Broadhurst first, then hurry back here!
 
+<!-- @type: feature-group | @level: 1 -->
 ### 1st-Level Features
 
 As a 1st-level beastheart, you gain the following features.
@@ -1484,6 +1485,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 
 **Effect:** If you grab the target while your companion is adjacent to them, your companion can make a melee free strike against the target.
 
+<!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
 
 As a 2nd-level beastheart, you gain the following features.
@@ -1702,6 +1704,7 @@ Choose one of the following abilities.
 
 **Effect:** Until the end of your next turn, you and your companion can [fly](scc.v1:mcdm.heroes.v1/movement/fly) and gain a +3 bonus to speed.
 
+<!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
 
 As a 3rd-level beastheart, you gain the following features.
@@ -1786,6 +1789,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 
 **Effect:** The next creature who damages the target before the start of your next turn gains 3 surges, which they can use on the triggering damage.
 
+<!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
 
 As a 4th-level beastheart, you gain the following features.
@@ -1815,6 +1819,7 @@ You gain one skill of your choice.
 
 The first time each combat round that a creature adjacent to your companion takes damage, you gain 3 ferocity instead of 2 ferocity.
 
+<!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
 
 As a 5th-level beastheart, you gain the following features.
@@ -1925,6 +1930,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 
 **Effect:** If the target is [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) by your partner, the target takes extra damage equal to your Might score plus your partner's Might score. If the target is reduced to 0 Stamina by this ability, each enemy within 2 squares who has P < AVERAGE is [frightened](scc.v1:mcdm.heroes.v1/condition/frightened) (save ends).
 
+<!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
 
 As a 6th-level beastheart, you gain the following features.
@@ -2088,6 +2094,7 @@ Your companion's transformation lasts until the start of your next turn. At the 
 
 **Effect:** While [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) this way, a creature takes 5 cold damage at the start of each of your turns. A creature killed by this ability becomes an ice statue and their space is difficult terrain.
 
+<!-- @type: feature-group | @level: 7 -->
 ### 7th-Level Features
 
 As a 7th-level beastheart, you gain the following features.
@@ -2112,6 +2119,7 @@ Your [Rampage](scc.v1:mcdm.beastheart.v1/feature.beastheart.level-1/rampage) fea
 
 You gain one skill of your choice.
 
+<!-- @type: feature-group | @level: 8 -->
 ### 8th-Level Features
 
 As an 8th-level beastheart, you gain the following features.
@@ -2221,6 +2229,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 
 **Spend 2+ Ferocity:** You can spend up to 6 ferocity. For every 2 ferocity spent, the size of the burst increases by 1, you gain a +2 bonus to the power roll, and you take 5 damage that can't be reduced in any way. You can choose how much ferocity you spend after you make the power roll.
 
+<!-- @type: feature-group | @level: 9 -->
 ### 9th-Level Features
 
 As a 9th-level beastheart, you gain the following features.
@@ -2397,6 +2406,7 @@ Your companion targets each enemy inside the pack's area during its movement onc
 - **12-16:** 13 damage
 - **17+:** 18 damage
 
+<!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
 
 As a 10th-level beastheart, you gain the following features.
