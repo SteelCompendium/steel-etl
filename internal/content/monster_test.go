@@ -279,6 +279,22 @@ func TestStatblockParser_Retainer(t *testing.T) {
 	}
 }
 
+func TestStatblockParser_SummonerRetainerUnchanged(t *testing.T) {
+	// Summoner-book retainers carry @category: summoner and are OUT of Plan 6 scope:
+	// they must stay retainer.summoner.statblock, NOT monster.retainer.summoner.statblock.
+	ctx := context.NewContextStack(nil)
+	ctx.Push(4, map[string]string{"domain": "retainer", "category": "summoner"})
+	sec := &parser.Section{Heading: "Devil Detective", HeadingLevel: 6,
+		BodySource: "|  Devil, Fiend | - | Level 1 | Controller Retainer | EV - |\n\n> 🗡 **Interrogate (Signature Ability)**\n>\n> **Effect:** Question."}
+	got, err := (&StatblockParser{}).Parse(ctx, sec)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if strings.Join(got.TypePath, "/") != "retainer/summoner/statblock" {
+		t.Errorf("TypePath = %v, want [retainer summoner statblock]", got.TypePath)
+	}
+}
+
 func TestFeatureblockParser_RetainerAdvancement(t *testing.T) {
 	ctx := context.NewContextStack(nil)
 	ctx.Push(4, map[string]string{"domain": "retainer"})

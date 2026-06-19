@@ -107,8 +107,12 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	// gains minions/champions.
 	switch domain {
 	case "retainer":
-		// Monsters-book retainers join the monster.* family (Plan 6).
-		typePath = compactPath("monster", "retainer", category, subcategory, "statblock")
+		// Monsters-book retainers join the monster.* family (Plan 6). Summoner-book
+		// retainers carry @category: summoner and stay retainer.summoner.statblock
+		// (out of Plan 6 scope) — leave the default typePath untouched.
+		if category != "summoner" {
+			typePath = compactPath("monster", "retainer", category, subcategory, "statblock")
+		}
 	case "minion":
 		typePath = compactPath("monster", "minion", "summoner", category, "statblock")
 	case "champion":
@@ -244,7 +248,7 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 	// @category: role-advancement — a per-role "<Role> Abilities" block. Members are
 	// inline abilities (uncoded; the malice/terrain/fixture model); their leveled
 	// bands come from the **Level N … Advancement Ability** bold labels.
-	if domain, category, _ := statblockDomain(ctx, section.HeadingLevel); domain == "retainer" {
+	if domain, category, _ := statblockDomain(ctx, section.HeadingLevel); domain == "retainer" && category != "summoner" {
 		if feats := ParseRichFeatures(body); len(feats) > 0 {
 			fm["features"] = RichFeatureMaps(feats)
 		}
