@@ -199,6 +199,23 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 				pending = append(pending, pendingWrite{section: section, parsed: parsed, sccCode: sccCode})
 			}
 
+			// Parser-emitted coded children (e.g. fixture advancement members):
+			// classify + register + write each as its own leaf, like a section.
+			for _, child := range parsed.CodedChildren {
+				if child.TypePath == nil || child.ItemID == "" {
+					continue
+				}
+				childCode := scc.Classify(bookSource, child.TypePath, child.ItemID)
+				child.Frontmatter["scc"] = childCode
+				sccRegistry.Add(childCode)
+				result.ClassifiedSections++
+				if prev, exists := seenSCC[childCode]; exists {
+					result.Errors = append(result.Errors, fmt.Sprintf("duplicate SCC %s: %q overwrites %q", childCode, fmt.Sprint(child.Frontmatter["name"]), prev))
+				}
+				seenSCC[childCode] = fmt.Sprint(child.Frontmatter["name"])
+				pending = append(pending, pendingWrite{section: nil, parsed: child, sccCode: childCode})
+			}
+
 			walk(section.Children)
 		}
 	}
@@ -214,7 +231,7 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 	// back to the lore-only Body. The book-faithful, everything-inline view still
 	// exists on the Read tab via the chapter page's PageBody (rendered separately).
 	for _, pw := range pending {
-		if t, _ := pw.parsed.Frontmatter["type"].(string); t != "monster" {
+		if t, _ := pw.parsed.Frontmatter["type"].(string); pw.section != nil && t != "monster" {
 			pw.parsed.PageBody = content.RenderSubtree(pw.section, sccBySection)
 		}
 		for _, gen := range generators {
