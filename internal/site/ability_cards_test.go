@@ -7,7 +7,7 @@ import (
 
 func TestBuildAbilityCardPage_NonAbilityUnchanged(t *testing.T) {
 	in := []byte("---\ntype: kit\nname: Mountain\n---\n\nbody\n")
-	out, ok := buildAbilityCardPage(in)
+	out, ok := buildAbilityCardPage(in, nil)
 	if ok {
 		t.Fatalf("expected ok=false for type: kit")
 	}
