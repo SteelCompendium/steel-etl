@@ -162,6 +162,40 @@ func TestBuildAdvancementPairContent_SubdirsFallThrough(t *testing.T) {
 	}
 }
 
+func TestBuildAdvancementPairContent_Retainer(t *testing.T) {
+	// Retainers (Plan 6) pair like fixtures, but their dir also carries a
+	// role-advancement/ subdir, which must NOT disqualify the pairing; it is
+	// surfaced as a folder card instead.
+	files := []string{"angulotl-hopper.md", "angulotl-hopper-advancement-features.md"}
+	out, ok := buildAdvancementPairContent("monster/retainer", "retainer", files, []string{"role-advancement"})
+	if !ok {
+		t.Fatal("expected ok=true for a retainer dir with a role-advancement subdir")
+	}
+	if !strings.Contains(out, ">Retainer<") {
+		t.Errorf("expected Retainer eyebrow:\n%s", out)
+	}
+	base := strings.Index(out, `href="angulotl-hopper/"`)
+	adv := strings.Index(out, `href="angulotl-hopper-advancement-features/"`)
+	if base < 0 || adv < 0 || base > adv {
+		t.Errorf("expected base card before its advancement card; base=%d adv=%d", base, adv)
+	}
+	if !strings.Contains(out, `href="role-advancement/"`) {
+		t.Errorf("expected a role-advancement folder card:\n%s", out)
+	}
+}
+
+func TestAdvancementPairNavOrder_RetainerRoleAdvancement(t *testing.T) {
+	// The role-advancement subdir sorts last so an explicit nav: list keeps it.
+	files := []string{"angulotl-hopper.md", "angulotl-hopper-advancement-features.md"}
+	order, ok := advancementPairNavOrder(files, []string{"role-advancement"})
+	if !ok {
+		t.Fatal("expected ok=true")
+	}
+	if got := order[len(order)-1]; got != "role-advancement" {
+		t.Errorf("expected role-advancement last in nav order, got %q (order=%v)", got, order)
+	}
+}
+
 func TestBuildAdvancementPairContent_CompanionPreview(t *testing.T) {
 	dir := t.TempDir()
 	base := "---\nname: Panther\nscc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther\ntype: feature-group\n---\n\n# Panther\n\n<div class=\"sb-wrap\">…</div>\n"

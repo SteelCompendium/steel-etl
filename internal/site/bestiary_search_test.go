@@ -99,6 +99,12 @@ func TestBestiaryItemType_SummonerTrees(t *testing.T) {
 		{"champion/fey/celestial-attendant.md", "statblock", "statblock"},
 		{"rival/summoner/3rd-echelon/rival-summoner.md", "statblock", "statblock"},
 		{"retainer/summoner/devil-detective.md", "statblock", "retainer"},
+		// Monsters-book retainers joined the monster.* family (Plan 6) but keep the
+		// "retainer" facet; their advancement-features + role-advancement siblings
+		// (type:featureblock) are excluded.
+		{"monster/retainer/angulotl-hopper.md", "statblock", "retainer"},
+		{"monster/retainer/angulotl-hopper-advancement-features.md", "featureblock", ""},
+		{"monster/retainer/role-advancement/ambusher.md", "featureblock", ""},
 		{"minion/demon/index.md", "statblock", ""}, // index page skipped
 		// Fixtures (Plan 5c) are featureblocks under monster/fixture/: the base
 		// indexes as "fixture"; the sibling advancement-features page is excluded.
