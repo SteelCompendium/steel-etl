@@ -27,8 +27,11 @@ classification:
 # --- Output ---------------------------------------------------------------
 
 output:
-  # Base directory for output (relative to this config file)
-  base_dir: ../data/data-rules
+  # Single consolidated repo. Per-book output lands under
+  # <base_dir>/<locale>/books/<dir>/<format>; the cross-book aggregate under
+  # <aggregate.output_dir>/<locale>/unified/<format>.
+  base_dir: ../data/data-unified
+  dir: heroes
 
   # Output formats to generate
   formats:
@@ -42,12 +45,13 @@ output:
     dse: true
     dse_linked: true
 
-  # Stripped markdown (annotations removed) for distribution
+  # Stripped markdown (annotations removed) for distribution.
+  # Lands at <base_dir>/<locale>/books/<dir>/clean/.
   stripped:
     enabled: true
-    output_dir: ../data/data-rules-clean
+    output_dir: ../data/data-unified
 
-  # Aggregation into unified repo
+  # Cross-book aggregate (Browse): <output_dir>/<locale>/unified/<format>
   aggregate:
     enabled: true
     output_dir: ../data/data-unified
@@ -76,12 +80,15 @@ books:
   - book: mcdm.monsters.v1
     input: ./input/monsters/Draw Steel Monsters.md
     output:
-      base_dir: ../data/data-bestiary
+      base_dir: ../data/data-unified
+      dir: monsters
   - book: mcdm.beastheart.v1
     input: ./input/beastheart/Draw Steel Beastheart.md
     output:
-      base_dir: ../data/data-beastheart
+      base_dir: ../data/data-unified
+      dir: beastheart
   - book: mcdm.summoner.v1
     input: ./input/summoner/Draw Steel Summoner.md
     output:
-      base_dir: ../data/data-summoner
+      base_dir: ../data/data-unified
+      dir: summoner
