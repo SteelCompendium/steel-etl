@@ -17,7 +17,7 @@ func TestRunSharedOutputs_SpansBooks(t *testing.T) {
 		ConfigDir: dir,
 		Output: OutputConfig{
 			BaseDir: "./output",
-			Formats: []string{"md"}, // must be ignored by the shared pass
+			Formats: []string{"md", "json"}, // per-book writes are skipped; aggregate spans all formats
 			Aggregate: AggregateConfig{
 				Enabled:   true,
 				OutputDir: "./unified",
@@ -55,14 +55,21 @@ func TestRunSharedOutputs_SpansBooks(t *testing.T) {
 		t.Error("shared pass should not write per-book md output")
 	}
 
-	// Both books' aggregate files should exist under the unified tree.
-	aggBase := filepath.Join(dir, "unified", "en", "md")
+	// Both books' aggregate files should exist under the unified tree (md).
+	aggMd := filepath.Join(dir, "unified", "en", "unified", "md")
 	for _, rel := range []string{
 		filepath.Join("feature", "ability", "fury", "level-1", "brutal-slam.md"),
 		filepath.Join("feature", "ability", "beastheart", "level-6", "sic-em.md"),
 	} {
-		if _, err := os.Stat(filepath.Join(aggBase, rel)); os.IsNotExist(err) {
-			t.Errorf("expected aggregate file %s to exist", rel)
+		if _, err := os.Stat(filepath.Join(aggMd, rel)); os.IsNotExist(err) {
+			t.Errorf("expected aggregate md file %s to exist", rel)
 		}
+	}
+
+	// The aggregate now spans all formats: a json aggregate file must exist too.
+	aggJSON := filepath.Join(dir, "unified", "en", "unified", "json",
+		"feature", "ability", "fury", "level-1", "brutal-slam.json")
+	if _, err := os.Stat(aggJSON); os.IsNotExist(err) {
+		t.Error("expected all-format aggregate to write a json file")
 	}
 }

@@ -132,19 +132,28 @@ func TestBuildGenerators_WithAggregate(t *testing.T) {
 	registry := scc.NewRegistry()
 	generators := buildGenerators(cfg, filepath.Join(dir, "output", "en", "md"), "", registry, nil)
 
-	// md + aggregate = 2
-	if len(generators) != 2 {
-		t.Errorf("expected 2 generators (md + aggregate), got %d", len(generators))
+	// The aggregate is no longer built by buildGenerators (it is a cross-book
+	// shared output produced all-format by buildAggregateGenerators in
+	// RunSharedOutputs). buildGenerators here yields md only.
+	if len(generators) != 1 {
+		t.Errorf("expected 1 generator (md only; aggregate moved out), got %d", len(generators))
+	}
+	for _, gen := range generators {
+		if gen.Format() == "aggregate" {
+			t.Error("aggregate should no longer come from buildGenerators")
+		}
 	}
 
+	// The aggregate comes from buildAggregateGenerators instead.
+	agg := buildAggregateGenerators(cfg, registry, "en")
 	hasAggregate := false
-	for _, gen := range generators {
+	for _, gen := range agg {
 		if gen.Format() == "aggregate" {
 			hasAggregate = true
 		}
 	}
 	if !hasAggregate {
-		t.Error("missing aggregate generator")
+		t.Error("missing aggregate generator from buildAggregateGenerators")
 	}
 }
 
@@ -216,9 +225,10 @@ func TestBuildGenerators_FullConfig(t *testing.T) {
 	rawInput := []byte("# Title")
 	generators := buildGenerators(cfg, filepath.Join(dir, "output", "en", "md"), "", registry, rawInput)
 
-	// md + json + yaml + linked + dse + dse-linked + stripped + aggregate + scc-map = 9
-	if len(generators) != 9 {
-		t.Errorf("expected 9 generators, got %d", len(generators))
+	// md + json + yaml + linked + dse + dse-linked + stripped + scc-map = 8
+	// (aggregate is no longer here — it moved to buildAggregateGenerators)
+	if len(generators) != 8 {
+		t.Errorf("expected 8 generators, got %d", len(generators))
 		for _, gen := range generators {
 			t.Logf("  format: %s", gen.Format())
 		}
@@ -469,11 +479,9 @@ func TestRunWithConfig_WithStrippedAndAggregate(t *testing.T) {
 		t.Error("expected scc-map.json")
 	}
 
-	// Aggregate index should exist
-	unifiedDir := filepath.Join(dir, "unified", "en", "md", "_index")
-	if _, err := os.Stat(unifiedDir); os.IsNotExist(err) {
-		t.Error("expected aggregate index directory")
-	}
+	// Note: the cross-book aggregate is no longer produced by a single
+	// RunWithConfig call — it is built all-format in RunSharedOutputs and is
+	// covered by TestBuildAggregateGeneratorsAllFormats + the gen --all path.
 }
 
 func TestRunWithConfig_NoRegistryPath(t *testing.T) {

@@ -286,6 +286,7 @@ func RunSharedOutputs(cfg *Config, items []ClassifiedItem) error {
 	out.Formats = nil
 	out.Variants = VariantsConfig{}
 	out.Stripped.Enabled = false
+	out.Aggregate.Enabled = false // aggregate handled separately, all-format
 	shared.Output = out
 
 	// Load the full registry (written by every book run) so aliases are complete.
@@ -307,6 +308,8 @@ func RunSharedOutputs(cfg *Config, items []ClassifiedItem) error {
 	}
 
 	generators := buildGenerators(&shared, "", registryPath, sccRegistry, nil)
+	// All-format unified aggregate uses the original (non-zeroed) cfg formats.
+	generators = append(generators, buildAggregateGenerators(cfg, sccRegistry, localeOf(cfg))...)
 	if len(generators) == 0 {
 		return nil
 	}
@@ -332,6 +335,51 @@ func RunSharedOutputs(cfg *Config, items []ClassifiedItem) error {
 	}
 
 	return nil
+}
+
+// localeOf returns the config's locale, defaulting to "en".
+func localeOf(cfg *Config) string {
+	if cfg.Locale == "" {
+		return "en"
+	}
+	return cfg.Locale
+}
+
+// buildAggregateGenerators returns the cross-book "unified" aggregate generators,
+// one per configured format/variant, all pointed at
+// <Aggregate.OutputDir>/<locale>/unified/<format>. The md generator is the
+// AggregateGenerator (it also builds the _index navigation pages); the other
+// formats reuse the standard per-format generators (they merge across books
+// because RunSharedOutputs feeds every book's items to the same instances).
+func buildAggregateGenerators(cfg *Config, sccRegistry *scc.Registry, locale string) []output.Generator {
+	if !cfg.Output.Aggregate.Enabled || cfg.Output.Aggregate.OutputDir == "" {
+		return nil
+	}
+	root := filepath.Join(cfg.ResolvePath(cfg.Output.Aggregate.OutputDir), locale, "unified")
+	resolver := scc.NewResolver(sccRegistry, ".md")
+	linkMode := cfg.Output.ParseLinkMode()
+
+	var gens []output.Generator
+	for _, format := range cfg.Output.Formats {
+		switch format {
+		case "md":
+			gens = append(gens, &output.AggregateGenerator{BaseDir: filepath.Join(root, "md")})
+		case "json":
+			gens = append(gens, &output.JSONGenerator{BaseDir: filepath.Join(root, "json")})
+		case "yaml":
+			gens = append(gens, &output.YAMLGenerator{BaseDir: filepath.Join(root, "yaml")})
+		}
+	}
+	if cfg.Output.Variants.Linked {
+		gens = append(gens, &output.LinkedGenerator{BaseDir: filepath.Join(root, "md-linked"), Resolver: resolver, LinkMode: linkMode})
+	}
+	if cfg.Output.Variants.DSE {
+		gens = append(gens, &output.DSEGenerator{BaseDir: filepath.Join(root, "md-dse")})
+	}
+	if cfg.Output.Variants.DSELinked {
+		gens = append(gens, &output.DSELinkedGenerator{BaseDir: filepath.Join(root, "md-dse-linked"), Resolver: resolver, LinkMode: linkMode})
+	}
+	return gens
 }
 
 // buildGenerators creates all configured output generators.
@@ -406,12 +454,8 @@ func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry 
 		})
 	}
 
-	// Aggregation
-	if cfg.Output.Aggregate.Enabled && cfg.Output.Aggregate.OutputDir != "" {
-		generators = append(generators, &output.AggregateGenerator{
-			BaseDir: filepath.Join(cfg.ResolvePath(cfg.Output.Aggregate.OutputDir), locale, "md"),
-		})
-	}
+	// Aggregation is handled separately (all-format, cross-book) by
+	// buildAggregateGenerators in RunSharedOutputs — not here.
 
 	// SCC-to-path mapping
 	if cfg.Output.SCCMap.Enabled && cfg.Output.SCCMap.OutputFile != "" {
