@@ -32,6 +32,7 @@ type ClassificationConfig struct {
 
 type OutputConfig struct {
 	BaseDir   string          `yaml:"base_dir"`
+	Dir       string          `yaml:"dir"` // book slug under <locale>/books/ (heroes, monsters, …)
 	Formats   []string        `yaml:"formats"`
 	Variants  VariantsConfig  `yaml:"variants"`
 	LinkMode  string          `yaml:"link_mode"`
@@ -111,6 +112,9 @@ func (c *Config) EffectiveBookConfig(b BookConfig) *Config {
 	if b.Output.BaseDir != "" {
 		out.BaseDir = b.Output.BaseDir
 	}
+	if b.Output.Dir != "" {
+		out.Dir = b.Output.Dir
+	}
 	if len(b.Output.Formats) > 0 {
 		out.Formats = b.Output.Formats
 	}
@@ -121,6 +125,14 @@ func (c *Config) EffectiveBookConfig(b BookConfig) *Config {
 	eff.Output = out
 
 	return &eff
+}
+
+// BookOutputDir returns the per-book output root for a locale:
+//   <ResolvePath(BaseDir)>/<locale>/books/<slug>
+// e.g. ".../data/data-unified/en/books/heroes". Format subdirs (md, json, …)
+// are appended by the caller.
+func (c *Config) BookOutputDir(locale string) string {
+	return filepath.Join(c.ResolvePath(c.Output.BaseDir), locale, "books", c.Output.Dir)
 }
 
 // LoadConfig reads and parses a pipeline.yaml file.

@@ -306,6 +306,33 @@ func TestEffectiveBookConfig_BookOverridesBaseDirAndFormats(t *testing.T) {
 	}
 }
 
+func TestBookOutputDir(t *testing.T) {
+	cfg := &Config{
+		ConfigDir: "/repo/steel-etl",
+		Output:    OutputConfig{BaseDir: "../data/data-unified", Dir: "heroes"},
+	}
+	got := cfg.BookOutputDir("en")
+	want := "/repo/data/data-unified/en/books/heroes"
+	if got != want {
+		t.Fatalf("BookOutputDir = %q, want %q", got, want)
+	}
+}
+
+func TestEffectiveBookConfigCarriesDir(t *testing.T) {
+	base := &Config{
+		ConfigDir: "/repo/steel-etl",
+		Output:    OutputConfig{BaseDir: "../data/data-unified", Dir: "heroes", Formats: []string{"md"}},
+	}
+	eff := base.EffectiveBookConfig(BookConfig{
+		Book:   "mcdm.monsters.v1",
+		Input:  "./input/monsters/x.md",
+		Output: OutputConfig{BaseDir: "../data/data-unified", Dir: "monsters"},
+	})
+	if eff.Output.Dir != "monsters" {
+		t.Fatalf("eff.Output.Dir = %q, want monsters", eff.Output.Dir)
+	}
+}
+
 func equalStrings(a, b []string) bool {
 	if len(a) != len(b) {
 		return false
