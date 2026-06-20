@@ -344,12 +344,12 @@ func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry 
 
 	resolver := scc.NewResolver(sccRegistry, ".md")
 
-	// Base output directory
+	// Base output directory: <BaseDir>/<locale>/books/<slug>
 	baseDir := mdOutputDir
-	if cfg.Output.BaseDir != "" && cfg.ConfigDir != "" {
-		baseDir = filepath.Join(cfg.ResolvePath(cfg.Output.BaseDir), locale)
-	} else if baseDir == "" && cfg.Output.BaseDir != "" {
-		baseDir = filepath.Join(cfg.Output.BaseDir, locale)
+	if cfg.Output.BaseDir != "" {
+		baseDir = cfg.BookOutputDir(locale)
+	} else if baseDir == "" {
+		baseDir = filepath.Join("books", cfg.Output.Dir)
 	}
 
 	// Standard format generators
@@ -395,14 +395,13 @@ func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry 
 
 	// Stripped markdown
 	if cfg.Output.Stripped.Enabled && cfg.Output.Stripped.OutputDir != "" {
-		outputPath := cfg.ResolvePath(cfg.Output.Stripped.OutputDir)
-		// Use the input filename for the stripped output
+		// Use the input filename for the stripped output, nested under the book's clean/ dir.
 		inputBase := filepath.Base(cfg.Input)
 		if inputBase == "" || inputBase == "." {
 			inputBase = "output.md"
 		}
 		generators = append(generators, &output.StrippedGenerator{
-			OutputPath: filepath.Join(outputPath, inputBase),
+			OutputPath: filepath.Join(cfg.BookOutputDir(locale), "clean", inputBase),
 			RawInput:   rawInput,
 		})
 	}

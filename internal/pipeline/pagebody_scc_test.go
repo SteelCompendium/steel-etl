@@ -26,6 +26,7 @@ func TestPageBody_SubheadingsCarryDataSCC(t *testing.T) {
 		Locale: "en",
 		Output: OutputConfig{
 			BaseDir:  baseDir,
+			Dir:      "heroes",
 			Variants: VariantsConfig{Linked: true},
 		},
 		Classification: ClassificationConfig{Registry: registryPath},
@@ -35,8 +36,8 @@ func TestPageBody_SubheadingsCarryDataSCC(t *testing.T) {
 		t.Fatalf("pipeline run: %v", err)
 	}
 
-	// md-linked output lands at <baseDir>/<locale>/md-linked/...
-	furyPath := filepath.Join(baseDir, "en", "md-linked", "class", "fury.md")
+	// md-linked output lands at <baseDir>/<locale>/books/<slug>/md-linked/...
+	furyPath := filepath.Join(baseDir, "en", "books", "heroes", "md-linked", "class", "fury.md")
 	data, err := os.ReadFile(furyPath)
 	if err != nil {
 		t.Fatalf("read fury md-linked page: %v", err)

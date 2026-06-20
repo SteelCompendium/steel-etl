@@ -285,6 +285,7 @@ func TestRunWithConfig_MultiFormat(t *testing.T) {
 		},
 		Output: OutputConfig{
 			BaseDir: "./output",
+			Dir:     "heroes",
 			Formats: []string{"md", "json", "yaml"},
 			Variants: VariantsConfig{
 				Linked:    true,
@@ -302,7 +303,7 @@ func TestRunWithConfig_MultiFormat(t *testing.T) {
 		},
 	}
 
-	mdOutputDir := filepath.Join(dir, "output", "en", "md")
+	mdOutputDir := filepath.Join(dir, "output", "en", "books", "heroes", "md")
 
 	result, err := RunWithConfig(cfg, inputPath, mdOutputDir, registryPath)
 	if err != nil {
@@ -320,14 +321,14 @@ func TestRunWithConfig_MultiFormat(t *testing.T) {
 		t.Error("expected scc-map.json to be written")
 	}
 
-	// JSON files should exist
-	jsonDir := filepath.Join(dir, "output", "en", "json")
+	// JSON files should exist (under books/<slug>/)
+	jsonDir := filepath.Join(dir, "output", "en", "books", "heroes", "json")
 	if _, err := os.Stat(jsonDir); os.IsNotExist(err) {
 		t.Error("expected json output directory")
 	}
 
-	// YAML files should exist
-	yamlDir := filepath.Join(dir, "output", "en", "yaml")
+	// YAML files should exist (under books/<slug>/)
+	yamlDir := filepath.Join(dir, "output", "en", "books", "heroes", "yaml")
 	if _, err := os.Stat(yamlDir); os.IsNotExist(err) {
 		t.Error("expected yaml output directory")
 	}
@@ -419,7 +420,7 @@ func TestRunWithConfig_WithStrippedAndAggregate(t *testing.T) {
 
 	dir := t.TempDir()
 	registryPath := filepath.Join(dir, "classification.json")
-	mdOutputDir := filepath.Join(dir, "output", "en", "md")
+	mdOutputDir := filepath.Join(dir, "output", "en", "books", "heroes", "md")
 
 	cfg := &Config{
 		Book:      "test.v1",
@@ -431,6 +432,7 @@ func TestRunWithConfig_WithStrippedAndAggregate(t *testing.T) {
 		},
 		Output: OutputConfig{
 			BaseDir: "./output",
+			Dir:     "heroes",
 			Formats: []string{"md"},
 			Stripped: StrippedConfig{
 				Enabled:   true,
@@ -456,8 +458,8 @@ func TestRunWithConfig_WithStrippedAndAggregate(t *testing.T) {
 		t.Errorf("expected written files, got %d", result.WrittenFiles)
 	}
 
-	// Stripped output should exist
-	cleanDir := filepath.Join(dir, "clean")
+	// Stripped output should exist (nested under the book's clean/ dir)
+	cleanDir := filepath.Join(dir, "output", "en", "books", "heroes", "clean")
 	if _, err := os.Stat(cleanDir); os.IsNotExist(err) {
 		t.Error("expected clean output directory")
 	}

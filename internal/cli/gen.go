@@ -3,6 +3,7 @@ package cli
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 
 	"github.com/spf13/cobra"
 
@@ -161,8 +162,7 @@ func generateBook(cfg *pipeline.Config) (*pipeline.Result, error) {
 	}
 
 	locale := cfg.Locale
-	mdOutputDir := cfg.ResolvePath(cfg.Output.BaseDir)
-	mdOutputDir = mdOutputDir + "/" + locale + "/md"
+	mdOutputDir := filepath.Join(cfg.BookOutputDir(locale), "md")
 
 	fmt.Printf("Book:     %s\n", cfg.Book)
 	fmt.Printf("Input:    %s\n", inputPath)
