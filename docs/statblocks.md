@@ -34,15 +34,15 @@ container siblings (Plan 6 — see "Retainers" below); terrain is `dynamic-terra
 
 **Note (code≠path):** the SCC codes keep their `.statblock` segment, but the **site URL
 hoists `statblock/` away** (2026-06-10) so Browse pages sit directly under the group —
-`monster/<group>/<id>`, `monster/<group>/<echelon>/<id>`, `monster/retainer/<id>`,
-`retainer/summoner/<id>` (via `hoistStatblockPath` in `internal/site/build.go`; the
-group-landing assembler splits statblocks vs. featureblocks by frontmatter `type`).
+`monster/<group>/<id>`, `monster/<group>/<echelon>/<id>`, `monster/retainer/<id>`
+(via `hoistStatblockPath` in `internal/site/build.go`; the group-landing assembler splits
+statblocks vs. featureblocks by frontmatter `type`).
 
 ## Site placement
 
 Monster pages live on the **Browse** tab (`monster/` — including `monster/retainer/` since
-Plan 6 — `dynamic-terrain/`, and `retainer/` for the summoner subgroup; moved there from the
-old Bestiary browser 2026-06-10 — presentation/URL only, no SCC re-mint). The pipeline still skips `RenderSubtree` for `@type: monster`, so the lore
+Plan 6, which the summoner retainers folded into on 2026-06-21 — and `dynamic-terrain/`;
+moved there from the old Bestiary browser 2026-06-10 — presentation/URL only). The pipeline still skips `RenderSubtree` for `@type: monster`, so the lore
 `Body` is the group page's prose; the **site builder** then assembles the group landing
 (lore + featureblock cards + statblock preview cards) via
 `internal/site/bestiary_cards.go`. The roots render `.sc-folder` cards. The
@@ -284,7 +284,8 @@ statblock today, so they cannot nest under it as real sections.
 
 The **Summoner book** adds its own statblock-typed trees that reuse this machinery:
 `minion.<portfolio>.statblock/<id>`, `champion.<portfolio>.statblock/<id>`
-(demon/elemental/fey/undead portfolios), `retainer.summoner.statblock/<id>`, and
+(demon/elemental/fey/undead portfolios), `monster.retainer.statblock/<id>` (the four
+retainers, re-minted into the Monsters-book retainer family 2026-06-21), and
 echelon-versioned `rival.summoner.<echelon>.statblock/<id>`. (Fixtures are the
 exception — Plan 5c moved them out of this statblock family into
 `monster.fixture.<element>.featureblock/<id>`; see "Fixture rendering" above.) They route
@@ -294,9 +295,11 @@ to the same bestiary cards
 (`bestiary_search.go`). `bestiarySource`/`withSource` (`bestiary_cards.go`) mark them
 **"Summoner · &lt;label&gt;"** on the card — derived from the `scc:` book prefix
 (`mcdm.summoner.`), so no data/schema change — to distinguish them from Monsters-book
-creatures. Since Plan 6 moved the Monsters-book retainers to `monster/retainer/`, the
-`retainer/` Browse root now holds **only** the summoner subgroup
-(`retainer/summoner/<id>`).
+creatures. Plan 6 moved the Monsters-book retainers to `monster/retainer/`, and the
+2026-06-21 re-mint folded the four summoner retainers into that same tree
+(`monster.retainer.statblock/<id>`), so all 25 share one `monster/retainer/` Browse landing
+and the old top-level `retainer/` root is gone — the summoner four are tagged
+**"Summoner · Retainer"** on their grid cards (`withSource` in `advancement_pairs.go`).
 
 **Statblock head eyebrow (provenance).** The `sb__kw` line above the creature
 name (rendered by `statblock_card.go`) is `—` or junk for these summoner

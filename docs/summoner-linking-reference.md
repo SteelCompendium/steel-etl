@@ -323,10 +323,10 @@ fixtures but lives in four distinct `<category>.<base>` namespaces, so there is 
 
 | Display Name | Portfolio/Kind | SCC Code |
 |-------------|----------------|----------|
-| Devil Detective | Retainer | `mcdm.summoner.v1/retainer.summoner.statblock/devil-detective` |
-| Gorrre | Retainer | `mcdm.summoner.v1/retainer.summoner.statblock/gorrre` |
-| Razor | Retainer | `mcdm.summoner.v1/retainer.summoner.statblock/razor` |
-| Violent | Retainer | `mcdm.summoner.v1/retainer.summoner.statblock/violent` |
+| Devil Detective | Retainer | `mcdm.summoner.v1/monster.retainer.statblock/devil-detective` |
+| Gorrre | Retainer | `mcdm.summoner.v1/monster.retainer.statblock/gorrre` |
+| Razor | Retainer | `mcdm.summoner.v1/monster.retainer.statblock/razor` |
+| Violent | Retainer | `mcdm.summoner.v1/monster.retainer.statblock/violent` |
 
 ### Rival Summoner statblocks — 1st echelon (4 terms)
 

@@ -183,7 +183,10 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 			if cardHTML, ok := previews[p.base]; ok {
 				sb.WriteString(cardHTML + "\n")
 			} else {
-				sb.WriteString(card(p.base, icon, baseEyebrow, cardName(p.base), ""))
+				// Tag summoner-book retainers "Summoner · Retainer" so they're
+				// distinguishable from Monsters-book retainers in the merged grid.
+				fm, _ := splitFrontmatter(readFile(filepath.Join(dir, p.base)))
+				sb.WriteString(card(p.base, icon, withSource(fm, baseEyebrow), cardName(p.base), ""))
 			}
 		}
 		if p.adv != "" {

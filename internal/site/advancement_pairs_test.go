@@ -184,6 +184,39 @@ func TestBuildAdvancementPairContent_Retainer(t *testing.T) {
 	}
 }
 
+func TestBuildAdvancementPairContent_SummonerRetainerProvenance(t *testing.T) {
+	// Summoner-book retainers (mcdm.summoner.v1) merge flat into monster/retainer/
+	// with no advancement pair; their base card eyebrow must be tagged
+	// "Summoner · Retainer" so they're distinguishable in the merged grid, while
+	// Monsters-book retainers keep the bare "Retainer" eyebrow.
+	// The eyebrow type is chosen from the dir path (pathHasSegment "retainer"),
+	// so the temp dir must carry a real monster/retainer segment.
+	dir := filepath.Join(t.TempDir(), "monster", "retainer")
+	if err := os.MkdirAll(dir, 0755); err != nil {
+		t.Fatal(err)
+	}
+	write := func(name, body string) {
+		if err := os.WriteFile(filepath.Join(dir, name), []byte(body), 0644); err != nil {
+			t.Fatal(err)
+		}
+	}
+	write("gorrre.md", "---\nname: Gorrre\nscc: mcdm.summoner.v1/monster.retainer.statblock/gorrre\ntype: statblock\n---\n\n# Gorrre\n")
+	write("gnoll-gnasher.md", "---\nname: Gnoll Gnasher\nscc: mcdm.monsters.v1/monster.retainer.statblock/gnoll-gnasher\ntype: statblock\n---\n\n# Gnoll Gnasher\n")
+	write("gnoll-gnasher-advancement-features.md", "---\nname: Gnoll Gnasher\ntype: featureblock\n---\n\n# Gnoll Gnasher\n")
+
+	files := []string{"gorrre.md", "gnoll-gnasher.md", "gnoll-gnasher-advancement-features.md"}
+	out, ok := buildAdvancementPairContent(dir, "retainer", files, nil)
+	if !ok {
+		t.Fatal("expected ok=true")
+	}
+	if !strings.Contains(out, "Summoner · Retainer") {
+		t.Errorf("expected summoner retainer tagged 'Summoner · Retainer':\n%s", out)
+	}
+	if !strings.Contains(out, ">Retainer<") {
+		t.Errorf("expected bare 'Retainer' eyebrow for the Monsters-book retainer:\n%s", out)
+	}
+}
+
 func TestAdvancementPairNavOrder_RetainerRoleAdvancement(t *testing.T) {
 	// The role-advancement subdir sorts last so an explicit nav: list keeps it.
 	files := []string{"angulotl-hopper.md", "angulotl-hopper-advancement-features.md"}

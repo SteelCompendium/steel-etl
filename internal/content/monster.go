@@ -107,10 +107,14 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	// gains minions/champions.
 	switch domain {
 	case "retainer":
-		// Monsters-book retainers join the monster.* family (Plan 6). Summoner-book
-		// retainers carry @category: summoner and stay retainer.summoner.statblock
-		// (out of Plan 6 scope) — leave the default typePath untouched.
-		if category != "summoner" {
+		// Both books' retainers live in the monster.* family. Monsters-book retainers
+		// joined in Plan 6; Summoner-book retainers (@category: summoner) merge flat
+		// alongside them as monster.retainer.statblock — the mcdm.summoner.v1 source
+		// segment + the source-derived "Summoner ·" card eyebrow preserve their
+		// provenance, so the `summoner` category gets no separate type segment.
+		if category == "summoner" {
+			typePath = compactPath("monster", "retainer", subcategory, "statblock")
+		} else {
 			typePath = compactPath("monster", "retainer", category, subcategory, "statblock")
 		}
 	case "minion":

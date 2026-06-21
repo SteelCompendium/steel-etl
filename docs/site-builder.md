@@ -82,10 +82,12 @@ Malice/Tactical-Stance featureblock cards + statblock preview cards, splitting
 demons/undead/rivals/war-dogs under `## <Echelon>` sub-headers; the group lore is
 folded on top by `mergeGroupLanding`. `isBestiaryGroupDir` (generalized 2026-06-10 from
 `monster`-only to all statblock roots, incl. the summoner
-minion/fixture/champion/rival/retainer trees) also guards `feature_index.go`'s folder
-branch so group dirs reach this assembler; `buildMonsterGroupContent` also handles the
-mixed `retainer/` root (monster retainers + summoner subgroup folder card) and marks
-summoner cards via `bestiarySource`/`withSource`. The per-echelon **sub-dir** index
+minion/fixture/champion/rival trees) also guards `feature_index.go`'s folder
+branch so group dirs reach this assembler. The four summoner retainers folded into the
+Monsters-book `monster/retainer/` pair grid (2026-06-21); they render via
+`buildAdvancementPairContent` and are tagged "Summoner · Retainer" through
+`bestiarySource`/`withSource`. `buildMonsterGroupContent` keeps its generic mixed-type-root
+handling (statblock leaves + group subdirs) for any future top-level statblock root. The per-echelon **sub-dir** index
 pages (`monster/<group>/<echelon>/index.md`) also route here — `isBestiaryEchelonDir`
 (echelon name + parent is a group dir) widens the guard so they render that echelon's
 featureblock + statblock cards flat (matching the inline cards on the parent landing)

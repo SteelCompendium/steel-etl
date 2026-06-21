@@ -279,9 +279,13 @@ func TestStatblockParser_Retainer(t *testing.T) {
 	}
 }
 
-func TestStatblockParser_SummonerRetainerUnchanged(t *testing.T) {
-	// Summoner-book retainers carry @category: summoner and are OUT of Plan 6 scope:
-	// they must stay retainer.summoner.statblock, NOT monster.retainer.summoner.statblock.
+func TestStatblockParser_SummonerRetainerMonsterFamily(t *testing.T) {
+	// Summoner-book retainers (@category: summoner) merge flat into the monster.*
+	// retainer family — same type as the Monsters-book retainers (only the
+	// mcdm.summoner.v1 source segment + the source-derived card eyebrow distinguish
+	// them). The `summoner` category segment is dropped, so they become
+	// monster.retainer.statblock (NOT retainer.summoner.statblock or
+	// monster.retainer.summoner.statblock).
 	ctx := context.NewContextStack(nil)
 	ctx.Push(4, map[string]string{"domain": "retainer", "category": "summoner"})
 	sec := &parser.Section{Heading: "Devil Detective", HeadingLevel: 6,
@@ -290,8 +294,11 @@ func TestStatblockParser_SummonerRetainerUnchanged(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if strings.Join(got.TypePath, "/") != "retainer/summoner/statblock" {
-		t.Errorf("TypePath = %v, want [retainer summoner statblock]", got.TypePath)
+	if strings.Join(got.TypePath, "/") != "monster/retainer/statblock" {
+		t.Errorf("TypePath = %v, want [monster retainer statblock]", got.TypePath)
+	}
+	if got.ItemID != "devil-detective" {
+		t.Errorf("ItemID = %q, want devil-detective", got.ItemID)
 	}
 }
 
