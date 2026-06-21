@@ -3605,24 +3605,10 @@ Whenever the following retainer would gain a new advancement ability, the player
 >
 > If a creature within 10 squares speaks the detective's true name, the detective loses their [damage immunities](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) and can't summon any **razors** until the end of the encounter.
 
-<!-- @type: statblock -->
-####### Razor
+<!-- @type: featureblock | @id: devil-detective -->
+####### Devil Detective Advancement Features
 
-| Abyssal, Demon | - | - | Signature Minion Harrier | - |
-|:-:|:--------------:|:------------------------:|:-:|:-:|
-| **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
-| **0**<br>Might | **+2**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
-
-> ⭐️ **Teeth!**
->
-> Once per turn, whenever an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/grab) the razor or uses a melee ability against them, that enemy takes 1 damage for each razor [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to them.
-
-> ⭐️ **Soulsight**
->
-> Each creature [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the razor can't be hidden from them.
-
-######## Level 4 Retainer Advancement Ability
+> **Level 4 Retainer Advancement Ability**
 
 > 🏹 **Soul Sleuth 2d10 + highest characteristic (Encounter)**
 >
@@ -3640,8 +3626,6 @@ Whenever the following retainer would gain a new advancement ability, the player
 >
 > **Effect:** Any enemy that was hiding in the area is revealed. The area is now [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for enemies.
 
-######## Level 4 Retainer Advancement Ability
-
 > 🏹 **Summon Violents (Encounter)**
 >
 > | **Magic, Ranged** | **Main action** |
@@ -3649,6 +3633,61 @@ Whenever the following retainer would gain a new advancement ability, the player
 > | **📏 Ranged 10** | **🎯 Special** |
 >
 > **Effect:** The detective summons 3 violents into unoccupied spaces within distance. On each of the detective's turns, they direct the squad of **violents** to move and use a main action.
+
+> **Level 7 Retainer Advancement Ability**
+
+> 🌀 **Cleansing Flense (Encounter)**
+>
+> | **Area, Magic** | **Maneuver** |
+> |-----------------|-------------:|
+> | **📏 5 burst** | **🎯 Each of the detective's minions in the area** |
+>
+> **Effect:** Each target moves up to their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) toward an ally. Each ally within [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) of the detective can give one [EoT](scc.v1:mcdm.heroes.v1/rule.combat/end-of-turn) or save ends effect they're affected by to an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) minion and end that effect on themself.
+>
+> Until the end of the encounter, whenever an enemy kills a target and has P < STRONG, they receive all EoT or save ends effects the target was affected by.
+
+> **Level 10 Retainer Advancement Ability**
+
+> 🏹 **Blightwash 2d10 + highest characteristic (Encounter)**
+>
+> | **Area, Magic** | **Main action** |
+> |-----------------|----------------:|
+> | **📏 Ranged 5** | **🎯 One of the detective's minions** |
+>
+> **Effect:** The minion explodes. Make a power roll, targeting each enemy within 2 squares of the target.
+>
+> 5 corruption damage; M < WEAK [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) (save ends)
+>
+> 8 corruption damage; M < AVERAGE [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) (save ends)
+>
+> 10 corruption damage; M < STRONG [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) (save ends)
+>
+> The area within 2 squares of the exploded minion is covered in blight until the end of the encounter. Abilities used against an enemy in the area have an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge).
+
+> 🏹 **Summon Gorrres (Encounter)**
+>
+> | **Magic, Ranged** | **Main action** |
+> |-------------------|----------------:|
+> | **📏 Ranged 10** | **🎯 Special** |
+>
+> **Effect:** The detective summons two gorrres into unoccupied spaces within distance. On each of the detective's turns, they direct the squad of **gorrres** to move and use a main action.
+
+<!-- @type: statblock -->
+####### Razor
+
+| Abyssal, Demon | - | - | Signature Minion Harrier | - |
+|:-:|:--------------:|:------------------------:|:-:|:-:|
+| **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **0**<br>Might | **+2**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |
+
+> ⭐️ **Teeth!**
+>
+> Once per turn, whenever an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/grab) the razor or uses a melee ability against them, that enemy takes 1 damage for each razor [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to them.
+
+> ⭐️ **Soulsight**
+>
+> Each creature [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the razor can't be hidden from them.
 
 <!-- @type: statblock -->
 ####### Violent
@@ -3670,46 +3709,6 @@ Whenever the following retainer would gain a new advancement ability, the player
 > ⭐️ **Soulsight**
 >
 > Each creature [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the violent can't be hidden from them.
-
-######## Level 7 Retainer Advancement Ability
-
-> 🌀 **Cleansing Flense (Encounter)**
->
-> | **Area, Magic** | **Maneuver** |
-> |-----------------|-------------:|
-> | **📏 5 burst** | **🎯 Each of the detective's minions in the area** |
->
-> **Effect:** Each target moves up to their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) toward an ally. Each ally within [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) of the detective can give one [EoT](scc.v1:mcdm.heroes.v1/rule.combat/end-of-turn) or save ends effect they're affected by to an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) minion and end that effect on themself.
->
-> Until the end of the encounter, whenever an enemy kills a target and has P < STRONG, they receive all EoT or save ends effects the target was affected by.
-
-######## Level 10 Retainer Advancement Ability
-
-> 🏹 **Blightwash 2d10 + highest characteristic (Encounter)**
->
-> | **Area, Magic** | **Main action** |
-> |-----------------|----------------:|
-> | **📏 Ranged 5** | **🎯 One of the detective's minions** |
->
-> **Effect:** The minion explodes. Make a power roll, targeting each enemy within 2 squares of the target.
->
-> 5 corruption damage; M < WEAK [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) (save ends)
->
-> 8 corruption damage; M < AVERAGE [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) (save ends)
->
-> 10 corruption damage; M < STRONG [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) (save ends)
->
-> The area within 2 squares of the exploded minion is covered in blight until the end of the encounter. Abilities used against an enemy in the area have an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge).
-
-######## Level 10 Retainer Advancement Ability
-
-> 🏹 **Summon Gorrres (Encounter)**
->
-> | **Magic, Ranged** | **Main action** |
-> |-------------------|----------------:|
-> | **📏 Ranged 10** | **🎯 Special** |
->
-> **Effect:** The detective summons two gorrres into unoccupied spaces within distance. On each of the detective's turns, they direct the squad of **gorrres** to move and use a main action.
 
 <!-- @type: statblock -->
 ####### Gorrre
