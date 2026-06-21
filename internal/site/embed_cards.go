@@ -85,7 +85,29 @@ func leafCard(content string) (scc string, entry cardEntry, ok bool) {
 		return "", cardEntry{}, false
 	}
 	html := strings.TrimSpace(stripLeadingHeading(strings.TrimLeft(body, "\n")))
+	// A container leaf (the beastheart companion feature-group) keeps a nested
+	// standalone coded sub-entity inline below its own card: the companion's
+	// advancement-features featureblock, under a {data-scc} heading. That
+	// sub-entity is embedded on its own under its sibling heading in any container
+	// page, so it must NOT ride along inside this leaf's card — keeping it would
+	// duplicate the section and, at the leaf's native ## depth, break TOC nesting
+	// on the container page. Drop everything from the first foreign {data-scc}
+	// heading onward (a no-op for pure-HTML leaf cards, which carry no such heading).
+	html = dropForeignSCCTail(html, scc)
 	return scc, cardEntry{html: html, standalone: standaloneType[t]}, true
+}
+
+// dropForeignSCCTail truncates card html at the first ATX heading carrying a
+// {data-scc="<code>"} marker whose code differs from ownSCC — the boundary of a
+// nested standalone coded entity the leaf renders below its own card.
+func dropForeignSCCTail(html, ownSCC string) string {
+	lines := strings.Split(html, "\n")
+	for i, line := range lines {
+		if m := dataSCCHeadingRe.FindStringSubmatch(line); m != nil && m[2] != ownSCC {
+			return strings.TrimRight(strings.Join(lines[:i], "\n"), "\n")
+		}
+	}
+	return html
 }
 
 // dataSCCHeadingRe matches an ATX heading carrying a {data-scc="<code>"}

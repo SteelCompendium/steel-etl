@@ -41,6 +41,23 @@ func TestLeafCard(t *testing.T) {
 		t.Errorf("statblock should be card-able + standalone (ok=%v standalone=%v)", ok, e.standalone)
 	}
 
+	// A beastheart companion feature-group leaf keeps its advancement-features
+	// section (a separately-carded standalone entity) inline below the .sb-wrap on
+	// its own page. The card captured for inline embedding must be ONLY the
+	// .sb-wrap — the advancement section is embedded on its own under its sibling
+	// heading, so leaving it here would duplicate it and, at the leaf's native ##
+	// depth, break TOC nesting on container pages.
+	companion := "---\nname: Bear\nscc: x/monster.companion.beastheart.statblock/bear\ntype: feature-group\n---\n\n# Bear\n\n---\n\n<div class=\"sb-wrap\">BEAR-SB</div>\n\n" +
+		`## Bear Advancement Features {data-scc="x/monster.companion.beastheart.advancement-features/bear"}` +
+		"\n\n<div class=\"fb-wrap\">BEAR-FEATUREBLOCK</div>"
+	_, e, ok := leafCard(companion)
+	if !ok || !e.standalone {
+		t.Fatalf("companion feature-group should be card-able + standalone (ok=%v standalone=%v)", ok, e.standalone)
+	}
+	if e.html != `<div class="sb-wrap">BEAR-SB</div>` {
+		t.Errorf("companion card should be just the .sb-wrap, got:\n%s", e.html)
+	}
+
 	// A non-card-able type (a class container page) is rejected.
 	class := "---\nname: Censor\nscc: x/class.censor\ntype: class\n---\n\n# Censor\n\nbody"
 	if _, _, ok := leafCard(class); ok {
