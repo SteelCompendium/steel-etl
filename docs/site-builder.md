@@ -49,6 +49,11 @@ Site builder entry point: maps ETL output to the MkDocs structure. Key mechanics
   pass after index generation): appends a `## Summons` card block to each Rival Summoner
   page and a back-link to each summon page — see "Rival Summoner ⇄ summons
   cross-references" below.
+- **Summoner Retainer ⇄ summons + advancement** (`augmentSummonerRetainerPages`,
+  `summoner_retainer.go`, post-write pass beside the rival one): appends a
+  `## Advancement Features` preview card and a `## Summons` minion grid to the summoner
+  retainer's page (Devil Detective) plus a back-link on each summon — see "Summoner
+  Retainer ⇄ summons" below.
 - **Printing provenance stamps** (`applyPrintingStamps`, final pass — after static
   overrides so every page is covered): when `site.yaml` sets `registry:` (the
   pipeline's `classification.json`), injects non-identity `printing` /
@@ -83,11 +88,13 @@ demons/undead/rivals/war-dogs under `## <Echelon>` sub-headers; the group lore i
 folded on top by `mergeGroupLanding`. `isBestiaryGroupDir` (generalized 2026-06-10 from
 `monster`-only to all statblock roots, incl. the summoner
 minion/fixture/champion/rival trees) also guards `feature_index.go`'s folder
-branch so group dirs reach this assembler. The four summoner retainers folded into the
-Monsters-book `monster/retainer/` pair grid (2026-06-21); they render via
-`buildAdvancementPairContent` and are tagged "Summoner · Retainer" through
-`bestiarySource`/`withSource`. `buildMonsterGroupContent` keeps its generic mixed-type-root
-handling (statblock leaves + group subdirs) for any future top-level statblock root. The per-echelon **sub-dir** index
+branch so group dirs reach this assembler. The summoner retainer (Devil Detective) folded
+into the Monsters-book `monster/retainer/` landing (2026-06-21); it renders as a statblock
+preview + advancement-features card alongside the 21 Monsters-book retainers, while its
+summons nest in the `summoner/minion/` subtree (off the index) and are surfaced on the
+detective's page by `augmentSummonerRetainerPages`. `buildMonsterGroupContent` keeps its
+generic mixed-type-root handling (statblock leaves + group subdirs) for any future top-level
+statblock root. The per-echelon **sub-dir** index
 pages (`monster/<group>/<echelon>/index.md`) also route here — `isBestiaryEchelonDir`
 (echelon name + parent is a group dir) widens the guard so they render that echelon's
 featureblock + statblock cards flat (matching the inline cards on the parent landing)
@@ -265,6 +272,27 @@ It is **idempotent** (guards on an existing `## Summons` heading / `sb-backlink`
 when there is no `monster/rivals` tree (e.g. the Monsters/Summoner books are absent), and
 makes **no SCC/schema/data change** — the relationship is derived purely from the on-disk
 tree. The `.sb-backlink` style lives in `v2/docs/stylesheets/steel-statblock.css`.
+
+## Summoner Retainer ⇄ summons
+
+`augmentSummonerRetainerPages` (`summoner_retainer.go`) is the retainer analogue of the
+rival pass, run in `Build` right beside it. For the summoner-book conjurer page under
+`monster/retainer/` (scc prefix `mcdm.summoner.`, `organization != Minion` — i.e. Devil
+Detective), it:
+
+- **Advancement card** — appends a `## Advancement Features` section embedding the same
+  `card(...)` + `advancementCardInner(...)` preview built from the flattened
+  `<id>-advancement-features.md` sibling (href prefixed `../` since the detective page is
+  served as a directory).
+- **Summons** — appends a `## Summons` grid via `rivalSummonsCards` over the
+  `monster/retainer/summoner/minion/*` minions (href base `../summoner/minion`), and
+- **Back** — prepends a `Summoned by` `.sb-backlink` (href `../../../<detective>/`) before
+  the `.sb-wrap` on each minion page.
+
+Like the rival pass it is **idempotent**, a no-op without a `monster/retainer` tree, and
+makes **no SCC/schema/data change**. There is exactly one summoner retainer today, so every
+minion under `summoner/minion/` belongs to it; a second summoner retainer would need
+per-retainer association (noted, not built).
 
 ## Inline item cards (`embed_cards.go`)
 

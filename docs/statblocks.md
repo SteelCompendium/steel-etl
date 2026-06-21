@@ -41,7 +41,7 @@ statblocks vs. featureblocks by frontmatter `type`).
 ## Site placement
 
 Monster pages live on the **Browse** tab (`monster/` — including `monster/retainer/` since
-Plan 6, which the summoner retainers folded into on 2026-06-21 — and `dynamic-terrain/`;
+Plan 6, which the summoner retainer folded into on 2026-06-21 — and `dynamic-terrain/`;
 moved there from the old Bestiary browser 2026-06-10 — presentation/URL only). The pipeline still skips `RenderSubtree` for `@type: monster`, so the lore
 `Body` is the group page's prose; the **site builder** then assembles the group landing
 (lore + featureblock cards + statblock preview cards) via
@@ -147,8 +147,15 @@ machinery) that `StatblockParser` likewise folds into the `monster.*` family via
 - `domain == "rival"` → the Rival Summoner NPC (any `organization` other than
   `Minion`) → `monster.rival.<echelon>.statblock/<id>` (sits beside the Monsters-book
   rivals); its summoned creatures (`organization == Minion`) →
-  `monster.rival.<echelon>.summoner.minion/<id>`. The source `@category: summoner` is
-  dropped; `@subcategory` is the echelon.
+  `monster.rival.<echelon>.summoner.minion.statblock/<id>`. The source `@category: summoner`
+  is dropped; `@subcategory` is the echelon.
+- `domain == "retainer"` + `@category: summoner` → the conjurer (Devil Detective,
+  `organization` other than `Minion`) → `monster.retainer.statblock/<id>` (flat-merged with
+  the Monsters-book retainers); its summons (`organization == Minion`: Razor/Violent/Gorrre) →
+  `monster.retainer.summoner.minion.statblock/<id>`, off the retainer index — mirroring the
+  rival summons. The detective's shared advancement abilities mint one
+  `monster.retainer.advancement-features/<id>` featureblock (`FeatureblockParser` retainer
+  branch; the `category != "summoner"` guard was lifted 2026-06-21).
 
 The `summoner` class segment is hardcoded (these `@domain` values appear only in the
 Summoner book). Site-side, `isBestiaryGroupDir` (`internal/site/bestiary_cards.go`) was
@@ -165,6 +172,16 @@ purely from the on-disk Browse tree — the conjurer is the summoner-book statbl
 `organization != Minion`, so the co-located Monsters-book rivals are skipped. No
 SCC/schema/data change. See [`site-builder.md`](site-builder.md) → "Rival Summoner ⇄
 summons cross-references".
+
+**Summoner Retainer ⇄ summons + advancement (site-only).** The summoner retainer (Devil
+Detective) is modeled the same way (2026-06-21): `augmentSummonerRetainerPages`
+(`internal/site/summoner_retainer.go`) appends a `## Advancement Features` preview card
+(from the `<id>-advancement-features` sibling) and a `## Summons` grid of its
+`summoner/minion/*` minions to the detective's page, plus a `Summoned by` back-link on each
+minion. The `monster/retainer/` Browse index then shows only the detective's statblock
+preview + its advancement-features card (the minions live in the `summoner/minion/` subtree),
+rendered by the bestiary group assembler like every other retainer. No SCC/schema/data
+change beyond the classification above.
 
 ## Featureblocks & dynamic terrain (structured fields)
 
@@ -284,9 +301,11 @@ statblock today, so they cannot nest under it as real sections.
 
 The **Summoner book** adds its own statblock-typed trees that reuse this machinery:
 `minion.<portfolio>.statblock/<id>`, `champion.<portfolio>.statblock/<id>`
-(demon/elemental/fey/undead portfolios), `monster.retainer.statblock/<id>` (the four
-retainers, re-minted into the Monsters-book retainer family 2026-06-21), and
-echelon-versioned `rival.summoner.<echelon>.statblock/<id>`. (Fixtures are the
+(demon/elemental/fey/undead portfolios), the retainer family `monster.retainer.statblock/devil-detective`
+(the conjurer) + `monster.retainer.summoner.minion.statblock/<id>` (its summons) +
+`monster.retainer.advancement-features/devil-detective`, and echelon-versioned
+`monster.rival.<echelon>.statblock/rival-summoner` (NPC) +
+`monster.rival.<echelon>.summoner.minion.statblock/<id>` (summons). (Fixtures are the
 exception — Plan 5c moved them out of this statblock family into
 `monster.fixture.<element>.featureblock/<id>`; see "Fixture rendering" above.) They route
 to the same bestiary cards
@@ -295,11 +314,14 @@ to the same bestiary cards
 (`bestiary_search.go`). `bestiarySource`/`withSource` (`bestiary_cards.go`) mark them
 **"Summoner · &lt;label&gt;"** on the card — derived from the `scc:` book prefix
 (`mcdm.summoner.`), so no data/schema change — to distinguish them from Monsters-book
-creatures. Plan 6 moved the Monsters-book retainers to `monster/retainer/`, and the
-2026-06-21 re-mint folded the four summoner retainers into that same tree
-(`monster.retainer.statblock/<id>`), so all 25 share one `monster/retainer/` Browse landing
-and the old top-level `retainer/` root is gone — the summoner four are tagged
-**"Summoner · Retainer"** on their grid cards (`withSource` in `advancement_pairs.go`).
+creatures. Plan 6 moved the Monsters-book retainers to `monster/retainer/`; the
+2026-06-21 re-mint folded the summoner retainer (Devil Detective) into that same tree
+(`monster.retainer.statblock/devil-detective`) and the old top-level `retainer/` root is
+gone. Its summons nest under `monster/retainer/summoner/minion/` (off the index) and are
+surfaced on the detective's page by `augmentSummonerRetainerPages` — so the
+`monster/retainer/` landing shows the 21 Monsters-book retainers + Devil Detective + their
+advancement-features cards (and the role-advancement folder), all rendered by the bestiary
+group assembler.
 
 **Statblock head eyebrow (provenance).** The `sb__kw` line above the creature
 name (rendered by `statblock_card.go`) is `—` or junk for these summoner
@@ -310,7 +332,7 @@ with a label derived from the page's `scc` code:
 
 | SCC type-path (under `mcdm.summoner.v1/`) | Eyebrow |
 |---|---|
-| `monster.rival.{ech}.summoner.minion` | `Rival Summoner Summon · Echelon N` |
+| `monster.rival.{ech}.summoner.minion.statblock` | `Rival Summoner Summon · Echelon N` |
 | `monster.rival.{ech}.statblock` | `Rival Summoner · Echelon N` |
 | `monster.minion.summoner.{circle}.statblock` | `Summoner Minion · {Circle}` |
 | `monster.champion.summoner.{circle}.statblock` | `Summoner Champion · {Circle}` |

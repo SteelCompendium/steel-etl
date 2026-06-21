@@ -319,52 +319,58 @@ fixtures but lives in four distinct `<category>.<base>` namespaces, so there is 
 | Celestial Attendant | Fey champion | `mcdm.summoner.v1/champion.fey.statblock/celestial-attendant` |
 | Avatar of Death | Undead champion | `mcdm.summoner.v1/champion.undead.statblock/avatar-of-death` |
 
-### Retainers (4 terms)
+### Retainers (5 terms)
+
+The summoner book has one retainer — Devil Detective — with a shared advancement
+featureblock; Razor/Violent/Gorrre are its summoned minions and nest under
+`monster.retainer.summoner.minion.statblock` (off the retainer index; surfaced on the
+detective's page). See `docs/statblocks.md` → "Summoner retainer".
 
 | Display Name | Portfolio/Kind | SCC Code |
 |-------------|----------------|----------|
 | Devil Detective | Retainer | `mcdm.summoner.v1/monster.retainer.statblock/devil-detective` |
-| Gorrre | Retainer | `mcdm.summoner.v1/monster.retainer.statblock/gorrre` |
-| Razor | Retainer | `mcdm.summoner.v1/monster.retainer.statblock/razor` |
-| Violent | Retainer | `mcdm.summoner.v1/monster.retainer.statblock/violent` |
+| Devil Detective Advancement Features | Retainer advancement | `mcdm.summoner.v1/monster.retainer.advancement-features/devil-detective` |
+| Razor | Retainer summon (minion) | `mcdm.summoner.v1/monster.retainer.summoner.minion.statblock/razor` |
+| Violent | Retainer summon (minion) | `mcdm.summoner.v1/monster.retainer.summoner.minion.statblock/violent` |
+| Gorrre | Retainer summon (minion) | `mcdm.summoner.v1/monster.retainer.summoner.minion.statblock/gorrre` |
 
 ### Rival Summoner statblocks — 1st echelon (4 terms)
 
 | Display Name | Portfolio/Kind | SCC Code |
 |-------------|----------------|----------|
-| Rival Summoner | Rival (1st echelon) | `mcdm.summoner.v1/rival.summoner.1st-echelon.statblock/rival-summoner` |
-| Accursed Mummy | Rival (1st echelon) | `mcdm.summoner.v1/rival.summoner.1st-echelon.statblock/accursed-mummy` |
-| Skeleton | Rival (1st echelon) | `mcdm.summoner.v1/rival.summoner.1st-echelon.statblock/skeleton` |
-| Zombie Lumberer | Rival (1st echelon) | `mcdm.summoner.v1/rival.summoner.1st-echelon.statblock/zombie-lumberer` |
+| Rival Summoner | Rival (1st echelon) | `mcdm.summoner.v1/monster.rival.1st-echelon.statblock/rival-summoner` |
+| Accursed Mummy | Rival summon (1st echelon) | `mcdm.summoner.v1/monster.rival.1st-echelon.summoner.minion.statblock/accursed-mummy` |
+| Skeleton | Rival summon (1st echelon) | `mcdm.summoner.v1/monster.rival.1st-echelon.summoner.minion.statblock/skeleton` |
+| Zombie Lumberer | Rival summon (1st echelon) | `mcdm.summoner.v1/monster.rival.1st-echelon.summoner.minion.statblock/zombie-lumberer` |
 
 ### Rival Summoner statblocks — 2nd echelon (4 terms)
 
 | Display Name | Portfolio/Kind | SCC Code |
 |-------------|----------------|----------|
-| Rival Summoner | Rival (2nd echelon) | `mcdm.summoner.v1/rival.summoner.2nd-echelon.statblock/rival-summoner` |
-| Ceaseless Mournling | Rival (2nd echelon) | `mcdm.summoner.v1/rival.summoner.2nd-echelon.statblock/ceaseless-mournling` |
-| Grave Knight | Rival (2nd echelon) | `mcdm.summoner.v1/rival.summoner.2nd-echelon.statblock/grave-knight` |
-| Skeleton | Rival (2nd echelon) | `mcdm.summoner.v1/rival.summoner.2nd-echelon.statblock/skeleton` |
+| Rival Summoner | Rival (2nd echelon) | `mcdm.summoner.v1/monster.rival.2nd-echelon.statblock/rival-summoner` |
+| Ceaseless Mournling | Rival summon (2nd echelon) | `mcdm.summoner.v1/monster.rival.2nd-echelon.summoner.minion.statblock/ceaseless-mournling` |
+| Grave Knight | Rival summon (2nd echelon) | `mcdm.summoner.v1/monster.rival.2nd-echelon.summoner.minion.statblock/grave-knight` |
+| Skeleton | Rival summon (2nd echelon) | `mcdm.summoner.v1/monster.rival.2nd-echelon.summoner.minion.statblock/skeleton` |
 
 ### Rival Summoner statblocks — 3rd echelon (5 terms)
 
 | Display Name | Portfolio/Kind | SCC Code |
 |-------------|----------------|----------|
-| Rival Summoner | Rival (3rd echelon) | `mcdm.summoner.v1/rival.summoner.3rd-echelon.statblock/rival-summoner` |
-| Ceaseless Mournling | Rival (3rd echelon) | `mcdm.summoner.v1/rival.summoner.3rd-echelon.statblock/ceaseless-mournling` |
-| False Vampire | Rival (3rd echelon) | `mcdm.summoner.v1/rival.summoner.3rd-echelon.statblock/false-vampire` |
-| Skeleton | Rival (3rd echelon) | `mcdm.summoner.v1/rival.summoner.3rd-echelon.statblock/skeleton` |
-| Zombie Lumberer | Rival (3rd echelon) | `mcdm.summoner.v1/rival.summoner.3rd-echelon.statblock/zombie-lumberer` |
+| Rival Summoner | Rival (3rd echelon) | `mcdm.summoner.v1/monster.rival.3rd-echelon.statblock/rival-summoner` |
+| Ceaseless Mournling | Rival summon (3rd echelon) | `mcdm.summoner.v1/monster.rival.3rd-echelon.summoner.minion.statblock/ceaseless-mournling` |
+| False Vampire | Rival summon (3rd echelon) | `mcdm.summoner.v1/monster.rival.3rd-echelon.summoner.minion.statblock/false-vampire` |
+| Skeleton | Rival summon (3rd echelon) | `mcdm.summoner.v1/monster.rival.3rd-echelon.summoner.minion.statblock/skeleton` |
+| Zombie Lumberer | Rival summon (3rd echelon) | `mcdm.summoner.v1/monster.rival.3rd-echelon.summoner.minion.statblock/zombie-lumberer` |
 
 ### Rival Summoner statblocks — 4th echelon (5 terms)
 
 | Display Name | Portfolio/Kind | SCC Code |
 |-------------|----------------|----------|
-| Rival Summoner | Rival (4th echelon) | `mcdm.summoner.v1/rival.summoner.4th-echelon.statblock/rival-summoner` |
-| Ceaseless Mournling | Rival (4th echelon) | `mcdm.summoner.v1/rival.summoner.4th-echelon.statblock/ceaseless-mournling` |
-| Grave Knight | Rival (4th echelon) | `mcdm.summoner.v1/rival.summoner.4th-echelon.statblock/grave-knight` |
-| Skeleton | Rival (4th echelon) | `mcdm.summoner.v1/rival.summoner.4th-echelon.statblock/skeleton` |
-| Zombie Titan | Rival (4th echelon) | `mcdm.summoner.v1/rival.summoner.4th-echelon.statblock/zombie-titan` |
+| Rival Summoner | Rival (4th echelon) | `mcdm.summoner.v1/monster.rival.4th-echelon.statblock/rival-summoner` |
+| Ceaseless Mournling | Rival summon (4th echelon) | `mcdm.summoner.v1/monster.rival.4th-echelon.summoner.minion.statblock/ceaseless-mournling` |
+| Grave Knight | Rival summon (4th echelon) | `mcdm.summoner.v1/monster.rival.4th-echelon.summoner.minion.statblock/grave-knight` |
+| Skeleton | Rival summon (4th echelon) | `mcdm.summoner.v1/monster.rival.4th-echelon.summoner.minion.statblock/skeleton` |
+| Zombie Titan | Rival summon (4th echelon) | `mcdm.summoner.v1/monster.rival.4th-echelon.summoner.minion.statblock/zombie-titan` |
 
 ### Converted minion example (1 term)
 
