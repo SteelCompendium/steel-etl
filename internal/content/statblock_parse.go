@@ -414,6 +414,81 @@ func cleanIconCell(s string) string {
 	return strings.TrimSpace(s)
 }
 
+// parseCreatureKeywords parses a statblock header keyword cell into the data
+// model's keyword list. Top-level commas (outside parentheses) separate distinct
+// keywords; a trailing "(d1, d2, …)" parenthetical lists domain qualifiers on the
+// preceding keyword and is DISTRIBUTED — one keyword per domain — so the
+// Summoner-book elemental cell "Elemental (Air, Earth)" becomes
+// ["Elemental (Air)", "Elemental (Earth)"] (each independently filterable) rather
+// than the naive comma-split "Elemental (Air" / "Earth)". Cells with no
+// parenthetical behave exactly like splitCommaList ("Abyssal, Demon" →
+// ["Abyssal", "Demon"]). The faithful "Elemental (Air, Earth)" display form is
+// reconstructed for the statblock head by collapseKeywords (internal/site).
+func parseCreatureKeywords(s string) []string {
+	var out []string
+	for _, tok := range splitTopLevelCommas(s) {
+		base, domains := splitKeywordDomains(tok)
+		if len(domains) == 0 {
+			out = append(out, base)
+			continue
+		}
+		for _, d := range domains {
+			out = append(out, base+" ("+d+")")
+		}
+	}
+	return out
+}
+
+// splitTopLevelCommas splits on commas that sit outside any parentheses, trimming
+// each part and dropping empties.
+func splitTopLevelCommas(s string) []string {
+	var out []string
+	depth, start := 0, 0
+	for i, r := range s {
+		switch r {
+		case '(':
+			depth++
+		case ')':
+			if depth > 0 {
+				depth--
+			}
+		case ',':
+			if depth == 0 {
+				if p := strings.TrimSpace(s[start:i]); p != "" {
+					out = append(out, p)
+				}
+				start = i + 1
+			}
+		}
+	}
+	if p := strings.TrimSpace(s[start:]); p != "" {
+		out = append(out, p)
+	}
+	return out
+}
+
+// splitKeywordDomains splits a single keyword token "Base (d1, d2, …)" into its
+// base and the trimmed domain list. A token with no trailing parenthetical (or an
+// empty/baseless one) returns (token, nil).
+func splitKeywordDomains(tok string) (string, []string) {
+	tok = strings.TrimSpace(tok)
+	open := strings.LastIndex(tok, "(")
+	if open < 0 || !strings.HasSuffix(tok, ")") {
+		return tok, nil
+	}
+	base := strings.TrimSpace(tok[:open])
+	var domains []string
+	for _, d := range strings.Split(tok[open+1:len(tok)-1], ",") {
+		if d = strings.TrimSpace(d); d != "" {
+			domains = append(domains, d)
+		}
+	}
+	if base == "" || len(domains) == 0 {
+		return tok, nil
+	}
+	return base, domains
+}
+
 // parseStatGrid parses a statblock's 4-row markdown grid.
 func parseStatGrid(grid string) statGrid {
 	out := statGrid{labels: map[string]string{}}
@@ -425,7 +500,7 @@ func parseStatGrid(grid string) statGrid {
 	// Header row.
 	header := rows[0]
 	if len(header) > 0 {
-		out.header.keywords = splitCommaList(header[0])
+		out.header.keywords = parseCreatureKeywords(header[0])
 	}
 	joined := strings.Join(header, " | ")
 	if m := levelRe.FindStringSubmatch(joined); m != nil {

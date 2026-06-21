@@ -398,6 +398,44 @@ func TestBuildStatblockIsland_ProvenanceEyebrowOverridesKeywords(t *testing.T) {
 	}
 }
 
+func TestBuildStatblockIsland_ElementalDomainsAppendedToEyebrow(t *testing.T) {
+	// A summoner elemental minion: keywords arrive distributed per-domain
+	// ("Elemental (Air)", "Elemental (Earth)"). The provenance eyebrow stays,
+	// with the book-faithful domain parenthetical appended so the head reads
+	// like the sourcebook ("Summoner Minion · Elemental (Air, Earth)").
+	fm := "name: Desolation of Sand\n" +
+		"organization: Minion\n" +
+		"role: Hexer\n" +
+		"keywords:\n    - Elemental (Air)\n    - Elemental (Earth)\n" +
+		"scc: mcdm.summoner.v1/monster.minion.summoner.elemental.statblock/desolation-of-sand\n"
+	got := buildStatblockIsland(fm, "")
+	if got.Ancestry != "Summoner Minion · Elemental (Air, Earth)" {
+		t.Errorf("Ancestry = %q, want %q", got.Ancestry, "Summoner Minion · Elemental (Air, Earth)")
+	}
+}
+
+func TestCollapseKeywords(t *testing.T) {
+	tests := []struct {
+		name string
+		in   []string
+		want string
+	}{
+		{"distributed domains recollapse", []string{"Elemental (Air)", "Elemental (Earth)"}, "Elemental (Air, Earth)"},
+		{"single domain", []string{"Elemental (Fire)"}, "Elemental (Fire)"},
+		{"plain multi keyword", []string{"Humanoid", "Goblin"}, "Humanoid, Goblin"},
+		{"bare keyword", []string{"Undead"}, "Undead"},
+		{"base and qualified mix preserves order", []string{"Dragon", "Elemental (Fire)", "Elemental (Air)"}, "Dragon, Elemental (Fire, Air)"},
+		{"empty", nil, ""},
+	}
+	for _, tc := range tests {
+		t.Run(tc.name, func(t *testing.T) {
+			if got := collapseKeywords(tc.in); got != tc.want {
+				t.Errorf("collapseKeywords(%v) = %q, want %q", tc.in, got, tc.want)
+			}
+		})
+	}
+}
+
 func TestBuildStatblockIsland_NonSummonerKeepsKeywords(t *testing.T) {
 	// A Monsters-book statblock keeps its real keyword-derived ancestry.
 	fm := "name: Goblin Warrior\n" +

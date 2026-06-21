@@ -13,6 +13,55 @@ const cursespitterGrid = "" +
 	"| **-**<br>Immunity | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |\n" +
 	"|  **-2**<br>Might  |   **+1**<br>Agility   |  **0**<br>Reason  |  **+2**<br>Intuition  |  **0**<br>Presence   |\n"
 
+// TestParseStatGridKeywordDomains covers the Summoner-book elemental keyword
+// cell shape "Elemental (Air, Earth)": the comma inside the parenthetical is a
+// domain qualifier, not a keyword separator, so it must be distributed onto the
+// base keyword ("Elemental (Air)", "Elemental (Earth)") rather than naively
+// split into the broken "Elemental (Air" / "Earth)" pair. Top-level commas
+// (outside parentheses) still separate distinct keywords.
+func TestParseStatGridKeywordDomains(t *testing.T) {
+	tests := []struct {
+		name   string
+		header string
+		wantKW []string
+	}{
+		{
+			name:   "domains distributed onto base keyword",
+			header: "| Elemental (Air, Earth) | - | - | Minion Hexer | 3 essence for two minions |",
+			wantKW: []string{"Elemental (Air)", "Elemental (Earth)"},
+		},
+		{
+			name:   "single domain stays single",
+			header: "| Elemental (Fire) | - | - | Minion Artillery | - |",
+			wantKW: []string{"Elemental (Fire)"},
+		},
+		{
+			name:   "four domains all distributed",
+			header: "| Elemental (Air, Green, Fire, Void) | - | - | Minion Support | - |",
+			wantKW: []string{"Elemental (Air)", "Elemental (Green)", "Elemental (Fire)", "Elemental (Void)"},
+		},
+		{
+			name:   "top-level commas still separate keywords",
+			header: "| Abyssal, Demon | - | - | Minion Brute | - |",
+			wantKW: []string{"Abyssal", "Demon"},
+		},
+		{
+			name:   "bare keyword unchanged",
+			header: "| Undead | - | - | Minion Defender | - |",
+			wantKW: []string{"Undead"},
+		},
+	}
+	for _, tc := range tests {
+		t.Run(tc.name, func(t *testing.T) {
+			grid := tc.header + "\n|:-:|:-:|:-:|:-:|:-:|\n"
+			got := parseStatGrid(grid).header.keywords
+			if !reflect.DeepEqual(got, tc.wantKW) {
+				t.Errorf("keywords: got %v, want %v", got, tc.wantKW)
+			}
+		})
+	}
+}
+
 func TestParseStatGrid(t *testing.T) {
 	got := parseStatGrid(cursespitterGrid)
 
@@ -95,16 +144,16 @@ func TestParseStatGridCostVsEV(t *testing.T) {
 			wantKW: []string{"Abyssal", "Demon"},
 		},
 		{
-			name:     "rival keeps EV",
-			header:   "| Humanoid, Rival | - | Level 2 | Elite Controller | EV 16 |",
-			wantEV:   "16",
-			wantOrg:  "Elite", wantRole: "Controller", wantLvl: 2,
+			name:    "rival keeps EV",
+			header:  "| Humanoid, Rival | - | Level 2 | Elite Controller | EV 16 |",
+			wantEV:  "16",
+			wantOrg: "Elite", wantRole: "Controller", wantLvl: 2,
 			wantKW: []string{"Humanoid", "Rival"},
 		},
 		{
-			name:     "retainer has neither",
-			header:   "| Devil, Infernal | - | Level 1 | Retainer Controller | - |",
-			wantOrg:  "Retainer", wantRole: "Controller", wantLvl: 1,
+			name:    "retainer has neither",
+			header:  "| Devil, Infernal | - | Level 1 | Retainer Controller | - |",
+			wantOrg: "Retainer", wantRole: "Controller", wantLvl: 1,
 			wantKW: []string{"Devil", "Infernal"},
 		},
 		{

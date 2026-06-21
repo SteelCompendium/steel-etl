@@ -145,6 +145,49 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	return []byte("---\n" + fm + "\n---\n\n" + card), true
 }
 
+// collapseKeywords reconstructs the book-faithful keyword display string from the
+// distributed keyword list emitted by parseCreatureKeywords. Per-domain entries
+// that share a base ("Elemental (Air)", "Elemental (Earth)") recombine into the
+// sourcebook form "Elemental (Air, Earth)"; plain keywords join with ", " in
+// first-seen order.
+func collapseKeywords(kws []string) string {
+	type grp struct {
+		base    string
+		domains []string
+	}
+	var order []*grp
+	byBase := map[string]*grp{}
+	for _, kw := range kws {
+		kw = strings.TrimSpace(kw)
+		if kw == "" {
+			continue
+		}
+		base, dom := kw, ""
+		if open := strings.LastIndex(kw, "("); open >= 0 && strings.HasSuffix(kw, ")") {
+			base = strings.TrimSpace(kw[:open])
+			dom = strings.TrimSpace(kw[open+1 : len(kw)-1])
+		}
+		g := byBase[base]
+		if g == nil {
+			g = &grp{base: base}
+			byBase[base] = g
+			order = append(order, g)
+		}
+		if dom != "" {
+			g.domains = append(g.domains, dom)
+		}
+	}
+	parts := make([]string, 0, len(order))
+	for _, g := range order {
+		if len(g.domains) > 0 {
+			parts = append(parts, g.base+" ("+strings.Join(g.domains, ", ")+")")
+		} else {
+			parts = append(parts, g.base)
+		}
+	}
+	return strings.Join(parts, ", ")
+}
+
 func buildStatblockIsland(fm, body string) sbIsland {
 	name := strings.TrimSpace(parseFrontmatterField(fm, "name"))
 	org := strings.TrimSpace(parseFrontmatterField(fm, "organization"))
@@ -164,11 +207,20 @@ func buildStatblockIsland(fm, body string) sbIsland {
 		captain = strings.TrimSpace(m[1])
 	}
 
-	// The keyword line (sb__kw eyebrow) is "—" or junk for summoner-book
-	// statblocks; replace it with a provenance label derived from the scc code.
-	ancestry := strings.Join(parseFrontmatterList(fm, "keywords"), ", ")
+	// The keyword line (sb__kw eyebrow) reconstructs the book-faithful display
+	// from the distributed keyword list (per-domain "Elemental (Air)"/"Elemental
+	// (Earth)" recollapse to "Elemental (Air, Earth)"). For summoner-book
+	// statblocks the line is otherwise "—" or junk, so the scc-derived provenance
+	// label replaces it — but the faithful domain parenthetical is appended so the
+	// head still reads like the sourcebook ("Summoner Minion · Elemental (Air,
+	// Earth)"). Only summoner elementals carry domains, so the first "(" is theirs.
+	faithful := collapseKeywords(parseFrontmatterList(fm, "keywords"))
+	ancestry := faithful
 	if eb := summonerProvenanceEyebrow(parseFrontmatterField(fm, "scc")); eb != "" {
 		ancestry = eb
+		if open := strings.Index(faithful, "("); open >= 0 {
+			ancestry += " " + strings.TrimSpace(faithful[open:])
+		}
 	}
 
 	return sbIsland{

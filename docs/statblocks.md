@@ -67,6 +67,18 @@ the EV/cost. The Summoner book was originally transcribed with a different colum
 **corrected in the input** (`input/summoner/Draw Steel Summoner.md`) rather than teaching
 the parser a second layout. Keep new statblock headers in the canonical order.
 
+**Keyword domains are distributed (`parseCreatureKeywords`).** Top-level commas in
+cell 0 separate distinct keywords (`Abyssal, Demon` → `["Abyssal", "Demon"]`), but a
+trailing parenthetical lists *domain qualifiers* on the preceding keyword and is
+**distributed** — one keyword per domain — so the Summoner-book elemental cell
+`Elemental (Air, Earth)` becomes `["Elemental (Air)", "Elemental (Earth)"]` (each a
+separate, independently filterable Bestiary facet) instead of the naive comma-split
+`"Elemental (Air"` / `"Earth)"`. The book-faithful `Elemental (Air, Earth)` display is
+reconstructed for the statblock head by `collapseKeywords` (`internal/site`), which
+recombines same-base entries. `splitTopLevelCommas`/`splitKeywordDomains` are the
+paren-aware split helpers; the ability-table keyword cells still use plain
+`splitCommaList` (ability keywords carry no domains).
+
 **`ev` vs `cost` (the trailing header cell).** The last column is either an Encounter
 Value — written with a literal `EV` prefix (`EV 3 for 4 minions`, `EV 156`, `EV -`),
 parsed into `ev` — or, first seen in the Summoner book, a **gametime summon cost** in
@@ -303,7 +315,10 @@ with a label derived from the page's `scc` code:
 ⚠️ Gated on the `mcdm.summoner.` **source** prefix so the look-alike Monsters-book
 `mcdm.monsters.v1/monster.rival.{ech}.statblock` tree — which keeps its real
 "Humanoid, Rival" keywords — is untouched. Like the bestiary-card label it is
-`scc`-derived, so no data/schema change. Spec:
+`scc`-derived, so no data/schema change. **Exception — elemental domains:** when the
+faithful keyword (`collapseKeywords`) carries a domain parenthetical, it is appended to
+the provenance so the head reads like the sourcebook (`Summoner Minion · Elemental (Air,
+Earth)`); only summoner elementals carry domains, so the first `(` is theirs. Spec:
 `docs/superpowers/specs/2026-06-15-summoner-statblock-provenance-eyebrow-design.md`.
 
 The Summoner source is **fully link-swept** (2026-06-11): 1,464 inline `scc:` links
