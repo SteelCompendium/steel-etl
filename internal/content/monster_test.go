@@ -302,6 +302,57 @@ func TestStatblockParser_SummonerRetainerMonsterFamily(t *testing.T) {
 	}
 }
 
+func TestStatblockParser_SummonerRetainerMinionNests(t *testing.T) {
+	// A summoner-book retainer-group statblock whose organization is "Minion"
+	// (the detective's summons) nests as monster.retainer.summoner.minion.statblock,
+	// out of the flat retainer index. The detective itself (organization Retainer)
+	// stays monster.retainer.statblock.
+	cases := []struct{ name, body, want string }{
+		{"detective",
+			"| Devil, Fiend | - | Level 1 | Controller Retainer | - |\n\n> ⭐️ **X**\n>\n> Y.",
+			"monster/retainer/statblock"},
+		{"minion",
+			"| Abyssal, Demon | - | - | Signature Minion Harrier | - |\n\n> ⭐️ **X**\n>\n> Y.",
+			"monster/retainer/summoner/minion/statblock"},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			ctx := context.NewContextStack(nil)
+			ctx.Push(4, map[string]string{"domain": "retainer", "category": "summoner"})
+			sec := &parser.Section{Heading: "Thing", HeadingLevel: 6, BodySource: tc.body}
+			got, err := (&StatblockParser{}).Parse(ctx, sec)
+			if err != nil {
+				t.Fatal(err)
+			}
+			if strings.Join(got.TypePath, "/") != tc.want {
+				t.Errorf("TypePath = %v, want %s (org=%v)", got.TypePath, tc.want, got.Frontmatter["organization"])
+			}
+		})
+	}
+}
+
+func TestFeatureblockParser_SummonerRetainerAdvancement(t *testing.T) {
+	// A summoner-book retainer advancement featureblock now mints
+	// monster.retainer.advancement-features/<id> (the category != "summoner"
+	// guard was lifted), same as the Monsters-book retainers.
+	ctx := context.NewContextStack(nil)
+	ctx.Push(4, map[string]string{"domain": "retainer", "category": "summoner"})
+	body := "> **Level 4 Retainer Advancement Ability**\n>\n" +
+		"> 🏹 **Soul Sleuth (Encounter)**\n>\n> **Effect:** Reveal."
+	sec := &parser.Section{Heading: "Devil Detective Advancement Features", HeadingLevel: 6,
+		Annotation: map[string]string{"id": "devil-detective"}, BodySource: body}
+	got, err := (&FeatureblockParser{}).Parse(ctx, sec)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if strings.Join(got.TypePath, "/") != "monster/retainer/advancement-features" {
+		t.Errorf("TypePath = %v, want [monster retainer advancement-features]", got.TypePath)
+	}
+	if got.ItemID != "devil-detective" {
+		t.Errorf("ItemID = %q, want devil-detective", got.ItemID)
+	}
+}
+
 func TestFeatureblockParser_RetainerAdvancement(t *testing.T) {
 	ctx := context.NewContextStack(nil)
 	ctx.Push(4, map[string]string{"domain": "retainer"})
@@ -360,7 +411,7 @@ func TestStatblockParser_SummonerRival(t *testing.T) {
 		name, heading, body, want string
 	}{
 		{"npc", "Rival Summoner", npcBody, "monster/rival/2nd-echelon/statblock"},
-		{"summon", "Skeleton", summonBody, "monster/rival/2nd-echelon/summoner/minion"},
+		{"summon", "Skeleton", summonBody, "monster/rival/2nd-echelon/summoner/minion/statblock"},
 	}
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {

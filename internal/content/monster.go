@@ -108,12 +108,18 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	switch domain {
 	case "retainer":
 		// Both books' retainers live in the monster.* family. Monsters-book retainers
-		// joined in Plan 6; Summoner-book retainers (@category: summoner) merge flat
-		// alongside them as monster.retainer.statblock — the mcdm.summoner.v1 source
-		// segment + the source-derived "Summoner ·" card eyebrow preserve their
+		// joined in Plan 6. Summoner-book retainers (@category: summoner): the detective
+		// (organization Retainer) merges flat as monster.retainer.statblock, but its
+		// summons (organization Minion) nest as monster.retainer.summoner.minion.statblock
+		// — parallel to the rival summons — so they stay off the retainer index. The
+		// mcdm.summoner.v1 source segment + the "Summoner ·" card eyebrow preserve
 		// provenance, so the `summoner` category gets no separate type segment.
 		if category == "summoner" {
-			typePath = compactPath("monster", "retainer", subcategory, "statblock")
+			if org, _ := fm["organization"].(string); org == "Minion" {
+				typePath = compactPath("monster", "retainer", "summoner", "minion", "statblock")
+			} else {
+				typePath = compactPath("monster", "retainer", "statblock")
+			}
 		} else {
 			typePath = compactPath("monster", "retainer", category, subcategory, "statblock")
 		}
@@ -124,10 +130,10 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	case "rival":
 		// The Rival Summoner NPC sits beside the Monsters-book rivals
 		// (monster.rival.<echelon>.statblock); its minion summons nest under
-		// monster.rival.<echelon>.summoner.minion. The source @category
+		// monster.rival.<echelon>.summoner.minion.statblock. The source @category
 		// ("summoner") is dropped; @subcategory is the echelon.
 		if org, _ := fm["organization"].(string); org == "Minion" {
-			typePath = compactPath("monster", "rival", subcategory, "summoner", "minion")
+			typePath = compactPath("monster", "rival", subcategory, "summoner", "minion", "statblock")
 		} else {
 			typePath = compactPath("monster", "rival", subcategory, "statblock")
 		}
@@ -252,13 +258,15 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 		}, nil
 	}
 
-	// Retainer advancement / role-advancement containers (Monsters book, Plan 6).
+	// Retainer advancement / role-advancement containers (Monsters + Summoner books).
 	// Under @domain: retainer this featureblock is either a per-retainer
-	// "<Name> Advancement Features" block, or — when the enclosing group carries
+	// "<Name> Advancement Features" block (Monsters-book retainers + the summoner
+	// retainer, @category: summoner), or — when the enclosing group carries
 	// @category: role-advancement — a per-role "<Role> Abilities" block. Members are
 	// inline abilities (uncoded; the malice/terrain/fixture model); their leveled
-	// bands come from the **Level N … Advancement Ability** bold labels.
-	if domain, category, _ := statblockDomain(ctx, section.HeadingLevel); domain == "retainer" && category != "summoner" {
+	// bands come from the **Level N … Advancement Ability** bold labels. The typePath
+	// hardcodes monster/retainer/<kind>, so the `summoner` category is dropped.
+	if domain, category, _ := statblockDomain(ctx, section.HeadingLevel); domain == "retainer" {
 		if feats := ParseRichFeatures(body); len(feats) > 0 {
 			fm["features"] = RichFeatureMaps(feats)
 		}
