@@ -180,6 +180,18 @@ matched two regexes anchored on the literal `**Power Roll +`:
 The runtime JS (`docs/javascripts/ability-cards.js`) was immune — it matches the
 DOM's `textContent`, which flattens links away; only the Go raw-markdown regexes broke.
 
+Second incident (2026-06-20): the **label words themselves** were link-swept. Source
+`**Speed Bonus:**` became `**[Speed](scc.v1:…) [Bonus](scc.v1:…):**`, so the shared
+`extractField` helper (`internal/content/perk.go`; used by the kit, perk, treasure,
+class, and career parsers) no longer matched the literal `Speed Bonus:` prefix — every
+Browse/kit card showed `0`/`—`, and class potency / career renown-wealth silently
+vanished from the data. `extractField` is now hardened: it splits label from value at
+the first colon **outside** a markdown link target and matches the *link-stripped*
+label, while returning the value with its links intact. **If you add a new
+body-extracted field, route it through `extractField` (or make its matcher equally
+link-tolerant)** — don't hand-roll a `strings.HasPrefix(line, "Label:")` that a future
+link sweep will break.
+
 **Before linking a keyword that anchors a structured block** (power-roll headers,
 `**Effect:**`, `**Trigger:**`, `**Spend …:**`, stat-table cells, statblock fields),
 check whether a parser keys off that literal text. If so, make the regex tolerate
