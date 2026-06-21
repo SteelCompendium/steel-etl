@@ -349,7 +349,7 @@ func perkCard(fm, body, file, name string) string {
 	}
 	inner := ""
 	if v := firstField(fm, "prerequisites", "prerequisite"); v != "" {
-		inner += "  <div class=\"sc-card__line\"><b>Prerequisite</b> <span class=\"hl\">" + html.EscapeString(v) + "</span></div>\n"
+		inner += "  <div class=\"sc-card__line\"><b>Prerequisite</b> <span class=\"hl\">" + inlineMD(v) + "</span></div>\n"
 	}
 	// Perk text: the leading run of prose paragraphs, with their paragraph
 	// breaks preserved, truncated generously (these are the wide cards).
@@ -370,7 +370,7 @@ func titleCard(fm, body, file, name string) string {
 		inner += flavorDiv(f, 0)
 	}
 	if v := firstField(fm, "prerequisites", "prerequisite"); v != "" {
-		inner += "  <div class=\"sc-card__line\"><b>Prerequisite</b> <span class=\"hl\">" + html.EscapeString(v) + "</span></div>\n"
+		inner += "  <div class=\"sc-card__line\"><b>Prerequisite</b> <span class=\"hl\">" + inlineMD(v) + "</span></div>\n"
 	}
 	return card(file, "title", label, name, inner)
 }

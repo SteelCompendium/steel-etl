@@ -315,6 +315,32 @@ func TestBuildCardsContent_TreasureLeaf(t *testing.T) {
 	}
 }
 
+// A title's prerequisite is free text that may embed an scc link (rendered as a
+// markdown link in the body). The card must render it as a real <a>, not escape
+// the markdown syntax into plaintext.
+func TestBuildCardsContent_TitlePrerequisiteLink(t *testing.T) {
+	root := t.TempDir()
+	leaf := filepath.Join(root, "title")
+	if err := os.MkdirAll(leaf, 0755); err != nil {
+		t.Fatal(err)
+	}
+	doc := "---\nname: Reborn\ntype: title\necholon: \"1\"\nprerequisite: \"You die at the hands of your greatest foe, and you aren't a [revenant](../ancestry/revenant.md).\"\n---\n\n*You have returned from death.*\n"
+	if err := os.WriteFile(filepath.Join(leaf, "reborn.md"), []byte(doc), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	content, ok := buildCardsContent(leaf, "title", []string{"reborn.md"}, nil)
+	if !ok {
+		t.Fatalf("buildCardsContent ok=false, want true for title leaf dir")
+	}
+	if !strings.Contains(content, `href="../ancestry/revenant/"`) {
+		t.Errorf("expected prerequisite link rendered as <a>, got:\n%s", content)
+	}
+	if strings.Contains(content, "[revenant]") {
+		t.Errorf("prerequisite markdown link leaked as plaintext, got:\n%s", content)
+	}
+}
+
 func TestBuildCardsContent_RuleLeaf(t *testing.T) {
 	root := t.TempDir()
 	leaf := filepath.Join(root, "rule", "dice")
