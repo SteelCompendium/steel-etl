@@ -115,6 +115,16 @@ func Build(cfg *Config) (*BuildResult, error) {
 		}
 	}
 
+	// Summoner Retainer ⇄ summons + advancement-features cross-references, mirroring
+	// the Rival Summoner pass: a "## Advancement Features" card + "## Summons" grid on
+	// the detective page, and a back-link on each summon page. No-op without a summoner
+	// monster/retainer tree.
+	for _, s := range genericSections {
+		if _, rErrs := augmentSummonerRetainerPages(filepath.Join(cfg.DocsDir, s.Name)); len(rErrs) > 0 {
+			result.Errors = append(result.Errors, rErrs...)
+		}
+	}
+
 	// Bestiary Search & Filter landing (Plan B): emit the faceted-finder data
 	// island over the Browse monster/terrain/retainer pages. No-op when the
 	// Monsters book isn't present in this build.
