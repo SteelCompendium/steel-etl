@@ -70,6 +70,77 @@ Heavy armor, a melee weapon
 	}
 }
 
+// TestKitParser_LinkSweptBonuses guards the regression where SCC link-swept kit
+// bonus labels (e.g. "**[Speed](…) [Bonus](…):** +1") stopped matching the plain
+// "Speed Bonus" key, leaving every Browse/kit card showing 0/—.
+func TestKitParser_LinkSweptBonuses(t *testing.T) {
+	p := &KitParser{}
+
+	section := &parser.Section{
+		Heading:      "Arcane Archer",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "kit", "id": "arcane-archer"},
+		BodySource: `The Arcane Archer kit combines magic and ranged strikes.
+
+##### Equipment
+
+You wear no armor and wield a bow.
+
+##### Kit Bonuses
+
+**[Speed](scc.v1:mcdm.heroes.v1/rule.character/speed) [Bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** +1
+
+**[Ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) Damage [Bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** +2/+2/+2
+
+**[Ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) [Distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) [Bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** +10
+
+**Disengage [Bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** +1`,
+	}
+
+	ctx := context.NewContextStack(nil)
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	checks := map[string]string{
+		"speed_bonus":           "+1",
+		"ranged_damage_bonus":   "+2/+2/+2",
+		"ranged_distance_bonus": "+10",
+		"disengage_bonus":       "+1",
+	}
+	for field, want := range checks {
+		if got := result.Frontmatter[field]; got != want {
+			t.Errorf("%s = %q, want %q", field, got, want)
+		}
+	}
+}
+
+// TestExtractField_PreservesValueLinks guards that a field's value keeps its SCC
+// links — for both a plain label and a link-swept label (class potency, where the
+// label *and* the value carry links). Only the label is stripped, to match it.
+func TestExtractField_PreservesValueLinks(t *testing.T) {
+	cases := []struct{ name, body, field, want string }{
+		{
+			name:  "plain label, linked value",
+			body:  "**Effect:** The creature can [fly](scc.v1:mcdm.heroes.v1/movement/fly) freely.",
+			field: "Effect",
+			want:  "The creature can [fly](scc.v1:mcdm.heroes.v1/movement/fly) freely.",
+		},
+		{
+			name:  "link-swept label, linked value",
+			body:  "**Average [Potency](scc.v1:mcdm.heroes.v1/rule.character/potency):** [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) − 1",
+			field: "Average Potency",
+			want:  "[Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) − 1",
+		},
+	}
+	for _, c := range cases {
+		if got := extractField(c.body, c.field); got != c.want {
+			t.Errorf("%s: extractField = %q, want %q", c.name, got, c.want)
+		}
+	}
+}
+
 func TestKitParser_SignatureAbility(t *testing.T) {
 	p := &KitParser{}
 
