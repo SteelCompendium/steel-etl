@@ -115,6 +115,15 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		"type": featureKind,
 	}
 
+	// Capture a cost embedded in the heading's trailing parenthetical — ancestry
+	// purchased traits encode their ancestry-point cost there (e.g. "Barbed Tail
+	// (1 Point)"). An explicit @cost annotation wins, mirroring ability.go.
+	if v, ok := section.Annotation["cost"]; ok && v != "" {
+		fm["cost"] = v
+	} else if cost := extractCostSuffix(section.Heading); cost != "" {
+		fm["cost"] = cost
+	}
+
 	// Look up level from context (set by parent feature-group)
 	levelStr := ""
 	if level, ok := ctx.Lookup(section.HeadingLevel, "level"); ok {

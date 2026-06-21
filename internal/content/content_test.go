@@ -699,6 +699,56 @@ func TestFeatureSubclassFrontmatter(t *testing.T) {
 	}
 }
 
+func TestFeaturePurchasedTraitCost(t *testing.T) {
+	// Ancestry purchased traits carry their point cost in the heading text as
+	// "(N Point[s])". CleanHeading strips it from the display name; the parser
+	// must capture it into the `cost` frontmatter field so cards can show it.
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	ctx.Push(2, context.Metadata{"type": "ancestry", "id": "devil"})
+
+	section := &parser.Section{
+		Heading:      "Barbed Tail (1 Point)",
+		HeadingLevel: 5,
+		Annotation:   map[string]string{"type": "feature"},
+		BodySource:   "Your pointy tail allows you to punctuate all your actions.",
+	}
+	ctx.Push(section.HeadingLevel, context.Metadata(section.Annotation))
+	parsed, err := (&FeatureParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	if parsed.Frontmatter["name"] != "Barbed Tail" {
+		t.Errorf("name = %v, want Barbed Tail", parsed.Frontmatter["name"])
+	}
+	if parsed.ItemID != "barbed-tail" {
+		t.Errorf("itemID = %q, want barbed-tail", parsed.ItemID)
+	}
+	if parsed.Frontmatter["cost"] != "1 Point" {
+		t.Errorf("cost = %v, want \"1 Point\"", parsed.Frontmatter["cost"])
+	}
+}
+
+func TestFeatureSignatureTraitNoCost(t *testing.T) {
+	// Signature traits have no parenthetical cost — must not get a spurious cost.
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	ctx.Push(2, context.Metadata{"type": "ancestry", "id": "devil"})
+
+	section := &parser.Section{
+		Heading:      "Silver Tongue",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "feature"},
+		BodySource:   "Your innate magic allows you to twist how your words are perceived.",
+	}
+	ctx.Push(section.HeadingLevel, context.Metadata(section.Annotation))
+	parsed, err := (&FeatureParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	if _, ok := parsed.Frontmatter["cost"]; ok {
+		t.Errorf("cost should be absent, got %v", parsed.Frontmatter["cost"])
+	}
+}
+
 func TestAbilityMultiSubclass(t *testing.T) {
 	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
 	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})

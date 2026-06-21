@@ -51,14 +51,24 @@ func renderSubtree(section *parser.Section, rootLevel int, sccBySection map[*par
 			level = 6
 		}
 		heading := strings.Repeat("#", level) + " " + CleanHeading(child.Heading)
+		var attrs []string
 		if code := sccBySection[child]; code != "" {
-			heading += ` {data-scc="` + code + `"}`
+			attrs = append(attrs, `data-scc="`+code+`"`)
 		} else if child.Type() == "statblock" && child.NoClassify() {
 			// Unclassified inline statblock (@classify: false): no SCC code, so it
 			// carries a data-sb-inline marker instead. The raw stat table + feature
 			// blockquotes still render here verbatim (faithful for the data/ output);
 			// the v2 embed_cards post-pass upgrades the marked region to a .sb-wrap card.
-			heading += ` {data-sb-inline="true"}`
+			attrs = append(attrs, `data-sb-inline="true"`)
+		}
+		// Preserve the point cost CleanHeading strips (ancestry purchased traits:
+		// "(1 Point)") so embedded card renders (ancestry/Read pages) can show it;
+		// the standalone leaf reads it from frontmatter instead.
+		if cost := extractCostSuffix(child.Heading); cost != "" {
+			attrs = append(attrs, `data-cost="`+cost+`"`)
+		}
+		if len(attrs) > 0 {
+			heading += ` {` + strings.Join(attrs, " ") + `}`
 		}
 		childBody := renderSubtree(child, rootLevel, sccBySection)
 		if childBody != "" {

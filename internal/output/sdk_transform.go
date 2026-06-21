@@ -84,6 +84,9 @@ func transformTrait(sccCode string, parsed *content.ParsedContent) map[string]an
 	out["feature_type"] = ftype
 
 	setIfPresent(out, "name", fm, "name")
+	// Ancestry purchased traits carry an ancestry-point cost (e.g. "1 Point") in
+	// the heading; surface it on the structured feature (feature.schema.json `cost`).
+	setIfPresent(out, "cost", fm, "cost")
 
 	// Embed child ability as a nested feature object (mirrors kit signature_ability pattern)
 	if parsed.Children != nil {

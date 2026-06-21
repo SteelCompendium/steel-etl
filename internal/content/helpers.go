@@ -11,7 +11,7 @@ import (
 var (
 	nonAlphaNum   = regexp.MustCompile(`[^a-z0-9]+`)
 	leadTrail     = regexp.MustCompile(`^-+|-+$`)
-	costSuffixRe  = regexp.MustCompile(`\s*\(\d+\s+\w+\)\s*$`)
+	costSuffixRe  = regexp.MustCompile(`\s*\((\d+\s+\w+)\)\s*$`)
 	domainsLineRe = regexp.MustCompile(`(?m)^\*\*Domains:\*\*\s*(.+)$`)
 )
 
@@ -34,6 +34,16 @@ func findAncestorID(ctx *context.ContextStack, fromLevel int, targetType string)
 // "Alacrity of the Heart (11 Piety)" → "Alacrity of the Heart"
 func CleanHeading(s string) string {
 	return strings.TrimSpace(costSuffixRe.ReplaceAllString(s, ""))
+}
+
+// extractCostSuffix returns the cost embedded in a heading's trailing
+// parenthetical (the part CleanHeading strips), e.g. "Barbed Tail (1 Point)"
+// → "1 Point". Returns "" when the heading has no such suffix.
+func extractCostSuffix(s string) string {
+	if m := costSuffixRe.FindStringSubmatch(s); m != nil {
+		return strings.TrimSpace(m[1])
+	}
+	return ""
 }
 
 // extractDomains pulls the comma-separated domain list from a god/saint body's

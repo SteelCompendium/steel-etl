@@ -28,6 +28,7 @@ var (
 	// a markdown heading line, with optional trailing {…attr_list…}
 	traitHeadRe = regexp.MustCompile(`(?m)^(#{1,6})[ \t]+(.+?)[ \t]*(?:\{([^}]*)\})?[ \t]*$`)
 	traitSCCRe  = regexp.MustCompile(`data-scc="([^"]+)"`)
+	traitCostRe = regexp.MustCompile(`data-cost="([^"]+)"`)
 	// a **Benefit:** / **Drawback:** lead-labeled paragraph → titled segment
 	segLabelRe = regexp.MustCompile(`(?is)^\*\*\s*(benefit|drawback)s?\s*:?\s*\*\*\s*(.+)$`)
 	// single-* italic, run AFTER bold has consumed every **…** pair
@@ -56,6 +57,7 @@ func traitInline(s string) string {
 type traitNode struct {
 	level     int
 	name      string
+	cost      string // trailing parenthetical point cost, e.g. "1 Point" (else "")
 	scc       string
 	isAbility bool
 	content   string
@@ -81,7 +83,7 @@ func renderTraitCard(fm, body string) string {
 		name = "Trait"
 	}
 	eyebrow := traitEyebrow(fm)
-	tag := traitTag(parseFrontmatterField(fm, "level"), parseFrontmatterField(fm, "scc"))
+	tag := traitTag(parseFrontmatterField(fm, "cost"), parseFrontmatterField(fm, "level"), parseFrontmatterField(fm, "scc"))
 
 	intro, children := parseTraitTree(body)
 
@@ -103,7 +105,7 @@ func renderTraitCard(fm, body string) string {
 func renderTraitNode(n *traitNode) string {
 	intro, _ := parseTraitTree(n.content) // sub-headings already split into n.children
 	bodyHTML, _ := renderTraitBody(intro, n.children)
-	tag := traitTag("", n.scc)
+	tag := traitTag(n.cost, "", n.scc)
 	return wrapTraitSection("sc-trait", "", "", "", strings.TrimSpace(n.name), tag, bodyHTML)
 }
 
@@ -447,9 +449,19 @@ func traitEyebrow(fm string) string {
 
 var sccLevelRe = regexp.MustCompile(`level-(\d+)`)
 
-// traitTag builds the right-side level pill, preferring the frontmatter `level`
-// and falling back to a `level-N` segment in the scc. Empty when neither exists.
-func traitTag(level, scc string) string {
+// traitTag builds the right-side pill. A `cost` (e.g. an ancestry-point cost
+// "1 Point", or a "11 Piety" feature cost) takes precedence and renders with its
+// leading number emphasized; otherwise the level pill is shown, preferring the
+// frontmatter `level` and falling back to a `level-N` segment in the scc. Empty
+// when none of the three exist.
+func traitTag(cost, level, scc string) string {
+	if c := strings.TrimSpace(cost); c != "" {
+		if m := costNumRe.FindStringSubmatch(c); m != nil {
+			return fmt.Sprintf("<div class=\"sc-trait__tag\"><span class=\"num\">%s</span> %s</div>\n",
+				html.EscapeString(m[1]), html.EscapeString(strings.TrimSpace(m[2])))
+		}
+		return fmt.Sprintf("<div class=\"sc-trait__tag\">%s</div>\n", html.EscapeString(c))
+	}
 	n := strings.TrimSpace(level)
 	if n == "" {
 		if m := sccLevelRe.FindStringSubmatch(scc); m != nil {
@@ -460,6 +472,18 @@ func traitTag(level, scc string) string {
 		return ""
 	}
 	return fmt.Sprintf("<div class=\"sc-trait__tag\">Level <span class=\"num\">%s</span></div>\n", html.EscapeString(n))
+}
+
+// traitCostSuffixRe matches a heading's trailing "(N Unit)" cost parenthetical
+// (mirrors content.costSuffixRe). splitCostSuffix strips it from a sub-trait
+// heading and returns the bare name plus the captured cost ("" when absent).
+var traitCostSuffixRe = regexp.MustCompile(`\s*\((\d+\s+\w+)\)\s*$`)
+
+func splitCostSuffix(s string) (name, cost string) {
+	if m := traitCostSuffixRe.FindStringSubmatch(s); m != nil {
+		return strings.TrimSpace(traitCostSuffixRe.ReplaceAllString(s, "")), strings.TrimSpace(m[1])
+	}
+	return s, ""
 }
 
 // parseTraitTree splits a trait page body into the leading intro markdown (before
@@ -475,11 +499,17 @@ func parseTraitTree(body string) (intro string, roots []*traitNode) {
 	var flat []*traitNode
 	for i, loc := range locs {
 		level := loc[3] - loc[2] // length of the leading '#' run
-		name := strings.TrimSpace(body[loc[4]:loc[5]])
+		name, cost := splitCostSuffix(strings.TrimSpace(body[loc[4]:loc[5]]))
 		scc := ""
 		if loc[6] >= 0 {
-			if m := traitSCCRe.FindStringSubmatch(body[loc[6]:loc[7]]); m != nil {
+			attrs := body[loc[6]:loc[7]]
+			if m := traitSCCRe.FindStringSubmatch(attrs); m != nil {
 				scc = m[1]
+			}
+			// RenderSubtree strips "(N Point)" from the heading text and re-stamps
+			// it as data-cost (the name span above has none on embedded renders).
+			if m := traitCostRe.FindStringSubmatch(attrs); m != nil {
+				cost = m[1]
 			}
 		}
 		contentStart := loc[1]
@@ -490,6 +520,7 @@ func parseTraitTree(body string) (intro string, roots []*traitNode) {
 		flat = append(flat, &traitNode{
 			level:     level,
 			name:      name,
+			cost:      cost,
 			scc:       scc,
 			isAbility: strings.Contains(scc, "feature.ability."),
 			content:   strings.TrimSpace(body[contentStart:contentEnd]),

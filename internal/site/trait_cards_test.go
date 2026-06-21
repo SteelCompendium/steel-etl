@@ -318,11 +318,20 @@ Choose your domain feature.
 // The level pill falls back to a `level-N` segment in the scc when frontmatter has
 // no level (beastheart traits).
 func TestTraitTag_SCCFallback(t *testing.T) {
-	if got := traitTag("", "mcdm.beastheart.v1/feature.trait.beastheart.level-5/there-for-each-other"); !strings.Contains(got, `<span class="num">5</span>`) {
+	if got := traitTag("", "", "mcdm.beastheart.v1/feature.trait.beastheart.level-5/there-for-each-other"); !strings.Contains(got, `<span class="num">5</span>`) {
 		t.Errorf("expected level 5 from scc fallback, got %q", got)
 	}
-	if got := traitTag("", "mcdm.heroes.v1/feature.trait.censor/no-level"); got != "" {
+	if got := traitTag("", "", "mcdm.heroes.v1/feature.trait.censor/no-level"); got != "" {
 		t.Errorf("expected empty tag when no level anywhere, got %q", got)
+	}
+}
+
+// A purchased ancestry trait's point cost takes precedence and renders with the
+// number emphasized; the unit label follows.
+func TestTraitTag_Cost(t *testing.T) {
+	got := traitTag("1 Point", "", "mcdm.heroes.v1/feature.trait.devil/barbed-tail")
+	if !strings.Contains(got, `<span class="num">1</span>`) || !strings.Contains(got, "Point") {
+		t.Errorf("expected emphasized cost \"1 Point\", got %q", got)
 	}
 }
 
