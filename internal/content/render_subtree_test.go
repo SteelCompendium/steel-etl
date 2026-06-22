@@ -95,6 +95,38 @@ func TestRenderSubtree_LeafEqualsOwnBody(t *testing.T) {
 	}
 }
 
+func TestRenderSubtree_StampsSubclassOnChildHeadings(t *testing.T) {
+	container := &parser.Section{
+		Heading:      "4th-Level Domain Feature",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "feature"},
+		BodySource:   "Choose one.",
+		Children: []*parser.Section{
+			{Heading: "Oracular Warning", HeadingLevel: 5,
+				Annotation: map[string]string{"type": "feature", "subclass": "fate"},
+				BodySource: "Premonitions help."},
+			{Heading: "Plain Child", HeadingLevel: 5,
+				Annotation: map[string]string{"type": "feature"},
+				BodySource: "No subclass here."},
+		},
+	}
+	codes := map[*parser.Section]string{
+		container.Children[0]: "mcdm.heroes.v1/feature.censor.level-4/oracular-warning",
+		container.Children[1]: "mcdm.heroes.v1/feature.censor.level-4/plain-child",
+	}
+	got := RenderSubtree(container, codes)
+
+	if !strings.Contains(got, `data-subclass="fate"`) {
+		t.Errorf("child with subclass annotation should stamp data-subclass:\n%s", got)
+	}
+	// the plain child's heading line must carry data-scc but NOT data-subclass
+	for _, line := range strings.Split(got, "\n") {
+		if strings.Contains(line, "Plain Child") && strings.Contains(line, "data-subclass") {
+			t.Errorf("plain child must not get data-subclass:\n%s", line)
+		}
+	}
+}
+
 func TestRenderSubtree_DemotesOverflowHeadings(t *testing.T) {
 	// Retainer statblocks carry H8 "Level N … Advancement Ability" sub-labels,
 	// which are NOT collected as sections and would otherwise leak as literal

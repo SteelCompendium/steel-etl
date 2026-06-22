@@ -27,8 +27,9 @@ import (
 var (
 	// a markdown heading line, with optional trailing {…attr_list…}
 	traitHeadRe = regexp.MustCompile(`(?m)^(#{1,6})[ \t]+(.+?)[ \t]*(?:\{([^}]*)\})?[ \t]*$`)
-	traitSCCRe  = regexp.MustCompile(`data-scc="([^"]+)"`)
-	traitCostRe = regexp.MustCompile(`data-cost="([^"]+)"`)
+	traitSCCRe      = regexp.MustCompile(`data-scc="([^"]+)"`)
+	traitCostRe     = regexp.MustCompile(`data-cost="([^"]+)"`)
+	traitSubclassRe = regexp.MustCompile(`data-subclass="([^"]+)"`)
 	// a **Benefit:** / **Drawback:** lead-labeled paragraph → titled segment
 	segLabelRe = regexp.MustCompile(`(?is)^\*\*\s*(benefit|drawback)s?\s*:?\s*\*\*\s*(.+)$`)
 	// single-* italic, run AFTER bold has consumed every **…** pair
@@ -59,6 +60,7 @@ type traitNode struct {
 	name      string
 	cost      string // trailing parenthetical point cost, e.g. "1 Point" (else "")
 	scc       string
+	subclass  string
 	isAbility bool
 	content   string
 	children  []*traitNode
@@ -87,7 +89,8 @@ func renderTraitCard(fm, body string) string {
 
 	intro, children := parseTraitTree(body)
 
-	bodyHTML, leadProse := renderTraitBody(intro, children)
+	prefix := traitEyebrowPrefix(fm)
+	bodyHTML, leadProse := renderTraitBody(intro, children, prefix)
 
 	cls := "sc-trait sc-trait--crest"
 	if leadProse {
@@ -100,13 +103,23 @@ func renderTraitCard(fm, body string) string {
 	return wrapTraitSection(cls, traitFeatureAttrs(children), traitCrest(), eyebrow, name, tag, bodyHTML)
 }
 
-// renderTraitNode renders a nested sub-trait (no eyebrow, no crest, no drop cap;
-// its level pill is derived from the scc). Recurses through its own children.
-func renderTraitNode(n *traitNode) string {
+// renderTraitNode renders a nested sub-trait (no crest, no drop cap; its level pill
+// is derived from the scc). It carries the full eyebrow (inherited prefix + its own
+// subclass) when it has a subclass, else stays eyebrow-less. Recurses through children.
+func renderTraitNode(n *traitNode, prefix string) string {
 	intro, _ := parseTraitTree(n.content) // sub-headings already split into n.children
-	bodyHTML, _ := renderTraitBody(intro, n.children)
+	bodyHTML, _ := renderTraitBody(intro, n.children, prefix)
 	tag := traitTag(n.cost, "", n.scc)
-	return wrapTraitSection("sc-trait", "", "", "", strings.TrimSpace(n.name), tag, bodyHTML)
+	eyebrow := ""
+	if n.subclass != "" {
+		sub := titleCase(strings.ReplaceAll(n.subclass, "-", " "))
+		if prefix != "" {
+			eyebrow = prefix + " · " + sub
+		} else {
+			eyebrow = sub
+		}
+	}
+	return wrapTraitSection("sc-trait", "", "", eyebrow, strings.TrimSpace(n.name), tag, bodyHTML)
 }
 
 // traitFeatureAttrs returns the data-* attributes describing a trait's direct
@@ -167,7 +180,7 @@ func wrapTraitSection(cls, attrs, crest, eyebrow, name, tag, bodyHTML string) st
 // renderTraitBody renders a node's own intro blocks, then (if any) its children
 // wrapped in a single .sc-trait__nest rail. Returns leadProse=true when the first
 // intro block is plain prose (eligible for the drop cap).
-func renderTraitBody(intro string, children []*traitNode) (body string, leadProse bool) {
+func renderTraitBody(intro string, children []*traitNode, prefix string) (body string, leadProse bool) {
 	var b strings.Builder
 	first := true
 	signatureHint := strings.Contains(strings.ToLower(intro), "signature")
@@ -210,7 +223,7 @@ func renderTraitBody(intro string, children []*traitNode) (body string, leadPros
 			if c.isAbility {
 				b.WriteString(renderAbilityCard(synthAbilityFM(c.name, signatureHint), c.content))
 			} else {
-				b.WriteString(renderTraitNode(c))
+				b.WriteString(renderTraitNode(c, prefix))
 			}
 		}
 		b.WriteString("</div>\n")
@@ -426,7 +439,10 @@ func featureNoun(featureType string) string {
 // traitEyebrow is the source context line: "<Class> Feature" / "<Ancestry> Trait"
 // (small-caps), optionally suffixed with the subclass when present (e.g. an
 // order/domain). The level lives in the right-hand tag, so it is not duplicated here.
-func traitEyebrow(fm string) string {
+// traitEyebrowPrefix is the class/source + feature-noun portion of the eyebrow,
+// without the subclass suffix: "<Class> Feature" / "<Ancestry> Trait". Nested
+// children inherit this from their container and append their own subclass.
+func traitEyebrowPrefix(fm string) string {
 	source := ""
 	for _, key := range []string{"class", "ancestry", "kit"} {
 		if v := strings.TrimSpace(parseFrontmatterField(fm, key)); v != "" {
@@ -440,7 +456,12 @@ func traitEyebrow(fm string) string {
 	if fs := strings.TrimSpace(parseFrontmatterField(fm, "feature_source")); fs != "" && fs != "summoner" && source != "" {
 		source = strings.TrimSpace(source + " " + titleCase(strings.ReplaceAll(fs, "-", " ")))
 	}
-	label := strings.TrimSpace(source + " " + featureNoun(parseFrontmatterField(fm, "type")))
+	return strings.TrimSpace(source + " " + featureNoun(parseFrontmatterField(fm, "type")))
+}
+
+// traitEyebrow is the full source context line, with the subclass appended when present.
+func traitEyebrow(fm string) string {
+	label := traitEyebrowPrefix(fm)
 	if sub := strings.TrimSpace(parseFrontmatterField(fm, "subclass")); sub != "" {
 		label += " · " + titleCase(strings.ReplaceAll(sub, "-", " "))
 	}
@@ -501,6 +522,7 @@ func parseTraitTree(body string) (intro string, roots []*traitNode) {
 		level := loc[3] - loc[2] // length of the leading '#' run
 		name, cost := splitCostSuffix(strings.TrimSpace(body[loc[4]:loc[5]]))
 		scc := ""
+		sub := ""
 		if loc[6] >= 0 {
 			attrs := body[loc[6]:loc[7]]
 			if m := traitSCCRe.FindStringSubmatch(attrs); m != nil {
@@ -510,6 +532,9 @@ func parseTraitTree(body string) (intro string, roots []*traitNode) {
 			// it as data-cost (the name span above has none on embedded renders).
 			if m := traitCostRe.FindStringSubmatch(attrs); m != nil {
 				cost = m[1]
+			}
+			if m := traitSubclassRe.FindStringSubmatch(attrs); m != nil {
+				sub = m[1]
 			}
 		}
 		contentStart := loc[1]
@@ -522,6 +547,7 @@ func parseTraitTree(body string) (intro string, roots []*traitNode) {
 			name:      name,
 			cost:      cost,
 			scc:       scc,
+			subclass:  sub,
 			isAbility: strings.Contains(scc, "feature.ability."),
 			content:   strings.TrimSpace(body[contentStart:contentEnd]),
 		})

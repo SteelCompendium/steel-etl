@@ -19,6 +19,27 @@ func TestTraitEyebrow_PlainFeatureSaysFeature(t *testing.T) {
 	}
 }
 
+// A nested option card (a child under a generic container like "4th-Level Domain
+// Feature") that carries a subclass must show the full leaf-style eyebrow, inheriting
+// the container's class prefix. A sibling without a subclass stays eyebrow-less.
+func TestRenderTraitCard_NestedChildShowsSubclassEyebrow(t *testing.T) {
+	fm := "name: 4th-Level Domain Feature\ntype: feature\nclass: censor\nscc: mcdm.heroes.v1/feature.censor.level-4/4th-level-domain-feature"
+	body := "\nChoose one of the following.\n\n" +
+		"### Oracular Warning {data-scc=\"mcdm.heroes.v1/feature.censor.level-4/oracular-warning\" data-subclass=\"fate\"}\n\n" +
+		"Premonitions help you stay alive.\n\n" +
+		"### Plain Child {data-scc=\"mcdm.heroes.v1/feature.censor.level-4/plain-child\"}\n\n" +
+		"No subclass here.\n"
+	got := renderTraitCard(fm, body)
+
+	if !strings.Contains(got, `<div class="sc-trait__eyebrow"><span class="sc-trait__dia"></span>Censor Feature · Fate</div>`) {
+		t.Errorf("nested subclass child should carry the full eyebrow:\n%s", got)
+	}
+	// exactly 2 eyebrows: the container ("Censor Feature") + the Fate child.
+	if n := strings.Count(got, "sc-trait__eyebrow"); n != 2 {
+		t.Errorf("expected exactly 2 eyebrows (container + Fate child), got %d:\n%s", n, got)
+	}
+}
+
 // A real ancestry trait (type: trait) keeps the "<Ancestry> Trait" eyebrow.
 func TestTraitEyebrow_AncestryTraitSaysTrait(t *testing.T) {
 	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait"
