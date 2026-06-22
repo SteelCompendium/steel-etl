@@ -243,8 +243,11 @@ func renderStatblockChars(list []sbChar) string {
 	return b.String()
 }
 
-// renderStatblockSticky ports renderSticky(): the mini-header node (present in
-// markup; revealed by the client script on scroll).
+// renderStatblockSticky emits the mini-header node, revealed on scroll by a CSS
+// scroll-driven animation (steel-statblock.css). The .sb__sticky element is a
+// zero-height position:sticky ANCHOR; the visible bar (.sb__sticky-inner) is
+// absolutely positioned inside it so its reveal never reflows the card — see the
+// STICKY section in steel-statblock.css for why that decoupling is mandatory.
 func renderStatblockSticky(d sbIsland) string {
 	var defs strings.Builder
 	for _, x := range d.Defenses {
@@ -265,6 +268,7 @@ func renderStatblockSticky(d sbIsland) string {
 		meta.WriteString(`<span class="sm"><b>` + sbEsc(kv[0]) + `</b>` + sbEsc(kv[1]) + `</span>`)
 	}
 	return `<div class="sb__sticky" aria-hidden="true">` +
+		`<div class="sb__sticky-inner">` +
 		`<div class="sb__sticky-row1">` +
 		`<span class="sb__sticky-id"><span class="sb__sticky-name">` + sbEsc(d.Name) + `</span>` +
 		`<span class="sb__sticky-role" data-role="` + sbEsc(d.RoleKey) + `">` + sbEsc(d.Role) + `</span></span>` +
@@ -272,6 +276,7 @@ func renderStatblockSticky(d sbIsland) string {
 		`<span class="sb__sticky-chars">` + chars.String() + `</span></span>` +
 		`</div>` +
 		`<div class="sb__sticky-row2">` + meta.String() + `</div>` +
+		`</div>` +
 		`</div>`
 }
 
