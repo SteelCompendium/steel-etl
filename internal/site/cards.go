@@ -82,8 +82,14 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 	// is merged in by mergeGroupLanding — not listed as a card here.
 	case leaf && pathHasSegment(dir, "skill"):
 		cardType = "skill"
-	// Retainers are a flat leaf dir (retainer/<id>, statblock/ hoisted away).
-	case leaf && pathHasSegment(dir, "retainer"):
+	// Retainers are a flat leaf dir (retainer/<id>, statblock/ hoisted away). The
+	// "retainer" segment is supplied by an ancestor, so this also matches the
+	// sibling role-advancement/ landing — a leaf dir of type:featureblock role
+	// pages with no stat grid to preview. Gate on the leaves actually being
+	// statblocks so that featureblock dir falls through to the group-landing
+	// builder (which renders them as featureblock cards) instead of empty
+	// all-dash .sb-prev cards.
+	case leaf && pathHasSegment(dir, "retainer") && dirHasStatblockLeaf(dir, files):
 		cardType = "retainer"
 	case leaf && pathHasSegment(dir, "dynamic-terrain"):
 		cardType = "dynamic-terrain"
@@ -126,6 +132,20 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 	}
 	sb.WriteString("</div>\n")
 	return sb.String(), true
+}
+
+// dirHasStatblockLeaf reports whether any of dir's leaf files is a type:statblock
+// page. Used to keep the retainer .sb-prev preview case from claiming sibling
+// featureblock leaf dirs (e.g. the role-advancement landing) that share the
+// "retainer" path segment but carry no stat grid.
+func dirHasStatblockLeaf(dir string, files []string) bool {
+	for _, f := range files {
+		fm, _ := splitFrontmatter(readFile(filepath.Join(dir, f)))
+		if strings.TrimSpace(parseFrontmatterField(fm, "type")) == "statblock" {
+			return true
+		}
+	}
+	return false
 }
 
 // pathHasSegment reports whether any path segment of dir equals seg.

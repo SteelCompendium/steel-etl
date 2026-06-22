@@ -99,6 +99,7 @@ level: 1
 name: Angulotl Hopper
 role: Harrier
 size: 1S
+type: statblock
 `
 
 func TestRetainerPreviewCard(t *testing.T) {
@@ -464,5 +465,34 @@ func TestBuildCardsContent_Bestiary(t *testing.T) {
 	got, ok = buildCardsContent(dt, "mechanisms", []string{"pillar.md"}, nil)
 	if !ok || !strings.Contains(got, "Dynamic Terrain") {
 		t.Errorf("terrain leaf wrong:\n%s", got)
+	}
+}
+
+// The retainer role-advancement landing (monster/retainer/role-advancement/) is a
+// leaf dir of type:featureblock role pages. It must render as featureblock cards,
+// NOT statblock .sb-prev preview cards — the buildCardsContent "retainer" case
+// keys on the path segment "retainer", which an ancestor supplies, so it must not
+// claim a featureblock leaf dir (which has no statblock stat grid to show).
+func TestRoleAdvancementRendersFeatureblockCards(t *testing.T) {
+	root := t.TempDir()
+	dir := filepath.Join(root, "monster", "retainer", "role-advancement")
+	role := func(name, file string) {
+		fm := "name: " + name + "\ntype: featureblock\nscc: mcdm.monsters.v1/monster.retainer.role-advancement/" + strings.TrimSuffix(file, ".md") +
+			"\nfeatures:\n  - name: Go for the Jugular\n    level: 4\n"
+		writeMD(t, filepath.Join(dir, file), fm)
+	}
+	role("Ambusher Abilities", "ambusher.md")
+	role("Artillery Abilities", "artillery.md")
+
+	got := buildIndexContent(dir, "role-advancement",
+		[]string{"ambusher.md", "artillery.md"}, nil)
+	if strings.Contains(got, "sb-prev") || strings.Contains(got, "sb-wrap") {
+		t.Errorf("role-advancement featureblocks rendered as statblock preview cards:\n%s", got)
+	}
+	if !strings.Contains(got, "Ambusher Abilities") || !strings.Contains(got, "Artillery Abilities") {
+		t.Errorf("expected both role names in cards:\n%s", got)
+	}
+	if !strings.Contains(got, `class="sc-card`) {
+		t.Errorf("expected featureblock .sc-card surface:\n%s", got)
 	}
 }
