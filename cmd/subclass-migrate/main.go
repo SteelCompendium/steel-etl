@@ -108,12 +108,35 @@ func parseKey(k string) (class, bucket, slug string, ok bool) {
 
 // overrides maps a metadata key whose (class,bucket,slug) does not auto-match to
 // the resolved (class,bucket,slug) of the correct canonical annotated heading.
-// Populated in Task 2.
-var overrides = map[string]key{}
+//
+// The 11 "conduit" domain features below are shared divine-domain features whose
+// single canonical annotated heading lives under the CENSOR chapter's class
+// context (censor and conduit both draw domain features); their subclass is the
+// domain name.
+var overrides = map[string]key{
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:blessing-of-life":            {"censor", "feature", "blessing-of-life"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:impervious-touch":            {"censor", "feature", "impervious-touch"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:improved-hands-of-the-maker": {"censor", "feature", "improved-hands-of-the-maker"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:improved-sanctified-weapon":  {"censor", "feature", "improved-sanctified-weapon"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:invocation-of-the-heart":     {"censor", "feature", "invocation-of-the-heart"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:light-of-revelation":         {"censor", "feature", "light-of-revelation"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:oracular-warning":            {"censor", "feature", "oracular-warning"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:saints-epiphany":             {"censor", "feature", "saints-epiphany"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:seance":                      {"censor", "feature", "seance"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:windwalk":                    {"censor", "feature", "windwalk"},
+	"mcdm.heroes.v1:feature.trait.conduit.4th-level-feature:wode-road":                   {"censor", "feature", "wode-road"},
+}
 
 // skip lists metadata keys intentionally not injected (e.g. the fact belongs to a
 // @type: statblock entity that indexDoc does not index). Reported, not silent.
-var skip = map[string]string{}
+//
+// source-of-earth-statblock is the summoned creature's nested statblock; its
+// Earth subclass is already carried by the parent "Summon Source of Earth"
+// ability (feature.ability.elementalist.level-8/summon-source-of-earth), which is
+// injected normally — so the statblock entry needs no separate annotation.
+var skip = map[string]string{
+	"mcdm.heroes.v1:feature.trait.elementalist.8th-level-feature:source-of-earth-statblock": "covered by parent summon-source-of-earth ability",
+}
 
 func main() {
 	docPath := flag.String("doc", "input/heroes/Draw Steel Heroes.md", "heroes markdown")
