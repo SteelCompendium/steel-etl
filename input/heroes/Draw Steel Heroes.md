@@ -4887,19 +4887,19 @@ You gain a domain feature from your domain, as shown on the 1st-Level [Censor](s
 | Trickery                         | [Inspired Deception](scc.v1:mcdm.heroes.v1/feature.censor.level-1/inspired-deception)            | Intrigue      |
 | War                              | [Sanctified Weapon](scc.v1:mcdm.heroes.v1/feature.censor.level-1/sanctified-weapon)             | Exploration   |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: love -->
 ##### Blessing of Compassion
 
 You exude a magic presence that can soothe those willing to socially engage with you. You gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on any [test](scc.v1:mcdm.heroes.v1/rule.test/test) made to assist another creature with a [test](scc.v1:mcdm.heroes.v1/rule.test/test).
 
 Additionally, when you are present at the start of a negotiation, one [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) of your choice has their patience increased by 1 (to a maximum of 5), and the first [test](scc.v1:mcdm.heroes.v1/rule.test/test) made to influence them gains an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: knowledge -->
 ##### Blessing of Comprehension
 
 You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the [project source](scc.v1:mcdm.heroes.v1/rule.downtime/project-source) for any crafting or [research project](scc.v1:mcdm.heroes.v1/rule.downtime/research-project) (see Chapter 12: [Downtime Projects](scc.v1:mcdm.heroes.v1/chapter/downtime-projects)).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: storm -->
 ##### Blessing of Fortunate Weather
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can decide the weather conditions within 100 squares. Until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), the weather conditions you establish follow you through any mundane outdoor locations. Choose one of the following types of weather, each of which grants a benefit to you and your allies:
@@ -4914,12 +4914,12 @@ Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), y
 
 If you are in the same area as a creature using this or a similar feature who has chosen a different weather effect, the features negate each other where their areas overlap.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: nature -->
 ##### Faithful Friend
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: nature -->
 > ###### Faithful Friend
 > 
 > *An animal spirit is drawn to you, sharing their senses with you and serving you faithfully.*
@@ -4935,7 +4935,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: death -->
 > ###### Grave Speech
 > 
 > *You commune with the lingering soul of the recently dead.*
@@ -4951,7 +4951,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: creation -->
 > ###### Hands of the Maker
 > 
 > *You craft objects with the power of your mind.*
@@ -4962,32 +4962,32 @@ You have the following ability.
 > 
 > **Effect:** You create a mundane object of [size](scc.v1:mcdm.heroes.v1/rule.character/size) 1S or smaller. You can maintain a number of objects created this way equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score. You can destroy an object created this way with a thought, no matter how far you are from it (no action required).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: sun -->
 ##### Inner Light
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose yourself or one ally who is also finishing a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) to gain the benefit of a divine ritual. You place a ray of [morning light](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-2/morning-light) into the chosen character's soul, granting them a +1 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [saving throws](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) that lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: trickery -->
 ##### Inspired Deception
 
 The gods favor your thievery with magic. Whenever you make a [test](scc.v1:mcdm.heroes.v1/rule.test/test) that uses a skill you have from the [intrigue skill group](scc.v1:mcdm.heroes.v1/skill.group/intrigue), you can use [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) on the [test](scc.v1:mcdm.heroes.v1/rule.test/test) instead of another [characteristic](scc.v1:mcdm.heroes.v1/rule.character/characteristic).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fate -->
 ##### Oracular Visions
 
 Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a [test](scc.v1:mcdm.heroes.v1/rule.test/test), you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on the [test](scc.v1:mcdm.heroes.v1/rule.test/test). You lose any remaining fate points when you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: protection -->
 ##### Protective Circle
 
 You can spend 10 uninterrupted minutes to create a [protective circle](scc.v1:mcdm.heroes.v1/feature.censor.level-1/protective-circle) on the ground large enough to hold one [size](scc.v1:mcdm.heroes.v1/rule.character/size) 1 creature. The circle lasts for 24 hours, until you create another, or until you dismiss it (no action required). Only creatures you designate at the time of drawing the circle can enter and exit the area. While in the [protective circle](scc.v1:mcdm.heroes.v1/feature.censor.level-1/protective-circle), a creature can't be targeted by strikes.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: life -->
 ##### Revitalizing Ritual
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose yourself or one ally who is also finishing a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) to gain the benefit of a divine ritual. The chosen character gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to their [recovery value](scc.v1:mcdm.heroes.v1/rule.health/recoveries) equal to your level that lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: war -->
 ##### Sanctified Weapon
 
 As a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity, you can bless a weapon. Any creature who wields the weapon gains a +1 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [rolled damage](scc.v1:mcdm.heroes.v1/rule.damage/rolled-damage) with abilities that use the weapon. This benefit lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
@@ -5234,32 +5234,32 @@ Your [censor order](scc.v1:mcdm.heroes.v1/feature.censor.level-1/censor-order) g
 | Oracle                   | [It Was Foretold](scc.v1:mcdm.heroes.v1/feature.censor.level-2/it-was-foretold), [Judge of Character](scc.v1:mcdm.heroes.v1/feature.censor.level-2/judge-of-character)  |
 | Paragon                  | [Lead by Example](scc.v1:mcdm.heroes.v1/feature.censor.level-2/lead-by-example), [Stalwart Icon](scc.v1:mcdm.heroes.v1/feature.censor.level-2/stalwart-icon)       |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: oracle -->
 ##### It Was Foretold
 
 Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one main action before any other creature and before your first [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). Additionally, whenever the Director calls for a [montage test](scc.v1:mcdm.heroes.v1/rule.test/montage-test), you can make one free [test](scc.v1:mcdm.heroes.v1/rule.test/test) before the montage begins, which counts as an earned success or failure as usual.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: oracle -->
 ##### Judge of Character
 
 Your focus on your fragmentary visions grants divine insight into the world and its creatures beyond your usual senses. Whenever you would make an [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) [test](scc.v1:mcdm.heroes.v1/rule.test/test), you can make a [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) [test](scc.v1:mcdm.heroes.v1/rule.test/test) instead.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: paragon -->
 ##### Lead by Example
 
 Your devotion to your deity allows you to take command of the battlefield, letting your allies benefit from your wisdom. While you are [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to a creature, your allies gain the benefits of [flanking](scc.v1:mcdm.heroes.v1/rule.combat/flanking) against that creature. Additionally, your allies gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to aid other creatures with their [tests](scc.v1:mcdm.heroes.v1/rule.test/test).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: exorcist -->
 ##### Saint's Vigilance
 
 You have honed your ability to detect sin and can use it to find those who hide from justice. Any creature judged by you can't use the [Hide](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver. Additionally, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) when searching for hidden creatures. If you find a hidden creature, you can use your [Judgment](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against them as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: exorcist -->
 ##### A Sense for Truth
 
 You are trained in secret techniques from your order that allow you to discern the truth with [supernatural](scc.v1:mcdm.heroes.v1/rule.general/supernatural) precision. If a creature is of a lower level than you, you automatically know when they are lying, though you don't necessarily know the actual truth behind their lie. Additionally, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to detect lies or hidden motives.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: paragon -->
 ##### Stalwart Icon
 
 You exhibit a small spark of your deity's power, causing creatures to trust or fear you, depending on what you need. You gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to intimidate or persuade others.
@@ -5273,7 +5273,7 @@ Your [censor order](scc.v1:mcdm.heroes.v1/feature.censor.level-1/censor-order) g
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Wrath -->
+<!-- @type: ability | @cost: 5 Wrath | @subclass: exorcist -->
 > ###### It Is Justice You Fear (5 Wrath)
 > 
 > *I am but a vessel. Your own deeds weigh upon you.*
@@ -5290,7 +5290,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** If the target is already [frightened](scc.v1:mcdm.heroes.v1/condition/frightened) of you or another creature and this ability would frighten them again, they instead take psychic damage equal to twice your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score.
 
-<!-- @type: ability | @cost: 5 Wrath -->
+<!-- @type: ability | @cost: 5 Wrath | @subclass: exorcist -->
 > ###### Revelator (5 Wrath)
 > 
 > *You channel holy energy to harm unbelievers and reveal those hidden from your [judgment](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/judgment).*
@@ -5305,7 +5305,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Wrath | @subtype: triggered -->
+<!-- @type: ability | @cost: 5 Wrath | @subtype: triggered | @subclass: oracle -->
 > ###### Prescient Grace (5 Wrath)
 > 
 > *Gifted by a prescient vision, you warn an ally of an impending attack.*
@@ -5318,7 +5318,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** You can spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries) to allow the target to regain [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc.v1:mcdm.heroes.v1/rule.health/recoveries). The target can then take their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) immediately before the triggering enemy.
 
-<!-- @type: ability | @cost: 5 Wrath -->
+<!-- @type: ability | @cost: 5 Wrath | @subclass: oracle -->
 > ###### With My Blessing (5 Wrath)
 > 
 > *A word in prayer, and the gods show the way.*
@@ -5333,7 +5333,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Wrath -->
+<!-- @type: ability | @cost: 5 Wrath | @subclass: paragon -->
 > ###### Blessing of the Faithful (5 Wrath)
 > 
 > *The gods reward your faith.*
@@ -5344,7 +5344,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), each target gains 1 [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge) at the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 5 Wrath -->
+<!-- @type: ability | @cost: 5 Wrath | @subclass: paragon -->
 > ###### Sentenced (5 Wrath)
 > 
 > *The shock of your condemnation freezes your enemy in their boots.*
@@ -5467,7 +5467,7 @@ You gain a domain feature from your domain, as shown on the 4th-Level [Censor](s
 | Trickery                         | [Blessing of Secrets](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-4/blessing-of-secrets)         |
 | War                              | [Improved Sanctified Weapon](scc.v1:mcdm.heroes.v1/feature.censor.level-4/improved-sanctified-weapon)  |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: life -->
 ##### Blessing of Life
 
 Your divine presence causes those you deem worthy to recover quickly from a fight. Whenever an ally within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [My Life for Yours](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability regains [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they regain additional [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score.
@@ -5477,7 +5477,7 @@ Your divine presence causes those you deem worthy to recover quickly from a figh
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: trickery -->
 > ###### Blessing of Secrets
 > 
 > *You project an illusory [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura) that makes you and allies harder to notice.*
@@ -5488,54 +5488,54 @@ You have the following ability.
 > 
 > **Effect:** Each creature in the area has a double [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to [hide](scc.v1:mcdm.heroes.v1/skill.intrigue/hide) or [sneak](scc.v1:mcdm.heroes.v1/skill.intrigue/sneak). The [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura) lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: protection -->
 ##### Impervious Touch
 
 As a maneuver, you can touch an object with a [size](scc.v1:mcdm.heroes.v1/rule.character/size) equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score or smaller and place a protective spell on it. The object has immunity all to untyped damage. You can maintain this spell on a number of objects equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score, and you can end the spell on any object at any time (no action required).
 
 Additionally, you can place this spell on a building or vehicle (or a similar structure with the Director's approval) that is of a [size](scc.v1:mcdm.heroes.v1/rule.character/size) larger than your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score. You can place the spell on only one such target at a time, and you can maintain the spell on a larger target and a number of objects equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score simultaneously.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: creation -->
 ##### Improved Hands of the Maker
 
 When you use your [Hands of the Maker](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/hands-of-the-maker) ability, you can create a mundane object that is [size](scc.v1:mcdm.heroes.v1/rule.character/size) 2 or smaller.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: war -->
 ##### Improved Sanctified Weapon
 
 The weapon improved by your [Sanctified Weapon](scc.v1:mcdm.heroes.v1/feature.censor.level-1/sanctified-weapon) feature grants a +3 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [rolled damage](scc.v1:mcdm.heroes.v1/rule.damage/rolled-damage) instead of +1.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: love -->
 ##### Invocation of the Heart
 
 As a main action, you forge a bond of love and friendship with one willing creature you touch. While this bond is active, you can telepathically speak with the creature over any [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance), including across different worlds. Additionally, while this bond is active, you can attempt to assist the creature with any [test](scc.v1:mcdm.heroes.v1/rule.test/test) they make regardless of their proximity to you. You can maintain only one bond at a time, and you can end a bond at any time (no action required).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: sun -->
 ##### Light of Revelation
 
 As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares until you dismiss the light (no action required). This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to notice hidden objects and entrances and to detect [supernatural](scc.v1:mcdm.heroes.v1/rule.general/supernatural) illusions.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fate -->
 ##### Oracular Warning
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can share the vague dreams of the future granted to you by the gods with allies who finished the [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) with you. These premonitions help you and your allies stay alive, granting each of you [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) equal to 10 + your level that lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: death -->
 ##### Seance
 
 You can commune with a network of spirits. As a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity, you speak the name of a creature who died and isn't undead. If the creature's spirit is free and willing to speak with you, they appear and you can have a conversation with them. During this time, the creature responds to you as they would have in life. If the creature isn't free or willing to appear, you can speak another name or choose another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: knowledge -->
 ##### Saint's Epiphany
 
 At the start of a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can inspire yourself or another creature taking the same [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) with divine knowledge. If the target makes a [project roll](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) during this [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), they can add 1d10 plus your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score to the roll.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: storm -->
 ##### Windwalk
 
 While you have 5 or more [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories), you can [fly](scc.v1:mcdm.heroes.v1/movement/fly). If you can already [fly](scc.v1:mcdm.heroes.v1/movement/fly), you have a +2 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) while [flying](scc.v1:mcdm.heroes.v1/movement/fly) instead.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: nature -->
 ##### Wode Road
 
 As a main action, you touch a living tree and make it part of a divine transportation network. You can maintain a number of trees in your network equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score. Whenever you touch any tree in your network, you can use a main action to [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) yourself and any willing creatures within 10 squares of you to a tree in your network on the same world. If a tree in your network dies, it is no longer part of the network. You can remove a tree from your network no matter your [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) from it, including across different worlds (no action required).
@@ -5558,19 +5558,19 @@ Your [censor order](scc.v1:mcdm.heroes.v1/feature.censor.level-1/censor-order) g
 | Oracle                   | [Prophecy](scc.v1:mcdm.heroes.v1/feature.censor.level-5/prophecy)      |
 | Paragon                  | [Stand Fast](scc.v1:mcdm.heroes.v1/feature.censor.level-5/stand-fast)!   |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: exorcist -->
 ##### Evil Revealed
 
 Your order has taught you methods to discern the disguises of both mortals and monsters. You automatically see through disguises and illusions created by creatures of your level or lower, and you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to see through the disguises and illusions of more powerful creatures. Whenever you see through a creature's disguise or illusion, you can use your [Judgment](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against them as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: oracle -->
 ##### Prophecy
 
 You can better sift through the constant fragmentary visions from your deity and act to make them manifest. Each time you earn 1 or more [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories), you can make a number of 2d10 rolls equal to the number of [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories) you earned. Record each roll in order. Then whenever you or a creature within 10 squares makes a [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll), you can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to replace the total on the dice with your first recorded roll.
 
 You discard each roll as it is used, and each time you earn [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories), you add new rolls to the bottom of the list. Any unused rolls are discarded when you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature | @id: stand-fast -->
+<!-- @type: feature | @id: stand-fast | @subclass: paragon -->
 ##### Stand Fast!
 
 Your divine spark grows in power, allowing you and your allies to focus and endure. At the start of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can spend 1d6 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) to end one effect on you that is ended by a [saving throw](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). Any ally who starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) within 5 squares of you can also spend [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) to gain this benefit.
@@ -5669,7 +5669,7 @@ Your [censor order](scc.v1:mcdm.heroes.v1/feature.censor.level-1/censor-order) g
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Wrath | @id: begone -->
+<!-- @type: ability | @cost: 9 Wrath | @id: begone | @subclass: exorcist -->
 > ###### Begone! (9 Wrath)
 > 
 > *You terrify your enemies into retreating, creating chaos in their ranks.*
@@ -5684,7 +5684,7 @@ Choose one of the following abilities.
 > - **12-16:** 6 psychic damage; [slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) 5
 > - **17+:** 8 psychic damage; [slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) 7
 
-<!-- @type: ability | @cost: 9 Wrath | @subtype: triggered -->
+<!-- @type: ability | @cost: 9 Wrath | @subtype: triggered | @subclass: exorcist -->
 > ###### Pain of Your Own Making (9 Wrath)
 > 
 > *You reverse the effects from an evildoer.*
@@ -5701,7 +5701,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Wrath -->
+<!-- @type: ability | @cost: 9 Wrath | @subclass: oracle -->
 > ###### Burden of Evil (9 Wrath)
 > 
 > *You reveal a vision of your enemies' fate that causes them to scramble as it staggers them.*
@@ -5716,7 +5716,7 @@ Choose one of the following abilities.
 > - **12-16:** [Slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) 5; I < AVERAGE, [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** [Slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) 7; I < STRONG, [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) (save ends)
 
-<!-- @type: ability | @cost: 9 Wrath -->
+<!-- @type: ability | @cost: 9 Wrath | @subclass: oracle -->
 > ###### Edict of Peace (9 Wrath)
 > 
 > *You anticipate your foes' moves and deny them.*
@@ -5731,7 +5731,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Wrath -->
+<!-- @type: ability | @cost: 9 Wrath | @subclass: paragon -->
 > ###### Congregation (9 Wrath)
 > 
 > *You focus your allies' wrath on a chosen foe.*
@@ -5748,7 +5748,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** Each ally can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) up to 2 squares and gains 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge) before making the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike).
 
-<!-- @type: ability | @cost: 9 Wrath | @subtype: triggered -->
+<!-- @type: ability | @cost: 9 Wrath | @subtype: triggered | @subclass: paragon -->
 > ###### Intercede (9 Wrath)
 > 
 > *You take your ally's place.*
@@ -5793,17 +5793,17 @@ You gain a domain feature from your domain, as shown on the 7th-Level [Censor](s
 | Trickery   | [Trinity of Trickery](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-7/trinity-of-trickery)          |
 | War        | [Your Triumphs Are Remembered](scc.v1:mcdm.heroes.v1/feature.censor.level-7/your-triumphs-are-remembered) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: protection -->
 ##### Blessing of Iron
 
 The gods send divine favor to you and your allies. While you are not [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), enemies take a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) against you or any ally within 3 squares of you.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: love -->
 ##### Covenant of the Heart
 
 You can maintain bonds with up to three willing creatures using your [Invocation of the Heart](scc.v1:mcdm.heroes.v1/feature.censor.level-4/invocation-of-the-heart) feature. Additionally, you have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: love -->
 > ###### Guided to Your Side
 > 
 > *You concentrate on a friend and [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) to them.*
@@ -5814,27 +5814,27 @@ You can maintain bonds with up to three willing creatures using your [Invocation
 > 
 > **Effect:** Each target is [teleport](scc.v1:mcdm.heroes.v1/movement/teleport)ed to unoccupied spaces within 5 squares of a willing creature who you are bonded to with your [Invocation of the Heart](scc.v1:mcdm.heroes.v1/feature.censor.level-4/invocation-of-the-heart) feature. You don't need [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to the bonded creature but you must be on the same world.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: creation -->
 ##### Divine Quartermaster
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose a treasure with a project goal equal to 50 times your level or less. You gain a divine version of this treasure that lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) or it is consumed.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: life -->
 ##### Font of Grace
 
 Each time you use your [My Life for Yours](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability, you gain 1 wrath that can be spent only on that ability during the same [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). If you don't use this wrath, it is lost. Additionally, the target of [My Life for Yours](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) gains 10 [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: knowledge -->
 ##### Gods' Library
 
 You can gain access to information you need through prayer, so that you no longer require research materials for crafting and [research projects](scc.v1:mcdm.heroes.v1/rule.downtime/research-project) (see Chapter 12: [Downtime Projects](scc.v1:mcdm.heroes.v1/chapter/downtime-projects)). Additionally, you add your level to [project rolls](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) you make for crafting and [research projects](scc.v1:mcdm.heroes.v1/rule.downtime/research-project). You also have any skills in the [lore skill group](scc.v1:mcdm.heroes.v1/skill.group/lore) you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the [lore skill group](scc.v1:mcdm.heroes.v1/skill.group/lore) before you gained this feature.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: sun -->
 ##### Light of the Burning Sun
 
 Sun infuses your body. Whenever you use an ability to deal [rolled damage](scc.v1:mcdm.heroes.v1/rule.damage/rolled-damage) to another creature, that ability deals an extra 5 fire damage, or an extra 15 fire damage if the creature is undead. Additionally, you have fire immunity equal to your level, which is added to any other fire immunity you have.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: nature -->
 ##### Nature's Bounty
 
 When you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
@@ -5847,17 +5847,17 @@ When you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you ca
 
 Each benefit lasts until the creature who gains it finishes another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: storm -->
 ##### Ride the Lightning
 
 Lightning and thunder infuse your body. Whenever you use an ability to deal [rolled damage](scc.v1:mcdm.heroes.v1/rule.damage/rolled-damage) to another creature, the ability deals extra lightning damage equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score. Additionally, if you use an ability that force moves a creature, the [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score. While you are under the effect of your [Windwalk](scc.v1:mcdm.heroes.v1/feature.censor.level-4/windwalk) feature, lightning enhances your locomotion to grant you a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) equal to your [Might](scc.v1:mcdm.heroes.v1/rule.character/might) score. If [Windwalk](scc.v1:mcdm.heroes.v1/feature.censor.level-4/windwalk) already grants you a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [speed](scc.v1:mcdm.heroes.v1/rule.character/speed), this [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) adds to that.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: trickery -->
 ##### Trinity of Trickery
 
 You have the following ability.
 
-<!-- @type: ability | @cost: 9 Wrath -->
+<!-- @type: ability | @cost: 9 Wrath | @subclass: trickery -->
 > ###### Trinity of Trickery (9 Wrath)
 > 
 > *Hey! I'm over here. No, here, numbskull.*
@@ -5868,19 +5868,19 @@ You have the following ability.
 > 
 > **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), the target can move each duplicate up to their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed). If the target is targeted by an ability, they can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to switch places with a duplicate within their [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: death -->
 ##### Word of Death Deferred
 
 You can stop death from taking your allies. When an ally within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [My Life for Yours](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability dies and you are not [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), you can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to instead have that ally fall unconscious until they regain [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina).
 
 Additionally, your abilities deal an extra 5 damage to [winded](scc.v1:mcdm.heroes.v1/rule.health/winded) creatures.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fate -->
 ##### Word of Fate Denied
 
 When an ally within 10 squares takes damage that would leave them [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), you can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to make yourself or another willing creature within 10 squares of you the target of the triggering damage instead. The creature you choose takes the damage and suffers any effects associated with it, and that damage can't be reduced in any way.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: war -->
 ##### Your Triumphs Are Remembered
 
 The gods allow you and your companions to bask in the glory of past successes. Whenever you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you and any other heroes who rested with you regain 1 [Victory](scc.v1:mcdm.heroes.v1/rule.resource/victories) after your [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories) are converted to [XP](scc.v1:mcdm.heroes.v1/rule.resource/experience). This [Victory](scc.v1:mcdm.heroes.v1/rule.resource/victories) isn't converted into [XP](scc.v1:mcdm.heroes.v1/rule.resource/experience) at the end of a subsequent [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
@@ -5918,17 +5918,17 @@ Your [censor order](scc.v1:mcdm.heroes.v1/feature.censor.level-1/censor-order) g
 | Oracle                   | [Their Past Revealed](scc.v1:mcdm.heroes.v1/feature.censor.level-8/their-past-revealed) |
 | Paragon                  | Vow                 |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: exorcist -->
 ##### Demonologist
 
 The most esoteric secrets of your order teach you that to defeat your enemy, you must understand them. You treat your [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) as 2 higher than usual when dealing with demons, [devils](scc.v1:mcdm.heroes.v1/ancestry/devil), and other agents of chaos. If you successfully complete a negotiation with one of these creatures, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) made against them and can use your [Judgment](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against them as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) before an encounter begins.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: oracle -->
 ##### Their Past Revealed
 
 Your constant fragmentary visions become clearer, and can be honed to understand the past of creatures you interact with. While speaking with any creature, you can make a medium [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) [test](scc.v1:mcdm.heroes.v1/rule.test/test) to see visions from their past. On a success, you see a clear view of any subject related to the creature's past that you wish to understand. On a success with a consequence, you see two visions, one false and one true. On a failure, you lose 2d6 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: paragon -->
 ##### Vow
 
 Your words take on the power of your deity, with all the authority that entails. If you convince a creature to take an oath, they can't break it for 7 days. If you take an oath, you can't break it for 7 days.
@@ -6029,7 +6029,7 @@ Your [censor order](scc.v1:mcdm.heroes.v1/feature.censor.level-1/censor-order) g
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Wrath -->
+<!-- @type: ability | @cost: 11 Wrath | @subclass: exorcist -->
 > ###### Banish (11 Wrath)
 > 
 > *You sever the target's tenuous connection to the world.*
@@ -6046,7 +6046,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** This ability gains an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) against demons, [devils](scc.v1:mcdm.heroes.v1/ancestry/devil), undead, and creatures not native to your current world. If you know the target's true name, this ability has a double [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge). While banished, the target is sent to another manifold in the timescape and removed from the encounter map. A banished target can do nothing but make [saving throws](scc.v1:mcdm.heroes.v1/rule.general/saving-throw), and takes 10 holy damage each time they do so. If the target is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) while banished, they are lost to the timescape.
 
-<!-- @type: ability | @cost: 11 Wrath -->
+<!-- @type: ability | @cost: 11 Wrath | @subclass: exorcist -->
 > ###### Terror Manifest (11 Wrath)
 > 
 > *"I know what you fear."*
@@ -6067,7 +6067,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Wrath | @subtype: triggered -->
+<!-- @type: ability | @cost: 11 Wrath | @subtype: triggered | @subclass: oracle -->
 > ###### Blessing and a Curse (11 Wrath)
 > 
 > *The gods bless and damn in equal measure.*
@@ -6080,7 +6080,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** The target obtains a tier 1 or tier 3 outcome on their [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) (your choice). You can then choose another target within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance), who obtains the opposite outcome on their next [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll).
 
-<!-- @type: ability | @cost: 11 Wrath | @subtype: triggered -->
+<!-- @type: ability | @cost: 11 Wrath | @subtype: triggered | @subclass: oracle -->
 > ###### Fulfill Your Destiny (11 Wrath)
 > 
 > *You have looked at various futures, and only this one works.*
@@ -6097,7 +6097,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Wrath -->
+<!-- @type: ability | @cost: 11 Wrath | @subclass: paragon -->
 > ###### Apostate (11 Wrath)
 > 
 > *You channel holy energy to seal an enemy's fate.*
@@ -6114,7 +6114,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), the target has [damage weakness](scc.v1:mcdm.heroes.v1/rule.damage/damage-weakness) 10.
 
-<!-- @type: ability | @cost: 11 Wrath -->
+<!-- @type: ability | @cost: 11 Wrath | @subclass: paragon -->
 > ###### Edict of Unyielding Resolve (11 Wrath)
 > 
 > *You and your allies are clad in shimmering armor.*
@@ -6341,19 +6341,19 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 | Trickery   | [Inspired Deception](scc.v1:mcdm.heroes.v1/feature.censor.level-1/inspired-deception)            | Intrigue      |
 | War        | [Sanctified Weapon](scc.v1:mcdm.heroes.v1/feature.censor.level-1/sanctified-weapon)             | Exploration   |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: love -->
 ##### Blessing of Compassion
 
 You exude a magic presence that can soothe those willing to socially engage with you. You gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on any [test](scc.v1:mcdm.heroes.v1/rule.test/test) made to assist another creature with a [test](scc.v1:mcdm.heroes.v1/rule.test/test).
 
 Additionally, when you are present at the start of a negotiation, one [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) of your choice has their patience increased by 1 (to a maximum of 5), and the first [test](scc.v1:mcdm.heroes.v1/rule.test/test) made to influence them gains an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: knowledge -->
 ##### Blessing of Comprehension
 
 You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the [project source](scc.v1:mcdm.heroes.v1/rule.downtime/project-source) for any research or [crafting project](scc.v1:mcdm.heroes.v1/rule.downtime/crafting-project) (see Chapter 12: [Downtime Projects](scc.v1:mcdm.heroes.v1/chapter/downtime-projects)).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: storm -->
 ##### Blessing of Fortunate Weather
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can decide the weather conditions within 100 squares. Until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), the weather conditions you establish follow you through any mundane outdoor locations. Choose one of the following types of weather, each of which grants a benefit to you and your allies:
@@ -6366,12 +6366,12 @@ Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), y
 
 If you are in the same area as a creature using this or a similar feature who has chosen a different weather effect, the features negate each other where their areas overlap.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: nature -->
 ##### Faithful Friend
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: nature -->
 > ###### Faithful Friend
 > 
 > *An animal spirit is drawn to you, sharing their senses with you and serving you faithfully.*
@@ -6382,12 +6382,12 @@ You have the following ability.
 > 
 > **Effect:** You conjure a spirit that takes the form of any animal you have seen. The incorporeal animal has [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) 5 and can [fly](scc.v1:mcdm.heroes.v1/movement/fly), but can't physically interact with the world. While you are within 10 squares of the spirit, you automatically sense everything that type of animal would sense, in addition to sensing your own surroundings. You can dismiss the spirit at any time (no action required). If the spirit takes any damage, they are dismissed and you take 1d10 psychic damage that can't be reduced in any way.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: death -->
 ##### Grave Speech
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: death -->
 > ###### Grave Speech
 > 
 > *You commune with the lingering soul of the recently dead.*
@@ -6398,12 +6398,12 @@ You have the following ability.
 > 
 > **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make [tests](scc.v1:mcdm.heroes.v1/rule.test/test) to influence them and convince them to speak with you. The trauma of [dying](scc.v1:mcdm.heroes.v1/rule.health/dying) can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: creation -->
 ##### Hands of the Maker
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: creation -->
 > ###### Hands of the Maker
 > 
 > *You craft objects with the power of your mind.*
@@ -6414,32 +6414,32 @@ You have the following ability.
 > 
 > **Effect:** You create a mundane object of [size](scc.v1:mcdm.heroes.v1/rule.character/size) 1S or smaller. You can maintain a number of objects created this way equal to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score. You can destroy an object created this way with a thought, no matter how far you are from it (no action required).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: sun -->
 ##### Inner Light
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose yourself or one ally who is also finishing a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) to gain the benefit of a divine ritual. You place a ray of [morning light](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-2/morning-light) into the chosen character's soul, granting them a +1 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [saving throws](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) that lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: trickery -->
 ##### Inspired Deception
 
 The gods favor your thievery with magic. Whenever you make a [test](scc.v1:mcdm.heroes.v1/rule.test/test) that uses a skill you have from the [intrigue skill group](scc.v1:mcdm.heroes.v1/skill.group/intrigue), you can use [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) on the [test](scc.v1:mcdm.heroes.v1/rule.test/test) instead of another [characteristic](scc.v1:mcdm.heroes.v1/rule.character/characteristic).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fate -->
 ##### Oracular Visions
 
 Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a [test](scc.v1:mcdm.heroes.v1/rule.test/test), you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on the [test](scc.v1:mcdm.heroes.v1/rule.test/test). You lose any remaining fate points when you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: protection -->
 ##### Protective Circle
 
 You can spend 10 uninterrupted minutes to create a [protective circle](scc.v1:mcdm.heroes.v1/feature.censor.level-1/protective-circle) on the ground large enough to hold one [size](scc.v1:mcdm.heroes.v1/rule.character/size) 1 creature. The circle lasts for 24 hours, until you create another, or until you dismiss it (no action required). Only creatures you designate at the time of drawing the circle can enter and exit the area. While in the [protective circle](scc.v1:mcdm.heroes.v1/feature.censor.level-1/protective-circle), a creature can't be targeted by strikes.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: life -->
 ##### Revitalizing Ritual
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose yourself or one ally who is also finishing a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) to gain the benefit of a divine ritual. The chosen character gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to their [recovery value](scc.v1:mcdm.heroes.v1/rule.health/recoveries) equal to your level that lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: war -->
 ##### Sanctified Weapon
 
 As a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity, you can bless a weapon. Any creature who wields the weapon gains a +1 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [rolled damage](scc.v1:mcdm.heroes.v1/rule.damage/rolled-damage) with abilities that use the weapon. This benefit lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
@@ -6892,7 +6892,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 | Trickery   | [Divine Comedy](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-2/divine-comedy)                |
 | War        | [Blessing of Insight](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-2/blessing-of-insight)          |
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: fate -->
 > ###### Blessing of Fate and Destiny (5 Piety)
 > 
 > *Your enemies suffer their fate; your allies embrace their destiny!*
@@ -6906,7 +6906,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > - Whenever a target makes a [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll), they can roll three dice and choose which two rolls to use.
 > - Whenever a target makes a [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll), they must roll three dice and use the lowest two rolls.
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: war -->
 > ###### Blessing of Insight (5 Piety)
 > 
 > *The gods grant insight revealing where best to strike your enemies.*
@@ -6917,7 +6917,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), each target gains 1 [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge) at the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: trickery -->
 > ###### Divine Comedy (5 Piety)
 > 
 > *You and your allies swap places to confound your foes.*
@@ -6928,7 +6928,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Each target can choose another creature in the area, then swap places with that creature. The creature they choose must be able to fit into the space they leave and vice versa.
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: knowledge -->
 > ###### The Gods Command You Obey (5 Piety)
 > 
 > *You speak with the voice of your [saint](scc.v1:mcdm.heroes.v1/rule.world/saint), commanding your enemies.*
@@ -6943,7 +6943,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > - **12-16:** 7 + I holy damage; P < AVERAGE, before taking damage, the target uses an ability of your choice and you choose any targets for that ability
 > - **17+:** 11 + I holy damage; P < STRONG, before taking damage, the target shifts up to their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) to a location you choose, uses an ability of your choice, and you choose any targets for that ability
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: sun -->
 > ###### Morning Light (5 Piety)
 > 
 > *Light shines at your command, burning your foes and blessing your allies.*
@@ -6960,7 +6960,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Each ally in the area deals fire damage equal to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score with their next strike made before the end of their next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: nature -->
 > ###### Nature Judges Thee (5 Piety)
 > 
 > *Mystical thorned vines appear at your bidding and bind your foes.*
@@ -6975,7 +6975,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > - **12-16:** 3 damage; A < AVERAGE, [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **17+:** 7 damage; A < STRONG, [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) (save ends)
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: love -->
 > ###### Our Hearts Your Strength (5 Piety)
 > 
 > *An ally gains strength from their friends.*
@@ -6986,7 +6986,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the end of the encounter or until the target is [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), at the start of each of the target's [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), they gain a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) and a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [rolled damage](scc.v1:mcdm.heroes.v1/rule.damage/rolled-damage) equal to the number of allies within 10 squares of them. This [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) lasts until the start of their next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: death -->
 > ###### Reap (5 Piety)
 > 
 > *The gods reward those who smite their foes.*
@@ -6997,7 +6997,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), each time a target kills an enemy, they regain [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) equal to 5 + your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score.
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: protection -->
 > ###### Sacred Bond (5 Piety)
 > 
 > *You forge a divine connection between two creatures.*
@@ -7008,7 +7008,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the end of the encounter, whenever one target takes damage, the other target can use a free [triggered action](scc.v1:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to take the damage instead. The original target suffers any effects associated with the damage. Additionally, whenever one target spends a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries), the other target can use a free [triggered action](scc.v1:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries).
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: storm -->
 > ###### Saint's Tempest (5 Piety)
 > 
 > *A raging storm appears, striking your foes with lightning and throwing them around with wind.*
@@ -7023,7 +7023,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > - **12-16:** 5 lightning damage; vertical [slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) 2
 > - **17+:** 7 lightning damage; vertical [slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) 3
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: creation -->
 > ###### Statue of Power (5 Piety)
 > 
 > *A marble statue of your deity rises from the earth.*
@@ -7034,7 +7034,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** A [size](scc.v1:mcdm.heroes.v1/rule.character/size) 2 statue rises out of the ground in an unoccupied space within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) and lasts until the end of the encounter. While within 3 squares of the statue, you gain 1 [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge) at the start of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn). Each ally within 3 squares of the statue gains this same benefit. The statue is destroyed if it takes 20 or more damage. It has immunity all to poison and psychic damage.
 
-<!-- @type: ability | @cost: 5 Piety -->
+<!-- @type: ability | @cost: 5 Piety | @subclass: life -->
 > ###### Wellspring of Grace (5 Piety)
 > 
 > *A holy light is emitted from your body, healing your allies.*
@@ -7179,7 +7179,7 @@ Your divine presence causes those you deem worthy to recover quickly from a figh
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: trickery -->
 > ###### Blessing of Secrets
 > 
 > *You project an illusory [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura) that makes you and allies harder to notice.*
@@ -7343,7 +7343,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 | Trickery   | [Invocation of Mystery](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-6/invocation-of-mystery)      |
 | War        | [Blade of the Heavens](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-6/blade-of-the-heavens)       |
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: death -->
 > ###### Aura of Souls (9 Piety)
 > 
 > *A whirlwind of souls of the dead flies around you at your command.*
@@ -7354,7 +7354,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), at the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can [slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) each creature in the area up to a number of squares equal to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score. This [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) for your allies.
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: war -->
 > ###### Blade of the Heavens (9 Piety)
 > 
 > *A greatsword streams down from the sky, threatening to pin your foe.*
@@ -7369,7 +7369,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > - **12-16:** 12 + I damage; A < AVERAGE, [prone and](scc.v1:mcdm.heroes.v1/condition/prone) [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **17+:** 16 + I damage; A < STRONG, [prone and](scc.v1:mcdm.heroes.v1/condition/prone) [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) (save ends)
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: sun -->
 > ###### Blessing of the Midday Sun (9 Piety)
 > 
 > *Your body emits a heat that bakes your enemies and inspires your allies.*
@@ -7380,7 +7380,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), each enemy in the area takes a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on [power rolls](scc.v1:mcdm.heroes.v1/rule.dice/power-roll), and you and each ally in the area gain 1 [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge) at the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: protection -->
 > ###### Cuirass of the Gods (9 Piety)
 > 
 > *Your allies are covered in spiritual armor.*
@@ -7391,7 +7391,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** You can target yourself instead of one creature with this ability. Each target has [damage immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) 5 until the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: creation -->
 > ###### Gods' Machine (9 Piety)
 > 
 > *You conjure a whirring tank made of blades and metal.*
@@ -7410,7 +7410,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > Once on each subsequent [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) to move the machine a number of squares up to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score then repeat the [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll).
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: trickery -->
 > ###### Invocation of Mystery (9 Piety)
 > 
 > *"Now you see us..."*
@@ -7421,7 +7421,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Each target is invisible until the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: knowledge -->
 > ###### Invocation of Undoing (9 Piety)
 > 
 > *You utter a secret word of destruction known only to deities.*
@@ -7438,7 +7438,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Special:** You can choose to have this ability deal damage to and [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) objects, and to deal damage to buildings.
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: love -->
 > ###### Lauded by God (9 Piety)
 > 
 > *You beseech the gods to give your allies what they need to win the day, and the gods answer.*
@@ -7449,7 +7449,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Each target gains 3 of their [Heroic Resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: storm -->
 > ###### Lightning Lord (9 Piety)
 > 
 > *Lightning [bursts](scc.v1:mcdm.heroes.v1/rule.combat/burst) forth from your body in several directions.*
@@ -7466,7 +7466,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** The targets are [force moved](scc.v1:mcdm.heroes.v1/movement/forced-movement) one at a time, starting with the target nearest to you, and can be [pushed](scc.v1:mcdm.heroes.v1/movement/forced-movement) into other targets in the same line.
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: life -->
 > ###### Revitalizing Grace (9 Piety)
 > 
 > *With a gesture, you restore your health and that of your allies.*
@@ -7477,7 +7477,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Each target can spend any number of [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries). Additionally, each target can end one effect on themself that is ended by a [saving throw](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), or they can stand up if [prone](scc.v1:mcdm.heroes.v1/condition/prone).
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: nature -->
 > ###### Spirit Stampede (9 Piety)
 > 
 > *Animal spirits run through the battlefield, trampling your foes.*
@@ -7492,7 +7492,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > - **12-16:** 8 damage; M < AVERAGE, [prone and](scc.v1:mcdm.heroes.v1/condition/prone) can't stand (save ends)
 > - **17+:** 11 damage; M < STRONG, [prone and](scc.v1:mcdm.heroes.v1/condition/prone) can't stand (save ends)
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: fate -->
 > ###### Your Story Ends Here (9 Piety)
 > 
 > *You bend the fate of a foe, willing them to die.*
@@ -7551,17 +7551,17 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 | Trickery   | [Trinity of Trickery](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-7/trinity-of-trickery)          |
 | War        | [Your Triumphs Are Remembered](scc.v1:mcdm.heroes.v1/feature.censor.level-7/your-triumphs-are-remembered) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: protection -->
 ##### Blessing of Iron
 
 The gods send divine favor to you and your allies. While you are not [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), enemies take a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) against you or any ally within 3 squares of you.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: love -->
 ##### Covenant of the Heart
 
 You can maintain bonds with up to three willing creatures using your Invocation of the Heart feature. Additionally, you have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: love -->
 > ###### Guided to Your Side
 > 
 > *You concentrate on a friend and [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) to them.*
@@ -7572,27 +7572,27 @@ You can maintain bonds with up to three willing creatures using your Invocation 
 > 
 > **Effect:** Each target is [teleport](scc.v1:mcdm.heroes.v1/movement/teleport)ed to unoccupied spaces within 5 squares of a willing creature who you are bonded to with your Invocation of the Heart feature. You don't need [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to the bonded creature but you must be on the same world.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: creation -->
 ##### Divine Quartermaster
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose a treasure with a project goal equal to 50 times your level or less. You gain a divine version of this treasure that lasts until you finish another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) or it is consumed.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: life -->
 ##### Font of Grace
 
 Each time you use your [Healing Grace](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability, you gain 1 piety that can be spent only on that ability during the same [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). If you don't use this piety, it is lost. Additionally, you can use your [Minor Miracle](scc.v1:mcdm.heroes.v1/feature.conduit.level-3/minor-miracle) feature to return a creature to life even if you don't have their remains.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: knowledge -->
 ##### Gods' Library
 
 You can gain access to information you need through prayer, so that you no longer require research materials for crafting and [research projects](scc.v1:mcdm.heroes.v1/rule.downtime/research-project) (see Chapter 12: [Downtime Projects](scc.v1:mcdm.heroes.v1/chapter/downtime-projects)). Additionally, you add your level to [project rolls](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) you make for crafting and [research projects](scc.v1:mcdm.heroes.v1/rule.downtime/research-project). You also have any skills in the [lore skill group](scc.v1:mcdm.heroes.v1/skill.group/lore) you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the [lore skill group](scc.v1:mcdm.heroes.v1/skill.group/lore) before you gained this feature.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: sun -->
 ##### Light of the Burning Sun
 
 Sun infuses your body. Whenever you use an ability to deal [rolled damage](scc.v1:mcdm.heroes.v1/rule.damage/rolled-damage) to another creature, that ability deals an extra 5 fire damage, or an extra 15 fire damage if the creature is undead. Additionally, you have fire immunity equal to your level, which is added to any other fire immunity you have.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: nature -->
 ##### Nature's Bounty
 
 When you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
@@ -7605,17 +7605,17 @@ When you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you ca
 
 Each benefit lasts until the creature who gains it finishes another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: storm -->
 ##### Thunderstruck
 
 Lightning and thunder infuse your body. Whenever you use an ability to deal lightning or sonic damage to another creature, you gain 1 [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge). Additionally, if you use an ability that force moves a creature, the [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: trickery -->
 ##### Trinity of Trickery
 
 You have the following ability.
 
-<!-- @type: ability | @cost: 9 Piety -->
+<!-- @type: ability | @cost: 9 Piety | @subclass: trickery -->
 > ###### Trinity of Trickery (9 Piety)
 > 
 > *Hey! I'm over here. No, here, numbskull.*
@@ -7626,19 +7626,19 @@ You have the following ability.
 > 
 > **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), the target can move each duplicate up to their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed). If the target is targeted by an ability, they can use a free [triggered action](scc.v1:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to switch places with a duplicate within their [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: death -->
 ##### Word of Death Deferred
 
 You can stop death from taking your allies. When an ally within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [Healing Grace](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability dies and you are not [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), you can use a free [triggered action](scc.v1:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to instead have that ally fall unconscious until they regain [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina).
 
 Additionally, your abilities deal an extra 5 damage to [winded](scc.v1:mcdm.heroes.v1/rule.health/winded) creatures.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fate -->
 ##### Word of Fate Denied
 
 When an ally within 10 squares takes damage that would leave them [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), you can use a free [triggered action](scc.v1:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to make yourself or another willing creature within 10 squares of you the target of the triggering damage instead. The creature you choose takes the damage and suffers any effects associated with it, and that damage can't be reduced in any way.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: war -->
 ##### Your Triumphs Are Remembered
 
 The gods allow you and your companions to bask in the glory of past successes. Whenever you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you and any other heroes who rested with you regain 1 [Victory](scc.v1:mcdm.heroes.v1/rule.resource/victories) after your [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories) are converted to [XP](scc.v1:mcdm.heroes.v1/rule.resource/experience). This [Victory](scc.v1:mcdm.heroes.v1/rule.resource/victories) isn't converted into [XP](scc.v1:mcdm.heroes.v1/rule.resource/experience) at the end of a subsequent [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
@@ -7750,7 +7750,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 | Trickery   | [Night Falls](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-9/night-falls)              |
 | War        | [Righteous Phalanx](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-9/righteous-phalanx)        |
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: love -->
 > ###### Alacrity of the Heart (11 Piety)
 > 
 > *You speak inspiring words to a friend and spur them to incredible feats.*
@@ -7761,7 +7761,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** The target has an additional main action they can use on their next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), and gains 3 of their [Heroic Resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: fate -->
 > ###### Bend Fate (11 Piety)
 > 
 > *The gods know you must prevail, and they bless your fate.*
@@ -7772,7 +7772,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), each of the target's [power rolls](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) has its outcome improved by one tier.
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: protection -->
 > ###### Blessing of the Fortress (11 Piety)
 > 
 > *A magic circle extends out from you, barring foes from getting close.*
@@ -7783,7 +7783,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), no enemy can approach within 5 squares of you by moving or by being [force moved](scc.v1:mcdm.heroes.v1/movement/forced-movement) by any enemy. Targets can be [force moved](scc.v1:mcdm.heroes.v1/movement/forced-movement) closer to you by you or your allies, or can move closer because of your movement.
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: creation -->
 > ###### Divine Dragon (11 Piety)
 > 
 > *From nothing but divine will, you create a powerful ally.*
@@ -7810,7 +7810,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > - **12-16:** 5 + I damage
 > - **17+:** 8 + I damage
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: storm -->
 > ###### Godstorm (11 Piety)
 > 
 > *You summon a divine storm that remains under your control.*
@@ -7827,7 +7827,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** A raging storm fills the area until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying). At the start of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can move the storm up to 5 squares (no action required). On subsequent [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn) while the storm is active, you can use a maneuver to make its [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll).
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: trickery -->
 > ###### Night Falls (11 Piety)
 > 
 > *You summon darkness that thwarts only your foes.*
@@ -7838,7 +7838,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), the area is filled with magic darkness that your enemies can't see through, but you and your allies can.
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: life -->
 > ###### Radiance of Grace (11 Piety)
 > 
 > *Intense light is emitted from your body, healing your allies.*
@@ -7849,7 +7849,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** You can target yourself instead of one ally with this ability. Each target can spend any number of [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries), can end any effects on them that are ended by a [saving throw](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), and can stand up if they [are prone](scc.v1:mcdm.heroes.v1/condition/prone).
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: war -->
 > ###### Righteous Phalanx (11 Piety)
 > 
 > *A wall of spinning swords and knives appears where you wish.*
@@ -7860,7 +7860,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** The wall lasts until the end of the encounter or until you are [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a [combat round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 15 damage.
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: sun -->
 > ###### Solar Flare (11 Piety)
 > 
 > *You call down a sphere of fire that burns your foes to ash.*
@@ -7875,7 +7875,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > - **12-16:** 14 fire damage
 > - **17+:** 19 fire damage
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: nature -->
 > ###### Thorn Cage (11 Piety)
 > 
 > *Vines [burst](scc.v1:mcdm.heroes.v1/rule.combat/burst) forth from the ground and bind your foe, slowly closing around them.*
@@ -7892,7 +7892,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** While [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) this way, the target takes 10 damage at the start of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 11 Piety | @subtype: triggered -->
+<!-- @type: ability | @cost: 11 Piety | @subtype: triggered | @subclass: death -->
 > ###### Word of Final Redemption (11 Piety)
 > 
 > *Your death will fuel our [victory](scc.v1:mcdm.heroes.v1/rule.resource/victories).*
@@ -7905,7 +7905,7 @@ Choose one of your domains. You gain a [heroic ability](scc.v1:mcdm.heroes.v1/ru
 > 
 > **Effect:** Before the target dies, you can look at their stat block and force them to use one ability that is a main action or a maneuver. If the ability costs a [Heroic Resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource) or Malice, the creature can use it without any cost. For the purpose of using this ability, your allies and enemies are the target's allies and enemies, and you decide who the ability targets.
 
-<!-- @type: ability | @cost: 11 Piety -->
+<!-- @type: ability | @cost: 11 Piety | @subclass: knowledge -->
 > ###### Word of Weakening (11 Piety)
 > 
 > *You utter a divine word that makes a foe brittle.*
@@ -8032,22 +8032,22 @@ Through your studies, you know and can manipulate the seven primal elements of t
 
 You choose an [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level-1/elemental-specialization) from the following options: earth, fire, green, or void. Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level-1/elemental-specialization) is your [subclass](scc.v1:mcdm.heroes.v1/rule.general/subclass), and your choice of specialization determines many of the features you'll gain as you gain new levels, including one of the following benefits. (Other elemental specializations will be featured in future products.) (*Quick Build:* Fire.)
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: earth -->
 ##### Earth: Acolyte of Earth
 
 You harness the flow of earth magic to become harder to move. Whenever you use an ability that has the Earth and Magic keywords, your [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) increases by 1 until the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). This benefit is cumulative.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fire -->
 ##### Fire: Acolyte of Fire
 
 You become an expert at wielding destructive flames. Your abilities that have the Fire and Magic keywords gain a +1 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [rolled damage](scc.v1:mcdm.heroes.v1/rule.damage/rolled-damage). Your [Hurl Element](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability (see below) also gains this [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) when you use it to deal fire damage.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: green -->
 ##### Green: Acolyte of the Green
 
 You harness the residual magic from your green spells to bolster yourself and your allies. Whenever you deal damage to one or more creatures using an ability that has the Green and Magic keywords and that costs essence to use (see below), you or one creature within 10 squares of you gains [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: void -->
 ##### Void: Acolyte of the Mystery
 
 You use your immersion in the mystery of void magic to expand the reach of that magic better than other mages. The [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of all your abilities that have the Magic, [Ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged), and Void keywords increases by 2 squares.
@@ -8140,14 +8140,14 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 | Green          | [It Is the Soul Which Hears](scc.v1:mcdm.heroes.v1/feature.elementalist.level-1/it-is-the-soul-which-hears) |
 | Void           | [A Beyonding of Vision](scc.v1:mcdm.heroes.v1/feature.elementalist.level-1/a-beyonding-of-vision)      |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: void -->
 ##### A Beyonding of Vision
 
 You instantly recognize illusions for what they are, you can see invisible creatures, and [supernatural](scc.v1:mcdm.heroes.v1/rule.general/supernatural) effects can't conceal creatures and objects from you. Additionally, you always know if an area or object you observe is magical or affected by magic, and you know the specifics of what that magic can do.
 
 You also gain the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: void -->
 > ###### Shared Void Sense
 > 
 > *You grant allies a taste of your unearthly vision.*
@@ -8158,7 +8158,7 @@ You also gain the following ability.
 > 
 > **Effect:** For each [Victory](scc.v1:mcdm.heroes.v1/rule.resource/victories) you have, you can target one creature. Each target gains the benefit of your [A Beyonding of Vision](scc.v1:mcdm.heroes.v1/feature.elementalist.level-1/a-beyonding-of-vision) feature until the end of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), but doesn't gain the use of the [Shared Void Sense](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-1/shared-void-sense) ability.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: green -->
 ##### It Is the Soul Which Hears
 
 You can speak with and understand animals, beasts, and plant creatures, even if they don't share a language with you. Your ability to communicate with these creatures doesn't make them inherently more intelligent, but you can use [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) instead of [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) while making [tests](scc.v1:mcdm.heroes.v1/rule.test/test) to influence them.
@@ -8170,7 +8170,7 @@ Additionally, you can touch a living plant that is not a plant creature to commu
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: earth -->
 > ###### Motivate Earth
 > 
 > *The earth rises, falls, or opens up at your command.*
@@ -8188,7 +8188,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: fire -->
 > ###### Return to Formlessness
 > 
 > *With the merest touch, you cause an object to turn to slag or ash.*
@@ -8213,7 +8213,7 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 | Green           | [Breath of Dawn Remembered](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-1/breath-of-dawn-remembered) |
 | Void            | [Subtle Relocation](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-1/subtle-relocation)         |
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: green -->
 > ###### Breath of Dawn Remembered
 > 
 > *The power you channel grants the ability to get back in the fight.*
@@ -8228,7 +8228,7 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 > 
 > **Spend 1+ Essence:** The target can spend an additional [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries) for each essence spent.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: fire -->
 > ###### Explosive Assistance
 > 
 > *You add a little magic to an ally's aggression at just the right time.*
@@ -8243,7 +8243,7 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 > 
 > **Spend 1 Essence:** The [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to twice your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score instead.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: earth -->
 > ###### Skin Like Castle Walls
 > 
 > *You cover yourself or an ally in protective stone.*
@@ -8258,7 +8258,7 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 > 
 > **Spend 1 Essence:** If the damage has any [potency](scc.v1:mcdm.heroes.v1/rule.character/potency) effects associated with it, the [potency](scc.v1:mcdm.heroes.v1/rule.character/potency) is reduced by 1 for the target.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: void -->
 > ###### Subtle Relocation
 > 
 > *You call on the void to swallow and spit out an ally.*
@@ -8637,12 +8637,12 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 | Green          | [Disciple of the Green](scc.v1:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green)     |
 | Void           | [There Is No Space Between](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-2/there-is-no-space-between) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: earth -->
 ##### Disciple of Earth
 
 Your body is strengthened by your mind's connection to the element of permanence. You have a +6 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), and you gain an additional +3 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) whenever you gain a level past 2nd.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fire -->
 ##### Disciple of Fire
 
 Your connection to fire allows you to protect yourself from it, even as you rip away the protections of others. You have fire immunity equal to 5 plus your level. Additionally, fire damage you deal ignores a target's fire immunity.
@@ -8690,7 +8690,7 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: void -->
 > ###### There Is No Space Between
 > 
 > *Knowledge of the mystery reveals that two spaces are the same space.*
@@ -8793,22 +8793,22 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 | Green          | [Remember Growth and Sun and Rain](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-3/remember-growth-and-sun-and-rain) |
 | Void           | [Distance Is Only Memory](scc.v1:mcdm.heroes.v1/feature.elementalist.level-3/distance-is-only-memory)          |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fire -->
 ##### A Conversation With Fire
 
 When you spend 1 uninterrupted minute in front of a fire, you can speak the name of another creature. If that creature is willing to speak to you, their image appears in the fire, and they can see you before them in a shimmering ball of light. The two of you can speak to each other through these images as if you were together in person. As a maneuver, you or the creature can end the conversation.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: void -->
 ##### Distance Is Only Memory
 
 Each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can open a two-way portal that leads to any place you have previously been. You and your allies can pass through the portal, which remains open for 1 hour or until you dismiss it as a main action.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: earth -->
 ##### Earth Accepts Me
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: earth -->
 > ###### Earth Accepts Me
 > 
 > *You can slip into the stone.*
@@ -8819,12 +8819,12 @@ You have the following ability.
 > 
 > **Effect:** You step into a mundane dirt, metal, or stone object (including a wall) that is as large as you or larger. You can remain inside the object for as long as you like. While inside the object, you can observe events and speak to creatures outside it, but you don't have [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to anything outside the object and vice versa. You can travel through the object freely until you exit it. If the object you meld with is destroyed, you take 10 damage and exit the object.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: green -->
 ##### Remember Growth and Sun and Rain
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: green -->
 > ###### Remember Growth and Sun and Rain
 > 
 > *You stir any wood's memory and learn what it has seen.*
@@ -8937,22 +8937,22 @@ While you have 3 or more essence and are not [dying](scc.v1:mcdm.heroes.v1/rule.
 | Green          | [Flowering Bed](scc.v1:mcdm.heroes.v1/feature.elementalist.level-4/flowering-bed)   |
 | Void           | [Veiling Bed](scc.v1:mcdm.heroes.v1/feature.elementalist.level-4/veiling-bed)     |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fire -->
 ##### Burning Grounds
 
 At the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), each enemy in the area takes fire damage equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: green -->
 ##### Flowering Bed
 
 At the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), each ally in the area gains [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: earth -->
 ##### Quaking Earth
 
 At the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) each enemy in the area up to a number of squares equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: void -->
 ##### Veiling Bed
 
 The area provides [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment) for you and your allies.
@@ -8986,28 +8986,28 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 | Green          | [Hide of Tenfold Shields](scc.v1:mcdm.heroes.v1/feature.elementalist.level-5/hide-of-tenfold-shields)      |
 | Void           | [Pierce the Veil of Substance](scc.v1:mcdm.heroes.v1/feature.elementalist.level-5/pierce-the-veil-of-substance) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: green -->
 ##### Hide of Tenfold Shields
 
 Your animal forms become hardier. You gain [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your level when you enter an [animal form](scc.v1:mcdm.heroes.v1/complication/animal-form) in combat, which is added to any [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) provided by the [animal form](scc.v1:mcdm.heroes.v1/complication/animal-form).
 
 Additionally, an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) ally can use a maneuver to pet you. If they do so, you can lose [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) down to a minimum of 0. The ally gains [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) equal to the amount you lost.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: earth -->
 ##### The Mountain Does Not Move
 
 You stand firm and magnetize your allies to stay grounded. Your [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) increases by your level.
 
 Additionally, whenever an ally within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [Hurl Element](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability is [force moved](scc.v1:mcdm.heroes.v1/movement/forced-movement), you can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to decrease your [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) down to a minimum of 0, then increase the ally's [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) by an amount equal to the [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) you lost. This change lasts until the end of the round.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: void -->
 ##### Pierce the Veil of Substance
 
 Solidity is merely a suggestion to you. Mundane barriers that are 1 square thick or less do not block your senses or [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect). You can only sense or have [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) past one such barrier at a time.
 
 Additionally, whenever you use a void ability, you or one ally within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of the ability can [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) a number of squares equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fire -->
 ##### Smoldering Step
 
 You can use 1 square of movement to walk into an area of fire your [size](scc.v1:mcdm.heroes.v1/rule.character/size) or larger and [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) to any other area of fire your [size](scc.v1:mcdm.heroes.v1/rule.character/size) or larger within 10 squares of the first area.
@@ -9229,14 +9229,14 @@ Your [elemental specialization](scc.v1:mcdm.heroes.v1/feature.elementalist.level
 | Green          | [Chimeric Manifestation](scc.v1:mcdm.heroes.v1/feature.elementalist.level-8/chimeric-manifestation) |
 | Void           | [Black Hole Star](scc.v1:mcdm.heroes.v1/feature.elementalist.level-8/black-hole-star)        |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: void -->
 ##### Black Hole Star
 
 You warp gravity around your heavenly body and can [pull](scc.v1:mcdm.heroes.v1/movement/forced-movement) even the sturdiest titans toward your core. At the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you target one creature or object within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [Hurl Element](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability and vertical [pull](scc.v1:mcdm.heroes.v1/movement/forced-movement) that target up to 5 squares. If their [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) reduces this [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement), they are [pulled](scc.v1:mcdm.heroes.v1/movement/forced-movement) a minimum of 2 squares. This [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) for your allies.
 
 Additionally, your [Mantle of Essence](scc.v1:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) improves. While in the area of the [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura), enemies and objects have their [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) reduced by an amount equal to your level.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: green -->
 ##### Chimeric Manifestation
 
 Nature isn't static and unchanging, and neither are you. You can enter or exit your [animal form](scc.v1:mcdm.heroes.v1/complication/animal-form) as a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) the first time you use your [Disciple of the Green](scc.v1:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature on your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
@@ -9245,7 +9245,7 @@ Additionally, whenever you use your [Disciple of the Green](scc.v1:mcdm.heroes.v
 
 You can only combine animal forms whose levels add up to 12 or less. For example, you can combine a shark (8th level) with a horse (4th level), but you can't combine a shark with a bear (5th level).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fire -->
 ##### The Flame Primordial
 
 You produce a fire that entrances the fates, distracting them from aiding your foes. Whenever you deal fire damage to a creature or object, they take an extra 1d6 fire damage. If you deal fire damage to a mundane object, you can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to target it with your [Return to Formlessness](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-1/return-to-formlessness) ability instead.
@@ -9257,7 +9257,7 @@ Additionally, any enemy who starts their [turn](scc.v1:mcdm.heroes.v1/rule.comba
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: earth -->
 > ###### Summon Source of Earth
 > 
 > *The ground rumbles as an elemental [bursts](scc.v1:mcdm.heroes.v1/rule.combat/burst) forth, ready to serve.*
@@ -9480,21 +9480,21 @@ You become the embodiment of the element of your chosen specialization. Whenever
 | Green          | [Master of Green](scc.v1:mcdm.heroes.v1/feature.elementalist.level-10/master-of-green) |
 | Void           | [Master of Void](scc.v1:mcdm.heroes.v1/feature.elementalist.level-10/master-of-void)  |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: earth -->
 ##### Master of Earth
 
 You have [damage immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) 5.
 
 Additionally, as a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity, you can shape the mundane earth around you in a 1-mile radius. You can open sinkholes, form mountains, level mundane structures or whole settlements, create canyons, raise islands or sink them in the sea, and perform similar feats. You can't use this [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity if another creature within 1 mile is already using it. Once you use this [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity, you can't use it again for 10 days.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: fire -->
 ##### Master of Fire
 
 The damage [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) of your Acolyte of Fire feature increases to +5 and applies to all your magic abilities.
 
 Additionally, your [Return to Formlessness](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-1/return-to-formlessness) ability can be used on [supernatural](scc.v1:mcdm.heroes.v1/rule.general/supernatural) objects (but not on artifacts). When you melt a treasure (see Chapter 13: [Rewards](scc.v1:mcdm.heroes.v1/chapter/rewards)), you gain breath equal to its [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: green -->
 ##### Master of Green
 
 The number of [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries) you have increases by 2, and each time you finish a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can grant each ally who finished the [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) with you 2 additional [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries). Your allies' additional [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries) disappear when they finish their next [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
@@ -9503,7 +9503,7 @@ Additionally, as a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activi
 
 As a maneuver, a creature can consume a Life Fruit or feed it to an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) willing ally. When a creature eats a Life Fruit, they restore all their [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they can end all [conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition) or effects on themself, and they can stand up if [prone](scc.v1:mcdm.heroes.v1/condition/prone). Additionally, if the creature desires, their aging pauses for 1d10 years. If the creature eats additional Life Fruit and chooses to pause their aging, the effects don't stack. Instead, the creature gains the benefit from the Life Fruit that pauses their aging for the longest time.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: void -->
 ##### Master of Void
 
 Whenever you willingly move, you can [teleport](scc.v1:mcdm.heroes.v1/movement/teleport).
@@ -9649,7 +9649,7 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 | Reaver     | Kit, [Primordial Cunning](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-cunning)        |
 | Stormwight | [Beast Shape](scc.v1:mcdm.heroes.v1/feature.fury.level-1/beast-shape), [Relentless Hunter](scc.v1:mcdm.heroes.v1/feature.fury.level-1/relentless-hunter) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: stormwight -->
 ##### Beast Shape
 
 You can use and gain the benefits of a stormwight kit (see [Stormwight Kits](scc.v1:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features)). Your stormwight kit grants you a number of benefits, including benefits tied to your [Growing Ferocity](scc.v1:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) feature.
@@ -9659,21 +9659,21 @@ You can use and gain the benefits of a stormwight kit (see [Stormwight Kits](scc
 
 You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc.v1:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* [Panther](scc.v1:mcdm.heroes.v1/kit/panther).)
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: reaver -->
 ##### Primordial Cunning
 
 You are never [surprised](scc.v1:mcdm.heroes.v1/rule.combat/surprised). Additionally, whenever you would [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) a target with [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement), you can [slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) them instead.
 
 As your ferocity grows, you gain benefits as noted on the Reaver [Growing Ferocity](scc.v1:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: berserker -->
 ##### Primordial Strength
 
 Whenever you damage an object with a weapon [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike), the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) deals extra damage equal to your [Might](scc.v1:mcdm.heroes.v1/rule.character/might) score. Additionally, whenever you [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) another creature into an object, the creature takes extra damage equal to your [Might](scc.v1:mcdm.heroes.v1/rule.character/might) score.
 
 As your ferocity grows, you gain benefits as noted on the Berserker [Growing Ferocity](scc.v1:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: stormwight -->
 ##### Relentless Hunter
 
 You gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made using the [Track](scc.v1:mcdm.heroes.v1/skill.intrigue/track) skill.
@@ -9691,7 +9691,7 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 | Reaver                   | [Unearthly Reflexes](scc.v1:mcdm.heroes.v1/feature.ability.fury.level-1/unearthly-reflexes) |
 | Stormwight               | [Furious Change](scc.v1:mcdm.heroes.v1/feature.ability.fury.level-1/furious-change)     |
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: stormwight -->
 > ###### Furious Change
 > 
 > *In your anger, you revert to a more bestial form.*
@@ -9706,7 +9706,7 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 > 
 > **Spend 1 Ferocity:** If you are not [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), you can spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries).
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: berserker -->
 > ###### Lines of Force
 > 
 > *You redirect the energy of motion.*
@@ -9721,7 +9721,7 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 > 
 > **Spend 1 Ferocity:** The [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to twice your [Might](scc.v1:mcdm.heroes.v1/rule.character/might) score instead.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: reaver -->
 > ###### Unearthly Reflexes
 > 
 > *You are as elusive as a hummingbird.*
@@ -9979,17 +9979,17 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 | Reaver     | [Inescapable Wrath](scc.v1:mcdm.heroes.v1/feature.fury.level-2/inescapable-wrath) |
 | Stormwight | [Tooth and Claw](scc.v1:mcdm.heroes.v1/feature.fury.level-2/tooth-and-claw)    |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: reaver -->
 ##### Inescapable Wrath
 
 You have a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) equal to your [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) score, and you ignore [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: stormwight -->
 ##### Tooth and Claw
 
 At the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), each enemy [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to you takes damage equal to your [Might](scc.v1:mcdm.heroes.v1/rule.character/might) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: berserker -->
 ##### Unstoppable Force
 
 Whenever you use the [Charge](scc.v1:mcdm.heroes.v1/feature.common.main-actions/charge) main action, you can use a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) [signature ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability) or a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) [heroic ability](scc.v1:mcdm.heroes.v1/rule.general/heroic-ability) instead of a [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike). Additionally, you can jump as part of your charge.
@@ -10125,21 +10125,21 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 | Reaver                    | [See Through Their Tricks](scc.v1:mcdm.heroes.v1/feature.fury.level-3/see-through-their-tricks) |
 | Stormwight                | Nature's Knight          |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: berserker -->
 ##### Immovable Object
 
 You add your level to your effective [size](scc.v1:mcdm.heroes.v1/rule.character/size) for the purpose of interacting with creatures and objects, including determining whether you can lift an object, are affected by [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement), and so forth. This has no effect on whether you can be [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed).
 
 Additionally, you have a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) equal to your [Might](scc.v1:mcdm.heroes.v1/rule.character/might) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: stormwight -->
 ##### Nature's Knight
 
 You can speak with animals and elementals. Additionally, you automatically sense the presence of animals and elementals within 10 squares of you, even if they are hidden.
 
 When you are in a negotiation with an animal or elemental, you treat your [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) as 1 higher than usual. This stacks with the increase to your effective [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) in a negotiation with an animal of your type while in [animal form](scc.v1:mcdm.heroes.v1/complication/animal-form) (see [Stormwight Kits](scc.v1:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features)).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: reaver -->
 ##### See Through Their Tricks
 
 You have a double [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to search for hidden creatures, discern hidden motives, or detect lies. You also have a double [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to gamble!
@@ -10251,17 +10251,17 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 | Reaver     | [Unfettered](scc.v1:mcdm.heroes.v1/feature.fury.level-5/unfettered) |
 | Stormwight | [Stormborn](scc.v1:mcdm.heroes.v1/feature.fury.level-5/stormborn)  |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: berserker -->
 ##### Bounder
 
 Your jump [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) and height double (see Movement Types in Chapter 10: [Combat](scc.v1:mcdm.heroes.v1/chapter/combat)). Additionally, when you fall, you reduce the effective height of your fall by a number of squares equal to your jump [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) for the purpose of determining damage and whether you [land prone](scc.v1:mcdm.heroes.v1/condition/prone) (see Falling in Chapter 10). You [are not prone](scc.v1:mcdm.heroes.v1/condition/prone) after falling and landing on another creature.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: stormwight -->
 ##### Stormborn
 
 You and each ally within 5 squares of you ignore negative effects from inclement weather, such as [banes](scc.v1:mcdm.heroes.v1/rule.dice/bane) or environmental damage. Additionally, you can use the Blessing of Fortunate Weather feature as if you were a 1st-level [conduit](scc.v1:mcdm.heroes.v1/class/conduit) (see 1st-Level Domain Feature in the [Conduit](scc.v1:mcdm.heroes.v1/class/conduit) section).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: reaver -->
 ##### Unfettered
 
 At the start of your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can end any [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) on you. Additionally, you have a double [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to escape being confined or imprisoned.
@@ -10346,7 +10346,7 @@ Choose one [heroic ability](scc.v1:mcdm.heroes.v1/rule.general/heroic-ability) f
 
 As a 6th-level [fury](scc.v1:mcdm.heroes.v1/class/fury), you gain the following features.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: stormwight -->
 #### Marauder of the Primordial Chaos
 
 As your connection to the power of the Primordial Chaos grows ever stronger, you automatically sense any elemental creatures or magic sources of elemental power, such as a lava pool or a lake overlapping with Quintessence, within 1 mile of you.
@@ -10374,7 +10374,7 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Ferocity -->
+<!-- @type: ability | @cost: 9 Ferocity | @subclass: berserker -->
 > ###### Avalanche Impact (9 Ferocity)
 > 
 > *You leap and crash down, causing a shockwave that devastates foes.*
@@ -10391,7 +10391,7 @@ Choose one of the following abilities.
 > - **12-16:** 7 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 2
 > - **17+:** 11 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 3
 
-<!-- @type: ability | @cost: 9 Ferocity -->
+<!-- @type: ability | @cost: 9 Ferocity | @subclass: berserker -->
 > ###### Force of Storms (9 Ferocity)
 > 
 > *You strike an enemy hard enough to be a projectile that knocks a crowd of creatures around.*
@@ -10412,7 +10412,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Ferocity | @subtype: triggered -->
+<!-- @type: ability | @cost: 9 Ferocity | @subtype: triggered | @subclass: reaver -->
 > ###### Death Strike (9 Ferocity)
 > 
 > *Once you taste your foe's blood, you become more efficient and [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) every killing blow into an opportunity.*
@@ -10425,7 +10425,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** You target a creature [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to you with the same strike, using the same [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) as the triggering strike.
 
-<!-- @type: ability | @cost: 9 Ferocity -->
+<!-- @type: ability | @cost: 9 Ferocity | @subclass: reaver -->
 > ###### Seek and Destroy (9 Ferocity)
 > 
 > *You break through the enemy lines to make an example.*
@@ -10448,7 +10448,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Ferocity -->
+<!-- @type: ability | @cost: 9 Ferocity | @subclass: stormwight -->
 > ###### Pounce (9 Ferocity)
 >
 > *You strike at the target like the ultimate predator you are.*
@@ -10465,7 +10465,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) up to 4 squares, bringing the target with you. While [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) this way, the target takes damage equal to twice your [Might](scc.v1:mcdm.heroes.v1/rule.character/might) score at the start of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 9 Ferocity -->
+<!-- @type: ability | @cost: 9 Ferocity | @subclass: stormwight -->
 > ###### Riders on the Storm (9 Ferocity)
 >
 > *You focus your connection to the Primordial Chaos into a seething storm.*
@@ -10533,17 +10533,17 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 | Reaver     | [A Step Ahead](scc.v1:mcdm.heroes.v1/feature.fury.level-8/a-step-ahead)       |
 | Stormwight | [Menagerie](scc.v1:mcdm.heroes.v1/feature.fury.level-8/menagerie)          |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: stormwight -->
 ##### Menagerie
 
 You can use all [stormwight kits](scc.v1:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features). During a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose to swap your stormwight kit and still take another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity. Your Nature's Knight feature now lets you automatically sense the presence of animals within 1 mile of you. Additionally, whenever you make a [test](scc.v1:mcdm.heroes.v1/rule.test/test) to track another creature, you can roll three dice and choose which two to use.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: reaver -->
 ##### A Step Ahead
 
 You move with legendary grace. Whenever you make an [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) [test](scc.v1:mcdm.heroes.v1/rule.test/test), you can roll three dice and choose which two to use. Additionally, whenever you use the [Disengage](scc.v1:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to your [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: berserker -->
 ##### Strongest There Is
 
 Your strength is unmatched. Whenever you make a [Might](scc.v1:mcdm.heroes.v1/rule.character/might) [test](scc.v1:mcdm.heroes.v1/rule.test/test), you can roll three dice and choose which two to use. Additionally, whenever you use the [Knockback](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to your [Might](scc.v1:mcdm.heroes.v1/rule.character/might) score.
@@ -10628,7 +10628,7 @@ Your [primordial aspect](scc.v1:mcdm.heroes.v1/feature.fury.level-1/primordial-a
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Ferocity | @id: death-comes-for-you-all -->
+<!-- @type: ability | @cost: 11 Ferocity | @id: death-comes-for-you-all | @subclass: berserker -->
 > ###### Death Comes for You All! (11 Ferocity)
 >
 > *You use your weapon to create a destructive shockwave.*
@@ -10645,7 +10645,7 @@ Choose one of the following abilities.
 >
 > **Effect:** If this [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) causes a target to be hurled through an object, that target takes an extra 10 damage.
 
-<!-- @type: ability | @cost: 11 Ferocity -->
+<!-- @type: ability | @cost: 11 Ferocity | @subclass: berserker -->
 > ###### Primordial Vortex (11 Ferocity)
 >
 > *You channel the power of the Primordial Chaos to pull foes to you.*
@@ -10666,7 +10666,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Ferocity -->
+<!-- @type: ability | @cost: 11 Ferocity | @subclass: reaver -->
 > ###### Primordial Bane (11 Ferocity)
 >
 > *You attune the target to be weaker to a specific element.*
@@ -10683,7 +10683,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. The target loses any [damage immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) to the chosen type and gains weakness 10 to the chosen type (save ends).
 
-<!-- @type: ability | @cost: 11 Ferocity -->
+<!-- @type: ability | @cost: 11 Ferocity | @subclass: reaver -->
 > ###### Shower of Blood (11 Ferocity)
 >
 > *You shock your foes with the brutality of your [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike), resetting the balance of combat.*
@@ -10704,7 +10704,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Ferocity -->
+<!-- @type: ability | @cost: 11 Ferocity | @subclass: stormwight -->
 > ###### Death Rattle (11 Ferocity)
 >
 > *You unleash an otherworldly cry that rips through your enemies, killing the weakest of them.*
@@ -10719,7 +10719,7 @@ Choose one of the following abilities.
 > - **12-16:** 6 psychic damage; any target who is a minion is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), as does one [winded](scc.v1:mcdm.heroes.v1/rule.health/winded) target who is not a leader or solo creature
 > - **17+:** 10 psychic damage; each target who is not a leader or solo creature is [winded](scc.v1:mcdm.heroes.v1/rule.health/winded); any target who is a minion is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), as does one [winded](scc.v1:mcdm.heroes.v1/rule.health/winded) target who is not a leader or solo creature
 
-<!-- @type: ability | @cost: 11 Ferocity -->
+<!-- @type: ability | @cost: 11 Ferocity | @subclass: stormwight -->
 > ###### Deluge (11 Ferocity)
 >
 > *You summon your [primordial storm](scc.v1:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm).*
@@ -11628,19 +11628,19 @@ Your [null tradition](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-tradition)
 | Cryokinetic   | [Entropic Adaptability](scc.v1:mcdm.heroes.v1/feature.null.level-2/entropic-adaptability) |
 | Metakinetic   | [Inertial Sink](scc.v1:mcdm.heroes.v1/feature.null.level-2/inertial-sink)         |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: cryokinetic -->
 ##### Entropic Adaptability
 
 You have cold immunity equal to twice your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score. Additionally, you ignore [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) related to cold and ice, and you can automatically climb at full [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) while moving.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: metakinetic -->
 ##### Inertial Sink
 
 You add your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score to your effective [size](scc.v1:mcdm.heroes.v1/rule.character/size) for the purpose of interacting with creatures and objects, such as for determining whether you can lift an object, whether you are affected by [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement), and so forth. This has no effect on whether you can be [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed).
 
 Additionally, when you fall, you reduce the effective height of the fall by 5 squares in addition to any other reductions. Whenever you take damage from being [force moved](scc.v1:mcdm.heroes.v1/movement/forced-movement), you reduce that damage by an amount equal to your level.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: chronokinetic -->
 ##### Rapid Processing
 
 As a maneuver, you can read an entire book or process a similar amount of information. Additionally, during any [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can take an additional [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity.
@@ -11654,7 +11654,7 @@ Your [null tradition](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-tradition)
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Discipline -->
+<!-- @type: ability | @cost: 5 Discipline | @subclass: chronokinetic -->
 > ###### Blur (5 Discipline)
 >
 > *You release stored time, allowing you to act twice.*
@@ -11665,7 +11665,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You can use a signature or [heroic ability](scc.v1:mcdm.heroes.v1/rule.general/heroic-ability). You gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on that ability's [power rolls](scc.v1:mcdm.heroes.v1/rule.dice/power-roll).
 
-<!-- @type: ability | @cost: 5 Discipline -->
+<!-- @type: ability | @cost: 5 Discipline | @subclass: chronokinetic -->
 > ###### Force Redirected (5 Discipline)
 >
 > *The force of your [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) moves your target in a surprising direction.*
@@ -11684,7 +11684,7 @@ Choose one of the following abilities.
 
 Choose one of the following [heroic abilities](scc.v1:mcdm.heroes.v1/rule.general/heroic-ability).
 
-<!-- @type: ability | @cost: 5 Discipline -->
+<!-- @type: ability | @cost: 5 Discipline | @subclass: cryokinetic -->
 > ###### Entropic Field (5 Discipline)
 >
 > *You drastically increase the local entropy.*
@@ -11699,7 +11699,7 @@ Choose one of the following [heroic abilities](scc.v1:mcdm.heroes.v1/rule.genera
 > - **12-16:** 9 cold damage; A < AVERAGE, [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **17+:** 13 cold damage; A < STRONG, [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) (save ends)
 
-<!-- @type: ability | @cost: 5 Discipline -->
+<!-- @type: ability | @cost: 5 Discipline | @subclass: cryokinetic -->
 > ###### Heat Sink (5 Discipline)
 >
 > *You absorb ambient heat, coating the ground in frost and precipitating snow from the air.*
@@ -11714,7 +11714,7 @@ Choose one of the following [heroic abilities](scc.v1:mcdm.heroes.v1/rule.genera
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Discipline -->
+<!-- @type: ability | @cost: 5 Discipline | @subclass: metakinetic -->
 > ###### Gravitic Strike (5 Discipline)
 >
 > *Your fist emanates gravitic force that pulls a distant enemy closer.*
@@ -11729,7 +11729,7 @@ Choose one of the following abilities.
 > - **12-16:** 12 + A psychic damage; vertical [pull](scc.v1:mcdm.heroes.v1/movement/forced-movement) 5
 > - **17+:** 16 + A psychic damage; vertical [pull](scc.v1:mcdm.heroes.v1/movement/forced-movement) 7
 
-<!-- @type: ability | @cost: 5 Discipline -->
+<!-- @type: ability | @cost: 5 Discipline | @subclass: metakinetic -->
 > ###### Kinetic Shield (5 Discipline)
 >
 > *You manifest a force barrier that absorbs incoming kinetic energy.*
@@ -11863,17 +11863,17 @@ Your [null tradition](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-tradition)
 | Cryokinetic   | [Chilling Readiness](scc.v1:mcdm.heroes.v1/feature.null.level-5/chilling-readiness) |
 | Metakinetic   | [Inertial Fulcrum](scc.v1:mcdm.heroes.v1/feature.null.level-5/inertial-fulcrum)   |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: cryokinetic -->
 #### Chilling Readiness
 
 You steel yourself for imminent danger by tapping into your body's cold energy. At the start of any combat, you gain a number of [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge) equal to your [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: metakinetic -->
 #### Inertial Fulcrum
 
 Whenever you use an ability to reduce damage dealt to you or to reduce the [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) imposed upon you, you can deal damage to one enemy in the area of your [Null Field](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-field) ability equal to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: chronokinetic -->
 #### Instant Action
 
 If you're not [surprised](scc.v1:mcdm.heroes.v1/rule.combat/surprised) at the start of your first [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in combat, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc.v1:mcdm.heroes.v1/rule.dice/ability-roll) and gain 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge). If you are [surprised](scc.v1:mcdm.heroes.v1/rule.combat/surprised), you can spend 3 discipline to no longer be [surprised](scc.v1:mcdm.heroes.v1/rule.combat/surprised) and gain the benefits of this feature.
@@ -11970,7 +11970,7 @@ Your [null tradition](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-tradition)
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Discipline -->
+<!-- @type: ability | @cost: 9 Discipline | @subclass: chronokinetic -->
 > ###### Interphase (9 Discipline)
 >
 > *You slip into a faster timestream to act more quickly.*
@@ -11981,7 +11981,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You can use up to three [signature abilities](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability), each of which gains an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge).
 
-<!-- @type: ability | @cost: 9 Discipline -->
+<!-- @type: ability | @cost: 9 Discipline | @subclass: chronokinetic -->
 > ###### Phase Step (9 Discipline)
 >
 > *You weaken your connection to this manifold, allowing you to move through and damage enemies.*
@@ -12002,7 +12002,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Discipline -->
+<!-- @type: ability | @cost: 9 Discipline | @subclass: cryokinetic -->
 > ###### Ice Pillars (9 Discipline)
 >
 > *Pillars of ice erupt from the ground and launch your foes into the air.*
@@ -12019,7 +12019,7 @@ Choose one of the following abilities.
 >
 > **Effect:** The pillars vanish as soon as the effects of the [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) are resolved.
 
-<!-- @type: ability | @cost: 9 Discipline -->
+<!-- @type: ability | @cost: 9 Discipline | @subclass: cryokinetic -->
 > ###### Wall of Ice (9 Discipline)
 >
 > *You create a [wall of ice](scc.v1:mcdm.heroes.v1/feature.ability.null.level-6/wall-of-ice).*
@@ -12034,7 +12034,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Discipline -->
+<!-- @type: ability | @cost: 9 Discipline | @subclass: metakinetic -->
 > ###### Gravitic Charge (9 Discipline)
 >
 > *You channel your discipline into momentum that defies gravity.*
@@ -12051,7 +12051,7 @@ Choose one of the following abilities.
 >
 > **Effect:** This movement ignores [stability](scc.v1:mcdm.heroes.v1/rule.character/stability). If you [slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) into another creature, you resolve damage to both of you as if your [force move](scc.v1:mcdm.heroes.v1/movement/forced-movement)ment had ended, but you keep moving through that creature's space.
 
-<!-- @type: ability | @cost: 9 Discipline -->
+<!-- @type: ability | @cost: 9 Discipline | @subclass: metakinetic -->
 > ###### Iron Body (9 Discipline)
 >
 > *You focus until your body becomes as hard as iron.*
@@ -12150,17 +12150,17 @@ Your [null tradition](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-tradition)
 | Cryokinetic   | [Synaptic Triage](scc.v1:mcdm.heroes.v1/feature.null.level-8/synaptic-triage)   |
 | Metakinetic   | [Inertial Dampener](scc.v1:mcdm.heroes.v1/feature.null.level-8/inertial-dampener) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: metakinetic -->
 ##### Inertial Dampener
 
 You and each creature or object of your choice in the area of your [Null Field](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-field) ability gain a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) equal to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score. A creature who attempts to [force move](scc.v1:mcdm.heroes.v1/movement/forced-movement) a target with this [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) takes psychic damage equal to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: chronokinetic -->
 ##### Shared Momentum
 
 When you take the [Disengage](scc.v1:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, one ally in the area of your [Null Field](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-field) ability can also take the [Disengage](scc.v1:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action), using your [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) for that move action.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: cryokinetic -->
 ##### Synaptic Triage
 
 As a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver), you can spend 1d6 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) to remove one effect on you. Each creature of your choice in the area of your [Null Field](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-field) ability also gains this benefit.
@@ -12251,7 +12251,7 @@ Your [null tradition](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-tradition)
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
+<!-- @type: ability | @cost: 11 Discipline | @subtype: triggered | @subclass: chronokinetic -->
 > ###### Arrestor Cycle (11 Discipline)
 >
 > *You trap your foe in a looping cycle of time, where they relive the last few seconds over and over again.*
@@ -12270,7 +12270,7 @@ Choose one of the following abilities.
 >
 > **Effect:** If the target loses their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), the round continues as if they had acted. A target who doesn't lose their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) takes psychic damage equal to twice your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score for each main action they take until the end of their next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
+<!-- @type: ability | @cost: 11 Discipline | @subtype: triggered | @subclass: chronokinetic -->
 > ###### Time Loop (11 Discipline)
 >
 > *You show shadows what true [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) is.*
@@ -12287,7 +12287,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Discipline -->
+<!-- @type: ability | @cost: 11 Discipline | @subclass: cryokinetic -->
 > ###### Absolute Zero (11 Discipline)
 >
 > *You become the coldest thing in the timescape.*
@@ -12304,7 +12304,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Until the end of the encounter or until you are dead, you become an avatar of uttermost cold. You gain immunity to all damage equal to the cold [damage immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) granted by your [Entropic Adaptability](scc.v1:mcdm.heroes.v1/feature.null.level-2/entropic-adaptability) trait, you ignore the negative effects of [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), and you have a +2 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [potencies](scc.v1:mcdm.heroes.v1/rule.character/potency).
 
-<!-- @type: ability | @cost: 11 Discipline -->
+<!-- @type: ability | @cost: 11 Discipline | @subclass: cryokinetic -->
 > ###### Heat Drain (11 Discipline)
 >
 > *You drain all the heat from the target.*
@@ -12325,7 +12325,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
+<!-- @type: ability | @cost: 11 Discipline | @subtype: triggered | @subclass: metakinetic -->
 > ###### Inertial Absorption (11 Discipline)
 >
 > *You absorb an attack to empower your body.*
@@ -12338,7 +12338,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You take half the damage, negate any effects associated with the damage for you, and gain 3 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge).
 
-<!-- @type: ability | @cost: 11 Discipline -->
+<!-- @type: ability | @cost: 11 Discipline | @subclass: metakinetic -->
 > ###### Realitas (11 Discipline)
 >
 > *Your essential hyperreality disrupts your enemy's connection to existence.*
@@ -12507,7 +12507,7 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: black-ash -->
 > ###### Black Ash Teleport
 > 
 > *In a swirl of black ash, you step from one place to another.*
@@ -12525,7 +12525,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: caustic-alchemy -->
 > ###### Coat the Blade
 > 
 > *A little poison goes a long way.*
@@ -12543,7 +12543,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: harlequin-mask -->
 > ###### I'm No Threat
 > 
 > *Taking on an illusory countenance gives you an advantage on [subterfuge](scc.v1:mcdm.heroes.v1/feature.shadow.level-10/subterfuge).*
@@ -12558,7 +12558,7 @@ You have the following ability.
 > 
 > **Spend 1 Insight:** Choose a creature whose [size](scc.v1:mcdm.heroes.v1/rule.character/size) is no more than 1 greater than yours and who is within 10 squares. This ability's illusion makes you appear as that creature. This illusion covers your entire body, including clothing and armor, and alters your voice to sound like that of the creature. You gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to convince the creature's allies that you are the creature.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: caustic-alchemy -->
 ##### Smoke Bomb
 
 You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the [Hide](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed and don't initially have [cover](scc.v1:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment). When you do so, you can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) a number of squares equal to your [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) score. If you end this movement with [cover](scc.v1:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment), you are automatically hidden.
@@ -12576,7 +12576,7 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 | Caustic Alchemy | [Defensive Roll](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-1/defensive-roll)        |
 | Harlequin Mask  | [Clever Trick](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-1/clever-trick)          |
 
-<!-- @type: ability | @cost: 1 Insight | @subtype: triggered -->
+<!-- @type: ability | @cost: 1 Insight | @subtype: triggered | @subclass: harlequin-mask -->
 > ###### Clever Trick (1 Insight)
 >
 > *You sow a moment of confusion in combat, to your enemy's peril.*
@@ -12589,7 +12589,7 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 >
 > **Effect:** Choose an enemy within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of the triggering strike, including the enemy who targeted you. The [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) targets that enemy instead.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: caustic-alchemy -->
 > ###### Defensive Roll
 >
 > *When an enemy attacks, you roll with the impact to reduce the harm.*
@@ -12604,7 +12604,7 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 >
 > **Spend 1 Insight:** The [potency](scc.v1:mcdm.heroes.v1/rule.character/potency) of any effects associated with the damage are reduced by 1 for you.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: black-ash -->
 > ###### In All This Confusion
 >
 > *You vanish in a plume of black smoke to avoid danger.*
@@ -12876,19 +12876,19 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 | Caustic Alchemy            | [Trained Assassin](scc.v1:mcdm.heroes.v1/feature.shadow.level-2/trained-assassin) |
 | Harlequin Mask             | Friend!          |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: black-ash -->
 ##### Burning Ash
 
 The ash you leave behind burns your foes. The first time on a [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) that you use a shadow ability to [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) away from or into a space [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to an enemy, that enemy takes fire damage equal to your [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) score.
 
-<!-- @type: feature | @id: friend -->
+<!-- @type: feature | @id: friend | @subclass: harlequin-mask -->
 ##### Friend!
 
 Your illusions make your enemies believe you are their friend in critical moments. Whenever an enemy uses an ability or trait that targets multiple allies and you are within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of the effect, you can choose to be a target of the effect as well.
 
 Additionally, when you use your [I'm No Threat](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability, you can take the [Disengage](scc.v1:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as part of that ability.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: caustic-alchemy -->
 ##### Trained Assassin
 
 You know just where to cut your enemies. Whenever you make a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) that has no [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) or double [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane), and that incorporates 1 or more [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge), you gain 1 additional [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge) that you can use only on that [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike).
@@ -12902,7 +12902,7 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Insight -->
+<!-- @type: ability | @cost: 5 Insight | @subclass: black-ash -->
 > ###### In a Puff of Ash (5 Insight)
 >
 > *You enchant a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) with your [teleport](scc.v1:mcdm.heroes.v1/movement/teleport)ation magic.*
@@ -12917,7 +12917,7 @@ Choose one of the following abilities.
 > - **12-16:** 10 + A damage; you can [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) the target up to 3 squares
 > - **17+:** 14 + A damage; you can [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) the target up to 5 squares
 
-<!-- @type: ability | @cost: 5 Insight | @subtype: triggered -->
+<!-- @type: ability | @cost: 5 Insight | @subtype: triggered | @subclass: black-ash -->
 > ###### Too Slow (5 Insight)
 >
 > *Your foe made a big mistake.*
@@ -12934,7 +12934,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Insight -->
+<!-- @type: ability | @cost: 5 Insight | @subclass: caustic-alchemy -->
 > ###### Sticky Bomb (5 Insight)
 >
 > *Explosives are best when they're attached to an enemy.*
@@ -12951,7 +12951,7 @@ Choose one of the following abilities.
 > - **12-16:** 7 + A fire damage
 > - **17+:** 11 + A fire damage
 
-<!-- @type: ability | @cost: 5 Insight -->
+<!-- @type: ability | @cost: 5 Insight | @subclass: caustic-alchemy -->
 > ###### Stink Bomb (5 Insight)
 >
 > *Putrid yellow gas explodes from a bomb you toss.*
@@ -12972,7 +12972,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Insight -->
+<!-- @type: ability | @cost: 5 Insight | @subclass: harlequin-mask -->
 > ###### Machinations of Sound (5 Insight)
 >
 > *Illusory sounds make your foes reposition themselves as they cower or investigate the disturbance.*
@@ -12989,7 +12989,7 @@ Choose one of the following abilities.
 >
 > **Effect:** This [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc.v1:mcdm.heroes.v1/rule.character/stability). Instead, the [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) is reduced by a number equal to the target's [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score.
 
-<!-- @type: ability | @cost: 5 Insight | @subtype: triggered -->
+<!-- @type: ability | @cost: 5 Insight | @subtype: triggered | @subclass: harlequin-mask -->
 > ###### So Gullible (5 Insight)
 >
 > *When your enemy strikes, you reveal you were in a different place all along.*
@@ -13154,21 +13154,21 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 | Caustic Alchemy | [Volatile Reagents](scc.v1:mcdm.heroes.v1/feature.shadow.level-5/volatile-reagents) |
 | Harlequin Mask  | [Harlequin Gambit](scc.v1:mcdm.heroes.v1/feature.shadow.level-5/harlequin-gambit)  |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: harlequin-mask -->
 ##### Harlequin Gambit
 
 Whenever you reduce an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) non-minion creature to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), you can immediately use a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) to use your [I'm No Threat](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability and then move up to your [speed](scc.v1:mcdm.heroes.v1/rule.character/speed).
 
 If the creature is the same [size](scc.v1:mcdm.heroes.v1/rule.character/size) as you, you can disguise yourself as them using [I'm No Threat](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) without spending insight. If you do, while [I'm No Threat](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) is active, the creature's body is disguised to look like your body. The illusion ends on their body if another creature physically interacts with it. When the illusion would end for either you or the creature's body, it ends for both.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: black-ash -->
 ##### Trail of Cinders
 
 Whenever you reduce a non-minion creature to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), you can immediately use a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) to use your [Black Ash Teleport](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-1/black-ash-teleport) ability.
 
 Additionally, you can now bring an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) willing creature along with you whenever you use a shadow ability to [teleport](scc.v1:mcdm.heroes.v1/movement/teleport). The creature appears in an unoccupied space [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the space into which you [teleport](scc.v1:mcdm.heroes.v1/movement/teleport)ed. If no such space exists, they can't [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) with you.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: caustic-alchemy -->
 ##### Volatile Reagents
 
 Whenever you take damage, each enemy [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to you takes fire, acid, or poison damage (your choice) equal to your [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) score.
@@ -13274,7 +13274,7 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Insight -->
+<!-- @type: ability | @cost: 9 Insight | @subclass: black-ash -->
 > ###### Black Ash Eruption (9 Insight)
 >
 > *Your attack produces a cloud of black ash that launches an enemy into the air.*
@@ -13291,7 +13291,7 @@ Choose one of the following abilities.
 >
 > **Effect:** A creature [force moved](scc.v1:mcdm.heroes.v1/movement/forced-movement) by this ability must be moved straight upward.
 
-<!-- @type: ability | @cost: 9 Insight -->
+<!-- @type: ability | @cost: 9 Insight | @subclass: black-ash -->
 > ###### Cinderstorm (9 Insight)
 >
 > *You [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) your friends in a burst of ash and fire.*
@@ -13306,7 +13306,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Insight -->
+<!-- @type: ability | @cost: 9 Insight | @subclass: caustic-alchemy -->
 > ###### One Vial Makes You Better (9 Insight)
 >
 > *A well-timed throw of a potion will keep your allies in the fight.*
@@ -13319,7 +13319,7 @@ Choose one of the following abilities.
 >
 > A creature who drinks the potion can spend up to 2 [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries), and has acid immunity, fire immunity, or poison immunity (their choice) equal to your level until the end of the encounter.
 
-<!-- @type: ability | @cost: 9 Insight -->
+<!-- @type: ability | @cost: 9 Insight | @subclass: caustic-alchemy -->
 > ###### One Vial Makes You Faster (9 Insight)
 >
 > *Each ally who catches a potion you throw can take the battle to the next level.*
@@ -13342,7 +13342,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Insight | @id: look -->
+<!-- @type: ability | @cost: 9 Insight | @id: look | @subclass: harlequin-mask -->
 > ###### Look! (9 Insight)
 >
 > *You distract your foes, allowing your allies to take advantage of that distraction.*
@@ -13353,7 +13353,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Until the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), any [ability roll](scc.v1:mcdm.heroes.v1/rule.dice/ability-roll) made against a target gains an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge).
 
-<!-- @type: ability | @cost: 9 Insight -->
+<!-- @type: ability | @cost: 9 Insight | @subclass: harlequin-mask -->
 > ###### Puppet Strings (9 Insight)
 >
 > *You prick little needles on the tips of your fingers into the nerves of your enemies and cause them to lose control.*
@@ -13423,22 +13423,22 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 | Caustic Alchemy | [Time Bomb](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-8/time-bomb)   |
 | Harlequin Mask  | [Parkour](scc.v1:mcdm.heroes.v1/feature.shadow.level-8/parkour)     |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: black-ash -->
 ##### Cinder Step
 
 Whenever you willingly move, you can [teleport](scc.v1:mcdm.heroes.v1/movement/teleport). When you [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) this way, it counts as using a shadow ability for the purpose of using your [Burning Ash](scc.v1:mcdm.heroes.v1/feature.shadow.level-2/burning-ash) and [Trail of Cinders](scc.v1:mcdm.heroes.v1/feature.shadow.level-5/trail-of-cinders) features.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: harlequin-mask -->
 ##### Parkour
 
 Your movement no longer provokes [opportunity attacks](scc.v1:mcdm.heroes.v1/rule.combat/opportunity-attack). Additionally, you can use your [Harlequin Gambit](scc.v1:mcdm.heroes.v1/feature.shadow.level-5/harlequin-gambit) feature as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) when a creature is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) by your [Clever Trick](scc.v1:mcdm.heroes.v1/feature.ability.shadow.level-1/clever-trick) ability.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: caustic-alchemy -->
 ##### Time Bomb
 
 You have [damage immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) against area abilities and effects equal to your [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) score. You also have the following ability, which you can use once per round on your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: caustic-alchemy -->
 > ###### Time Bomb
 >
 > *The longer it cooks, the bigger the boom.*
@@ -13537,7 +13537,7 @@ Your [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-colleg
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Insight -->
+<!-- @type: ability | @cost: 11 Insight | @subclass: black-ash -->
 > ###### Cacophony of Cinders (11 Insight)
 >
 > *You tumble through the battle, stabbing foes and [teleporting](scc.v1:mcdm.heroes.v1/movement/teleport) allies.*
@@ -13554,7 +13554,7 @@ Choose one of the following abilities.
 > - **12-16:** An enemy takes 10 damage; an ally can [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) up to 5 squares.
 > - **17+:** An enemy takes 14 damage; an ally can [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) up to 7 squares.
 
-<!-- @type: ability | @cost: 11 Insight -->
+<!-- @type: ability | @cost: 11 Insight | @subclass: black-ash -->
 > ###### Demon Door (11 Insight)
 >
 > *You create a temporary portal to allow a massive demonic hand to reach through.*
@@ -13575,7 +13575,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Insight -->
+<!-- @type: ability | @cost: 11 Insight | @subclass: caustic-alchemy -->
 > ###### Chain Reaction (11 Insight)
 >
 > *One explosion, an offense. Three explosions, an assault. Nine explosions, a celebration.*
@@ -13592,7 +13592,7 @@ Choose one of the following abilities.
 > - **12-16:** 10 damage
 > - **17+:** 15 damage
 
-<!-- @type: ability | @cost: 11 Insight -->
+<!-- @type: ability | @cost: 11 Insight | @subclass: caustic-alchemy -->
 > ###### To the Stars (11 Insight)
 >
 > *You attach your most potent explosive to your foe. Under less pressing circumstances, you're sure you could launch them into orbit.*
@@ -13613,7 +13613,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Insight -->
+<!-- @type: ability | @cost: 11 Insight | @subclass: harlequin-mask -->
 > ###### I Am You (11 Insight)
 >
 > *Your mask reflects your foe's face. Surely they won't need it much longer.*
@@ -13624,7 +13624,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Until the end of the encounter, you gain the target's damage immunities and [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) (if they are better than yours), and can use any types of movement they can use. You can also use the target's [signature ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability), using their [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) for the [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll).
 
-<!-- @type: ability | @cost: 11 Insight -->
+<!-- @type: ability | @cost: 11 Insight | @subclass: harlequin-mask -->
 > ###### It Was Me All Along (11 Insight)
 >
 > *After everything you've been through together, you twist the blade and make the pain extra personal.*
@@ -13787,19 +13787,19 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 | Mastermind | [Studied Commander](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/studied-commander)   |
 | Vanguard   | [Commanding Presence](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/commanding-presence) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: vanguard -->
 ##### Commanding Presence
 
 You command any room you walk into. While you are present during a negotiation, each hero with you treats their [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) as 2 higher than usual. Additionally, each hero with you during a combat encounter has a double [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to stop combat and start a negotiation.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: insurgent -->
 ##### Covert Operations
 
 While in your presence or working according to your plans, each of your allies gains an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) using any skill from the [intrigue skill group](scc.v1:mcdm.heroes.v1/skill.group/intrigue). Additionally, you can use the [Lead](scc.v1:mcdm.heroes.v1/skill.interpersonal/lead) skill to assist another creature with any [test](scc.v1:mcdm.heroes.v1/rule.test/test) made using a skill from the [intrigue group](scc.v1:mcdm.heroes.v1/skill.group/intrigue).
 
 At the Director's discretion, you and your allies can use skills from the [intrigue skill group](scc.v1:mcdm.heroes.v1/skill.group/intrigue) to attempt research or reconnaissance during a negotiation instead of outside of a negotiation.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: mastermind -->
 ##### Studied Commander
 
 Your encyclopedic knowledge of the history of battle lets you apply that knowledge to current challenges. While you are present, each hero with you treats the Discover Lore project related to a war or battle as one category cheaper. This makes projects seeking common lore free, but such projects still require a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity to complete. (See Chapter 12: [Downtime Projects](scc.v1:mcdm.heroes.v1/chapter/downtime-projects) for more information.)
@@ -13831,7 +13831,7 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 | Mastermind | [Overwatch](scc.v1:mcdm.heroes.v1/feature.ability.tactician.level-1/overwatch)        |
 | Vanguard   | [Parry](scc.v1:mcdm.heroes.v1/feature.ability.tactician.level-1/parry)            |
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: insurgent -->
 > ###### Advanced Tactics
 >
 > *Your leadership aids an ally.*
@@ -13846,7 +13846,7 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 >
 > **Spend 1 Focus:** If the damage has any [potency](scc.v1:mcdm.heroes.v1/rule.character/potency) effect associated with it, the [potency](scc.v1:mcdm.heroes.v1/rule.character/potency) is increased by 1.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: mastermind -->
 > ###### Overwatch
 >
 > *Under your direction, an ally waits for just the right moment to strike.*
@@ -13861,7 +13861,7 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 >
 > **Spend 1 Focus:** If the target has R < AVERAGE, they are [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) ([EoT](scc.v1:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: vanguard -->
 > ###### Parry
 >
 > *Your quick reflexes cost an enemy the precision they seek.*
@@ -14101,17 +14101,17 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 | Mastermind                  | Goaded               |
 | Vanguard                    | [Melee Superiority](scc.v1:mcdm.heroes.v1/feature.tactician.level-2/melee-superiority)    |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: mastermind -->
 ##### Goaded
 
 You have learned to leverage your marked foes' psychology and goad them into acting before they're tactically ready. Whenever a creature marked by you uses a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) that targets you or any ally within your [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect), you can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to change one target of the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) to you or another ally within your [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect). The new target must be within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of the ability and within [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) of the creature using it.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: insurgent -->
 ##### Infiltration Tactics
 
 You have trained your squad to work together, stay silent, and wait for the opportune time to strike. Whenever you or any ally within 10 squares of you becomes hidden, that creature gains 1 [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: vanguard -->
 ##### Melee Superiority
 
 After constant drills, you can more accurately anticipate an enemy's plan and thwart their attempts to move across the battlefield. Whenever you make an [opportunity attack](scc.v1:mcdm.heroes.v1/rule.combat/opportunity-attack), the target's [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) is reduced to 0 until the end of the current [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
@@ -14127,7 +14127,7 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Focus -->
+<!-- @type: ability | @cost: 5 Focus | @subclass: insurgent -->
 > ###### Fog of War (5 Focus)
 >
 > *Your unorthodox strategy causes enemies to lash out in fear, heedless of who they might be attacking.*
@@ -14140,7 +14140,7 @@ Choose one of the following abilities.
 >
 > **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to force that target to make a [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature of your choice within 5 squares of them.
 
-<!-- @type: ability | @cost: 5 Focus -->
+<!-- @type: ability | @cost: 5 Focus | @subclass: insurgent -->
 > ###### Try Me Instead (5 Focus)
 >
 > *"Try picking on someone my [size](scc.v1:mcdm.heroes.v1/rule.character/size)."*
@@ -14161,7 +14161,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Focus -->
+<!-- @type: ability | @cost: 5 Focus | @subclass: mastermind -->
 > ###### I've Got Your Back (5 Focus)
 >
 > *Your enemy will think twice about attacking your friend.*
@@ -14178,7 +14178,7 @@ Choose one of the following abilities.
 >
 > **Effect:** One ally [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the target can spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries).
 
-<!-- @type: ability | @cost: 5 Focus -->
+<!-- @type: ability | @cost: 5 Focus | @subclass: mastermind -->
 > ###### Targets of Opportunity (5 Focus)
 >
 > *You point out easy targets to your friends, allowing them to include more enemies in their attacks.*
@@ -14195,7 +14195,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Focus | @subtype: triggered -->
+<!-- @type: ability | @cost: 5 Focus | @subtype: triggered | @subclass: vanguard -->
 > ###### No Dying on My Watch (5 Focus)
 >
 > *You prioritize saving an ally over your own safety.*
@@ -14214,7 +14214,7 @@ Choose one of the following abilities.
 > - **12-16:** R < AVERAGE, the target is [frightened](scc.v1:mcdm.heroes.v1/condition/frightened) of the triggering ally (save ends)
 > - **17+:** R < STRONG, the target is [frightened](scc.v1:mcdm.heroes.v1/condition/frightened) of the triggering ally (save ends)
 
-<!-- @type: ability | @cost: 5 Focus | @id: squad-on-me -->
+<!-- @type: ability | @cost: 5 Focus | @id: squad-on-me | @subclass: vanguard -->
 > ###### Squad! On Me! (5 Focus)
 >
 > *Together we are invincible!*
@@ -14332,32 +14332,32 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 | Mastermind | [Anticipation](scc.v1:mcdm.heroes.v1/feature.tactician.level-5/anticipation), [I Predicted That](scc.v1:mcdm.heroes.v1/feature.tactician.level-5/i-predicted-that)   |
 | Vanguard   | [Shake It Off](scc.v1:mcdm.heroes.v1/feature.tactician.level-5/shake-it-off), [Tactical Offensive](scc.v1:mcdm.heroes.v1/feature.tactician.level-5/tactical-offensive) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: mastermind -->
 ##### Anticipation
 
 You have learned to be more preemptive on the battlefield, thinking more steps ahead than your opponents. You can target two creatures with your Mark ability.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: insurgent -->
 ##### Distracted
 
 You have mastered the ability to distract your foes, allowing you and your allies to take advantage of their gaps in attention. Whenever you or any ally attempts to hide, any creature marked by you doesn't count as an observer. Additionally, you and your allies can use other allies as [cover](scc.v1:mcdm.heroes.v1/rule.combat/cover) for the purpose of hiding.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: mastermind -->
 ##### I Predicted That
 
 Your expertise in history and lore allows you and your allies to outthink rivals in the present day. You and any ally within 10 squares of you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) [tests](scc.v1:mcdm.heroes.v1/rule.test/test).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: insurgent -->
 ##### Leave No Trace
 
 You and any ally within 10 squares of you can move at full [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) while sneaking. Additionally, enemies within 10 squares of you take a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to search for you or your allies while any of you are hidden.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: vanguard -->
 ##### Shake It Off
 
 As a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver), you can spend 1d6 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) to ignore a consequence from a [test](scc.v1:mcdm.heroes.v1/rule.test/test), or to end one effect on you that is ended by a [saving throw](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). Any ally [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to you can also spend [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) as a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) to gain this benefit.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: vanguard -->
 ##### Tactical Offensive
 
 When you use the [Charge](scc.v1:mcdm.heroes.v1/feature.common.main-actions/charge) main action to attack a creature marked by you, you can use a signature or [heroic ability](scc.v1:mcdm.heroes.v1/rule.general/heroic-ability) with the [Melee](scc.v1:mcdm.heroes.v1/rule.combat/melee) and Strike keywords instead of a [melee](scc.v1:mcdm.heroes.v1/rule.combat/melee) [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike).
@@ -14441,7 +14441,7 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Focus | @subtype: triggered -->
+<!-- @type: ability | @cost: 9 Focus | @subtype: triggered | @subclass: insurgent -->
 > ###### Coordinated Execution (9 Focus)
 >
 > *You direct your ally to make a killing blow.*
@@ -14454,7 +14454,7 @@ Choose one of the following abilities.
 >
 > **Effect:** If the target of the triggering ability is not a leader or solo creature, they are reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina). If the target of the triggering ability is a minion, the entire squad is killed. If the target of the triggering ability is a leader or solo creature, the triggering ability's [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) automatically obtains a tier 3 outcome.
 
-<!-- @type: ability | @cost: 9 Focus -->
+<!-- @type: ability | @cost: 9 Focus | @subclass: insurgent -->
 > ###### Panic in Their Lines (9 Focus)
 >
 > *You confuse your foes, causing them to turn on each other.*
@@ -14475,7 +14475,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Focus -->
+<!-- @type: ability | @cost: 9 Focus | @subclass: mastermind -->
 > ###### Battle Plan (9 Focus)
 >
 > *With new understanding of your foes, you create the perfect plan to win the battle.*
@@ -14488,7 +14488,7 @@ Choose one of the following abilities.
 >
 > **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to make the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) ignore [damage immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) and deal extra damage equal to three times your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
 
-<!-- @type: ability | @cost: 9 Focus | @id: hustle -->
+<!-- @type: ability | @cost: 9 Focus | @id: hustle | @subclass: mastermind -->
 > ###### Hustle! (9 Focus)
 >
 > *You and your allies coordinate to form a new battle line.*
@@ -14503,7 +14503,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Focus | @subtype: triggered -->
+<!-- @type: ability | @cost: 9 Focus | @subtype: triggered | @subclass: vanguard -->
 > ###### Instant Retaliation (9 Focus)
 >
 > *You [parry](scc.v1:mcdm.heroes.v1/feature.ability.tactician.level-1/parry) with almost [supernatural](scc.v1:mcdm.heroes.v1/rule.general/supernatural) [speed](scc.v1:mcdm.heroes.v1/rule.character/speed).*
@@ -14522,7 +14522,7 @@ Choose one of the following abilities.
 > - **12-16:** A < AVERAGE, [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** A < STRONG, [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) (save ends)
 
-<!-- @type: ability | @cost: 9 Focus | @id: to-me-squad -->
+<!-- @type: ability | @cost: 9 Focus | @id: to-me-squad | @subclass: vanguard -->
 > ###### To Me Squad! (9 Focus)
 >
 > *You lead your allies in a charge.*
@@ -14577,17 +14577,17 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 | Mastermind | [Grand Strategy](scc.v1:mcdm.heroes.v1/feature.tactician.level-7/grand-strategy)     |
 | Vanguard   | [Shock and Awe](scc.v1:mcdm.heroes.v1/feature.tactician.level-7/shock-and-awe)      |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: insurgent -->
 ##### Asymmetric Warfare
 
 You have advanced your skills in subterfuge, now directing full battlefield strategy and logistics. During a [montage test](scc.v1:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc.v1:mcdm.heroes.v1/rule.test/test) made using a skill from the [intrigue skill group](scc.v1:mcdm.heroes.v1/skill.group/intrigue). Additionally, you can use skills from the [intrigue skill group](scc.v1:mcdm.heroes.v1/skill.group/intrigue) to conceal large groups of people, such as escaping civilians and groups of guerilla warriors.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: mastermind -->
 ##### Grand Strategy
 
 You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a [montage test](scc.v1:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc.v1:mcdm.heroes.v1/rule.test/test) made using a skill from the [lore skill group](scc.v1:mcdm.heroes.v1/skill.group/lore). Additionally, when you take a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can make a [project roll](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) for a [research project](scc.v1:mcdm.heroes.v1/rule.downtime/research-project) in addition to undertaking another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: vanguard -->
 ##### Shock and Awe
 
 You have expanded your leadership skills, strengthening your [followers](scc.v1:mcdm.heroes.v1/rule.general/follower)' morale and providing logistical support. During a [montage test](scc.v1:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc.v1:mcdm.heroes.v1/rule.test/test) made using a skill from the [interpersonal skill group](scc.v1:mcdm.heroes.v1/skill.group/interpersonal). Additionally, you can convince a group of people to help you with a [crafting project](scc.v1:mcdm.heroes.v1/rule.downtime/crafting-project) during a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite). If these people are available when you take a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can make a [project roll](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) for a [crafting project](scc.v1:mcdm.heroes.v1/rule.downtime/crafting-project) in addition to undertaking another [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity.
@@ -14615,21 +14615,21 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 | Mastermind | [Pincer Movement](scc.v1:mcdm.heroes.v1/feature.tactician.level-8/pincer-movement)                    |
 | Vanguard   | [See Your Enemies Driven Before You](scc.v1:mcdm.heroes.v1/feature.tactician.level-8/see-your-enemies-driven-before-you) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: insurgent -->
 ##### Bait and Ambush
 
 You have trained your squad to be silent ambushers.
 
 **Mark Benefit:** When you or any ally makes a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to let the character making the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) [shift](scc.v1:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score and use the [Hide](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) once during the [shift](scc.v1:mcdm.heroes.v1/movement/shifting). The creature can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) before or after the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) is resolved.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: mastermind -->
 ##### Pincer Movement
 
 You have trained your squad to coordinate their movements to maximize combat impact.
 
 **Mark Benefit:** When you or any ally makes a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to have the character making the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) [shift](scc.v1:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score before the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) is resolved. If you didn't make the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike), you can make this [shift](scc.v1:mcdm.heroes.v1/movement/shifting) as well. If you did make the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike), one ally within 10 squares of you can make this [shift](scc.v1:mcdm.heroes.v1/movement/shifting) as well.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: vanguard -->
 ##### See Your Enemies Driven Before You
 
 You have trained your squad to maximize impact and break enemy lines when they attack.
@@ -14712,7 +14712,7 @@ Your [tactical doctrine](scc.v1:mcdm.heroes.v1/feature.tactician.level-1/tactica
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Focus | @id: squad-hit-and-run -->
+<!-- @type: ability | @cost: 11 Focus | @id: squad-hit-and-run | @subclass: insurgent -->
 > ###### Squad! Hit and Run! (11 Focus)
 >
 > *I had to pry this secret from the [shadow college](scc.v1:mcdm.heroes.v1/feature.shadow.level-1/shadow-college)s.*
@@ -14723,7 +14723,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each target gains 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge), and can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to use a [signature ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability) that gains an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge). After resolving their ability, each target can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) up to 2 squares and become hidden even if they have no [cover](scc.v1:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment), or if they are observed.
 
-<!-- @type: ability | @cost: 11 Focus -->
+<!-- @type: ability | @cost: 11 Focus | @subclass: insurgent -->
 > ###### Their Lack of Focus Is Their Undoing (11 Focus)
 >
 > *You trick your enemies into attacking each other and leave them confused by the aftermath.*
@@ -14744,7 +14744,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Focus | @id: blot-out-the-sun -->
+<!-- @type: ability | @cost: 11 Focus | @id: blot-out-the-sun | @subclass: mastermind -->
 > ###### Blot Out the Sun! (11 Focus)
 >
 > *What makes a good soldier? The ability to fire four shots a minute in any weather.*
@@ -14755,7 +14755,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each target can make a [ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) that gains an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) against any enemy marked by you within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of their [ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike). A target ignores [banes](scc.v1:mcdm.heroes.v1/rule.dice/bane) and double [banes](scc.v1:mcdm.heroes.v1/rule.dice/bane) when making this [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike).
 
-<!-- @type: ability | @cost: 11 Focus -->
+<!-- @type: ability | @cost: 11 Focus | @subclass: mastermind -->
 > ###### Counterstrategy (11 Focus)
 >
 > *I've identified a way to negate their strengths.*
@@ -14770,7 +14770,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Focus -->
+<!-- @type: ability | @cost: 11 Focus | @subclass: vanguard -->
 > ###### No Escape (11 Focus)
 >
 > *Nothing will stop you from reaching your foe.*
@@ -14789,7 +14789,7 @@ Choose one of the following abilities.
 >
 > **Effect:** If you use this ability as part of the [Charge](scc.v1:mcdm.heroes.v1/feature.common.main-actions/charge) main action, enemies' spaces don't count as [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for your movement. Additionally, if you move through any creature's space, you can [slide](scc.v1:mcdm.heroes.v1/movement/forced-movement) that creature 1 square out of the path of your charge.
 
-<!-- @type: ability | @cost: 11 Focus | @id: that-one-is-mine -->
+<!-- @type: ability | @cost: 11 Focus | @id: that-one-is-mine | @subclass: vanguard -->
 > ###### That One Is Mine! (11 Focus)
 >
 > *You focus on making an enemy irrelevant.*
@@ -15045,7 +15045,7 @@ Your [talent tradition](scc.v1:mcdm.heroes.v1/feature.talent.level-1/talent-trad
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: chronopathy -->
 > ###### Accelerate
 >
 > *To your ally, it seems as though the world has slowed down.*
@@ -15063,7 +15063,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: chronopathy -->
 > ###### Again
 >
 > *You step back a split second to see if things play out a little differently.*
@@ -15081,7 +15081,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: telepathy -->
 > ###### Feedback Loop
 >
 > *Creating a brief psychic link between an enemy and their target gives that foe a taste of their own medicine.*
@@ -15099,7 +15099,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: telekinesis -->
 > ###### Minor Telekinesis
 >
 > *Wisps of psychic energy ripple visibly from your brain as you force the target to move using only your mind.*
@@ -15119,7 +15119,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: telepathy -->
 > ###### Remote Assistance
 >
 > *An ally gains the benefit of your intellect.*
@@ -15138,7 +15138,7 @@ You have the following ability.
 
 You have the following ability.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: telekinesis -->
 > ###### Repel
 >
 > *They aren't going anywhere, but you might!*
@@ -15455,17 +15455,17 @@ Your [talent tradition](scc.v1:mcdm.heroes.v1/feature.talent.level-1/talent-trad
 | Telekinesis                  | [Ease Their Fall](scc.v1:mcdm.heroes.v1/feature.talent.level-2/ease-their-fall) |
 | Telepathy                    | [Ease the Mind](scc.v1:mcdm.heroes.v1/feature.talent.level-2/ease-the-mind)   |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: chronopathy -->
 ##### Ease the Hours
 
 You can increase the number of rounds in a [montage test](scc.v1:mcdm.heroes.v1/rule.test/montage-test) by 1 if the [test](scc.v1:mcdm.heroes.v1/rule.test/test) would end before the heroes hit the success limit.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telepathy -->
 ##### Ease the Mind
 
 You gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made to stop combat and start a negotiation. Additionally, if you are present during a negotiation, any [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) who has a hostile or suspicious starting attitude has their patience increased by 1 (to a maximum of 5).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telekinesis -->
 ##### Ease Their Fall
 
 Whenever you land after a fall, or if any falling creature lands within 2 squares of you, you can use a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to reduce the falling damage by an amount equal to 2 + your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
@@ -15479,7 +15479,7 @@ Your [talent tradition](scc.v1:mcdm.heroes.v1/feature.talent.level-1/talent-trad
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Clarity -->
+<!-- @type: ability | @cost: 5 Clarity | @subclass: chronopathy -->
 > ###### Applied Chronometrics (5 Clarity)
 >
 > *Time slows down around you. Your heartbeat is the only gauge of the extra moments you've gained.*
@@ -15498,7 +15498,7 @@ Choose one of the following abilities.
 >
 > **Strained:** Your [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) is halved until the end of the encounter.
 
-<!-- @type: ability | @cost: 5 Clarity -->
+<!-- @type: ability | @cost: 5 Clarity | @subclass: chronopathy -->
 > ###### Slow (5 Clarity)
 >
 > *Perhaps they wonder why everyone else is moving so quickly?*
@@ -15521,7 +15521,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Clarity -->
+<!-- @type: ability | @cost: 5 Clarity | @subclass: telekinesis -->
 > ###### Gravitic Burst (5 Clarity)
 >
 > *Everyone get away from me!*
@@ -15538,7 +15538,7 @@ Choose one of the following abilities.
 >
 > **Strained:** The size of the [burst](scc.v1:mcdm.heroes.v1/rule.combat/burst) increases by 1, and you are [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) until the end of your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 5 Clarity -->
+<!-- @type: ability | @cost: 5 Clarity | @subclass: telekinesis -->
 > ###### Levity and Gravity (5 Clarity)
 >
 > *You raise the target slightly into the air, then smother them against the ground.*
@@ -15559,7 +15559,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Clarity -->
+<!-- @type: ability | @cost: 5 Clarity | @subclass: telepathy -->
 > ###### Overwhelm (5 Clarity)
 >
 > *You overload their senses, turning all their subconscious thoughts into conscious ones.*
@@ -15576,7 +15576,7 @@ Choose one of the following abilities.
 >
 > **Strained:** You start crying, and you can't use [triggered actions](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) or make [free strikes](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) until the end of the target's next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 5 Clarity -->
+<!-- @type: ability | @cost: 5 Clarity | @subclass: telepathy -->
 > ###### Synaptic Override (5 Clarity)
 >
 > *You control an enemy's nervous system. How pleasant for them.*
@@ -15741,32 +15741,32 @@ Your [talent tradition](scc.v1:mcdm.heroes.v1/feature.talent.level-1/talent-trad
 | Telekinesis | [Kinetic Amplifier](scc.v1:mcdm.heroes.v1/feature.talent.level-5/kinetic-amplifier), [Triangulate](scc.v1:mcdm.heroes.v1/feature.talent.level-5/triangulate)        |
 | Telepathy   | [Compulsion](scc.v1:mcdm.heroes.v1/feature.talent.level-5/compulsion), [Remote Amplification](scc.v1:mcdm.heroes.v1/feature.talent.level-5/remote-amplification)      |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telepathy -->
 ##### Compulsion
 
 Whenever you obtain a success on a [test](scc.v1:mcdm.heroes.v1/rule.test/test) using a skill from the [interpersonal skill group](scc.v1:mcdm.heroes.v1/skill.group/interpersonal) while interacting with an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc), you can ask them a question using your [Telepathic Speech](scc.v1:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature. The [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) must answer the question truthfully to the best of their ability.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: chronopathy -->
 ##### Distortion Temporal
 
 While you are not [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), time behaves irregularly around you in a 3 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura). That area is [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a [combat round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there, they gain a +2 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) until the end of the [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telekinesis -->
 ##### Kinetic Amplifier
 
 Whenever you force move a creature, you can spend up to 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge). For each [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge) spent, the [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) gains a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telepathy -->
 ##### Remote Amplification
 
 The [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) psionic abilities increases by 5. Additionally, the range of your [Telepathic Speech](scc.v1:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature increases to 1 mile.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: chronopathy -->
 ##### Speed of Thought
 
 Once per [combat round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round) while you are not [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), you can spend 2 clarity when you use a [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) it into a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telekinesis -->
 ##### Triangulate
 
 Whenever an ally uses a [ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) ability while you are within the ability's [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance), you can spend 1 clarity as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to allow them to use the ability as if they were in your space.
@@ -15905,7 +15905,7 @@ Your [talent tradition](scc.v1:mcdm.heroes.v1/feature.talent.level-1/talent-trad
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Clarity -->
+<!-- @type: ability | @cost: 9 Clarity | @subclass: chronopathy -->
 > ###### Fate (9 Clarity)
 >
 > *Your foe gets a glimpse of how it will end for them.*
@@ -15924,7 +15924,7 @@ Choose one of the following abilities.
 > - **12-16:** 13 + P psychic damage
 > - **17+:** 17 + P psychic damage
 
-<!-- @type: ability | @cost: 9 Clarity -->
+<!-- @type: ability | @cost: 9 Clarity | @subclass: chronopathy -->
 > ###### Stasis Field (9 Clarity)
 >
 > *Keep everything as it was. Ignore everything that will be.*
@@ -15949,7 +15949,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Clarity -->
+<!-- @type: ability | @cost: 9 Clarity | @subclass: telekinesis -->
 > ###### Gravitic Well (9 Clarity)
 >
 > *You bend gravity into a fine point and pull your foes toward it.*
@@ -15968,7 +15968,7 @@ Choose one of the following abilities.
 >
 > **Strained:** The size of the area increases by 2. You also target yourself and each ally within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance).
 
-<!-- @type: ability | @cost: 9 Clarity -->
+<!-- @type: ability | @cost: 9 Clarity | @subclass: telekinesis -->
 > ###### Greater Kinetic Grip (9 Clarity)
 >
 > *You raise the target into the air without breaking a sweat.*
@@ -15989,7 +15989,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Clarity -->
+<!-- @type: ability | @cost: 9 Clarity | @subclass: telepathy -->
 > ###### Synaptic Conditioning (9 Clarity)
 >
 > *It's a subtle mindset shift. It's not that they're your enemy—you just don't like them!*
@@ -16006,7 +16006,7 @@ Choose one of the following abilities.
 >
 > **Strained:** While the target is under this effect, you no longer consider your enemies to be your enemies when using your abilities and features.
 
-<!-- @type: ability | @cost: 9 Clarity -->
+<!-- @type: ability | @cost: 9 Clarity | @subclass: telepathy -->
 > ###### Synaptic Dissipation (9 Clarity)
 >
 > *You manipulate your enemies' minds and make them wonder if you were ever really there in the first place.*
@@ -16078,7 +16078,7 @@ Your [talent tradition](scc.v1:mcdm.heroes.v1/feature.talent.level-1/talent-trad
 | Telekinesis | [Levitation Field](scc.v1:mcdm.heroes.v1/feature.ability.talent.level-8/levitation-field), [Low Gravity](scc.v1:mcdm.heroes.v1/feature.talent.level-8/low-gravity)     |
 | Telepathy   | [Mindlink](scc.v1:mcdm.heroes.v1/feature.talent.level-8/mindlink), [Universal Connection](scc.v1:mcdm.heroes.v1/feature.talent.level-8/universal-connection)    |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: chronopathy -->
 ##### Doubling the Hours
 
 While you have 5 or more [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories), you can undertake an additional [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity during a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite).
@@ -16088,7 +16088,7 @@ While you have 5 or more [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victori
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: telekinesis -->
 > ###### Levitation Field
 >
 > *You manipulate the air around your allies so they can move as freely through the sky as you can.*
@@ -16101,12 +16101,12 @@ You have the following ability.
 >
 > **Spend 5 Clarity:** The effects last for 1 hour instead.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telekinesis -->
 ##### Low Gravity
 
 Your mind can carry your body through tough times. You ignore [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) and don't need to spend additional movement [while prone](scc.v1:mcdm.heroes.v1/condition/prone).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telepathy -->
 ##### Mindlink
 
 During a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose a number of creatures up to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score who you have communicated with using your [Telepathic Speech](scc.v1:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature, creating a telepathic link among all of you. Whenever a linked creature spends one or more [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries), each other linked creature can spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries).
@@ -16116,7 +16116,7 @@ During a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose 
 
 You have the following ability.
 
-<!-- @type: ability | @cost: 3 Clarity | @subtype: triggered -->
+<!-- @type: ability | @cost: 3 Clarity | @subtype: triggered | @subclass: chronopathy -->
 > ###### Stasis Shield (3 Clarity)
 >
 > *You freeze time just long enough to bring the victim to safety!*
@@ -16131,7 +16131,7 @@ You have the following ability.
 >
 > **Strained:** You can't target yourself, and you take the damage and any additional effects instead of the target.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: telepathy -->
 #### Universal Connection
 
 The range of your [Telepathic Speech](scc.v1:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature increases to anywhere on the same world.
@@ -16234,7 +16234,7 @@ Your [talent tradition](scc.v1:mcdm.heroes.v1/feature.talent.level-1/talent-trad
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Clarity -->
+<!-- @type: ability | @cost: 11 Clarity | @subclass: chronopathy -->
 > ###### Acceleration Field (11 Clarity)
 > 
 > *You forcibly stuff more moments into a critical point in time, knowing full well you might need to steal some of your own.*
@@ -16253,7 +16253,7 @@ Choose one of the following abilities.
 > - **12-16:** 6 corruption damage; [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **17+:** 10 corruption damage; [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) (save ends)
 
-<!-- @type: ability | @cost: 11 Clarity -->
+<!-- @type: ability | @cost: 11 Clarity | @subclass: chronopathy -->
 > ###### Borrow From the Future (11 Clarity)
 >
 > *You lean on future heroism to assist you in the now.*
@@ -16268,7 +16268,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Clarity -->
+<!-- @type: ability | @cost: 11 Clarity | @subclass: telekinesis -->
 > ###### Fulcrum (11 Clarity)
 >
 > *You precisely manipulate the creatures around you.*
@@ -16287,7 +16287,7 @@ Choose one of the following abilities.
 >
 > **Strained:** You can choose to reduce the size of the [burst](scc.v1:mcdm.heroes.v1/rule.combat/burst) by 2 (to a minimum of 1 [burst](scc.v1:mcdm.heroes.v1/rule.combat/burst)) to give the [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) a +2 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). You take half the total damage all targets take from [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement).
 
-<!-- @type: ability | @cost: 11 Clarity -->
+<!-- @type: ability | @cost: 11 Clarity | @subclass: telekinesis -->
 > ###### Gravitic Nova (11 Clarity)
 >
 > *Unbridled psionic energy erupts from your body and flashes outward, hurling your foes back.*
@@ -16310,7 +16310,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Clarity -->
+<!-- @type: ability | @cost: 11 Clarity | @subclass: telepathy -->
 > ###### Resonant Mind Spike (11 Clarity)
 >
 > *You fire a telepathic bolt empowered by every consciousness within reach directly into your foe's mind.*
@@ -16329,7 +16329,7 @@ Choose one of the following abilities.
 >
 > **Strained:** The [ability roll](scc.v1:mcdm.heroes.v1/rule.dice/ability-roll) scores a [critical hit](scc.v1:mcdm.heroes.v1/rule.combat/critical-hit) on a natural 17 or higher. You take half the damage the target takes, and you can't reduce this damage in any way.
 
-<!-- @type: ability | @cost: 11 Clarity -->
+<!-- @type: ability | @cost: 11 Clarity | @subclass: telepathy -->
 > ###### Synaptic Terror (11 Clarity)
 >
 > *You project a terrifying image into the brains of your foes, and their fear psionically invigorates your allies.*
@@ -16548,12 +16548,12 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 | Duelist    | [Acrobatics](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/acrobatics), [Star Power](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/star-power)             |
 | Virtuoso   | [Power Chord](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/power-chord), [Virtuoso Performances](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/virtuoso-performances) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: duelist -->
 ##### Acrobatics
 
 You have the following performance ability, which is usable with your [Routines](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/routines) feature.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: duelist -->
 > ###### Acrobatics
 >
 > *Folks love a good tumble.*
@@ -16564,12 +16564,12 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > **Effect:** While this performance is active, each target who starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in the area can automatically obtain a tier 3 outcome on one [test](scc.v1:mcdm.heroes.v1/rule.test/test) made to jump, tumble, or climb as part of their movement before the end of their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: auteur -->
 ##### Blocking
 
 You have the following performance ability, which is usable with your [Routines](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/routines) feature.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: auteur -->
 > ###### Blocking
 >
 > *No, no, no, you lose the audience that way. Try it like this...*
@@ -16580,12 +16580,12 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > **Effect:** At the end of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn) while this performance is active, you can choose up to a number of targets equal to your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score and [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) those targets to unoccupied spaces in the area. A target can't be [teleport](scc.v1:mcdm.heroes.v1/movement/teleport)ed in a way that would harm them (such as over a cliff), leave them [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), or result in them suffering a [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) or other negative effect.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: auteur -->
 ##### Dramatic Monologue
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: auteur -->
 > ###### Dramatic Monologue
 >
 > *It doesn't need to make sense. Just say it with emotion.*
@@ -16602,12 +16602,12 @@ You have the following ability.
 >
 > **Spend 1 Drama:** You can choose two targets for the chosen effect.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: virtuoso -->
 ##### Power Chord
 
 You have the following ability.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: virtuoso -->
 > ###### Power Chord
 >
 > *Your instrument rings true and your music blows everyone away.*
@@ -16622,12 +16622,12 @@ You have the following ability.
 > - **12-16:** [Push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 2
 > - **17+:** [Push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 3
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: duelist -->
 ##### Star Power
 
 You have the following ability.
 
-<!-- @type: ability | @cost: 1 Drama -->
+<!-- @type: ability | @cost: 1 Drama | @subclass: duelist -->
 > ###### Star Power (1 Drama)
 >
 > *Your years of practicing fencing and dancing pay off on the battlefield.*
@@ -16640,12 +16640,12 @@ You have the following ability.
 >
 > **Spend 1 Drama:** You gain a +4 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) instead.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: virtuoso -->
 ##### Virtuoso Performances
 
 You have the following performance abilities, which are usable with your [Routines](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/routines) feature.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: virtuoso -->
 > ###### "Thunder Mother"
 >
 > *All for thunder motherrr! ♪ Run and hide for coverrr!♪*
@@ -16662,7 +16662,7 @@ You have the following performance abilities, which are usable with your [Routin
 > - **12-16:** Lightning damage equal to 5 + your level
 > - **17+:** Lightning damage equal to 10 + your level
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: virtuoso -->
 > ###### "Ballad of the Beast"
 >
 > *Teeth are bare! ♪ Eyes black! ♪ No escaping the beast!♪*
@@ -16686,7 +16686,7 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 | Duelist   | [Riposte](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/riposte)                |
 | Virtuoso  | [Harmonize](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/harmonize)              |
 
-<!-- @type: ability | @cost: 3 Drama | @subtype: triggered -->
+<!-- @type: ability | @cost: 3 Drama | @subtype: triggered | @subclass: virtuoso -->
 > ###### Harmonize (3 Drama)
 >
 > *Give the chorus a little punch.*
@@ -16701,7 +16701,7 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 >
 > **Spend 1+ Drama:** You can trigger this ability when a target uses an ability that has a [Heroic Resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource) cost of 3 + each additional drama spent.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: duelist -->
 > ###### Riposte
 >
 > *"I'd have brought treats had I known I'd be fighting a dog."*
@@ -16714,7 +16714,7 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 >
 > **Effect:** The target makes a [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the creature who made the triggering strike.
 
-<!-- @type: ability | @subtype: triggered -->
+<!-- @type: ability | @subtype: triggered | @subclass: auteur -->
 > ###### Turnabout Is Fair Play
 >
 > *All's fair in love and whatever.*
@@ -16997,7 +16997,7 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Drama -->
+<!-- @type: ability | @cost: 5 Drama | @subclass: auteur -->
 > ###### Guest Star (5 Drama)
 >
 > *We offered them a percentage of the gross. So they're working for free!*
@@ -17008,7 +17008,7 @@ Choose one of the following abilities.
 >
 > **Effect:** A [guest star](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) appears to help you during the encounter: either a bystander within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) uplifted by your magic, or a mysterious new hero who appears in an unoccupied space within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance). This [guest star](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is controlled by you, has their own [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), and shares your [characteristics](scc.v1:mcdm.heroes.v1/rule.character/characteristic). Their [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) maximum is half yours. They have no abilities other than your [melee](scc.v1:mcdm.heroes.v1/rule.combat/melee) and [ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) [free strikes](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike). At the end of the encounter, or when the [guest star](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they retreat or revert to a bystander. The same bystander can't be uplifted this way more than once during an encounter.
 
-<!-- @type: ability | @cost: 5 Drama -->
+<!-- @type: ability | @cost: 5 Drama | @subclass: auteur -->
 > ###### Twist at the End (5 Drama)
 >
 > *You didn't see that coming, did you?!*
@@ -17023,7 +17023,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Drama -->
+<!-- @type: ability | @cost: 5 Drama | @subclass: duelist -->
 > ###### Classic Chandelier Stunt (5 Drama)
 >
 > *Audiences love this bit.*
@@ -17034,7 +17034,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each target can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) up to 5 squares, including vertically, but must end this movement [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the other target and on solid ground. Each target can then make a [melee](scc.v1:mcdm.heroes.v1/rule.combat/melee) [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) that deals extra damage equal to twice their highest [characteristic](scc.v1:mcdm.heroes.v1/rule.character/characteristic) score.
 
-<!-- @type: ability | @cost: 5 Drama | @id: en-garde -->
+<!-- @type: ability | @cost: 5 Drama | @id: en-garde | @subclass: duelist -->
 > ###### En Garde! (5 Drama)
 >
 > *Wait, it's... Guard! [Turn](scc.v1:mcdm.heroes.v1/rule.combat/turn)! Parry! Dodge! Spin! Thrust! Ha!*
@@ -17055,7 +17055,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 5 Drama -->
+<!-- @type: ability | @cost: 5 Drama | @subclass: virtuoso -->
 > ###### Encore (5 Drama)
 >
 > *Again! Again!*
@@ -17066,7 +17066,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You use an ability that you have observed being used this [combat round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round). The ability must have the [Strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) keyword, cost 5 or fewer of a [Heroic Resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource), and cost no Malice. When you make the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike), you use your [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score for any [power rolls](scc.v1:mcdm.heroes.v1/rule.dice/power-roll), and any damage you deal is sonic damage.
 
-<!-- @type: ability | @cost: 5 Drama -->
+<!-- @type: ability | @cost: 5 Drama | @subclass: virtuoso -->
 > ###### Tough Crowd (5 Drama)
 >
 > *Your fans don't seem to like the opening act...*
@@ -17101,22 +17101,22 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 | Duelist    | Foil         |
 | Virtuoso   | [Second Album](scc.v1:mcdm.heroes.v1/feature.troubadour.level-3/second-album) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: duelist -->
 ##### Foil
 
 At the start of an encounter, choose one creature within your [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect). You have a double [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with that creature. The chosen creature also has a double [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with you. If the chosen creature is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), you can choose a new foil at the start of the next [combat round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: auteur -->
 ##### Missed Cue
 
 If you aren't [surprised](scc.v1:mcdm.heroes.v1/rule.combat/surprised) at the start of an encounter, you can choose one enemy within your [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) who is not a leader or solo creature. The Director temporarily removes the chosen creature from the encounter. The chosen creature enters the encounter at the start of the second [combat round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round). You must earn 3 [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories) before you can use this feature again.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: virtuoso -->
 ##### Second Album
 
 You have the following performance abilities, which are usable with your [Routines](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/routines) feature.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: virtuoso -->
 > ###### "Fire Up the Night"
 >
 > *Maybe you and I ♪ We can still bring the light!♪*
@@ -17127,7 +17127,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > **Effect:** While this performance is active, each target who starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in the area doesn't take a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment). Once during their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), they can search for hidden creatures as a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests)).
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: virtuoso -->
 > ###### "Never-Ending Hero"
 >
 > *And toniiight we can truly say ♪ They will alllways find a way!♪*
@@ -17279,7 +17279,7 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 
 Choose one of the following features.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: auteur -->
 ###### Fix It in Post
 
 Once on each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) to change one [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) affecting a creature within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [Dramatic Monologue](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/dramatic-monologue) ability. Choose one of the following [conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition) on the target: [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding), [frightened](scc.v1:mcdm.heroes.v1/condition/frightened)[, prone](scc.v1:mcdm.heroes.v1/condition/prone), [slowed](scc.v1:mcdm.heroes.v1/condition/slowed), or [taunted](scc.v1:mcdm.heroes.v1/condition/taunted). You change that [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) to another of those [conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition), maintaining the duration and origin of the original [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition). A target who is no longer prone can stand up.
@@ -17288,7 +17288,7 @@ Once on each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can us
 
 You have the following performance ability, which is usable with your [Routines](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/routines) feature.
 
-<!-- @type: ability | @id: take-two -->
+<!-- @type: ability | @id: take-two | @subclass: auteur -->
 > ###### Take Two!
 >
 > *One more, and this time make it interesting.*
@@ -17304,7 +17304,7 @@ You have the following performance ability, which is usable with your [Routines]
 
 Choose one of the following features.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: duelist -->
 ###### Verbal Duel
 
 Once on each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn) while the target of your Foil feature is [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to you, you can use a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with them. Make an opposed [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) [test](scc.v1:mcdm.heroes.v1/rule.test/test) with the target. Whoever gets the higher result can make a [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
@@ -17313,7 +17313,7 @@ Once on each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn) while the t
 
 You have the following performance ability, which is usable with your [Routines](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/routines) feature.
 
-<!-- @type: ability | @id: we-cant-be-upstaged -->
+<!-- @type: ability | @id: we-cant-be-upstaged | @subclass: duelist -->
 > ###### We Can't Be Upstaged!
 >
 > *Swordplay so graceful it looks like you all practiced this.*
@@ -17329,12 +17329,12 @@ You have the following performance ability, which is usable with your [Routines]
 
 Choose one of the following features.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: virtuoso -->
 ###### Bolstering Banter
 
 Once on each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with a target of your current performance, other than yourself. The target can spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries) to gain [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) equal to their [recovery value](scc.v1:mcdm.heroes.v1/rule.health/recoveries).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: virtuoso -->
 ###### Medley
 
 You can maintain two performances at a time using your [Routines](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/routines) feature.
@@ -17433,7 +17433,7 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Drama -->
+<!-- @type: ability | @cost: 9 Drama | @subclass: auteur -->
 > ###### Here's How Your Story Ends (9 Drama)
 >
 > *You give away the ending of this battle, and it's not great for them.*
@@ -17448,7 +17448,7 @@ Choose one of the following abilities.
 > - **12-16:** 5 psychic damage; P < AVERAGE, [frightened](scc.v1:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **17+:** 7 psychic damage; P < STRONG, [frightened](scc.v1:mcdm.heroes.v1/condition/frightened) (save ends)
 
-<!-- @type: ability | @cost: 9 Drama -->
+<!-- @type: ability | @cost: 9 Drama | @subclass: auteur -->
 > ###### You're All My Understudies (9 Drama)
 >
 > *It's important for everyone to know each other's lines, just in case...*
@@ -17463,7 +17463,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Drama -->
+<!-- @type: ability | @cost: 9 Drama | @subclass: duelist -->
 > ###### Blood on the Stage (9 Drama)
 >
 > *It's love and blood or drama and blood. Either way, there's always blood.*
@@ -17478,7 +17478,7 @@ Choose one of the following abilities.
 > - **12-16:** 18 + A damage; M < AVERAGE, [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **17+:** 24 + A damage; [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) ([EoT](scc.v1:mcdm.heroes.v1/rule.combat/end-of-turn)), or if M < STRONG, [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) (save ends)
 
-<!-- @type: ability | @cost: 9 Drama -->
+<!-- @type: ability | @cost: 9 Drama | @subclass: duelist -->
 > ###### Fight Choreography (9 Drama)
 >
 > *You and your partner make a flashy show of derring-do, then get back to your corners.*
@@ -17493,7 +17493,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 9 Drama -->
+<!-- @type: ability | @cost: 9 Drama | @subclass: virtuoso -->
 > ###### Feedback (9 Drama)
 >
 > *Your music pounds the crowd to the beat until their hearts can't stand it anymore.*
@@ -17510,7 +17510,7 @@ Choose one of the following abilities.
 > - **12-16:** 10 sonic damage; P < AVERAGE[, prone](scc.v1:mcdm.heroes.v1/condition/prone)
 > - **17+:** 13 sonic damage; P < STRONG[, prone](scc.v1:mcdm.heroes.v1/condition/prone)
 
-<!-- @type: ability | @cost: 9 Drama -->
+<!-- @type: ability | @cost: 9 Drama | @subclass: virtuoso -->
 > ###### Legendary Drum Fill (9 Drama)
 >
 > *You start a drumroll that roars like thunder with every impact the heroes make.*
@@ -17571,12 +17571,12 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 | Duelist   | Masterwork      |
 | Virtuoso  | [Crowd Favorites](scc.v1:mcdm.heroes.v1/feature.troubadour.level-8/crowd-favorites) |
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: virtuoso -->
 ##### Crowd Favorites
 
 You have the following performance abilities, which are usable with your [Routines](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/routines) feature.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: virtuoso -->
 > ###### Moonlight Sonata
 >
 > *Music pours out of your heart, filling the area with the utmost delicacy and without damper.*
@@ -17587,7 +17587,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > **Effect:** While this performance is active, each target who is dead can choose to continue taking [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn) after death. On each of their [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), a target can move and use either a main action or a maneuver, but can't spend [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries) or use [triggered actions](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action). At the end of the encounter, each target who chose to take [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn) this way turns to dust and blows away.
 
-<!-- @type: ability -->
+<!-- @type: ability | @subclass: virtuoso -->
 > ###### Radical Fantasia
 >
 > *𝅘𝅥𝅮♪Viras, my Viras, will you hold their hands as they cryyy—aaaiigh?♪*
@@ -17598,12 +17598,12 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > **Effect:** While this performance is active, each target who starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in the area ignores [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain), and any ability they use that imposes [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) gains a +2 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to the [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) until the end of their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). Additionally, once per [combat round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round), each target can use a [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action).
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: auteur -->
 ##### Deleted Scene
 
 Whenever a creature within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [Dramatic Monologue](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/dramatic-monologue) ability makes a [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll), you can spend 1 drama as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to use [Dramatic Monologue](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/dramatic-monologue), targeting only one creature.
 
-<!-- @type: feature -->
+<!-- @type: feature | @subclass: duelist -->
 ##### Masterwork
 
 Choose one of your [signature abilities](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability) and name it after yourself. You always have this ability available, even if it is sourced from a kit you switch out. Whenever you use this ability, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) and 1 [surge](scc.v1:mcdm.heroes.v1/rule.resource/surge) that you can use only on this ability.
@@ -17691,7 +17691,7 @@ Your [troubadour class act](scc.v1:mcdm.heroes.v1/feature.troubadour.level-1/tro
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Drama -->
+<!-- @type: ability | @cost: 11 Drama | @subclass: auteur -->
 > ###### Epic (11 Drama)
 >
 > *Your story tells a tale of the villain's waning power and how the heroes rose to the occasion to stop them.*
@@ -17708,7 +17708,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Choose one ally within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance). While the target is affected by this ability, each time they use an ability, that ally can make a [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them after the ability is resolved.
 
-<!-- @type: ability | @cost: 11 Drama -->
+<!-- @type: ability | @cost: 11 Drama | @subclass: auteur -->
 > ###### Rising Tension (11 Drama)
 >
 > *You narrate the tension of the scene and put all hope into your protagonist to [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) things around.*
@@ -17723,7 +17723,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Drama -->
+<!-- @type: ability | @cost: 11 Drama | @subclass: duelist -->
 > ###### Expert Fencer (11 Drama)
 >
 > *If you can land the [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike), the crowd goes wild.*
@@ -17740,7 +17740,7 @@ Choose one of the following abilities.
 >
 > **Effect:** This ability can't obtain better than a tier 2 outcome unless the target is at maximum [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance). If you obtain a tier 3 outcome with a natural 17 or higher, you gain 3 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge) that you can use immediately.
 
-<!-- @type: ability | @cost: 11 Drama -->
+<!-- @type: ability | @cost: 11 Drama | @subclass: duelist -->
 > ###### Renegotiated Contract (11 Drama)
 >
 > *No, no. You don't die until the sequel.*
@@ -17761,7 +17761,7 @@ Choose one of the following abilities.
 
 Choose one of the following abilities.
 
-<!-- @type: ability | @cost: 11 Drama -->
+<!-- @type: ability | @cost: 11 Drama | @subclass: virtuoso -->
 > ###### Jam Session (11 Drama)
 >
 > *Your [jam session](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-9/jam-session) creates new genres that compel everyone to get up and move.*
@@ -17778,7 +17778,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each creature within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) gains a +5 [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) until the end of their next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). While under this effect, each target must use their full movement during their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: ability | @cost: 11 Drama -->
+<!-- @type: ability | @cost: 11 Drama | @subclass: virtuoso -->
 > ###### Melt Their Faces (11 Drama)
 >
 > *The power of music rips through the reality around the target and blows them away.*
