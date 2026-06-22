@@ -67,6 +67,9 @@ func renderSubtree(section *parser.Section, rootLevel int, sccBySection map[*par
 		if cost := extractCostSuffix(child.Heading); cost != "" {
 			attrs = append(attrs, `data-cost="`+cost+`"`)
 		}
+		if sub := strings.TrimSpace(child.Annotation["subclass"]); sub != "" {
+			attrs = append(attrs, `data-subclass="`+sub+`"`)
+		}
 		if len(attrs) > 0 {
 			heading += ` {` + strings.Join(attrs, " ") + `}`
 		}
