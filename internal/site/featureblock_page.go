@@ -366,20 +366,19 @@ func fbRailValue(s string) string {
 func renderFbFeat(b *strings.Builder, f fbFeature) {
 	fmt.Fprintf(b, "<article class=\"sc-ability fb__feat\" data-action=\"%s\">\n", fbFeatureAction(f))
 
-	// head: icon · (usage eyebrow over) name · cost
-	b.WriteString("<div class=\"fb__feat-head\">")
+	// head: shared 6-slot header (name + cost mini + usage chip). The fb__feat-head
+	// wrapper is kept so the flat-list CSS hook still matches.
+	crest := ""
 	if ic := strings.TrimSpace(f.Icon); ic != "" {
-		fmt.Fprintf(b, "<span class=\"fb__feat-icon\">%s</span>", html.EscapeString(ic))
+		crest = fmt.Sprintf("<span class=\"fb__feat-icon\">%s</span>", html.EscapeString(ic))
 	}
-	b.WriteString("<div class=\"fb__feat-titles\">")
-	// usage eyebrow ("Main action (Adjacent creature)") — the human-readable form
-	// of the data-action accent; without it usage-only features (Reload/Spot) are bare.
-	if usage := strings.TrimSpace(f.Usage); usage != "" {
-		fmt.Fprintf(b, "<div class=\"fb__feat-eyebrow\"><span class=\"sc-ability__dia\"></span>%s</div>", richInline(usage))
-	}
-	fmt.Fprintf(b, "<h3 class=\"fb__feat-name sc-ability__name\">%s</h3>", html.EscapeString(strings.TrimSpace(f.Name)))
-	b.WriteString("</div>")
-	fmt.Fprintf(b, "<div class=\"fb__feat-corner\">%s</div>", costBadge(strings.TrimSpace(f.Cost)))
+	b.WriteString("<div class=\"fb__feat-head\">")
+	b.WriteString(renderCardHead(cardHeadSlots{
+		Crest:        crest,
+		LeftPrimary:  hLine(html.EscapeString(strings.TrimSpace(f.Name))),
+		RightPrimary: hMini(html.EscapeString(strings.TrimSpace(f.Cost))),
+		RightDeck:    hChip(richInline(strings.TrimSpace(f.Usage))),
+	}))
 	b.WriteString("</div>\n")
 
 	// lead-in prose: a test's "As a maneuver, … make a Might test." sets up the

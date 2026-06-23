@@ -281,3 +281,20 @@ func TestStatblockKindNoun(t *testing.T) {
 		}
 	}
 }
+
+func TestStatblockFeature_SixSlotHead(t *testing.T) {
+	f := sbFeature{Name: "Cleave", Action: "main", Usage: "Main Action", Cost: "Signature", Kind: "ability"}
+	got := renderStatblockFeature(f)
+	for _, want := range []string{
+		`sc-head__left-primary sc-head__slot--line">Cleave</h3>`,
+		`sc-head__right-primary sc-head__slot--mini">Signature</div>`,
+		`sc-head__right-deck sc-head__slot--chip">Main Action</div>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q in:\n%s", want, got)
+		}
+	}
+	if strings.Contains(got, "sc-head__left-eyebrow") || strings.Contains(got, "sc-head__right-eyebrow") {
+		t.Errorf("sub-feature must not emit eyebrow lanes:\n%s", got)
+	}
+}

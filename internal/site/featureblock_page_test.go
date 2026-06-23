@@ -166,8 +166,8 @@ func TestRenderFbFeats_PassiveMalice(t *testing.T) {
 		`class="fb__feats"`,
 		`class="sc-ability fb__feat" data-action="passive"`, // 🔳 → no usage/cost-table → passive
 		`class="fb__feat-icon"`, "🔳",
-		`class="fb__feat-name`, "Walleye",
-		`class="sc-ability__cost"`, "Malice", // cost badge "7 Malice"
+		`sc-head__left-primary sc-head__slot--line">Walleye</h3>`,
+		`sc-head__right-primary sc-head__slot--mini">7 Malice</div>`, // cost is now the right-primary mini
 		`class="fb__feat-body"`, "reflective spittle",
 	} {
 		if !strings.Contains(s, want) {
@@ -206,35 +206,29 @@ func TestRenderFbFeats_TerrainSpecialAndPowerRoll(t *testing.T) {
 	}
 }
 
-// A feature's usage ("Main action (Adjacent creature)") must render as an eyebrow
-// above the name. Regression for the Field Ballista's Reload/Spot, whose usage was
+// A feature's usage ("Main action (Adjacent creature)") must render as the
+// right-deck chip. Regression for the Field Ballista's Reload/Spot, whose usage was
 // parsed but only fed the data-action accent — never shown — leaving the cards bare.
-func TestRenderFbFeat_UsageEyebrow(t *testing.T) {
+func TestRenderFbFeat_UsageChip(t *testing.T) {
 	feat := fbFeature{
 		Icon: "⭐️", Name: "Reload", Usage: "Main action (Adjacent creature)",
 		Sections: []fbSection{{Label: "Effect", Text: "The field ballista is reloaded."}},
 	}
 	s := renderFbFeats([]fbFeature{feat})
-	if !strings.Contains(s, `class="fb__feat-eyebrow"`) {
-		t.Fatalf("missing fb__feat-eyebrow in:\n%s", s)
+	if !strings.Contains(s, `sc-head__right-deck sc-head__slot--chip">Main action (Adjacent creature)</div>`) {
+		t.Fatalf("usage should render as the right-deck chip in:\n%s", s)
 	}
-	if !strings.Contains(s, "Main action (Adjacent creature)") {
-		t.Fatalf("eyebrow missing usage text in:\n%s", s)
-	}
-	// eyebrow renders before the name (inside the head's titles wrapper)
-	idxEye := strings.Index(s, `class="fb__feat-eyebrow"`)
-	idxName := strings.Index(s, `class="fb__feat-name`)
-	if idxEye < 0 || idxName < 0 || idxEye > idxName {
-		t.Errorf("eyebrow (%d) must render before name (%d):\n%s", idxEye, idxName, s)
+	if !strings.Contains(s, `sc-head__left-primary sc-head__slot--line">Reload</h3>`) {
+		t.Fatalf("name should render as left-primary in:\n%s", s)
 	}
 }
 
-// A feature with no usage (a passive/trait) must NOT emit an empty eyebrow.
-func TestRenderFbFeat_NoUsageNoEyebrow(t *testing.T) {
+// A feature with no usage (a passive/trait) must NOT emit an empty right-deck chip.
+func TestRenderFbFeat_NoUsageNoChip(t *testing.T) {
 	feat := fbFeature{Icon: "⭐️", Name: "Upgrades", Body: "Some passive prose."}
 	s := renderFbFeats([]fbFeature{feat})
-	if strings.Contains(s, `class="fb__feat-eyebrow"`) {
-		t.Errorf("unexpected eyebrow for usage-less feature in:\n%s", s)
+	if strings.Contains(s, "sc-head__right-deck") {
+		t.Errorf("usage-less feature must not emit a right-deck chip in:\n%s", s)
 	}
 }
 
