@@ -599,24 +599,24 @@ Your circle grants you features as shown on the 1st-Level Summoner Circle Featur
 | Spring | [Fairy Whispers](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/fairy-whispers), [Pixie Dust](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/pixie-dust) |
 | Storms | [Elemental Affinity](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/elemental-affinity), [Heart of Nature](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/heart-of-nature) |
 
-<!-- @type: feature | @id: dead-men-tell-all-tales | @level: 1 -->
+<!-- @type: feature | @id: dead-men-tell-all-tales | @level: 1 | @subclass: graves -->
 #### Dead Men Tell All Tales
 
 You can touch the corpse of a creature who died within the past week and ask them a question. The corpse can choose to answer the question to the best of their ability. Each additional question you ask the corpse requires a medium [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) [test](scc.v1:mcdm.heroes.v1/rule.test/test), where failure or consequence breaks your connection with the corpse permanently.
 
 The corpse can also choose to refuse to answer or lie, especially if you were the one to kill them in the first place.
 
-<!-- @type: feature | @id: death-snap | @level: 1 -->
+<!-- @type: feature | @id: death-snap | @level: 1 | @subclass: blight -->
 #### Death Snap
 
 Whenever one of your demon minions would die unwillingly, they can deal [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) to an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) creature equal to their [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) value before dying.
 
-<!-- @type: feature | @id: elemental-affinity | @level: 1 -->
+<!-- @type: feature | @id: elemental-affinity | @level: 1 | @subclass: storms -->
 #### Elemental Affinity
 
 Whenever you use [Call Forth](scc.v1:mcdm.summoner.v1/feature.ability.summoner.level-1/call-forth) to summon one or more non-signature elemental minions, you can summon one bonus signature minion at no cost. You can choose between a signature minion that shares an Element keyword with the minions you summoned (such as Fire, Earth, or Air) or an elemental mote.
 
-<!-- @type: feature | @id: fairy-whispers | @level: 1 -->
+<!-- @type: feature | @id: fairy-whispers | @level: 1 | @subclass: spring -->
 #### Fairy Whispers
 
 Whenever you send a minion to perform a task for you outside of combat, they can bring back a rumor from the destination to which you sent them. When the minion returns, make a [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) [test](scc.v1:mcdm.heroes.v1/rule.test/test):
@@ -627,26 +627,26 @@ Whenever you send a minion to perform a task for you outside of combat, they can
 
 You gain a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on the test for each subsequent rumor you collect either on the same day or in the same location.
 
-<!-- @type: feature | @id: heart-of-nature | @level: 1 -->
+<!-- @type: feature | @id: heart-of-nature | @level: 1 | @subclass: storms -->
 #### Heart of Nature
 
 You can sense the presence of creatures with the Elemental or Dragon keywords within 1 mile of you. You can innately feel their emotions or pain, and you can't obtain lower than a tier 2 outcome on any [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) [test](scc.v1:mcdm.heroes.v1/rule.test/test) made to socially interact with them.
 
-<!-- @type: feature | @id: pixie-dust | @level: 1 -->
+<!-- @type: feature | @id: pixie-dust | @level: 1 | @subclass: spring -->
 #### Pixie Dust
 
 Increase your number of [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries) by 2.
 
 Whenever one of your fey minions dies within your Summoner's Range, you can spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries) to give [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) equal to twice your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score to each non-minion ally [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the minion when they died.
 
-<!-- @type: feature | @id: rise | @level: 1 -->
+<!-- @type: feature | @id: rise | @level: 1 | @subclass: graves -->
 #### Rise!
 
 Once per [round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round), when a creature dies unwillingly within your Summoner's Range, you can use a [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) to summon a signature undead minion in their space at no cost, even if you're at your minion maximum, but only if they can be organized into one of your squads. The new minion can't act until the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
 This ability becomes a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) if the target was a minion (either yours or an enemy).
 
-<!-- @type: feature | @id: soulsense | @level: 1 -->
+<!-- @type: feature | @id: soulsense | @level: 1 | @subclass: blight -->
 #### Soulsense
 
 While you have [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to a creature with a soul, you can perceive a trail of where the creature has been in the last number of minutes equal to 5 × your level.
@@ -2134,7 +2134,7 @@ Your circle grants you a feature as shown on the 5th-Level Summoner Circle Featu
 | Spring | Flash Powder, Pixie Lift |
 | Storms | Nature Watch, Split |
 
-<!-- @type: feature | @id: channel | @level: 5 -->
+<!-- @type: feature | @id: channel | @level: 5 | @subclass: graves -->
 #### Channel
 
 You can spend 1 uninterrupted minute to perform a ritual and use your body as a host for a willing spirit of a creature who died in the area. While hosting the spirit, you have access to their memories of the 24 hours leading up to their death and any skills they knew in life. You can also magically change your appearance to look like them while they were alive.
@@ -2143,12 +2143,12 @@ You can attempt to stop channeling the spirit at any time. If the spirit is host
 
 After you stop channeling their spirit, you can't use this feature to channel the same creature again.
 
-<!-- @type: feature | @id: dread-march | @level: 5 -->
+<!-- @type: feature | @id: dread-march | @level: 5 | @subclass: graves -->
 #### Dread March
 
 You and your undead [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) don't spend additional [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) to move through [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain). If one or more of your undead [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) would die while using their move action, they can choose to not die until the end of your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
-<!-- @type: feature | @id: flash-powder | @level: 5 -->
+<!-- @type: feature | @id: flash-powder | @level: 5 | @subclass: spring -->
 #### Flash Powder
 
 Each ally that gains [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) from your [Pixie Dust](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/pixie-dust) feature also gains one of the following effects until the end of their next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) (or for 10 minutes if used outside of combat):
@@ -2158,29 +2158,29 @@ Each ally that gains [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/tempo
 - **Water Weird:** As a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) once per [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), they can [teleport](scc.v1:mcdm.heroes.v1/movement/teleport) to a body of water within 5 squares of them.
 - **Panacea:** They can end one [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) affecting them or stand up.
 
-<!-- @type: feature | @id: nature-watch | @level: 5 -->
+<!-- @type: feature | @id: nature-watch | @level: 5 | @subclass: storms -->
 #### Nature Watch
 
 You can spend 1 uninterrupted minute each day to perform a ritual and summon a special elemental mote called a beacon to patrol the area. This mote telepathically communicates any hostile creatures, hazards, or traps within 20 squares of them to you no matter how far away you are. You know the number of nearby hazards and which direction they're in relative to where the beacon is, but not their exact position. You can have a number of beacons active equal to your level.
 
-<!-- @type: feature | @id: pixie-lift | @level: 5 -->
+<!-- @type: feature | @id: pixie-lift | @level: 5 | @subclass: spring -->
 #### Pixie Lift
 
 Your [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) gains the [Fly](scc.v1:mcdm.heroes.v1/movement/fly) and [Hover](scc.v1:mcdm.heroes.v1/movement/hover) keywords. You lose the [Hover](scc.v1:mcdm.heroes.v1/movement/hover) keyword from this feature while you are [dazed](scc.v1:mcdm.heroes.v1/condition/dazed), [dying](scc.v1:mcdm.heroes.v1/rule.health/dying), or you fly more than 1 square above the surface of the ground.
 
 If your [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) previously had the [Fly](scc.v1:mcdm.heroes.v1/movement/fly) keyword, you can now [fly](scc.v1:mcdm.heroes.v1/movement/fly) while sneaking an additional number of squares equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason).
 
-<!-- @type: feature | @id: shaping | @level: 5 -->
+<!-- @type: feature | @id: shaping | @level: 5 | @subclass: blight -->
 #### Shaping
 
 You can spend 1 uninterrupted minute to perform a ritual that causes one of your [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) to fold their shape and disguise themself to look like a duplicate of you, including speaking basic Caelian, allowing them to (potentially) freely move through civilization while completing their tasks. You can have a number of [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) disguised at the same time equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score.
 
-<!-- @type: feature | @id: split | @level: 5 -->
+<!-- @type: feature | @id: split | @level: 5 | @subclass: storms -->
 #### Split
 
 Once during your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) to deal [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) to one of your elemental [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) equal to half their maximum [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) in order to create one additional copy of that [minion](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) in an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) unoccupied space and add them to their squad, even if you're at your minion maximum. You can't use this feature if it would kill one or more of the [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) in the squad.
 
-<!-- @type: feature | @id: soul-flense | @level: 5 -->
+<!-- @type: feature | @id: soul-flense | @level: 5 | @subclass: blight -->
 #### Soul Flense
 
 As a maneuver, you can command one or more of your demon [minions](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) to each deal [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) equal to their [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) value to an [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) ally. This [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) can't be reduced. The ally then ends a [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) affecting them and confers it to the demon that attacked them.
@@ -2696,21 +2696,21 @@ Your circle grants you a feature as shown on the 8th-Level Summoner Circle Featu
 | Spring | Celestial Grace |
 | Storms | Control the Elements |
 
-<!-- @type: feature | @id: abyssal-evolution | @level: 8 -->
+<!-- @type: feature | @id: abyssal-evolution | @level: 8 | @subclass: blight -->
 #### Abyssal Evolution
 
 At the start of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can transform up to two of your demon minions within your Summoner's Range. A demon can transform into a different demon minion within your Summoner's Range, maintaining their current [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina). Starting from [round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round) 2, a demon can transform any demon minion you can call forth for half the essence cost, as if you summoned the new minion into the demon's space.
 
 The minions must be reassigned to a new squad if their new name differs from the other squad members.
 
-<!-- @type: feature | @id: celestial-grace | @level: 8 -->
+<!-- @type: feature | @id: celestial-grace | @level: 8 | @subclass: spring -->
 #### Celestial Grace
 
 Your number of [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries) further increases by 2.
 
 Additionally, the area affected by your [Pixie Dust](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/pixie-dust) feature and any of your fey minions' traits that affect [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) creatures and/or the area within 1 or more squares of them increase that distance by 1 square.
 
-<!-- @type: feature | @id: control-the-elements | @level: 8 -->
+<!-- @type: feature | @id: control-the-elements | @level: 8 | @subclass: storms -->
 #### Control the Elements
 
 Whenever you use Call Forth, you can spend essence to change the size of one elemental minion you summon as shown on the following table.
@@ -2723,7 +2723,7 @@ Whenever you use Call Forth, you can spend essence to change the size of one ele
 | 3 | The minion becomes size 3. |
 | 5 | The minion becomes size 4. |
 
-<!-- @type: feature | @id: kill-the-pain | @level: 8 -->
+<!-- @type: feature | @id: kill-the-pain | @level: 8 | @subclass: graves -->
 #### Kill the Pain
 
 You aren't affected by excess [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) after all minions in a squad are dead.
