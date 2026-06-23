@@ -46,10 +46,13 @@ func TestExtractPreviewItem_PlainFeatureKindAndEyebrow(t *testing.T) {
 	}
 	it.Href = "summoner-strike/"
 	html := renderPrevCard(it, false)
-	if !strings.Contains(html, "Summoner Feature") {
-		t.Errorf("plain feature preview eyebrow should read \"Summoner Feature\"\n%s", html)
+	if !strings.Contains(html, `sc-head__left-eyebrow sc-head__slot--line">Feature</div>`) {
+		t.Errorf("plain feature preview kind-noun should read \"Feature\"\n%s", html)
 	}
-	if strings.Contains(html, "Summoner Trait") {
+	if !strings.Contains(html, `sc-head__left-deck sc-head__slot--line">Summoner</div>`) {
+		t.Errorf("plain feature preview provenance deck should read \"Summoner\"\n%s", html)
+	}
+	if strings.Contains(html, ">Trait</div>") {
 		t.Errorf("plain feature preview must not be labelled a Trait\n%s", html)
 	}
 }
@@ -102,8 +105,8 @@ func TestExtractPreviewItem_Ability(t *testing.T) {
 		`href="judgment/"`,
 		`<span class="sc-prev__glyph">f</span>`,
 		`>Maneuver</div>`,
-		`<h3 class="sc-prev__name">Judgment</h3>`,
-		`<div class="sc-prev__tag">Signature</div>`,
+		`sc-head__left-primary sc-head__slot--line">Judgment</h3>`,
+		`sc-head__right-primary sc-head__slot--mini">Signature</div>`,
 		`<span class="sc-prev__chip">Magic</span>`,
 		`Ranged <b>10</b>`,
 		`One enemy`,
@@ -166,8 +169,8 @@ func TestExtractPreviewItem_AbilityNumericCost(t *testing.T) {
 	it := extractPreviewItem(fm, body, "ability", "Censor")
 	it.Href = "censure/"
 	html := renderPrevCard(it, false)
-	if !strings.Contains(html, `<span class="num">3</span> Wrath`) {
-		t.Errorf("numeric cost not split into mono span:\n%s", html)
+	if !strings.Contains(html, `sc-head__right-primary sc-head__slot--mini">3 Wrath</div>`) {
+		t.Errorf("cost should render as the right-primary mini-title:\n%s", html)
 	}
 	if !strings.Contains(html, `data-action="triggered"`) {
 		t.Errorf("triggered action key missing:\n%s", html)
@@ -197,9 +200,10 @@ func TestExtractPreviewItem_Trait_SingleGrant(t *testing.T) {
 		`class="sc-prev sc-prev--trait sc-fil"`,
 		`data-action="trait"`,
 		`<span class="sc-crest sc-prev__crest"><span class="sc-prev__glyph">*</span></span>`,
-		`<div class="sc-prev__eyebrow"><span class="sc-prev__dia"></span>Censor Trait</div>`,
-		`<h3 class="sc-prev__name">Judgment</h3>`,
-		`<div class="sc-prev__tag">Level <span class="num">1</span></div>`,
+		`sc-head__left-eyebrow sc-head__slot--line">Trait</div>`,
+		`sc-head__left-deck sc-head__slot--line">Censor</div>`,
+		`sc-head__left-primary sc-head__slot--line">Judgment</h3>`,
+		`sc-head__right-eyebrow sc-head__slot--chip">Level 1</div>`,
 		`Grants the Judgment maneuver`,
 	} {
 		if !strings.Contains(html, want) {
@@ -228,13 +232,13 @@ func TestExtractPreviewItem_Trait_Subclass(t *testing.T) {
 	if it.Subclass != "Exorcist" {
 		t.Fatalf("subclass=%q want Exorcist", it.Subclass)
 	}
-	if !strings.Contains(renderPrevCard(it, false), "Censor Trait · Exorcist") {
-		t.Errorf("eyebrow should append subclass:\n%s", renderPrevCard(it, false))
+	if !strings.Contains(renderPrevCard(it, false), `sc-head__left-deck sc-head__slot--line">Censor · Exorcist</div>`) {
+		t.Errorf("provenance deck should append subclass:\n%s", renderPrevCard(it, false))
 	}
 }
 
-// An ability preview card must surface its subclass too — appended to the action
-// eyebrow ("Maneuver · Black Ash"), mirroring the trait card.
+// An ability preview card must surface its subclass too — in the 6-slot header
+// that lives in the left-deck provenance line ("Shadow · Black Ash").
 func TestExtractPreviewItem_Ability_Subclass(t *testing.T) {
 	leaf := "---\nname: Black Ash Teleport\ntype: ability\nclass: shadow\nsubclass: black-ash\nlevel: \"1\"\naction_type: Maneuver\n---\n\n" +
 		"<article class=\"sc-ability\" data-action=\"maneuver\"></article>\n"
@@ -243,8 +247,8 @@ func TestExtractPreviewItem_Ability_Subclass(t *testing.T) {
 	if it.Subclass != "Black Ash" {
 		t.Fatalf("subclass=%q want Black Ash", it.Subclass)
 	}
-	if !strings.Contains(renderPrevCard(it, false), "Maneuver · Black Ash") {
-		t.Errorf("ability eyebrow should append subclass:\n%s", renderPrevCard(it, false))
+	if !strings.Contains(renderPrevCard(it, false), `sc-head__left-deck sc-head__slot--line">Shadow · Black Ash</div>`) {
+		t.Errorf("ability preview should surface subclass in the left-deck:\n%s", renderPrevCard(it, false))
 	}
 }
 
@@ -520,5 +524,35 @@ func TestFolderCrestIcon_Religion(t *testing.T) {
 		if got := folderCrestIcon("Browse/religion", child); got != want {
 			t.Errorf("folderCrestIcon(religion, %q) = %q, want %q", child, got, want)
 		}
+	}
+}
+
+func TestAbilityPrev_SixSlotHead(t *testing.T) {
+	it := browseItem{Kind: "ability", Name: "Black Ash Teleport", Action: "maneuver",
+		Cost: "Signature", Klass: "Shadow", Subclass: "College Of Black Ash", levelStr: "1", Href: "x/"}
+	got := renderAbilityPrev(it, false)
+	for _, want := range []string{
+		`sc-head__left-eyebrow sc-head__slot--line">Ability</div>`,
+		`sc-head__left-primary sc-head__slot--line">Black Ash Teleport</h3>`,
+		`sc-head__left-deck sc-head__slot--line">Shadow · College Of Black Ash</div>`,
+		`sc-head__right-eyebrow sc-head__slot--chip">Level 1</div>`,
+		`sc-head__right-primary sc-head__slot--mini">Signature</div>`,
+		`sc-head__right-deck sc-head__slot--chip">Maneuver</div>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q in:\n%s", want, got)
+		}
+	}
+}
+
+func TestTraitPrev_SixSlotHead(t *testing.T) {
+	it := browseItem{Kind: "feature", Name: "Black Ash Teleport", Klass: "Shadow",
+		Subclass: "College Of Black Ash", levelStr: "1", Href: "x/"}
+	got := renderTraitPrev(it, false)
+	if !strings.Contains(got, `sc-head__left-eyebrow sc-head__slot--line">Feature</div>`) {
+		t.Errorf("missing Feature eyebrow:\n%s", got)
+	}
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Shadow · College Of Black Ash</div>`) {
+		t.Errorf("missing origin deck:\n%s", got)
 	}
 }

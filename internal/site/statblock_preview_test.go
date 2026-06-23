@@ -144,3 +144,10 @@ func TestSbCardsOpen_DefaultAttrs(t *testing.T) {
 		}
 	}
 }
+
+func TestStatblockPreview_UsesSharedHead(t *testing.T) {
+	got := renderStatblockPreviewCard(sbIsland{KindNoun: "Monster", Name: "Goblin Cutter", Level: "1"}, "x/", "")
+	if !strings.Contains(got, `<header class="sc-head">`) {
+		t.Errorf("preview should use shared head:\n%s", got)
+	}
+}

@@ -428,28 +428,36 @@ func renderPrevCard(it browseItem, ctx bool) string {
 }
 
 func renderTraitPrev(it browseItem, ctx bool) string {
-	eyebrow := strings.TrimSpace(html.EscapeString(it.Klass) + " " + featureNoun(it.Kind))
+	origin := strings.TrimSpace(html.EscapeString(it.Klass))
 	if it.Subclass != "" {
-		eyebrow += " · " + html.EscapeString(it.Subclass)
+		if origin != "" {
+			origin += " · " + html.EscapeString(it.Subclass)
+		} else {
+			origin = html.EscapeString(it.Subclass)
+		}
 	}
-	tag := ""
-	switch {
-	case it.Tag != "":
-		tag = "<div class=\"sc-prev__tag\">" + html.EscapeString(it.Tag) + "</div>"
-	case it.levelStr != "":
-		tag = "<div class=\"sc-prev__tag\">Level <span class=\"num\">" + html.EscapeString(it.levelStr) + "</span></div>"
+	level := ""
+	if it.levelStr != "" {
+		level = "Level " + html.EscapeString(it.levelStr)
 	}
+	cost := ""
+	if it.Tag != "" { // trait preview "cost" pill (e.g. "1 Point")
+		cost = html.EscapeString(it.Tag)
+	}
+	head := renderCardHead(cardHeadSlots{
+		Crest:        `<span class="sc-crest sc-prev__crest"><span class="sc-prev__glyph">` + traitGlyph + `</span></span>`,
+		LeftEyebrow:  hLine(html.EscapeString(featureNoun(it.Kind))),
+		LeftPrimary:  hLine(html.EscapeString(it.Name)),
+		LeftDeck:     hLine(origin),
+		RightEyebrow: hChip(level),
+		RightPrimary: hMini(cost),
+	})
 	flavor := ""
 	if it.Flavor != "" {
 		flavor = "<div class=\"sc-prev__flavor\">" + html.EscapeString(it.Flavor) + "</div>"
 	}
-	return "<a class=\"sc-prev sc-prev--trait sc-fil\" data-action=\"trait\" href=\"" + html.EscapeString(it.Href) + "\">" +
-		"<div class=\"sc-prev__head\">" +
-		"<span class=\"sc-crest sc-prev__crest\"><span class=\"sc-prev__glyph\">" + traitGlyph + "</span></span>" +
-		"<div class=\"sc-prev__titles\">" +
-		"<div class=\"sc-prev__eyebrow\"><span class=\"sc-prev__dia\"></span>" + eyebrow + "</div>" +
-		"<h3 class=\"sc-prev__name\">" + html.EscapeString(it.Name) + "</h3></div>" + tag + "</div>" +
-		flavor + traitFootMarker(it) + "</a>\n"
+	return "<a class=\"sc-prev sc-prev--trait sc-fil\" data-action=\"trait\" href=\"" +
+		html.EscapeString(it.Href) + "\">" + head + flavor + traitFootMarker(it) + "</a>\n"
 }
 
 // traitFootMarker renders the foot marker: "Grants the X maneuver" for a single
@@ -479,10 +487,27 @@ func renderAbilityPrev(it browseItem, ctx bool) string {
 	if !ok {
 		meta = actionByKey["main"]
 	}
-	tag := ""
-	if it.Cost != "" {
-		tag = "<div class=\"sc-prev__tag\">" + costPrevHTML(it.Cost) + "</div>"
+	origin := strings.TrimSpace(html.EscapeString(it.Klass))
+	if it.Subclass != "" {
+		if origin != "" {
+			origin += " · " + html.EscapeString(it.Subclass)
+		} else {
+			origin = html.EscapeString(it.Subclass)
+		}
 	}
+	level := ""
+	if it.levelStr != "" {
+		level = "Level " + html.EscapeString(it.levelStr)
+	}
+	head := renderCardHead(cardHeadSlots{
+		Crest:        `<span class="sc-crest sc-prev__crest"><span class="sc-prev__glyph">` + html.EscapeString(meta[1]) + `</span></span>`,
+		LeftEyebrow:  hLine("Ability"),
+		LeftPrimary:  hLine(html.EscapeString(it.Name)),
+		LeftDeck:     hLine(origin),
+		RightEyebrow: hChip(level),
+		RightPrimary: hMini(html.EscapeString(it.Cost)),
+		RightDeck:    hChip(html.EscapeString(meta[0])),
+	})
 	kw := ""
 	if len(it.Keywords) > 0 {
 		var b strings.Builder
@@ -511,20 +536,8 @@ func renderAbilityPrev(it browseItem, ctx bool) string {
 	if it.Flavor != "" {
 		flavor = "<div class=\"sc-prev__flavor\">" + html.EscapeString(it.Flavor) + "</div>"
 	}
-	// Subclass rides the action eyebrow ("Maneuver · Black Ash"), mirroring the
-	// trait card — abilities otherwise never surface their subclass.
-	eyebrow := html.EscapeString(meta[0])
-	if it.Subclass != "" {
-		eyebrow += " · " + html.EscapeString(it.Subclass)
-	}
 	return "<a class=\"sc-prev sc-prev--ability sc-fil\" data-action=\"" + html.EscapeString(act) +
-		"\" href=\"" + html.EscapeString(it.Href) + "\">" +
-		"<div class=\"sc-prev__head\">" +
-		"<span class=\"sc-crest sc-prev__crest\"><span class=\"sc-prev__glyph\">" + html.EscapeString(meta[1]) + "</span></span>" +
-		"<div class=\"sc-prev__titles\">" +
-		"<div class=\"sc-prev__eyebrow\"><span class=\"sc-prev__dia\"></span>" + eyebrow + "</div>" +
-		"<h3 class=\"sc-prev__name\">" + html.EscapeString(it.Name) + "</h3></div>" + tag + "</div>" +
-		flavor + kw + foot + "</a>\n"
+		"\" href=\"" + html.EscapeString(it.Href) + "\">" + head + flavor + kw + foot + "</a>\n"
 }
 
 func prevMeta(label, valueHTML string) string {
