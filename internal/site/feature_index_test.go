@@ -233,6 +233,21 @@ func TestExtractPreviewItem_Trait_Subclass(t *testing.T) {
 	}
 }
 
+// An ability preview card must surface its subclass too — appended to the action
+// eyebrow ("Maneuver · Black Ash"), mirroring the trait card.
+func TestExtractPreviewItem_Ability_Subclass(t *testing.T) {
+	leaf := "---\nname: Black Ash Teleport\ntype: ability\nclass: shadow\nsubclass: black-ash\nlevel: \"1\"\naction_type: Maneuver\n---\n\n" +
+		"<article class=\"sc-ability\" data-action=\"maneuver\"></article>\n"
+	fm, body := splitFrontmatter(leaf)
+	it := extractPreviewItem(fm, body, "ability", "Shadow")
+	if it.Subclass != "Black Ash" {
+		t.Fatalf("subclass=%q want Black Ash", it.Subclass)
+	}
+	if !strings.Contains(renderPrevCard(it, false), "Maneuver · Black Ash") {
+		t.Errorf("ability eyebrow should append subclass:\n%s", renderPrevCard(it, false))
+	}
+}
+
 func TestExtractPreviewItem_TraitNoSubfeatures(t *testing.T) {
 	fm, body := splitFrontmatter(traitLeaf("Inner Light", ""))
 	it := extractPreviewItem(fm, body, "trait", "Censor")

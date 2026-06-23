@@ -511,12 +511,18 @@ func renderAbilityPrev(it browseItem, ctx bool) string {
 	if it.Flavor != "" {
 		flavor = "<div class=\"sc-prev__flavor\">" + html.EscapeString(it.Flavor) + "</div>"
 	}
+	// Subclass rides the action eyebrow ("Maneuver · Black Ash"), mirroring the
+	// trait card — abilities otherwise never surface their subclass.
+	eyebrow := html.EscapeString(meta[0])
+	if it.Subclass != "" {
+		eyebrow += " · " + html.EscapeString(it.Subclass)
+	}
 	return "<a class=\"sc-prev sc-prev--ability sc-fil\" data-action=\"" + html.EscapeString(act) +
 		"\" href=\"" + html.EscapeString(it.Href) + "\">" +
 		"<div class=\"sc-prev__head\">" +
 		"<span class=\"sc-crest sc-prev__crest\"><span class=\"sc-prev__glyph\">" + html.EscapeString(meta[1]) + "</span></span>" +
 		"<div class=\"sc-prev__titles\">" +
-		"<div class=\"sc-prev__eyebrow\"><span class=\"sc-prev__dia\"></span>" + html.EscapeString(meta[0]) + "</div>" +
+		"<div class=\"sc-prev__eyebrow\"><span class=\"sc-prev__dia\"></span>" + eyebrow + "</div>" +
 		"<h3 class=\"sc-prev__name\">" + html.EscapeString(it.Name) + "</h3></div>" + tag + "</div>" +
 		flavor + kw + foot + "</a>\n"
 }

@@ -133,6 +133,7 @@ func renderAbilityCard(fm, body string) string {
 	}
 
 	flavor := strings.TrimSpace(parseFrontmatterField(fm, "flavor"))
+	subclass := titleCase(strings.ReplaceAll(strings.TrimSpace(parseFrontmatterField(fm, "subclass")), "-", " "))
 	actionType := parseFrontmatterField(fm, "action_type")
 	cost := strings.TrimSpace(parseFrontmatterField(fm, "cost"))
 	if cost == "" && parseFrontmatterField(fm, "subtype") == "signature" {
@@ -251,7 +252,11 @@ func renderAbilityCard(fm, body string) string {
 	b.WriteString("<div class=\"sc-ability__head\">\n")
 	fmt.Fprintf(&b, "<span class=\"sc-crest sc-ability__crest\"><span class=\"sc-ability__glyph\">%s</span></span>\n", html.EscapeString(act.glyph))
 	b.WriteString("<div class=\"sc-ability__titles\">\n")
-	fmt.Fprintf(&b, "<div class=\"sc-ability__eyebrow\">%s%s</div>\n", dia, html.EscapeString(act.label))
+	eyebrow := html.EscapeString(act.label)
+	if subclass != "" { // surface the subclass on the ability page itself ("Maneuver · Black Ash")
+		eyebrow += " · " + html.EscapeString(subclass)
+	}
+	fmt.Fprintf(&b, "<div class=\"sc-ability__eyebrow\">%s%s</div>\n", dia, eyebrow)
 	fmt.Fprintf(&b, "<h3 class=\"sc-ability__name\">%s</h3>\n", html.EscapeString(name))
 	b.WriteString("</div>\n")
 	b.WriteString("<div class=\"sc-ability__corner\">")

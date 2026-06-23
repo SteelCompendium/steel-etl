@@ -16,6 +16,17 @@ func TestBuildAbilityCardPage_NonAbilityUnchanged(t *testing.T) {
 	}
 }
 
+// A subclass ability's leaf card must show the subclass, appended to the action
+// eyebrow ("Maneuver · Black Ash"), so the page itself surfaces it (not just the
+// preview/filter cards).
+func TestRenderAbilityCard_SubclassEyebrow(t *testing.T) {
+	fm := "type: ability\nname: Black Ash Teleport\nclass: shadow\nsubclass: black-ash\nlevel: \"1\"\naction_type: Maneuver"
+	got := renderAbilityCard(fm, "\n*In a swirl of black ash, you step from one place to another.*\n")
+	if !strings.Contains(got, "Maneuver · Black Ash") {
+		t.Errorf("ability leaf eyebrow should append subclass:\n%s", got)
+	}
+}
+
 func TestRenderAbilityCard_MainPowerRoll(t *testing.T) {
 	fm := "action_type: Main action\nname: Dragon Breath\nsubtype: signature\ntype: ability"
 	body := `
