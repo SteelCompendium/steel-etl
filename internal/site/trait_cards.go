@@ -84,12 +84,19 @@ func renderTraitCard(fm, body string) string {
 	if name == "" {
 		name = "Trait"
 	}
-	eyebrow := traitEyebrow(fm)
-	tag := traitTag(parseFrontmatterField(fm, "cost"), parseFrontmatterField(fm, "level"), parseFrontmatterField(fm, "scc"))
+	noun := featureNoun(parseFrontmatterField(fm, "type"))
+	origin := traitOrigin(fm)
+	level := strings.TrimSpace(parseFrontmatterField(fm, "level"))
+	if level == "" {
+		if m := sccLevelRe.FindStringSubmatch(parseFrontmatterField(fm, "scc")); m != nil {
+			level = m[1]
+		}
+	}
+	cost := strings.TrimSpace(parseFrontmatterField(fm, "cost"))
 
 	intro, children := parseTraitTree(body)
 
-	prefix := traitEyebrowPrefix(fm)
+	prefix := traitSource(fm)
 	bodyHTML, leadProse := renderTraitBody(intro, children, prefix)
 
 	cls := "sc-trait sc-trait--crest"
@@ -100,7 +107,7 @@ func renderTraitCard(fm, body string) string {
 	// Stash the sub-feature count (and single-grant phrase) on the root so the
 	// index preview can show "N options" / "Grants the X maneuver" without
 	// re-parsing the rendered tree.
-	return wrapTraitSection(cls, traitFeatureAttrs(children), traitCrest(), eyebrow, name, tag, bodyHTML)
+	return wrapTraitSection(cls, traitFeatureAttrs(children), traitCrest(), noun, origin, name, level, cost, bodyHTML)
 }
 
 // renderTraitNode renders a nested sub-trait (no crest, no drop cap; its level pill
@@ -109,17 +116,22 @@ func renderTraitCard(fm, body string) string {
 func renderTraitNode(n *traitNode, prefix string) string {
 	intro, _ := parseTraitTree(n.content) // sub-headings already split into n.children
 	bodyHTML, _ := renderTraitBody(intro, n.children, prefix)
-	tag := traitTag(n.cost, "", n.scc)
-	eyebrow := ""
+	level := ""
+	if m := sccLevelRe.FindStringSubmatch(n.scc); m != nil {
+		level = m[1]
+	}
+	origin := ""
 	if n.subclass != "" {
 		sub := titleCase(strings.ReplaceAll(n.subclass, "-", " "))
 		if prefix != "" {
-			eyebrow = prefix + " · " + sub
+			origin = prefix + " · " + sub
 		} else {
-			eyebrow = sub
+			origin = sub
 		}
 	}
-	return wrapTraitSection("sc-trait", "", "", eyebrow, strings.TrimSpace(n.name), tag, bodyHTML)
+	// Nested sub-traits carry no kind-noun (the parent card already declares it);
+	// they show only their own provenance refinement (origin) when they have a subclass.
+	return wrapTraitSection("sc-trait", "", "", "", origin, strings.TrimSpace(n.name), level, n.cost, bodyHTML)
 }
 
 // traitFeatureAttrs returns the data-* attributes describing a trait's direct
@@ -154,23 +166,23 @@ func singleGrantPhrase(child *traitNode) string {
 // wrapTraitSection assembles one <section class="sc-trait …"> with header +
 // body, as a single contiguous block (no blank lines). attrs are extra section
 // attributes (e.g. data-sub); crest is the optional crest HTML.
-func wrapTraitSection(cls, attrs, crest, eyebrow, name, tag, bodyHTML string) string {
-	dia := `<span class="sc-trait__dia"></span>`
+func wrapTraitSection(cls, attrs, crest, noun, origin, name, level, cost, bodyHTML string) string {
+	levelChip := ""
+	if strings.TrimSpace(level) != "" {
+		levelChip = "Level " + html.EscapeString(level)
+	}
+	head := renderCardHead(cardHeadSlots{
+		Crest:        crest,
+		LeftEyebrow:  hLine(html.EscapeString(noun)),
+		LeftPrimary:  hLine(html.EscapeString(name)),
+		LeftDeck:     hLine(html.EscapeString(origin)),
+		RightEyebrow: hChip(levelChip),
+		RightPrimary: hMini(html.EscapeString(strings.TrimSpace(cost))),
+	})
 	var b strings.Builder
 	fmt.Fprintf(&b, "<section class=\"%s\" data-action=\"trait\"%s>\n", cls, attrs)
-	b.WriteString("<header class=\"sc-trait__head\">\n")
-	if crest != "" {
-		b.WriteString(crest)
-	}
-	b.WriteString("<div class=\"sc-trait__titles\">\n")
-	if eyebrow != "" {
-		fmt.Fprintf(&b, "<div class=\"sc-trait__eyebrow\">%s%s</div>\n", dia, html.EscapeString(eyebrow))
-	}
-	fmt.Fprintf(&b, "<h3 class=\"sc-trait__name\">%s</h3>\n", html.EscapeString(name))
-	b.WriteString("</div>\n")
-	b.WriteString(tag)
-	b.WriteString("</header>\n")
-	b.WriteString("<div class=\"sc-trait__body\">\n")
+	b.WriteString(head)
+	b.WriteString("\n<div class=\"sc-trait__body\">\n")
 	b.WriteString(bodyHTML)
 	b.WriteString("</div>\n")
 	b.WriteString("</section>\n")
@@ -436,13 +448,10 @@ func featureNoun(featureType string) string {
 	return "Feature"
 }
 
-// traitEyebrow is the source context line: "<Class> Feature" / "<Ancestry> Trait"
-// (small-caps), optionally suffixed with the subclass when present (e.g. an
-// order/domain). The level lives in the right-hand tag, so it is not duplicated here.
-// traitEyebrowPrefix is the class/source + feature-noun portion of the eyebrow,
-// without the subclass suffix: "<Class> Feature" / "<Ancestry> Trait". Nested
-// children inherit this from their container and append their own subclass.
-func traitEyebrowPrefix(fm string) string {
+// traitSource is the bare provenance source (class/ancestry/kit + a feature_source
+// qualifier like "circle"), Title-cased, with NO feature-noun and NO subclass. It
+// is the prefix nested sub-traits inherit and append their own subclass to.
+func traitSource(fm string) string {
 	source := ""
 	for _, key := range []string{"class", "ancestry", "kit"} {
 		if v := strings.TrimSpace(parseFrontmatterField(fm, key)); v != "" {
@@ -450,50 +459,30 @@ func traitEyebrowPrefix(fm string) string {
 			break
 		}
 	}
-	// feature_source qualifier: "circle" → "<Class> Circle Feature". The "summoner"
-	// base track (and absence) keeps the bare "<Class> Feature". Forward-compatible
-	// with Phase-2 "circle-of-<name>" slugs (title-cased the same way).
+	// feature_source qualifier: "circle" → "<Class> Circle". The "summoner" base
+	// track (and absence) keeps the bare "<Class>". Forward-compatible with Phase-2
+	// "circle-of-<name>" slugs (title-cased the same way).
 	if fs := strings.TrimSpace(parseFrontmatterField(fm, "feature_source")); fs != "" && fs != "summoner" && source != "" {
 		source = strings.TrimSpace(source + " " + titleCase(strings.ReplaceAll(fs, "-", " ")))
 	}
-	return strings.TrimSpace(source + " " + featureNoun(parseFrontmatterField(fm, "type")))
+	return source
 }
 
-// traitEyebrow is the full source context line, with the subclass appended when present.
-func traitEyebrow(fm string) string {
-	label := traitEyebrowPrefix(fm)
+// traitOrigin is the left-deck provenance "<Source> · <subclass>" (subclass
+// appended only when present). The kind-noun lives in the left-eyebrow and the
+// level in the right-eyebrow, so neither is duplicated here.
+func traitOrigin(fm string) string {
+	src := traitSource(fm)
 	if sub := strings.TrimSpace(parseFrontmatterField(fm, "subclass")); sub != "" {
-		label += " · " + titleCase(strings.ReplaceAll(sub, "-", " "))
+		if src != "" {
+			return src + " · " + titleCase(strings.ReplaceAll(sub, "-", " "))
+		}
+		return titleCase(strings.ReplaceAll(sub, "-", " "))
 	}
-	return label
+	return src
 }
 
 var sccLevelRe = regexp.MustCompile(`level-(\d+)`)
-
-// traitTag builds the right-side pill. A `cost` (e.g. an ancestry-point cost
-// "1 Point", or a "11 Piety" feature cost) takes precedence and renders with its
-// leading number emphasized; otherwise the level pill is shown, preferring the
-// frontmatter `level` and falling back to a `level-N` segment in the scc. Empty
-// when none of the three exist.
-func traitTag(cost, level, scc string) string {
-	if c := strings.TrimSpace(cost); c != "" {
-		if m := costNumRe.FindStringSubmatch(c); m != nil {
-			return fmt.Sprintf("<div class=\"sc-trait__tag\"><span class=\"num\">%s</span> %s</div>\n",
-				html.EscapeString(m[1]), html.EscapeString(strings.TrimSpace(m[2])))
-		}
-		return fmt.Sprintf("<div class=\"sc-trait__tag\">%s</div>\n", html.EscapeString(c))
-	}
-	n := strings.TrimSpace(level)
-	if n == "" {
-		if m := sccLevelRe.FindStringSubmatch(scc); m != nil {
-			n = m[1]
-		}
-	}
-	if n == "" {
-		return ""
-	}
-	return fmt.Sprintf("<div class=\"sc-trait__tag\">Level <span class=\"num\">%s</span></div>\n", html.EscapeString(n))
-}
 
 // traitCostSuffixRe matches a heading's trailing "(N Unit)" cost parenthetical
 // (mirrors content.costSuffixRe). splitCostSuffix strips it from a sub-trait

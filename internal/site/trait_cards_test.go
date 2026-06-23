@@ -11,10 +11,13 @@ import (
 func TestTraitEyebrow_PlainFeatureSaysFeature(t *testing.T) {
 	fm := "class: summoner\nname: Summoner Strike\ntype: feature\nlevel: \"1\""
 	got := renderTraitCard(fm, "\nYou have the following ability.\n")
-	if !strings.Contains(got, `<div class="sc-trait__eyebrow"><span class="sc-trait__dia"></span>Summoner Feature</div>`) {
-		t.Errorf("plain feature eyebrow should read \"Summoner Feature\"\n%s", got)
+	if !strings.Contains(got, `sc-head__left-eyebrow sc-head__slot--line">Feature</div>`) {
+		t.Errorf("plain feature kind-noun should read \"Feature\"\n%s", got)
 	}
-	if strings.Contains(got, "Summoner Trait") {
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Summoner</div>`) {
+		t.Errorf("plain feature provenance deck should read \"Summoner\"\n%s", got)
+	}
+	if strings.Contains(got, "Trait") {
 		t.Errorf("plain feature must not be labelled a Trait\n%s", got)
 	}
 }
@@ -31,12 +34,24 @@ func TestRenderTraitCard_NestedChildShowsSubclassEyebrow(t *testing.T) {
 		"No subclass here.\n"
 	got := renderTraitCard(fm, body)
 
-	if !strings.Contains(got, `<div class="sc-trait__eyebrow"><span class="sc-trait__dia"></span>Censor Feature · Fate</div>`) {
-		t.Errorf("nested subclass child should carry the full eyebrow:\n%s", got)
+	// container: noun "Feature" eyebrow + "Censor" provenance deck.
+	if !strings.Contains(got, `sc-head__left-eyebrow sc-head__slot--line">Feature</div>`) {
+		t.Errorf("container should carry the Feature kind-noun:\n%s", got)
 	}
-	// exactly 2 eyebrows: the container ("Censor Feature") + the Fate child.
-	if n := strings.Count(got, "sc-trait__eyebrow"); n != 2 {
-		t.Errorf("expected exactly 2 eyebrows (container + Fate child), got %d:\n%s", n, got)
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Censor</div>`) {
+		t.Errorf("container provenance deck should read \"Censor\":\n%s", got)
+	}
+	// Fate child: inherits the source and appends its own subclass → "Censor · Fate".
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Censor · Fate</div>`) {
+		t.Errorf("nested subclass child deck should read \"Censor · Fate\":\n%s", got)
+	}
+	// only the container carries a kind-noun eyebrow; nested nodes do not.
+	if n := strings.Count(got, "sc-head__left-eyebrow"); n != 1 {
+		t.Errorf("expected exactly 1 kind-noun eyebrow (container only), got %d:\n%s", n, got)
+	}
+	// two provenance decks: the container ("Censor") + the Fate child; the plain child has none.
+	if n := strings.Count(got, "sc-head__left-deck"); n != 2 {
+		t.Errorf("expected exactly 2 provenance decks (container + Fate child), got %d:\n%s", n, got)
 	}
 }
 
@@ -44,8 +59,11 @@ func TestRenderTraitCard_NestedChildShowsSubclassEyebrow(t *testing.T) {
 func TestTraitEyebrow_AncestryTraitSaysTrait(t *testing.T) {
 	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait"
 	got := renderTraitCard(fm, "\nSelect one damage immunity.\n")
-	if !strings.Contains(got, "Dragon Knight Trait") {
-		t.Errorf("ancestry trait eyebrow should read \"Dragon Knight Trait\"\n%s", got)
+	if !strings.Contains(got, `sc-head__left-eyebrow sc-head__slot--line">Trait</div>`) {
+		t.Errorf("ancestry trait kind-noun should read \"Trait\"\n%s", got)
+	}
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Dragon Knight</div>`) {
+		t.Errorf("ancestry trait provenance deck should read \"Dragon Knight\"\n%s", got)
 	}
 }
 
@@ -165,8 +183,9 @@ func TestRenderTraitCard_ProseOnly(t *testing.T) {
 	wants := []string{
 		`<section class="sc-trait sc-trait--crest sc-trait--lead" data-action="trait">`,
 		`<span class="sc-crest sc-trait__crest"><span class="sc-trait__glyph">*</span></span>`,
-		`<div class="sc-trait__eyebrow"><span class="sc-trait__dia"></span>Dragon Knight Trait</div>`,
-		`<h3 class="sc-trait__name">Prismatic Scales</h3>`,
+		`sc-head__left-eyebrow sc-head__slot--line">Trait</div>`,
+		`sc-head__left-deck sc-head__slot--line">Dragon Knight</div>`,
+		`sc-head__left-primary sc-head__slot--line">Prismatic Scales</h3>`,
 		`<p>Select one damage immunity`,
 	}
 	for _, w := range wants {
@@ -208,7 +227,7 @@ You have the following signature ability.
 	got := renderTraitCard(fm, body)
 
 	wants := []string{
-		`<div class="sc-trait__tag">Level <span class="num">1</span></div>`,
+		`sc-head__right-eyebrow sc-head__slot--chip">Level 1</div>`,
 		`<p class="sc-trait__leadin"><span class="sc-trait__dia"></span>You have the following signature ability.</p>`,
 		`<div class="sc-trait__nest">`,
 		`<article class="sc-ability sc-fil" data-action="main">`, // nested ability plate
@@ -258,22 +277,24 @@ You have the following signature ability.
 	got := renderTraitCard(fm, body)
 
 	// top niche
-	if !strings.Contains(got, `<h3 class="sc-trait__name">Dragon Knight Traits</h3>`) {
+	if !strings.Contains(got, `<h3 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Dragon Knight Traits</h3>`) {
 		t.Errorf("missing top trait name\n%s", got)
 	}
 	// the organizational H2 (no scc) becomes a nested sub-trait niche...
-	if !strings.Contains(got, `<h3 class="sc-trait__name">Purchased Dragon Knight Traits</h3>`) {
+	if !strings.Contains(got, `<h3 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Purchased Dragon Knight Traits</h3>`) {
 		t.Errorf("missing organizational sub-trait niche\n%s", got)
 	}
-	// ...with no eyebrow (nested traits omit the class line)
-	if strings.Count(got, "sc-trait__eyebrow") != 1 {
-		t.Errorf("only the top trait should carry an eyebrow; got %d\n%s", strings.Count(got, "sc-trait__eyebrow"), got)
+	// ...with no eyebrow (nested sub-traits omit the kind-noun line). Only the top
+	// trait carries the "Trait" noun; nested sub-trait niches carry none. (A nested
+	// ability plate has its own "Ability" eyebrow — that's a different noun.)
+	if n := strings.Count(got, `sc-head__left-eyebrow sc-head__slot--line">Trait</div>`); n != 1 {
+		t.Errorf("only the top trait should carry a Trait eyebrow; got %d\n%s", n, got)
 	}
 	// the H3 options are sub-trait niches
-	if !strings.Contains(got, `<h3 class="sc-trait__name">Draconian Guard</h3>`) {
+	if !strings.Contains(got, `<h3 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Draconian Guard</h3>`) {
 		t.Errorf("missing Draconian Guard sub-trait\n%s", got)
 	}
-	if !strings.Contains(got, `<h3 class="sc-trait__name">Draconian Pride</h3>`) {
+	if !strings.Contains(got, `<h3 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Draconian Pride</h3>`) {
 		t.Errorf("missing Draconian Pride sub-trait\n%s", got)
 	}
 	// the H4 under Draconian Pride is its nested ability plate
@@ -336,23 +357,24 @@ Choose your domain feature.
 	}
 }
 
-// The level pill falls back to a `level-N` segment in the scc when frontmatter has
-// no level (beastheart traits).
-func TestTraitTag_SCCFallback(t *testing.T) {
-	if got := traitTag("", "", "mcdm.beastheart.v1/feature.trait.beastheart.level-5/there-for-each-other"); !strings.Contains(got, `<span class="num">5</span>`) {
-		t.Errorf("expected level 5 from scc fallback, got %q", got)
+// The level chip (right-eyebrow) falls back to a `level-N` segment in the scc when
+// frontmatter has no level (beastheart traits), and is omitted when none exists.
+func TestTraitCard_LevelFromSCCFallback(t *testing.T) {
+	got := renderTraitCard("ancestry: beastheart\nname: There For Each Other\ntype: trait\nscc: mcdm.beastheart.v1/feature.trait.beastheart.level-5/there-for-each-other", "Body.")
+	if !strings.Contains(got, `sc-head__right-eyebrow sc-head__slot--chip">Level 5</div>`) {
+		t.Errorf("expected Level 5 chip from scc fallback:\n%s", got)
 	}
-	if got := traitTag("", "", "mcdm.heroes.v1/feature.trait.censor/no-level"); got != "" {
-		t.Errorf("expected empty tag when no level anywhere, got %q", got)
+	noLevel := renderTraitCard("name: X\ntype: trait\nclass: censor\nscc: mcdm.heroes.v1/feature.trait.censor/no-level", "Body.")
+	if strings.Contains(noLevel, "sc-head__right-eyebrow") {
+		t.Errorf("expected no level chip when none anywhere:\n%s", noLevel)
 	}
 }
 
-// A purchased ancestry trait's point cost takes precedence and renders with the
-// number emphasized; the unit label follows.
-func TestTraitTag_Cost(t *testing.T) {
-	got := traitTag("1 Point", "", "mcdm.heroes.v1/feature.trait.devil/barbed-tail")
-	if !strings.Contains(got, `<span class="num">1</span>`) || !strings.Contains(got, "Point") {
-		t.Errorf("expected emphasized cost \"1 Point\", got %q", got)
+// A purchased ancestry trait's point cost renders as the right-primary mini-title.
+func TestTraitCard_CostInRightPrimary(t *testing.T) {
+	got := renderTraitCard("name: Barbed Tail\ntype: trait\nancestry: devil\ncost: 1 Point", "Body.")
+	if !strings.Contains(got, `sc-head__right-primary sc-head__slot--mini">1 Point</div>`) {
+		t.Errorf("expected cost \"1 Point\" in right-primary mini:\n%s", got)
 	}
 }
 
@@ -425,23 +447,38 @@ func TestRenderTraitCard_CalloutBecomesAside(t *testing.T) {
 	}
 }
 
-// A Summoner circle feature gets the "circle" qualifier between the class name and
-// the noun: "Summoner Circle Feature".
-func TestTraitEyebrow_CircleFeature(t *testing.T) {
+// A Summoner circle feature gets the "circle" qualifier appended to the source
+// (the kind-noun is now a separate slot): traitSource → "Summoner Circle".
+func TestTraitSource_CircleFeature(t *testing.T) {
 	fm := "class: summoner\ntype: feature\nfeature_source: circle\n"
-	if got := traitEyebrow(fm); got != "Summoner Circle Feature" {
-		t.Errorf("traitEyebrow = %q, want %q", got, "Summoner Circle Feature")
+	if got := traitSource(fm); got != "Summoner Circle" {
+		t.Errorf("traitSource = %q, want %q", got, "Summoner Circle")
 	}
 }
 
-// A base Summoner feature (feature_source: summoner or absent) keeps "Summoner Feature".
-func TestTraitEyebrow_SummonerFeatureUnchanged(t *testing.T) {
+// A base Summoner feature (feature_source: summoner or absent) keeps "Summoner".
+func TestTraitSource_SummonerBaseUnchanged(t *testing.T) {
 	for _, fm := range []string{
 		"class: summoner\ntype: feature\nfeature_source: summoner\n",
 		"class: summoner\ntype: feature\n", // absent
 	} {
-		if got := traitEyebrow(fm); got != "Summoner Feature" {
-			t.Errorf("traitEyebrow(%q) = %q, want %q", fm, got, "Summoner Feature")
+		if got := traitSource(fm); got != "Summoner" {
+			t.Errorf("traitSource(%q) = %q, want %q", fm, got, "Summoner")
+		}
+	}
+}
+
+func TestTraitCard_SixSlotHead(t *testing.T) {
+	fm := "name: Black Ash Teleport\ntype: feature\nclass: shadow\nsubclass: college-of-black-ash\nlevel: 1"
+	got := renderTraitCard(fm, "Some body.")
+	for _, want := range []string{
+		`sc-head__left-eyebrow sc-head__slot--line">Feature</div>`,
+		`sc-head__left-primary sc-head__slot--line">Black Ash Teleport</h3>`,
+		`sc-head__left-deck sc-head__slot--line">Shadow · College Of Black Ash</div>`,
+		`sc-head__right-eyebrow sc-head__slot--chip">Level 1</div>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q in:\n%s", want, got)
 		}
 	}
 }
