@@ -5,6 +5,29 @@ import (
 	"strings"
 )
 
+// buildKitPage rewrites a `type: kit` page body into the unified High-Fantasy
+// Steel `.sc-kit` plate. The signature-ability heading marker is preserved AFTER
+// the (closed) plate so the embedItemCards post-pass transcludes its standalone
+// `.sc-ability` card beneath it (steel-kit.css fuses the two into one card).
+// Returns (newData, true) for kit pages; (data, false) otherwise. Frontmatter is
+// preserved verbatim; injectH1 (next in buildSection) prepends the hidden "# Name".
+//
+// SITE-ONLY: runs against generated md-linked pages; the shared data repos are
+// untouched.
+func buildKitPage(data []byte) ([]byte, bool) {
+	fm, body := splitFrontmatter(string(data))
+	if parseFrontmatterField(fm, "type") != "kit" {
+		return data, false
+	}
+	newBody := renderKitPlate(fm, body)
+	if marker := kitSignatureMarker(body); marker != "" {
+		// Blank line BEFORE the marker so MkDocs ends the raw-HTML plate block and
+		// parses the heading; embed then splices the card here.
+		newBody += "\n\n" + marker + "\n"
+	}
+	return []byte("---\n" + fm + "\n---\n\n" + newBody), true
+}
+
 // kitKind derives the kit's family label (Martial / Magic / Psionic) the same way
 // the preview card (kitCard) does — from the signature ability's keyword line.
 func kitKind(body string) string {

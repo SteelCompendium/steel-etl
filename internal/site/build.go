@@ -322,6 +322,14 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 			data = card
 		}
 
+		// Kit pages → the High-Fantasy Steel .sc-kit plate (header + equipment +
+		// bonus grid + Signature Ability band). The signature-ability card is
+		// spliced beneath by the embedItemCards post-pass via the preserved
+		// {data-scc} marker. Site-only; runs before injectH1 like the cards above.
+		if card, ok := buildKitPage(data); ok {
+			data = card
+		}
+
 		// Fixture base pages → embed their sibling advancement-features card inline
 		// (build-time on-page embedding; the embed_cards post-pass does the transclude).
 		data = embedFixtureAdvancement(data)

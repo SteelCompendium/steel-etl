@@ -79,6 +79,59 @@ func TestRenderKitPlate(t *testing.T) {
 	}
 }
 
+func TestBuildKitPage_NonKitUnchanged(t *testing.T) {
+	in := []byte("---\ntype: ability\nname: Dragon Breath\n---\n\nbody\n")
+	out, ok := buildKitPage(in)
+	if ok {
+		t.Fatalf("expected ok=false for type: ability")
+	}
+	if string(out) != string(in) {
+		t.Fatalf("non-kit data should pass through unchanged")
+	}
+}
+
+func TestBuildKitPage_PreservesMarkerAfterPlate(t *testing.T) {
+	in := []byte("---\n" + kitTestFM + "\n---\n\n" + kitTestBody + "\n")
+	out, ok := buildKitPage(in)
+	if !ok {
+		t.Fatalf("expected ok=true for type: kit")
+	}
+	s := string(out)
+	marker := `### Hamstring Shot {data-scc="mcdm.heroes.v1/feature.ability.ranger/hamstring-shot"}`
+	if !strings.Contains(s, marker) {
+		t.Fatalf("output must preserve the signature-ability {data-scc} marker for embed\n%s", s)
+	}
+	// The marker MUST come AFTER the closed plate, else embedItemCards' swallow
+	// (to the next heading / EOF) would eat the </section> close.
+	if strings.Index(s, "</section>") > strings.Index(s, marker) {
+		t.Fatalf("marker must follow </section> so embed cannot swallow the plate close\n%s", s)
+	}
+	// Frontmatter is preserved verbatim.
+	if !strings.HasPrefix(s, "---\n"+kitTestFM+"\n---\n\n") {
+		t.Fatalf("frontmatter must be preserved verbatim\n%s", s)
+	}
+	// The original ability table markdown is dropped (embed supplies the card).
+	if strings.Contains(s, "Ranged, Strike, Weapon") {
+		t.Errorf("original ability markdown should be dropped; embed supplies the card\n%s", s)
+	}
+}
+
+func TestBuildKitPage_NoSignatureAbility(t *testing.T) {
+	body := "A simple kit.\n\n## Equipment\n\nA dagger.\n"
+	fm := "equipment_text: A dagger.\nname: Simple\ntype: kit"
+	out, ok := buildKitPage([]byte("---\n" + fm + "\n---\n\n" + body))
+	if !ok {
+		t.Fatalf("expected ok=true")
+	}
+	s := string(out)
+	if strings.Contains(s, "Signature Ability") {
+		t.Errorf("kit without a signature ability must omit the Signature Ability band\n%s", s)
+	}
+	if !strings.Contains(s, `<div class="sc-kit__band-head">Equipment</div>`) {
+		t.Errorf("plate should still render without a signature ability\n%s", s)
+	}
+}
+
 func TestKitKind(t *testing.T) {
 	// kitKind reads keywords via signatureFromBody, which requires the kit's
 	// "Signature Ability" section header (always present on real kit pages).
