@@ -94,6 +94,11 @@ func buildFeatureblockPage(data []byte) ([]byte, bool) {
 	if err := yaml.Unmarshal([]byte(fm), &doc); err != nil {
 		return data, false // malformed frontmatter → leave page as-is
 	}
+	// A summoner fixture's left-deck provenance ("Summoner · <Element>") derives from
+	// its SCC; don't clobber a synthetic Eyebrow (retainer advancement) if already set.
+	if strings.TrimSpace(doc.Eyebrow) == "" {
+		doc.Eyebrow = fbOrigin(parseFrontmatterField(fm, "scc"))
+	}
 	card := renderFeatureblockCard(doc)
 	return []byte("---\n" + fm + "\n---\n\n" + card), true
 }
@@ -145,26 +150,52 @@ func fbDataRole(doc fbDoc) string {
 	return "feature"
 }
 
-// fbEyebrow composes the head eyebrow line: "Level N <TerrainType> · <Role>" for
-// terrain/fixtures, else "Malice Features" / "Features".
-func fbEyebrow(doc fbDoc) string {
-	if e := strings.TrimSpace(doc.Eyebrow); e != "" {
-		return e
+// fbKindNoun is the left-eyebrow kind-noun for a featureblock family card.
+func fbKindNoun(doc fbDoc) string {
+	switch doc.Kind {
+	case "dynamic-terrain":
+		return "Dynamic Terrain"
+	case "fixture":
+		return "Fixture"
+	case "malice":
+		return "Malice"
+	case "advancement":
+		return "Advancement"
+	default:
+		return "Featureblock"
 	}
-	if doc.TerrainType != "" {
-		s := doc.TerrainType
-		if doc.Level > 0 {
-			s = fmt.Sprintf("Level %d %s", doc.Level, doc.TerrainType)
+}
+
+// fbTypeRole combines the descriptive type and combat role the way the book does
+// ("Trap Hazard") for the right-primary mini-title. Either part may be absent.
+func fbTypeRole(doc fbDoc) string {
+	return strings.TrimSpace(strings.TrimSpace(doc.TerrainType) + " " + strings.TrimSpace(doc.Role))
+}
+
+// fbEV pulls the "EV" loose stat for the right-deck chip ("" if absent).
+func fbEV(stats []fbStat) string {
+	for _, st := range stats {
+		if strings.EqualFold(strings.TrimSpace(st.Name), "EV") {
+			return "EV " + strings.TrimSpace(st.Value)
 		}
-		if r := strings.TrimSpace(doc.Role); r != "" {
-			s += " · " + r
-		}
-		return s
 	}
-	if doc.Kind == "malice" {
-		return "Malice Features"
+	return ""
+}
+
+// fbOrigin derives the left-deck provenance for a summoner fixture from its SCC
+// type-path (monster.fixture.<element>.featureblock) → "Summoner · <Element>".
+// Returns "" for any non-fixture code.
+func fbOrigin(scc string) string {
+	_, rest, ok := strings.Cut(strings.TrimSpace(scc), "/")
+	if !ok {
+		return ""
 	}
-	return "Features"
+	typePath, _, _ := strings.Cut(rest, "/")
+	seg := strings.Split(typePath, ".")
+	if len(seg) >= 4 && seg[0] == "monster" && seg[1] == "fixture" && seg[3] == "featureblock" {
+		return "Summoner · " + titleCase(seg[2])
+	}
+	return ""
 }
 
 // renderFeatureblockCard builds the contiguous (no blank-line) raw-HTML card so
@@ -183,11 +214,24 @@ func renderFeatureblockCard(doc fbDoc) string {
 	b.WriteString(">\n")
 	b.WriteString("<article class=\"fb md-typeset\">\n")
 
-	// head: eyebrow + name
-	b.WriteString("<header class=\"fb__head\">\n")
-	fmt.Fprintf(&b, "<div class=\"fb__eyebrow\">%s</div>\n", html.EscapeString(fbEyebrow(doc)))
-	fmt.Fprintf(&b, "<h2 class=\"fb__name\">%s</h2>\n", html.EscapeString(name))
-	b.WriteString("</header>\n")
+	// head: shared 6-slot header. type+role → right-primary mini (role-colored),
+	// Level → right-eyebrow chip, EV → right-deck chip; the rest of the loose stats
+	// stay in the fb__stats body grid below.
+	level := ""
+	if doc.Level > 0 {
+		level = fmt.Sprintf("Level %d", doc.Level)
+	}
+	b.WriteString(renderCardHead(cardHeadSlots{
+		NameTag:      "h2",
+		RoleKey:      fbDataRole(doc),
+		LeftEyebrow:  hLine(html.EscapeString(fbKindNoun(doc))),
+		LeftPrimary:  hLine(html.EscapeString(name)),
+		LeftDeck:     hLine(html.EscapeString(strings.TrimSpace(doc.Eyebrow))),
+		RightEyebrow: hChip(html.EscapeString(level)),
+		RightPrimary: hMini(html.EscapeString(fbTypeRole(doc))),
+		RightDeck:    hChip(html.EscapeString(fbEV(doc.Stats))),
+	}))
+	b.WriteString("\n")
 
 	if f := strings.TrimSpace(doc.Flavor); f != "" {
 		fmt.Fprintf(&b, "<div class=\"fb__flavor\">%s</div>\n", richInline(f))

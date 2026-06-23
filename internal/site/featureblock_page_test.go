@@ -88,9 +88,9 @@ func TestBuildFeatureblockPage_MaliceWrap(t *testing.T) {
 	}
 	for _, want := range []string{
 		`class="fb-wrap"`, `data-role="malice"`, `data-kind="malice"`,
-		`class="fb md-typeset"`, `class="fb__head"`,
-		`class="fb__eyebrow"`, "Malice Features",
-		`class="fb__name"`, "Basilisk Malice",
+		`class="fb md-typeset"`, `class="sc-head"`,
+		`sc-head__left-eyebrow sc-head__slot--line">Malice</div>`,
+		`sc-head__left-primary sc-head__slot--line">Basilisk Malice</h2>`,
 		`class="fb__flavor"`, "spend Malice to activate",
 	} {
 		if !strings.Contains(s, want) {
@@ -140,7 +140,8 @@ func TestRenderFbStats(t *testing.T) {
 	}
 	s := string(out)
 	for _, want := range []string{
-		`data-role="hexer"`, "Level 2 Hazard · Hexer",
+		`sc-head__right-eyebrow sc-head__slot--chip">Level 2</div>`,
+		`sc-head__right-primary sc-head__slot--mini" data-role="hexer">Hazard Hexer</div>`,
 		`class="fb__stats"`,
 		`class="fb__stat"`, `class="fb__stat-l">EV<`, `class="fb__stat-v">2<`,
 		`class="fb__stat-l">Stamina<`, "3 per square",
@@ -175,14 +176,15 @@ func TestRenderFbFeats_PassiveMalice(t *testing.T) {
 	}
 }
 
-func TestFbEyebrow_Override(t *testing.T) {
-	// An explicit Eyebrow wins over the terrain/kind/default composition.
-	if got := fbEyebrow(fbDoc{Eyebrow: "Harrier Retainer", Kind: "malice"}); got != "Harrier Retainer" {
-		t.Errorf("override should win, got %q", got)
+func TestFeatureblockCard_EyebrowOverrideToDeck(t *testing.T) {
+	// A synthetic Eyebrow (e.g. retainer advancement provenance) renders as the
+	// left-deck provenance line; the kind-noun stays in the left-eyebrow.
+	got := renderFeatureblockCard(fbDoc{Name: "X", Eyebrow: "Harrier Retainer", Kind: "advancement"})
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Harrier Retainer</div>`) {
+		t.Errorf("synthetic Eyebrow should render as left-deck:\n%s", got)
 	}
-	// Empty Eyebrow falls through to existing behavior (malice → "Malice Features").
-	if got := fbEyebrow(fbDoc{Kind: "malice"}); got != "Malice Features" {
-		t.Errorf("empty override should fall through, got %q", got)
+	if !strings.Contains(got, `sc-head__left-eyebrow sc-head__slot--line">Advancement</div>`) {
+		t.Errorf("kind-noun should read Advancement:\n%s", got)
 	}
 }
 
@@ -291,5 +293,34 @@ func TestRenderFbFeat_IntroAbovePowerRoll(t *testing.T) {
 	idxPR := strings.Index(s, `class="sc-ability__pr"`)
 	if idxPR < 0 || idxIntro > idxPR {
 		t.Errorf("intro (%d) must render before power roll (%d):\n%s", idxIntro, idxPR, s)
+	}
+}
+
+func TestFeatureblockCard_SixSlotHead(t *testing.T) {
+	doc := fbDoc{
+		Kind: "dynamic-terrain", Name: "Spike Pit", TerrainType: "Trap", Role: "Hazard", Level: 1,
+		Stats: []fbStat{{Name: "EV", Value: "2"}, {Name: "Stamina", Value: "3 per square"}},
+	}
+	got := renderFeatureblockCard(doc)
+	for _, want := range []string{
+		`sc-head__left-eyebrow sc-head__slot--line">Dynamic Terrain</div>`,
+		`sc-head__left-primary sc-head__slot--line">Spike Pit</h2>`,
+		`sc-head__right-eyebrow sc-head__slot--chip">Level 1</div>`,
+		`sc-head__right-primary sc-head__slot--mini" data-role="hazard">Trap Hazard</div>`,
+		`sc-head__right-deck sc-head__slot--chip">EV 2</div>`,
+		`class="fb__stats"`, // remaining loose stats still render in the body grid
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q in:\n%s", want, got)
+		}
+	}
+}
+
+func TestFbOrigin_Fixture(t *testing.T) {
+	if got := fbOrigin("mcdm.summoner.v1/monster.fixture.demon.featureblock/the-boil"); got != "Summoner · Demon" {
+		t.Errorf("fbOrigin fixture = %q, want %q", got, "Summoner · Demon")
+	}
+	if got := fbOrigin("mcdm.monsters.v1/monster.basilisk.malice/x"); got != "" {
+		t.Errorf("fbOrigin non-fixture should be empty, got %q", got)
 	}
 }
