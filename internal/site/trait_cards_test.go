@@ -212,7 +212,7 @@ You have the following signature ability.
 		`<p class="sc-trait__leadin"><span class="sc-trait__dia"></span>You have the following signature ability.</p>`,
 		`<div class="sc-trait__nest">`,
 		`<article class="sc-ability sc-fil" data-action="main">`, // nested ability plate
-		`<div class="sc-ability__cost">Signature</div>`,          // signature hint propagated
+		`sc-head__right-primary sc-head__slot--mini">Signature</div>`, // signature hint propagated
 		`<span class="chars">Might or Presence</span>`,
 	}
 	for _, w := range wants {

@@ -123,6 +123,18 @@ var (
 	costNumRe   = regexp.MustCompile(`^(\d+)\s+(.*)$`)
 )
 
+// abilityOrigin builds the left-deck provenance "Class · Subclass" from
+// frontmatter (slug → Title Case, "-" → space). Either part may be absent.
+func abilityOrigin(fm string) string {
+	var parts []string
+	for _, key := range []string{"class", "subclass"} {
+		if v := strings.TrimSpace(parseFrontmatterField(fm, key)); v != "" {
+			parts = append(parts, titleCase(strings.ReplaceAll(v, "-", " ")))
+		}
+	}
+	return strings.Join(parts, " · ")
+}
+
 // renderAbilityCard builds the contiguous (no blank-line) raw-HTML card so
 // md_in_html passes it through verbatim.
 func renderAbilityCard(fm, body string) string {
@@ -133,7 +145,6 @@ func renderAbilityCard(fm, body string) string {
 	}
 
 	flavor := strings.TrimSpace(parseFrontmatterField(fm, "flavor"))
-	subclass := titleCase(strings.ReplaceAll(strings.TrimSpace(parseFrontmatterField(fm, "subclass")), "-", " "))
 	actionType := parseFrontmatterField(fm, "action_type")
 	cost := strings.TrimSpace(parseFrontmatterField(fm, "cost"))
 	if cost == "" && parseFrontmatterField(fm, "subtype") == "signature" {
@@ -248,21 +259,24 @@ func renderAbilityCard(fm, body string) string {
 	var b strings.Builder
 	fmt.Fprintf(&b, "<article class=\"sc-ability sc-fil\" data-action=\"%s\">\n", act.key)
 
-	// head: crest · titles · cost
-	b.WriteString("<div class=\"sc-ability__head\">\n")
-	fmt.Fprintf(&b, "<span class=\"sc-crest sc-ability__crest\"><span class=\"sc-ability__glyph\">%s</span></span>\n", html.EscapeString(act.glyph))
-	b.WriteString("<div class=\"sc-ability__titles\">\n")
-	eyebrow := html.EscapeString(act.label)
-	if subclass != "" { // surface the subclass on the ability page itself ("Maneuver · Black Ash")
-		eyebrow += " · " + html.EscapeString(subclass)
+	// head: shared 6-slot header. usage → right-deck chip, cost → right-primary
+	// mini-title, level → right-eyebrow chip; the crest carries the usage accent.
+	// left-deck = class · subclass (abilityOrigin) surfaces the subclass that the
+	// prior eyebrow-suffix fix (b3a55fc) added — more fully, and consistently.
+	level := ""
+	if lv := strings.TrimSpace(parseFrontmatterField(fm, "level")); lv != "" {
+		level = "Level " + html.EscapeString(lv)
 	}
-	fmt.Fprintf(&b, "<div class=\"sc-ability__eyebrow\">%s%s</div>\n", dia, eyebrow)
-	fmt.Fprintf(&b, "<h3 class=\"sc-ability__name\">%s</h3>\n", html.EscapeString(name))
-	b.WriteString("</div>\n")
-	b.WriteString("<div class=\"sc-ability__corner\">")
-	b.WriteString(costBadge(cost))
-	b.WriteString("</div>\n")
-	b.WriteString("</div>\n")
+	b.WriteString(renderCardHead(cardHeadSlots{
+		Crest:        fmt.Sprintf(`<span class="sc-crest sc-ability__crest"><span class="sc-ability__glyph">%s</span></span>`, html.EscapeString(act.glyph)),
+		LeftEyebrow:  hLine("Ability"),
+		LeftPrimary:  hLine(html.EscapeString(name)),
+		LeftDeck:     hLine(html.EscapeString(abilityOrigin(fm))),
+		RightEyebrow: hChip(level),
+		RightPrimary: hMini(html.EscapeString(cost)),
+		RightDeck:    hChip(html.EscapeString(act.label)),
+	}))
+	b.WriteString("\n")
 
 	if flavor != "" {
 		fmt.Fprintf(&b, "<p class=\"sc-ability__flavor\">%s</p>\n", richInline(flavor))

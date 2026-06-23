@@ -16,14 +16,14 @@ func TestBuildAbilityCardPage_NonAbilityUnchanged(t *testing.T) {
 	}
 }
 
-// A subclass ability's leaf card must show the subclass, appended to the action
-// eyebrow ("Maneuver · Black Ash"), so the page itself surfaces it (not just the
-// preview/filter cards).
-func TestRenderAbilityCard_SubclassEyebrow(t *testing.T) {
+// A subclass ability's leaf card must surface the subclass on the page itself
+// (not just the preview/filter cards). In the 6-slot header that lives in the
+// left-deck provenance line as "<Class> · <Subclass>".
+func TestRenderAbilityCard_SubclassInDeck(t *testing.T) {
 	fm := "type: ability\nname: Black Ash Teleport\nclass: shadow\nsubclass: black-ash\nlevel: \"1\"\naction_type: Maneuver"
 	got := renderAbilityCard(fm, "\n*In a swirl of black ash, you step from one place to another.*\n")
-	if !strings.Contains(got, "Maneuver · Black Ash") {
-		t.Errorf("ability leaf eyebrow should append subclass:\n%s", got)
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Shadow · Black Ash</div>`) {
+		t.Errorf("ability leaf should surface subclass in the left-deck:\n%s", got)
 	}
 }
 
@@ -49,8 +49,8 @@ func TestRenderAbilityCard_MainPowerRoll(t *testing.T) {
 		`data-action="main"`,
 		`<span class="sc-ability__glyph">l</span>`,
 		`>Main Action</div>`,
-		`<h3 class="sc-ability__name">Dragon Breath</h3>`,
-		`<div class="sc-ability__cost">Signature</div>`,
+		`sc-head__left-primary sc-head__slot--line">Dragon Breath</h3>`,
+		`sc-head__right-primary sc-head__slot--mini">Signature</div>`,
 		`<span class="sc-ability__chip">Area</span>`,
 		`<div class="v">3 cube within 1</div>`, // emoji stripped from rail
 		`<div class="v">Each enemy in the area</div>`,
@@ -160,7 +160,7 @@ func TestRenderAbilityCard_TriggeredCostAndSections(t *testing.T) {
 	wants := []string{
 		`data-action="triggered"`,
 		`<span class="sc-ability__glyph">)</span>`,
-		`<div class="sc-ability__cost"><span class="num">11</span> Wrath</div>`, // numeric prefix in mono
+		`sc-head__right-primary sc-head__slot--mini">11 Wrath</div>`, // cost is now the right-primary mini-title
 		`<span class="tag">Trigger</span>`,
 		`<span class="tag">Effect</span>`,
 	}
@@ -289,6 +289,24 @@ func TestCardHref_ExternalAndAnchorPassThrough(t *testing.T) {
 	for _, target := range []string{"https://example.com", "#frag", "mailto:a@b.com"} {
 		if got := cardHref(target); got != target {
 			t.Errorf("cardHref(%q) = %q, want unchanged", target, got)
+		}
+	}
+}
+
+func TestAbilityCard_SixSlotHead(t *testing.T) {
+	fm := "name: Black Ash Teleport\ntype: ability\naction_type: Maneuver\ncost: Signature\nclass: shadow\nsubclass: college-of-black-ash\nlevel: 1"
+	got := renderAbilityCard(fm, "")
+	for _, want := range []string{
+		`<header class="sc-head">`,
+		`sc-head__left-eyebrow sc-head__slot--line">Ability</div>`,
+		`sc-head__left-primary sc-head__slot--line">Black Ash Teleport</h3>`,
+		`sc-head__left-deck sc-head__slot--line">Shadow · College Of Black Ash</div>`,
+		`sc-head__right-eyebrow sc-head__slot--chip">Level 1</div>`,
+		`sc-head__right-primary sc-head__slot--mini">Signature</div>`,
+		`sc-head__right-deck sc-head__slot--chip">Maneuver</div>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q in:\n%s", want, got)
 		}
 	}
 }
