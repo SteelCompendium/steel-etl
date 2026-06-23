@@ -2,6 +2,7 @@
   "id": "goblin-cutter",
   "name": "Goblin Cutter",
   "ancestry": "Goblin",
+  "kindNoun": "Monster",
   "level": "1",
   "role": "Minion Harrier",
   "roleKey": "harrier",

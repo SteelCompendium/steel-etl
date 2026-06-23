@@ -220,7 +220,7 @@ func TestStatblockCard_RendersFlavor(t *testing.T) {
 	if !strings.Contains(html, "vaguely humanoid form") {
 		t.Errorf("card missing flavor text:\n%s", html)
 	}
-	headIdx := strings.Index(html, "sb__head")
+	headIdx := strings.Index(html, "sc-head")
 	flavorIdx := strings.Index(html, "sb__flavor")
 	defIdx := strings.Index(html, "sb__defenses")
 	if headIdx < 0 || flavorIdx < 0 || defIdx < 0 || !(headIdx < flavorIdx && flavorIdx < defIdx) {
@@ -242,7 +242,42 @@ func TestRenderStatblockHead_OmitsEmptyEV(t *testing.T) {
 		t.Errorf("expected EV when present: %s", withEV)
 	}
 	noEV := renderStatblockHead(sbIsland{Name: "Panther", Level: "1", Role: "Companion", RoleKey: "leader", EV: ""})
-	if strings.Contains(noEV, `class="sb__ev"`) {
-		t.Errorf("expected no EV div when EV empty: %s", noEV)
+	if strings.Contains(noEV, "sc-head__right-deck") {
+		t.Errorf("expected no right-deck slot when EV/cost empty: %s", noEV)
+	}
+}
+
+func TestRenderStatblockHead_SixSlot(t *testing.T) {
+	d := sbIsland{
+		KindNoun: "Monster", Name: "Goblin Cutter", Ancestry: "Goblin, Humanoid",
+		Level: "1", Role: "Minion Harrier", RoleKey: "harrier", EV: "4",
+	}
+	got := renderStatblockHead(d)
+	for _, want := range []string{
+		`<header class="sc-head">`,
+		`sc-head__left-eyebrow sc-head__slot--line">Monster</div>`,
+		`<h2 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Goblin Cutter</h2>`,
+		`sc-head__left-deck sc-head__slot--line">Goblin, Humanoid</div>`,
+		`sc-head__right-eyebrow sc-head__slot--chip">Level 1</div>`,
+		`sc-head__right-primary sc-head__slot--mini" data-role="harrier">Minion Harrier</div>`,
+		`sc-head__right-deck sc-head__slot--chip">EV 4</div>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q in:\n%s", want, got)
+		}
+	}
+}
+
+func TestStatblockKindNoun(t *testing.T) {
+	cases := map[string]string{
+		"mcdm.monsters.v1/monster.goblin.statblock/cutter":              "Monster",
+		"mcdm.beastheart.v1/monster.companion.beastheart.statblock/wolf": "Companion",
+		"mcdm.monsters.v1/monster.retainer.statblock/squire":            "Retainer",
+		"mcdm.summoner.v1/monster.minion.summoner.fire.statblock/x":      "Summon",
+	}
+	for scc, want := range cases {
+		if got := statblockKindNoun(scc); got != want {
+			t.Errorf("statblockKindNoun(%q) = %q, want %q", scc, got, want)
+		}
 	}
 }

@@ -2,6 +2,7 @@
   "id": "link-test-monster",
   "name": "Link Test Monster",
   "ancestry": "",
+  "kindNoun": "Monster",
   "level": "1",
   "role": "Brute",
   "roleKey": "brute",

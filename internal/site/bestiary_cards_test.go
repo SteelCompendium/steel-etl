@@ -26,7 +26,7 @@ func TestStatblockCard(t *testing.T) {
 	for _, want := range []string{
 		`class="sb-wrap sb-prev"`,
 		`class="sb-prev__link" href="goblin-warrior/"`,
-		`<h2 class="sb__name">Goblin Warrior</h2>`,
+		`<h2 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Goblin Warrior</h2>`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("statblockPreviewCard missing %q in:\n%s", want, got)
@@ -108,7 +108,7 @@ func TestRetainerPreviewCard(t *testing.T) {
 	for _, want := range []string{
 		`class="sb-wrap sb-prev"`,
 		`class="sb-prev__link" href="angulotl-hopper/"`,
-		`<h2 class="sb__name">Angulotl Hopper</h2>`,
+		`<h2 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Angulotl Hopper</h2>`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("retainer statblockPreviewCard missing %q in:\n%s", want, got)
@@ -450,7 +450,7 @@ func TestBuildCardsContent_Bestiary(t *testing.T) {
 	for _, want := range []string{
 		`class="sb-cards"`,
 		`class="sb-wrap sb-prev"`,
-		`<h2 class="sb__name">Angulotl Hopper</h2>`,
+		`<h2 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Angulotl Hopper</h2>`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("retainer leaf card missing %q in:\n%s", want, got)

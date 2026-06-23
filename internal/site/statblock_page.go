@@ -79,6 +79,7 @@ type sbIsland struct {
 	Name            string      `json:"name"`
 	Flavor          string      `json:"flavor,omitempty"`
 	Ancestry        string      `json:"ancestry"`
+	KindNoun        string      `json:"kindNoun"`
 	Level           string      `json:"level"`
 	Role            string      `json:"role"`
 	RoleKey         string      `json:"roleKey"`
@@ -188,6 +189,26 @@ func collapseKeywords(kws []string) string {
 	return strings.Join(parts, ", ")
 }
 
+// statblockKindNoun derives the card's kind-noun from its SCC type-path:
+// companion/retainer families and summoner summons read truer than "Monster".
+func statblockKindNoun(scc string) string {
+	_, rest, ok := strings.Cut(strings.TrimSpace(scc), "/")
+	if !ok {
+		return "Monster"
+	}
+	typePath, _, _ := strings.Cut(rest, "/")
+	switch {
+	case strings.Contains(typePath, "companion"):
+		return "Companion"
+	case strings.Contains(typePath, "retainer"):
+		return "Retainer"
+	case strings.Contains(typePath, "summoner"), strings.Contains(typePath, "rival"):
+		return "Summon"
+	default:
+		return "Monster"
+	}
+}
+
 func buildStatblockIsland(fm, body string) sbIsland {
 	name := strings.TrimSpace(parseFrontmatterField(fm, "name"))
 	org := strings.TrimSpace(parseFrontmatterField(fm, "organization"))
@@ -228,6 +249,7 @@ func buildStatblockIsland(fm, body string) sbIsland {
 		Name:     name,
 		Flavor:   strings.TrimSpace(parseFrontmatterField(fm, "flavor")),
 		Ancestry: ancestry,
+		KindNoun: statblockKindNoun(parseFrontmatterField(fm, "scc")),
 		Level:    strings.TrimSpace(parseFrontmatterField(fm, "level")),
 		Role:     roleDisplay,
 		RoleKey:  roleKey,

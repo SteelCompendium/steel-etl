@@ -2,6 +2,7 @@
   "id": "bound-imp",
   "name": "Bound Imp",
   "ancestry": "Demon",
+  "kindNoun": "Monster",
   "level": "1",
   "role": "Support",
   "roleKey": "support",

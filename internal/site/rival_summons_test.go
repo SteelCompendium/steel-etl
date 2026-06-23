@@ -44,8 +44,8 @@ func TestRivalSummonsCards(t *testing.T) {
 		`class="sb-cards"`,
 		`class="sb-prev__link" href="../summoner/minion/skeleton/"`,
 		`class="sb-prev__link" href="../summoner/minion/grave-knight/"`,
-		`<h2 class="sb__name">Skeleton</h2>`,
-		`<h2 class="sb__name">Grave Knight</h2>`,
+		`<h2 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Skeleton</h2>`,
+		`<h2 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Grave Knight</h2>`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("rivalSummonsCards missing %q in:\n%s", want, got)
