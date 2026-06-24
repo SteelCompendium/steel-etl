@@ -64,14 +64,13 @@ func TestRenderKitPlate(t *testing.T) {
 	if !strings.Contains(got, `+6`) || strings.Contains(got, `+6 per echelon`) {
 		t.Errorf("stamina bonus should be shortened to its value\n%s", got)
 	}
-	// Defensive bonuses absent → "0" (orZero); offensive absent → "—" (orDash),
-	// exactly mirroring the preview card kitCard. Here ranged-damage and
-	// melee-distance are absent, so two em-dash placeholders, never dropped.
-	if !strings.Contains(got, `<div class="v">0</div><div class="l">Stability</div>`) {
-		t.Errorf("absent defensive bonus (Stability) should render as 0\n%s", got)
+	// Every absent bonus renders as an em dash in its fixed slot (the approved
+	// all-8 grid). Here stability and melee-distance are absent.
+	if !strings.Contains(got, `<div class="v">—</div><div class="l">Stability</div>`) {
+		t.Errorf("absent Stability bonus should render as an em dash\n%s", got)
 	}
-	if c := strings.Count(got, "—"); c < 2 {
-		t.Errorf("expected >=2 em-dash placeholders for absent offensive bonuses, got %d\n%s", c, got)
+	if !strings.Contains(got, `<div class="v">—</div><div class="l">Melee Dist</div>`) {
+		t.Errorf("absent Melee Dist bonus should render as an em dash\n%s", got)
 	}
 	// Contiguity: md_in_html requires no blank lines in the raw-HTML plate.
 	if strings.Contains(got, "\n\n") {

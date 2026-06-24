@@ -28,6 +28,21 @@ func buildKitPage(data []byte) ([]byte, bool) {
 	return []byte("---\n" + fm + "\n---\n\n" + newBody), true
 }
 
+// kitBonus renders a kit bonus value for a fixed grid slot: it strips a trailing
+// "per echelon"-style qualifier (kept in the small label instead) and shows an em
+// dash when the kit grants no such bonus, so every slot reads uniformly (the
+// approved all-8 grid uses "—" for every absent bonus).
+func kitBonus(s string) string {
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return "—"
+	}
+	if i := strings.Index(strings.ToLower(s), " per "); i >= 0 {
+		s = strings.TrimSpace(s[:i])
+	}
+	return s
+}
+
 // kitKind derives the kit's family label (Martial / Magic / Psionic) the same way
 // the preview card (kitCard) does — from the signature ability's keyword line.
 func kitKind(body string) string {
@@ -88,14 +103,14 @@ func renderKitPlate(fm, body string) string {
 	sb.WriteString(`<div class="sc-kit__equip">` + equip + `</div></div>` + "\n")
 
 	// Kit Bonuses band — two rows of 4 fixed slots (mirrors kitCard exactly).
-	stam := bonusShort(parseFrontmatterField(fm, "stamina_bonus"))
-	spd := orZero(parseFrontmatterField(fm, "speed_bonus"))
-	stab := orZero(parseFrontmatterField(fm, "stability_bonus"))
-	dis := orZero(firstField(fm, "disengage_bonus", "disengage"))
-	melee := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_damage_bonus")))
-	ranged := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_damage_bonus")))
-	meleeDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_distance_bonus")))
-	rangedDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_distance_bonus")))
+	stam := kitBonus(parseFrontmatterField(fm, "stamina_bonus"))
+	spd := kitBonus(parseFrontmatterField(fm, "speed_bonus"))
+	stab := kitBonus(parseFrontmatterField(fm, "stability_bonus"))
+	dis := kitBonus(firstField(fm, "disengage_bonus", "disengage"))
+	melee := kitBonus(parseFrontmatterField(fm, "melee_damage_bonus"))
+	ranged := kitBonus(parseFrontmatterField(fm, "ranged_damage_bonus"))
+	meleeDist := kitBonus(parseFrontmatterField(fm, "melee_distance_bonus"))
+	rangedDist := kitBonus(parseFrontmatterField(fm, "ranged_distance_bonus"))
 	sb.WriteString(`<div class="sc-kit__band"><div class="sc-kit__band-head">Kit Bonuses</div>` + "\n")
 	sb.WriteString(statsBlock([][3]string{
 		{stam, "Stamina per Echelon", ""}, {spd, "Speed", ""}, {stab, "Stability", ""}, {dis, "Disengage", ""},
