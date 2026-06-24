@@ -26,7 +26,7 @@ import (
 
 var (
 	// a markdown heading line, with optional trailing {…attr_list…}
-	traitHeadRe = regexp.MustCompile(`(?m)^(#{1,6})[ \t]+(.+?)[ \t]*(?:\{([^}]*)\})?[ \t]*$`)
+	traitHeadRe     = regexp.MustCompile(`(?m)^(#{1,6})[ \t]+(.+?)[ \t]*(?:\{([^}]*)\})?[ \t]*$`)
 	traitSCCRe      = regexp.MustCompile(`data-scc="([^"]+)"`)
 	traitCostRe     = regexp.MustCompile(`data-cost="([^"]+)"`)
 	traitSubclassRe = regexp.MustCompile(`data-subclass="([^"]+)"`)
@@ -120,18 +120,28 @@ func renderTraitNode(n *traitNode, prefix string) string {
 	if m := sccLevelRe.FindStringSubmatch(n.scc); m != nil {
 		level = m[1]
 	}
-	origin := ""
-	if n.subclass != "" {
-		sub := titleCase(strings.ReplaceAll(n.subclass, "-", " "))
-		if prefix != "" {
-			origin = prefix + " · " + sub
-		} else {
-			origin = sub
-		}
-	}
 	// Nested sub-traits carry no kind-noun (the parent card already declares it);
 	// they show only their own provenance refinement (origin) when they have a subclass.
+	origin := subclassOrigin(prefix, n.subclass)
 	return wrapTraitSection("sc-trait", "", "", "", origin, strings.TrimSpace(n.name), level, n.cost, bodyHTML)
+}
+
+// subclassOrigin builds a nested node's left-deck "<prefix> · <Subclass>" from the
+// parent's source prefix (class/ancestry/kit, via traitSource) and the node's own
+// subclass slug. Returns "" when the node has no subclass: a nested node only shows
+// a deck to refine the parent's provenance with its own subclass, never to repeat
+// it. Crucially the parent's subclass is never assumed — a "choose one ability
+// according to your subclass" container carries no subclass of its own, yet each
+// child ability/sub-trait belongs to a specific one (stamped as data-subclass).
+func subclassOrigin(prefix, subclass string) string {
+	if subclass == "" {
+		return ""
+	}
+	sub := titleCase(strings.ReplaceAll(subclass, "-", " "))
+	if prefix != "" {
+		return prefix + " · " + sub
+	}
+	return sub
 }
 
 // traitFeatureAttrs returns the data-* attributes describing a trait's direct
@@ -233,7 +243,10 @@ func renderTraitBody(intro string, children []*traitNode, prefix string) (body s
 		b.WriteString("<div class=\"sc-trait__nest\">\n")
 		for _, c := range children {
 			if c.isAbility {
-				b.WriteString(renderAbilityCard(synthAbilityFM(c.name, signatureHint), c.content))
+				// A nested ability is rendered from synthesized frontmatter (it has no
+				// class/subclass of its own), so pass the provenance explicitly: the
+				// parent's source prefix + the ability's own subclass (data-subclass).
+				b.WriteString(renderAbilityCard(synthAbilityFM(c.name, signatureHint), c.content, subclassOrigin(prefix, c.subclass)))
 			} else {
 				b.WriteString(renderTraitNode(c, prefix))
 			}

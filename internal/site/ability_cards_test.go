@@ -21,7 +21,7 @@ func TestBuildAbilityCardPage_NonAbilityUnchanged(t *testing.T) {
 // left-deck provenance line as "<Class> · <Subclass>".
 func TestRenderAbilityCard_SubclassInDeck(t *testing.T) {
 	fm := "type: ability\nname: Black Ash Teleport\nclass: shadow\nsubclass: black-ash\nlevel: \"1\"\naction_type: Maneuver"
-	got := renderAbilityCard(fm, "\n*In a swirl of black ash, you step from one place to another.*\n")
+	got := renderAbilityCard(fm, "\n*In a swirl of black ash, you step from one place to another.*\n", "")
 	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Shadow · Black Ash</div>`) {
 		t.Errorf("ability leaf should surface subclass in the left-deck:\n%s", got)
 	}
@@ -44,7 +44,7 @@ func TestRenderAbilityCard_MainPowerRoll(t *testing.T) {
 
 **Effect:** You choose the ability's damage type.
 `
-	got := renderAbilityCard(fm, body)
+	got := renderAbilityCard(fm, body, "")
 	wants := []string{
 		`data-action="main"`,
 		`<span class="sc-ability__glyph">l</span>`,
@@ -86,7 +86,7 @@ func TestRenderAbilityCard_LinkedPowerRollHeader(t *testing.T) {
 
 **Effect:** The target is taunted.
 `
-	got := renderAbilityCard(fm, body)
+	got := renderAbilityCard(fm, body, "")
 	wants := []string{
 		`sc-ability__pr-head`,                   // power-roll panel detected, not a plain section
 		`<span class="pre">Power Roll +</span>`, // fixed eyebrow label
@@ -120,7 +120,7 @@ Make a Reason test:
 
 **Effect:** You learn something.
 `
-	got := renderAbilityCard(fm, body)
+	got := renderAbilityCard(fm, body, "")
 	wants := []string{
 		`<div class="sc-ability__pr">`, // tier panel detected
 		`data-tier="low"><span class="badge">!</span><span class="res">A false rumor.</span>`,
@@ -156,7 +156,7 @@ func TestRenderAbilityCard_TriggeredCostAndSections(t *testing.T) {
 
 **Effect:** The target takes their turn after the triggering hero.
 `
-	got := renderAbilityCard(fm, body)
+	got := renderAbilityCard(fm, body, "")
 	wants := []string{
 		`data-action="triggered"`,
 		`<span class="sc-ability__glyph">)</span>`,
@@ -186,7 +186,7 @@ func TestRenderAbilityCard_KeywordLinks(t *testing.T) {
 |----|----:|
 | **📏 Melee 1** | **🎯 One creature** |
 `
-	got := renderAbilityCard(fm, body)
+	got := renderAbilityCard(fm, body, "")
 	if strings.Contains(got, "[Melee]") || strings.Contains(got, "[Strike]") {
 		t.Errorf("keyword chip leaked literal markdown link syntax\n--- got ---\n%s", got)
 	}
@@ -210,7 +210,7 @@ As a maneuver, you can recite the following oath.
 
 *Even should the sun stop in the sky.*
 `
-	got := renderAbilityCard(fm, body)
+	got := renderAbilityCard(fm, body, "")
 	wants := []string{
 		`data-action="trait"`,
 		`>Trait</div>`,
@@ -263,7 +263,7 @@ Additionally, you can spend 1 wrath to take one of the following:
 
 You can choose only one option at a time.
 `
-	got := renderAbilityCard(fm, body)
+	got := renderAbilityCard(fm, body, "")
 	// Exactly one section container (the Effect), holding every paragraph + the list.
 	if n := strings.Count(got, `class="sc-ability__section"`); n != 1 {
 		t.Fatalf("expected 1 section container, got %d\n--- got ---\n%s", n, got)
@@ -295,7 +295,7 @@ func TestCardHref_ExternalAndAnchorPassThrough(t *testing.T) {
 
 func TestAbilityCard_SixSlotHead(t *testing.T) {
 	fm := "name: Black Ash Teleport\ntype: ability\naction_type: Maneuver\ncost: Signature\nclass: shadow\nsubclass: college-of-black-ash\nlevel: 1"
-	got := renderAbilityCard(fm, "")
+	got := renderAbilityCard(fm, "", "")
 	for _, want := range []string{
 		`<header class="sc-head">`,
 		`sc-head__left-eyebrow sc-head__slot--line">Ability</div>`,

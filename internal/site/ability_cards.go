@@ -40,7 +40,7 @@ func buildAbilityCardPage(data []byte, standalone map[string]bool) ([]byte, bool
 	var card string
 	switch parseFrontmatterField(fm, "type") {
 	case "ability":
-		card = renderAbilityCard(fm, body)
+		card = renderAbilityCard(fm, body, "")
 	case "trait", "feature":
 		// A feature/trait page whose subtree contains a STANDALONE item
 		// (statblock/featureblock/dynamic-terrain/feature-group) is left uncarded:
@@ -136,8 +136,11 @@ func abilityOrigin(fm string) string {
 }
 
 // renderAbilityCard builds the contiguous (no blank-line) raw-HTML card so
-// md_in_html passes it through verbatim.
-func renderAbilityCard(fm, body string) string {
+// md_in_html passes it through verbatim. originOverride sets the left-deck
+// provenance for a nested ability (whose synthesized frontmatter has no
+// class/subclass); when empty, the deck is derived from frontmatter via
+// abilityOrigin (the standalone-page path).
+func renderAbilityCard(fm, body, originOverride string) string {
 	ctype := parseFrontmatterField(fm, "type")
 	name := strings.TrimSpace(parseFrontmatterField(fm, "name"))
 	if name == "" {
@@ -267,11 +270,15 @@ func renderAbilityCard(fm, body string) string {
 	if lv := strings.TrimSpace(parseFrontmatterField(fm, "level")); lv != "" {
 		level = "Level " + html.EscapeString(lv)
 	}
+	origin := originOverride
+	if origin == "" {
+		origin = abilityOrigin(fm)
+	}
 	b.WriteString(renderCardHead(cardHeadSlots{
 		Crest:        fmt.Sprintf(`<span class="sc-crest sc-ability__crest"><span class="sc-ability__glyph">%s</span></span>`, html.EscapeString(act.glyph)),
 		LeftEyebrow:  hLine("Ability"),
 		LeftPrimary:  hLine(html.EscapeString(name)),
-		LeftDeck:     hLine(html.EscapeString(abilityOrigin(fm))),
+		LeftDeck:     hLine(html.EscapeString(origin)),
 		RightEyebrow: hChip(level),
 		RightPrimary: hMini(html.EscapeString(cost)),
 		RightDeck:    hChip(html.EscapeString(act.label)),

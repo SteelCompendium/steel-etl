@@ -55,6 +55,33 @@ func TestRenderTraitCard_NestedChildShowsSubclassEyebrow(t *testing.T) {
 	}
 }
 
+// A nested ABILITY child (its scc contains feature.ability.*) must surface its own
+// class·subclass in the left-deck, exactly like the standalone ability page. The
+// renderer must NOT rely on the parent feature's subclass: a "choose one ability
+// according to your subclass" container has none of its own, yet each child ability
+// belongs to a specific subclass.
+func TestRenderTraitCard_NestedAbilityShowsSubclassDeck(t *testing.T) {
+	// Container feature with no subclass of its own; nested ability is Black Ash.
+	fm := "name: 1st-Level College Features\ntype: feature\nclass: shadow\nscc: mcdm.heroes.v1/feature.shadow.level-1/1st-level-college-features"
+	body := "\nYour college grants you one ability.\n\n" +
+		"## Black Ash Teleport {data-scc=\"mcdm.heroes.v1/feature.ability.shadow.level-1/black-ash-teleport\" data-subclass=\"black-ash\"}\n\n" +
+		"*In a swirl of black ash.*\n\n" +
+		"**Effect:** You teleport up to 5 squares.\n"
+	got := renderTraitCard(fm, body)
+
+	if !strings.Contains(got, `<article class="sc-ability`) {
+		t.Fatalf("expected a nested .sc-ability card:\n%s", got)
+	}
+	// the nested ability card must carry its own provenance deck "Shadow · Black Ash".
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Shadow · Black Ash</div>`) {
+		t.Errorf("nested ability deck should read \"Shadow · Black Ash\":\n%s", got)
+	}
+	// the container itself has no subclass → bare "Shadow" deck (no " · ").
+	if !strings.Contains(got, `sc-head__left-deck sc-head__slot--line">Shadow</div>`) {
+		t.Errorf("container deck should read bare \"Shadow\":\n%s", got)
+	}
+}
+
 // A real ancestry trait (type: trait) keeps the "<Ancestry> Trait" eyebrow.
 func TestTraitEyebrow_AncestryTraitSaysTrait(t *testing.T) {
 	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait"
@@ -230,7 +257,7 @@ You have the following signature ability.
 		`sc-head__right-eyebrow sc-head__slot--chip">Level 1</div>`,
 		`<p class="sc-trait__leadin"><span class="sc-trait__dia"></span>You have the following signature ability.</p>`,
 		`<div class="sc-trait__nest">`,
-		`<article class="sc-ability sc-fil" data-action="main">`, // nested ability plate
+		`<article class="sc-ability sc-fil" data-action="main">`,      // nested ability plate
 		`sc-head__right-primary sc-head__slot--mini">Signature</div>`, // signature hint propagated
 		`<span class="chars">Might or Presence</span>`,
 	}
