@@ -323,10 +323,11 @@ surfaced on the detective's page by `augmentSummonerRetainerPages` — so the
 advancement-features cards (and the role-advancement folder), all rendered by the bestiary
 group assembler.
 
-**Statblock head eyebrow (provenance).** The `sb__kw` line above the creature
-name (rendered by `statblock_card.go`) is `—` or junk for these summoner
-statblocks — their source tables put `—`, "Humanoid, Rival", or the creature's
-own name where `keywords` normally sit. `summonerProvenanceEyebrow`
+**Statblock head provenance (`left-deck`).** The provenance line — `sbIsland.Ancestry`,
+rendered as the shared header's `left-deck` slot below the creature name (`statblock_card.go`
+→ `renderCardHead`; the kind-noun "Monster"/"Summon"/… is the separate `left-eyebrow`) — is
+`—` or junk for these summoner statblocks: their source tables put `—`, "Humanoid, Rival",
+or the creature's own name where `keywords` normally sit. `summonerProvenanceEyebrow`
 (`summoner_provenance.go`) overrides `sbIsland.Ancestry` in `buildStatblockIsland`
 with a label derived from the page's `scc` code:
 

@@ -130,6 +130,10 @@ No-op when the Monsters book is absent. Site-only — no SCC re-mint, no data-re
 change. The advanced "inflicts <condition>" data seam (spec §B5) is **reserved, not
 built**.
 
+### `internal/site/card_head.go`
+
+The **shared 6-slot card header** every card renderer below composes — `renderCardHead(cardHeadSlots) → <header class="sc-head">`. The grid is 3 lanes × 2 columns: `LeftEyebrow/LeftPrimary/LeftDeck` (the stack) and `RightEyebrow/RightPrimary/RightDeck` (the rail). Each slot is a `cardHeadSlot{HTML, Style}` where `Style` ∈ `line`/`chip`/`mini` (helpers `hLine`/`hChip`/`hMini`); empty-HTML slots are omitted, `NameTag` defaults to `h3`, and `RoleKey` (when set) emits `data-role` on `right-primary` for accent colouring. **Fill convention** (so the same field always lands in the same place): `left-eyebrow` = kind-noun (specialized per family), `left-primary` = name, `left-deck` = `class · subclass` provenance, `right-eyebrow` = Level, `right-primary` = the headline attr (stat cards → colored category mini-title; resource cards → cost), `right-deck` = secondary (usage/EV). Consumed by `ability_cards.go`, `statblock_card.go` (head + sub-features), `trait_cards.go` (`wrapTraitSection`), `featureblock_page.go` (card head + `renderFbFeat`), `statblock_preview.go`, and `feature_index.go` (previews). Styled by `v2/docs/stylesheets/steel-cardhead.css`; the flat-list Feature Style (`data-sb-featstyle`/`data-fb-featstyle=flat`) reflows the sub-feature `.sc-head` inline. **Do not hand-roll a new eyebrow/chip on a card — add to `cardHeadSlots`.** Design: workspace `DESIGN.md` "Card header system" + `docs/superpowers/specs/2026-06-23-unified-card-header-design.md`.
+
 ### `internal/site/ability_cards.go`
 
 `buildAbilityCardPage` dispatch + `renderAbilityCard`: rewrites each standalone

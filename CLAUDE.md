@@ -47,7 +47,8 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/site/cards.go` | Rich `.sc-card` index cards for Browse-tab type indexes; `buildCardsContent` dispatch (routes bestiary leaves to `bestiary_cards.go`) |
 | `internal/site/bestiary_cards.go` | Bestiary entity cards + the monster group-landing assembler |
 | `internal/site/bestiary_search.go` | Bestiary tab's Search & Filter data island (`.sc-bestiary-mount`) |
-| `internal/site/ability_cards.go` | Renders `type: ability` page bodies into `.sc-ability` cards; shared power-roll tier helpers |
+| `internal/site/card_head.go` | **Shared 6-slot card header** (`renderCardHead(cardHeadSlots)` → `<header class="sc-head">`). EVERY card renderer below builds its head through this — never hand-roll a per-card eyebrow/chip. See DESIGN.md "Card header system". |
+| `internal/site/ability_cards.go` | Renders `type: ability` page bodies into `.sc-ability` cards; head via `renderCardHead`; shared power-roll tier helpers |
 | `internal/site/statblock_page.go` | Parses `type: statblock` page bodies → the `sbIsland` model (stat grid + blockquote features) |
 | `internal/site/statblock_card.go` | Renders an `sbIsland` into the build-time `.sb-wrap` HTML card (Go port of `steel-statblock.js`) |
 | `internal/site/embed_cards.go` | Site-only post-pass: transcludes finished leaf cards inline on container pages by `{data-scc}` code (Browse via `embed_card_sections`) |

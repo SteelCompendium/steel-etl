@@ -281,9 +281,10 @@ func renderStatblockSticky(d sbIsland) string {
 		`</div>`
 }
 
-// renderStatblockHead emits the .sb__head identity band (ancestry/name on the
-// left, level/role/EV on the right). Shared by the full card and the preview
-// card (statblock_preview.go) so the header looks identical in both.
+// renderStatblockHead builds the shared 6-slot .sc-head (renderCardHead): kind-noun
+// eyebrow + name + keywords on the left, Level / Organization+Role / EV on the right.
+// Shared by the full card and the preview card (statblock_preview.go) so the header
+// looks identical in both.
 func renderStatblockHead(d sbIsland) string {
 	level := ""
 	if strings.TrimSpace(d.Level) != "" {
