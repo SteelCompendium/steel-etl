@@ -42,9 +42,11 @@ func TestRenderKitPlate(t *testing.T) {
 	got := renderKitPlate(kitTestFM, kitTestBody)
 	wants := []string{
 		`<section class="sc-kit sc-fil">`,
-		`<div class="sc-kit__eyebrow">Martial Kit</div>`, // ranged/strike/weapon → not psionic/magic
-		`<div class="sc-kit__name">Ranger</div>`,
-		`sc-kit__crest`, // backpack crest
+		`<header class="sc-head sc-kit__head">`, // shared 6-slot card header
+		`Martial Kit`,                          // eyebrow: ranged/strike/weapon → not psionic/magic
+		`sc-head__left-primary`,                // name lands in the primary slot
+		`>Ranger</h2>`,                         // name as the h2 primary
+		`sc-kit__crest`,                        // backpack crest
 		`The Ranger kit outfits you with medium armor`, // flavor, untruncated
 		`<div class="sc-kit__band-head">Equipment</div>`,
 		`You wear medium armor and wield a bow and a medium weapon.`,

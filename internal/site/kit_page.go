@@ -79,12 +79,17 @@ func renderKitPlate(fm, body string) string {
 	var sb strings.Builder
 	sb.WriteString(`<section class="sc-kit sc-fil">` + "\n")
 
-	// Header band — backpack crest + "<Kind> Kit" eyebrow + name.
-	sb.WriteString(`<div class="sc-kit__head"><span class="sc-crest sc-kit__crest"><span>` +
-		crestSVG("kit") + `</span></span>` + "\n")
-	sb.WriteString(`<div class="sc-kit__titles"><div class="sc-kit__eyebrow">` +
-		html.EscapeString(kitKind(body)+" Kit") + `</div>` + "\n")
-	sb.WriteString(`<div class="sc-kit__name">` + html.EscapeString(name) + `</div></div></div>` + "\n")
+	// Header — the shared 6-slot card header (never hand-rolled): backpack crest,
+	// "<Kind> Kit" eyebrow, and the kit name as the primary. Class re-attaches the
+	// kit plate's head separator chrome (steel-kit.css).
+	sb.WriteString(renderCardHead(cardHeadSlots{
+		Crest:       `<span class="sc-crest sc-kit__crest"><span>` + crestSVG("kit") + `</span></span>`,
+		NameTag:     "h2",
+		Class:       "sc-kit__head",
+		LeftEyebrow: hLine(html.EscapeString(kitKind(body) + " Kit")),
+		LeftPrimary: hLine(html.EscapeString(name)),
+	}))
+	sb.WriteString("\n")
 
 	// Flavor — untruncated; links rendered to real anchors via inlineMD.
 	if f := cardFlavor(fm, body); f != "" {
