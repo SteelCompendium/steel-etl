@@ -88,7 +88,7 @@ func TestBuildFeatureblockPage_MaliceWrap(t *testing.T) {
 	}
 	for _, want := range []string{
 		`class="fb-wrap"`, `data-role="malice"`, `data-kind="malice"`,
-		`class="fb md-typeset"`, `class="sc-head"`,
+		`class="fb md-typeset"`, `class="sc-head fb__head"`,
 		`sc-head__left-eyebrow sc-head__slot--line">Malice</div>`,
 		`sc-head__left-primary sc-head__slot--line">Basilisk Malice</h2>`,
 		`class="fb__flavor"`, "spend Malice to activate",

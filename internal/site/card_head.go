@@ -23,9 +23,13 @@ func hMini(h string) cardHeadSlot { return cardHeadSlot{HTML: h, Style: "mini"} 
 // deck). LeftPrimary is the name (present on every card). NameTag is the
 // heading element for the name ("h3" default). Crest is optional crest HTML
 // rendered beside the left column. RoleKey, when set, is emitted as data-role
-// on right-primary for accent coloring.
+// on right-primary for accent coloring. Class is an extra class on the <header>
+// itself — used to re-attach a card's legacy head chrome (e.g. "sb__head" /
+// "fb__head" carry the role-gradient band, centered diamond, and the statblock
+// sticky-reveal view-timeline, all still keyed to those classes in the per-card
+// CSS). Only the MAIN card head sets it; nested sub-feature heads stay plain.
 type cardHeadSlots struct {
-	Crest, RoleKey, NameTag               string
+	Crest, RoleKey, NameTag, Class        string
 	LeftEyebrow, LeftPrimary, LeftDeck    cardHeadSlot
 	RightEyebrow, RightPrimary, RightDeck cardHeadSlot
 }
@@ -37,8 +41,12 @@ func renderCardHead(s cardHeadSlots) string {
 	if nameTag == "" {
 		nameTag = "h3"
 	}
+	headClass := "sc-head"
+	if s.Class != "" {
+		headClass += " " + s.Class
+	}
 	var b strings.Builder
-	b.WriteString(`<header class="sc-head">`)
+	fmt.Fprintf(&b, `<header class="%s">`, headClass)
 
 	b.WriteString(`<div class="sc-head__stack">`)
 	if s.Crest != "" {

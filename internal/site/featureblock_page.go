@@ -223,6 +223,7 @@ func renderFeatureblockCard(doc fbDoc) string {
 	}
 	b.WriteString(renderCardHead(cardHeadSlots{
 		NameTag:      "h2",
+		Class:        "fb__head", // re-attach the role-gradient band + centered diamond
 		RoleKey:      fbDataRole(doc),
 		LeftEyebrow:  hLine(html.EscapeString(fbKindNoun(doc))),
 		LeftPrimary:  hLine(html.EscapeString(name)),

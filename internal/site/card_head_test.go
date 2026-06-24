@@ -49,3 +49,14 @@ func TestRenderCardHead_OmitsEmptySlotsAndDefaultsNameTag(t *testing.T) {
 		t.Errorf("no RoleKey set, should emit no data-role:\n%s", got)
 	}
 }
+
+func TestRenderCardHead_LegacyClass(t *testing.T) {
+	got := renderCardHead(cardHeadSlots{Class: "sb__head", LeftPrimary: hLine("Goblin Cutter")})
+	if !strings.Contains(got, `<header class="sc-head sb__head">`) {
+		t.Errorf("Class should append to the header class:\n%s", got)
+	}
+	// no Class → bare sc-head, no trailing space
+	if bare := renderCardHead(cardHeadSlots{LeftPrimary: hLine("X")}); !strings.Contains(bare, `<header class="sc-head">`) {
+		t.Errorf("empty Class should emit bare sc-head:\n%s", bare)
+	}
+}

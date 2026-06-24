@@ -71,7 +71,7 @@ type: statblock`), "> ⭐️ **Mob Tactics**\n>\n> Deals 1 extra damage.")
 		`class="sb-wrap sb-prev"`,
 		`data-role="harrier"`,
 		`class="sb-prev__link" href="goblin-cutter/"`,
-		`class="sc-head"`,
+		`class="sc-head sb__head"`,
 		`<h2 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Goblin Cutter</h2>`,
 		`class="sb__defenses"`,
 		`class="sb__meta"`,
@@ -147,7 +147,7 @@ func TestSbCardsOpen_DefaultAttrs(t *testing.T) {
 
 func TestStatblockPreview_UsesSharedHead(t *testing.T) {
 	got := renderStatblockPreviewCard(sbIsland{KindNoun: "Monster", Name: "Goblin Cutter", Level: "1"}, "x/", "")
-	if !strings.Contains(got, `<header class="sc-head">`) {
+	if !strings.Contains(got, `<header class="sc-head sb__head">`) {
 		t.Errorf("preview should use shared head:\n%s", got)
 	}
 }

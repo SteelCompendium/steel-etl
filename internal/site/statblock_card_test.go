@@ -254,7 +254,7 @@ func TestRenderStatblockHead_SixSlot(t *testing.T) {
 	}
 	got := renderStatblockHead(d)
 	for _, want := range []string{
-		`<header class="sc-head">`,
+		`<header class="sc-head sb__head">`,
 		`sc-head__left-eyebrow sc-head__slot--line">Monster</div>`,
 		`<h2 class="sc-head__slot sc-head__left-primary sc-head__slot--line">Goblin Cutter</h2>`,
 		`sc-head__left-deck sc-head__slot--line">Goblin, Humanoid</div>`,

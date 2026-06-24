@@ -301,6 +301,7 @@ func renderStatblockHead(d sbIsland) string {
 	}
 	return renderCardHead(cardHeadSlots{
 		NameTag:      "h2",
+		Class:        "sb__head", // re-attach the role-gradient band + diamond + sticky view-timeline
 		RoleKey:      d.RoleKey,
 		LeftEyebrow:  hLine(sbEsc(d.KindNoun)),
 		LeftPrimary:  hLine(sbEsc(d.Name)),
