@@ -815,6 +815,7 @@ This game has a fair number of rules. But it also has plenty of character option
 
 If you're not sure what to do when two rules come into conflict with each other, remember that a specific exception always beats a more general rule. The Director has the final say in how rules are adjudicated.
 
+<!-- @type: rule | @group: general | @id: always-round-down -->
 ### Always Round Down
 
 Sometimes the rules tell you to divide a number in half. Whenever you divide an odd number in half and it results in a decimal, round the result down to the nearest whole number. For instance, if a [tactician](scc.v1:mcdm.heroes.v1/class/tactician) takes 7 damage and uses the Parry ability in response—a [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) that halves the damage—then the damage is reduced to 3.
