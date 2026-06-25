@@ -310,3 +310,22 @@ func TestAbilityCard_SixSlotHead(t *testing.T) {
 		}
 	}
 }
+
+func TestAbilityCard_KitSignatureNameSplit(t *testing.T) {
+	// A kit signature ability carries the combined "Kit (Ability)" name plus a
+	// `kit` field: the card shows the ability name as the primary and the kit name
+	// as the deck.
+	fm := "name: Battlemind (Unmooring)\ntype: ability\naction_type: Main action\ncost: Signature\nsubtype: signature\nkit: battlemind"
+	got := renderAbilityCard(fm, "", "")
+	for _, want := range []string{
+		`sc-head__left-primary sc-head__slot--line">Unmooring</h3>`,
+		`sc-head__left-deck sc-head__slot--line">Battlemind</div>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q in:\n%s", want, got)
+		}
+	}
+	if strings.Contains(got, "Battlemind (Unmooring)") {
+		t.Errorf("combined name should be split, not shown verbatim:\n%s", got)
+	}
+}

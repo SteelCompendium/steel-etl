@@ -135,6 +135,19 @@ func abilityOrigin(fm string) string {
 	return strings.Join(parts, " · ")
 }
 
+// kitAbilityNameRe splits a combined kit signature-ability name "Kit (Ability)".
+var kitAbilityNameRe = regexp.MustCompile(`^(.+) \((.+)\)$`)
+
+// splitKitAbilityName splits "Kit (Ability)" into (kitName, abilityName). ok is
+// false when the name is not in that combined form.
+func splitKitAbilityName(name string) (kit, ability string, ok bool) {
+	m := kitAbilityNameRe.FindStringSubmatch(strings.TrimSpace(name))
+	if m == nil {
+		return "", "", false
+	}
+	return strings.TrimSpace(m[1]), strings.TrimSpace(m[2]), true
+}
+
 // renderAbilityCard builds the contiguous (no blank-line) raw-HTML card so
 // md_in_html passes it through verbatim. originOverride sets the left-deck
 // provenance for a nested ability (whose synthesized frontmatter has no
@@ -274,10 +287,20 @@ func renderAbilityCard(fm, body, originOverride string) string {
 	if origin == "" {
 		origin = abilityOrigin(fm)
 	}
+	// Kit signature abilities carry a combined "Kit (Ability)" name
+	// (combineFrontmatterName) and a `kit` frontmatter field. Surface the ability
+	// name as the primary and the kit name as the deck (e.g. "Unmooring" over
+	// "Battlemind") instead of the combined string.
+	primaryName := name
+	if parseFrontmatterField(fm, "kit") != "" {
+		if kitName, abilityName, ok := splitKitAbilityName(name); ok {
+			primaryName, origin = abilityName, kitName
+		}
+	}
 	b.WriteString(renderCardHead(cardHeadSlots{
 		Crest:        fmt.Sprintf(`<span class="sc-crest sc-ability__crest"><span class="sc-ability__glyph">%s</span></span>`, html.EscapeString(act.glyph)),
 		LeftEyebrow:  hLine("Ability"),
-		LeftPrimary:  hLine(html.EscapeString(name)),
+		LeftPrimary:  hLine(html.EscapeString(primaryName)),
 		LeftDeck:     hLine(html.EscapeString(origin)),
 		RightEyebrow: hChip(level),
 		RightPrimary: hMini(html.EscapeString(cost)),
