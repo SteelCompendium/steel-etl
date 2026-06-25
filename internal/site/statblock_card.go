@@ -107,21 +107,17 @@ func renderStatblockFeature(f sbFeature) string {
 	var b strings.Builder
 	fmt.Fprintf(&b, `<article class="sc-ability sb__feat" data-action="%s" data-kind="%s">`, sbEsc(f.Action), sbEsc(f.Kind))
 
-	// head: shared 6-slot header (name + cost mini + usage chip). Kind/provenance/
-	// level are implied by the parent statblock, so those lanes stay empty. The
-	// sb__feat-head wrapper is kept so the flat-list CSS hook still matches.
-	usage := f.Usage
-	if usage == "" && f.Kind == "passive" {
-		usage = "Trait"
-	}
-	crest := `<span class="sc-crest sb__feat-crest"><span class="sb__feat-glyph">` + a.glyph + `</span></span>` +
-		`<span class="sb__feat-icon"><span class="sb__feat-glyph">` + a.glyph + `</span></span>`
+	// head: shared 6-slot header — the little action glyph + name on the left, the
+	// cost as a right-side chip. The action TYPE (usage) is deliberately NOT in the
+	// head; it reads in the keyword/action block below, and the glyph's --act color
+	// already encodes it. No crest shield here (kind/provenance/level are implied by
+	// the parent statblock). The sb__feat-head wrapper is kept for the flat CSS hook.
+	icon := `<span class="sb__feat-icon"><span class="sb__feat-glyph">` + a.glyph + `</span></span>`
 	b.WriteString(`<div class="sb__feat-head">`)
 	b.WriteString(renderCardHead(cardHeadSlots{
-		Crest:        crest,
+		Crest:        icon,
 		LeftPrimary:  hLine(richSb(f.Name)),
-		RightPrimary: hMini(richSb(f.Cost)),
-		RightDeck:    hChip(richSb(usage)),
+		RightPrimary: hChip(richSb(f.Cost)),
 	}))
 	b.WriteString(`</div>`)
 

@@ -287,14 +287,30 @@ func TestStatblockFeature_SixSlotHead(t *testing.T) {
 	got := renderStatblockFeature(f)
 	for _, want := range []string{
 		`sc-head__left-primary sc-head__slot--line">Cleave</h3>`,
-		`sc-head__right-primary sc-head__slot--mini">Signature</div>`,
-		`sc-head__right-deck sc-head__slot--chip">Main Action</div>`,
+		// cost rides the right primary lane as a chip (not the mini-title)
+		`sc-head__right-primary sc-head__slot--chip">Signature</div>`,
+		// the little action glyph, no decorative crest shield
+		`<span class="sb__feat-icon"><span class="sb__feat-glyph">`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("missing %q in:\n%s", want, got)
 		}
 	}
-	if strings.Contains(got, "sc-head__left-eyebrow") || strings.Contains(got, "sc-head__right-eyebrow") {
-		t.Errorf("sub-feature must not emit eyebrow lanes:\n%s", got)
+	// scope the negative checks to the head; usage (action type) legitimately
+	// still renders in the body keyword/action block below.
+	head := got
+	if i := strings.Index(got, "</header>"); i >= 0 {
+		head = got[:i]
+	}
+	for _, notWant := range []string{
+		"sc-crest",              // crest shield retired on sub-features
+		"sc-head__slot--mini",   // cost is a chip now, not the big mini-title
+		"Main Action",           // usage is not in the head (it reads in sb__ku below)
+		"sc-head__left-eyebrow", // sub-feature must not emit eyebrow lanes
+		"sc-head__right-eyebrow",
+	} {
+		if strings.Contains(head, notWant) {
+			t.Errorf("head should not contain %q:\n%s", notWant, head)
+		}
 	}
 }
