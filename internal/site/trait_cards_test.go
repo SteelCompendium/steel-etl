@@ -82,6 +82,27 @@ func TestRenderTraitCard_NestedAbilityShowsSubclassDeck(t *testing.T) {
 	}
 }
 
+// A nested ABILITY child with a resource cost (RenderSubtree stamps it as
+// data-cost on the heading, e.g. "5 Focus") must surface that cost in its
+// right-primary slot, exactly like the standalone ability page. Regression:
+// synthAbilityFM dropped the cost, so every nested ability card — and the class
+// pages that embed those container features — lost the resource cost.
+func TestRenderTraitCard_NestedAbilityShowsCost(t *testing.T) {
+	fm := "name: 2nd-Level Doctrine Ability\ntype: feature\nclass: tactician\nscc: mcdm.heroes.v1/feature.tactician.level-2/2nd-level-doctrine-ability"
+	body := "\nYour tactical doctrine grants one ability.\n\n" +
+		"## Try Me Instead {data-scc=\"mcdm.heroes.v1/feature.ability.tactician.level-2/try-me-instead\" data-cost=\"5 Focus\" data-subclass=\"insurgent\"}\n\n" +
+		"*Try picking on someone my size.*\n\n" +
+		"**Effect:** You shift up to your speed.\n"
+	got := renderTraitCard(fm, body)
+
+	if !strings.Contains(got, `<article class="sc-ability`) {
+		t.Fatalf("expected a nested .sc-ability card:\n%s", got)
+	}
+	if !strings.Contains(got, `sc-head__right-primary sc-head__slot--mini">5 Focus</div>`) {
+		t.Errorf("nested ability should surface its \"5 Focus\" cost:\n%s", got)
+	}
+}
+
 // A real ancestry trait (type: trait) keeps the "<Ancestry> Trait" eyebrow.
 func TestTraitEyebrow_AncestryTraitSaysTrait(t *testing.T) {
 	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait"

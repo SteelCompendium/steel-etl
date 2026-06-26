@@ -246,7 +246,7 @@ func renderTraitBody(intro string, children []*traitNode, prefix string) (body s
 				// A nested ability is rendered from synthesized frontmatter (it has no
 				// class/subclass of its own), so pass the provenance explicitly: the
 				// parent's source prefix + the ability's own subclass (data-subclass).
-				b.WriteString(renderAbilityCard(synthAbilityFM(c.name, signatureHint), c.content, subclassOrigin(prefix, c.subclass)))
+				b.WriteString(renderAbilityCard(synthAbilityFM(c, signatureHint), c.content, subclassOrigin(prefix, c.subclass)))
 			} else {
 				b.WriteString(renderTraitNode(c, prefix))
 			}
@@ -439,10 +439,16 @@ func renderTraitSegment(tp string) string {
 
 // synthAbilityFM builds minimal frontmatter for a nested ability parsed from a
 // heading (renderAbilityCard reads name/type/cost here; action type + power roll
-// come from the body). A "signature ability" lead-in upgrades it to a Signature
-// cost badge.
-func synthAbilityFM(name string, signature bool) string {
-	fm := "name: " + name + "\ntype: ability"
+// come from the body). The node's resource cost (RenderSubtree stamps it as
+// data-cost, e.g. "5 Focus") is carried through so the nested card surfaces the
+// same cost its standalone page does — without it the cost slot rendered blank.
+// A "signature ability" lead-in upgrades it to a Signature cost badge when the
+// node carries no explicit cost.
+func synthAbilityFM(n *traitNode, signature bool) string {
+	fm := "name: " + n.name + "\ntype: ability"
+	if cost := strings.TrimSpace(n.cost); cost != "" {
+		fm += "\ncost: " + cost
+	}
 	if signature {
 		fm += "\nsubtype: signature"
 	}
