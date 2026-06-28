@@ -82,12 +82,12 @@ func TestRenderTraitCard_NestedAbilityShowsSubclassDeck(t *testing.T) {
 	}
 }
 
-// A nested ABILITY child with a resource cost (RenderSubtree stamps it as
-// data-cost on the heading, e.g. "5 Focus") must surface that cost in its
-// right-primary slot, exactly like the standalone ability page. Regression:
-// synthAbilityFM dropped the cost, so every nested ability card — and the class
-// pages that embed those container features — lost the resource cost.
-func TestRenderTraitCard_NestedAbilityShowsCost(t *testing.T) {
+// A nested ABILITY child must surface the same right-rail slots as its standalone
+// page: the resource cost (RenderSubtree stamps it as data-cost, e.g. "5 Focus")
+// and the level chip (derived from the level-N segment of its scc). Regression:
+// synthAbilityFM dropped both, so every nested ability card — and the class pages
+// that embed those container features — lost the cost and the level.
+func TestRenderTraitCard_NestedAbilityShowsCostAndLevel(t *testing.T) {
 	fm := "name: 2nd-Level Doctrine Ability\ntype: feature\nclass: tactician\nscc: mcdm.heroes.v1/feature.tactician.level-2/2nd-level-doctrine-ability"
 	body := "\nYour tactical doctrine grants one ability.\n\n" +
 		"## Try Me Instead {data-scc=\"mcdm.heroes.v1/feature.ability.tactician.level-2/try-me-instead\" data-cost=\"5 Focus\" data-subclass=\"insurgent\"}\n\n" +
@@ -100,6 +100,9 @@ func TestRenderTraitCard_NestedAbilityShowsCost(t *testing.T) {
 	}
 	if !strings.Contains(got, `sc-head__right-primary sc-head__slot--mini">5 Focus</div>`) {
 		t.Errorf("nested ability should surface its \"5 Focus\" cost:\n%s", got)
+	}
+	if !strings.Contains(got, `sc-head__right-eyebrow sc-head__slot--chip">Level 2</div>`) {
+		t.Errorf("nested ability should surface its \"Level 2\" chip:\n%s", got)
 	}
 }
 

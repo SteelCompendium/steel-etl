@@ -438,16 +438,20 @@ func renderTraitSegment(tp string) string {
 }
 
 // synthAbilityFM builds minimal frontmatter for a nested ability parsed from a
-// heading (renderAbilityCard reads name/type/cost here; action type + power roll
-// come from the body). The node's resource cost (RenderSubtree stamps it as
-// data-cost, e.g. "5 Focus") is carried through so the nested card surfaces the
-// same cost its standalone page does — without it the cost slot rendered blank.
-// A "signature ability" lead-in upgrades it to a Signature cost badge when the
-// node carries no explicit cost.
+// heading (renderAbilityCard reads name/type/cost/level here; action type + power
+// roll come from the body). The node's resource cost (RenderSubtree stamps it as
+// data-cost, e.g. "5 Focus") and level (the level-N segment of its scc, mirroring
+// renderTraitNode) are carried through so the nested card surfaces the same
+// right-rail slots its standalone page does — without them those slots rendered
+// blank. A "signature ability" lead-in upgrades it to a Signature cost badge when
+// the node carries no explicit cost.
 func synthAbilityFM(n *traitNode, signature bool) string {
 	fm := "name: " + n.name + "\ntype: ability"
 	if cost := strings.TrimSpace(n.cost); cost != "" {
 		fm += "\ncost: " + cost
+	}
+	if m := sccLevelRe.FindStringSubmatch(n.scc); m != nil {
+		fm += "\nlevel: " + m[1]
 	}
 	if signature {
 		fm += "\nsubtype: signature"
