@@ -130,6 +130,14 @@ func buildFolderIndex(dir, dirName string, subdirs []string) string {
 	if dirName == "feature" {
 		sb.WriteString(buildFeatureBrowseSection(dir))
 	}
+
+	// Per-class ability dirs additionally get the all-abilities table below
+	// the level folder cards ("see everything at a glance" — ability_table.go).
+	if isAbilityClassDir(dir) {
+		if tbl := abilityTable(dir, subdirs); tbl != "" {
+			sb.WriteString("\n## All " + dirToTitle(dirName) + " Abilities\n\n" + tbl + "\n")
+		}
+	}
 	return sb.String()
 }
 
