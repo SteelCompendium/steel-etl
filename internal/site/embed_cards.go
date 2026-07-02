@@ -94,6 +94,9 @@ func leafCard(content string) (scc string, entry cardEntry, ok bool) {
 	// on the container page. Drop everything from the first foreign {data-scc}
 	// heading onward (a no-op for pure-HTML leaf cards, which carry no such heading).
 	html = dropForeignSCCTail(html, scc)
+	// The leaf's stashed export source (sc-src template) must not ride along
+	// into container pages — one hidden source copy per embedded card.
+	html = dropSourceTemplate(html)
 	return scc, cardEntry{html: html, standalone: standaloneType[t]}, true
 }
 

@@ -301,11 +301,17 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 			data = combineFrontmatterName(data, parentName)
 		}
 
+		// Original body, captured before the card transforms below replace it —
+		// carded pages stash it in a sc-src template for the export control.
+		_, origBody := splitFrontmatter(string(data))
+		wasCarded := false
+
 		// Ability/trait pages → high-fantasy steel `.sc-ability` card (site-only;
 		// shared data repos untouched). Runs before injectH1 so the card becomes
 		// the page body and injectH1 still prepends the "# Name" MkDocs needs.
 		if card, ok := buildAbilityCardPage(data, standalone); ok {
 			data = card
+			wasCarded = true
 		}
 
 		// Statblock pages → the High-Fantasy Steel .sb-wrap card, rendered to
@@ -313,6 +319,7 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 		// runtime behavior. Site-only; runs before injectH1 like the cards above.
 		if card, ok := buildStatblockIslandPage(data); ok {
 			data = card
+			wasCarded = true
 		}
 
 		// Featureblock / dynamic-terrain pages → the High-Fantasy Steel
@@ -320,6 +327,7 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 		// Site-only; runs before injectH1 like the cards above.
 		if card, ok := buildFeatureblockPage(data); ok {
 			data = card
+			wasCarded = true
 		}
 
 		// Kit pages → the High-Fantasy Steel .sc-kit plate (header + equipment +
@@ -328,10 +336,12 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 		// {data-scc} marker. Site-only; runs before injectH1 like the cards above.
 		if card, ok := buildKitPage(data); ok {
 			data = card
+			wasCarded = true
 		}
 
-		// Class pages → landing header card + section jump bar. Site-only;
-		// runs before injectH1 like the cards above.
+		// Class pages → landing header card + section jump bar. NOT counted as
+		// carded — the full body stays on the page, so there is no lost source
+		// for the export control to recover.
 		if card, ok := buildClassLandingPage(data); ok {
 			data = card
 		}
@@ -345,6 +355,13 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 		// Site-only; runs before injectH1 like the cards above.
 		if card, ok := buildCompanionStatblockPage(data); ok {
 			data = card
+			wasCarded = true
+		}
+
+		// Stash the pre-card markdown for the client-side export control
+		// (sc-export.js reads the sc-src template).
+		if wasCarded {
+			data = appendSourceTemplate(data, origBody)
 		}
 
 		// Per-type search ranking boost — skipped for search-excluded sections
