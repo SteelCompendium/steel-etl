@@ -1,6 +1,8 @@
 package content
 
 import (
+	"regexp"
+	"strconv"
 	"strings"
 
 	"github.com/SteelCompendium/steel-etl/internal/context"
@@ -37,6 +39,28 @@ func (p *ClassParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 	// Extract primary characteristics
 	if v := extractField(body, "Primary Characteristics"); v != "" {
 		fm["primary_characteristics"] = splitCommaList(v)
+	} else if v := extractField(body, "Starting Characteristics"); v != "" {
+		// Heroes 1.x phrasing: "You start with a Might of 2 and an Agility of
+		// 2, and you can choose one of the following arrays…" — the named
+		// begin-at-2 characteristics are the class's primaries.
+		if names := startingCharRe.FindAllStringSubmatch(stripInlineMarkdown(v), -1); len(names) > 0 {
+			var list []string
+			for _, m := range names {
+				list = append(list, m[1])
+			}
+			fm["primary_characteristics"] = list
+		}
+	}
+
+	// Base stats for the class landing card (schema fields exist since 2.0.0)
+	if n, ok := extractIntField(body, "Starting Stamina at 1st Level"); ok {
+		fm["starting_stamina"] = n
+	}
+	if n, ok := extractIntField(body, "Stamina Gained at 2nd and Higher Levels"); ok {
+		fm["stamina_per_level"] = n
+	}
+	if n, ok := extractIntField(body, "Recoveries"); ok {
+		fm["recoveries"] = n
 	}
 
 	// Extract potency fields
@@ -63,6 +87,23 @@ func (p *ClassParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 		TypePath:    []string{"class"},
 		ItemID:      id,
 	}, nil
+}
+
+// startingCharRe pulls the begin-at-2 characteristic names out of the
+// "Starting Characteristics" prose (after link-stripping).
+var startingCharRe = regexp.MustCompile(`(Might|Agility|Reason|Intuition|Presence) of 2`)
+
+// extractIntField reads a bold-labeled field expected to hold a bare integer.
+func extractIntField(body, fieldName string) (int, bool) {
+	v := extractField(body, fieldName)
+	if v == "" {
+		return 0, false
+	}
+	n, err := strconv.Atoi(strings.TrimSpace(v))
+	if err != nil {
+		return 0, false
+	}
+	return n, true
 }
 
 // extractHeroicResource looks for "Heroic Resource: X" in the body.

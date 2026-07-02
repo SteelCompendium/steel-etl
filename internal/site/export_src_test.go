@@ -26,6 +26,15 @@ func TestAppendSourceTemplate(t *testing.T) {
 	if !strings.Contains(out, "&#10;") {
 		t.Error("expected &#10; newline encoding")
 	}
+	out2 := string(appendSourceTemplate(carded, "see [rules](../rule/x.md) and `code` plus a \\* literal\n"))
+	for _, bad := range []string{"[", "`", "\\"} {
+		if strings.Contains(strings.SplitN(out2, "<template", 2)[1], bad) {
+			t.Errorf("%q must be entity-encoded in data-src (python-markdown link/backtick/escape patterns outrank raw-HTML and mangle the attribute)", bad)
+		}
+	}
+	if !strings.Contains(out2, "&#91;rules&#93;") && !strings.Contains(out2, "&#91;rules]") {
+		t.Error("link brackets not encoded")
+	}
 	if !strings.HasSuffix(strings.TrimRight(out, "\n"), "</template>") {
 		t.Error("template must be appended at the end")
 	}

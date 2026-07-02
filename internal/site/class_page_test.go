@@ -36,19 +36,34 @@ const classPageFixture = `---
 name: Fury
 printing_book: "Draw Steel: Heroes"
 scc: mcdm.heroes.v1/class/fury
+flavor: You do not temper the heat of battle within you. You unleash it!
 strong_potency: '[Might](../rule/character/might.md)'
 average_potency: '[Might](../rule/character/might.md) − 1'
 weak_potency: '[Might](../rule/character/might.md) − 2'
+primary_characteristics:
+    - Might
+    - Agility
+starting_stamina: 21
+stamina_per_level: 9
+recoveries: 10
+skills:
+    - 'You gain the [Nature](../skill/lore/nature.md) skill.'
 type: class
 ---
 
-Intro prose.
+You do not temper the heat of battle within you. You [unleash](../feature/x.md) it!
+
+**Bold summary stays.**
 
 ## Basics
 
 body
 
 ## 1st-Level Features
+
+body
+
+## 2nd-Level Features
 
 body
 
@@ -68,17 +83,37 @@ func TestBuildClassLandingPage(t *testing.T) {
 		`sc-head__left-primary`, // renderCardHead emitted the name slot
 		`>Fury</h2>`,            // name as h2
 		`Draw Steel: Heroes`,    // left deck
-		`sc-classhead__pot`,     // potency strip
-		`Might − 2`,             // weak potency, link-stripped
+		`sc-classhead__flavor">You do not temper`, // flavor inside the card
+		`sc-classhead__stats`,                     // base-stat strip
+		`Might 2 · Agility 2`,                     // starting characteristics
+		`>21</span>`,                              // starting stamina
+		`>+9</span>`,                              // stamina per level
+		`>10</span>`,                              // recoveries
+		`sc-classhead__pot`,                       // potency strip
+		`Might − 2`,                               // weak potency, link-stripped
+		`sc-classhead__skills`,                    // skills footer
+		`You gain the Nature skill.`,              // link-stripped skills prose
 		`<nav class="sc-classnav"`,
 		`<a href="#basics">Basics</a>`,
-		`<a href="#1st-level-features">1st-Level Features</a>`,
+		`sc-classnav__lvls`, // level headings collapse into the numbered group
+		`<a href="#1st-level-features" title="1st-Level Features">1</a>`,
+		`<a href="#2nd-level-features" title="2nd-Level Features">2</a>`,
 		`<a href="#stormwight-kits">Stormwight Kits</a>`,
-		"Intro prose.", // body preserved
+		"**Bold summary stays.**", // body preserved
 	} {
 		if !strings.Contains(s, want) {
 			t.Errorf("output missing %q", want)
 		}
+	}
+
+	// the body's opening paragraph duplicated the card flavor → dropped
+	// (the linked "[unleash]" form exists only in that body paragraph)
+	if strings.Contains(s, "[unleash]") {
+		t.Error("duplicate flavor paragraph must be dropped from the body")
+	}
+	// only one "Nth-Level Features" text pill replacement (group, not ten pills)
+	if strings.Contains(s, `>1st-Level Features</a>`) {
+		t.Error("level headings must not render as individual text pills")
 	}
 
 	// non-class pages pass through

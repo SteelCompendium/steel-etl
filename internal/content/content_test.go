@@ -83,6 +83,39 @@ func TestClassParser(t *testing.T) {
 	}
 }
 
+func TestClassParserBaseStats(t *testing.T) {
+	body := "The fury is a primal warrior.\n\n" +
+		"**Starting [Characteristics](scc.v1:x):** You start with a [Might](scc.v1:m) of 2 and an [Agility](scc.v1:a) of 2, and you can choose one of the following arrays:\n\n" +
+		"- 2, −1, −1\n\n" +
+		"**Starting [Stamina](scc.v1:s) at 1st Level:** 21\n\n" +
+		"**[Stamina](scc.v1:s) Gained at 2nd and Higher Levels:** 9\n\n" +
+		"**[Recoveries](scc.v1:r):** 10\n"
+	section := &parser.Section{
+		Heading:      "Fury",
+		HeadingLevel: 2,
+		Annotation:   map[string]string{"type": "class", "id": "fury"},
+		BodySource:   body,
+	}
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	result, err := (&ClassParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("ClassParser.Parse failed: %v", err)
+	}
+	if got := result.Frontmatter["starting_stamina"]; got != 21 {
+		t.Errorf("expected starting_stamina=21, got %v", got)
+	}
+	if got := result.Frontmatter["stamina_per_level"]; got != 9 {
+		t.Errorf("expected stamina_per_level=9, got %v", got)
+	}
+	if got := result.Frontmatter["recoveries"]; got != 10 {
+		t.Errorf("expected recoveries=10, got %v", got)
+	}
+	chars, _ := result.Frontmatter["primary_characteristics"].([]string)
+	if len(chars) != 2 || chars[0] != "Might" || chars[1] != "Agility" {
+		t.Errorf("expected primary_characteristics=[Might Agility], got %v", result.Frontmatter["primary_characteristics"])
+	}
+}
+
 func TestFeatureGroupParser(t *testing.T) {
 	section := &parser.Section{
 		Heading:      "1st-Level Features",

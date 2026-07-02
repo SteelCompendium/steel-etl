@@ -22,7 +22,20 @@ func appendSourceTemplate(carded []byte, origBody string) []byte {
 	// Newlines become &#10; so the whole tag stays on ONE line — python-
 	// markdown's raw-HTML block detection is line-based and a multi-line
 	// attribute lets markdown processing leak back in mid-tag.
-	src := strings.ReplaceAll(html.EscapeString(strings.TrimSpace(origBody)), "\n", "&#10;")
+	//
+	// Even single-line, python-markdown's inline patterns with priority ABOVE
+	// its raw-HTML pattern (escape, backtick, reference/link/image) still run
+	// across the tag text and rewrite [text](url.md) INSIDE the attribute to
+	// <a href="…"> — whose first quote terminates data-src and truncates the
+	// copy (SOT-3843, seen live on every statblock). Entity-encode the trigger
+	// characters those patterns key on; browsers decode entities in attribute
+	// values, so getAttribute still yields the original markdown.
+	src := strings.NewReplacer(
+		"\n", "&#10;",
+		"[", "&#91;",
+		"`", "&#96;",
+		"\\", "&#92;",
+	).Replace(html.EscapeString(strings.TrimSpace(origBody)))
 	out := string(carded)
 	out += "\n\n<template class=\"sc-src\" data-fmt=\"md\" data-src=\"" + src + "\"></template>\n"
 	return []byte(out)

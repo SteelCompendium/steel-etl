@@ -63,13 +63,89 @@ func buildClassLandingPage(data []byte) ([]byte, bool) {
 	var card strings.Builder
 	card.WriteString(`<section class="sc-classhead">`)
 	card.WriteString(head)
+	card.WriteString(classFlavor(fm))
+	card.WriteString(classStatStrip(fm))
 	card.WriteString(classPotencyStrip(fm))
+	card.WriteString(classSkillsLine(fm))
 	card.WriteString(`</section>`)
 
 	if nav := classJumpNav(body); nav != "" {
 		card.WriteString("\n" + nav)
 	}
+	body = dropDuplicateFlavor(body, fm)
 	return []byte("---\n" + fm + "\n---\n\n" + card.String() + "\n\n" + body), true
+}
+
+// dropDuplicateFlavor removes the body's opening paragraph when it repeats the
+// frontmatter flavor the card now displays — otherwise the same text renders
+// twice within a screenful. Site-only; the data repos keep the full body.
+func dropDuplicateFlavor(body, fm string) string {
+	flavor := normalizeProse(stripMD(unquote(strings.TrimSpace(parseFrontmatterField(fm, "flavor")))))
+	if flavor == "" {
+		return body
+	}
+	rest := strings.TrimLeft(body, "\n")
+	para := rest
+	if i := strings.Index(rest, "\n\n"); i >= 0 {
+		para = rest[:i]
+	}
+	if strings.HasPrefix(para, "#") || strings.HasPrefix(para, ">") || strings.HasPrefix(para, "|") {
+		return body
+	}
+	if normalizeProse(stripMD(para)) != flavor {
+		return body
+	}
+	return strings.TrimLeft(strings.TrimPrefix(rest, para), "\n")
+}
+
+// normalizeProse collapses whitespace so link-stripped body prose compares
+// equal to the (already-plain) frontmatter copy.
+func normalizeProse(s string) string {
+	return strings.Join(strings.Fields(s), " ")
+}
+
+// classCell renders one label/value cell of the card's stat rows.
+func classCell(label, value string) string {
+	return `<span class="sc-classhead__cell"><span class="l">` + html.EscapeString(label) +
+		`</span><span class="v">` + html.EscapeString(value) + `</span></span>`
+}
+
+// classFlavor renders the frontmatter flavor paragraph inside the card, or ""
+// when the class has none.
+func classFlavor(fm string) string {
+	f := stripMD(unquote(strings.TrimSpace(parseFrontmatterField(fm, "flavor"))))
+	if f == "" {
+		return ""
+	}
+	return `<p class="sc-classhead__flavor">` + html.EscapeString(f) + `</p>`
+}
+
+// classStatStrip renders the base-stat cells (starting characteristics,
+// starting stamina, stamina per level, recoveries); absent fields skip their
+// cell (beastheart classes carry none of them).
+func classStatStrip(fm string) string {
+	var cells []string
+	if chars := parseFrontmatterList(fm, "primary_characteristics"); len(chars) > 0 {
+		var parts []string
+		for _, c := range chars {
+			// primaries begin at 2 by definition (class.schema.json)
+			parts = append(parts, stripMD(strings.TrimSpace(c))+" 2")
+		}
+		cells = append(cells, classCell("Starting characteristics", strings.Join(parts, " · ")))
+	}
+	if v := strings.TrimSpace(parseFrontmatterField(fm, "starting_stamina")); v != "" {
+		cells = append(cells, classCell("Starting stamina", v))
+	}
+	if v := strings.TrimSpace(parseFrontmatterField(fm, "stamina_per_level")); v != "" {
+		cells = append(cells, classCell("Stamina per level", "+"+v))
+	}
+	if v := strings.TrimSpace(parseFrontmatterField(fm, "recoveries")); v != "" {
+		cells = append(cells, classCell("Recoveries", v))
+	}
+	if len(cells) == 0 {
+		return ""
+	}
+	return `<div class="sc-classhead__stats">` + strings.Join(cells, "") + `</div>`
 }
 
 // classPotencyStrip renders the Weak/Average/Strong potency cells, or "" when
@@ -83,8 +159,7 @@ func classPotencyStrip(fm string) string {
 		if v == "" {
 			continue
 		}
-		cells = append(cells, `<span class="sc-classhead__potcell"><span class="l">`+p.label+
-			` potency</span><span class="v">`+html.EscapeString(v)+`</span></span>`)
+		cells = append(cells, classCell(p.label+" potency", v))
 	}
 	if len(cells) == 0 {
 		return ""
@@ -92,10 +167,37 @@ func classPotencyStrip(fm string) string {
 	return `<div class="sc-classhead__pot">` + strings.Join(cells, "") + `</div>`
 }
 
+// classSkillsLine renders the skills prose as the card's footer line.
+func classSkillsLine(fm string) string {
+	items := parseFrontmatterList(fm, "skills")
+	if len(items) == 0 {
+		if v := stripMD(unquote(strings.TrimSpace(parseFrontmatterField(fm, "skills")))); v != "" {
+			items = []string{v}
+		}
+	}
+	if len(items) == 0 {
+		return ""
+	}
+	var parts []string
+	for _, it := range items {
+		parts = append(parts, stripMD(unquote(strings.TrimSpace(it))))
+	}
+	return `<p class="sc-classhead__skills"><span class="l">Skills</span> ` +
+		html.EscapeString(strings.Join(parts, " ")) + `</p>`
+}
+
+// levelHeadingRe matches the ten "Nth-Level Features" section headings that
+// dominate every class page's H2 list.
+var levelHeadingRe = regexp.MustCompile(`^(\d+)(?:st|nd|rd|th)-Level Features$`)
+
 // classJumpNav builds the anchor bar from the body's ## headings (H2 only —
 // class pages have ~12: Basics, per-level features, subclass/kit sections).
+// The ten "Nth-Level Features" headings collapse into one compact numbered
+// "Level 1 2 … 10" group so the bar reads as a row of pills, not a wall.
 func classJumpNav(body string) string {
 	var links []string
+	var lvls []string
+	lvlPos := -1
 	for _, line := range strings.Split(body, "\n") {
 		if !strings.HasPrefix(line, "## ") {
 			continue
@@ -104,7 +206,19 @@ func classJumpNav(body string) string {
 		if txt == "" {
 			continue
 		}
+		if m := levelHeadingRe.FindStringSubmatch(txt); m != nil {
+			lvls = append(lvls, `<a href="#`+pySlugify(txt)+`" title="`+html.EscapeString(txt)+`">`+m[1]+`</a>`)
+			if lvlPos < 0 {
+				lvlPos = len(links)
+				links = append(links, "") // placeholder, filled below
+			}
+			continue
+		}
 		links = append(links, `<a href="#`+pySlugify(txt)+`">`+html.EscapeString(txt)+`</a>`)
+	}
+	if lvlPos >= 0 {
+		links[lvlPos] = `<span class="sc-classnav__lvls"><span class="l">Level</span>` +
+			strings.Join(lvls, "") + `</span>`
 	}
 	if len(links) == 0 {
 		return ""
