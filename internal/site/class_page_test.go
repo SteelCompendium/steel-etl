@@ -73,7 +73,7 @@ body
 `
 
 func TestBuildClassLandingPage(t *testing.T) {
-	out, ok := buildClassLandingPage([]byte(classPageFixture))
+	out, ok := buildClassLandingPage([]byte(classPageFixture), nil)
 	if !ok {
 		t.Fatal("class page not transformed")
 	}
@@ -82,10 +82,11 @@ func TestBuildClassLandingPage(t *testing.T) {
 		`<section class="sc-classhead">`,
 		`sc-head__left-primary`, // renderCardHead emitted the name slot
 		`>Fury</h2>`,            // name as h2
-		`Draw Steel: Heroes`,    // left deck
+		`sc-head__right-eyebrow sc-head__slot--chip">Draw Steel: Heroes`, // book chip
+		`sc-head__right-primary sc-head__slot--mini">Might · Agility`,    // primaries mini
+		`>start at 2<`, // rail deck line
 		`sc-classhead__flavor">You do not temper`, // flavor inside the card
 		`sc-classhead__stats`,                     // base-stat strip
-		`Might 2 · Agility 2`,                     // starting characteristics
 		`>21</span>`,                              // starting stamina
 		`>+9</span>`,                              // stamina per level
 		`>10</span>`,                              // recoveries
@@ -117,7 +118,7 @@ func TestBuildClassLandingPage(t *testing.T) {
 	}
 
 	// non-class pages pass through
-	if _, ok := buildClassLandingPage([]byte("---\ntype: ability\nname: X\n---\nbody\n")); ok {
+	if _, ok := buildClassLandingPage([]byte("---\ntype: ability\nname: X\n---\nbody\n"), nil); ok {
 		t.Error("ability page must not be transformed")
 	}
 
@@ -127,7 +128,7 @@ func TestBuildClassLandingPage(t *testing.T) {
 		"average_potency: '[Might](../rule/character/might.md) − 1'\n", "",
 		"weak_potency: '[Might](../rule/character/might.md) − 2'\n", "",
 	).Replace(classPageFixture)
-	out2, _ := buildClassLandingPage([]byte(noPot))
+	out2, _ := buildClassLandingPage([]byte(noPot), nil)
 	if strings.Contains(string(out2), "sc-classhead__pot") {
 		t.Error("potency strip must be omitted when frontmatter lacks potencies")
 	}

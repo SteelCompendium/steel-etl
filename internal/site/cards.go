@@ -907,13 +907,16 @@ func stripMD(s string) string {
 	return strings.TrimSpace(s)
 }
 
-// isProse reports whether a trimmed line is body prose (not heading/table/list/rule).
+// isProse reports whether a trimmed line is body prose (not heading/table/
+// list/rule/raw HTML — an HTML block like the chapter eyebrow div would
+// render escaped in a card blurb).
 func isProse(t string) bool {
 	if t == "" || t == "---" {
 		return false
 	}
 	return !strings.HasPrefix(t, "#") && !strings.HasPrefix(t, "|") &&
-		!strings.HasPrefix(t, ">") && !strings.HasPrefix(t, "- ")
+		!strings.HasPrefix(t, ">") && !strings.HasPrefix(t, "- ") &&
+		!strings.HasPrefix(t, "<")
 }
 
 // cardFlavor returns the structured `flavor` frontmatter field (the parser is

@@ -342,7 +342,7 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 		// Class pages → landing header card + section jump bar. NOT counted as
 		// carded — the full body stays on the page, so there is no lost source
 		// for the export control to recover.
-		if card, ok := buildClassLandingPage(data); ok {
+		if card, ok := buildClassLandingPage(data, cfg); ok {
 			data = card
 		}
 
@@ -373,6 +373,10 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 
 		// Inject h1 header from frontmatter "name" field if the body lacks one
 		data = injectH1(data)
+
+		// Chapter pages: centered book-style opening (eyebrow + tagged title).
+		// Runs after injectH1 — it annotates the h1 line injectH1 guarantees.
+		data = buildChapterHead(data, cfg)
 
 		if err := os.WriteFile(destPath, data, 0644); err != nil {
 			errs = append(errs, fmt.Sprintf("write %s: %v", destPath, err))

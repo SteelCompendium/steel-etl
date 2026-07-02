@@ -45,20 +45,33 @@ func pySlugify(s string) string {
 // (data, false) for every other page type. injectH1 (next in buildSection)
 // still prepends the "# Name" + --- pair; steel-class.css hides that duplicate
 // by the same h1+hr+card adjacency rule the other leaf cards use.
-func buildClassLandingPage(data []byte) ([]byte, bool) {
+func buildClassLandingPage(data []byte, cfg *Config) ([]byte, bool) {
 	fm, body := splitFrontmatter(string(data))
 	if strings.TrimSpace(parseFrontmatterField(fm, "type")) != "class" {
 		return data, false
 	}
 	name := stripMD(parseFrontmatterField(fm, "name"))
-	book := unquote(strings.TrimSpace(parseFrontmatterField(fm, "printing_book")))
+	book := bookLabelFromFM(cfg, fm)
+	primaries := classPrimaries(fm)
 
-	head := renderCardHead(cardHeadSlots{
+	// The right rail balances the head the way the statblock's Level/role/EV
+	// rail does: book chip up top, the primary characteristics as the rail
+	// mini (the class's at-a-glance identity), "start at 2" as its deck line
+	// (primaries begin at 2 by definition — class.schema.json). The stat strip
+	// below drops its starting-characteristics cell in exchange.
+	slots := cardHeadSlots{
 		NameTag:     "h2",
 		LeftEyebrow: hLine("Class"),
 		LeftPrimary: hLine(html.EscapeString(name)),
-		LeftDeck:    hLine(html.EscapeString(book)),
-	})
+	}
+	if book != "" {
+		slots.RightEyebrow = hChip(html.EscapeString(book))
+	}
+	if len(primaries) > 0 {
+		slots.RightPrimary = hMini(html.EscapeString(strings.Join(primaries, " · ")))
+		slots.RightDeck = hLine("start at 2")
+	}
+	head := renderCardHead(slots)
 
 	var card strings.Builder
 	card.WriteString(`<section class="sc-classhead">`)
@@ -120,19 +133,23 @@ func classFlavor(fm string) string {
 	return `<p class="sc-classhead__flavor">` + html.EscapeString(f) + `</p>`
 }
 
-// classStatStrip renders the base-stat cells (starting characteristics,
-// starting stamina, stamina per level, recoveries); absent fields skip their
-// cell (beastheart classes carry none of them).
+// classPrimaries returns the class's primary characteristics, link-stripped
+// (they render in the head's right rail).
+func classPrimaries(fm string) []string {
+	var out []string
+	for _, c := range parseFrontmatterList(fm, "primary_characteristics") {
+		if v := stripMD(strings.TrimSpace(c)); v != "" {
+			out = append(out, v)
+		}
+	}
+	return out
+}
+
+// classStatStrip renders the base-stat cells (starting stamina, stamina per
+// level, recoveries); absent fields skip their cell (beastheart classes carry
+// none of them). Primary characteristics live in the head's right rail.
 func classStatStrip(fm string) string {
 	var cells []string
-	if chars := parseFrontmatterList(fm, "primary_characteristics"); len(chars) > 0 {
-		var parts []string
-		for _, c := range chars {
-			// primaries begin at 2 by definition (class.schema.json)
-			parts = append(parts, stripMD(strings.TrimSpace(c))+" 2")
-		}
-		cells = append(cells, classCell("Starting characteristics", strings.Join(parts, " · ")))
-	}
 	if v := strings.TrimSpace(parseFrontmatterField(fm, "starting_stamina")); v != "" {
 		cells = append(cells, classCell("Starting stamina", v))
 	}
