@@ -341,6 +341,13 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 			data = card
 		}
 
+		// Per-type search ranking boost — skipped for search-excluded sections
+		// (applySearchExclusion later prepends its own `search:` key and YAML
+		// forbids duplicate keys).
+		if !searchExcluded(cfg.SearchExclude, section.Name) {
+			data = applySearchBoost(data)
+		}
+
 		// Inject h1 header from frontmatter "name" field if the body lacks one
 		data = injectH1(data)
 
