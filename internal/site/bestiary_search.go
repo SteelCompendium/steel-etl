@@ -11,6 +11,7 @@ import (
 	"encoding/json"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strconv"
 	"strings"
 )
@@ -96,12 +97,32 @@ func collectBestiaryItems(browseDir string) []bestiaryItem {
 			Role:         stripMD(parseFrontmatterField(fm, "role")),
 			Organization: stripMD(parseFrontmatterField(fm, "organization")),
 			Keywords:     kw,
-			Size:         stripMD(statField(fm, "size", "Size")),
+			Size:         sizeFacet(kind, stripMD(statField(fm, "size", "Size"))),
 			Href:         "../Browse/" + dirURL(relSlash),
 		})
 		return nil
 	})
 	return items
+}
+
+// canonicalSizeRe matches real creature sizes: "1T"/"1S"/"1M"/"1L", bare
+// numbers, and the variable forms "1S-2" and "2 or 3".
+var canonicalSizeRe = regexp.MustCompile(`^\d+[TSML]?(-\d+)?( or \d+)?$`)
+
+// sizeFacet normalizes the Size filter value. Statblock sizes pass through;
+// dynamic-terrain / fixture pages carry free-text area descriptions in their
+// `size` frontmatter ("any area; the area can't be moved through") which would
+// each become their own filter chip on the Bestiary page — bucket those under
+// "Area". Anything else non-canonical becomes "Special" so the chip vocabulary
+// stays closed.
+func sizeFacet(kind, size string) string {
+	if size == "" || canonicalSizeRe.MatchString(size) {
+		return size
+	}
+	if kind == "terrain" || kind == "fixture" {
+		return "Area"
+	}
+	return "Special"
 }
 
 // unquote strips a single layer of surrounding double/single quotes and trims

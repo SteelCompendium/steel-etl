@@ -172,3 +172,25 @@ func TestBuildBestiarySearchPage_NoItems(t *testing.T) {
 		t.Error("no page should be written when there are no items")
 	}
 }
+
+func TestSizeFacet(t *testing.T) {
+	cases := []struct{ kind, size, want string }{
+		{"statblock", "1S", "1S"},
+		{"statblock", "1M", "1M"},
+		{"statblock", "1S-2", "1S-2"},
+		{"statblock", "2 or 3", "2 or 3"},
+		{"statblock", "5", "5"},
+		{"terrain", "any area; the area can't be moved through", "Area"},
+		{"terrain", "one or more squares of difficult terrain", "Area"},
+		{"terrain", "the area of the corridor to be blocked", "Area"},
+		{"fixture", "one square that can't be moved through", "Area"},
+		{"terrain", "2", "2"}, // canonical stays canonical even on terrain
+		{"statblock", "weird text", "Special"},
+		{"statblock", "", ""},
+	}
+	for _, c := range cases {
+		if got := sizeFacet(c.kind, c.size); got != c.want {
+			t.Errorf("sizeFacet(%q, %q) = %q, want %q", c.kind, c.size, got, c.want)
+		}
+	}
+}
