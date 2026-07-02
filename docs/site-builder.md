@@ -128,7 +128,11 @@ record each (classified by `type` + tree, since `statblock/` is hoisted away);
 client-side by `v2/docs/javascripts/steel-bestiary-browser.js` (`window.SCBestiary`).
 No-op when the Monsters book is absent. Site-only — no SCC re-mint, no data-repo
 change. The advanced "inflicts <condition>" data seam (spec §B5) is **reserved, not
-built**.
+built** (the browser does republish its parsed records as `window.SC_BESTIARY_ITEMS`
+for the encounter builder — its mount destroys the island). `sizeFacet` (2026-07-02)
+keeps the Size chip vocabulary closed: canonical sizes (`1S`, `1S-2`, `2 or 3`, …)
+pass through; dynamic-terrain/fixture free-text area descriptions bucket as `"Area"`,
+anything else non-canonical as `"Special"`.
 
 ### `internal/site/card_head.go`
 
@@ -198,6 +202,56 @@ Feature" vs "<Source> Trait" (regression once mislabelled every feature "Trait")
 `feature/` landing also gets the **Search & Filter** `.sc-browse-mount` JSON data island
 (one object per leaf, dir-URL hrefs; `kind` ∈ feature/ability/trait drives the Type
 facet's three buckets). Site-only; styled by v2 `docs/stylesheets/steel-indexes.css`.
+
+### `internal/site/ability_table.go`
+
+The **all-abilities table** appended below the folder cards on per-class ability
+indexes (`feature/ability/<class>/` — `isAbilityClassDir` matches exactly one segment
+after `ability`). `abilityTable(dir, subdirs)` reads each leaf's frontmatter
+(`name`/`level`/`cost`/`subtype`/`action_type`/`distance`/`target`, md-link-stripped)
+into one `<div class="sc-abtable">` row each: Name (dir-URL link) · Lv (`data-sort`
+key; unleveled rows — e.g. stormwight-kit abilities — sort last with `data-sort="0"`)
+· Cost (`subtype: signature` shows "Signature") · Action · Distance · Target. Sorting
+is client-side via the site-wide tablesort.js; hooked from `buildFolderIndex`
+(`feature_index.go`). Responsive column-dropping in v2 `steel-indexes.css`.
+
+### `internal/site/class_page.go`
+
+**Class landing header + jump bar** (P3, 2026-07-02). `buildClassLandingPage` rewrites
+every `type: class` page (11 Browse class pages; Read chapters are `type: chapter` and
+unaffected) to open with a `.sc-classhead` card — shared 6-slot head (`renderCardHead`,
+name as `h2`, "Class" eyebrow; the left-deck book line stays empty because printing
+stamps run *after* buildSection) plus a Weak/Average/Strong potency strip (omitted when
+the class has no potency frontmatter — beastheart) — and a `.sc-classnav` pill bar over
+the body's `##` headings. Anchor hrefs use `pySlugify` (replicates python-markdown's
+toc slugify) so they match the heading ids MkDocs generates; heading text passes
+through `headingText` (strips `{data-scc}` attr-lists and unwraps md links). The
+injected `# Name` + `---` is hidden by the same h1+hr+card **adjacency** rule family
+as the other leaf cards (`v2/docs/stylesheets/steel-class.css`). NOT flagged
+`wasCarded` for the export island — the full body stays on the page.
+
+### `internal/site/search_boost.go`
+
+Per-type **search ranking boosts** (P2). `applySearchBoost` injects Material's
+`search:\n  boost: <n>` at the top of the frontmatter, keyed on `type:`
+(`searchBoostByType`: class 4, ancestry/condition/rule/movement/negotiation 3, most
+entity types 2, statblock/featureblock 0.6, dynamic-terrain 0.7; feature/ability/…
+unmapped = default 1). Called in `buildSection` **only for non-search-excluded
+sections** — `applySearchExclusion` later prepends its own `search:` key and YAML
+forbids duplicates. This is why "fury" finds the Fury class before the four Rival
+Fury statblocks.
+
+### `internal/site/export_src.go`
+
+**Export-source island** (P10). Carded leaf pages (`wasCarded` set by the
+ability/statblock/featureblock/kit/companion transforms in `buildSection`) get their
+pre-card markdown body appended as `<template class="sc-src" data-fmt="md"
+data-src="…">` — a **single line**, newlines encoded `&#10;`, because python-markdown's
+raw-HTML block detection is line-based and mangles both element content and multi-line
+attributes (two failed attempts before this shape). Consumed by v2 `sc-export.js`
+("Copy as Markdown" via `getAttribute("data-src")`). `dropSourceTemplate` strips the
+island from transcluded cards in `embed_cards.go` `leafCard` — otherwise a class page
+would accumulate ~70 hidden source copies.
 
 ### `internal/site/cards_book.go`
 
