@@ -84,7 +84,7 @@ func TestBuildClassLandingPage(t *testing.T) {
 		`>Fury</h2>`,            // name as h2
 		`sc-head__right-eyebrow sc-head__slot--chip">Draw Steel: Heroes`, // book chip
 		`sc-head__right-primary sc-head__slot--mini">Might · Agility`,    // primaries mini
-		`>start at 2<`, // rail deck line
+		`>primary characteristics<`, // rail deck = the mini's caption
 		`sc-classhead__flavor">You do not temper`, // flavor inside the card
 		`sc-classhead__stats`,                     // base-stat strip
 		`>21</span>`,                              // starting stamina

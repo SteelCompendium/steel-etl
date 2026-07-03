@@ -56,9 +56,9 @@ func buildClassLandingPage(data []byte, cfg *Config) ([]byte, bool) {
 
 	// The right rail balances the head the way the statblock's Level/role/EV
 	// rail does: book chip up top, the primary characteristics as the rail
-	// mini (the class's at-a-glance identity), "start at 2" as its deck line
-	// (primaries begin at 2 by definition — class.schema.json). The stat strip
-	// below drops its starting-characteristics cell in exchange.
+	// mini (the class's at-a-glance identity) with its caption as the deck
+	// line directly beneath — ONE field (value + label), not two. The stat
+	// strip below drops its starting-characteristics cell in exchange.
 	slots := cardHeadSlots{
 		NameTag:     "h2",
 		LeftEyebrow: hLine("Class"),
@@ -69,7 +69,7 @@ func buildClassLandingPage(data []byte, cfg *Config) ([]byte, bool) {
 	}
 	if len(primaries) > 0 {
 		slots.RightPrimary = hMini(html.EscapeString(strings.Join(primaries, " · ")))
-		slots.RightDeck = hLine("start at 2")
+		slots.RightDeck = hLine("primary characteristics")
 	}
 	head := renderCardHead(slots)
 
