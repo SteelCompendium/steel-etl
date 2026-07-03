@@ -86,17 +86,31 @@ func (p *CareerParser) Parse(ctx *context.ContextStack, section *parser.Section)
 	}, nil
 }
 
-// splitCommaList splits a comma-separated string into a trimmed string slice.
+// splitCommaList splits a comma-separated string into a trimmed string slice,
+// dropping lone-dash "none" placeholders (see isDashPlaceholder).
 func splitCommaList(s string) []string {
 	parts := strings.Split(s, ",")
 	var result []string
 	for _, p := range parts {
 		trimmed := strings.TrimSpace(p)
-		if trimmed != "" {
+		if trimmed != "" && !isDashPlaceholder(trimmed) {
 			result = append(result, trimmed)
 		}
 	}
 	return result
+}
+
+// isDashPlaceholder reports whether a list cell is a lone dash — the book
+// convention for "none" (e.g. an ability with no keywords, a monster with no
+// immunities). Such a value must never survive as a list item; it otherwise
+// renders as a stray "-" chip. Only a dash-only token counts; an internal
+// hyphen like "Fire-2" is left intact.
+func isDashPlaceholder(s string) bool {
+	switch strings.TrimSpace(s) {
+	case "-", "–", "—":
+		return true
+	}
+	return false
 }
 
 // extractListField looks for lines starting with "- " after a field header.

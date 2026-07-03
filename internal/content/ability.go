@@ -367,7 +367,7 @@ func parseKeywords(s string) []string {
 	var keywords []string
 	for _, p := range parts {
 		p = strings.TrimSpace(p)
-		if p != "" {
+		if p != "" && !isDashPlaceholder(p) {
 			keywords = append(keywords, p)
 		}
 	}

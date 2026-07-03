@@ -407,7 +407,9 @@ func cellText(s string) string {
 func splitKeywords(s string) []string {
 	var out []string
 	for _, p := range strings.Split(s, ",") {
-		if p = strings.TrimSpace(p); p != "" {
+		// a lone dash is the book's "no keywords" placeholder — drop it so it
+		// never renders as a stray "-" chip.
+		if p = strings.TrimSpace(p); p != "" && p != "-" && p != "–" && p != "—" {
 			out = append(out, p)
 		}
 	}

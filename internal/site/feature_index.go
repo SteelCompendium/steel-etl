@@ -352,9 +352,13 @@ func extractPreviewItem(fm, body, kind, klassFallback string) browseItem {
 		if it.Cost == "" && parseFrontmatterField(fm, "subtype") == "signature" {
 			it.Cost = "Signature"
 		}
-		it.Keywords = parseFrontmatterList(fm, "keywords")
-		for i, k := range it.Keywords {
-			it.Keywords[i] = plainInline(k)
+		for _, k := range parseFrontmatterList(fm, "keywords") {
+			// drop the lone-dash "no keywords" placeholder so it never renders as a
+			// stray "-" chip (older generated frontmatter may still carry ['-']).
+			if t := strings.TrimSpace(k); t == "-" || t == "–" || t == "—" {
+				continue
+			}
+			it.Keywords = append(it.Keywords, plainInline(k))
 		}
 		it.Distance = plainInline(strings.TrimSpace(parseFrontmatterField(fm, "distance")))
 		it.Targets = plainInline(strings.TrimSpace(firstField(fm, "target", "targets")))
