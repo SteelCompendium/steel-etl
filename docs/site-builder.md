@@ -196,7 +196,12 @@ the book-faithful subtree render's H2–H6 heading tree by level (typed by `{dat
 nested sub-trait niche). A body block matching `isTierListBlock` renders via the shared
 `tierPanelHTML` (the `tiers` `classifyTraitBlock` kind) instead of a plain `<ul>`, so a
 plain feature's embedded test (e.g. the Summoner's Fairy Whispers) shows the
-glyph-badged power-roll panel. Routed from `buildAbilityCardPage`; styled by v2
+glyph-badged power-roll panel. Plain bullet blocks render via `renderTraitList`,
+which follows markdown list semantics: blank-line-separated items stay one `<ul>`
+(a loose list, not a second list), and a 4-space-indented follow-on block is a
+continuation paragraph of the item above it, rendered as `<p>`s inside the same
+`<li>` (coalesced in `renderTraitBody` via `isIndentedBlock`; SC-81, the Companion
+Rules "Companion Actions" entry). Routed from `buildAbilityCardPage`; styled by v2
 `docs/stylesheets/steel-traits.css`.
 
 ### `internal/site/feature_index.go`

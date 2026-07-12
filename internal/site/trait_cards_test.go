@@ -225,6 +225,55 @@ Choose one of the following formations:
 	}
 }
 
+// A list item with indented continuation paragraphs (CommonMark multi-paragraph
+// list item, 4-space indent) keeps those paragraphs inside the same <li> as <p>
+// blocks — they must not leak out as top-level prose or collapse into the lead
+// sentence. (Regression: SC-81, Companion Rules "Companion Actions".)
+func TestRenderTraitCard_ListContinuationParagraphs(t *testing.T) {
+	fm := "class: beastheart\nname: Companion Rules\ntype: feature"
+	body := `
+- **Companion Actions.** Your companion is your ally.
+
+    You and your companion each take your own move action.
+
+    You and your companion share one turn during montage tests.
+
+- **Ranged Free Strikes.** Your companion doesn't have a ranged free strike.
+`
+	got := renderTraitCard(fm, body)
+	want := "<li><p><b>Companion Actions.</b> Your companion is your ally.</p>" +
+		"<p>You and your companion each take your own move action.</p>" +
+		"<p>You and your companion share one turn during montage tests.</p></li>"
+	if !strings.Contains(got, want) {
+		t.Errorf("continuation paragraphs should render as <p> blocks inside the same <li>\nwant substring:\n%s\ngot:\n%s", want, got)
+	}
+	if !strings.Contains(got, "<li><b>Ranged Free Strikes.</b>") {
+		t.Errorf("the following single-paragraph item should stay a bare <li>\n%s", got)
+	}
+	if strings.Count(got, "<ul>") != 1 {
+		t.Errorf("the whole block should stay one <ul>, got %d\n%s", strings.Count(got, "<ul>"), got)
+	}
+}
+
+// A blank line between bullet items makes the list loose in CommonMark — it does
+// NOT start a second list. The card renderer must keep such items in one <ul>.
+// (Regression: SC-81, the Companion Rules list split at a PDF column break.)
+func TestRenderTraitCard_BlankLineSeparatedListStaysOneUL(t *testing.T) {
+	fm := "class: beastheart\nname: Companion Rules\ntype: feature"
+	body := `
+- **Shared Space.** You can move through each other's spaces.
+
+- **Surges.** Surges go into a shared pool.
+`
+	got := renderTraitCard(fm, body)
+	if strings.Count(got, "<ul>") != 1 {
+		t.Errorf("blank-line-separated items must stay one <ul>, got %d\n%s", strings.Count(got, "<ul>"), got)
+	}
+	if strings.Count(got, "<li>") != 2 {
+		t.Errorf("want 2 <li> items, got %d\n%s", strings.Count(got, "<li>"), got)
+	}
+}
+
 // A pure-prose trait → a flat niche with the drop-cap modifier and one paragraph.
 func TestRenderTraitCard_ProseOnly(t *testing.T) {
 	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait\nscc: mcdm.heroes.v1/feature.trait.dragon-knight/prismatic-scales"

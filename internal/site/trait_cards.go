@@ -207,12 +207,37 @@ func renderTraitBody(intro string, children []*traitNode, prefix string) (body s
 	first := true
 	signatureHint := strings.Contains(strings.ToLower(intro), "signature")
 
-	for _, p := range paraSplitRe.Split(intro, -1) {
-		tp := strings.TrimSpace(p)
+	blocks := paraSplitRe.Split(intro, -1)
+	for i := 0; i < len(blocks); i++ {
+		tp := strings.TrimSpace(blocks[i])
 		if tp == "" {
 			continue
 		}
 		kind := classifyTraitBlock(tp)
+		if kind == "list" {
+			// Coalesce the blocks a markdown list was blank-line-split into: a
+			// blank line between items makes the list loose (it does not start a
+			// second list), and a 4-space-indented block is a continuation
+			// paragraph of the item above it.
+			parts := []string{tp}
+			for j := i + 1; j < len(blocks); j++ {
+				nt := strings.TrimSpace(blocks[j])
+				if nt == "" {
+					continue
+				}
+				if isIndentedBlock(blocks[j]) {
+					parts = append(parts, blocks[j])
+				} else if classifyTraitBlock(nt) == "list" {
+					parts = append(parts, nt)
+				} else {
+					break
+				}
+				i = j
+			}
+			b.WriteString(renderTraitList(strings.Join(parts, "\n\n")))
+			first = false
+			continue
+		}
 		switch kind {
 		case "flavor":
 			fmt.Fprintf(&b, "<p class=\"sc-trait__flavor\">%s</p>\n", traitInline(strings.Trim(tp, "*")))
@@ -220,8 +245,6 @@ func renderTraitBody(intro string, children []*traitNode, prefix string) (body s
 			var t [3]string
 			parseTiers(tp, &t)
 			b.WriteString(tierPanelHTML("", "", t, traitInline))
-		case "list":
-			b.WriteString(renderTraitList(tp))
 		case "table":
 			b.WriteString(renderTraitTable(tp))
 		case "callout":
@@ -409,19 +432,65 @@ func renderTraitTable(block string) string {
 	return sb.String()
 }
 
-// renderTraitList renders a "- …" / "* …" bullet block as a <ul>.
+// renderTraitList renders a "- …" / "* …" bullet block as a <ul>. Blank lines
+// between items are allowed (a loose list stays one <ul>); an indented
+// continuation paragraph renders as a <p> inside the item above it.
 func renderTraitList(block string) string {
-	var sb strings.Builder
-	sb.WriteString("<ul>")
+	var items [][]string // one entry per <li>, holding its paragraph(s)
+	var para []string    // lines of the paragraph being accumulated
+	flush := func() {
+		if len(para) > 0 && len(items) > 0 {
+			last := len(items) - 1
+			items[last] = append(items[last], strings.Join(para, " "))
+		}
+		para = nil
+	}
 	for _, ln := range strings.Split(block, "\n") {
 		t := strings.TrimSpace(ln)
-		if t == "" {
+		switch {
+		case t == "":
+			flush()
+		case strings.HasPrefix(t, "- ") || strings.HasPrefix(t, "* "):
+			flush()
+			items = append(items, nil)
+			para = []string{strings.TrimSpace(t[1:])}
+		default:
+			para = append(para, t)
+		}
+	}
+	flush()
+
+	var sb strings.Builder
+	sb.WriteString("<ul>")
+	for _, paras := range items {
+		if len(paras) == 1 {
+			sb.WriteString("<li>" + traitInline(paras[0]) + "</li>")
 			continue
 		}
-		sb.WriteString("<li>" + traitInline(strings.TrimSpace(t[1:])) + "</li>")
+		sb.WriteString("<li>")
+		for _, p := range paras {
+			sb.WriteString("<p>" + traitInline(p) + "</p>")
+		}
+		sb.WriteString("</li>")
 	}
 	sb.WriteString("</ul>\n")
 	return sb.String()
+}
+
+// isIndentedBlock reports whether every non-empty line of a block is indented
+// by 4+ spaces or a tab — a continuation paragraph of a preceding list item.
+func isIndentedBlock(block string) bool {
+	any := false
+	for _, ln := range strings.Split(block, "\n") {
+		if strings.TrimSpace(ln) == "" {
+			continue
+		}
+		if !strings.HasPrefix(ln, "    ") && !strings.HasPrefix(ln, "\t") {
+			return false
+		}
+		any = true
+	}
+	return any
 }
 
 // renderTraitSegment renders a **Benefit:**/**Drawback:** paragraph as a titled
