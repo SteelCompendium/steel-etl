@@ -26030,7 +26030,7 @@ Titles are rewards for heroic activities, and they often go hand in hand with tr
 
 There is no hard-and-fast rule for the number of titles characters should accumulate by a certain level. If a character wins a title whenever they accomplish a truly notable deed—once every few adventures—then they might earn about one title per [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon). Sticking to this rate isn't a requirement, though. Characters might easily earn twice or half as many titles, making them a bit more or less powerful than they otherwise would be. A Director can even skip granting titles altogether if they wish.
 
-<!-- @type: feature-group | @id: 1-echelon-titles -->
+<!-- @type: feature-group | @id: 1-echelon-titles | @echelon: 1 -->
 ### 1st-Echelon Titles
 
 Titles suitable for 1st-[echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) characters are presented in alphabetical order.
@@ -26332,7 +26332,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 >
 > **Effect:** Each target takes holy damage equal to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason), [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) score (your choice). Additionally, each target who has P < STRONG is [frightened](scc.v1:mcdm.heroes.v1/condition/frightened) (save ends).
 
-<!-- @type: feature-group | @id: 2-echelon-titles -->
+<!-- @type: feature-group | @id: 2-echelon-titles | @echelon: 2 -->
 ### 2nd-Echelon Titles
 
 Titles suitable for 2nd-[echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) characters are presented in alphabetical order.
@@ -26626,7 +26626,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 - *Furious Attack:* Choose one [signature ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability) from the [fury](scc.v1:mcdm.heroes.v1/class/fury) class. You gain that ability regardless of whether your class and [subclass](scc.v1:mcdm.heroes.v1/rule.general/subclass) allow you to take it. If this ability allows you to gain or spend ferocity, you can't do so unless you have the Ferocity class feature.
 - *Furious Charge:* When you use the [Charge](scc.v1:mcdm.heroes.v1/feature.common.main-actions/charge) action, your [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) made as part of that action gains a damage [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to the number of squares you moved as part of the charge.
 
-<!-- @type: feature-group | @id: 3-echelon-titles -->
+<!-- @type: feature-group | @id: 3-echelon-titles | @echelon: 3 -->
 ### 3rd-Echelon Titles
 
 Titles suitable for 3rd-[echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) characters are presented in alphabetical order.
@@ -26816,7 +26816,7 @@ Titles suitable for 3rd-[echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) ch
 
 **Effect:** You can travel with a student who shares your class. The student has the statistics of a 1st-level member of your class and has the same skills as you, but doesn't engage in combat. They can perform any out-of-combat tasks a 1st-level member of your class can perform. Whenever they make a [test](scc.v1:mcdm.heroes.v1/rule.test/test) to assist you in a task, they can't obtain less than a tier 2 outcome on the [test](scc.v1:mcdm.heroes.v1/rule.test/test).
 
-<!-- @type: feature-group | @id: 4-echelon-titles -->
+<!-- @type: feature-group | @id: 4-echelon-titles | @echelon: 4 -->
 ### 4th-Echelon Titles
 
 Titles suitable for 4th-[echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) characters are presented in alphabetical order.

@@ -341,6 +341,93 @@ func TestBuildCardsContent_TitlePrerequisiteLink(t *testing.T) {
 	}
 }
 
+// The Browse title index groups its cards under "## <N>th Echelon" sub-headers
+// (matching the book's 1st–4th Echelon Titles sections and the monster group
+// landings), keyed by the `echelon` frontmatter the TitleParser emits. Titles
+// missing an echelon fall into a trailing "## Other Titles" group so they are
+// never silently dropped. URLs stay flat — grouping is index-page-only.
+func TestBuildCardsContent_TitleEchelonGrouping(t *testing.T) {
+	root := t.TempDir()
+	leaf := filepath.Join(root, "title")
+	if err := os.MkdirAll(leaf, 0755); err != nil {
+		t.Fatal(err)
+	}
+	write := func(file, name, echelon string) {
+		doc := "---\nname: " + name + "\ntype: title\n"
+		if echelon != "" {
+			doc += "echelon: \"" + echelon + "\"\n"
+		}
+		doc += "---\n\n*Flavor.*\n"
+		if err := os.WriteFile(filepath.Join(leaf, file), []byte(doc), 0644); err != nil {
+			t.Fatal(err)
+		}
+	}
+	write("zealot.md", "Zealot", "1")
+	write("arena-fighter.md", "Arena Fighter", "1")
+	write("dwarf-legionnaire.md", "Dwarven Legionnaire", "2")
+	write("monarch.md", "Monarch", "4")
+	write("mystery.md", "Mystery", "")
+
+	content, ok := buildCardsContent(leaf, "title",
+		[]string{"zealot.md", "arena-fighter.md", "dwarf-legionnaire.md", "monarch.md", "mystery.md"}, nil)
+	if !ok {
+		t.Fatalf("buildCardsContent ok=false, want true for title leaf dir")
+	}
+	// Echelon groups appear as ordered sub-headers; unassigned titles trail.
+	i1 := strings.Index(content, "## 1st Echelon")
+	i2 := strings.Index(content, "## 2nd Echelon")
+	i4 := strings.Index(content, "## 4th Echelon")
+	iOther := strings.Index(content, "## Other Titles")
+	if i1 < 0 || i2 < 0 || i4 < 0 || iOther < 0 {
+		t.Fatalf("expected echelon sub-headers (1st/2nd/4th/Other), got:\n%s", content)
+	}
+	if !(i1 < i2 && i2 < i4 && i4 < iOther) {
+		t.Errorf("echelon headers out of order: 1st=%d 2nd=%d 4th=%d other=%d", i1, i2, i4, iOther)
+	}
+	// No header for an echelon with no titles.
+	if strings.Contains(content, "## 3rd Echelon") {
+		t.Errorf("unexpected empty 3rd Echelon header, got:\n%s", content)
+	}
+	// Cards land inside their echelon's section (alphabetical within the group).
+	iArena := strings.Index(content, ">Arena Fighter<")
+	iZealot := strings.Index(content, ">Zealot<")
+	iDwarf := strings.Index(content, ">Dwarven Legionnaire<")
+	iMystery := strings.Index(content, ">Mystery<")
+	if !(i1 < iArena && iArena < iZealot && iZealot < i2) {
+		t.Errorf("1st-echelon cards misplaced: h1=%d arena=%d zealot=%d h2=%d\n%s", i1, iArena, iZealot, i2, content)
+	}
+	if !(i2 < iDwarf && iDwarf < i4) {
+		t.Errorf("2nd-echelon card misplaced: h2=%d dwarf=%d h4=%d", i2, iDwarf, i4)
+	}
+	if iMystery < iOther {
+		t.Errorf("unassigned title should trail under Other Titles: other=%d mystery=%d", iOther, iMystery)
+	}
+}
+
+// A title index where no title carries an echelon keeps the flat single-grid
+// layout (no sub-headers) — the pre-echelon behavior.
+func TestBuildCardsContent_TitleNoEchelonsStaysFlat(t *testing.T) {
+	root := t.TempDir()
+	leaf := filepath.Join(root, "title")
+	if err := os.MkdirAll(leaf, 0755); err != nil {
+		t.Fatal(err)
+	}
+	doc := "---\nname: Reborn\ntype: title\n---\n\n*You returned.*\n"
+	if err := os.WriteFile(filepath.Join(leaf, "reborn.md"), []byte(doc), 0644); err != nil {
+		t.Fatal(err)
+	}
+	content, ok := buildCardsContent(leaf, "title", []string{"reborn.md"}, nil)
+	if !ok {
+		t.Fatalf("buildCardsContent ok=false, want true")
+	}
+	if strings.Contains(content, "## ") {
+		t.Errorf("expected no sub-headers for echelon-less titles, got:\n%s", content)
+	}
+	if !strings.Contains(content, ">Reborn<") {
+		t.Errorf("expected Reborn card, got:\n%s", content)
+	}
+}
+
 func TestBuildCardsContent_RuleLeaf(t *testing.T) {
 	root := t.TempDir()
 	leaf := filepath.Join(root, "rule", "dice")

@@ -106,6 +106,17 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 	var sb strings.Builder
 	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n")
 
+	// Titles group under "## <N>th Echelon" sub-headers (the book's 1st–4th
+	// Echelon Titles sections; the v1 site had matching folders) whenever any
+	// title carries the `echelon` frontmatter. URLs stay flat — grouping is
+	// index-page-only. Falls through to the flat grid when no echelons exist.
+	if cardType == "title" {
+		if grouped, ok := buildTitleEchelonSections(dir, files); ok {
+			sb.WriteString(grouped)
+			return sb.String(), true
+		}
+	}
+
 	// Statblock preview types use the .sb-cards grid (sbCardsOpen) so the toggle
 	// bar and per-card zone controls work. All other types use the standard grid.
 	if sbPreviewCardTypes[cardType] {
@@ -132,6 +143,75 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 	}
 	sb.WriteString("</div>\n")
 	return sb.String(), true
+}
+
+// buildTitleEchelonSections renders title cards grouped under "## <N>th Echelon"
+// sub-headers keyed by each page's `echelon` frontmatter, echelons ascending.
+// Titles without an echelon trail under "## Other Titles" so nothing is silently
+// dropped. ok=false → no title carries an echelon; the caller keeps the flat grid.
+func buildTitleEchelonSections(dir string, files []string) (string, bool) {
+	type entry struct{ fm, body, file, name string }
+	groups := map[string][]entry{}
+	var keys []string
+	hasEchelon := false
+	for _, f := range files {
+		data, err := os.ReadFile(filepath.Join(dir, f))
+		if err != nil {
+			continue
+		}
+		fm, body := splitFrontmatter(string(data))
+		name := parseFrontmatterField(fm, "name")
+		if name == "" {
+			name = fileToTitle(f)
+		}
+		ech := strings.TrimSpace(parseFrontmatterField(fm, "echelon"))
+		if ech != "" {
+			hasEchelon = true
+		}
+		if _, seen := groups[ech]; !seen {
+			keys = append(keys, ech)
+		}
+		groups[ech] = append(groups[ech], entry{fm, body, f, name})
+	}
+	if !hasEchelon {
+		return "", false
+	}
+	// Echelons in natural ascending order; the echelon-less group always last.
+	sort.Slice(keys, func(i, j int) bool {
+		if keys[i] == "" || keys[j] == "" {
+			return keys[j] == ""
+		}
+		return naturalLess(keys[i], keys[j])
+	})
+	var sb strings.Builder
+	for _, k := range keys {
+		sb.WriteString("## " + echelonHeading(k) + "\n\n")
+		sb.WriteString("<div class=\"sc-cards\">\n")
+		for _, e := range groups[k] {
+			sb.WriteString(titleCard(e.fm, e.body, e.file, e.name))
+		}
+		sb.WriteString("</div>\n\n")
+	}
+	return sb.String(), true
+}
+
+// echelonHeading renders an echelon frontmatter value as its index sub-header:
+// "1" → "1st Echelon" … "4" → "4th Echelon", "" → "Other Titles" (the trailing
+// unassigned group), anything else → "Echelon <v>".
+func echelonHeading(v string) string {
+	switch v {
+	case "1":
+		return "1st Echelon"
+	case "2":
+		return "2nd Echelon"
+	case "3":
+		return "3rd Echelon"
+	case "4":
+		return "4th Echelon"
+	case "":
+		return "Other Titles"
+	}
+	return "Echelon " + v
 }
 
 // dirHasStatblockLeaf reports whether any of dir's leaf files is a type:statblock

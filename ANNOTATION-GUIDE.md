@@ -51,6 +51,7 @@ HTML comments placed immediately before a heading. The annotation applies to tha
 | `@target` | Target override | When parser can't extract from content |
 | `@keywords` | Keyword list override | When parser can't extract from content |
 | `@level` | Feature level | On `feature-group` containers |
+| `@echelon` | Echelon (`1`–`4`) inherited by children via context | On `treasure-group` containers and the `N-echelon-titles` `feature-group`s (child titles read it into `echelon` frontmatter) |
 | `@subtype` | Classification hint | `signature`, `heroic`, `triggered` |
 | `@trigger` | Trigger condition override | Only when parser can't extract trigger from body text |
 | `@note` | Free-text note | Metadata-only, no parser runs |
@@ -99,7 +100,7 @@ The parser extracts most structured data from the **body text** of each section 
 |-------|---------|-----------------|
 | `chapter` | H1 top-level chapters | Title, content passthrough |
 | `class` | H2 class sections (Fury, Shadow...) | Overview, heroic resource |
-| `feature-group` | H3 "Nth-Level Features" containers | Level context for children |
+| `feature-group` | H3 "Nth-Level Features" containers; also the Titles chapter's "Nth Echelon Titles" groups (`@echelon: N`) | Level/echelon context for children |
 | `treasure-group` | Treasure category headers (e.g. "1st-Echelon Consumables", "Leveled Weapon Treasures", "Artifacts") | echelon/tier + treasure-type context for child treasures; emits no file |
 
 ### Class Content

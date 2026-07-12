@@ -74,6 +74,14 @@ shared `card()`/`crestSVG`/`iconPaths`. `buildCardsContent`'s switch also routes
 bestiary leaves (`statblock`/`dynamic-terrain`/`retainer` — `cardFor` dispatches to
 `bestiary_cards.go`).
 
+The `title/` index groups its cards under `## 1st Echelon`…`## 4th Echelon` sub-headers
+(`buildTitleEchelonSections`), keyed by each page's `echelon` frontmatter — sourced from
+the `@echelon: N` annotation on the book's `N-echelon-titles` feature-groups (Heroes +
+Summoner), inherited by child titles via `ctx.Lookup` in `TitleParser`. Titles without
+an echelon (e.g. `title/stronghold`, a Followers-section concept) trail under
+`## Other Titles`. Grouping is index-page-only — URLs and SCC codes stay flat; the
+per-card type label also reads "Echelon N" when the field is present (`titleCard`).
+
 ### `internal/site/bestiary_cards.go`
 
 Bestiary entity cards + the monster group-landing assembler (added 2026-06-10 when the

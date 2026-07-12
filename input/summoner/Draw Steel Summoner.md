@@ -3465,7 +3465,7 @@ The following [implements](scc.v1:mcdm.heroes.v1/rule.treasure/implement) were d
 
 The following titles are available to add to your game.
 
-<!-- @type: feature-group | @id: 1-echelon-titles -->
+<!-- @type: feature-group | @id: 1-echelon-titles | @echelon: 1 -->
 ### 1st-Echelon Title
 
 The following title was designed for [summoners](scc.v1:mcdm.summoner.v1/class/summoner) but is available for any hero.
@@ -3481,7 +3481,7 @@ The following title was designed for [summoners](scc.v1:mcdm.summoner.v1/class/s
 
 **Special:** If two or more heroes in the party have this title from the same source, the party starts combat encounters with a squad of six minions instead. At the start of each [round](scc.v1:mcdm.heroes.v1/rule.combat/combat-round) of combat, the heroes decide who controls the squad as a part of their turn.
 
-<!-- @type: feature-group | @id: 2-echelon-titles -->
+<!-- @type: feature-group | @id: 2-echelon-titles | @echelon: 2 -->
 ### 2nd-Echelon Titles
 
 The following titles were designed for [summoners](scc.v1:mcdm.summoner.v1/class/summoner) but are available for any hero.
@@ -3512,7 +3512,7 @@ The following titles were designed for [summoners](scc.v1:mcdm.summoner.v1/class
 
 Additionally, you can summon up to two of your [signature minion](scc.v1:mcdm.summoner.v1/feature.summoner.level-1/minions) while outside of combat to do simple tasks.
 
-<!-- @type: feature-group | @id: 3-echelon-titles -->
+<!-- @type: feature-group | @id: 3-echelon-titles | @echelon: 3 -->
 ### 3rd-Echelon Title
 
 The following title was designed for [summoners](scc.v1:mcdm.summoner.v1/class/summoner) but is available for any hero.
@@ -3532,7 +3532,7 @@ The following title was designed for [summoners](scc.v1:mcdm.summoner.v1/class/s
 
 *Stringpuller:* While occupying a civilized area (such as a village, town, district, or city), you always have access to a follower native to the location. If the area is otherwise hostile to you, this follower is a spy in hiding who has any project points they earn halved.
 
-<!-- @type: feature-group | @id: 4-echelon-titles -->
+<!-- @type: feature-group | @id: 4-echelon-titles | @echelon: 4 -->
 ### 4th-Echelon Titles
 
 The following titles are available for [summoners](scc.v1:mcdm.summoner.v1/class/summoner).
