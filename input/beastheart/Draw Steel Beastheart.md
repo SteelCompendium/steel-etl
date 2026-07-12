@@ -274,7 +274,6 @@ A beastheart never fights alone! You travel with a ferocious beast by your sideâ
 
 As a beastheart, you face the world's dangers alongside your wild companion. With your combined might, you rush into the thick of combat to challenge enemy champions or prowl around the outskirts to pick off vulnerable foes.
 
-<!-- @type: feature | @id: basics | @level: 1 -->
 ### Basics
 
 **Starting Characteristics:** You start with a Might of 2 and an Intuition of 2, and can choose one of the following arrays for your other characteristic scores:
