@@ -199,19 +199,29 @@ func buildTitleEchelonSections(dir string, files []string) (string, bool) {
 // "1" → "1st Echelon" … "4" → "4th Echelon", "" → "Other Titles" (the trailing
 // unassigned group), anything else → "Echelon <v>".
 func echelonHeading(v string) string {
-	switch v {
-	case "1":
-		return "1st Echelon"
-	case "2":
-		return "2nd Echelon"
-	case "3":
-		return "3rd Echelon"
-	case "4":
-		return "4th Echelon"
-	case "":
+	if v == "" {
 		return "Other Titles"
 	}
+	if ord := echelonOrdinal(v); ord != v {
+		return ord + " Echelon"
+	}
 	return "Echelon " + v
+}
+
+// echelonOrdinal converts an echelon frontmatter value to its ordinal form
+// ("1" → "1st" … "4" → "4th"); any other value is returned unchanged.
+func echelonOrdinal(v string) string {
+	switch v {
+	case "1":
+		return "1st"
+	case "2":
+		return "2nd"
+	case "3":
+		return "3rd"
+	case "4":
+		return "4th"
+	}
+	return v
 }
 
 // dirHasStatblockLeaf reports whether any of dir's leaf files is a type:statblock

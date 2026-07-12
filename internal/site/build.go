@@ -346,6 +346,13 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 			data = card
 		}
 
+		// Title pages → "**Echelon:** Nth" line above the Prerequisite (the flat
+		// Browse leaf loses the book's echelon group header). NOT counted as
+		// carded — the body stays plain markdown. Site-only; data repos untouched.
+		if page, ok := buildTitleEchelonPage(data); ok {
+			data = page
+		}
+
 		// Fixture base pages → embed their sibling advancement-features card inline
 		// (build-time on-page embedding; the embed_cards post-pass does the transclude).
 		data = embedFixtureAdvancement(data)

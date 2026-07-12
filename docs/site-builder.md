@@ -82,6 +82,15 @@ an echelon (e.g. `title/stronghold`, a Followers-section concept) trail under
 `## Other Titles`. Grouping is index-page-only — URLs and SCC codes stay flat; the
 per-card type label also reads "Echelon N" when the field is present (`titleCard`).
 
+### `internal/site/title_page.go`
+
+Title **leaf** pages: `buildTitleEchelonPage` (run in `buildSection` before
+`injectH1`, not counted as carded) inserts a book-styled `**Echelon:** <Nth>`
+paragraph above the page's Prerequisite line (top-of-body fallback), from the same
+`echelon` frontmatter. The book conveys a title's echelon via its group header,
+which the flat `Browse/title/<id>` page loses. Site-only — the data-repo body stays
+book-faithful; pages without `echelon` (or non-title pages) pass through untouched.
+
 ### `internal/site/bestiary_cards.go`
 
 Bestiary entity cards + the monster group-landing assembler (added 2026-06-10 when the
