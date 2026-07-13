@@ -17,7 +17,7 @@ type DSEGenerator struct {
 	BaseDir string // e.g., "data-rules/en/md-dse"
 }
 
-func (g *DSEGenerator) Format() string  { return "md-dse" }
+func (g *DSEGenerator) Format() string   { return "md-dse" }
 func (g *DSEGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *DSEGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
@@ -57,13 +57,30 @@ func buildDSEFile(sccCode string, parsed *content.ParsedContent) (string, error)
 	featureType, _ := parsed.Frontmatter["type"].(string)
 
 	// Abilities and traits get ds-feature codeblock format
-	if featureType == "ability" || featureType == "trait" || featureType == "feature" {
+	switch featureType {
+	case "ability", "trait", "feature":
 		codeblock, err := buildDSFeatureBlock(parsed)
 		if err != nil {
 			return "", err
 		}
 		sb.WriteString(codeblock)
-	} else {
+	case "statblock":
+		// Statblocks get a ds-sb codeblock (F2 OD-1). The pre-rendered stat
+		// table body is dropped — DSE renders the block (the plain-markdown
+		// rendering remains available in the md/md-linked formats).
+		codeblock, err := buildDSDataBlock("ds-sb", transformStatblock(sccCode, parsed))
+		if err != nil {
+			return "", err
+		}
+		sb.WriteString(codeblock)
+	case "featureblock", "dynamic-terrain":
+		// Featureblocks and dynamic terrain get a ds-fb codeblock (F2 OD-1).
+		codeblock, err := buildDSDataBlock("ds-fb", transformFeatureblock(sccCode, parsed))
+		if err != nil {
+			return "", err
+		}
+		sb.WriteString(codeblock)
+	default:
 		// Other types get plain markdown body
 		if parsed.Body != "" {
 			sb.WriteString(parsed.Body)
@@ -182,6 +199,24 @@ func buildDSFeatureBlock(parsed *content.ParsedContent) (string, error) {
 	var sb strings.Builder
 	sb.WriteString("```ds-feature\n")
 	sb.Write(featureBytes)
+	sb.WriteString("```\n")
+
+	return sb.String(), nil
+}
+
+// buildDSDataBlock marshals an SDK-shaped object (the same payload the yaml/
+// format writes, via transformStatblock/transformFeatureblock) into a fenced
+// ```<lang> YAML codeblock — ds-sb for statblocks, ds-fb for featureblocks
+// and dynamic terrain (F2 OD-1).
+func buildDSDataBlock(lang string, obj map[string]any) (string, error) {
+	objBytes, err := yaml.Marshal(obj)
+	if err != nil {
+		return "", fmt.Errorf("marshal %s: %w", lang, err)
+	}
+
+	var sb strings.Builder
+	sb.WriteString("```" + lang + "\n")
+	sb.Write(objBytes)
 	sb.WriteString("```\n")
 
 	return sb.String(), nil

@@ -181,6 +181,142 @@ func TestDSEGenerator_Trait(t *testing.T) {
 	}
 }
 
+func TestDSEGenerator_Statblock(t *testing.T) {
+	dir := t.TempDir()
+	gen := &DSEGenerator{BaseDir: dir}
+
+	err := gen.WriteSection("mcdm.monsters.v1/monster.goblins.statblock/goblin-cursespitter", sampleStatblock())
+	if err != nil {
+		t.Fatalf("WriteSection failed: %v", err)
+	}
+
+	data, err := os.ReadFile(filepath.Join(dir, "monster", "goblins", "statblock", "goblin-cursespitter.md"))
+	if err != nil {
+		t.Fatalf("failed to read output: %v", err)
+	}
+
+	out := string(data)
+
+	// Statblocks get a ds-sb codeblock (F2 OD-1), not ds-feature.
+	if !strings.Contains(out, "```ds-sb\n") {
+		t.Error("expected ds-sb codeblock")
+	}
+	if strings.Contains(out, "```ds-feature") {
+		t.Error("statblocks should not have a ds-feature codeblock")
+	}
+
+	// Payload is the SDK-3.x statblock shape (same as the yaml/ format).
+	for _, want := range []string{
+		"type: statblock",
+		"name: Goblin Cursespitter",
+		"role: Hexer",
+		"organization: Horde",
+		"keywords:",
+		"- Goblin",
+		"name: Crafty", // features[] parsed from body blockquotes
+	} {
+		if !strings.Contains(out, want) {
+			t.Errorf("expected %q in ds-sb codeblock", want)
+		}
+	}
+
+	// The duplicate pre-rendered stat table is dropped — DSE renders the block.
+	if strings.Contains(out, "<br>Stamina") {
+		t.Error("rendered stat table should be dropped from statblock body")
+	}
+}
+
+func TestDSEGenerator_Featureblock(t *testing.T) {
+	dir := t.TempDir()
+	gen := &DSEGenerator{BaseDir: dir}
+
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":   "Angulotl Advancement Features",
+			"type":   "featureblock",
+			"kind":   "featureblock",
+			"level":  3,
+			"flavor": "Retainer advancement.",
+			"stats": []map[string]any{
+				{"name": "Stamina", "value": "10 per level"},
+			},
+			"features": []map[string]any{
+				{"type": "feature", "feature_type": "trait", "name": "Camouflage", "effects": []map[string]any{{"effect": "Hide while observed."}}},
+			},
+		},
+		Body:     "| Stamina | 10 per level |\n|---|---|\n",
+		TypePath: []string{"monster", "retainer", "advancement-features"},
+		ItemID:   "angulotl",
+	}
+
+	err := gen.WriteSection("mcdm.monsters.v1/monster.retainer.advancement-features/angulotl", parsed)
+	if err != nil {
+		t.Fatalf("WriteSection failed: %v", err)
+	}
+
+	data, err := os.ReadFile(filepath.Join(dir, "monster", "retainer", "advancement-features", "angulotl.md"))
+	if err != nil {
+		t.Fatalf("failed to read output: %v", err)
+	}
+
+	out := string(data)
+
+	if !strings.Contains(out, "```ds-fb\n") {
+		t.Error("expected ds-fb codeblock")
+	}
+	if strings.Contains(out, "```ds-feature") {
+		t.Error("featureblocks should not have a ds-feature codeblock")
+	}
+	for _, want := range []string{
+		"kind: featureblock",
+		"name: Angulotl Advancement Features",
+		"name: Camouflage",
+	} {
+		if !strings.Contains(out, want) {
+			t.Errorf("expected %q in ds-fb codeblock", want)
+		}
+	}
+	// The duplicate pre-rendered stats table is dropped — DSE renders the block.
+	if strings.Contains(out, "| Stamina | 10 per level |") {
+		t.Error("rendered stats table should be dropped from featureblock body")
+	}
+}
+
+func TestDSEGenerator_DynamicTerrain(t *testing.T) {
+	dir := t.TempDir()
+	gen := &DSEGenerator{BaseDir: dir}
+
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":         "Black Obelisk",
+			"type":         "dynamic-terrain",
+			"kind":         "dynamic-terrain",
+			"terrain_type": "Arcane Object",
+		},
+		Body:     "Rendered terrain body.",
+		TypePath: []string{"dynamic-terrain"},
+		ItemID:   "black-obelisk",
+	}
+
+	err := gen.WriteSection("mcdm.monsters.v1/dynamic-terrain/black-obelisk", parsed)
+	if err != nil {
+		t.Fatalf("WriteSection failed: %v", err)
+	}
+
+	data, err := os.ReadFile(filepath.Join(dir, "dynamic-terrain", "black-obelisk.md"))
+	if err != nil {
+		t.Fatalf("failed to read output: %v", err)
+	}
+
+	out := string(data)
+	if !strings.Contains(out, "```ds-fb\n") {
+		t.Error("expected ds-fb codeblock for dynamic-terrain")
+	}
+	if !strings.Contains(out, "terrain_type: Arcane Object") {
+		t.Error("expected terrain_type in ds-fb codeblock")
+	}
+}
+
 func TestParseCost(t *testing.T) {
 	tests := []struct {
 		input        string
