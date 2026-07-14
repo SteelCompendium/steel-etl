@@ -582,3 +582,60 @@ func TestTraitCard_SixSlotHead(t *testing.T) {
 		}
 	}
 }
+
+// A trait tree with grandchildren (sections that themselves contain sub-features)
+// is a SECTION WRAPPER, not a card: on ancestry pages the "X Traits" root wraps
+// 1,500-2,300px of nested sections, and the card panel's 3px act spine renders as
+// a stray full-height purple line in the page gutter (SC-84). Such roots carry
+// sc-trait--section so the CSS can drop the panel chrome (the crested header stays).
+func TestRenderTraitCard_GrandchildrenMakeSectionWrapper(t *testing.T) {
+	fm := "name: Polder Traits\ntype: trait\nancestry: polder\nscc: mcdm.heroes.v1/trait.ancestry.polder/polder-traits"
+	body := "\nIntro prose.\n\n" +
+		"### Purchased Polder Traits {data-scc=\"mcdm.heroes.v1/trait.ancestry.polder/purchased\"}\n\n" +
+		"You have 4 ancestry points.\n\n" +
+		"#### Nimblestep {data-scc=\"mcdm.heroes.v1/trait.ancestry.polder/nimblestep\" data-cost=\"2 Points\"}\n\n" +
+		"A light step serves you well.\n\n" +
+		"#### Fearless {data-scc=\"mcdm.heroes.v1/trait.ancestry.polder/fearless\" data-cost=\"2 Points\"}\n\n" +
+		"Courage is all you know.\n"
+	got := renderTraitCard(fm, body)
+	if !strings.Contains(got, "sc-trait--section") {
+		t.Errorf("root with a collection child should carry sc-trait--section:\n%s", got)
+	}
+}
+
+// A flat leaf trait (children but no grandchildren) keeps the card panel — no
+// sc-trait--section. This covers both plain leaves and small "choose one" cards.
+func TestRenderTraitCard_LeafKeepsPanel(t *testing.T) {
+	fm := "name: Nimblestep\ntype: trait\nancestry: polder\nscc: mcdm.heroes.v1/trait.ancestry.polder/nimblestep"
+	body := "\nA light step serves you well when speed is of the essence.\n"
+	if got := renderTraitCard(fm, body); strings.Contains(got, "sc-trait--section") {
+		t.Errorf("flat leaf must not be a section wrapper:\n%s", got)
+	}
+	// one level of children (an ability grant) is still a card
+	body = "\nChoose the following.\n\n" +
+		"### Shadowmeld {data-scc=\"mcdm.heroes.v1/feature.ability.polder/shadowmeld\"}\n\n" +
+		"> ability body\n"
+	if got := renderTraitCard(fm, body); strings.Contains(got, "sc-trait--section") {
+		t.Errorf("single-level tree must not be a section wrapper:\n%s", got)
+	}
+}
+
+// A "choose one" card whose options each carry a SINGLE grant (e.g. a class
+// page's "1st-Level Domain Feature": option → one granted ability) has
+// grandchildren but no collection child — it stays a card. Only a child that
+// is itself a collection (≥2 children) makes the root a section wrapper.
+func TestRenderTraitCard_SingleGrantOptionsKeepPanel(t *testing.T) {
+	fm := "name: 1st-Level Domain Feature\ntype: feature\nclass: censor\nscc: mcdm.heroes.v1/feature.censor.level-1/1st-level-domain-feature"
+	body := "\nChoose one.\n\n" +
+		"### Oracular Warning {data-scc=\"mcdm.heroes.v1/feature.censor.level-1/oracular-warning\" data-subclass=\"fate\"}\n\n" +
+		"Premonitions.\n\n" +
+		"#### Warning Ability {data-scc=\"mcdm.heroes.v1/feature.ability.censor.level-1/warning\"}\n\n" +
+		"> ability body\n\n" +
+		"### Stone Ward {data-scc=\"mcdm.heroes.v1/feature.censor.level-1/stone-ward\" data-subclass=\"creation\"}\n\n" +
+		"Wards.\n\n" +
+		"#### Ward Ability {data-scc=\"mcdm.heroes.v1/feature.ability.censor.level-1/ward\"}\n\n" +
+		"> ability body\n"
+	if got := renderTraitCard(fm, body); strings.Contains(got, "sc-trait--section") {
+		t.Errorf("single-grant options must not make a section wrapper:\n%s", got)
+	}
+}

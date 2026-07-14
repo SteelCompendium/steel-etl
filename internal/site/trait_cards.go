@@ -103,6 +103,19 @@ func renderTraitCard(fm, body string) string {
 	if leadProse {
 		cls += " sc-trait--lead" // engraved drop-cap on the opening paragraph
 	}
+	// A root whose child is itself a COLLECTION (≥2 children) is a section-scale
+	// wrapper (an ancestry's "X Traits" subtree, a class's "X Abilities" list),
+	// not a card: the panel spans thousands of pixels, invisible except its 3px
+	// act spine — which reads as a stray purple line down the page gutter
+	// (SC-84). sc-trait--section lets the CSS drop the panel chrome; the crested
+	// header stays. Leaves and "choose one" cards whose options carry a single
+	// grant each (children but no collection child) keep the panel.
+	for _, c := range children {
+		if len(c.children) >= 2 {
+			cls += " sc-trait--section"
+			break
+		}
+	}
 
 	// Stash the sub-feature count (and single-grant phrase) on the root so the
 	// index preview can show "N options" / "Grants the X maneuver" without
