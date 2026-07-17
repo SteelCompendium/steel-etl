@@ -282,6 +282,145 @@ func TestDSEGenerator_Featureblock(t *testing.T) {
 	}
 }
 
+func TestDSEGenerator_Kit(t *testing.T) {
+	dir := t.TempDir()
+	gen := &DSEGenerator{BaseDir: dir}
+
+	body := "If you want a good balance of protection, speed, and damage, the Panther kit is for you.\n\n" +
+		"##### Equipment\n\n" +
+		"You wear no armor and wield a heavy weapon.\n\n" +
+		"##### Kit Bonuses\n\n" +
+		"**Stamina Bonus:** +6 per echelon\n\n" +
+		"**Speed Bonus:** +1\n\n" +
+		"##### Signature Ability\n\n" +
+		"###### Devastating Rush\n\n" +
+		"*The faster you move, the harder you hit.*\n\n" +
+		"| **Melee, Strike, Weapon** | **Main action** |\n" +
+		"|---|---:|\n" +
+		"**Effect:** You can move up to 3 squares straight toward the target.\n"
+
+	sigAbility := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":        "Devastating Rush",
+			"type":        "ability",
+			"subtype":     "signature",
+			"action_type": "Main action",
+			"keywords":    []string{"Melee", "Strike", "Weapon"},
+			"flavor":      "The faster you move, the harder you hit.",
+			"target":      "One creature or object",
+			"distance":    "Melee 1",
+		},
+		Body:     "You can move up to 3 squares straight toward the target.",
+		TypePath: []string{"kit"},
+		ItemID:   "devastating-rush",
+	}
+
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":               "Panther",
+			"type":               "kit",
+			"flavor":             "If you want a good balance of protection, speed, and damage, the Panther kit is for you.",
+			"equipment_text":     "You wear no armor and wield a heavy weapon.",
+			"stamina_bonus":      "+6 per echelon",
+			"speed_bonus":        "+1",
+			"stability_bonus":    "+1",
+			"melee_damage_bonus": "+0/+0/+4",
+			"scc":                "mcdm.heroes.v1/kit/panther",
+		},
+		Body:     body,
+		TypePath: []string{"kit"},
+		ItemID:   "panther",
+		Children: map[string]*content.ParsedContent{
+			"signature_ability": sigAbility,
+		},
+	}
+
+	err := gen.WriteSection("mcdm.heroes.v1/kit/panther", parsed)
+	if err != nil {
+		t.Fatalf("WriteSection failed: %v", err)
+	}
+
+	data, err := os.ReadFile(filepath.Join(dir, "kit", "panther.md"))
+	if err != nil {
+		t.Fatalf("failed to read output: %v", err)
+	}
+
+	out := string(data)
+
+	// Flavor prose and Equipment (body-only, no frontmatter/fence equivalent)
+	// must survive.
+	if !strings.Contains(out, "Panther kit is for you") {
+		t.Error("expected flavor prose in kit body")
+	}
+	if !strings.Contains(out, "##### Equipment") {
+		t.Error("expected Equipment section in kit body")
+	}
+	if !strings.Contains(out, "You wear no armor and wield a heavy weapon.") {
+		t.Error("expected equipment text in kit body")
+	}
+
+	// Rendered Kit Bonuses section duplicates the frontmatter *_bonus fields
+	// (rendered as chrome rows by DSE) — must be dropped.
+	if strings.Contains(out, "Kit Bonuses") {
+		t.Error("rendered Kit Bonuses section should be dropped from kit body")
+	}
+	if strings.Contains(out, "Stamina Bonus:") {
+		t.Error("rendered bonus row text should be dropped from kit body")
+	}
+
+	// Rendered Signature Ability prose+table duplicates the ds-feature fence —
+	// must be dropped, but the fence itself (built from the signature_ability
+	// child) must remain, exactly once.
+	if strings.Contains(out, "Signature Ability") {
+		t.Error("rendered Signature Ability heading should be dropped from kit body")
+	}
+	if strings.Contains(out, "*The faster you move, the harder you hit.*") {
+		t.Error("rendered signature-ability flavor prose should be dropped from kit body")
+	}
+	if strings.Contains(out, "| **Melee, Strike, Weapon**") {
+		t.Error("rendered signature-ability table should be dropped from kit body")
+	}
+
+	if got := strings.Count(out, "```ds-feature"); got != 1 {
+		t.Errorf("expected exactly one ds-feature codeblock, got %d", got)
+	}
+	if !strings.Contains(out, "name: Devastating Rush") {
+		t.Error("expected signature ability name in ds-feature codeblock")
+	}
+}
+
+func TestStripKitBonusesAndSignatureSections(t *testing.T) {
+	body := "Flavor text.\n\n##### Equipment\n\nSome gear.\n\n##### Kit Bonuses\n\n**Stamina Bonus:** +1\n\n##### Signature Ability\n\nMore text."
+	got := stripKitBonusesAndSignatureSections(body)
+	if strings.Contains(got, "Kit Bonuses") {
+		t.Error("expected Kit Bonuses heading to be stripped")
+	}
+	if strings.Contains(got, "Signature Ability") {
+		t.Error("expected Signature Ability heading to be stripped")
+	}
+	if !strings.Contains(got, "##### Equipment") || !strings.Contains(got, "Some gear.") {
+		t.Error("expected Equipment section to survive")
+	}
+
+	// No "Kit Bonuses" heading present — body returned unchanged.
+	noBonuses := "Flavor text.\n\n##### Equipment\n\nSome gear.\n"
+	if got := stripKitBonusesAndSignatureSections(noBonuses); got != noBonuses {
+		t.Errorf("expected unchanged body when no Kit Bonuses heading present, got %q", got)
+	}
+
+	// Stormwight-style kits carry "Kit Bonuses" as a separately annotated
+	// feature section that FullBodySource already excludes from the body —
+	// only "Signature Ability" appears, and it alone must be stripped.
+	sigOnly := "Flavor text.\n\n##### Signature Ability\n\n###### Bear Claws\n\nMore text."
+	got2 := stripKitBonusesAndSignatureSections(sigOnly)
+	if strings.Contains(got2, "Signature Ability") {
+		t.Error("expected Signature Ability heading to be stripped when Kit Bonuses is absent")
+	}
+	if !strings.Contains(got2, "Flavor text.") {
+		t.Error("expected flavor prose to survive")
+	}
+}
+
 func TestDSEGenerator_DynamicTerrain(t *testing.T) {
 	dir := t.TempDir()
 	gen := &DSEGenerator{BaseDir: dir}

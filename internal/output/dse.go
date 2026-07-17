@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 
 	"github.com/SteelCompendium/steel-etl/internal/content"
@@ -82,8 +83,16 @@ func buildDSEFile(sccCode string, parsed *content.ParsedContent) (string, error)
 		sb.WriteString(codeblock)
 	default:
 		// Other types get plain markdown body
-		if parsed.Body != "" {
-			sb.WriteString(parsed.Body)
+		body := parsed.Body
+		if featureType == "kit" {
+			// The rendered "Kit Bonuses" rows and "Signature Ability" prose+table
+			// duplicate the frontmatter *_bonus fields (chrome rows) and the
+			// ds-feature fence below, respectively — drop them (F2 OD-1
+			// precedent), keeping flavor prose + Equipment (body-only) intact.
+			body = stripKitBonusesAndSignatureSections(body)
+		}
+		if body != "" {
+			sb.WriteString(body)
 			sb.WriteString("\n")
 		}
 
@@ -260,6 +269,31 @@ func buildEffects(parsed *content.ParsedContent) []map[string]any {
 	}
 
 	return effects
+}
+
+// reKitBonusesOrSignatureHeading matches the "##### Kit Bonuses" or
+// "##### Signature Ability" heading (any level, case-insensitive) that
+// starts a rendered duplicate section in a kit's book-source body. In the
+// common layout both headings are unannotated and appear back to back
+// (Equipment, Kit Bonuses, Signature Ability), so matching "Kit Bonuses"
+// truncates both in one cut. Some kits (e.g. the stormwight forms) carry
+// their "Kit Bonuses" as a separately annotated feature section that
+// FullBodySource already excludes from the body, leaving only "Signature
+// Ability" to match — hence matching either heading, whichever comes first.
+var reKitBonusesOrSignatureHeading = regexp.MustCompile(`(?mi)^#{1,6}\s+(Kit Bonuses|Signature Ability)\s*$`)
+
+// stripKitBonusesAndSignatureSections drops the rendered "Kit Bonuses" and
+// "Signature Ability" sections from a kit's body (md-dse only): the bonus
+// rows duplicate the frontmatter *_bonus fields (rendered as chrome rows by
+// DSE), and the signature-ability prose+table duplicates the ds-feature
+// fence emitted alongside it. Flavor prose and the "Equipment" section
+// (body-only — no frontmatter/fence equivalent) are preserved.
+func stripKitBonusesAndSignatureSections(body string) string {
+	loc := reKitBonusesOrSignatureHeading.FindStringIndex(body)
+	if loc == nil {
+		return body
+	}
+	return strings.TrimRight(body[:loc[0]], "\n \t")
 }
 
 // parseCost splits "3 Ferocity" into ("3", "Ferocity").
