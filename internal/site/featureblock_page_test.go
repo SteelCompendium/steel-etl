@@ -206,6 +206,45 @@ func TestRenderFbFeats_TerrainSpecialAndPowerRoll(t *testing.T) {
 	}
 }
 
+// fbFeatureAction's icon fallback must be deterministic even for an icon string
+// that (however unexpectedly) contains more than one mapped glyph: fbIconAction
+// used to be a map ranged with an early return on the first Contains match, so
+// the winner depended on Go's per-iteration randomized map order — the same
+// input could resolve to a different action from one call to the next within a
+// single process. Regression for FOLLOWUPS #29 (deterministic output ordering).
+func TestFbFeatureAction_CompoundIconIsDeterministic(t *testing.T) {
+	feat := fbFeature{Icon: "🗡👤", Name: "Compound Icon"}
+	first := fbFeatureAction(feat)
+	for i := 0; i < 500; i++ {
+		if got := fbFeatureAction(feat); got != first {
+			t.Fatalf("fbFeatureAction(%q) not deterministic: got %q then %q on call %d", feat.Icon, first, got, i)
+		}
+	}
+	// Priority order is 🗡 before 👤 in fbIconAction, so "main" always wins.
+	if first != "main" {
+		t.Fatalf("fbFeatureAction(%q) = %q, want %q (priority: 🗡 before 👤)", feat.Icon, first, "main")
+	}
+}
+
+// Each single-glyph icon still resolves to its documented action (no behavior
+// change from the map → ordered-slice conversion for the realistic case).
+func TestFbFeatureAction_SingleIcon(t *testing.T) {
+	cases := map[string]string{
+		"🗡": "main", "🏹": "main", "❇": "main",
+		"👤": "maneuver",
+		"❗": "triggered", "❕": "triggered",
+		"⭐": "passive",
+		"☠": "villain",
+		"🌀": "special",
+	}
+	for icon, want := range cases {
+		got := fbFeatureAction(fbFeature{Icon: icon})
+		if got != want {
+			t.Errorf("fbFeatureAction(%q) = %q, want %q", icon, got, want)
+		}
+	}
+}
+
 // A feature's usage ("Main action (Adjacent creature)") must render as the
 // right-deck chip. Regression for the Field Ballista's Reload/Spot, whose usage was
 // parsed but only fed the data-action accent — never shown — leaving the cards bare.

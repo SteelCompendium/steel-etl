@@ -267,16 +267,25 @@ func renderFbStats(stats []fbStat) string {
 // fbIconAction maps a table-less feature's source emoji to an action accent so
 // terrain's 🌀 Deactivate / ❕ Activate and malice passives don't all flatten to
 // "passive" (spec §3). Mirrors ability-cards.js EMOJI_MAP, collapsed onto the
-// action-accent vocabulary steel-featureblock.css colors. Keys are STRING
+// action-accent vocabulary steel-featureblock.css colors. Icons are STRING
 // literals matched with Contains — robust to the trailing U+FE0F variation
 // selector book emoji carry (a rune-literal map would choke on those).
-var fbIconAction = map[string]string{
-	"🗡": "main", "🏹": "main", "❇": "main",
-	"👤": "maneuver",
-	"❗": "triggered", "❕": "triggered",
-	"⭐": "passive",
-	"☠": "villain",
-	"🌀": "special",
+//
+// An ORDERED slice, not a map: fbFeatureAction returns on the first Contains
+// match, and Go's map iteration order is randomized per process, so a map here
+// would make the picked action nondeterministic run-to-run for any icon string
+// that happens to contain more than one of these glyphs (FOLLOWUPS #29). No
+// current book content does — verified by scanning every "icon" field emitted
+// across all four books' generated output — but the parser's icon regex
+// (sbTitleRe) is permissive enough to allow it, so keep the priority fixed
+// rather than relying on content never colliding.
+var fbIconAction = []struct{ icon, action string }{
+	{"🗡", "main"}, {"🏹", "main"}, {"❇", "main"},
+	{"👤", "maneuver"},
+	{"❗", "triggered"}, {"❕", "triggered"},
+	{"⭐", "passive"},
+	{"☠", "villain"},
+	{"🌀", "special"},
 }
 
 // fbFeatureAction picks the [data-action] accent. Abilities with a usage word
@@ -291,9 +300,9 @@ func fbFeatureAction(f fbFeature) string {
 		return action
 	}
 	icon := strings.TrimSpace(f.Icon)
-	for k, a := range fbIconAction {
-		if strings.Contains(icon, k) {
-			return a
+	for _, m := range fbIconAction {
+		if strings.Contains(icon, m.icon) {
+			return m.action
 		}
 	}
 	return "passive"
