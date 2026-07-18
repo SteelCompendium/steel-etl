@@ -363,3 +363,50 @@ that point outside the per-book `data/data-summoner` repo (the heroes pages live
 `data/data-rules`) but resolve correctly on the unified v2 site where all books share
 one Browse tree. See `docs/linking-guide.md` (2026-06-11 note) and
 `docs/superpowers/plans/2026-06-10-summoner-content-linking.md`.
+
+## Family Malice bands + context-driven meta-cell label (FOLLOWUPS #7 — shipped 2026-07-18)
+
+Two pieces of the High-Fantasy Steel statblock card the design handoff marked as
+non-blocking nice-to-haves are now wired in.
+
+**Malice bands (piece 1).** Each Monsters-book statblock's own Browse leaf page carries
+its family's shared Malice featureblock as a collapsible `<details>` band (open by
+default, `.sb__band--malice`) — the same DOM the Villain Actions band already used
+(`renderStatblockBand`/`renderStatblockFeature`, statblock_card.go). The family
+featureblock keeps rendering as its own Browse page too. Implemented as a `build.go`
+post-pass, **not** baked into `renderStatblockCard` alongside the villain band:
+`embed_card_sections: [Browse, Read]` means a Read-tab chapter page separately embeds a
+family's Malice featureblock as its own `{data-scc}` section right alongside that
+family's statblocks (the sourcebook lists Malice once per family, after its
+statblocks), so baking the band into the shared renderer would duplicate it once per
+embedded statblock plus once standalone per Read chapter. `monster_malice.go`
+pre-scans (`buildMaliceBandCache`, before any entry's raw body is transformed) for
+`type: featureblock` + `kind: malice` pages, keyed by SCC type-path with any trailing
+`.statblock` stripped (a statblock's type-path always ends in `.statblock`; stripping it
+gives the exact type-path its family's Malice file is coded under — robust across the
+per-echelon Demon/Undead/War Dog Malice tiers, which live at the SAME type-path as that
+echelon's own statblocks). One family (Dragons) codes five species' Malice files under
+the identical `monster.dragon` type-path (no subcategory distinguishes species there);
+`augmentMonsterMaliceBands` disambiguates those by a shared filename slug
+(`crucible-dragon.md` ↔ `crucible-dragon-malice.md`). The post-pass runs AFTER
+`embedItemCards` (like `augmentClassOwnedBackLinks`) and only ever writes a statblock's
+own canonical Browse leaf file, never a transcluded copy, so the band appears exactly
+once. Retainers/companions/fixtures/every Summoner statblock have no `kind: malice`
+sibling and simply get no band.
+
+**Context-driven 4th meta cell (piece 2).** The `.sb__meta` 2×2's last cell used to be
+hardcoded `"With Captain"`, and its value came from a body-prose regex that, in the real
+corpus, only ever matches the single `@classify:false` illustrative example — every real
+minion's captain bonus lives in the `with_captain` frontmatter field
+(`ParseStatblockFields`) and was never read, so a real bonus like "+5 bonus to ranged
+distance" silently rendered as "—". `statblockMeta4` (`statblock_page.go`) now derives
+the cell per statblock: Summoner-book statblocks (scc source prefix `mcdm.summoner.`)
+show "Free Strike Damage Type" instead — a new site-only `free_strike_damage_type`
+frontmatter field (`ParseStatblockFields`, mirrors `with_captain`'s parse, deliberately
+excluded from `statblockScalarKeys` so it never reaches the SDK JSON schema) — since
+every classified Summoner statblock's grid carries that label, never "With Captain".
+Monsters-book statblocks with a real bonus keep "With Captain"; everything else (the
+cell is blank for solos/leaders/retainers) drops the cell entirely rather than showing a
+meaningless blank label — `renderStatblockMeta`/`renderStatblockSticky` reflow to 3
+cells. `companion_statblock.go`'s own "Skills" relabeling (a third, pre-existing variant
+of this same slot) is untouched.

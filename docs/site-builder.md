@@ -407,6 +407,52 @@ FOLLOWUPS #15, the class-owned analog of the Rival Summoner back-link.
 - Idempotent (guards on an existing `sb-backlink`) and a no-op without a
   `monster/companion` or `monster/fixture` tree.
 
+## Family Malice bands (`monster_malice.go`)
+
+`augmentMonsterMaliceBands` splices each Monsters-book statblock's own Browse leaf
+page with its family's shared Malice featureblock, rendered as a collapsible
+`.sb__band--malice` `<details>` (FOLLOWUPS #7 piece 1) — the Villain Actions band's
+existing DOM/CSS, previously unused for Malice.
+
+- **Cache** — `buildMaliceBandCache(cfg, entries)` runs in `Build`, right after
+  `standaloneCodeSet`, over the RAW (pre-transform) source entries: it finds every
+  `type: featureblock` + `kind: malice` page, runs it through `rewriteSectionLinks`
+  against its own (unchanged — Malice files never match a Browse group/hoist/flatten
+  rule) destRel so its links resolve correctly wherever a sibling statblock later
+  splices it in, parses its blockquote features via `parseStatblockIslandFeatures`
+  (forcing `Action`/`Kind` to `"malice"` for the CSS accent), and renders the finished
+  band HTML — keyed by `maliceKey(scc)` (source + type-path, `.statblock` suffix
+  stripped). Must run before any entry's body is replaced by a card transform, and
+  before `buildSection`'s per-entry loop (which has no cross-directory ordering
+  guarantee — a family's Malice file and its statblock siblings can land on either
+  side of each other).
+- **Disambiguation** — one family (Dragons) codes five species' Malice files under the
+  identical type-path (`monster.dragon`, no subcategory distinguishes species); the
+  cache keeps every candidate per key and `lookupMaliceBand` picks the one whose
+  filename slug matches the statblock's own (`crucible-dragon.md` ↔
+  `crucible-dragon-malice.md`). Every other family has exactly one candidate per key.
+- **Splice** — `spliceMaliceBand` inserts the band HTML right before the first
+  `</div></article></div>` in the page (the exact, unique tail `renderStatblockCard`
+  emits: `.sb__features` close → `.sb` close → `.sb-wrap` close), landing it as the
+  last child of `.sb__features` — the same slot the design's DOM order calls for
+  (features, then Villain Actions, then Malice). Idempotent (guards on an existing
+  `sb__band--malice`).
+- **Timing — runs AFTER `embedItemCards`, for a sharper reason than
+  `augmentClassOwnedBackLinks` above.** `embed_card_sections: [Browse, Read]` means
+  the Read tab's book-faithful chapter pages ALSO separately embed a family's Malice
+  featureblock as its own `{data-scc}` section (the sourcebook lists Malice once per
+  family, after that family's statblocks) — alongside every one of that family's
+  statblocks. Baking the band into `renderStatblockCard` itself (the shared render
+  output `embedItemCards` transcludes verbatim) would duplicate the family's Malice
+  text once per embedded statblock PLUS once standalone per Read chapter. Running
+  last, and only ever writing a statblock's own canonical Browse leaf file (never a
+  transcluded copy), means the band appears exactly once — confirmed against the
+  built output (`Read/bestiary/monsters.md` carries one "Devil Malice" section and
+  zero `sb__band--malice` occurrences, even though 8 Devil statblocks are embedded on
+  the same page).
+- No-op when the build has no Monsters-book Malice featureblocks (`maliceBands` empty
+  — e.g. a Summoner-book-only build; 0 Malice featureblocks exist there).
+
 ## Inline item cards (`embed_cards.go`)
 
 A site-only `Build()` post-pass (after index generation, before the
