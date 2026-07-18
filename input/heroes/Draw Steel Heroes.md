@@ -32,7 +32,7 @@ Our game is heroic fantasy. That's its genre. Extraordinary people fighting drag
 
 But "heroic fantasy" is still a little too broad for our purposes, so we added two other keywords to explain how our game might be different from other games in this genre: tactical and cinematic.
 
-These terms are just [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)lines. A vibe. But we find them useful when trying to choose between different features. "Both of these ideas are cool, but which is the most cinematic? The most heroic?"
+These terms are just guidelines. A vibe. But we find them useful when trying to choose between different features. "Both of these ideas are cool, but which is the most cinematic? The most heroic?"
 
 So let's talk about what we mean when we use these terms.
 
@@ -102,7 +102,7 @@ We know that many folks are coming to this game having only experienced d20 fant
 - **You don't need to rest all the time.** Most d20 fantasy games are games of attrition. Your spell slots and other features dwindle as the adventuring day goes on. In *Draw Steel*, you need to rest to regain your [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries)—the stats that determine how robust you are in combat. But all characters earn the capability to use their magic and other awesome abilities as they adventure, encouraging you to press on heroically.
 - **Our game has a lot of skills.** Your character can make use of a long list of skills, but we don't expect you to memorize that list. We get into why the [Tests](scc.v1:mcdm.heroes.v1/chapter/tests) chapter features so many skills, but the short version is that we think having a lot of skills allows you to create more distinct and specialized heroes, which supports the sort of gameplay we want to see in *Draw Steel*. And skills in the game aren't tied to [characteristics](scc.v1:mcdm.heroes.v1/rule.character/characteristic). If you're trying to lose someone in a crowd, you can use [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence)—the [characteristic](scc.v1:mcdm.heroes.v1/rule.character/characteristic) that represents your character's force of personality—to try to hide! Why not?
 - **We won't be able to point out every difference.** Beyond what's noted here, don't assume that these rules work like any d20 fantasy game you've played. We don't have the space to point out every exception. So if you're in doubt about how something works, put d20 fantasy out of your mind and read our rules without those assumptions, and you'll find that things make better sense. If you're still confused, stop by the *MCDM Discord* and ask. We've got tons of awesome community members ready to help!
-- **We don't expect you to do everything to the letter.** This is actually one thing *Draw Steel* does have in common with d20 fantasy. This is a big book of rules! Don't stress if you need to look something up or make a ruling about an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) case on the fly. If everyone's having fun, you're doing it right.
+- **We don't expect you to do everything to the letter.** This is actually one thing *Draw Steel* does have in common with d20 fantasy. This is a big book of rules! Don't stress if you need to look something up or make a ruling about an edge case on the fly. If everyone's having fun, you're doing it right.
 
 ## Glossary Index
 
@@ -758,7 +758,7 @@ Under certain circumstances, you might have one or more [edges](scc.v1:mcdm.hero
 
 ##### When to Use Edges and Banes
 
-The rules tell you when to modify a roll with an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane). The Director can also modify rolls with [edges](scc.v1:mcdm.heroes.v1/rule.dice/edge) and [banes](scc.v1:mcdm.heroes.v1/rule.dice/bane) as a response to narrative or environmental circumstances. For instance, no rule specifically says that rain imposes a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on power rolls made to climb a stone wall. But it makes sense that rainy [conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition) should make climbing that wall harder, so a Director should absolutely do so!
+The rules tell you when to modify a roll with an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane). The Director can also modify rolls with [edges](scc.v1:mcdm.heroes.v1/rule.dice/edge) and [banes](scc.v1:mcdm.heroes.v1/rule.dice/bane) as a response to narrative or environmental circumstances. For instance, no rule specifically says that rain imposes a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on power rolls made to climb a stone wall. But it makes sense that rainy conditions should make climbing that wall harder, so a Director should absolutely do so!
 
 > **Why Cap?**
 >
@@ -1101,7 +1101,7 @@ The Director should make an agenda for a campaign's first session often called "
 
 ### Step-by-Step Hero Making
 
-Use the following step-by-step [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide) to create a hero. These steps are presented in what we believe is the best way to approach making your first hero for *Draw Steel*. That said, the order of the steps is still a suggestion, not a hard and fast rule.
+Use the following step-by-step guide to create a hero. These steps are presented in what we believe is the best way to approach making your first hero for *Draw Steel*. That said, the order of the steps is still a suggestion, not a hard and fast rule.
 
 Many players like to build a hero from the backstory up, making ancestry and culture ideal first choices. However, some players like to start more in the present, choosing a career and a class—the choices with the most potential impact on what your character can do in the game—and then going back and figuring out where their hero came from. There's no wrong way to do it! (The sections below tell you where to look to learn about ancestries, classes, and other options.)
 
@@ -2097,7 +2097,7 @@ Llyander turned and marched off. "Come!" they called. The children ran to catch 
 
 "Where are we going?" Wenna asked.
 
-"I enjoy the favor of Lord Tear," Llyander said. "We are old friends. With me as your [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide), he will treat you well—likely bestow favor upon you! You should be in anticipation of great treasure." They smiled.
+"I enjoy the favor of Lord Tear," Llyander said. "We are old friends. With me as your guide, he will treat you well—likely bestow favor upon you! You should be in anticipation of great treasure." They smiled.
 
 The elf stopped suddenly and spun toward them, serious but kindly. They pointed to each of the children in [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
@@ -3441,7 +3441,7 @@ When you build a culture, select its organization aspect from the following opti
 
 [Bureaucratic](scc.v1:mcdm.heroes.v1/culture/bureaucratic) cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities
 
-have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures.
+have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in turn rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures.
 
 Those who thrive in [bureaucratic](scc.v1:mcdm.heroes.v1/culture/bureaucratic) cultures don't simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a [bureaucratic](scc.v1:mcdm.heroes.v1/culture/bureaucratic) culture might specialize in operating outside the strict regulations that govern the culture without getting caught.
 
@@ -3840,7 +3840,7 @@ You gain the following career benefits:
 | 2  | **Dogma:** Although you joined your religious institution under the guidance of a kind mentor, others within the house of worship became increasingly fanatical in their convictions. Your mentor sought to be a voice of reason in the rising tide of hatred and was tried as a heretic before being executed. Leaving the institution behind, you became a hero to uphold the beliefs you hold dear. |
 | 3  | **Freedom to Worship:** Your temple was destroyed in a religious conflict. The institution's leaders sought retaliation, but you saw in these actions a ceaseless cycle of destruction that would lead to more conflict. Instead, you became a hero to protect religious freedoms, so all worshippers might practice their faith without fear. |
 | 4  | **Lost Faith:** You devoted your life to ministering to the sick and needy, alongside other charitable work. Time and time again, tragedy struck those you served without rhyme or reason. Your prayers went unanswered, and your efforts went thankless. Eventually, you lost your faith in a higher power, and you left your church or temple to do good outside of any religious affiliation. |
-| 5  | **Near-Death Experience:** While serving at a religious institution, you almost died in an accident. When you woke, you had lost all memory of ever having worked for the church or temple. Though the clergy encouraged you to stay, you left to forge a new path. Your sense of altruism—whether instilled in you by your past work or a part of who you naturally are—[guides](scc.v1:mcdm.heroes.v1/rule.downtime/guide) you in your life. |
+| 5  | **Near-Death Experience:** While serving at a religious institution, you almost died in an accident. When you woke, you had lost all memory of ever having worked for the church or temple. Though the clergy encouraged you to stay, you left to forge a new path. Your sense of altruism—whether instilled in you by your past work or a part of who you naturally are—guides you in your life. |
 | 6  | **Taxing Times:** The faith-based organization you were once part of became corrupt. It used its status in the community to accumulate wealth through tithes, while its leaders sought political appointments. During a season of drought, the institution stockpiled resources and refused to give aid, resulting in the deaths of many. You became a hero to fight against such corruption and to honor those you lost. |
 
 <!-- @type: career -->
@@ -4133,7 +4133,7 @@ You gain the following career benefits:
 <!-- @type: career -->
 #### Warden
 
-You protected a wild region from those who sought to harm it, such as poachers and cultists bent on the destruction of the natural world. Knowing your land well, you could also serve as a [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide) or the leader of a rescue party for those wandering the wilds. In defining your career, think about the following questions:
+You protected a wild region from those who sought to harm it, such as poachers and cultists bent on the destruction of the natural world. Knowing your land well, you could also serve as a guide or the leader of a rescue party for those wandering the wilds. In defining your career, think about the following questions:
 
 - What environment did you protect?
 - Were you part of a formal group of wardens or did you take the job upon yourself ?
@@ -18964,7 +18964,7 @@ In response to another creature communicating information to you, you can spend 
 <!-- @type: perk -->
 #### Open Book
 
-Whenever you speak one-on-one with a creature, you can ask them one question about themself that might typically offend them or raise suspicion. If they choose not to answer honestly, they simply deflect or redirect the question, with no further complications. If they choose to answer honestly, the creature can immediately ask you a question about yourself in [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), which you must answer honestly.
+Whenever you speak one-on-one with a creature, you can ask them one question about themself that might typically offend them or raise suspicion. If they choose not to answer honestly, they simply deflect or redirect the question, with no further complications. If they choose to answer honestly, the creature can immediately ask you a question about yourself in turn, which you must answer honestly.
 
 <!-- @type: perk -->
 #### Pardon My Friend
@@ -20139,7 +20139,7 @@ You have an identical twin—either a sibling or someone who looks so much like 
 <!-- @type: complication -->
 #### Self-Taught
 
-While your peers were learning their trades in fancy schools, you honed your capabilities on the mean streets with nothing but your own instinct as a [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide). What you lost in polish and tactical acumen, you now make up for in raw power.
+While your peers were learning their trades in fancy schools, you honed your capabilities on the mean streets with nothing but your own instinct as a guide. What you lost in polish and tactical acumen, you now make up for in raw power.
 
 **Benefit and Drawback:** At the start of each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn) during combat, you can forgo gaining your [Heroic Resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource) until the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). If you do, your [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) gain a damage [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to your highest [characteristic](scc.v1:mcdm.heroes.v1/rule.character/characteristic) score until the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
@@ -20596,7 +20596,7 @@ If a hero attempts to sneak by an enemy guard unnoticed, should the hero make an
 
 Except in certain scenarios (explored at [NPCs](scc.v1:mcdm.heroes.v1/rule.general/npc) Roll for Deceptive Tasks and [Opposed Power Rolls](scc.v1:mcdm.heroes.v1/rule.dice/opposed-power-roll) below), heroes make [tests](scc.v1:mcdm.heroes.v1/rule.test/test) and [NPCs](scc.v1:mcdm.heroes.v1/rule.general/npc) do not. Heroes are the stars of the story, and the consequences and rewards of [tests](scc.v1:mcdm.heroes.v1/rule.test/test) have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) [retainer](scc.v1:mcdm.heroes.v1/rule.general/retainer) or companion, that [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) will almost certainly make [tests](scc.v1:mcdm.heroes.v1/rule.test/test) from time to time. But for the most part, [NPCs](scc.v1:mcdm.heroes.v1/rule.general/npc) and other creatures never need to make [tests](scc.v1:mcdm.heroes.v1/rule.test/test) when what they do opposes what the heroes do.
 
-To quickly assess the difficulty of a task opposed by one or more creatures and the [test](scc.v1:mcdm.heroes.v1/rule.test/test) made to attempt it, the Director can use the following [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)lines (though these are not hard and fast rules):
+To quickly assess the difficulty of a task opposed by one or more creatures and the [test](scc.v1:mcdm.heroes.v1/rule.test/test) made to attempt it, the Director can use the following guidelines (though these are not hard and fast rules):
 
 - **Easy [Test](scc.v1:mcdm.heroes.v1/rule.test/test):** A [test](scc.v1:mcdm.heroes.v1/rule.test/test) is easy if only one creature opposes the hero, and that opposed creature would have a lower [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to their [test](scc.v1:mcdm.heroes.v1/rule.test/test) roll for the task than the hero does. If a hero with an [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) score of 2 attempts to sneak by a guard with an [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score of 0, the [test](scc.v1:mcdm.heroes.v1/rule.test/test) is easy.
 - **Moderate [Test](scc.v1:mcdm.heroes.v1/rule.test/test):** A [test](scc.v1:mcdm.heroes.v1/rule.test/test) is moderate if multiple creatures oppose the hero and those creatures would have lower [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties)es to their [test](scc.v1:mcdm.heroes.v1/rule.test/test) rolls than the hero, or if only one creature opposes the hero and has the same [test](scc.v1:mcdm.heroes.v1/rule.test/test) [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) as the hero.
@@ -21275,7 +21275,7 @@ At the start of a [montage test](scc.v1:mcdm.heroes.v1/rule.test/montage-test), 
 
 The difficulty of each individual [test](scc.v1:mcdm.heroes.v1/rule.test/test) in a [montage test](scc.v1:mcdm.heroes.v1/rule.test/montage-test) is set by the Director and can vary from [test](scc.v1:mcdm.heroes.v1/rule.test/test) to [test](scc.v1:mcdm.heroes.v1/rule.test/test). For instance, if the heroes are preparing the defenses of a village threatened by a band of approaching raiders, the Director might decide that a character who wants to dig a trench around the village needs to make an easy [Might](scc.v1:mcdm.heroes.v1/rule.character/might) [test](scc.v1:mcdm.heroes.v1/rule.test/test). Another hero wants to train the untested farmers of the village in the ways of war, and the Director decides this is a hard [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) [test](scc.v1:mcdm.heroes.v1/rule.test/test).
 
-The same rules and [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)lines that apply to all individual [tests](scc.v1:mcdm.heroes.v1/rule.test/test) apply in [montage tests](scc.v1:mcdm.heroes.v1/rule.test/montage-test). If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the [test](scc.v1:mcdm.heroes.v1/rule.test/test) should grant an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane), they do. Individual [test](scc.v1:mcdm.heroes.v1/rule.test/test) outcomes shouldn't halt the story.
+The same rules and guidelines that apply to all individual [tests](scc.v1:mcdm.heroes.v1/rule.test/test) apply in [montage tests](scc.v1:mcdm.heroes.v1/rule.test/montage-test). If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the [test](scc.v1:mcdm.heroes.v1/rule.test/test) should grant an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane), they do. Individual [test](scc.v1:mcdm.heroes.v1/rule.test/test) outcomes shouldn't halt the story.
 
 The Director should couch each success or failure as it relates to the overall goal of the [montage test](scc.v1:mcdm.heroes.v1/rule.test/montage-test). If the heroes are trying to reach an ancient temple, failing a [Might](scc.v1:mcdm.heroes.v1/rule.character/might) [test](scc.v1:mcdm.heroes.v1/rule.test/test) to ford a river in their path doesn't mean they don't cross the river and are stuck on the other side. But it could mean that failing to cross the river in a timely manner gives a rival group of villains the chance to beat the party to the temple.
 
@@ -22674,7 +22674,7 @@ Here's how the negotiation with Zola might play out.
 
 **James (playing Korvo, a [shadow](scc.v1:mcdm.heroes.v1/class/shadow)):** *I have a seat and say, "Korvo at your service, Ms. Honeycut. And these here are the finest companions a [polder](scc.v1:mcdm.heroes.v1/ancestry/polder) could ask for: Linn, Jorn, and Val."*
 
-**Director:** *Zola nods to each of you in [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), then says, "You'll excuse me if I dispense with more pleasantries. These days, no place is safe for the Clock. We keep moving. So tell me, what are you here for?"*
+**Director:** *Zola nods to each of you in turn, then says, "You'll excuse me if I dispense with more pleasantries. These days, no place is safe for the Clock. We keep moving. So tell me, what are you here for?"*
 
 **Alyssa (playing Jorn, a [tactician](scc.v1:mcdm.heroes.v1/class/tactician)):** *"We're building an army to take down Saxton once and for all."*
 
@@ -23917,7 +23917,7 @@ If two treasures give a creature a [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonus
 
 Consumables are treasures that can be used a limited number of times before they expire, losing whatever makes them [supernatural](scc.v1:mcdm.heroes.v1/rule.general/supernatural). You can drink a potion once, and when you do so, that's it. It's consumed. Other consumables might have a specific number of charges that can be spent. Once those charges are gone, the treasure is useless.
 
-Consumables are organized by [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) to make life easy for the Director handing them out (see [Echelons](scc.v1:mcdm.heroes.v1/rule.general/echelon) of Play in Chapter 1: [The Basics](scc.v1:mcdm.heroes.v1/chapter/the-basics)). As a [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)line, a hero should always be able to find consumable treasures or the materials required to craft consumables of their [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) and lower. For example, heroes who are 5th level should be able to find consumables of 1st and 2nd [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon). In some cases, the Director might decide to award consumables of an [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) higher than the heroes' [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon), but such a choice means giving the heroes more power than the encounter-building [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)lines in *Draw Steel: Monsters* accounts for.
+Consumables are organized by [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) to make life easy for the Director handing them out (see [Echelons](scc.v1:mcdm.heroes.v1/rule.general/echelon) of Play in Chapter 1: [The Basics](scc.v1:mcdm.heroes.v1/chapter/the-basics)). As a guideline, a hero should always be able to find consumable treasures or the materials required to craft consumables of their [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) and lower. For example, heroes who are 5th level should be able to find consumables of 1st and 2nd [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon). In some cases, the Director might decide to award consumables of an [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) higher than the heroes' [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon), but such a choice means giving the heroes more power than the encounter-building guidelines in *Draw Steel: Monsters* accounts for.
 
 Your character can carry any number of consumables at a time.
 
@@ -25913,7 +25913,7 @@ Whenever a creature within 10 squares of you deals damage to another creature, y
 <!-- @type: treasure-group | @tier: artifact -->
 ### Artifacts
 
-Artifacts are powerful treasures, with entire campaigns to be built around finding, using, hiding, protecting, or destroying one. Make no mistake—these items unbalance the game. If the heroes or villains have access to such a treasure, their power is far beyond what the encounter—building [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)lines in *Draw Steel: Monsters* expect. That's part of the fun!
+Artifacts are powerful treasures, with entire campaigns to be built around finding, using, hiding, protecting, or destroying one. Make no mistake—these items unbalance the game. If the heroes or villains have access to such a treasure, their power is far beyond what the encounter—building guidelines in *Draw Steel: Monsters* expect. That's part of the fun!
 
 Typically, one creature never holds onto an artifact for too long. Most of these treasures have a sentience of their own and an eagerness to move on. Since many powerful entities might want to get their hands on an artifact, characters might see armies, dragons, and even gods come to collect one from a wielder who refuses to let go.
 
@@ -27133,7 +27133,7 @@ As much as it annoys the great and the good, the gods view all mortals as equals
 
 The gods and [saints](scc.v1:mcdm.heroes.v1/rule.world/saint) presented in this chapter are popular and well-known. Their priests, shamans, or god-callers serve the public weal and tend to the souls of the people.
 
-But the world is not for heroes alone. There are villains, as well as those who are simply mis[guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)d or desperate. Every pantheon has [saints](scc.v1:mcdm.heroes.v1/rule.world/saint), even gods, who teach the virtues of selfishness, cruelty, the pursuit of power for its own sake, and the right of the strong to do as they please.
+But the world is not for heroes alone. There are villains, as well as those who are simply misguided or desperate. Every pantheon has [saints](scc.v1:mcdm.heroes.v1/rule.world/saint), even gods, who teach the virtues of selfishness, cruelty, the pursuit of power for its own sake, and the right of the strong to do as they please.
 
 These religions do not usually build public temples and worship in the open, but most communities know, or very strongly suspect, who among them serve evil gods and [saints](scc.v1:mcdm.heroes.v1/rule.world/saint).
 
@@ -28011,7 +28011,7 @@ Lost ships sometimes find their navigation systems lighting up, a clear path hom
 
 OV is the god of navigators and those who seek safe passage through treacherous scenarios. Because he cares little for the politics of the timescape, he is respected by the [time raiders](scc.v1:mcdm.heroes.v1/ancestry/time-raider), though none would call him or any other being their "god."
 
-When a [time raider](scc.v1:mcdm.heroes.v1/ancestry/time-raider) swears, "OV [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide) me," the meaning is not, "Show me the right thing to do." But: "Show me a way out of this mess."
+When a [time raider](scc.v1:mcdm.heroes.v1/ancestry/time-raider) swears, "OV guide me," the meaning is not, "Show me the right thing to do." But: "Show me a way out of this mess."
 
 <!-- @type: saint | @id: chokassa-the-time-rider | @name: Cho'kassa the Time Rider | @patron: ov -->
 ##### The Calling of Cho'kassa the Time Rider
@@ -28236,7 +28236,7 @@ If you plan on building your own campaign setting, the work of worldbuilding can
 
 ##### Start Small
 
-If you're planning on making your own campaign setting, start small. Instead of detailing every settlement on every continent on every planet in a universe, build a starting town or an initial district in a city, then work up the surrounding area in which the first adventure takes place. Use the following steps as a [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide):
+If you're planning on making your own campaign setting, start small. Instead of detailing every settlement on every continent on every planet in a universe, build a starting town or an initial district in a city, then work up the surrounding area in which the first adventure takes place. Use the following steps as a guide:
 
 **Locations:** Make a list of any important locations in the campaign starting point, such as an inn or house where the heroes are staying, merchants they might want to visit, and the headquarters of organizations that might be important to them.
 
@@ -28556,7 +28556,7 @@ On the other hand, not sharing the difficulty of every [test](scc.v1:mcdm.heroes
 
 ##### Test Outcomes
 
-After a hero makes a [test](scc.v1:mcdm.heroes.v1/rule.test/test), it's up to you to narrate and decide the outcome, keeping some basic [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)lines in mind.
+After a hero makes a [test](scc.v1:mcdm.heroes.v1/rule.test/test), it's up to you to narrate and decide the outcome, keeping some basic guidelines in mind.
 
 If a [test](scc.v1:mcdm.heroes.v1/rule.test/test) is a **failure with a consequence**, the hero doesn't just fail—they make things worse. This might mean drawing the attention of nearby foes, setting off a hazard or trap, taking damage or causing an ally to take damage, taking a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on a future [test](scc.v1:mcdm.heroes.v1/rule.test/test), losing a mundane item, making a friendly [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) angry, or even earning you a little future Malice. The consequence is up to you!
 
@@ -28655,7 +28655,7 @@ Refer to the details you wrote down for your [NPCs](scc.v1:mcdm.heroes.v1/rule.g
 
 When you're preparing for a negotiation (see Chapter 11: [Negotiation](scc.v1:mcdm.heroes.v1/chapter/negotiation)), you'll want to pick an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) and give them their negotiation stats—a starting interest and patience, motivations and pitfalls, and an Impression score. The Starting Attitudes table in the Negotiation chapter should give you an idea of where to start with some of these stats, but you should feel free to adjust the numbers as you see fit.
 
-When assigning negotiation stats, keep the following [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)lines in mind:
+When assigning negotiation stats, keep the following guidelines in mind:
 
 - The higher an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s starting interest, the more likely the heroes are to end the negotiation with everything they want—and then some—from the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc).
 - The higher an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s starting patience, the longer the negotiation and the more chances the heroes have to make arguments. If you want a long, rich negotiation, give your [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) a higher patience score.
@@ -29333,7 +29333,7 @@ You can also take any of the treasures in this book and easily reskin them. Do y
 
 #### Awarding Titles
 
-You don't need to grant heroes every title they qualify for. In fact, you probably shouldn't, lest they become too powerful too fast. As a general [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)line, a hero should gain a new title about every other level, which you can accomplish using either of the following options:
+You don't need to grant heroes every title they qualify for. In fact, you probably shouldn't, lest they become too powerful too fast. As a general guideline, a hero should gain a new title about every other level, which you can accomplish using either of the following options:
 
 - You can grant a hero a title during a significant moment in a campaign, such as after defeating a villain. The heroes are each awarded a title they earned that is chosen by you.
 - You can allow a hero to choose a title they've earned from the titles available at their [echelon](scc.v1:mcdm.heroes.v1/rule.general/echelon) each time they achieve an even-numbered level.
@@ -29342,7 +29342,7 @@ You should check in with your players occasionally to see if they have any speci
 
 #### Awarding Renown
 
-The heroes earn [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) whenever they do something of significance, such as saving a town or... well, saving the world! As a general [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)line, heroes should earn 1 [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) per level.
+The heroes earn [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) whenever they do something of significance, such as saving a town or... well, saving the world! As a general guideline, heroes should earn 1 [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) per level.
 
 If you want the characters to be less famous than in a standard heroic tale, you can adjust this to give out [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) every other level. Alternatively, you can award [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) after each adventure if you want the heroes to become power players in the world more quickly.
 
@@ -29365,7 +29365,7 @@ You can award [hero tokens](scc.v1:mcdm.heroes.v1/rule.resource/hero-token) to t
 
 #### Awarding Victories
 
-Use the following [guide](scc.v1:mcdm.heroes.v1/rule.downtime/guide)lines for awarding [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories) to the heroes, increasing these values as desired for notably difficult challenges.
+Use the following guidelines for awarding [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories) to the heroes, increasing these values as desired for notably difficult challenges.
 
 ##### Combat Encounters
 
