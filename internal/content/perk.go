@@ -70,18 +70,75 @@ func (p *PerkParser) Parse(ctx *context.ContextStack, section *parser.Section) (
 // target — link targets contain their own colons (`scc.v1:…`) — so the returned
 // value keeps any links it carries (class potency, treasure effect, perk
 // prerequisite all reference SCC codes that must survive into the data output).
+//
+// Some source lines pack several "**Label:** value" pairs onto one physical
+// line (e.g. Beastheart treasures: "**Item Prerequisite:** … **Project
+// Source:** … **Project Roll Characteristic:** …"). Each field's value must
+// stop at the next label's opening "**", not run to the end of the line — see
+// extractLineFields.
 func extractField(body, fieldName string) string {
 	for _, line := range strings.Split(body, "\n") {
-		clean := strings.TrimSpace(strings.ReplaceAll(line, "**", ""))
-		colon := labelColonIndex(clean)
-		if colon < 0 {
-			continue
-		}
-		if stripInlineMarkdown(clean[:colon]) == fieldName {
-			return strings.TrimSpace(clean[colon+1:])
+		if v, ok := extractLineFields(line)[fieldName]; ok {
+			return v
 		}
 	}
 	return ""
+}
+
+// extractLineFields splits a single line into its "**Label:** value" fields,
+// keyed by label (with markdown stripped from the label only — the value
+// keeps any links it carries). It supports three shapes seen in source docs:
+//
+//   - "Label: value"                         (no bold at all, e.g. list items)
+//   - "**Label:** value"                     (one bold field, the common case)
+//   - "**Label:** value **Label2:** value2"  (several bold fields on one line)
+//
+// A bold run only starts a new field when it ends in ':' once its own inline
+// markdown (links) is stripped — that's what distinguishes a field label from
+// incidental bold emphasis inside a value.
+func extractLineFields(line string) map[string]string {
+	fields := map[string]string{}
+	if !strings.Contains(line, "**") {
+		clean := strings.TrimSpace(line)
+		colon := labelColonIndex(clean)
+		if colon < 0 {
+			return fields
+		}
+		label := stripInlineMarkdown(clean[:colon])
+		fields[label] = strings.TrimSpace(clean[colon+1:])
+		return fields
+	}
+
+	parts := strings.Split(line, "**")
+	currentLabel := ""
+	var value strings.Builder
+	flush := func() {
+		if currentLabel != "" {
+			fields[currentLabel] = strings.TrimSpace(value.String())
+		}
+		value.Reset()
+	}
+	for i := 1; i < len(parts); i += 2 {
+		boldSeg := parts[i]
+		plainSeg := ""
+		if i+1 < len(parts) {
+			plainSeg = parts[i+1]
+		}
+		label := strings.TrimSpace(stripInlineMarkdown(boldSeg))
+		if strings.HasSuffix(label, ":") {
+			flush()
+			currentLabel = strings.TrimSpace(strings.TrimSuffix(label, ":"))
+			value.WriteString(plainSeg)
+		} else if currentLabel != "" {
+			// Incidental bold text (not a field label) inside the current
+			// field's value — keep its plain text, matching legacy behavior
+			// of stripping "**" throughout the line.
+			value.WriteString(boldSeg)
+			value.WriteString(plainSeg)
+		}
+	}
+	flush()
+	return fields
 }
 
 // labelColonIndex returns the index of the first ':' in s that sits outside a

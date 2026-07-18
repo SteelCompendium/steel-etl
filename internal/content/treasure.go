@@ -1,6 +1,7 @@
 package content
 
 import (
+	"regexp"
 	"strings"
 
 	"github.com/SteelCompendium/steel-etl/internal/context"
@@ -56,11 +57,14 @@ func (p *TreasureParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 		fm["keywords"] = splitCommaList(v)
 	}
 
-	// Extract project-related fields
-	if v := extractField(body, "Prerequisite"); v != "" {
+	// Extract project-related fields. Source label is "Item Prerequisite" /
+	// "Project Source" (not the bare "Prerequisite" / "Source" perks use) —
+	// see e.g. "**Item Prerequisite:** … **Project Source:** …" in the
+	// Beastheart and Heroes books.
+	if v := extractField(body, "Item Prerequisite"); v != "" {
 		fm["item_prerequisite"] = v
 	}
-	if v := extractField(body, "Source"); v != "" {
+	if v := extractField(body, "Project Source"); v != "" {
 		fm["project_source"] = v
 	}
 	if v := extractField(body, "Effect"); v != "" {
@@ -71,6 +75,9 @@ func (p *TreasureParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 	}
 	if v := extractField(body, "Project Roll Characteristic"); v != "" {
 		fm["project_roll_characteristic"] = v
+	}
+	if le := extractTreasureLevelEffects(body); len(le) > 0 {
+		fm["level_effects"] = le
 	}
 	if f := firstFlavorParagraph(body); f != "" {
 		fm["flavor"] = f
@@ -145,6 +152,32 @@ func (p *TreasureParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 		TypePath:    typePath,
 		ItemID:      id,
 	}, nil
+}
+
+// treasureLevelRe matches a leveled-treasure effect band: a bold "Nth Level:"
+// label (e.g. "**1st Level:**", "**5th Level:**", "**9th Level:**") at the
+// start of a line, capturing the ordinal and the effect text that follows.
+// Leveled armor/shield/weapon treasures in the Beastheart, Summoner, and
+// Heroes books describe their per-level power growth this way.
+var treasureLevelRe = regexp.MustCompile(`^\*\*(\d+(?:st|nd|rd|th)) Level:\*\*\s*(.+)$`)
+
+// extractTreasureLevelEffects collects "**Nth Level:** effect text" bands into
+// a map keyed by ordinal ("1st", "5th", "9th", …), matching the SDK's
+// level_effects schema (Record<string, string>). Returns nil when the
+// treasure has no such bands (non-leveled treasures).
+func extractTreasureLevelEffects(body string) map[string]string {
+	var result map[string]string
+	for _, line := range strings.Split(body, "\n") {
+		m := treasureLevelRe.FindStringSubmatch(strings.TrimSpace(line))
+		if m == nil {
+			continue
+		}
+		if result == nil {
+			result = map[string]string{}
+		}
+		result[m[1]] = strings.TrimSpace(m[2])
+	}
+	return result
 }
 
 // echelonSlug converts an echelon number ("1".."4") into its tier slug

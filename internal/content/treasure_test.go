@@ -114,6 +114,127 @@ func TestTreasureParser_TierOverride_Artifact(t *testing.T) {
 	}
 }
 
+func TestTreasureParser_ItemPrerequisiteAndProjectSource(t *testing.T) {
+	p := &TreasureParser{}
+	ctx := context.NewContextStack(nil)
+
+	section := &parser.Section{
+		Heading:      "Ruby Ring of Recall",
+		HeadingLevel: 5,
+		Annotation:   map[string]string{"type": "treasure"},
+		BodySource: "**Keywords:** Magic, Ring\n\n" +
+			"**Item Prerequisite:** A ruby retrieved from an ancient sky elf ruin\n\n" +
+			"**Project Source:** Texts or lore in Hyrallic\n\n" +
+			"**Project Roll Characteristic:** Reason, Intuition, or Presence\n\n" +
+			"**Project Goal:** 150\n\n" +
+			"**Effect:** While wearing this ring, you can pull a willing creature.",
+	}
+
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	if got := result.Frontmatter["item_prerequisite"]; got != "A ruby retrieved from an ancient sky elf ruin" {
+		t.Errorf("item_prerequisite = %v, want %q", got, "A ruby retrieved from an ancient sky elf ruin")
+	}
+	if got := result.Frontmatter["project_source"]; got != "Texts or lore in Hyrallic" {
+		t.Errorf("project_source = %v, want %q", got, "Texts or lore in Hyrallic")
+	}
+	if got := result.Frontmatter["project_roll_characteristic"]; got != "Reason, Intuition, or Presence" {
+		t.Errorf("project_roll_characteristic = %v, want %q", got, "Reason, Intuition, or Presence")
+	}
+}
+
+func TestTreasureParser_ItemPrerequisiteAndProjectSource_SameLine(t *testing.T) {
+	// Beastheart's "Precious Collar": Item Prerequisite, Project Source, and
+	// Project Roll Characteristic all share one source line.
+	p := &TreasureParser{}
+	ctx := context.NewContextStack(nil)
+
+	section := &parser.Section{
+		Heading:      "Precious Collar",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "treasure"},
+		BodySource: "**Keywords:** Magic, Neck\n\n" +
+			"**Item Prerequisite:** One collar worn by a royal pet **Project Source:** Texts or lore in Vaslorian **Project Roll Characteristic:** Reason or Intuition\n\n" +
+			"**Project Goal:** 150",
+	}
+
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	if got := result.Frontmatter["item_prerequisite"]; got != "One collar worn by a royal pet" {
+		t.Errorf("item_prerequisite = %v, want %q", got, "One collar worn by a royal pet")
+	}
+	if got := result.Frontmatter["project_source"]; got != "Texts or lore in Vaslorian" {
+		t.Errorf("project_source = %v, want %q", got, "Texts or lore in Vaslorian")
+	}
+	if got := result.Frontmatter["project_roll_characteristic"]; got != "Reason or Intuition" {
+		t.Errorf("project_roll_characteristic = %v, want %q", got, "Reason or Intuition")
+	}
+}
+
+func TestTreasureParser_LevelEffects(t *testing.T) {
+	// "Rampant Shield": leveled treasure with 1st/5th/9th Level effect bands.
+	p := &TreasureParser{}
+	ctx := context.NewContextStack(nil)
+
+	section := &parser.Section{
+		Heading:      "Rampant Shield",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "treasure"},
+		BodySource: "**Keywords:** Magic, Shield\n\n" +
+			"**Item Prerequisite:** Strands from the manes of nine lions\n\n" +
+			"**Project Source:** Texts or lore in Vaslorian **Project Roll Characteristic:** Might or Intuition\n\n" +
+			"**Project Goal:** 450\n\n" +
+			"**1st Level:** Only a beastheart can wield or carry this shield. You gain a +3 bonus to Stamina.\n\n" +
+			"**5th Level:** The shield's bonus to Stamina increases to +6.\n\n" +
+			"**9th Level:** The shield's bonus to Stamina increases to +9.",
+	}
+
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	le, ok := result.Frontmatter["level_effects"].(map[string]string)
+	if !ok {
+		t.Fatalf("level_effects = %v (%T), want map[string]string", result.Frontmatter["level_effects"], result.Frontmatter["level_effects"])
+	}
+	want := map[string]string{
+		"1st": "Only a beastheart can wield or carry this shield. You gain a +3 bonus to Stamina.",
+		"5th": "The shield's bonus to Stamina increases to +6.",
+		"9th": "The shield's bonus to Stamina increases to +9.",
+	}
+	if !reflect.DeepEqual(le, want) {
+		t.Errorf("level_effects = %v, want %v", le, want)
+	}
+}
+
+func TestTreasureParser_NoLevelEffects_FieldAbsent(t *testing.T) {
+	p := &TreasureParser{}
+	ctx := context.NewContextStack(nil)
+	section := &parser.Section{
+		Heading:      "Black Ash Dart",
+		HeadingLevel: 5,
+		Annotation:   map[string]string{"type": "treasure"},
+		BodySource:   "**Keywords:** Magic\n\nAs a maneuver, you make a ranged free strike.",
+	}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	if _, ok := result.Frontmatter["level_effects"]; ok {
+		t.Errorf("level_effects should be absent, got %v", result.Frontmatter["level_effects"])
+	}
+	if _, ok := result.Frontmatter["level"]; ok {
+		t.Errorf("level should be absent (no source data carries it), got %v", result.Frontmatter["level"])
+	}
+	if _, ok := result.Frontmatter["rarity"]; ok {
+		t.Errorf("rarity should be absent (no source data carries it), got %v", result.Frontmatter["rarity"])
+	}
+}
+
 func TestTreasureGroupParser_NoOutput(t *testing.T) {
 	p := &TreasureGroupParser{}
 	if p.Type() != "treasure-group" {
