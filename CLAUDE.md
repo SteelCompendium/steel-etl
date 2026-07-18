@@ -50,7 +50,7 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/site/card_head.go` | **Shared 6-slot card header** (`renderCardHead(cardHeadSlots)` → `<header class="sc-head">`). EVERY card renderer below builds its head through this — never hand-roll a per-card eyebrow/chip. See DESIGN.md "Card header system". |
 | `internal/site/ability_cards.go` | Renders `type: ability` page bodies into `.sc-ability` cards; head via `renderCardHead`; shared power-roll tier helpers |
 | `internal/site/statblock_page.go` | Parses `type: statblock` page bodies → the `sbIsland` model (stat grid + blockquote features) |
-| `internal/site/statblock_card.go` | Renders an `sbIsland` into the build-time `.sb-wrap` HTML card (Go port of `steel-statblock.js`) |
+| `internal/site/statblock_card.go` | Renders an `sbIsland` into the build-time `.sb-wrap` HTML card — the retired client-side `steel-statblock.js` renderer's logic, ported to Go (no JSON island; the JS file itself is gone, deleted from `v2/` 2026-06-18) |
 | `internal/site/embed_cards.go` | Site-only post-pass: transcludes finished leaf cards inline on container pages by `{data-scc}` code (Browse via `embed_card_sections`) |
 | `internal/site/trait_cards.go` | Renders `type: trait` page bodies into recessed `.sc-trait` niches |
 | `internal/site/feature_index.go` | Folder/preview-card index pages for the nested feature/treasure/rule trees; per-class ability dirs also get the sortable all-abilities table (`ability_table.go`) |
