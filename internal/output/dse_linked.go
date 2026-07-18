@@ -30,6 +30,7 @@ func (g *DSELinkedGenerator) WriteSection(sccCode string, parsed *content.Parsed
 		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, g.LinkMode),
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,
+		Children:    g.resolveChildren(parsed.Children, sccCode),
 	}
 
 	relPath := SCCToFilePath(sccCode, ".md")
@@ -45,4 +46,32 @@ func (g *DSELinkedGenerator) WriteSection(sccCode string, parsed *content.Parsed
 	}
 
 	return os.WriteFile(fullPath, []byte(out), 0644)
+}
+
+// resolveChildren returns a copy of a ParsedContent's Children map with scc:
+// links resolved in each child's body and frontmatter, relative to the
+// parent's SCC code — children (e.g. a kit's signature ability) are embedded
+// inline in the parent's own output file, so their links resolve as if they
+// lived at the parent's location. Without this, DSELinkedGenerator would
+// silently drop Children, and buildDSEFile would never emit the child's
+// ds-feature fence (e.g. a kit's signature ability) in md-dse-linked output.
+func (g *DSELinkedGenerator) resolveChildren(children map[string]*content.ParsedContent, sccCode string) map[string]*content.ParsedContent {
+	if children == nil {
+		return nil
+	}
+	resolved := make(map[string]*content.ParsedContent, len(children))
+	for key, child := range children {
+		if child == nil {
+			resolved[key] = nil
+			continue
+		}
+		resolved[key] = &content.ParsedContent{
+			Frontmatter: g.Resolver.ResolveFrontmatter(child.Frontmatter, sccCode, g.LinkMode),
+			Body:        g.Resolver.ResolveLinks(child.Body, sccCode, g.LinkMode),
+			TypePath:    child.TypePath,
+			ItemID:      child.ItemID,
+			Children:    g.resolveChildren(child.Children, sccCode),
+		}
+	}
+	return resolved
 }
