@@ -183,6 +183,15 @@ preview + its advancement-features card (the minions live in the `summoner/minio
 rendered by the bestiary group assembler like every other retainer. No SCC/schema/data
 change beyond the classification above.
 
+**Class-owned back-links (site-only).** Beastheart companions (`monster/companion/beastheart/*`)
+and summoner fixtures (`monster/fixture/*/*`) each carry a `.sb-backlink` pointing at their
+owning class landing page (`class/beastheart`, `class/summoner`), on both the base page and
+its `-advancement-features` sibling. Added by `augmentClassOwnedBackLinks`
+(`internal/site/class_backlinks.go`), derived from the page's `scc` type-path — no
+SCC/schema/data change. The summoner retainer (Devil Detective) is a different type-path
+shape (`monster.retainer.*`) and is **not** covered (FOLLOWUPS #15 scope decision). See
+[`site-builder.md`](site-builder.md) → "Class-owned back-links".
+
 ## Featureblocks & dynamic terrain (structured fields)
 
 `FeatureblockParser` and `DynamicTerrainParser` extract structured frontmatter that

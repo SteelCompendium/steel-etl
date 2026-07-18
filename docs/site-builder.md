@@ -374,6 +374,39 @@ makes **no SCC/schema/data change**. There is exactly one summoner retainer toda
 minion under `summoner/minion/` belongs to it; a second summoner retainer would need
 per-retainer association (noted, not built).
 
+## Class-owned back-links (`class_backlinks.go`)
+
+`augmentClassOwnedBackLinks` adds a "Companion/fixture of `<Class>`" back-link to
+every bestiary page that belongs to a hero **class** rather than a book — beastheart
+companions (`monster/companion/beastheart/<species>(.md|-advancement-features.md)`)
+and summoner fixtures (`monster/fixture/<element>/<id>(.md|-advancement-features.md)`)
+— pointing at the class landing page (`class/beastheart`, `class/summoner`).
+FOLLOWUPS #15, the class-owned analog of the Rival Summoner back-link.
+
+- **Derivation** — `owningClass(scc)` reads the page's `scc` frontmatter and matches
+  its type-path: `monster.companion.beastheart.*` (source `mcdm.beastheart.`) →
+  Beastheart, `monster.fixture.*` (source `mcdm.summoner.`) → Summoner. No tree-walk,
+  no per-entity data edit. `monster.retainer.*` (the Devil Detective summoner
+  retainer) doesn't match either shape and is deliberately **not** covered — it's a
+  different type-path family, out of scope per the FOLLOWUPS #15 adjudication.
+- **Placement** — prepends `<p class="sb-backlink">A <a href="...">…</a>
+  companion|fixture</p>` immediately before the page's first `.sb-wrap`/`.fb-wrap`
+  card (`firstCardMarker`), reusing the Rival Summoner back-link's `.sb-backlink`
+  style verbatim. The href is computed from the page's own path depth
+  (`classBackLinkHref`), not hard-coded.
+- **Timing — runs AFTER `embedItemCards`, not alongside the other `augment*`
+  passes.** Beastheart companions and summoner fixtures are also *embedded* inline
+  into other pages (the class landing page shows every companion/fixture as a card;
+  `feature/summoner/level-2/summoners-dominion.md` embeds the fixtures too; a
+  companion's own advancement-features gets embedded into its base page). Adding
+  the back-link before embedding propagates it into every page that embeds the
+  card — including a redundant self-link on the class page that already houses it,
+  and a duplicate on the leaf page itself (base card + its nested
+  advancement-features embed). Running last means the back-link only ever lands on
+  the two real class-owned pages.
+- Idempotent (guards on an existing `sb-backlink`) and a no-op without a
+  `monster/companion` or `monster/fixture` tree.
+
 ## Inline item cards (`embed_cards.go`)
 
 A site-only `Build()` post-pass (after index generation, before the

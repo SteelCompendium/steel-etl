@@ -143,6 +143,24 @@ func Build(cfg *Config) (*BuildResult, error) {
 	result.EmbeddedCards = embedCount
 	result.Errors = append(result.Errors, embedErrs...)
 
+	// Class-owned back-links: a "Companion/fixture of <class>" back-link on every
+	// beastheart companion and summoner fixture page (base + advancement-features),
+	// linking back to its owning class landing page. Derived from each page's scc
+	// type-path (FOLLOWUPS #15); no-op without a monster/companion or
+	// monster/fixture tree. Runs AFTER embedItemCards (not alongside the other
+	// augment-* passes above): these leaf cards are themselves inlined into their
+	// owning class's landing page (and other feature pages), so adding the
+	// back-link before embedding would propagate a redundant self-referential
+	// "owned by this class" line onto the class page that already houses it — and
+	// double it up on the leaf page itself (its own inline advancement-features
+	// embed would carry a second copy). Running last means only the two real
+	// class-owned pages (base + advancement-features) ever gain the back-link.
+	for _, s := range genericSections {
+		if _, cErrs := augmentClassOwnedBackLinks(filepath.Join(cfg.DocsDir, s.Name)); len(cErrs) > 0 {
+			result.Errors = append(result.Errors, cErrs...)
+		}
+	}
+
 	// Apply search exclusion
 	for _, sectionName := range cfg.SearchExclude {
 		count, errs := applySearchExclusion(cfg.DocsDir, sectionName)
