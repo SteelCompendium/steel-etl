@@ -35,8 +35,8 @@
     "weakness": "—",
     "movement": "—",
     "captain": {
-      "label": "With Captain",
-      "value": "—"
+      "label": "",
+      "value": ""
     }
   },
   "characteristics": [

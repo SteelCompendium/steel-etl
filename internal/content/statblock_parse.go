@@ -246,6 +246,15 @@ func ParseStatblockFields(name, body string) map[string]any {
 	if v, ok := grid.labels["With Captain"]; ok && v != "-" {
 		fm["with_captain"] = v
 	}
+	// Summoner-book statblocks carry no captain concept; their grid uses this
+	// label in the same 4th-meta-cell position instead (every classified
+	// Summoner statblock — minions, champions, rivals, the retainer conjurer
+	// and its summons — carries it; site-only, not part of the SDK schema, so
+	// it's deliberately absent from statblockScalarKeys). Consumed by
+	// statblock_page.go's statblockMeta4 (FOLLOWUPS #7 piece 2).
+	if v, ok := grid.labels["Free Strike Damage Type"]; ok && v != "-" && v != "—" {
+		fm["free_strike_damage_type"] = v
+	}
 
 	return fm
 }

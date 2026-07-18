@@ -86,6 +86,45 @@ func TestParseStatGrid(t *testing.T) {
 	}
 }
 
+// TestParseStatblockFields_FreeStrikeDamageType verifies the Summoner-book
+// grid's "Free Strike Damage Type" 4th-meta-cell label (parallel to Monsters'
+// "With Captain") is captured into frontmatter — consumed site-side by
+// statblockMeta4 (FOLLOWUPS #7 piece 2). Site-only: deliberately absent from
+// statblockScalarKeys, so it never reaches the SDK JSON/schema.
+func TestParseStatblockFields_FreeStrikeDamageType(t *testing.T) {
+	const grid = "" +
+		"| Fey | - | Level 3 | Minion Support | EV 5 for Four minions |\n" +
+		"|:-:|:---:|:----------------------:|:-:|:---------------------:|\n" +
+		"| **1T**<br>Size | **5**<br>Speed | **7**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |\n" +
+		"| **—**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Poison**<br>Free Strike Damage Type |\n" +
+		"| **-3**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |\n"
+	fm := ParseStatblockFields("Pixie Bellringer", grid)
+	if fm["free_strike_damage_type"] != "Poison" {
+		t.Errorf("free_strike_damage_type = %v, want Poison", fm["free_strike_damage_type"])
+	}
+	if _, ok := fm["with_captain"]; ok {
+		t.Errorf("with_captain should be absent for a Summoner-book grid, got %v", fm["with_captain"])
+	}
+}
+
+// TestParseStatblockFields_FreeStrikeDamageType_Dash verifies a dash/em-dash
+// value (no damage type) is dropped from frontmatter, like Immunity/Weakness —
+// the site layer redefaults it to "—" for display (orDash), but only for
+// statblocks it already knows are Summoner-sourced (scc prefix), so a bare
+// presence/absence signal here is enough.
+func TestParseStatblockFields_FreeStrikeDamageType_Dash(t *testing.T) {
+	const grid = "" +
+		"| Abyssal, Demon | - | - | Signature Minion Brute | 1 essence per minion summoned |\n" +
+		"|:--------:|:--------------:|:----------------------:|:-:|:-----------------------------:|\n" +
+		"| **1M**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |\n" +
+		"| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |\n" +
+		"| **+2**<br>Might | **0**<br>Agility | **-1**<br>Reason | **-1**<br>Intuition | **-1**<br>Presence |\n"
+	fm := ParseStatblockFields("Ensnarer", grid)
+	if _, ok := fm["free_strike_damage_type"]; ok {
+		t.Errorf("free_strike_damage_type should be dropped for a dash value, got %v", fm["free_strike_damage_type"])
+	}
+}
+
 // TestParseStatblockFields_Flavor verifies the leading prose paragraph (the
 // flavor text under a statblock heading, before the stat grid) is lifted into the
 // `flavor` frontmatter field so it survives the v2 .sb-wrap card render — first

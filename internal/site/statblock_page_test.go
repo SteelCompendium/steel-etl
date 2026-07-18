@@ -134,8 +134,11 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	if isl.Meta.Immunity != "Fire 5" || isl.Meta.Movement != "Fly" || isl.Meta.Weakness != "—" {
 		t.Errorf("meta = %+v", isl.Meta)
 	}
-	if isl.Meta.Captain.Label != "With Captain" {
-		t.Errorf("captain label = %q", isl.Meta.Captain.Label)
+	// The high judge is a Leader (no captain bonus in the grid, no with_captain
+	// frontmatter) — statblockMeta4 drops the cell rather than showing a blank
+	// "With Captain" (FOLLOWUPS #7 piece 2).
+	if isl.Meta.Captain != (sbCaptain{}) {
+		t.Errorf("captain = %+v, want zero value (no captain bonus)", isl.Meta.Captain)
 	}
 
 	// ── Signature ability: labeled power roll + Malice enhancement ──
@@ -446,5 +449,61 @@ func TestBuildStatblockIsland_NonSummonerKeepsKeywords(t *testing.T) {
 	got := buildStatblockIsland(fm, "")
 	if got.Ancestry != "Humanoid, Goblin" {
 		t.Errorf("Ancestry = %q, want %q", got.Ancestry, "Humanoid, Goblin")
+	}
+}
+
+// TestStatblockMeta4 locks the fix for FOLLOWUPS #7 piece 2: the 4th .sb__meta
+// cell is context-driven instead of an always-"With Captain" label that
+// previously never picked up a real captain bonus (buildStatblockIsland used
+// to derive it from a body-prose regex that only ever matched the corpus's
+// one illustrative @classify:false example — real grid values live in the
+// `with_captain` frontmatter field ParseStatblockFields already parses).
+func TestStatblockMeta4(t *testing.T) {
+	tests := []struct {
+		name      string
+		fm        string
+		body      string
+		wantLabel string
+		wantValue string
+	}{
+		{
+			name:      "Monsters-book minion with a real captain bonus (goblin-sniper shape)",
+			fm:        "scc: mcdm.monsters.v1/monster.goblin.statblock/goblin-sniper\nwith_captain: +5 bonus to ranged distance\n",
+			wantLabel: "With Captain",
+			wantValue: "+5 bonus to ranged distance",
+		},
+		{
+			name:      "Monsters-book leader/solo with no captain bonus drops the cell",
+			fm:        "scc: mcdm.monsters.v1/monster.devil/devil-legate\n",
+			wantLabel: "",
+			wantValue: "",
+		},
+		{
+			name:      "Summoner-book statblock always shows Free Strike Damage Type",
+			fm:        "scc: mcdm.summoner.v1/monster.minion.summoner.demon.statblock/rasquine\nfree_strike_damage_type: Poison\n",
+			wantLabel: "Free Strike Damage Type",
+			wantValue: "Poison",
+		},
+		{
+			name:      "Summoner-book statblock with no damage type still shows the cell, dashed",
+			fm:        "scc: mcdm.summoner.v1/monster.minion.summoner.demon.statblock/ensnarer\n",
+			wantLabel: "Free Strike Damage Type",
+			wantValue: "—",
+		},
+		{
+			name:      "the one illustrative @classify:false inline example keeps its body-prose convention",
+			fm:        "",
+			body:      "With Captain: +2 bonus to speed\n",
+			wantLabel: "With Captain",
+			wantValue: "+2 bonus to speed",
+		},
+	}
+	for _, tc := range tests {
+		t.Run(tc.name, func(t *testing.T) {
+			got := statblockMeta4(tc.fm, tc.body)
+			if got.Label != tc.wantLabel || got.Value != tc.wantValue {
+				t.Errorf("statblockMeta4() = %+v, want {%q %q}", got, tc.wantLabel, tc.wantValue)
+			}
+		})
 	}
 }

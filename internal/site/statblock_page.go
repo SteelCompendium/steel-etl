@@ -16,9 +16,11 @@ package site
 // present). Reuses the ability-card body helpers (parseAbilityTable / parseTiers
 // / prHeadRe / labelRe / paraSplitRe / …) from ability_cards.go.
 //
-// NOT YET: the shared family Malice band is intentionally omitted (the README
-// marks it a non-blocking nice-to-have, and the family's malice featureblock
-// still renders as its own page). Wiring it in is a follow-up.
+// The shared family Malice band (FOLLOWUPS #7 piece 1) is NOT wired in here —
+// it's a build.go post-pass (monster_malice.go, augmentMonsterMaliceBands),
+// spliced into each statblock's rendered card after embedItemCards; see that
+// file's doc comment for why baking it in at this parse stage would duplicate
+// the band on the Read tab's book-faithful chapter pages.
 
 import (
 	"regexp"
@@ -146,6 +148,47 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	return []byte("---\n" + fm + "\n---\n\n" + card), true
 }
 
+// statblockMeta4 derives the .sb__meta 2×2's 4th cell — context-driven instead
+// of the hardcoded "With Captain" label the client-side island used to always
+// show (FOLLOWUPS #7 piece 2). Three cases, checked in order:
+//
+//  1. Summoner-book statblocks (minions, champions, rivals, the retainer
+//     conjurer and its summons) carry no captain concept at all; every
+//     classified Summoner statblock's grid instead has a "Free Strike Damage
+//     Type" cell in this position (verified against the source: 75 occurrences,
+//     0 "With Captain" ones). fm's `free_strike_damage_type` is only set when
+//     the source cell has a real value (ParseStatblockFields drops "-"/"—"
+//     placeholders like it does for immunities/weaknesses), so this defaults
+//     to "—" the same way those fields do — the cell is still shown (every
+//     summon has *a* Free Strike, even if untyped), unlike case 2 below.
+//  2. Monsters-book statblocks with an actual captain bonus (fm's
+//     `with_captain`, set by ParseStatblockFields from the grid's "With
+//     Captain" cell — previously read from frontmatter nowhere, so the real
+//     bonus text a minion's stat grid carries was silently dropped in favor of
+//     a body-text convention that appears exactly once in the whole corpus;
+//     see case 3) get the traditional "With Captain" label.
+//  3. The single `@classify: false` illustrative inline example (the
+//     Converted Minion Example) writes its captain bonus as prose ("With
+//     Captain: …") below the grid instead of in a table cell — sbCaptainRe
+//     preserves that one convention.
+//
+// Anything else (solos/leaders/retainers, whose grid cell is always blank)
+// gets a zero-value sbCaptain{} — renderStatblockMeta/renderStatblockSticky
+// drop the cell entirely rather than show a meaningless blank "With Captain".
+func statblockMeta4(fm, body string) sbCaptain {
+	scc := strings.TrimSpace(parseFrontmatterField(fm, "scc"))
+	if strings.HasPrefix(scc, "mcdm.summoner.") {
+		return sbCaptain{Label: "Free Strike Damage Type", Value: orDash(parseFrontmatterField(fm, "free_strike_damage_type"))}
+	}
+	if v := strings.TrimSpace(parseFrontmatterField(fm, "with_captain")); v != "" {
+		return sbCaptain{Label: "With Captain", Value: v}
+	}
+	if m := sbCaptainRe.FindStringSubmatch(body); m != nil {
+		return sbCaptain{Label: "With Captain", Value: strings.TrimSpace(m[1])}
+	}
+	return sbCaptain{}
+}
+
 // collapseKeywords reconstructs the book-faithful keyword display string from the
 // distributed keyword list emitted by parseCreatureKeywords. Per-domain entries
 // that share a base ("Elemental (Air)", "Elemental (Earth)") recombine into the
@@ -223,10 +266,7 @@ func buildStatblockIsland(fm, body string) sbIsland {
 		roleKey = "leader" // grey neutral so --role always resolves
 	}
 
-	captain := "—"
-	if m := sbCaptainRe.FindStringSubmatch(body); m != nil {
-		captain = strings.TrimSpace(m[1])
-	}
+	meta4 := statblockMeta4(fm, body)
 
 	// The keyword line (sb__kw eyebrow) reconstructs the book-faithful display
 	// from the distributed keyword list (per-domain "Elemental (Air)"/"Elemental
@@ -266,7 +306,7 @@ func buildStatblockIsland(fm, body string) sbIsland {
 			Immunity: joinOrDash(parseFrontmatterList(fm, "immunities")),
 			Weakness: joinOrDash(parseFrontmatterList(fm, "weaknesses")),
 			Movement: orDash(parseFrontmatterField(fm, "movement")),
-			Captain:  sbCaptain{Label: "With Captain", Value: captain},
+			Captain:  meta4,
 		},
 		Characteristics: []sbChar{
 			{L: "Might", K: "M", V: signValue(parseFrontmatterField(fm, "might"))},

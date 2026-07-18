@@ -217,14 +217,19 @@ func sbMetaCell(label, value string) string {
 		`</span><span class="sb__field-v">` + richSb(value) + `</span></div>`
 }
 
-// renderStatblockMeta ports renderMeta(): the fixed 2×2 secondary stats.
+// renderStatblockMeta ports renderMeta(): the secondary-stats grid. The 4th
+// cell (Captain) is context-driven (statblockMeta4, FOLLOWUPS #7 piece 2) and
+// omitted entirely when the creature has neither a captain bonus nor a Free
+// Strike Damage Type — the grid then reflows to 3 cells rather than showing a
+// meaningless blank label.
 func renderStatblockMeta(m sbMeta) string {
-	return `<div class="sb__meta">` +
-		sbMetaCell("Immunity", m.Immunity) +
+	cells := sbMetaCell("Immunity", m.Immunity) +
 		sbMetaCell("Weakness", m.Weakness) +
-		sbMetaCell("Movement", m.Movement) +
-		sbMetaCell(m.Captain.Label, m.Captain.Value) +
-		`</div>`
+		sbMetaCell("Movement", m.Movement)
+	if m.Captain.Label != "" {
+		cells += sbMetaCell(m.Captain.Label, m.Captain.Value)
+	}
+	return `<div class="sb__meta">` + cells + `</div>`
 }
 
 // renderStatblockChars ports renderChars().
@@ -256,10 +261,14 @@ func renderStatblockSticky(d sbIsland) string {
 	}
 	metaPairs := [][2]string{
 		{"Movement", d.Meta.Movement},
-		{d.Meta.Captain.Label, d.Meta.Captain.Value},
-		{"Immunity", d.Meta.Immunity},
-		{"Weakness", d.Meta.Weakness},
 	}
+	if d.Meta.Captain.Label != "" {
+		metaPairs = append(metaPairs, [2]string{d.Meta.Captain.Label, d.Meta.Captain.Value})
+	}
+	metaPairs = append(metaPairs,
+		[2]string{"Immunity", d.Meta.Immunity},
+		[2]string{"Weakness", d.Meta.Weakness},
+	)
 	var meta strings.Builder
 	for _, kv := range metaPairs {
 		meta.WriteString(`<span class="sm"><b>` + sbEsc(kv[0]) + `</b>` + sbEsc(kv[1]) + `</span>`)
