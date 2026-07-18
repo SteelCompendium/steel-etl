@@ -2776,7 +2776,7 @@ Your bond with your companion has permeated your very soul; you are just as much
 >
 > *You ride behind your companion's eyes.*
 >
-> | **Beastheart, Magic** |     **Maneuver** |
+> | **Beastheart, Magic** |     **[Maneuver](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-----------------------|-----------------:|
 > | **📏 Melee 1**        | **🎯 Companion** |
 >
@@ -2797,7 +2797,7 @@ You have the following ability.
 >
 > *The ability to glide like a condor or race like a wolf is intoxicating—but beware the temptation to run yourself to death.*
 >
-> | **Beastheart, Magic** | **Main action** |
+> | **Beastheart, Magic** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-----------------------|----------------:|
 > | **📏 Self**           |     **🎯 Self** |
 >

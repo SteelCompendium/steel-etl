@@ -905,7 +905,7 @@ The bengrul is an undulating heap of glass and flesh. They shatter pieces of the
 
 > 🏹 **Mind Twist 2d10 + R (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 5** | **🎯 One creature or object per minion** |
 >
@@ -1046,7 +1046,7 @@ This elemental is a long, serpentine creature of heated rock. Flows of magma dro
 
 > 🏹 **Molten Strike 2d10 + R (Signature Ability)**
 >
-> | **Magic, Melee, Strike** | **Main action** |
+> | **Magic, Melee, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |--------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 One creature or object per minion** |
 >
@@ -1177,7 +1177,7 @@ This pixie flies on a delicate array of vibrant flower petals for wings. The col
 
 > 🏹 **Burning/Healing Rain 2d10 + R (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 5** | **🎯 One creature or object per minion** |
 >
@@ -1303,7 +1303,7 @@ The grave knights are zombie warriors that continue to fight after death. Any bl
 
 > 🏹 **Knight Strike 2d10 + R (Signature Ability)**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
@@ -1794,7 +1794,7 @@ This elemental is a pure-white vulpine with six legs that freely sprints through
 
 > 🏹 **Freezing Howl 2d10 + R (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 5** | **🎯 One creature or object per minion** |
 >
@@ -1874,7 +1874,7 @@ The collective of blood-eyed pixie warriors that make up a rosenthall are also k
 
 > 🏹 **Stickerbush Symphony 2d10 + R (Signature Ability)**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 One creature or object per minion** |
 >
@@ -1908,7 +1908,7 @@ The preserved dead, bound for eternal rest, know only violence when robbed of th
 
 > 🏹 **Fetid Bindings 2d10 + R (Signature Ability)**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee R** | **🎯 One creature or object per minion** |
 >
@@ -2209,7 +2209,7 @@ This cherubin creature is bloated and warped by demonic energy. The lights from 
 
 > 🏹 **Blighted Strike 2d10 + R (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 5** | **🎯 One creature or object per minion** |
 >
@@ -2265,7 +2265,7 @@ It's difficult to identify the base nature of a vicisittante apart from an ever-
 
 > 🏹 **Cerebral Flay 2d10 + R (Signature Ability)**
 >
-> | **Melee, Psionic, Strike** | **Main action** |
+> | **Melee, Psionic, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |----------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
@@ -2341,7 +2341,7 @@ These elementals are blazing white avian-shaped beings that are nearly impossibl
 
 > 🏹 **Solar Blade 2d10 + R (Signature Ability)**
 >
-> | **Magic, Melee, Strike** | **Main action** |
+> | **Magic, Melee, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |--------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
@@ -2398,7 +2398,7 @@ The belladonix are found among the elite guard of fey monarchs and carry themsel
 
 > 🏹 **A Thorn, Woe to the Pricked 2d10 + R (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 15** | **🎯 One creature or object per minion** |
 >
@@ -2474,7 +2474,7 @@ These phantoms puppet the remnants of their corporeal forms. Unlike other spirit
 
 > 🏹 **Plunge of the Knife 2d10 + R (Signature Ability)**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
@@ -2767,7 +2767,7 @@ Stamina: Your maximum Stamina
 
 > 🏹 **Grasping Appendages 2d10 + 5 ([Signature Ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee 5** | **🎯 Two creatures or objects** |
 >
@@ -2841,7 +2841,7 @@ Stamina: Your maximum Stamina
 
 > 🏹 **Elemental Tail Swing 2d10 + 5 ([Signature Ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
-> | **Charge, Melee, Strike, Weapon** | **Main action** |
+> | **Charge, Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-----------------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 Two creatures or objects** |
 >
@@ -2903,7 +2903,7 @@ Stamina: Your maximum Stamina
 
 > 🏹 **Pixie Swarm 2d10 + 5 ([Signature Ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 Two creatures or objects** |
 >
@@ -2973,7 +2973,7 @@ Stamina: Your maximum Stamina
 
 > 🏹 **Culling Scythe 2d10 + 5 ([Signature Ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 Two creatures or objects** |
 >
@@ -3589,7 +3589,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > 🏹 **Diabolic Probe 2d10 + highest characteristic (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One creature or object** |
 >
@@ -3612,7 +3612,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > 🏹 **Soul Sleuth 2d10 + highest characteristic (Encounter)**
 >
-> | **Area, Magic** | **Main action** |
+> | **Area, Magic** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-----------------|----------------:|
 > | **📏 4 cube within 5** | **🎯 Each enemy or object in the area** |
 >
@@ -3628,7 +3628,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > 🏹 **Summon Violents (Encounter)**
 >
-> | **Magic, Ranged** | **Main action** |
+> | **Magic, Ranged** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 Special** |
 >
@@ -3638,7 +3638,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > 🌀 **Cleansing Flense (Encounter)**
 >
-> | **Area, Magic** | **Maneuver** |
+> | **Area, Magic** | **[Maneuver](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-----------------|-------------:|
 > | **📏 5 burst** | **🎯 Each of the detective's minions in the area** |
 >
@@ -3650,7 +3650,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > 🏹 **Blightwash 2d10 + highest characteristic (Encounter)**
 >
-> | **Area, Magic** | **Main action** |
+> | **Area, Magic** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-----------------|----------------:|
 > | **📏 Ranged 5** | **🎯 One of the detective's minions** |
 >
@@ -3666,7 +3666,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > 🏹 **Summon Gorrres (Encounter)**
 >
-> | **Magic, Ranged** | **Main action** |
+> | **Magic, Ranged** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 Special** |
 >
@@ -3755,7 +3755,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🏹 **Necro Beam 2d10 + 2 (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One creature or object** |
 >
@@ -3767,7 +3767,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🏹 **Call Forth (1+ Malice)**
 >
-> | **Magic, Ranged** | **Main action** |
+> | **Magic, Ranged** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 Special** |
 >
@@ -3775,7 +3775,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ❗️ **Corpse Shield**
 >
-> | **—** | **Triggered action** |
+> | **—** | **[Triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
@@ -3830,7 +3830,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🗡 **Fetid Bindings 2d10 + 3 (Signature Ability)**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 One creature or object per minion** |
 >
@@ -3866,7 +3866,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🏹 **Essence Steal 2d10 + 3 (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One creature or object** |
 >
@@ -3880,7 +3880,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🏹 **Call Forth (1+ Malice)**
 >
-> | **Magic, Ranged** | **Main action** |
+> | **Magic, Ranged** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 Special** |
 >
@@ -3888,7 +3888,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ❗️ **Corpse Carry**
 >
-> | **—** | **Triggered action** |
+> | **—** | **[Triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
@@ -3926,7 +3926,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🗡 **Knight Strike 2d10 + 3 (Signature Ability)**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
@@ -3981,7 +3981,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🏹 **Glimpse of the Grave 2d10 + 4 (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One creature or object** |
 >
@@ -3993,7 +3993,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🏹 **Call Forth (1+ Malice)**
 >
-> | **Magic, Ranged** | **Main action** |
+> | **Magic, Ranged** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 Special** |
 >
@@ -4001,7 +4001,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ❗️ **Death Ward (2 Malice)**
 >
-> | **—** | **Triggered action** |
+> | **—** | **[Triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
@@ -4103,7 +4103,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🏹 **Strike for Me (Signature Ability)**
 >
-> | **Magic, Ranged, Strike** | **Main action** |
+> | **Magic, Ranged, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One creature or object** |
 >
@@ -4111,7 +4111,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🏹 **Call Forth (1+ Malice)**
 >
-> | **Magic, Ranged** | **Main action** |
+> | **Magic, Ranged** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 Special** |
 >
@@ -4119,7 +4119,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ❗️ **Death Strikes Back (2 Malice)**
 >
-> | **—** | **Triggered action** |
+> | **—** | **[Triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
@@ -4155,7 +4155,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > 🗡 **Knight Strike 2d10 + 5 (Signature Ability)**
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, Strike, Weapon** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |---------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
@@ -4440,7 +4440,7 @@ With Captain: +2 bonus to speed
 
 > 🏹 **Ringing Strike 2d10 + 2 (Signature Ability)**
 >
-> | **Magic, Melee, Strike** | **Main action** |
+> | **Magic, Melee, Strike** | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |--------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
