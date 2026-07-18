@@ -16520,7 +16520,7 @@ You start off with the [Choreography](scc.v1:mcdm.heroes.v1/feature.ability.trou
 >
 > *Taps, kicks, steps. It's all "[choreography](scc.v1:mcdm.heroes.v1/feature.ability.troubadour.level-1/choreography)."*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -16531,7 +16531,7 @@ You start off with the [Choreography](scc.v1:mcdm.heroes.v1/feature.ability.trou
 >
 > *There once was a man from [Capital](scc.v1:mcdm.heroes.v1/rule.world/capital)...*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -16560,7 +16560,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > *Folks love a good tumble.*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -16576,7 +16576,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > *No, no, no, you lose the audience that way. Try it like this...*
 >
-> | **Area, Magic, Performance** |                    **No action** |
+> | **Area, Magic, Performance** |                    **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|---------------------------------:|
 > | **📏 2 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Each creature in the area** |
 >
@@ -16652,7 +16652,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > *All for thunder motherrr! ♪ Run and hide for coverrr!♪*
 >
-> | **Magic, Performance, [Ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged), [Strike](scc.v1:mcdm.heroes.v1/rule.combat/strike)** |       **No action** |
+> | **Magic, Performance, [Ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged), [Strike](scc.v1:mcdm.heroes.v1/rule.combat/strike)** |       **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |----------------------------------------|--------------------:|
 > | **📏 [Ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) 10**                       | **🎯 One creature** |
 >
@@ -16669,7 +16669,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > *Teeth are bare! ♪ Eyes black! ♪ No escaping the beast!♪*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -17123,7 +17123,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > *Maybe you and I ♪ We can still bring the light!♪*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -17134,7 +17134,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > *And toniiight we can truly say ♪ They will alllways find a way!♪*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -17295,7 +17295,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > *One more, and this time make it interesting.*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -17320,7 +17320,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > *Swordplay so graceful it looks like you all practiced this.*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -17420,7 +17420,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > *The audience is watching, so you'd better give them a show.*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
@@ -17583,7 +17583,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > *Music pours out of your heart, filling the area with the utmost delicacy and without damper.*
 >
-> | **Area, Magic, Performance** |                **No action** |
+> | **Area, Magic, Performance** |                **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|-----------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Each ally in the area** |
 >
@@ -17594,7 +17594,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > *𝅘𝅥𝅮♪Viras, my Viras, will you hold their hands as they cryyy—aaaiigh?♪*
 >
-> | **Area, Magic, Performance** |                         **No action** |
+> | **Area, Magic, Performance** |                         **[No action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
