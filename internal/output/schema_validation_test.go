@@ -15,7 +15,7 @@ import (
 
 var schemaAllowedFields = map[string]map[string]bool{
 	"class": {
-		"name": true, "type": true, "heroic_resource": true,
+		"name": true, "type": true, "scc": true, "heroic_resource": true,
 		"flavor": true, "primary_characteristics": true,
 		"weak_potency": true, "average_potency": true, "strong_potency": true,
 		"starting_stamina": true, "stamina_per_level": true, "recoveries": true,
@@ -23,7 +23,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 		"content": true, "metadata": true,
 	},
 	"kit": {
-		"name": true, "type": true, "kit_type": true,
+		"name": true, "type": true, "scc": true, "kit_type": true,
 		"flavor": true, "armor": true, "weapon": true, "equipment_text": true,
 		"stamina_bonus": true, "speed_bonus": true, "stability_bonus": true,
 		"melee_damage_bonus": true, "ranged_damage_bonus": true,
@@ -32,37 +32,37 @@ var schemaAllowedFields = map[string]map[string]bool{
 		"content": true, "metadata": true,
 	},
 	"perk": {
-		"name": true, "type": true, "prerequisites": true, "perk_group": true,
+		"name": true, "type": true, "scc": true, "prerequisites": true, "perk_group": true,
 		"flavor": true,
 		"content": true, "metadata": true,
 	},
 	"career": {
-		"name": true, "type": true, "skills": true, "skill_group": true,
+		"name": true, "type": true, "scc": true, "skills": true, "skill_group": true,
 		"language": true, "renown": true, "wealth": true,
 		"project_points": true, "perk": true, "flavor": true,
 		"inciting_incidents": true,
 		"content": true, "metadata": true,
 	},
 	"ancestry": {
-		"name": true, "type": true,
+		"name": true, "type": true, "scc": true,
 		"flavor": true, "signature_trait_name": true, "signature_trait_description": true,
 		"ancestry_points": true, "purchased_traits": true,
 		"content": true, "metadata": true,
 	},
 	"culture": {
-		"name": true, "type": true, "environment": true,
+		"name": true, "type": true, "scc": true, "environment": true,
 		"organization": true, "upbringing": true, "flavor": true,
 		"culture_benefit_type": true, "skill_options": true, "quick_build_skill": true,
 		"language": true,
 		"content": true, "metadata": true,
 	},
 	"title": {
-		"name": true, "type": true, "echelon": true, "benefits": true,
+		"name": true, "type": true, "scc": true, "echelon": true, "benefits": true,
 		"flavor": true, "prerequisite": true, "effect": true,
 		"content": true, "metadata": true,
 	},
 	"treasure": {
-		"name": true, "type": true, "treasure_type": true,
+		"name": true, "type": true, "scc": true, "treasure_type": true,
 		"level": true, "echelon": true, "rarity": true,
 		"flavor": true, "keywords": true, "item_prerequisite": true,
 		"project_source": true, "project_roll_characteristic": true,
@@ -70,11 +70,11 @@ var schemaAllowedFields = map[string]map[string]bool{
 		"content": true, "metadata": true,
 	},
 	"condition": {
-		"name": true, "type": true,
+		"name": true, "type": true, "scc": true,
 		"content": true, "metadata": true,
 	},
 	"complication": {
-		"name": true, "type": true,
+		"name": true, "type": true, "scc": true,
 		"flavor": true, "benefit": true, "drawback": true,
 		"content": true, "metadata": true,
 	},
