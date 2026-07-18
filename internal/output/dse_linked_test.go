@@ -123,6 +123,78 @@ func TestDSELinkedGenerator_WriteSection_Condition(t *testing.T) {
 	}
 }
 
+func TestDSELinkedGenerator_WriteSection_KitSignatureAbility(t *testing.T) {
+	dir := t.TempDir()
+
+	registry := scc.NewRegistry()
+	registry.Add("mcdm.heroes.v1/condition/dazed")
+	resolver := scc.NewResolver(registry, ".md")
+
+	gen := &DSELinkedGenerator{
+		BaseDir:  dir,
+		Resolver: resolver,
+		LinkMode: scc.LinkAll,
+	}
+
+	sigAbility := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":        "Devastating Rush",
+			"type":        "ability",
+			"subtype":     "signature",
+			"action_type": "Main action",
+			"effect":      "The target is [Dazed](scc:mcdm.heroes.v1/condition/dazed).",
+		},
+		Body:     "You can move up to 3 squares straight toward the target.",
+		TypePath: []string{"kit"},
+		ItemID:   "devastating-rush",
+	}
+
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name": "Panther",
+			"type": "kit",
+			"scc":  "mcdm.heroes.v1/kit/panther",
+		},
+		Body:     "If you want a good balance of protection, speed, and damage, the Panther kit is for you.",
+		TypePath: []string{"kit"},
+		ItemID:   "panther",
+		Children: map[string]*content.ParsedContent{
+			"signature_ability": sigAbility,
+		},
+	}
+
+	err := gen.WriteSection("mcdm.heroes.v1/kit/panther", parsed)
+	if err != nil {
+		t.Fatalf("WriteSection failed: %v", err)
+	}
+
+	data, err := os.ReadFile(filepath.Join(dir, "kit", "panther.md"))
+	if err != nil {
+		t.Fatalf("failed to read output: %v", err)
+	}
+
+	out := string(data)
+
+	// The kit's signature ability must still emit its ds-feature fence in the
+	// -linked variant, exactly as md-dse does — Children must not be dropped.
+	if got := strings.Count(out, "```ds-feature"); got != 1 {
+		t.Fatalf("expected exactly one ds-feature codeblock, got %d\n%s", got, out)
+	}
+	if !strings.Contains(out, "name: Devastating Rush") {
+		t.Error("expected signature ability name in ds-feature codeblock")
+	}
+
+	// The fence's own content carries scc: links too, so it must go through
+	// the same link resolution as the rest of the -linked body: the raw
+	// scc: protocol reference must be rewritten to a resolved relative path.
+	if strings.Contains(out, "scc:mcdm.heroes.v1/condition/dazed") {
+		t.Error("expected scc: link inside ds-feature fence to be resolved, found raw scc: reference")
+	}
+	if !strings.Contains(out, "condition/dazed.md") {
+		t.Error("expected resolved relative link to condition/dazed.md inside ds-feature fence")
+	}
+}
+
 func TestDSELinkedGenerator_NilAndEmpty(t *testing.T) {
 	registry := scc.NewRegistry()
 	resolver := scc.NewResolver(registry, ".md")
