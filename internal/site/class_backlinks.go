@@ -77,6 +77,25 @@ func firstCardMarker(page string) int {
 	}
 }
 
+// firstCardOpenEnd returns the index immediately after the closing `>` of the
+// earliest `.sb-wrap`/`.fb-wrap` card's opening tag in page, or -1 if neither
+// is present (e.g. an index page). Content inserted at this index becomes the
+// card div's first child rather than a preceding page-level sibling — the
+// distinction matters because v2's CSS only hides the MkDocs-injected H1+hr
+// chrome when h1 + hr + the card div are immediately adjacent siblings; a
+// preceding sibling paragraph breaks that adjacency and un-hides the chrome.
+func firstCardOpenEnd(page string) int {
+	i := firstCardMarker(page)
+	if i < 0 {
+		return -1
+	}
+	end := strings.IndexByte(page[i:], '>')
+	if end < 0 {
+		return -1
+	}
+	return i + end + 1
+}
+
 // augmentClassOwnedBackLinks adds a "Companion/fixture of <class>" back-link to
 // every bestiary page owned by a hero class — beastheart companions
 // (sectionDir/monster/companion/beastheart/*) and summoner fixtures
@@ -85,7 +104,10 @@ func firstCardMarker(page string) int {
 // page's `scc` frontmatter via owningClass; no per-entity data edits. Mirrors
 // augmentRivalSummonerPages/augmentSummonerRetainerPages: runs after pages are
 // written, is idempotent (guards on an existing `sb-backlink`), and is a no-op
-// when the owning subtree is absent. Returns the number of pages modified.
+// when the owning subtree is absent. The back-link is inserted as the card
+// div's first child (via firstCardOpenEnd), not a preceding page-level
+// sibling — see firstCardOpenEnd for why that distinction matters. Returns
+// the number of pages modified.
 func augmentClassOwnedBackLinks(sectionDir string) (int, []string) {
 	count := 0
 	var errs []string
@@ -111,7 +133,7 @@ func augmentClassOwnedBackLinks(sectionDir string) (int, []string) {
 			if strings.Contains(page, "sb-backlink") {
 				return nil // idempotent
 			}
-			i := firstCardMarker(page)
+			i := firstCardOpenEnd(page)
 			if i < 0 {
 				return nil // not a rendered card page
 			}
@@ -119,7 +141,7 @@ func augmentClassOwnedBackLinks(sectionDir string) (int, []string) {
 			href := classBackLinkHref(sectionDir, path, slug)
 			backlink := fmt.Sprintf(`<p class="sb-backlink">A <a href="%s">%s</a> %s</p>`,
 				html.EscapeString(href), html.EscapeString(className), noun)
-			page = page[:i] + backlink + "\n\n" + page[i:]
+			page = page[:i] + backlink + page[i:]
 			if err := os.WriteFile(path, []byte(page), 0644); err != nil {
 				errs = append(errs, fmt.Sprintf("write %s: %v", path, err))
 			} else {

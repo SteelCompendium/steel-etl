@@ -142,16 +142,31 @@ func TestAugmentClassOwnedBackLinks(t *testing.T) {
 			t.Errorf("wolf.md missing %q:\n%s", want, wolf)
 		}
 	}
-	if strings.Index(wolf, "sb-backlink") > strings.Index(wolf, `<div class="sb-wrap"`) {
-		t.Errorf("backlink should precede the sb-wrap card:\n%s", wolf)
+	// The backlink must be the sb-wrap div's first child — contiguous with its
+	// opening tag, not a preceding page-level sibling (that breaks the
+	// h1+hr+card adjacency v2's CSS relies on to hide duplicate title chrome).
+	if i := strings.Index(wolf, `<div class="sb-wrap"`); i < 0 {
+		t.Fatalf("wolf.md missing sb-wrap card:\n%s", wolf)
+	} else {
+		tagEnd := strings.IndexByte(wolf[i:], '>') + i + 1
+		wantPrefix := wolf[i:tagEnd] + `<p class="sb-backlink">`
+		if !strings.HasPrefix(wolf[i:], wantPrefix) {
+			t.Errorf("backlink must be contiguous with the sb-wrap card's opening tag (first child), got:\n%s", wolf)
+		}
 	}
 
 	wolfAdv := readFile(filepath.Join(companionDir, "wolf-advancement-features.md"))
 	if !strings.Contains(wolfAdv, `href="../../../../class/beastheart/"`) {
 		t.Errorf("wolf-advancement-features.md missing beastheart backlink:\n%s", wolfAdv)
 	}
-	if strings.Index(wolfAdv, "sb-backlink") > strings.Index(wolfAdv, `<div class="fb-wrap"`) {
-		t.Errorf("backlink should precede the fb-wrap card:\n%s", wolfAdv)
+	if i := strings.Index(wolfAdv, `<div class="fb-wrap"`); i < 0 {
+		t.Fatalf("wolf-advancement-features.md missing fb-wrap card:\n%s", wolfAdv)
+	} else {
+		tagEnd := strings.IndexByte(wolfAdv[i:], '>') + i + 1
+		wantPrefix := wolfAdv[i:tagEnd] + `<p class="sb-backlink">`
+		if !strings.HasPrefix(wolfAdv[i:], wantPrefix) {
+			t.Errorf("backlink must be contiguous with the fb-wrap card's opening tag (first child), got:\n%s", wolfAdv)
+		}
 	}
 
 	boil := readFile(filepath.Join(fixtureDir, "the-boil.md"))
