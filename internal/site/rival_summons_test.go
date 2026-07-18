@@ -129,9 +129,17 @@ func TestAugmentRivalSummonerPages(t *testing.T) {
 	if !strings.Contains(sk, "Summoned by") {
 		t.Errorf("skeleton missing back-link label:\n%s", sk)
 	}
-	// Back-link sits before the statblock card.
-	if strings.Index(sk, "sb-backlink") > strings.Index(sk, `<div class="sb-wrap"`) {
-		t.Errorf("back-link should precede the sb-wrap card:\n%s", sk)
+	// Back-link must be the sb-wrap div's first child — contiguous with its
+	// opening tag, not a preceding page-level sibling (that breaks the
+	// h1+hr+card adjacency v2's CSS relies on to hide duplicate title chrome).
+	if i := strings.Index(sk, `<div class="sb-wrap"`); i < 0 {
+		t.Fatalf("skeleton.md missing sb-wrap card:\n%s", sk)
+	} else {
+		tagEnd := strings.IndexByte(sk[i:], '>') + i + 1
+		wantPrefix := sk[i:tagEnd] + `<p class="sb-backlink">`
+		if !strings.HasPrefix(sk[i:], wantPrefix) {
+			t.Errorf("back-link must be contiguous with the sb-wrap card's opening tag (first child), got:\n%s", sk)
+		}
 	}
 
 	// Idempotent: a second run adds nothing.

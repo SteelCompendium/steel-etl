@@ -122,7 +122,11 @@ func augmentRivalSummonerPages(sectionDir string) (int, []string) {
 			}
 		}
 
-		// Back: prepend a back-link to each summon page (before the .sb-wrap card).
+		// Back: insert a back-link as the first child of each summon page's
+		// .sb-wrap card. Must be a first child, not a preceding page-level
+		// sibling — see firstCardOpenEnd (class_backlinks.go) for why: a
+		// preceding sibling breaks the h1+hr+card adjacency v2's CSS depends
+		// on to hide the duplicate MkDocs title chrome.
 		backlink := fmt.Sprintf(`<p class="sb-backlink">Summoned by <a href="../../../%s/">%s</a></p>`,
 			rivalBase, html.EscapeString(rivalName))
 		for _, sf := range summonFiles {
@@ -131,11 +135,11 @@ func augmentRivalSummonerPages(sectionDir string) (int, []string) {
 			if strings.Contains(spage, "sb-backlink") {
 				continue
 			}
-			i := strings.Index(spage, `<div class="sb-wrap"`)
+			i := firstCardOpenEnd(spage)
 			if i < 0 {
 				continue // not a rendered statblock page; nothing to anchor to
 			}
-			spage = spage[:i] + backlink + "\n\n" + spage[i:]
+			spage = spage[:i] + backlink + spage[i:]
 			if err := os.WriteFile(sp, []byte(spage), 0644); err != nil {
 				errs = append(errs, fmt.Sprintf("write %s: %v", sp, err))
 			} else {
