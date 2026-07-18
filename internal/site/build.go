@@ -62,6 +62,14 @@ func Build(cfg *Config) (*BuildResult, error) {
 	// Browse feature references Browse fixture leaves in arbitrary walk order).
 	standalone := standaloneCodeSet(entries)
 
+	// Family Malice bands (FOLLOWUPS #7 piece 1): pre-scan for `kind: malice`
+	// featureblocks and render each into its finished band HTML, keyed by SCC
+	// type-path, BEFORE any entry's raw body is replaced by a card transform
+	// (see buildMaliceBandCache — mirrors standalone's "must be complete first"
+	// reasoning). Spliced into sibling statblocks by augmentMonsterMaliceBands
+	// much later, after embedItemCards (see that pass's own doc comment for why).
+	maliceBands := buildMaliceBandCache(cfg, entries)
+
 	// Map files to sections
 	for _, section := range cfg.Sections {
 		count, errs := buildSection(cfg, section, entries, standalone)
@@ -158,6 +166,24 @@ func Build(cfg *Config) (*BuildResult, error) {
 	for _, s := range genericSections {
 		if _, cErrs := augmentClassOwnedBackLinks(filepath.Join(cfg.DocsDir, s.Name)); len(cErrs) > 0 {
 			result.Errors = append(result.Errors, cErrs...)
+		}
+	}
+
+	// Family Malice bands (FOLLOWUPS #7 piece 1): splice each Monsters-book
+	// statblock's own card with its family's shared Malice band (maliceBands,
+	// precomputed above). Runs AFTER embedItemCards for the same reason as
+	// augmentClassOwnedBackLinks just above, but more acutely: the Read tab's
+	// book-faithful chapter pages (embed_card_sections: [Browse, Read])
+	// separately embed a family's Malice featureblock as its own section
+	// alongside that family's statblocks, so baking the band into the shared
+	// .sb-wrap renderer (reused verbatim by every transclusion) would duplicate
+	// it once per embedded statblock PLUS once standalone per Read chapter.
+	// Running last, and only ever touching a statblock's own canonical Browse
+	// leaf file, means the band appears exactly once — see monster_malice.go's
+	// doc comment for the full reasoning.
+	for _, s := range genericSections {
+		if _, mErrs := augmentMonsterMaliceBands(filepath.Join(cfg.DocsDir, s.Name), maliceBands); len(mErrs) > 0 {
+			result.Errors = append(result.Errors, mErrs...)
 		}
 	}
 
