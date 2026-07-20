@@ -310,7 +310,7 @@ func renderStatblockHead(d sbIsland) string {
 		RoleKey:      d.RoleKey,
 		LeftEyebrow:  hLine(sbEsc(d.KindNoun)),
 		LeftPrimary:  hLine(sbEsc(d.Name)),
-		LeftDeck:     hLine(sbEsc(d.Ancestry)),
+		LeftDeck:     hLine(sbEsc(d.Eyebrow)),
 		RightEyebrow: hChip(level),
 		RightPrimary: hMini(sbEsc(d.Role)),
 		RightDeck:    hChip(ev),

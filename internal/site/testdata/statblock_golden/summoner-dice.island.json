@@ -1,7 +1,7 @@
 {
   "id": "bound-imp",
   "name": "Bound Imp",
-  "ancestry": "Demon",
+  "eyebrow": "Demon",
   "kindNoun": "Monster",
   "level": "1",
   "role": "Support",

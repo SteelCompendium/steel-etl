@@ -103,8 +103,8 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	if isl.Name != "Devil High Judge" {
 		t.Errorf("name = %q", isl.Name)
 	}
-	if isl.Ancestry != "Devil, Infernal" {
-		t.Errorf("ancestry = %q, want %q", isl.Ancestry, "Devil, Infernal")
+	if isl.Eyebrow != "Devil, Infernal" {
+		t.Errorf("eyebrow = %q, want %q", isl.Eyebrow, "Devil, Infernal")
 	}
 	if isl.Role != "Leader" || isl.RoleKey != "leader" {
 		t.Errorf("role/roleKey = %q/%q, want Leader/leader", isl.Role, isl.RoleKey)
@@ -389,15 +389,15 @@ func featureNames(feats []sbFeature) []string {
 
 func TestBuildStatblockIsland_ProvenanceEyebrowOverridesKeywords(t *testing.T) {
 	// A rival summoner minion: keywords say "—", but the scc carries echelon +
-	// rival context, so the eyebrow (Ancestry) must be the derived provenance.
+	// rival context, so the Eyebrow field must be the derived provenance.
 	fm := "name: Zombie Titan\n" +
 		"organization: Minion\n" +
 		"role: Defender\n" +
 		"keywords:\n    - —\n" +
 		"scc: mcdm.summoner.v1/monster.rival.4th-echelon.summoner.minion/zombie-titan\n"
 	got := buildStatblockIsland(fm, "")
-	if got.Ancestry != "Rival Summoner Summon · Echelon 4" {
-		t.Errorf("Ancestry = %q, want %q", got.Ancestry, "Rival Summoner Summon · Echelon 4")
+	if got.Eyebrow != "Rival Summoner Summon · Echelon 4" {
+		t.Errorf("Eyebrow = %q, want %q", got.Eyebrow, "Rival Summoner Summon · Echelon 4")
 	}
 }
 
@@ -412,8 +412,8 @@ func TestBuildStatblockIsland_ElementalDomainsAppendedToEyebrow(t *testing.T) {
 		"keywords:\n    - Elemental (Air)\n    - Elemental (Earth)\n" +
 		"scc: mcdm.summoner.v1/monster.minion.summoner.elemental.statblock/desolation-of-sand\n"
 	got := buildStatblockIsland(fm, "")
-	if got.Ancestry != "Summoner Minion · Elemental (Air, Earth)" {
-		t.Errorf("Ancestry = %q, want %q", got.Ancestry, "Summoner Minion · Elemental (Air, Earth)")
+	if got.Eyebrow != "Summoner Minion · Elemental (Air, Earth)" {
+		t.Errorf("Eyebrow = %q, want %q", got.Eyebrow, "Summoner Minion · Elemental (Air, Earth)")
 	}
 }
 
@@ -447,8 +447,8 @@ func TestBuildStatblockIsland_NonSummonerKeepsKeywords(t *testing.T) {
 		"keywords:\n    - Humanoid\n    - Goblin\n" +
 		"scc: mcdm.monsters.v1/monster.goblins.statblock/goblin-warrior\n"
 	got := buildStatblockIsland(fm, "")
-	if got.Ancestry != "Humanoid, Goblin" {
-		t.Errorf("Ancestry = %q, want %q", got.Ancestry, "Humanoid, Goblin")
+	if got.Eyebrow != "Humanoid, Goblin" {
+		t.Errorf("Eyebrow = %q, want %q", got.Eyebrow, "Humanoid, Goblin")
 	}
 }
 

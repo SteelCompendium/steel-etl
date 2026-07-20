@@ -62,8 +62,8 @@ func TestBuildCompanionStatblockIsland_Panther(t *testing.T) {
 	if d.Name != "Panther" || d.ID != "panther" {
 		t.Errorf("name/id = %q/%q", d.Name, d.ID)
 	}
-	if d.Ancestry != "Animal, Companion" || d.Level != "1" {
-		t.Errorf("ancestry/level = %q/%q", d.Ancestry, d.Level)
+	if d.Eyebrow != "Animal, Companion" || d.Level != "1" {
+		t.Errorf("eyebrow/level = %q/%q", d.Eyebrow, d.Level)
 	}
 	if d.Role != "Companion" || d.RoleKey != "leader" {
 		t.Errorf("role/roleKey = %q/%q, want Companion/leader", d.Role, d.RoleKey)

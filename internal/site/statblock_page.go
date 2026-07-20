@@ -80,7 +80,7 @@ type sbIsland struct {
 	ID              string      `json:"id"`
 	Name            string      `json:"name"`
 	Flavor          string      `json:"flavor,omitempty"`
-	Ancestry        string      `json:"ancestry"`
+	Eyebrow         string      `json:"eyebrow"`
 	KindNoun        string      `json:"kindNoun"`
 	Level           string      `json:"level"`
 	Role            string      `json:"role"`
@@ -276,11 +276,11 @@ func buildStatblockIsland(fm, body string) sbIsland {
 	// head still reads like the sourcebook ("Summoner Minion · Elemental (Air,
 	// Earth)"). Only summoner elementals carry domains, so the first "(" is theirs.
 	faithful := collapseKeywords(parseFrontmatterList(fm, "keywords"))
-	ancestry := faithful
+	eyebrow := faithful
 	if eb := summonerProvenanceEyebrow(parseFrontmatterField(fm, "scc")); eb != "" {
-		ancestry = eb
+		eyebrow = eb
 		if open := strings.Index(faithful, "("); open >= 0 {
-			ancestry += " " + strings.TrimSpace(faithful[open:])
+			eyebrow += " " + strings.TrimSpace(faithful[open:])
 		}
 	}
 
@@ -288,7 +288,7 @@ func buildStatblockIsland(fm, body string) sbIsland {
 		ID:       slugify(name),
 		Name:     name,
 		Flavor:   strings.TrimSpace(parseFrontmatterField(fm, "flavor")),
-		Ancestry: ancestry,
+		Eyebrow:  eyebrow,
 		KindNoun: statblockKindNoun(parseFrontmatterField(fm, "scc")),
 		Level:    strings.TrimSpace(parseFrontmatterField(fm, "level")),
 		Role:     roleDisplay,

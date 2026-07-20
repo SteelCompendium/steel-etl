@@ -249,7 +249,7 @@ func TestRenderStatblockHead_OmitsEmptyEV(t *testing.T) {
 
 func TestRenderStatblockHead_SixSlot(t *testing.T) {
 	d := sbIsland{
-		KindNoun: "Monster", Name: "Goblin Cutter", Ancestry: "Goblin, Humanoid",
+		KindNoun: "Monster", Name: "Goblin Cutter", Eyebrow: "Goblin, Humanoid",
 		Level: "1", Role: "Minion Harrier", RoleKey: "harrier", EV: "4",
 	}
 	got := renderStatblockHead(d)

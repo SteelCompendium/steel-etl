@@ -112,7 +112,7 @@ func buildCompanionStatblockIsland(fm, baseBody string) sbIsland {
 	return sbIsland{
 		ID:       slugify(name),
 		Name:     name,
-		Ancestry: g.keywords,
+		Eyebrow:  g.keywords,
 		Level:    level,
 		Role:     "Companion",
 		RoleKey:  "leader",
