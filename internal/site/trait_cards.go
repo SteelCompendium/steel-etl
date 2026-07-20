@@ -36,6 +36,9 @@ var (
 	traitItalicRe = regexp.MustCompile(`\*([^*\n]+)\*`)
 	// a markdown table's header-separator row: only | : - and spaces
 	tableSepRe = regexp.MustCompile(`^[|:\- ]+$`)
+	// a <br> escaped by html.EscapeString — the one inline HTML tag body prose
+	// legitimately carries (value-over-label statblock grid cells)
+	escapedBrRe = regexp.MustCompile(`(?i)&lt;br\s*/?&gt;`)
 )
 
 // traitInline renders the inline markdown trait prose carries — **bold**,
@@ -43,6 +46,7 @@ var (
 // ability card's richInline deliberately omits italics, so traits get their own).
 func traitInline(s string) string {
 	s = html.EscapeString(s)
+	s = escapedBrRe.ReplaceAllString(s, "<br>")
 	s = mdBoldRe.ReplaceAllString(s, "<b>$1</b>")
 	s = traitItalicRe.ReplaceAllString(s, "<em>$1</em>")
 	s = mdLinkRe.ReplaceAllStringFunc(s, func(m string) string {

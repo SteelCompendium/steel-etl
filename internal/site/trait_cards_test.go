@@ -457,6 +457,33 @@ Choose your domain feature.
 	}
 }
 
+// A literal <br> in trait prose or a table cell is real markup (value-over-label
+// statblock grids embedded in feature bodies, e.g. Summon Source of Earth), not
+// text — it must survive as a line break, never escape to visible "&lt;br&gt;".
+func TestRenderTraitCard_BrTagSurvivesEscaping(t *testing.T) {
+	fm := "class: elementalist\nname: Summon Source of Earth\ntype: feature"
+	body := `
+The source's statistics.
+
+| [Size](../size.md) | Speed |
+|--------------------|-------|
+| **2**<br>[Size](../size.md) | **6**<br/>Speed |
+`
+	got := renderTraitCard(fm, body)
+	if strings.Contains(got, "&lt;br") {
+		t.Errorf("<br> must not escape to visible text\n%s", got)
+	}
+	wants := []string{
+		`<td><b>2</b><br><a href=`,
+		`<td><b>6</b><br>Speed</td>`,
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("br cell missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+}
+
 // The level chip (right-eyebrow) falls back to a `level-N` segment in the scc when
 // frontmatter has no level (beastheart traits), and is omitted when none exists.
 func TestTraitCard_LevelFromSCCFallback(t *testing.T) {
