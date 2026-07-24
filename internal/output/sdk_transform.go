@@ -155,9 +155,16 @@ func transformKit(sccCode string, parsed *content.ParsedContent) map[string]any 
 
 // buildAbilityEffects constructs the effects[] array from ability frontmatter fields.
 func buildAbilityEffects(fm map[string]any) []map[string]any {
-	var effects []map[string]any
+	// The parser emits a complete, document-ordered fm["effects"] list — the
+	// power-roll entry plus every named effect, each already shaped to the SDK
+	// schema ({roll,…} / {cost,…} / {name,…}). Use it verbatim; do not reorder.
+	if list, ok := fm["effects"].([]map[string]any); ok && len(list) > 0 {
+		return list
+	}
 
-	// Power roll effect
+	// Legacy fallback (transform-only unit tests that set the singular fields):
+	// synthesize from power_roll / effect / spend, leading with the roll.
+	var effects []map[string]any
 	if char, ok := fm["power_roll_characteristic"].(string); ok && char != "" {
 		rollEffect := map[string]any{
 			"roll": "Power Roll + " + char,
@@ -173,19 +180,14 @@ func buildAbilityEffects(fm map[string]any) []map[string]any {
 		}
 		effects = append(effects, rollEffect)
 	}
-
-	// Effect entry
 	if v, ok := fm["effect"].(string); ok && v != "" {
 		effects = append(effects, map[string]any{
 			"name":   "Effect",
 			"effect": v,
 		})
 	}
-
-	// Spend entry: stored as "cost_text: effect_text"
 	if v, ok := fm["spend"].(string); ok && v != "" {
-		spendEffect := parseSpendField(v)
-		effects = append(effects, spendEffect)
+		effects = append(effects, parseSpendField(v))
 	}
 
 	// If no effects were built, wrap body as a single effect (schema requires minItems: 1)

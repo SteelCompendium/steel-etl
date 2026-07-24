@@ -175,9 +175,12 @@ var (
 	// — scc: URLs contain ":" but never ":**", so the first ":**" is the real end.
 	powerRollHeaderRe = regexp.MustCompile(`\*\*(?:\[Power Roll\]\([^)]*\)|Power Roll)\s*\+\s*(.+?):\*\*`)
 	tierRe            = regexp.MustCompile(`\*\*([^*]+):\*\*\s*(.+)`)
-	effectRe          = regexp.MustCompile(`\*\*Effect:\*\*\s*(.+)`)
-	spendRe           = regexp.MustCompile(`\*\*Spend\s+(.+?):\*\*\s*(.+)`)
 	triggerRe         = regexp.MustCompile(`\*\*Trigger:\*\*\s*(.+)`)
+	// A standalone named-effect line: "**<Label>:** <text>" at the start of a
+	// body line. <Label> is any bold label (Effect, Spend N <Resource>,
+	// Persistent N, Strained, Special, …) — the label is non-greedy up to the
+	// first ":**", so a colon inside the effect text doesn't truncate it.
+	namedEffectRe = regexp.MustCompile(`^\*\*([^*]+?):\*\*\s*(.+)$`)
 )
 
 // extractAbilityFields parses the body text to extract structured fields.
@@ -202,25 +205,14 @@ func extractAbilityFields(body string, fm map[string]any) {
 	// Extract power roll
 	extractPowerRoll(lines, fm)
 
-	// Extract effect
-	if _, exists := fm["effect"]; !exists {
-		for _, line := range lines {
-			matches := effectRe.FindStringSubmatch(strings.TrimSpace(line))
-			if matches != nil {
-				fm["effect"] = strings.TrimSpace(matches[1])
-				break
-			}
-		}
-	}
-
-	// Extract spend
-	if _, exists := fm["spend"]; !exists {
-		for _, line := range lines {
-			matches := spendRe.FindStringSubmatch(strings.TrimSpace(line))
-			if matches != nil {
-				fm["spend"] = strings.TrimSpace(matches[1]) + ": " + strings.TrimSpace(matches[2])
-				break
-			}
+	// Extract the ordered effects list — the power-roll entry plus every named
+	// effect (Effect, Spend N, Persistent N, Strained, any ability-specific
+	// rider), all in document order. Must run AFTER extractPowerRoll so the
+	// roll's characteristic/tiers are available. The Trigger line is handled
+	// separately as a top-level field, so it is excluded here.
+	if _, exists := fm["effects"]; !exists {
+		if ordered := extractOrderedEffects(lines, fm); len(ordered) > 0 {
+			fm["effects"] = ordered
 		}
 	}
 
@@ -234,6 +226,77 @@ func extractAbilityFields(body string, fm map[string]any) {
 			}
 		}
 	}
+}
+
+// extractOrderedEffects walks the body and builds the complete effects list in
+// document order: the power-roll entry is emitted at the position where its
+// header appears, and every standalone named-effect line ("**<Label>:** <text>")
+// is emitted where it appears. Each entry is shaped to match the SDK effect
+// schema: the power roll becomes {roll, tier1..3}; a "Spend N <Resource>" label
+// becomes {cost, effect}; any other label becomes {name, effect}. The Trigger
+// line is surfaced separately as a top-level field and is skipped here.
+//
+// Preserving position matters: some abilities (e.g. Instantaneous Excavation)
+// state an Effect before the power roll, so the array must be [Effect, roll],
+// not [roll, Effect]. This also keeps multiple riders of the same kind (two
+// "Spend X" lines) and arbitrary labels (Persistent, Strained, Special, …) that
+// the older single-value effect/spend extraction dropped.
+func extractOrderedEffects(lines []string, fm map[string]any) []map[string]any {
+	var effects []map[string]any
+	rollEmitted := false
+	for _, line := range lines {
+		trimmed := strings.TrimSpace(line)
+
+		// Power-roll header at the start of the line: emit the roll entry here,
+		// once, from the tiers extractPowerRoll already stored on fm.
+		if !rollEmitted {
+			if loc := powerRollHeaderRe.FindStringIndex(trimmed); loc != nil && loc[0] == 0 {
+				if roll := rollEffectEntry(fm); roll != nil {
+					effects = append(effects, roll)
+					rollEmitted = true
+				}
+				continue
+			}
+		}
+
+		matches := namedEffectRe.FindStringSubmatch(trimmed)
+		if matches == nil {
+			continue
+		}
+		label := strings.TrimSpace(matches[1])
+		text := strings.TrimSpace(matches[2])
+		if label == "Trigger" {
+			continue // surfaced as the top-level `trigger` field
+		}
+		entry := map[string]any{"effect": text}
+		if strings.HasPrefix(label, "Spend ") {
+			entry["cost"] = label
+		} else {
+			entry["name"] = label
+		}
+		effects = append(effects, entry)
+	}
+	return effects
+}
+
+// rollEffectEntry builds the {roll, tier1..3} effect entry from the power-roll
+// fields extractPowerRoll stored on fm, or nil if there is no power roll.
+func rollEffectEntry(fm map[string]any) map[string]any {
+	char, ok := fm["power_roll_characteristic"].(string)
+	if !ok || char == "" {
+		return nil
+	}
+	entry := map[string]any{"roll": "Power Roll + " + char}
+	if v, ok := fm["tier1"].(string); ok {
+		entry["tier1"] = v
+	}
+	if v, ok := fm["tier2"].(string); ok {
+		entry["tier2"] = v
+	}
+	if v, ok := fm["tier3"].(string); ok {
+		entry["tier3"] = v
+	}
+	return entry
 }
 
 // extractAbilityTable parses the 2x2 keyword/action/distance/target table.

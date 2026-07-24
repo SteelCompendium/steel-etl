@@ -290,8 +290,15 @@ func TestAbilityParserBasic(t *testing.T) {
 	if fm["tier3"] != "10 + M damage; push 3" {
 		t.Errorf("tier3: got %v", fm["tier3"])
 	}
-	if fm["effect"] != "You can shift 1 after this attack." {
-		t.Errorf("effect: got %v", fm["effect"])
+	effects, ok := fm["effects"].([]map[string]any)
+	if !ok || len(effects) != 2 {
+		t.Fatalf("effects: expected 2 entries (roll then Effect), got %v", fm["effects"])
+	}
+	if effects[0]["roll"] != "Power Roll + Might" {
+		t.Errorf("effects[0] should be the power roll, got %v", effects[0])
+	}
+	if effects[1]["name"] != "Effect" || effects[1]["effect"] != "You can shift 1 after this attack." {
+		t.Errorf("effects[1]: got %v", effects[1])
 	}
 	if fm["class"] != "fury" {
 		t.Errorf("class: got %v", fm["class"])

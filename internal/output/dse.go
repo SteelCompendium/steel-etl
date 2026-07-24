@@ -233,34 +233,35 @@ func buildDSDataBlock(lang string, obj map[string]any) (string, error) {
 
 // buildEffects extracts the effects list from parsed frontmatter fields.
 func buildEffects(parsed *content.ParsedContent) []map[string]any {
-	var effects []map[string]any
+	fm := parsed.Frontmatter
 
-	// Add main effect if present
-	if effect, ok := parsed.Frontmatter["effect"].(string); ok && effect != "" {
-		effects = append(effects, map[string]any{"effect": effect})
+	// The parser emits a complete, document-ordered fm["effects"] list (power-roll
+	// entry plus every named effect). Use it verbatim; do not reorder.
+	if list, ok := fm["effects"].([]map[string]any); ok && len(list) > 0 {
+		return list
 	}
 
-	// Add power roll if present
-	if char, ok := parsed.Frontmatter["power_roll_characteristic"].(string); ok && char != "" {
+	// Legacy fallback (transform-only unit tests): synthesize from the singular
+	// power_roll / effect / spend fields, leading with the roll.
+	var effects []map[string]any
+	if char, ok := fm["power_roll_characteristic"].(string); ok && char != "" {
 		pr := map[string]any{"roll": "Power Roll + " + char}
-		if t1, ok := parsed.Frontmatter["tier1"].(string); ok {
+		if t1, ok := fm["tier1"].(string); ok {
 			pr["tier1"] = t1
 		}
-		if t2, ok := parsed.Frontmatter["tier2"].(string); ok {
+		if t2, ok := fm["tier2"].(string); ok {
 			pr["tier2"] = t2
 		}
-		if t3, ok := parsed.Frontmatter["tier3"].(string); ok {
+		if t3, ok := fm["tier3"].(string); ok {
 			pr["tier3"] = t3
 		}
 		effects = append(effects, pr)
 	}
-
-	// Add spend effect if present
-	if spend, ok := parsed.Frontmatter["spend"].(string); ok && spend != "" {
-		effects = append(effects, map[string]any{
-			"name":   "Spend",
-			"effect": spend,
-		})
+	if effect, ok := fm["effect"].(string); ok && effect != "" {
+		effects = append(effects, map[string]any{"effect": effect})
+	}
+	if spend, ok := fm["spend"].(string); ok && spend != "" {
+		effects = append(effects, map[string]any{"name": "Spend", "effect": spend})
 	}
 
 	// If no structured effects were extracted, use the body as a single effect

@@ -11,20 +11,20 @@ import (
 func TestTransformAbility_BasicPowerRoll(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{
-			"name":                     "Brutal Slam",
-			"type":                     "ability",
-			"subtype":                  "signature",
-			"action_type":              "Main action",
-			"keywords":                 []string{"Melee", "Strike", "Weapon"},
-			"distance":                 "Melee 1",
-			"target":                   "One creature or object",
-			"flavor":                   "The heavy impact of your weapon attacks drives your foes ever back.",
+			"name":                      "Brutal Slam",
+			"type":                      "ability",
+			"subtype":                   "signature",
+			"action_type":               "Main action",
+			"keywords":                  []string{"Melee", "Strike", "Weapon"},
+			"distance":                  "Melee 1",
+			"target":                    "One creature or object",
+			"flavor":                    "The heavy impact of your weapon attacks drives your foes ever back.",
 			"power_roll_characteristic": "Might",
-			"tier1":                    "3 + M damage; push 1",
-			"tier2":                    "6 + M damage; push 2",
-			"tier3":                    "9 + M damage; push 4",
-			"class":                    "fury",
-			"level":                    "1",
+			"tier1":                     "3 + M damage; push 1",
+			"tier2":                     "6 + M damage; push 2",
+			"tier3":                     "9 + M damage; push 4",
+			"class":                     "fury",
+			"level":                     "1",
 		},
 		Body:     "Full markdown body here.",
 		TypePath: []string{"feature", "ability", "fury", "level-1"},
@@ -108,14 +108,14 @@ func TestTransformAbility_BasicPowerRoll(t *testing.T) {
 func TestTransformAbility_WithEffectAndSpend(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{
-			"name":                     "Hit and Run",
-			"type":                     "ability",
-			"action_type":              "Main action",
+			"name":                      "Hit and Run",
+			"type":                      "ability",
+			"action_type":               "Main action",
 			"power_roll_characteristic": "Might",
-			"tier1":                    "2 + M damage",
-			"tier2":                    "5 + M damage",
-			"tier3":                    "7 + M damage",
-			"effect":                   "You can shift 1 square.",
+			"tier1":                     "2 + M damage",
+			"tier2":                     "5 + M damage",
+			"tier3":                     "7 + M damage",
+			"effect":                    "You can shift 1 square.",
 		},
 		Body:     "body",
 		TypePath: []string{"feature", "ability", "fury", "level-1"},
@@ -140,10 +140,10 @@ func TestTransformAbility_WithEffectAndSpend(t *testing.T) {
 func TestTransformAbility_WithSpend(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{
-			"name":  "My Life for Yours",
-			"type":  "ability",
+			"name":   "My Life for Yours",
+			"type":   "ability",
 			"effect": "You spend a Recovery and the target regains Stamina.",
-			"spend": "1 Wrath: You can end one effect on the target.",
+			"spend":  "1 Wrath: You can end one effect on the target.",
 		},
 		Body:   "body",
 		ItemID: "my-life-for-yours",
@@ -198,6 +198,67 @@ func TestTransformAbility_Trigger(t *testing.T) {
 
 	assertEqual(t, out["usage"], "Triggered")
 	assertEqual(t, out["trigger"], "The target starts their turn.")
+}
+
+// The parser emits a complete, document-ordered fm["effects"] list (roll entry
+// included at its position). The transform must pass it through verbatim.
+func TestTransformAbility_EffectsListVerbatim(t *testing.T) {
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name": "Minor Telekinesis",
+			"type": "ability",
+			// Top-level power-roll fields still exist (cards read them); the roll
+			// is ALSO in the list at its position and must NOT be re-added.
+			"power_roll_characteristic": "Reason",
+			"tier1":                     "a",
+			"effects": []map[string]any{
+				{"roll": "Power Roll + Reason", "tier1": "a"},
+				{"name": "Effect", "effect": "You slide the target."},
+				{"cost": "Spend 2+ Clarity", "effect": "Size increases."},
+				{"cost": "Spend 3 Clarity", "effect": "You can vertical slide the target."},
+			},
+		},
+		Body:   "body",
+		ItemID: "minor-telekinesis",
+	}
+
+	out := TransformToSDKFormat("", parsed)
+	effects := out["effects"].([]map[string]any)
+
+	if len(effects) != 4 {
+		t.Fatalf("expected 4 effects verbatim (roll not duplicated), got %d: %v", len(effects), effects)
+	}
+	assertEqual(t, effects[0]["roll"], "Power Roll + Reason")
+	assertEqual(t, effects[1]["name"], "Effect")
+	assertEqual(t, effects[2]["cost"], "Spend 2+ Clarity")
+	assertEqual(t, effects[3]["cost"], "Spend 3 Clarity")
+}
+
+// When an Effect precedes the power roll in the source, the list carries that
+// order and the transform must preserve it (roll second, not forced first).
+func TestTransformAbility_EffectBeforeRollPreserved(t *testing.T) {
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":                      "Instantaneous Excavation",
+			"type":                      "ability",
+			"power_roll_characteristic": "Reason",
+			"tier1":                     "x",
+			"effects": []map[string]any{
+				{"name": "Effect", "effect": "You open two holes."},
+				{"roll": "Power Roll + Reason", "tier1": "x"},
+			},
+		},
+		Body:   "body",
+		ItemID: "instantaneous-excavation",
+	}
+
+	out := TransformToSDKFormat("", parsed)
+	effects := out["effects"].([]map[string]any)
+	if len(effects) != 2 {
+		t.Fatalf("expected 2 effects (Effect then roll, roll not duplicated), got %d: %v", len(effects), effects)
+	}
+	assertEqual(t, effects[0]["name"], "Effect")
+	assertEqual(t, effects[1]["roll"], "Power Roll + Reason")
 }
 
 func TestTransformFeature_PlainFeature(t *testing.T) {
@@ -442,14 +503,14 @@ func TestTransformKit_WithSignatureAbility(t *testing.T) {
 
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{
-			"name":                "Cloak and Dagger",
-			"type":                "kit",
-			"stamina_bonus":       "+3 per echelon",
-			"speed_bonus":         "+2",
-			"melee_damage_bonus":  "+1/+1/+1",
-			"ranged_damage_bonus": "+1/+1/+1",
+			"name":                  "Cloak and Dagger",
+			"type":                  "kit",
+			"stamina_bonus":         "+3 per echelon",
+			"speed_bonus":           "+2",
+			"melee_damage_bonus":    "+1/+1/+1",
+			"ranged_damage_bonus":   "+1/+1/+1",
 			"ranged_distance_bonus": "+5",
-			"disengage_bonus":     "+1",
+			"disengage_bonus":       "+1",
 		},
 		Body:   "Kit body text.",
 		ItemID: "cloak-and-dagger",
@@ -516,13 +577,13 @@ func TestTransformAbility_JSONSchemaCompliant(t *testing.T) {
 	// Verify the output can be serialized and contains required schema fields
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{
-			"name":                     "Brutal Slam",
-			"type":                     "ability",
-			"action_type":              "Main action",
+			"name":                      "Brutal Slam",
+			"type":                      "ability",
+			"action_type":               "Main action",
 			"power_roll_characteristic": "Might",
-			"tier1":                    "3 + M damage",
-			"tier2":                    "6 + M damage",
-			"tier3":                    "9 + M damage",
+			"tier1":                     "3 + M damage",
+			"tier2":                     "6 + M damage",
+			"tier3":                     "9 + M damage",
 		},
 		Body:   "body",
 		ItemID: "brutal-slam",

@@ -69,8 +69,8 @@ func TestGetStringOr(t *testing.T) {
 	}{
 		{"present", "default", "value"},
 		{"missing", "default", "default"},
-		{"empty", "default", "default"},   // empty string falls through to default
-		{"number", "default", "default"},  // non-string falls through to default
+		{"empty", "default", "default"},  // empty string falls through to default
+		{"number", "default", "default"}, // non-string falls through to default
 	}
 
 	for _, tt := range tests {
@@ -183,16 +183,16 @@ func TestBuildEffects_AllFields(t *testing.T) {
 		t.Fatalf("expected 3 effects (effect + power roll + spend), got %d", len(effects))
 	}
 
-	// First: main effect
-	if effects[0]["effect"] != "Main effect text." {
-		t.Error("expected main effect")
-	}
-	// Second: power roll
-	if effects[1]["roll"] != "Power Roll + Might" {
+	// First: power roll (effects lead with the roll, consistent with the SDK path)
+	if effects[0]["roll"] != "Power Roll + Might" {
 		t.Error("expected power roll")
 	}
-	if effects[1]["tier1"] != "4 damage" {
+	if effects[0]["tier1"] != "4 damage" {
 		t.Error("expected tier1")
+	}
+	// Second: main effect
+	if effects[1]["effect"] != "Main effect text." {
+		t.Error("expected main effect")
 	}
 	// Third: spend
 	if effects[2]["name"] != "Spend" {
