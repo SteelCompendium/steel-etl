@@ -108,17 +108,23 @@ func renderStatblockFeature(f sbFeature) string {
 	fmt.Fprintf(&b, `<article class="sc-ability sb__feat" data-action="%s" data-kind="%s">`, sbEsc(f.Action), sbEsc(f.Kind))
 
 	// head: shared 6-slot header — the little action glyph + name on the left, the
-	// cost as a right-side chip. The action TYPE (usage) is deliberately NOT in the
-	// head; it reads in the keyword/action block below, and the glyph's --act color
-	// already encodes it. No crest shield here (kind/provenance/level are implied by
-	// the parent statblock). The sb__feat-head wrapper is kept for the flat CSS hook.
+	// cost as a right-side chip and the action-type label as the bottom-right deck
+	// chip (the same slot class ability heads use, renderAbilityCard). The label is
+	// skipped when the cost chip already names the type ("Villain Action 1",
+	// "3 Malice") so the rail never says the same thing twice. No crest shield here
+	// (kind/provenance/level are implied by the parent statblock). The sb__feat-head
+	// wrapper is kept for the flat CSS hook.
 	icon := `<span class="sb__feat-icon"><span class="sb__feat-glyph">` + a.glyph + `</span></span>`
-	b.WriteString(`<div class="sb__feat-head">`)
-	b.WriteString(renderCardHead(cardHeadSlots{
+	slots := cardHeadSlots{
 		Crest:        icon,
 		LeftPrimary:  hLine(richSb(f.Name)),
 		RightPrimary: hChip(richSb(f.Cost)),
-	}))
+	}
+	if !strings.Contains(strings.ToLower(linkText(f.Cost)), strings.ToLower(a.label)) {
+		slots.RightDeck = hChip(sbEsc(a.label))
+	}
+	b.WriteString(`<div class="sb__feat-head">`)
+	b.WriteString(renderCardHead(slots))
 	b.WriteString(`</div>`)
 
 	// passive / malice → plain body paragraph, done.
