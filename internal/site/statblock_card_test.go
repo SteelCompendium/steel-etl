@@ -289,8 +289,6 @@ func TestStatblockFeature_SixSlotHead(t *testing.T) {
 		`sc-head__left-primary sc-head__slot--line">Cleave</h3>`,
 		// cost rides the right primary lane as a chip (not the mini-title)
 		`sc-head__right-primary sc-head__slot--chip">Signature</div>`,
-		// action-type label rides the right deck as a chip, like class abilities
-		`sc-head__right-deck sc-head__slot--chip">Main Action</div>`,
 		// the little action glyph, no decorative crest shield
 		`<span class="sb__feat-icon"><span class="sb__feat-glyph">`,
 	} {
@@ -298,6 +296,8 @@ func TestStatblockFeature_SixSlotHead(t *testing.T) {
 			t.Errorf("missing %q in:\n%s", want, got)
 		}
 	}
+	// scope the negative checks to the head; usage (action type) legitimately
+	// still renders in the body keyword/action block below.
 	head := got
 	if i := strings.Index(got, "</header>"); i >= 0 {
 		head = got[:i]
@@ -305,40 +305,12 @@ func TestStatblockFeature_SixSlotHead(t *testing.T) {
 	for _, notWant := range []string{
 		"sc-crest",              // crest shield retired on sub-features
 		"sc-head__slot--mini",   // cost is a chip now, not the big mini-title
+		"Main Action",           // usage is not in the head (it reads in sb__ku below)
 		"sc-head__left-eyebrow", // sub-feature must not emit eyebrow lanes
 		"sc-head__right-eyebrow",
 	} {
 		if strings.Contains(head, notWant) {
 			t.Errorf("head should not contain %q:\n%s", notWant, head)
-		}
-	}
-}
-
-// The right-deck action label is skipped when the cost chip already names the
-// type — "Villain Action 1" / "3 Malice" must not repeat as a second chip.
-func TestStatblockFeature_ActionLabelDedup(t *testing.T) {
-	cases := []struct {
-		name      string
-		f         sbFeature
-		wantLabel string // "" = no right-deck chip at all
-	}{
-		{"trait", sbFeature{Name: "Solitary Predator", Action: "passive", Kind: "passive", Body: "Text."}, "Trait"},
-		{"triggered", sbFeature{Name: "Skewered", Action: "triggered", Kind: "ability"}, "Triggered Action"},
-		{"villain cost", sbFeature{Name: "Advance!", Action: "villain", Kind: "villain", Cost: "Villain Action 1"}, ""},
-		{"villain linked cost", sbFeature{Name: "Advance!", Action: "villain", Kind: "villain", Cost: "[Villain Action](scc:x) 1"}, ""},
-		{"malice cost", sbFeature{Name: "Goblin Mode", Action: "malice", Kind: "malice", Cost: "3 Malice", Body: "Text."}, ""},
-	}
-	for _, tc := range cases {
-		got := renderStatblockFeature(tc.f)
-		if tc.wantLabel == "" {
-			if strings.Contains(got, "sc-head__right-deck") {
-				t.Errorf("%s: unexpected right-deck chip in:\n%s", tc.name, got)
-			}
-			continue
-		}
-		want := `sc-head__right-deck sc-head__slot--chip">` + tc.wantLabel + `</div>`
-		if !strings.Contains(got, want) {
-			t.Errorf("%s: missing %q in:\n%s", tc.name, want, got)
 		}
 	}
 }
