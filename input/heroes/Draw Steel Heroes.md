@@ -22920,14 +22920,6 @@ When the project is completed, you have an airship. You and any creatures you de
 
 An airship is an object (giving it [damage immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) all to poison and psychic damage) and can take 200 damage before it is destroyed. If the damage the ship takes is not too severe (as the Director determines), as long as you have access to materials that can repair the ship, you can restore it back to its original [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) as a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite) activity.
 
-###### Build or Repair Road Renown Table
-
-| Length              | [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) Earned |
-|---------------------|---------------|
-| 50 miles or less    | 1             |
-| 51-100 miles        | 2             |
-| More than 100 miles | 3             |
-
 <!-- @type: project -->
 #### Build or Repair Road
 
@@ -22946,6 +22938,14 @@ The number of [project points](scc.v1:mcdm.heroes.v1/rule.downtime/project-point
 When you complete the project, you earn [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) among people in the area where the road is built, depending on the length of the road.
 
 Time spent traveling between locations on the road is cut in half. Access to resources and knowledge is improved in locations along the road, giving you and your allies an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [project rolls](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) to discover lore while you are in those areas.
+
+###### Build or Repair Road Renown Table
+
+| Length              | [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) Earned |
+|---------------------|---------------|
+| 50 miles or less    | 1             |
+| 51-100 miles        | 2             |
+| More than 100 miles | 3             |
 
 ###### Build or Repair Roads Events Table
 
@@ -23604,6 +23604,19 @@ This project has its own special complications. The first time you complete this
 
 Additionally, while you work to complete this project, you might be called upon by the organization to complete a task you might not want to do. Failure to complete the task leads to you being caught. You can avoid the task by fleeing the organization, but this prevents you from completing the project and makes it impossible for you to undertake this project again with the same organization.
 
+<!-- @type: project -->
+#### Hone Career Skills
+
+**[Item Prerequisite](scc.v1:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
+
+**[Project Source](scc.v1:mcdm.heroes.v1/rule.downtime/project-source):** None
+
+**[Project Roll](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc.v1:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition)
+
+**Project Goal:** 240 if your career granted you two skills, or 360 if your career granted you three skills
+
+You revisit your previous life to freshen up on the experience it provided you. When this project is complete, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made using the skills provided by your career.
+
 ###### Hone Career Skills Events Table
 
 | d10 | Event                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -23618,19 +23631,6 @@ Additionally, while you work to complete this project, you might be called upon 
 | 8   | After the roll, the hero strangely feels 5 years younger. Any character familiar with psionics recognizes the phenomena as a chrono-anomaly. The hero grows younger each time they make progress on the project—but will cease to exist if they complete the project without first finding and stopping the source of the anomaly.                                                                                    |
 | 9   | Before the roll, the hero stumbles upon an old memento from when they worked their former career. They can choose between gaining an automatic breakthrough on the [project roll](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) or gaining a [hero token](scc.v1:mcdm.heroes.v1/rule.resource/hero-token).                                                                                                                                                                                                              |
 | 10  | After the roll, the hero gets back into the rhythm of their former career. They can make two additional [project rolls](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                                                                                |
-
-<!-- @type: project -->
-#### Hone Career Skills
-
-**[Item Prerequisite](scc.v1:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
-
-**[Project Source](scc.v1:mcdm.heroes.v1/rule.downtime/project-source):** None
-
-**[Project Roll](scc.v1:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc.v1:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition)
-
-**Project Goal:** 240 if your career granted you two skills, or 360 if your career granted you three skills
-
-You revisit your previous life to freshen up on the experience it provided you. When this project is complete, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made using the skills provided by your career.
 
 <!-- @type: project -->
 #### Learn From a Master
