@@ -258,6 +258,28 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 		}, nil
 	}
 
+	// Champion advancement-features (summoner, SC-138). The enclosing
+	// monster-group has domain=champion; this sibling featureblock carries the
+	// Level-10 advancement (a Size Increase passive plus the eidos-costed
+	// Champion Action) that the book prints inside the champion's stat block.
+	// Hoisting it into its own entity is what lets the site band it under a
+	// "Level 10 Advancement" sub-head the way beastheart companions and summoner
+	// fixtures are presented; left inside the stat block, the members render as
+	// plain innate features with nothing marking them as 10th-level. Members stay
+	// inline/uncoded — the retainer model (Plan 6); per-member coding is
+	// ROADMAP #15.
+	if domain, category, _ := statblockDomain(ctx, section.HeadingLevel); domain == "champion" {
+		if feats := ParseRichFeatures(body); len(feats) > 0 {
+			fm["features"] = RichFeatureMaps(feats)
+		}
+		return &ParsedContent{
+			Frontmatter: fm,
+			Body:        body,
+			TypePath:    compactPath("monster", "champion", "summoner", category, "advancement-features"),
+			ItemID:      id,
+		}, nil
+	}
+
 	// Retainer advancement / role-advancement containers (Monsters + Summoner books).
 	// Under @domain: retainer this featureblock is either a per-retainer
 	// "<Name> Advancement Features" block (Monsters-book retainers + the summoner

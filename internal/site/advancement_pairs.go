@@ -139,6 +139,18 @@ func advancementCardInner(dir, advFile string) string {
 // <id>.md + <id>-advancement-features.md pairs as a 2-column pair grid.
 // ok=false → caller falls through to the default index builders.
 func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (string, bool) {
+	// Summoner Portfolio Champions (SC-138) gained an advancement-features
+	// sibling, which would otherwise route their portfolio dir here — a
+	// DOWNGRADE: a champion's base leaf is a real creature statblock, so the
+	// bestiary group-landing assembler (buildMonsterGroupContent) already gives
+	// it a rich .sb-prev preview card with the Stats/Features zone toggles, next
+	// to a featureblock card for the advancement. The pair grid can only offer a
+	// flat text card (companionPreviewCard covers beastheart companions only).
+	// Fixtures/retainers stay here: their bases have no such preview.
+	// The base-first .nav.yml order (advancementPairNavOrder) still applies.
+	if pathHasSegment(dir, "champion") {
+		return "", false
+	}
 	pairs, ok := advancementPairs(files, subdirs)
 	if !ok {
 		return "", false

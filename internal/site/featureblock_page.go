@@ -182,9 +182,15 @@ func fbEV(stats []fbStat) string {
 	return ""
 }
 
-// fbOrigin derives the left-deck provenance for a summoner fixture from its SCC
-// type-path (monster.fixture.<element>.featureblock) → "Summoner · <Element>".
-// Returns "" for any non-fixture code.
+// fbOrigin derives the left-deck provenance for a summoner featureblock from its
+// SCC type-path:
+//
+//	monster.fixture.<circle>.featureblock                → "Summoner · <Circle>"
+//	monster.champion.summoner.<circle>.advancement-features → "Summoner Champion · <Circle>"
+//
+// The champion form (SC-138) mirrors summonerProvenanceEyebrow's label for the
+// base champion stat block, so the advancement page reads as the same entity.
+// Returns "" for anything else.
 func fbOrigin(scc string) string {
 	_, rest, ok := strings.Cut(strings.TrimSpace(scc), "/")
 	if !ok {
@@ -192,8 +198,12 @@ func fbOrigin(scc string) string {
 	}
 	typePath, _, _ := strings.Cut(rest, "/")
 	seg := strings.Split(typePath, ".")
-	if len(seg) >= 4 && seg[0] == "monster" && seg[1] == "fixture" && seg[3] == "featureblock" {
+	switch {
+	case len(seg) >= 4 && seg[0] == "monster" && seg[1] == "fixture" && seg[3] == "featureblock":
 		return "Summoner · " + titleCase(seg[2])
+	case len(seg) >= 5 && seg[0] == "monster" && seg[1] == "champion" &&
+		seg[2] == "summoner" && seg[4] == "advancement-features":
+		return "Summoner Champion · " + titleCase(seg[3])
 	}
 	return ""
 }

@@ -2801,6 +2801,9 @@ Stamina: Your maximum Stamina
 >
 > When the Aspect is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they make a [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) enemy before [dying](scc.v1:mcdm.heroes.v1/rule.health/dying).
 
+<!-- @type: featureblock | @id: demon-lords-aspect -->
+####### Demon Lord's Aspect Advancement Features
+
 > **Level 10 Champion Advancement Feature**
 >
 > ⭐️ **Size Increase**
@@ -2866,6 +2869,9 @@ Stamina: Your maximum Stamina
 > ⭐️ **Dragon Heart**
 >
 > Once per [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), the Portent can take 10 [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) to allow you or an ally within your Summoner's Range to gain 1 [heroic resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource). This [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) can't be reduced in any way.
+
+<!-- @type: featureblock | @id: dragons-portent -->
+####### Dragon's Portent Advancement Features
 
 > **Level 10 Champion Advancement Feature**
 >
@@ -2937,6 +2943,9 @@ Stamina: Your maximum Stamina
 >
 > The Attendant starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) with [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) equal to 2 × the number of fey minions within 1 square of them. This [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the start of their next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
+<!-- @type: featureblock | @id: celestial-attendant -->
+####### Celestial Attendant Advancement Features
+
 > **Level 10 Champion Advancement Feature**
 >
 > ⭐️ **Size Increase**
@@ -3006,6 +3015,9 @@ Stamina: Your maximum Stamina
 > ⭐️ **Drifting Spirit**
 >
 > The Avatar is unaffected by [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) and [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) from [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement).
+
+<!-- @type: featureblock | @id: avatar-of-death -->
+####### Avatar of Death Advancement Features
 
 > **Level 10 Champion Advancement Feature**
 >
