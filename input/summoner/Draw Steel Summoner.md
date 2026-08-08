@@ -1001,7 +1001,7 @@ These massive clods of animated stone roll upon smaller piles of rocks that coul
 >
 > The boulder obstructs [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) for enemies.
 
-> ⭐️ **Pile Up** 1 Essence
+> ⭐️ **Pile Up (1 Essence)**
 >
 > When one or more boulders is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they each leave behind a stone [wall](scc.v1:mcdm.heroes.v1/rule.combat/wall) equal to their size in their space until the end of the encounter.
 
@@ -1029,7 +1029,7 @@ The crux is a curtain of billowing hot ash with an avian head. They cover their 
 >
 > The crux's melee [free strikes](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) M < AVERAGE automatically [hide](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/hide) each ally from the target until the start of the crux's next turn, until the target uses a [maneuver](scc.v1:mcdm.heroes.v1/rule.combat/turn) to clear the soot, until the crux takes damage, or until the crux is destroyed.
 
-> ⭐️ **Ashen Cloud** 1 Essence
+> ⭐️ **Ashen Cloud (1 Essence)**
 >
 > When the crux is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the crux is clouded by ash until it is dispersed by wind. You or any ally are [concealed](scc.v1:mcdm.heroes.v1/rule.combat/concealment) while occupying an affected square. An enemy can't establish [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) beyond the ash while occupying an affected square.
 
@@ -1058,7 +1058,7 @@ This elemental is a long, serpentine creature of heated rock. Flows of magma dro
 >
 > **Effect:** Each square that the flow [shifts](scc.v1:mcdm.heroes.v1/movement/shifting) into becomes wreathed in flames until the start of the flow's next turn. An enemy that enters an affected square takes 2 damage.
 
-> ⭐️ **Eruption** 1 Essence
+> ⭐️ **Eruption (1 Essence)**
 >
 > When the flow is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they launch lava into an area equal to 1 + their size within 5 squares. The affected area becomes [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. An enemy that enters an affected square or starts their turn there takes A < AVERAGE 4 fire damage.
 
@@ -1081,7 +1081,7 @@ The desolations have vaguely humanoid sand forms with no legs. Their glass hose 
 >
 > The desolation doesn't provoke [opportunity attacks](scc.v1:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
-> ⭐️ **Shifting Sand Pit** 1 Essence
+> ⭐️ **Shifting Sand Pit (1 Essence)**
 >
 > When the desolation is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the desolation becomes [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. You or an ally that enters the affected area can immediately [shift](scc.v1:mcdm.heroes.v1/movement/shifting) 3.
 
@@ -1758,7 +1758,7 @@ The silks are akin to baby spiders ballooning through the air on strands of webb
 >
 > The silk's ranged [free strikes](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict A < AVERAGE [restrained](scc.v1:mcdm.heroes.v1/condition/restrained) (EoT). Each creature [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to the target is A < WEAK [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) (EoT).
 
-> ⭐️ **Web** 1 Essence
+> ⭐️ **Web (1 Essence)**
 >
 > When the silk is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they launch ribbons of webbing into an area equal to their [size](scc.v1:mcdm.heroes.v1/rule.character/size) + 1 within 5 before being destroyed. The affected area is considered [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. An enemy that ends their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in the webbing is M < STRONG [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) (EoT).
 
@@ -1777,7 +1777,7 @@ The manes of these equine sludge dwellers extend and hook into things like stron
 >
 > The principle's melee [free strikes](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of R and inflict M < STRONG [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed). The principle can have an unlimited number of creatures or objects [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed). A creature [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) by this [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) still has their normal [speed](scc.v1:mcdm.heroes.v1/rule.character/speed), but can't move farther away from the principle.
 
-> ⭐️ **Sludgefoot** 1 Essence
+> ⭐️ **Sludgefoot (1 Essence)**
 >
 > When the principle is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the principle becomes [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. An enemy that ends their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in the affected area is pulled 4 toward the center of the area.
 
@@ -2305,7 +2305,7 @@ Iron reavers are long, gnashing lines of centipede-like bladed legs. Their bodie
 >
 > The reaver's [free strikes](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict M < WEAK [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) (save ends). Each time the reaver inflicts [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) on a creature, they can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) 2 and make an additional [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) on a new target.
 
-> ⭐️ **Iron Barricade** 1 Essence
+> ⭐️ **Iron Barricade (1 Essence)**
 >
 > When the reaver is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they create a line equal to 2 × their [size](scc.v1:mcdm.heroes.v1/rule.character/size) centered on their space of iron shards on the ground until the end of the encounter. You or any ally has [cover](scc.v1:mcdm.heroes.v1/rule.combat/cover) and [damage immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity) 2 while occupying an affected square.
 
@@ -2324,7 +2324,7 @@ These faceless suits of armor have visible rivers of deep red blood flowing thro
 >
 > The knight's melee [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) inflict P < STRONG [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) (save ends). While [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) this way, the target can't roll lower than a 3 on the die used to resolve [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) damage.
 
-> ⭐️ **Red River** 2 Essence
+> ⭐️ **Red River (2 Essence)**
 >
 > When the knight is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), they move up to their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) ignoring [opportunity attacks](scc.v1:mcdm.heroes.v1/rule.combat/opportunity-attack). Each square that they exit during this movement pools with blood until the end of the encounter. Each affected square is considered [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for enemies and deals 3 corruption [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) to an enemy when they first enter it on a [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). Whenever a [bleeding](scc.v1:mcdm.heroes.v1/condition/bleeding) enemy starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) within 10 squares of the blood pool, they are pulled 2 toward the nearest affected square, ignoring [stability](scc.v1:mcdm.heroes.v1/rule.character/stability).
 
@@ -2353,7 +2353,7 @@ These elementals are blazing white avian-shaped beings that are nearly impossibl
 >
 > **Effect:** A target [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) by this ability has their [stability](scc.v1:mcdm.heroes.v1/rule.character/stability) reduced to 0 until the [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) ends.
 
-> ⭐️ **Radiant Field** 2 Essence
+> ⭐️ **Radiant Field (2 Essence)**
 >
 > When the light is reduced to 0 [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the light becomes wreathed in sentient flames until the end of the encounter. An enemy that enters this area or starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) there takes 3 fire [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) and is [slowed](scc.v1:mcdm.heroes.v1/condition/slowed) (EoT). You or any ally that enters this area or starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) there gains 5 [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) and their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) increases by 2 until the end of their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 

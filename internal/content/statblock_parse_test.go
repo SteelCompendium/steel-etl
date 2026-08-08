@@ -1,7 +1,9 @@
 package content
 
 import (
+	"os"
 	"reflect"
+	"regexp"
 	"strings"
 	"testing"
 )
@@ -555,5 +557,58 @@ func TestSplitRoleCell(t *testing.T) {
 		if org != tt.org || role != tt.role {
 			t.Errorf("%q: got (%q,%q), want (%q,%q)", tt.in, org, role, tt.org, tt.role)
 		}
+	}
+}
+
+// sbTitleStartRe matches the OPENING of a statblock/featureblock feature title
+// inside a blockquote — an icon glyph followed by a bold name. Deliberately
+// looser than sbTitleRe (no end anchor): it identifies lines that are MEANT to
+// be feature titles so the guard below can assert sbTitleRe accepts them. The
+// leading class excludes `|` (spec-table rows), `-` (tier list items), digits
+// (bare tier lines) and `[` (prose opening with a link, e.g. the monsters book's
+// "[**End Effect:**](…)" line) — none of which are titles.
+var sbTitleStartRe = regexp.MustCompile(`^([^\s|\-*\[A-Za-z0-9][^*|]*?)\s*\*\*`)
+
+// TestBookSources_StatblockFeatureTitlesParse guards against the SC-137 class of
+// bug: a feature title sbTitleRe does not match is not "rendered plainly", it is
+// dropped WHOLESALE — parseRichFeature / parseStatblockIslandFeature return
+// ok=false and the entire blockquote vanishes from every rendered format with no
+// warning. That silently deleted 9 Circle of Storms minions' essence-cost traits,
+// which were transcribed as "**Name** 1 Essence" instead of the corpus-wide
+// "**Name (1 Essence)**" cost parenthetical. Scanning the real book sources costs
+// milliseconds and catches the next transcription slip at `go test` time.
+func TestBookSources_StatblockFeatureTitlesParse(t *testing.T) {
+	books := []string{
+		"../../input/heroes/Draw Steel Heroes.md",
+		"../../input/monsters/Draw Steel Monsters.md",
+		"../../input/beastheart/Draw Steel Beastheart.md",
+		"../../input/summoner/Draw Steel Summoner.md",
+	}
+	checked := 0
+	for _, path := range books {
+		data, err := os.ReadFile(path)
+		if err != nil {
+			t.Skipf("skipping corpus guard: %v", err)
+		}
+		for i, raw := range strings.Split(string(data), "\n") {
+			line := strings.TrimSpace(raw)
+			if !strings.HasPrefix(line, ">") {
+				continue
+			}
+			// Strip every blockquote marker: heroes-book abilities nest ">>".
+			line = strings.TrimSpace(strings.TrimLeft(line, "> "))
+			if !sbTitleStartRe.MatchString(line) {
+				continue
+			}
+			checked++
+			if !sbTitleRe.MatchString(line) {
+				t.Errorf("%s:%d: feature title is not parseable, so the WHOLE feature is dropped from every output: %q\n"+
+					"\thint: a cost belongs inside the bold as a parenthetical — \"**Name (1 Essence)**\", not \"**Name** 1 Essence\"",
+					path, i+1, line)
+			}
+		}
+	}
+	if checked < 500 {
+		t.Errorf("only %d feature titles scanned; the guard is not seeing the corpus", checked)
 	}
 }
