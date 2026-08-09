@@ -1,6 +1,9 @@
 package content
 
 import (
+	"os"
+	"reflect"
+	"strconv"
 	"strings"
 	"testing"
 )
@@ -318,5 +321,129 @@ func TestRichFeature_ToMap(t *testing.T) {
 	}
 	if mm["body"] != "Text." {
 		t.Errorf("body = %v", mm["body"])
+	}
+}
+
+// TestParseRichFeatures_FlagLabel: a standalone bold flag ("**Champion Action**")
+// is promoted to a labelled section in document order — ABOVE the Effect it
+// governs — rather than falling through to bare prose that trails the card.
+func TestParseRichFeatures_FlagLabel(t *testing.T) {
+	body := "> ❗️ **Reality Flense**\n" +
+		">\n" +
+		"> | **—** | **1 Eidos** |\n" +
+		"> |-------|------------:|\n" +
+		"> | **📏 20 burst** | **🎯 Self and each non-minion ally in the area** |\n" +
+		">\n" +
+		"> **Champion Action**\n" +
+		">\n" +
+		"> **Effect:** Each target teleports up to their speed.\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+	want := []RichSection{
+		{Label: "Champion Action", Text: ""},
+		{Label: "Effect", Text: "Each target teleports up to their speed."},
+	}
+	if !reflect.DeepEqual(f.Sections, want) {
+		t.Errorf("Sections = %+v, want %+v", f.Sections, want)
+	}
+	if f.Trailing != "" {
+		t.Errorf("Trailing = %q, want empty (the flag must not trail the card)", f.Trailing)
+	}
+	// The flag survives into the data formats as a text-less section, so the
+	// featureblock schema's required "text" key is still present.
+	secs, ok := f.ToMap()["sections"].([]map[string]any)
+	if !ok || len(secs) != 2 {
+		t.Fatalf("ToMap sections = %+v", f.ToMap()["sections"])
+	}
+	if secs[0]["label"] != "Champion Action" || secs[0]["text"] != "" {
+		t.Errorf("ToMap flag section = %+v", secs[0])
+	}
+}
+
+// TestParseRichFeatures_FlagLabelVocabularyIsClosed: a bold-only paragraph that
+// is NOT in fbFlagLabels keeps its old handling (bare prose). Guards the
+// SC-137 failure mode in the other direction — the promotion must not become a
+// shape rule that silently restructures unrelated content.
+func TestParseRichFeatures_FlagLabelVocabularyIsClosed(t *testing.T) {
+	body := "> ❗️ **Reality Flense**\n" +
+		">\n" +
+		"> | **—** | **1 Eidos** |\n" +
+		"> |-------|------------:|\n" +
+		"> | **📏 20 burst** | **🎯 Self** |\n" +
+		">\n" +
+		"> **Not A Known Flag**\n" +
+		">\n" +
+		"> **Effect:** Text.\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+	if len(f.Sections) != 1 || f.Sections[0].Label != "Effect" {
+		t.Errorf("Sections = %+v, want only Effect", f.Sections)
+	}
+	if f.Trailing != "**Not A Known Flag**" {
+		t.Errorf("Trailing = %q, want the unpromoted bold paragraph", f.Trailing)
+	}
+}
+
+// wantFlagPromotions is the exact, corpus-wide set of source lines that
+// fbFlagLabels promotes: "<book>:<line>" → the canonical label. Keyed by book
+// directory rather than full path so the guard reads as a content inventory.
+var wantFlagPromotions = map[string]string{
+	// The four Portfolio Champions' Level 10 abilities (Summoner, SC-138).
+	"summoner:2819": "Champion Action", // Reality Flense (Demon Lord's Aspect)
+	"summoner:2888": "Champion Action", // A Breath Felt in a Hurricane (Dragon's Portent)
+	"summoner:2961": "Champion Action", // A Shower of Dust (Celestial Attendant)
+	"summoner:3034": "Champion Action", // Gravemaker (Avatar of Death)
+}
+
+// TestBookSources_FlagLabelPromotionSet pins the blast radius of the
+// fbFlagLabels promotion (SC-138). Every standalone bold blockquote line in all
+// four books is scanned; the ones the vocabulary promotes must be exactly
+// wantFlagPromotions. A new book line that happens to read "**Champion
+// Action**" — or a new vocabulary entry — fails here rather than silently
+// restructuring a rendered ability.
+func TestBookSources_FlagLabelPromotionSet(t *testing.T) {
+	books := map[string]string{
+		"heroes":     "../../input/heroes/Draw Steel Heroes.md",
+		"monsters":   "../../input/monsters/Draw Steel Monsters.md",
+		"beastheart": "../../input/beastheart/Draw Steel Beastheart.md",
+		"summoner":   "../../input/summoner/Draw Steel Summoner.md",
+	}
+	got := map[string]string{}
+	scanned := 0
+	for book, path := range books {
+		data, err := os.ReadFile(path)
+		if err != nil {
+			t.Skipf("skipping corpus guard: %v", err)
+		}
+		for i, raw := range strings.Split(string(data), "\n") {
+			line := strings.TrimSpace(raw)
+			if !strings.HasPrefix(line, ">") {
+				continue
+			}
+			line = strings.TrimSpace(strings.TrimLeft(line, "> "))
+			m := fbFlagLabelRe.FindStringSubmatch(line)
+			if m == nil {
+				continue
+			}
+			scanned++
+			if label, ok := fbFlagLabels[strings.ToLower(strings.TrimSpace(m[1]))]; ok {
+				got[book+":"+strconv.Itoa(i+1)] = label
+			}
+		}
+	}
+	if scanned < 100 {
+		t.Errorf("only %d standalone bold blockquote lines scanned; the guard is not seeing the corpus", scanned)
+	}
+	if !reflect.DeepEqual(got, wantFlagPromotions) {
+		t.Errorf("flag promotions changed corpus-wide.\n got: %v\nwant: %v\n"+
+			"\thint: update wantFlagPromotions only after checking the new lines really are labels", got, wantFlagPromotions)
 	}
 }
