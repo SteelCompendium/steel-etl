@@ -2810,13 +2810,11 @@ Stamina: Your maximum Stamina
 >
 > The Aspect is now size 3.
 >
-> ❗️ **Reality Flense**
+> ❗️ **Reality Flense (1 Eidos)**
 >
-> | **—** | **1 Eidos** |
-> |-------|------------:|
+> | **—** | **Champion Action** |
+> |-------|--------------------:|
 > | **📏 20 burst** | **🎯 Self and each non-minion ally in the area** |
->
-> **Champion Action**
 >
 > **Effect:** Each target [teleports](scc.v1:mcdm.heroes.v1/movement/teleport) up to their [speed](scc.v1:mcdm.heroes.v1/rule.character/speed) and makes a [free strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike). If a target has a [Save Ends](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition), they can inflict the [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) onto a creature with their [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) and end the [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) on themself.
 
@@ -2879,13 +2877,11 @@ Stamina: Your maximum Stamina
 >
 > The Portent is now size 3.
 >
-> ❗️ **A Breath Felt in a Hurricane**
+> ❗️ **A Breath Felt in a Hurricane (1 Eidos)**
 >
-> | **Area, Magic, Ranged** | **1 Eidos** |
-> |-------------------------|------------:|
+> | **Area, Magic, Ranged** | **Champion Action** |
+> |-------------------------|--------------------:|
 > | **📏 4 cube within 10** | **🎯 Each enemy and object in the area** |
->
-> **Champion Action**
 >
 > **Effect:** 9 affinity [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage). The [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage) ignores [immunity](scc.v1:mcdm.heroes.v1/rule.damage/damage-immunity). The affected area becomes [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain). An enemy has affinity [weakness](scc.v1:mcdm.heroes.v1/rule.damage/damage-weakness) 5 while occupying an affected square.
 
@@ -2952,13 +2948,11 @@ Stamina: Your maximum Stamina
 >
 > The Attendant is now size 3.
 >
-> ❗️ **A Shower of Dust**
+> ❗️ **A Shower of Dust (1 Eidos)**
 >
-> | **—** | **1 Eidos** |
-> |-------|------------:|
+> | **—** | **Champion Action** |
+> |-------|--------------------:|
 > | **📏 20 burst** | **🎯 Self and each non-minion ally in the area** |
->
-> **Champion Action**
 >
 > **Effect:** Each target gains 20 [temporary Stamina](scc.v1:mcdm.heroes.v1/rule.health/temporary-stamina) and receives the benefits of one of your [Flash Powder](scc.v1:mcdm.summoner.v1/feature.summoner.level-5/flash-powder) effects until the end of their next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
@@ -3025,13 +3019,11 @@ Stamina: Your maximum Stamina
 >
 > The Avatar is now size 3.
 >
-> ❗️ **Gravemaker**
+> ❗️ **Gravemaker (1 Eidos)**
 >
-> | **Area, Magic, Ranged** | **1 Eidos** |
-> |-------------------------|------------:|
+> | **Area, Magic, Ranged** | **Champion Action** |
+> |-------------------------|--------------------:|
 > | **📏 5 × 3 line within 1** | **🎯 Each enemy and object in the line** |
->
-> **Champion Action**
 >
 > **Effect:** 9 holy [damage](scc.v1:mcdm.heroes.v1/rule.damage/damage). Each target is vertically [pulled](scc.v1:mcdm.heroes.v1/movement/forced-movement) a number of squares equal to their [size](scc.v1:mcdm.heroes.v1/rule.character/size) straight down, ignoring [stability](scc.v1:mcdm.heroes.v1/rule.character/stability). If the target would be [force moved](scc.v1:mcdm.heroes.v1/movement/forced-movement) into the ground, they are buried beneath the ground instead.
 
