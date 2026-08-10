@@ -216,21 +216,6 @@ the card). Source order alone decides which field a paragraph lands in — a lea
 mis-stored as `body` renders below the tiers instead of above (the bug fixed
 2026-06-15). `intro` is in both `featureblock.schema.json` copies.
 
-⚠️ **"Flag" labels are a CLOSED vocabulary (`fbFlagLabels`, `featureparse.go`).** Most
-labelled sections are colon-form paragraphs (`**Effect:** …`, matched by `fbLabelRe`),
-but the book occasionally prints a label that governs the text below it yet carries no
-text of its own, as a bare bold paragraph — the Summoner's `**Champion Action**` (the 4
-Portfolio Champion Level 10 abilities put the eidos cost in the spec table's action cell,
-so the action type has nowhere else to go). Those are promoted to a text-less
-`sections[]` entry **in document order**, so they render as a section head above the
-`Effect` they govern rather than falling through to `trailing` at the bottom of the card
-(SC-138). The match is an explicit allowlist, **not** a shape rule: a bare bold paragraph
-inside a feature blockquote is ambiguous, and quietly widening a blockquote regex is how
-SC-137 dropped nine minion traits. `TestBookSources_FlagLabelPromotionSet` pins the exact
-set of source lines the vocabulary picks up across all four books — extend it whenever you
-add a label. Site-side, a text-less section renders head-only with a
-`.sc-ability__section--flag` modifier (`renderFbFeat`).
-
 **Beastheart companion advancement-features** are a second `features[]` source. When a
 `@type: featureblock` section sits in companion context (a `##### <C> Advancement
 Features` block under a companion), `FeatureblockParser` takes a companion branch:

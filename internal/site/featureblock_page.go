@@ -437,23 +437,13 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 		b.WriteString(fbPowerRollHTML(*f.PowerRoll))
 	}
 
-	// titled sections (Effect / Trigger / Special …). A section with a label but
-	// no text is a "flag" (Summoner's "Champion Action", content.fbFlagLabels):
-	// render the tag head alone — an empty body div would print a stray blank
-	// block under it.
+	// titled sections (Effect / Trigger / Special …)
 	for _, s := range f.Sections {
-		text := strings.TrimSpace(s.Text)
-		cls := "sc-ability__section"
-		if text == "" {
-			cls += " sc-ability__section--flag"
-		}
-		fmt.Fprintf(b, "<div class=\"%s\">", cls)
+		b.WriteString("<div class=\"sc-ability__section\">")
 		if l := strings.TrimSpace(s.Label); l != "" {
 			fmt.Fprintf(b, "<div class=\"sc-ability__section-head\"><span class=\"sc-ability__dia\"></span><span class=\"tag\">%s</span></div>", html.EscapeString(l))
 		}
-		if text != "" {
-			fmt.Fprintf(b, "<div class=\"sc-ability__section-body\">%s</div>", renderSectionBlock(text))
-		}
+		fmt.Fprintf(b, "<div class=\"sc-ability__section-body\">%s</div>", renderSectionBlock(strings.TrimSpace(s.Text)))
 		b.WriteString("</div>\n")
 	}
 

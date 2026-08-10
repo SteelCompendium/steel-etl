@@ -52,32 +52,8 @@ var (
 	// a standalone bold level-group label inside a blockquote:
 	// "**Level 5 Fixture Advancement Feature**".
 	fbLevelLabelRe = regexp.MustCompile(`^\*\*Level\s+(\d+)\b[^*]*\*\*$`)
-	// a "flag" label: a paragraph that is nothing but a bold run with no colon
-	// inside it ("**Champion Action**"). This is the book's form for a labelled
-	// section that governs the effect below it but carries no text of its own.
-	// Matched only against fbFlagLabels — see there.
-	fbFlagLabelRe = regexp.MustCompile(`^\*\*([^*:]+)\*\*$`)
-	fbCollapseRe  = regexp.MustCompile(`\s*\n\s*`)
+	fbCollapseRe   = regexp.MustCompile(`\s*\n\s*`)
 )
-
-// fbFlagLabels is the CLOSED vocabulary of standalone bold flags promoted to a
-// labelled section (lowercased key → canonical display label).
-//
-// Deliberately a fixed allowlist rather than a shape rule. A bare bold
-// paragraph inside a feature blockquote is ambiguous — it can be an emphasised
-// sentence, a publisher's aside, or a real label — and quietly widening a
-// blockquote regex is exactly how SC-137 dropped nine minion traits. Promoting
-// only known labels keeps the corpus-wide effect auditable; the guard
-// TestBookSources_FlagLabelPromotionSet pins the exact set of source lines this
-// picks up across all four books.
-//
-// To add a flag: add it here AND to wantFlagPromotions in that test.
-var fbFlagLabels = map[string]string{
-	// Summoner, Portfolio Champion Level 10 abilities: the eidos cost sits in
-	// the spec table's action cell, so the action type is printed below the
-	// table as a bare flag instead of a "**Label:**" paragraph.
-	"champion action": "Champion Action",
-}
 
 // fbCollapse joins a multi-line paragraph into one line.
 func fbCollapse(s string) string {
@@ -224,18 +200,6 @@ func parseRichFeature(block string) (RichFeature, bool) {
 			}
 			structured = true
 			continue
-		}
-
-		// Standalone bold flag ("**Champion Action**") → a labelled section with
-		// no text of its own. Runs AFTER fbLabelRe so a colon-form label is never
-		// reached here, and appends in document order so the flag renders ABOVE
-		// the Effect it governs instead of trailing the whole card as bare prose.
-		if m := fbFlagLabelRe.FindStringSubmatch(tp); m != nil {
-			if label, ok := fbFlagLabels[strings.ToLower(strings.TrimSpace(m[1]))]; ok {
-				f.Sections = append(f.Sections, RichSection{Label: label})
-				structured = true
-				continue
-			}
 		}
 
 		// Bare prose: a lead-in (before any structured block) sets up the roll and
