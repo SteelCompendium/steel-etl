@@ -11867,17 +11867,17 @@ Your [null tradition](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-tradition)
 | Metakinetic   | [Inertial Fulcrum](scc.v1:mcdm.heroes.v1/feature.null.level-5/inertial-fulcrum)   |
 
 <!-- @type: feature | @subclass: cryokinetic -->
-#### Chilling Readiness
+##### Chilling Readiness
 
 You steel yourself for imminent danger by tapping into your body's cold energy. At the start of any combat, you gain a number of [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge) equal to your [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories).
 
 <!-- @type: feature | @subclass: metakinetic -->
-#### Inertial Fulcrum
+##### Inertial Fulcrum
 
 Whenever you use an ability to reduce damage dealt to you or to reduce the [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of [forced movement](scc.v1:mcdm.heroes.v1/movement/forced-movement) imposed upon you, you can deal damage to one enemy in the area of your [Null Field](scc.v1:mcdm.heroes.v1/feature.null.level-1/null-field) ability equal to your [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature | @subclass: chronokinetic -->
-#### Instant Action
+##### Instant Action
 
 If you're not [surprised](scc.v1:mcdm.heroes.v1/rule.combat/surprised) at the start of your first [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in combat, you gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc.v1:mcdm.heroes.v1/rule.dice/ability-roll) and gain 2 [surges](scc.v1:mcdm.heroes.v1/rule.resource/surge). If you are [surprised](scc.v1:mcdm.heroes.v1/rule.combat/surprised), you can spend 3 discipline to no longer be [surprised](scc.v1:mcdm.heroes.v1/rule.combat/surprised) and gain the benefits of this feature.
 
@@ -15137,7 +15137,7 @@ You have the following ability.
 > **Spend 1 Clarity:** You target one additional creature or object.
 
 <!-- @type: feature | @subclass: telekinesis -->
-#### Repel
+##### Repel
 
 You have the following ability.
 
@@ -16115,7 +16115,7 @@ Your mind can carry your body through tough times. You ignore [difficult terrain
 During a [respite](scc.v1:mcdm.heroes.v1/rule.resource/respite), you can choose a number of creatures up to your [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason) score who you have communicated with using your [Telepathic Speech](scc.v1:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature, creating a telepathic link among all of you. Whenever a linked creature spends one or more [Recoveries](scc.v1:mcdm.heroes.v1/rule.health/recoveries), each other linked creature can spend a [Recovery](scc.v1:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: feature | @subclass: chronopathy -->
-#### Stasis Shield
+##### Stasis Shield
 
 You have the following ability.
 
@@ -16135,7 +16135,7 @@ You have the following ability.
 > **Strained:** You can't target yourself, and you take the damage and any additional effects instead of the target.
 
 <!-- @type: feature | @subclass: telepathy -->
-#### Universal Connection
+##### Universal Connection
 
 The range of your [Telepathic Speech](scc.v1:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature increases to anywhere on the same world.
 
