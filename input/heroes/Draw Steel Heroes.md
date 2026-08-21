@@ -9274,40 +9274,39 @@ You have the following ability.
 > The source starts an encounter at full [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina), but maintains their current [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) throughout the encounter, even if they are dismissed and you use this ability again. They can't regain [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) during the encounter. When the source's [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) is reduced to 0, you can't use this ability again until you earn 1 or more [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories).
 > 
 > **Persistent 2:** The source takes another [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). They are dismissed at the start of your next [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
+
+<!-- @type: statblock | @category: summon | @subcategory: elementalist -->
+####### Source of Earth
+
+|      Elemental      |           -            |      Level 8      |         Brute         |         EV -         |
+|:-------------------:|:----------------------:|:-----------------:|:---------------------:|:--------------------:|
+|    **2**<br>Size    |     **6**<br>Speed     | **45**<br>Stamina |  **5**<br>Stability   | **5**<br>Free Strike |
+|  **-**<br>Immunity  | **Burrow**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
+|   **+3**<br>Might   |   **+1**<br>Agility    | **-5**<br>Reason  |  **-5**<br>Intuition  |  **-3**<br>Presence  |
+
+> ⭐️ **Earthwalk**
 >
->####### Source of Earth Statblock
+> [Difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) composed of earth and stone doesn't cost the source extra movement.
+
+> ⭐️ **Tunneler**
 >
->**Source of Earth**
+> When the source burrows, they create a [size](scc.v1:mcdm.heroes.v1/rule.character/size) 2 tunnel.
+
+> ⭐️ **Earth Harness**
 >
->|      Elemental      |           -            |      Level 8      |         BRUTE         |         EV -         |
->|:-------------------:|:----------------------:|:-----------------:|:---------------------:|:--------------------:|
->|    **2**<br>[Size](scc.v1:mcdm.heroes.v1/rule.character/size)    |     **6**<br>[Speed](scc.v1:mcdm.heroes.v1/rule.character/speed)     | **45**<br>[Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) |  **5**<br>[Stability](scc.v1:mcdm.heroes.v1/rule.character/stability)   | **5**<br>[Free Strike](scc.v1:mcdm.heroes.v1/feature.common.main-actions/free-strike) |
->| **-**<br>Immunities | **[Burrow](scc.v1:mcdm.heroes.v1/movement/burrow)**<br>Movement |                   | **-**<br>With Captain | **-**<br>Weaknesses  |
->|   **+3**<br>[Might](scc.v1:mcdm.heroes.v1/rule.character/might)   |   **+1**<br>[Agility](scc.v1:mcdm.heroes.v1/rule.character/agility)    | **-5**<br>[Reason](scc.v1:mcdm.heroes.v1/rule.character/reason)  |  **-5**<br>[Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition)  |  **-3**<br>[Presence](scc.v1:mcdm.heroes.v1/rule.character/presence)  |
+> A creature that has the [Earth Accepts Me](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-3/earth-accepts-me) ability can use it as a free action to meld into the source.
+
+> 🗡 **Boulder Bash**
 >
->> **Earthwalk**
->>
->> [Difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) composed of earth and stone doesn't cost the source extra movement.
+> | **Melee, Ranged, Strike, Weapon** |                 **Signature** |
+> |-----------------------------------|------------------------------:|
+> | **📏 Melee 2 or ranged 10**       | **🎯 One creature or object** |
 >
->> **Tunneler**
->>
->> When the source burrows, they create a [size](scc.v1:mcdm.heroes.v1/rule.character/size) 2 tunnel.
+> **Power Roll + 3:**
 >
->> **Earth Harness**
->>
->> A creature that has the [Earth Accepts Me](scc.v1:mcdm.heroes.v1/feature.ability.elementalist.level-3/earth-accepts-me) ability can use it as a free action to meld into the source.
->
->> **Boulder Bash**
->>
->> | **[Melee](scc.v1:mcdm.heroes.v1/rule.combat/melee), [Ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged), [Strike](scc.v1:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Signature** |
->> |-----------------------------------|------------------------------:|
->> | **📏 [Melee](scc.v1:mcdm.heroes.v1/rule.combat/melee) 2 or [ranged](scc.v1:mcdm.heroes.v1/rule.combat/ranged) 10**       | **🎯 One creature or object** |
->>
->> **[Power Roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) + 3:**
->>
->> - **≤11:** 5 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 3
->> - **12-16:** 9 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 4
->> - **17+:** 12 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 5
+> - **≤11:** 5 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 9 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 12 damage; [push](scc.v1:mcdm.heroes.v1/movement/forced-movement) 5
 
 <!-- @type: feature -->
 #### 11-Essence Ability
