@@ -115,7 +115,16 @@ func dropForeignSCCTail(html, ownSCC string) string {
 
 // dataSCCHeadingRe matches an ATX heading carrying a {data-scc="<code>"}
 // attr_list marker (the per-item markers RenderSubtree stamps on descendants).
-var dataSCCHeadingRe = regexp.MustCompile(`^(#{1,6})\s+.*\{data-scc="([^"]+)"\}\s*$`)
+//
+// SC-174: the attr list may carry FURTHER attributes after the code
+// (`{data-scc="…" data-subclass="earth"}` — RenderSubtree stamps data-subclass /
+// data-cost on annotated headings), so the pattern tolerates anything up to the
+// closing brace. The original required `}` IMMEDIATELY after the code, which
+// silently skipped every such heading: the item was never carded and its inlined
+// markdown rendered as raw prose (60 headings across Beastheart/Summoner/Fury,
+// plus the Elementalist 8th-level subtree once SC-180 put it on the descend
+// path).
+var dataSCCHeadingRe = regexp.MustCompile(`^(#{1,6})\s+.*\{data-scc="([^"]+)"[^}]*\}\s*$`)
 
 // dataSBInlineHeadingRe matches the heading of an unclassified inline statblock
 // (`@type: statblock | @classify: false`): RenderSubtree stamps it with

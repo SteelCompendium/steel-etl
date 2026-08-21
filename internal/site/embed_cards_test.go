@@ -326,3 +326,68 @@ func TestEmbedItemCards(t *testing.T) {
 		t.Error("leaf page should be untouched")
 	}
 }
+
+// SC-174 — headings whose attr list carries MORE than the data-scc code
+// (`data-subclass`, `data-cost`, …) must still be recognized by the splice pass.
+// The original dataSCCHeadingRe required `}` immediately after the code, so every
+// such heading was silently skipped: never carded, its inlined markdown rendered
+// as raw prose (60 headings across Beastheart/Summoner/Fury; the Elementalist
+// 8th-level subtree regressed the same way once SC-180 moved it onto the descend
+// path). Reverting the regex widening makes this test fail on every assertion.
+func TestSpliceCards_HeadingWithExtraAttributes(t *testing.T) {
+	body := strings.Join([]string{
+		"# Elementalist",
+		"",
+		`### 8th-Level Specialization Feature {data-scc="SPEC"}`,
+		"",
+		"spec intro prose",
+		"",
+		`#### Summon Source of Earth {data-scc="F" data-subclass="earth"}`,
+		"",
+		"feature inlined body",
+		"",
+		`##### Summon Source of Earth {data-scc="A" data-subclass="earth"}`,
+		"",
+		"ability inlined body",
+		"",
+		`##### Source of Earth {data-scc="SB" data-subclass="earth"}`,
+		"",
+		"statblock inlined markdown",
+	}, "\n")
+
+	cards := map[string]cardEntry{
+		"SPEC": {html: "<section>SPEC-CARD</section>"},
+		"F":    {html: "<section>FEATURE-CARD</section>"},
+		"A":    {html: "<section>ABILITY-CARD</section>"}, // swallowed under F
+		"SB":   {html: "<div>SOURCE-SB</div>", standalone: true},
+	}
+
+	got, n := spliceCards(body, "x/class.elementalist", "", cards)
+	// SPEC and F are descended (both have the standalone statblock in their
+	// subtree — descend-mode is what lets the statblock get its own card); the
+	// ability A and the statblock SB are carded.
+	if n != 2 {
+		t.Fatalf("spliced %d cards, want 2 (A + SB)", n)
+	}
+	// The attr-bearing headings are all RECOGNIZED: the descended ones keep
+	// their heading + intro prose, the carded ones keep their heading and gain
+	// their card.
+	for _, keep := range []string{
+		`#### Summon Source of Earth {data-scc="F" data-subclass="earth"}`, "feature inlined body",
+		`##### Summon Source of Earth {data-scc="A" data-subclass="earth"}`, "ABILITY-CARD",
+		`##### Source of Earth {data-scc="SB" data-subclass="earth"}`, "SOURCE-SB",
+		"spec intro prose",
+	} {
+		if !strings.Contains(got, keep) {
+			t.Errorf("missing kept heading/card/prose %q", keep)
+		}
+	}
+	for _, gone := range []string{
+		"ability inlined body", "statblock inlined markdown",
+		"FEATURE-CARD", "SPEC-CARD",
+	} {
+		if strings.Contains(got, gone) {
+			t.Errorf("%q should have been swallowed / not rendered", gone)
+		}
+	}
+}
