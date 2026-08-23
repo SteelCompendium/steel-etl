@@ -43,9 +43,16 @@ func kitBonus(s string) string {
 	return s
 }
 
-// kitKind derives the kit's family label (Martial / Magic / Psionic) the same way
-// the preview card (kitCard) does — from the signature ability's keyword line.
-func kitKind(body string) string {
+// kitKind returns the kit's family label (Martial / Magic / Psionic) from the
+// `kit_type` frontmatter the pipeline now emits (SC-116, KitParser.deriveKitType)
+// — the single source of truth, shared by this plate and the preview card
+// (kitCard, cards.go). A signature-ability keyword sniff over body is kept only
+// as a defensive fallback for pre-SC-116 content that predates the field; it is
+// never exercised against real pipeline output.
+func kitKind(fm, body string) string {
+	if v := strings.TrimSpace(parseFrontmatterField(fm, "kit_type")); v != "" {
+		return v
+	}
 	_, _, keywords := signatureFromBody(body)
 	switch {
 	case strings.Contains(keywords, "Psionic"):
@@ -86,7 +93,7 @@ func renderKitPlate(fm, body string) string {
 		Crest:       `<span class="sc-crest sc-kit__crest"><span>` + crestSVG("kit") + `</span></span>`,
 		NameTag:     "h2",
 		Class:       "sc-kit__head",
-		LeftEyebrow: hLine(html.EscapeString(kitKind(body) + " Kit")),
+		LeftEyebrow: hLine(html.EscapeString(kitKind(fm, body) + " Kit")),
 		LeftPrimary: hLine(html.EscapeString(name)),
 	}))
 	sb.WriteString("\n")

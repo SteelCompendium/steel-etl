@@ -133,9 +133,30 @@ func TestBuildKitPage_NoSignatureAbility(t *testing.T) {
 	}
 }
 
+// TestKitKind covers the SC-116 frontmatter-first path: kitKind reads the
+// `kit_type` field the pipeline now emits (KitParser.deriveKitType) and never
+// touches body at all when it's present.
 func TestKitKind(t *testing.T) {
-	// kitKind reads keywords via signatureFromBody, which requires the kit's
-	// "Signature Ability" section header (always present on real kit pages).
+	cases := []struct {
+		name, fm, want string
+	}{
+		{"Martial from frontmatter", "kit_type: Martial", "Martial"},
+		{"Magic from frontmatter", "kit_type: Magic", "Magic"},
+		{"Psionic from frontmatter", "kit_type: Psionic", "Psionic"},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			if got := kitKind(tc.fm, ""); got != tc.want {
+				t.Errorf("kitKind(%q, \"\") = %q, want %q", tc.fm, got, tc.want)
+			}
+		})
+	}
+}
+
+// TestKitKind_FallbackSniff covers the defensive body-sniff fallback for
+// content that predates SC-116 (no `kit_type` frontmatter at all) — the OLD
+// sole mechanism, kept only as a safety net now that frontmatter is primary.
+func TestKitKind_FallbackSniff(t *testing.T) {
 	sig := func(kw string) string {
 		return "## Signature Ability\n\n### A\n\n| **" + kw + "** | x |\n"
 	}
@@ -146,8 +167,37 @@ func TestKitKind(t *testing.T) {
 		"":                     "Martial", // no signature ability → default Martial
 	}
 	for body, want := range cases {
-		if got := kitKind(body); got != want {
-			t.Errorf("kitKind(%q) = %q, want %q", body, got, want)
+		if got := kitKind("", body); got != want {
+			t.Errorf("kitKind(\"\", %q) = %q, want %q", body, got, want)
 		}
+	}
+}
+
+// TestKitKind_MisBucketRegression is the regression the fallback sniff itself
+// used to fall victim to before SC-116: kitCard (the Browse index tile) reads
+// the kit page's body AFTER buildKitPage's plate transform, which replaces the
+// "## Signature Ability" heading with the rendered plate — so the OLD
+// body-only sniff always fell through to "Martial", mis-bucketing every
+// Psionic/Magic kit on the index (verified: 25/25 real kit tiles showed
+// "Martial Kit" pre-fix). A post-transform body (plate HTML + a bare
+// {data-scc} marker heading, no "## Signature Ability" text) proves the
+// fallback alone would still get this wrong — kitKind only gets it right
+// because frontmatter now wins.
+func TestKitKind_MisBucketRegression(t *testing.T) {
+	postTransformBody := `<section class="sc-kit sc-fil">
+<div class="sc-kit__band sc-kit__band--sig"><div class="sc-kit__band-head">Signature Ability</div></div>
+</section>
+
+### Fade {data-scc="mcdm.heroes.v1/feature.ability.battlemind/fade"}
+`
+	// The fallback alone (no frontmatter) mis-buckets a real Psionic kit as
+	// Martial — proving the bug the old sole mechanism had.
+	if got := kitKind("", postTransformBody); got != "Martial" {
+		t.Fatalf("fallback sniff over post-transform body = %q, want the (wrong) %q — this test's premise changed, re-check the regression", got, "Martial")
+	}
+	// With SC-116's frontmatter present, the SAME post-transform body now
+	// correctly reads Psionic.
+	if got := kitKind("kit_type: Psionic", postTransformBody); got != "Psionic" {
+		t.Errorf("kitKind with kit_type frontmatter = %q, want %q (SC-116 regression)", got, "Psionic")
 	}
 }

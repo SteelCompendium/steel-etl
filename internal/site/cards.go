@@ -304,16 +304,12 @@ func kitCard(fm, body, file, name string) string {
 	ranged := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_damage_bonus")))
 	meleeDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_distance_bonus")))
 	rangedDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_distance_bonus")))
-	sigName, sigType, keywords := signatureFromBody(body)
+	sigName, sigType, _ := signatureFromBody(body)
 	// The crest is always the backpack (matching the Kits card on the Browse
 	// landing); only the type label distinguishes martial/magic/psionic kits.
-	kind := "Martial"
-	switch {
-	case strings.Contains(keywords, "Psionic"):
-		kind = "Psionic"
-	case strings.Contains(keywords, "Magic"):
-		kind = "Magic"
-	}
+	// kitKind (kit_page.go) reads the `kit_type` frontmatter the pipeline now
+	// emits (SC-116) — the single source of truth shared with the detail plate.
+	kind := kitKind(fm, body)
 
 	// Equipment: show the raw source sentence verbatim — parsing it into
 	// armor/weapon tokens lost nuance (e.g. "one or two light weapons"). The

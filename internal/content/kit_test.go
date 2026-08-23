@@ -230,6 +230,98 @@ You wear light armor and wield one or two light weapons.
 	}
 }
 
+// TestKitParser_KitTypeFromSignatureKeywords covers SC-116: KitParser derives
+// `kit_type` (Martial/Magic/Psionic) once from the signature ability's
+// keywords and stamps it into frontmatter — replacing the site's former
+// per-render keyword sniff, which ran against the already-carded page body and
+// so silently mis-bucketed every kit as Martial on the Browse index tile (see
+// internal/site kit_page_test.go TestKitKind_MisBucketRegression).
+func TestKitParser_KitTypeFromSignatureKeywords(t *testing.T) {
+	p := &KitParser{}
+
+	newKit := func(name, kw string) *parser.Section {
+		sig := &parser.Section{
+			Heading:      "Sig",
+			HeadingLevel: 6,
+			Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
+			BodySource: `*Flavor.*
+
+| **` + kw + `** | **Main action** |
+|---|---|
+| **Melee 1** | **One creature** |`,
+		}
+		sigHeading := &parser.Section{Heading: "Signature Ability", HeadingLevel: 5, Children: []*parser.Section{sig}}
+		sig.Parent = sigHeading
+		kit := &parser.Section{
+			Heading:      name,
+			HeadingLevel: 4,
+			Annotation:   map[string]string{"type": "kit", "id": Slugify(name)},
+			BodySource:   "A kit.\n\n##### Equipment\n\nA weapon.",
+			Children:     []*parser.Section{sigHeading},
+		}
+		sigHeading.Parent = kit
+		return kit
+	}
+
+	cases := []struct {
+		name, keywords, want string
+	}{
+		{"Battlemind", "Psionic, Melee, Strike", "Psionic"},
+		{"Arcane Archer", "Magic, Ranged, Strike", "Magic"},
+		{"Panther", "Melee, Strike, Weapon", "Martial"},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			result, err := p.Parse(context.NewContextStack(nil), newKit(tc.name, tc.keywords))
+			if err != nil {
+				t.Fatalf("Parse failed: %v", err)
+			}
+			if got := result.Frontmatter["kit_type"]; got != tc.want {
+				t.Errorf("kit_type = %v, want %v", got, tc.want)
+			}
+		})
+	}
+}
+
+// TestKitParser_KitTypeDefaultsMartialWithoutSignature covers a kit with no
+// signature ability at all — kit_type still defaults to "Martial" (matches the
+// site's pre-existing default for a kind-less kit).
+func TestKitParser_KitTypeDefaultsMartialWithoutSignature(t *testing.T) {
+	p := &KitParser{}
+	section := &parser.Section{
+		Heading:      "Simple Kit",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "kit", "id": "simple-kit"},
+		BodySource:   "**Speed Bonus:** +1",
+	}
+	result, err := p.Parse(context.NewContextStack(nil), section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	if got := result.Frontmatter["kit_type"]; got != "Martial" {
+		t.Errorf("kit_type = %v, want Martial", got)
+	}
+}
+
+// TestKitParser_KitTypeAnnotationOverride covers the explicit `@kit-type:`
+// annotation path — it must win over the derived sniff.
+func TestKitParser_KitTypeAnnotationOverride(t *testing.T) {
+	p := &KitParser{}
+	section := &parser.Section{
+		Heading:      "Odd Kit",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "kit", "id": "odd-kit", "kit-type": "Stormwight"},
+		BodySource:   "**Speed Bonus:** +1",
+	}
+	result, err := p.Parse(context.NewContextStack(nil), section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	if got := result.Frontmatter["kit_type"]; got != "Stormwight" {
+		t.Errorf("kit_type = %v, want annotation override Stormwight", got)
+	}
+}
+
 func TestKitParser_NoSignatureAbility(t *testing.T) {
 	p := &KitParser{}
 

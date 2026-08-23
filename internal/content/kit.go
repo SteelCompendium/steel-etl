@@ -53,6 +53,7 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 	// Find the signature ability from the section tree children.
 	// The ability is annotated with @type: ability | @subtype: signature and
 	// may be nested under an unannotated "Signature Ability" heading.
+	var sigKeywords []string
 	if sigAbility := findSignatureAbilityChild(section); sigAbility != nil {
 		abilityParser := &AbilityParser{}
 		parsed, err := abilityParser.Parse(context.NewContextStack(nil), sigAbility)
@@ -69,10 +70,41 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 			if sigBody != "" {
 				result.Body = result.Body + "\n\n" + sigHeading + "\n\n" + sigBody
 			}
+			if kws, ok := parsed.Frontmatter["keywords"].([]string); ok {
+				sigKeywords = kws
+			}
 		}
 	}
 
+	// SC-116: derive the kit's family label (Martial / Magic / Psionic) from the
+	// signature ability's keywords ONCE here, at parse time, and stamp it into
+	// frontmatter — replacing the site renderers' former per-render keyword
+	// sniff (kitKind in internal/site), which duplicated this logic in two
+	// places and, worse, ran against the site's already-carded page body (which
+	// no longer carries the keyword line), silently mis-bucketing every kit as
+	// "Martial" on the Browse index tile. An explicit `@kit-type:` annotation
+	// (rare; not used in the real corpus today) always wins.
+	if _, ok := fm["kit_type"]; !ok {
+		fm["kit_type"] = deriveKitType(sigKeywords)
+	}
+
 	return result, nil
+}
+
+// deriveKitType returns the kit's family label from its signature ability's
+// keyword list: "Psionic" or "Magic" when present among the keywords, else the
+// "Martial" default (also the default for a kit with no signature ability).
+// Mirrors the site's former kitKind sniff (internal/site/kit_page.go), now run
+// once here instead of at render time (SC-116).
+func deriveKitType(keywords []string) string {
+	joined := strings.Join(keywords, " ")
+	switch {
+	case strings.Contains(joined, "Psionic"):
+		return "Psionic"
+	case strings.Contains(joined, "Magic"):
+		return "Magic"
+	}
+	return "Martial"
 }
 
 // findSignatureAbilityChild searches the section's children (recursively through
