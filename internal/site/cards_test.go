@@ -160,6 +160,45 @@ func TestKitCardIconAndDescription(t *testing.T) {
 	}
 }
 
+// TestKitCardAbsentBonusesAreDashes is the SC-119 regression: kitCard (the
+// Browse kit index tile) must show "—" for EVERY absent bonus slot in BOTH
+// stat rows — matching kitBonus()'s "the approved all-8 grid uses '—' for
+// every absent bonus" convention already used by the kit detail page
+// (renderKitPlate, kit_page.go) and the DSE plugin's Steel composition. Before
+// the fix, row 1 (Stamina/Speed/Stability/Disengage) used bonusShort/orZero,
+// which rendered an absent bonus as "0" — inconsistent with row 2's dashes on
+// the very same tile.
+func TestKitCardAbsentBonusesAreDashes(t *testing.T) {
+	// Boren: a real stormwight kit with NO bonus fields set at all (see the
+	// live corpus — v2/docs/Browse/kit/boren.md pre-fix showed "0" x4 on row 1
+	// and "—" x4 on row 2 for exactly this kit).
+	fm := "---\nname: Boren\ntype: kit\n---"
+	out := kitCard(fm, "", "boren.md", "Boren")
+	if strings.Contains(out, `<div class="v">0</div>`) {
+		t.Errorf("kit card must not show \"0\" for an absent bonus (SC-119), got:\n%s", out)
+	}
+	if got := strings.Count(out, `<div class="v">—</div>`); got != 8 {
+		t.Errorf("expected all 8 stat slots to show \"—\" for an all-absent kit, got %d dashes in:\n%s", got, out)
+	}
+}
+
+// TestKitCardMixedBonusesRow1Dashes: row 1 must dash a specific absent bonus
+// even when SOME row-1 bonuses are present (guards against a fix that only
+// blanket-dashes an entirely-empty kit).
+func TestKitCardMixedBonusesRow1Dashes(t *testing.T) {
+	fm := "---\nname: Panther\ntype: kit\nspeed_bonus: \"+1\"\nstability_bonus: \"+1\"\n---"
+	out := kitCard(fm, "", "panther.md", "Panther")
+	if !strings.Contains(out, `<div class="v">—</div><div class="l">Stamina per Echelon</div>`) {
+		t.Errorf("absent Stamina bonus should render as an em dash, not 0/blank, got:\n%s", out)
+	}
+	if !strings.Contains(out, `<div class="v">—</div><div class="l">Disengage</div>`) {
+		t.Errorf("absent Disengage bonus should render as an em dash, not 0/blank, got:\n%s", out)
+	}
+	if !strings.Contains(out, `<div class="v">+1</div><div class="l">Speed</div>`) {
+		t.Errorf("present Speed bonus should render its value, got:\n%s", out)
+	}
+}
+
 // kitCard must always emit the equipment line (a non-breaking space when the
 // kit has none) so cards reserve the same vertical space and stay aligned.
 func TestKitCardEquipmentAlwaysPresent(t *testing.T) {

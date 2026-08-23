@@ -296,14 +296,19 @@ func cardFor(t, dirName, fm, body, file, name string) string {
 // ── per-type builders ───────────────────────────────────────────────────────
 
 func kitCard(fm, body, file, name string) string {
-	stam := bonusShort(parseFrontmatterField(fm, "stamina_bonus"))
-	spd := orZero(parseFrontmatterField(fm, "speed_bonus"))
-	stab := orZero(parseFrontmatterField(fm, "stability_bonus"))
-	dis := orZero(firstField(fm, "disengage_bonus", "disengage"))
-	melee := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_damage_bonus")))
-	ranged := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_damage_bonus")))
-	meleeDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_distance_bonus")))
-	rangedDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_distance_bonus")))
+	// SC-119: both stat rows use kitBonus() — the same helper the kit DETAIL
+	// page (renderKitPlate, kit_page.go) and the DSE plugin's SC-100 Steel
+	// composition converged on — so an absent bonus reads as "—" uniformly
+	// across all 8 slots, on every kit surface, instead of row 1 showing "0"
+	// and row 2 showing "—" for the same "this kit grants nothing here" fact.
+	stam := kitBonus(parseFrontmatterField(fm, "stamina_bonus"))
+	spd := kitBonus(parseFrontmatterField(fm, "speed_bonus"))
+	stab := kitBonus(parseFrontmatterField(fm, "stability_bonus"))
+	dis := kitBonus(firstField(fm, "disengage_bonus", "disengage"))
+	melee := kitBonus(parseFrontmatterField(fm, "melee_damage_bonus"))
+	ranged := kitBonus(parseFrontmatterField(fm, "ranged_damage_bonus"))
+	meleeDist := kitBonus(parseFrontmatterField(fm, "melee_distance_bonus"))
+	rangedDist := kitBonus(parseFrontmatterField(fm, "ranged_distance_bonus"))
 	sigName, sigType, _ := signatureFromBody(body)
 	// The crest is always the backpack (matching the Kits card on the Browse
 	// landing); only the type label distinguishes martial/magic/psionic kits.
@@ -866,24 +871,6 @@ func crestSVG(icon string) string {
 }
 
 // ── frontmatter / body helpers ──────────────────────────────────────────────
-
-func bonusShort(s string) string {
-	s = strings.TrimSpace(s)
-	if i := strings.Index(strings.ToLower(s), " per "); i >= 0 {
-		s = strings.TrimSpace(s[:i])
-	}
-	if s == "" {
-		return "0"
-	}
-	return s
-}
-
-func orZero(s string) string {
-	if s = strings.TrimSpace(s); s == "" {
-		return "0"
-	}
-	return s
-}
 
 func orDash(s string) string {
 	if s = strings.TrimSpace(s); s == "" {
