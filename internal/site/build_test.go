@@ -1497,3 +1497,65 @@ func TestBuild_EmbeddedCardsSeeSummonerRetainerAugments(t *testing.T) {
 		t.Errorf("class page missing the minion's post-augment sb-backlink (embedItemCards spliced a stale pre-augment leaf card):\n%s", got)
 	}
 }
+
+// TestBuild_ActionAbilityGridNotTranscluded is the Build()-level ordering
+// guard MED-1 (SC-179 round 3 review) asked for: the three doc comments
+// (build.go, action_abilities.go, docs/site-builder.md) all state that
+// augmentActionAbilityPages MUST run after embedItemCards, because the Free
+// Strike leaf card is transcluded into container pages — but nothing asserted
+// it. Drives the real Build(cfg) over a source tree shaped like production
+// (the Free Strike rule leaf, the two subtyped ability leaves, and a chapter
+// page that transcludes the rule leaf by its {data-scc} marker, exactly what
+// the Read Combat chapter and the Main Actions landing do) and asserts the
+// "## Free Strike Abilities" heading appears in exactly one file under
+// DocsDir. If the augment pass is ever moved back before embedItemCards, this
+// test must fail: the chapter page would pick up its own copy of the grid.
+func TestBuild_ActionAbilityGridNotTranscluded(t *testing.T) {
+	dir := t.TempDir()
+	src := filepath.Join(dir, "src")
+	docs := filepath.Join(dir, "docs")
+
+	writeSitePage(t, src, "feature/common/main-actions/free-strike.md",
+		"---\nname: Free Strike\nscc: mcdm.heroes.v1/feature.common.main-actions/free-strike\ntype: feature\n---\n\nA creature can use this main action to make a free strike.\n")
+	writeSitePage(t, src, "feature/ability/common/melee-weapon-free-strike.md",
+		"---\nname: Melee Weapon Free Strike\nscc: mcdm.heroes.v1/feature.ability.common/melee-weapon-free-strike\nsubtype: free-strike\ntype: ability\ndistance: Melee 1\ntarget: One creature\naction_type: Main action\n---\n\nswing\n")
+	writeSitePage(t, src, "feature/ability/common/ranged-weapon-free-strike.md",
+		"---\nname: Ranged Weapon Free Strike\nscc: mcdm.heroes.v1/feature.ability.common/ranged-weapon-free-strike\nsubtype: free-strike\ntype: ability\ndistance: Ranged 5\ntarget: One creature\naction_type: Main action\n---\n\nshoot\n")
+	writeSitePage(t, src, "chapter/combat.md", strings.Join([]string{
+		"---", "name: Combat", "scc: mcdm.heroes.v1/chapter/combat", "type: chapter", "---", "",
+		"# Combat", "",
+		`## Free Strike {data-scc="mcdm.heroes.v1/feature.common.main-actions/free-strike"}`, "",
+		"inlined rule body", "",
+	}, "\n"))
+
+	cfg := &Config{
+		SourceDir: src,
+		DocsDir:   docs,
+		Sections: []SectionConfig{
+			{Name: "Browse", Include: []string{"feature/", "chapter/"}},
+		},
+		EmbedCardSections: []string{"Browse"},
+	}
+	if _, err := Build(cfg); err != nil {
+		t.Fatalf("Build failed: %v", err)
+	}
+
+	var hits []string
+	_ = filepath.WalkDir(docs, func(p string, d os.DirEntry, err error) error {
+		if err != nil || d.IsDir() || !strings.HasSuffix(p, ".md") {
+			return nil
+		}
+		if c := strings.Count(readFile(p), "## Free Strike Abilities"); c > 0 {
+			rel, _ := filepath.Rel(docs, p)
+			hits = append(hits, filepath.ToSlash(rel))
+		}
+		return nil
+	})
+	if len(hits) != 1 {
+		t.Fatalf("\"## Free Strike Abilities\" appears in %d file(s) %v, want exactly 1 "+
+			"(the transclusion leak this pass's ordering exists to prevent)", len(hits), hits)
+	}
+	if hits[0] != "Browse/feature/common/main-actions/free-strike.md" {
+		t.Errorf("heading landed on %q, want the Free Strike rule page", hits[0])
+	}
+}

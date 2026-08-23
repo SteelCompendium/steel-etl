@@ -300,6 +300,17 @@ sections** — `applySearchExclusion` later prepends its own `search:` key and Y
 forbids duplicates. This is why "fury" finds the Fury class before the four Rival
 Fury statblocks.
 
+`searchBoostFor` adds one **SCC-derived** rule on top of the type table (SC-179),
+checked first for `type: feature` / `type: ability` pages: a page whose SCC type-path
+is `feature.ability.common` or starts with `feature.common.`
+(`main-actions` / `maneuvers` / `move-actions`) gets `commonActionBoost` = 3, the same
+tier as the rules glossary. These 24 pages are the book's **universal** actions —
+Free Strike, Charge, Grab, Hide, and the common ability cards every creature has —
+and at the default 1× they tied with the ~3,000 class-specific features and lost to
+every statblock whose text merely mentions the term. (The bucket is frontmatter-flat:
+`claw-dirt` / `dragons-fire` are ancestry-granted but carry no owning-entity field, so
+they ride along. Harmless at this size.)
+
 ### `internal/site/export_src.go`
 
 **Export-source island** (P10). Carded leaf pages (`wasCarded` set by the
@@ -443,6 +454,38 @@ The class-owned analog of the Rival Summoner back-link.
   the two real class-owned pages.
 - Idempotent (guards on an existing `sb-backlink`) and a no-op without a
   `monster/companion` or `monster/fixture` tree.
+
+## Common-action ⇄ ability cross-references (`action_abilities.go`)
+
+`augmentActionAbilityPages` appends a `## <Heading>` + `.sc-prevs` preview grid of the
+abilities that *implement* a common action to that action's rule page. SC-179: the
+Browse **Free Strike** page (`feature.common.main-actions/free-strike`) explained the
+rule but never showed or linked **Melee/Ranged Weapon Free Strike**.
+
+- **Why they were orphaned** — where the book nests an ability inside its rule section
+  (Grab, Knockback), `RenderSubtree` already inlines the card and the reader sees both.
+  The free strikes are the exception: *Draw Steel: Heroes* prints the two ability blocks
+  in Chapter 2 (character creation, step 7) and the rule in Chapter 10, under a
+  `### Free Strikes` **`feature-group`** — and `feature-group` sections get **no SCC and
+  no Browse page** (`FeatureGroupParser`, grouping context only). So the abilities
+  classified as `feature.ability.common/*` with nothing pointing at them, and the rule
+  page's own "(see Free Strikes below)" pointed at a "below" that doesn't exist on a
+  leaf page.
+- **Derivation** — `abilitySubtypeRelations` maps an ability's **`subtype`** frontmatter
+  value to the SCC code of its host rule page. The two free-strike leaves already carry
+  `subtype: free-strike` (from `@subtype: free-strike` in the book source), so the
+  relation is data the corpus already holds — no data edit, no SCC re-mint. Add a row to
+  surface another split rule/ability pair.
+- **Rendering** — reuses `extractPreviewItem` + `renderPrevCard` from
+  `feature_index.go`, so a card looks identical whether the reader drilled to it through
+  the index or found it here. Hrefs are directory URLs computed with `relHref` from the
+  host page's own URL directory, never hard-coded hop counts.
+- **Timing — runs AFTER `embedItemCards`**, for the same reason as
+  `augmentClassOwnedBackLinks`: the Free Strike leaf card is transcluded into container
+  pages (the Read tab's Combat chapter, the Main Actions landing), so appending the grid
+  earlier would copy it into every one of them.
+- Idempotent (guards on the heading) and a no-op when either side of the relation is
+  absent from the build.
 
 ## Family Malice bands (`monster_malice.go`)
 

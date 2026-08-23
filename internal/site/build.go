@@ -191,6 +191,21 @@ func Build(cfg *Config) (*BuildResult, error) {
 		}
 	}
 
+	// Common-action ⇄ ability cross-references (SC-179): append a preview-card
+	// grid of the abilities that implement a common action to that action's rule
+	// page — today the two standard free strikes on Browse → Feature → Common →
+	// Main Actions → Free Strike, which the book prints eight chapters apart from
+	// the rule. Runs AFTER embedItemCards for the same reason as
+	// augmentClassOwnedBackLinks above: the Free Strike leaf card is transcluded
+	// into container pages (the Read Combat chapter, the Main Actions landing), so
+	// appending the grid earlier would copy it into every one of them. No-op when
+	// the Heroes book isn't in this build.
+	for _, s := range genericSections {
+		if _, aErrs := augmentActionAbilityPages(filepath.Join(cfg.DocsDir, s.Name)); len(aErrs) > 0 {
+			result.Errors = append(result.Errors, aErrs...)
+		}
+	}
+
 	// Family Malice bands (FOLLOWUPS #7 piece 1): splice each Monsters-book
 	// statblock's own card with its family's shared Malice band (maliceBands,
 	// precomputed above). Runs AFTER embedItemCards for the same reason as
