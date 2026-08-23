@@ -273,7 +273,15 @@ func renderAbilityCard(fm, body, originOverride string) string {
 	dia := `<span class="sc-ability__dia"></span>`
 
 	var b strings.Builder
-	fmt.Fprintf(&b, "<article class=\"sc-ability sc-fil\" data-action=\"%s\">\n", act.key)
+	// data-conditions is the SC-90 condition facet, derived from the ability's
+	// mechanical text (frontmatter + body, flavor excluded) and read back by
+	// extractPreviewItem for the Search & Filter island. Abilities only — a
+	// trait/feature page renders through renderTraitCard and carries none.
+	condAttr := ""
+	if ctype == "ability" {
+		condAttr = conditionsAttr(extractConditions(fm, body))
+	}
+	fmt.Fprintf(&b, "<article class=\"sc-ability sc-fil\" data-action=\"%s\"%s>\n", act.key, condAttr)
 
 	// head: shared 6-slot header. usage → right-deck chip, cost → right-primary
 	// mini-title, level → right-eyebrow chip; the crest carries the usage accent.

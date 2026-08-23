@@ -225,6 +225,42 @@ Feature" vs "<Source> Trait" (regression once mislabelled every feature "Trait")
 (one object per leaf, dir-URL hrefs; `kind` ∈ feature/ability/trait drives the Type
 facet's three buckets). Site-only; styled by v2 `docs/stylesheets/steel-indexes.css`.
 
+### `internal/site/conditions.go`
+
+The **Condition facet** (SC-90) on the feature Search & Filter island, plus the
+`sc-prev__chip--cond` chips that show *why* a card matched. Nothing in the data
+contract records which ability touches which condition, so it is derived here.
+
+- **Vocabulary** — `conditionSlugs`, the nine `@type: condition` entities in the
+  Heroes book. `TestConditionVocabularyMatchesBookSources` re-derives that set from
+  all four book sources and fails if the two drift, so a tenth condition can't
+  silently vanish from the facet. (The DSE plugin's `ConditionManager` is *not*
+  usable as the source: it files `taunted` under `pseudoConditions`.)
+- **Match rule** — `extractConditions(fm, body)` takes the union of a resolved-link
+  signal (`condition/<slug>`) and a word-boundary signal, over the ability's
+  **mechanical** text only: `conditionMechanicalText` drops the frontmatter
+  `flavor:`/`name:` blocks and every wholly-italic body paragraph (the same
+  paragraphs `renderAbilityCard` treats as flavor, so card and facet agree by
+  construction). Without that exclusion, Assassinate's "an already **weakened**
+  foe" and Accelerate's "the world has **slowed** down" would pollute the facet.
+- **v1 matches ANY mention** — inflicting, requiring and removing a condition are
+  not distinguished. Removal phrasings are 3 of 621 abilities; splitting them out
+  would need fragile NLP for a handful of rows.
+- **Reads the BODY, not just frontmatter** — `effects:`/`tier1..3` capture only
+  labelled paragraphs. Censor's Judgment names `taunted` solely in an unlabelled
+  bullet list; 12 abilities have that shape and a frontmatter-only scan misses all
+  of them.
+- **Carrier** — `renderAbilityCard` stamps `data-conditions="dazed prone"` on the
+  `.sc-ability` article (same read-back trick as `data-grant`/`data-sub` on trait
+  cards); `conditionsForPreview` reads it back in `extractPreviewItem` into
+  `browseItem.Conditions` → the island's `conditions` key → the client facet.
+  An *empty* attribute on a rendered card means "derived, none" and is honoured —
+  re-deriving from rendered HTML would re-admit the flavor `<p>` and the `sc-src`
+  markdown template. Abilities only; traits/features carry no attribute.
+
+Site-only: the shared data repos and both schema copies are untouched. Promoting
+`conditions:` to real ability frontmatter is a separate contract-level change.
+
 ### `internal/site/ability_table.go`
 
 The **all-abilities table** appended below the folder cards on per-class ability

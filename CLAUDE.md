@@ -56,6 +56,7 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/site/feature_index.go` | Folder/preview-card index pages for the nested feature/treasure/rule trees; per-class ability dirs also get the sortable all-abilities table (`ability_table.go`) |
 | `internal/site/class_page.go` | `type: class` pages → `.sc-classhead` landing card (via `renderCardHead`) + `.sc-classnav` H2 jump bar; anchor slugs via `pySlugify` (matches python-markdown toc ids) |
 | `internal/site/ability_table.go` | Sortable Name/Lv/Cost/Action/Distance/Target table on `feature/ability/<class>/` indexes, read from leaf frontmatter |
+| `internal/site/conditions.go` | Condition facet: derives the Draw Steel conditions an ability's **mechanical** text mentions (flavor excluded; inflict/require/remove not distinguished), stamps `data-conditions` on the ability card, feeds the Search & Filter island. Site-only |
 | `internal/site/search_boost.go` | Per-type `search: boost:` frontmatter injection (classes 4×, rules/conditions 3×, statblocks 0.6×) — Browse only, never search-excluded sections (duplicate `search:` YAML keys) |
 | `internal/site/export_src.go` | Stashes each carded leaf's pre-card markdown in a single-line `sc-src` template (`data-src` attr, `&#10;` newlines — python-markdown mangles element content and multi-line attrs); `embed_cards.go` strips it from transclusions |
 | `internal/site/cards_book.go` | `.sc-card` index cards for the Books tab (`bookCard`, `chapterCard`) |

@@ -311,7 +311,11 @@ type browseItem struct {
 	Action   string   `json:"action,omitempty"`
 	Cost     string   `json:"cost,omitempty"`
 	Keywords []string `json:"keywords,omitempty"`
-	Distance string   `json:"distance,omitempty"`
+	// Conditions is the SC-90 facet: the Draw Steel conditions this ability's
+	// MECHANICAL text mentions (inflicts, requires, or removes — v1 does not
+	// distinguish; flavor text is excluded). Derived in conditions.go.
+	Conditions []string `json:"conditions,omitempty"`
+	Distance   string   `json:"distance,omitempty"`
 	Targets  string   `json:"targets,omitempty"`
 	Flavor   string   `json:"flavor,omitempty"`
 	Grants   string   `json:"grants,omitempty"`  // single-ability grant phrase
@@ -363,6 +367,7 @@ func extractPreviewItem(fm, body, kind, klassFallback string) browseItem {
 		it.Distance = plainInline(strings.TrimSpace(parseFrontmatterField(fm, "distance")))
 		it.Targets = plainInline(strings.TrimSpace(firstField(fm, "target", "targets")))
 		it.Flavor = plainInline(strings.TrimSpace(parseFrontmatterField(fm, "flavor")))
+		it.Conditions = conditionsForPreview(fm, body)
 	} else {
 		// Traits use the trait accent consistently. Flavor + the sub-feature
 		// markers come from the rendered .sc-trait HTML / its data-* attributes
@@ -520,12 +525,18 @@ func renderAbilityPrev(it browseItem, ctx bool) string {
 		RightPrimary: hMini(html.EscapeString(it.Cost)),
 		RightDeck:    hChip(html.EscapeString(meta[0])),
 	})
+	// keyword chips, then condition chips (SC-90) — so a card filtered to
+	// "prone" shows on its face why it matched. Mirrors abilityCard() in
+	// steel-feature-browser.js; keep the two in step.
 	kw := ""
-	if len(it.Keywords) > 0 {
+	if len(it.Keywords) > 0 || len(it.Conditions) > 0 {
 		var b strings.Builder
 		b.WriteString("<div class=\"sc-prev__kw\">")
 		for _, k := range it.Keywords {
 			b.WriteString("<span class=\"sc-prev__chip\">" + html.EscapeString(k) + "</span>")
+		}
+		for _, c := range it.Conditions {
+			b.WriteString("<span class=\"sc-prev__chip sc-prev__chip--cond\">" + html.EscapeString(c) + "</span>")
 		}
 		b.WriteString("</div>")
 		kw = b.String()
@@ -625,7 +636,9 @@ func buildFeatureBrowseSection(featureDir string) string {
 	var sb strings.Builder
 	sb.WriteString("\n## Search & Filter\n\n")
 	sb.WriteString("The whole feature tree on one page — search by name, filter by type, class, level, " +
-		"action or keyword, then jump straight to the card you need.\n\n")
+		"action, keyword or condition, then jump straight to the card you need.\n\n")
+	sb.WriteString("*The **Condition** filter matches every ability whose rules text mentions that " +
+		"condition — whether it inflicts, requires or removes it. Flavor text doesn't count.*\n\n")
 	sb.WriteString("<div class=\"sc-browse-mount\">\n")
 	sb.WriteString("<script type=\"application/json\" class=\"sc-browse-data\">\n")
 	sb.Write(data)

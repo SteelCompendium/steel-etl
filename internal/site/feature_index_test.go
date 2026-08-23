@@ -399,6 +399,63 @@ func TestBuildFeatureIndex_SearchIslandOnLanding(t *testing.T) {
 	}
 }
 
+// SC-90: the island must carry each ability's conditions, read off the rendered
+// card's data-conditions attribute, and the preview card must chip them.
+func TestBuildFeatureIndex_IslandCarriesConditions(t *testing.T) {
+	root := t.TempDir()
+	featureDir := filepath.Join(root, "feature")
+	leaf := strings.Replace(
+		abilityLeaf("Halt, Miscreant!", "Maneuver", "Signature"),
+		`<article class="sc-ability">`,
+		`<article class="sc-ability sc-fil" data-action="maneuver" data-conditions="slowed">`, 1)
+	writeFile(t, filepath.Join(featureDir, "ability", "censor", "level-1", "halt-miscreant.md"), leaf)
+
+	content, ok := buildFeatureIndexContent(featureDir, "feature", nil, []string{"ability"})
+	if !ok {
+		t.Fatal("expected folder index for feature/")
+	}
+	start := strings.Index(content, `class="sc-browse-data">`)
+	rest := content[start:]
+	open := strings.IndexByte(rest, '\n') + 1
+	var items []browseItem
+	if err := json.Unmarshal([]byte(strings.TrimSpace(rest[open:strings.Index(rest, "</script>")])), &items); err != nil {
+		t.Fatalf("island JSON invalid: %v", err)
+	}
+	if len(items) != 1 {
+		t.Fatalf("got %d items, want 1", len(items))
+	}
+	if got := items[0].Conditions; len(got) != 1 || got[0] != "slowed" {
+		t.Errorf("island conditions = %v, want [slowed]", got)
+	}
+	// …and the leaf-index preview card chips them, so a filtered card shows why
+	// it matched. (The build-time card and SCBrowse.card() must agree.)
+	leafDir := filepath.Join(featureDir, "ability", "censor", "level-1")
+	prev, ok := buildFeatureIndexContent(leafDir, "level-1", []string{"halt-miscreant.md"}, nil)
+	if !ok {
+		t.Fatal("expected preview index for the leaf dir")
+	}
+	if !strings.Contains(prev, `<span class="sc-prev__chip sc-prev__chip--cond">slowed</span>`) {
+		t.Errorf("preview card missing the condition chip:\n%s", prev)
+	}
+}
+
+// An ability that mentions no condition must omit the key entirely, so the
+// client's uniqueSorted() never offers an empty chip.
+func TestBuildFeatureIndex_IslandOmitsEmptyConditions(t *testing.T) {
+	root := t.TempDir()
+	featureDir := filepath.Join(root, "feature")
+	writeFile(t, filepath.Join(featureDir, "ability", "censor", "level-1", "judgment.md"),
+		abilityLeaf("Judgment", "Maneuver", "Signature"))
+
+	content, _ := buildFeatureIndexContent(featureDir, "feature", nil, []string{"ability"})
+	if strings.Contains(content, `"conditions"`) {
+		t.Errorf("island emitted an empty conditions key:\n%s", content)
+	}
+	if strings.Contains(content, "sc-prev__chip--cond") {
+		t.Errorf("preview card emitted an empty condition chip:\n%s", content)
+	}
+}
+
 func TestBuildFeatureIndex_RuleLanding(t *testing.T) {
 	root := t.TempDir()
 	// rule/<group>/<term>.md tree: rule/ is the index-of-indexes node whose
