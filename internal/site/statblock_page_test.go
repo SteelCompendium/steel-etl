@@ -3,6 +3,9 @@ package site
 import (
 	"strings"
 	"testing"
+
+	"github.com/SteelCompendium/steel-etl/internal/content"
+	"gopkg.in/yaml.v3"
 )
 
 // A representative md-linked statblock page (verbatim shape from
@@ -505,5 +508,72 @@ func TestStatblockMeta4(t *testing.T) {
 				t.Errorf("statblockMeta4() = %+v, want {%q %q}", got, tc.wantLabel, tc.wantValue)
 			}
 		})
+	}
+}
+
+// angulotlCleaverBody is a verbatim excerpt of the Angulotl Cleaver's raw book
+// source (input/monsters/Draw Steel Monsters.md) — a real corpus captained
+// minion whose "With Captain" grid cell carries an actual bonus ("+1 damage
+// bonus to strikes"), not the usual "-" placeholder.
+const angulotlCleaverBody = `|    Angulotl, Humanoid    |              -              |                     Level 1                      |                Minion Ambusher                 |  EV 3 for 4 minions  |
+|:------------------------:|:---------------------------:|:------------------------------------------------:|:----------------------------------------------:|:--------------------:|
+|      **1S**<br>Size      |       **6**<br>Speed        |                 **4**<br>Stamina                 |               **0**<br>Stability               | **2**<br>Free Strike |
+| **Poison 2**<br>Immunity | **Climb, swim**<br>Movement |                        -                         | **+1 damage bonus to strikes**<br>With Captain |  **-**<br>Weakness   |
+|      **0**<br>Might      |      **+2**<br>Agility      |                 **+0**<br>Reason                 |              **+1**<br>Intuition               |  **+0**<br>Presence  |
+
+> 🗡 **Hop and Chop (Signature Ability)**
+>
+> | **Melee, Strike, Weapon** |                          **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
+> |---------------------------|-----------------------------------------:|
+> | **📏 Melee 1**            | **🎯 One creature or object per minion** |
+>
+> **Power Roll + 2:**
+>
+> - **≤11:** 2 damage
+> - **12-16:** 4 damage
+> - **17+:** 5 damage
+`
+
+// TestCaptainedMinion_EndToEnd is the SC-157 regression: a captained minion's
+// "With Captain" bonus must survive the FULL parse → render pipeline, not just
+// the statblockMeta4 unit above. It starts from a raw book-source stat grid
+// (the same shape content.StatblockParser.Parse feeds ParseStatblockFields —
+// see internal/content/monster.go), marshals the resulting fields to YAML
+// frontmatter exactly as the real pipeline does (mirrors
+// inlineStatblockCard in embed_cards.go), and runs the actual site build
+// entry point (buildStatblockIslandPage) that a `type: statblock` md-linked
+// page goes through. Before FOLLOWUPS #7 piece 2 / 68887ab, buildStatblockIsland
+// never read the `with_captain` frontmatter field at all, so this exact bonus
+// ("+1 damage bonus to strikes") silently rendered as a blank "With Captain -"
+// cell; this test locks in that the site's captain cell tracks the DSE
+// plugin's secondary-stats ledger (statblockMetaCells/statblockStickyParts in
+// draw-steel-elements/src/elements/statblock/view.ts): same label, same value,
+// present in both the full card's .sb__meta grid and the .sb__sticky-row2 bar.
+func TestCaptainedMinion_EndToEnd(t *testing.T) {
+	fields := content.ParseStatblockFields("Angulotl Cleaver", angulotlCleaverBody)
+	if fields["with_captain"] != "+1 damage bonus to strikes" {
+		t.Fatalf("content.ParseStatblockFields dropped with_captain: got %v", fields["with_captain"])
+	}
+
+	fmBytes, err := yaml.Marshal(fields)
+	if err != nil {
+		t.Fatalf("yaml.Marshal(fields): %v", err)
+	}
+	page := "---\n" + string(fmBytes) + "---\n\n" + angulotlCleaverBody
+
+	out, ok := buildStatblockIslandPage([]byte(page))
+	if !ok {
+		t.Fatal("expected statblock page to be rewritten")
+	}
+	s := string(out)
+
+	// Full card's .sb__meta grid.
+	if !strings.Contains(s, `<span class="sb__field-l">With Captain</span><span class="sb__field-v">+1 damage bonus to strikes</span>`) {
+		t.Errorf("With Captain missing/wrong from .sb__meta grid; got:\n%s", s)
+	}
+	// Sticky mini-header's row2 (site order: Movement, With Captain, Immunity,
+	// Weakness — matches the DSE plugin's statblockStickyParts).
+	if !strings.Contains(s, `<span class="sm"><b>With Captain</b>+1 damage bonus to strikes</span>`) {
+		t.Errorf("With Captain missing/wrong from sticky row2; got:\n%s", s)
 	}
 }
