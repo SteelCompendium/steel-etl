@@ -41,6 +41,8 @@ func Build(cfg *Config) (*BuildResult, error) {
 	// reset the build-scoped statblock feature cache (statblock_preview.go)
 	statblockFeatureCache = map[string][]sbFeature{}
 	companionStatblockCache = map[string]sbIsland{}
+	kitSignatureCardIndex = nil
+	docsRootDir = cfg.DocsDir
 	result := &BuildResult{}
 
 	// Clean docs dir (except protected paths)
@@ -77,6 +79,17 @@ func Build(cfg *Config) (*BuildResult, error) {
 		result.Errors = append(result.Errors, errs...)
 		result.Sections++
 	}
+
+	// Leaf card index: scc -> finished card HTML (+ its docs-relative dir, for
+	// rebasing links elsewhere), built once every leaf page is on disk — the
+	// SAME map embedItemCards uses further down (buildLeafCardIndex, formerly
+	// its own "Pass A"), computed early so kitCard (cards.go, via
+	// generateIndexPages below) can splice a kit's signature-ability leaf card
+	// inline on the Browse kit index tile (SC-115) — the exact card the kit
+	// DETAIL page gets, just spliced a build step earlier.
+	leafCards, leafCardErrs := buildLeafCardIndex(cfg)
+	result.Errors = append(result.Errors, leafCardErrs...)
+	kitSignatureCardIndex = leafCards
 
 	// Write .nav.yml files
 	for _, section := range cfg.Sections {
@@ -147,7 +160,7 @@ func Build(cfg *Config) (*BuildResult, error) {
 	// with that item's finished leaf card. Runs after every leaf + index page is
 	// written; before the frontmatter-only passes below. Site-only — the data/
 	// repos are produced by the pipeline and are unaffected.
-	embedCount, embedErrs := embedItemCards(cfg)
+	embedCount, embedErrs := embedItemCards(cfg, leafCards)
 	result.EmbeddedCards = embedCount
 	result.Errors = append(result.Errors, embedErrs...)
 

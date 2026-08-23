@@ -343,11 +343,16 @@ func spliceCards(body, ownSCC, containerDir string, cards map[string]cardEntry) 
 	return strings.Join(out, "\n"), spliced
 }
 
-// embedItemCards is the Build() post-pass. Over the configured sections it
-// builds a scc -> card-HTML map from every card-able leaf, then rewrites each
-// container page in place, splicing leaf cards under their {data-scc} headings.
-// Returns the number of container pages rewritten plus any errors.
-func embedItemCards(cfg *Config) (int, []string) {
+// buildLeafCardIndex walks the configured embed-card sections (default Browse)
+// collecting every card-able leaf's finished card HTML keyed by its SCC code,
+// alongside its docs-relative directory (needed to rebase the card's relative
+// links when it's transcluded somewhere else). This was embedItemCards' "Pass
+// A" until SC-115 split it out: kitCard (cards.go) also needs this exact
+// leaf → card map, to splice a kit's signature-ability leaf card inline on the
+// Browse kit index tile — the same finished `.sc-ability` card the kit DETAIL
+// page gets via embedItemCards below, just spliced one build step earlier
+// (generateIndexPages runs before embedItemCards; see Build() in build.go).
+func buildLeafCardIndex(cfg *Config) (map[string]cardEntry, []string) {
 	var dirs []string
 	for _, s := range embedCardSections(cfg) {
 		dir := filepath.Join(cfg.DocsDir, s)
@@ -357,8 +362,6 @@ func embedItemCards(cfg *Config) (int, []string) {
 	}
 
 	var errs []string
-
-	// Pass A: scc -> card entry, from every card-able leaf page.
 	cards := map[string]cardEntry{}
 	for _, dir := range dirs {
 		filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
@@ -379,9 +382,27 @@ func embedItemCards(cfg *Config) (int, []string) {
 			return nil
 		})
 	}
+	return cards, errs
+}
 
-	// Pass B: splice into container pages (those still holding markdown
-	// {data-scc} heading markers; leaf cards are HTML and never match).
+// embedItemCards is the Build() post-pass. Over the configured sections it
+// splices each card-able leaf's finished card (from the precomputed cards
+// index — buildLeafCardIndex) into every container page in place, under that
+// leaf's {data-scc} heading. Returns the number of container pages rewritten
+// plus any errors.
+func embedItemCards(cfg *Config, cards map[string]cardEntry) (int, []string) {
+	var dirs []string
+	for _, s := range embedCardSections(cfg) {
+		dir := filepath.Join(cfg.DocsDir, s)
+		if _, err := os.Stat(dir); err == nil {
+			dirs = append(dirs, dir)
+		}
+	}
+
+	var errs []string
+
+	// Splice into container pages (those still holding markdown {data-scc}
+	// heading markers; leaf cards are HTML and never match).
 	count := 0
 	for _, dir := range dirs {
 		filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {

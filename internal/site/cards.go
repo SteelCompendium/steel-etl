@@ -139,7 +139,7 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 		if name == "" {
 			name = fileToTitle(f)
 		}
-		sb.WriteString(cardFor(cardType, dirName, fm, body, f, name))
+		sb.WriteString(cardFor(cardType, dirName, fm, body, f, name, docsRelDir(dir)))
 	}
 	sb.WriteString("</div>\n")
 	return sb.String(), true
@@ -248,10 +248,10 @@ func pathHasSegment(dir, seg string) bool {
 	return false
 }
 
-func cardFor(t, dirName, fm, body, file, name string) string {
+func cardFor(t, dirName, fm, body, file, name, containerDir string) string {
 	switch t {
 	case "kit":
-		return kitCard(fm, body, file, name)
+		return kitCard(fm, body, file, name, containerDir)
 	case "rule":
 		return ruleCard(fm, body, file, name, dirName)
 	case "class":
@@ -295,7 +295,65 @@ func cardFor(t, dirName, fm, body, file, name string) string {
 
 // ── per-type builders ───────────────────────────────────────────────────────
 
-func kitCard(fm, body, file, name string) string {
+// docsRootDir is cfg.DocsDir, stashed once per Build() call (see build.go) so
+// buildCardsContent can compute a directory's docs-relative path (the same
+// "Browse/…" form buildLeafCardIndex's cardEntry.dir uses) without threading
+// an extra parameter through the whole generateIndexPages call chain. ""
+// outside a full Build() — docsRelDir then returns "" and kitCard's splice
+// simply no-ops (same degrade as kitSignatureCardIndex being empty).
+var docsRootDir string
+
+// docsRelDir returns absDir's path relative to docsRootDir in the same
+// slash-separated, docs-relative form buildLeafCardIndex's cardEntry.dir uses
+// (e.g. "Browse/kit"). "" when docsRootDir isn't set or absDir isn't under it.
+func docsRelDir(absDir string) string {
+	if docsRootDir == "" {
+		return ""
+	}
+	rel, err := filepath.Rel(docsRootDir, absDir)
+	if err != nil {
+		return ""
+	}
+	return filepath.ToSlash(rel)
+}
+
+// kitSignatureCardIndex is a build-scoped scc -> leaf-card index (every
+// card-able Browse leaf, incl. signature abilities), populated once per
+// Build() call (see build.go) so kitCard can splice a kit's finished
+// signature-ability card inline on the Browse kit index tile (SC-115) — the
+// exact same card the kit DETAIL page gets via embedItemCards. nil/empty
+// outside a full Build() (e.g. cards_test.go calling kitCard directly) —
+// kitCard then simply omits the signature-ability sub-render, same as a kit
+// with none.
+var kitSignatureCardIndex map[string]cardEntry
+
+// kitSignatureCardHTML looks up the kit's signature-ability {data-scc} marker
+// (preserved by buildKitPage, kit_page.go, after the closed plate) in the
+// build's leaf-card index and, if found, returns that leaf's finished
+// `.sc-ability` card HTML — the plugin's `ds-kit` sub-render, adopted here —
+// rebased from the leaf's own docs-relative directory to containerDir (the
+// Browse kit index page). "" when the kit has no signature ability, or the
+// index isn't populated (direct unit tests).
+func kitSignatureCardHTML(body, containerDir string) string {
+	if len(kitSignatureCardIndex) == 0 {
+		return ""
+	}
+	marker := kitSignatureMarker(body)
+	if marker == "" {
+		return ""
+	}
+	m := dataSCCHeadingRe.FindStringSubmatch(marker)
+	if m == nil {
+		return ""
+	}
+	entry, ok := kitSignatureCardIndex[m[2]]
+	if !ok {
+		return ""
+	}
+	return "  <div class=\"sc-card__sig-card\">" + rebaseLinks(entry.html, entry.dir, containerDir) + "</div>\n"
+}
+
+func kitCard(fm, body, file, name, containerDir string) string {
 	// SC-119: both stat rows use kitBonus() — the same helper the kit DETAIL
 	// page (renderKitPlate, kit_page.go) and the DSE plugin's SC-100 Steel
 	// composition converged on — so an absent bonus reads as "—" uniformly
@@ -309,7 +367,6 @@ func kitCard(fm, body, file, name string) string {
 	ranged := kitBonus(parseFrontmatterField(fm, "ranged_damage_bonus"))
 	meleeDist := kitBonus(parseFrontmatterField(fm, "melee_distance_bonus"))
 	rangedDist := kitBonus(parseFrontmatterField(fm, "ranged_distance_bonus"))
-	sigName, sigType, _ := signatureFromBody(body)
 	// The crest is always the backpack (matching the Kits card on the Browse
 	// landing); only the type label distinguishes martial/magic/psionic kits.
 	// kitKind (kit_page.go) reads the `kit_type` frontmatter the pipeline now
@@ -339,9 +396,12 @@ func kitCard(fm, body, file, name string) string {
 		{meleeDist, "Melee Dist", ""},
 		{rangedDist, "Ranged Dist", ""},
 	})
-	if sigName != "" {
-		inner += sigBlock(sigType, sigName)
-	}
+	// SC-115: the full signature-ability card, adopted from the DSE plugin's
+	// `ds-kit` sub-render — not the old one-line type+name (sigBlock, retired
+	// below; it read signatureFromBody(body), which can never match on this
+	// tile's ALREADY-CARDED body — see kitKind's mis-bucket doc comment for the
+	// same body-shape issue).
+	inner += kitSignatureCardHTML(body, containerDir)
 	return card(file, "kit", kind+" Kit", name, inner)
 }
 
@@ -636,12 +696,6 @@ func wideCard(file, icon, typeLabel, name, inner string) string {
 	fmt.Fprintf(&sb, "  <div class=\"sc-card__body\">%s</div>\n", inner)
 	sb.WriteString("</div>\n")
 	return sb.String()
-}
-
-func sigBlock(sigType, sigName string) string {
-	return fmt.Sprintf("  <div class=\"sc-card__sig\"><span class=\"sc-card__dot\" data-type=\"%s\"></span>"+
-		"<span class=\"sc-card__sig-label\">Signature</span>"+
-		"<span class=\"sc-card__sig-name\">%s</span></div>\n", sigType, html.EscapeString(sigName))
 }
 
 // statCell is one cell of a stat grid: value, label, an optional extra class on

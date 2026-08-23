@@ -260,6 +260,39 @@ func TestRebaseLinks(t *testing.T) {
 	}
 }
 
+// TestBuildLeafCardIndex covers the SC-115 extraction of embedItemCards'
+// former private "Pass A" into its own function: it must return every
+// card-able leaf's finished card HTML keyed by scc, with entry.dir set to the
+// leaf's docs-relative directory — the exact map kitCard (cards.go) also
+// consumes to splice a kit's signature-ability card inline on the Browse
+// index tile.
+func TestBuildLeafCardIndex(t *testing.T) {
+	docs := t.TempDir()
+	leafDir := filepath.Join(docs, "Browse", "feature", "ability", "Kits")
+	if err := os.MkdirAll(leafDir, 0755); err != nil {
+		t.Fatal(err)
+	}
+	leaf := "---\nname: Panther (Devastating Rush)\nscc: mcdm.heroes.v1/feature.ability.panther/devastating-rush\ntype: ability\n---\n\n# Panther (Devastating Rush)\n\n---\n\n<article class=\"sc-ability\">DEVASTATING RUSH CARD</article>\n"
+	if err := os.WriteFile(filepath.Join(leafDir, "panther-devastating-rush.md"), []byte(leaf), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	cards, errs := buildLeafCardIndex(&Config{DocsDir: docs})
+	if len(errs) != 0 {
+		t.Fatalf("errs: %v", errs)
+	}
+	entry, ok := cards["mcdm.heroes.v1/feature.ability.panther/devastating-rush"]
+	if !ok {
+		t.Fatalf("expected leaf indexed by its scc, got keys: %v", cards)
+	}
+	if entry.html != `<article class="sc-ability">DEVASTATING RUSH CARD</article>` {
+		t.Errorf("entry.html = %q", entry.html)
+	}
+	if want := "Browse/feature/ability/Kits/panther-devastating-rush"; entry.dir != want {
+		t.Errorf("entry.dir = %q, want %q", entry.dir, want)
+	}
+}
+
 func TestEmbedItemCards(t *testing.T) {
 	docs := t.TempDir()
 	browse := filepath.Join(docs, "Browse")
@@ -292,7 +325,11 @@ func TestEmbedItemCards(t *testing.T) {
 	}
 
 	cfg := &Config{DocsDir: docs}
-	count, errs := embedItemCards(cfg)
+	cards, cardErrs := buildLeafCardIndex(cfg)
+	if len(cardErrs) != 0 {
+		t.Fatalf("cardErrs: %v", cardErrs)
+	}
+	count, errs := embedItemCards(cfg, cards)
 	if len(errs) != 0 {
 		t.Fatalf("errs: %v", errs)
 	}

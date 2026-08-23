@@ -60,6 +60,24 @@ func TestDirURL(t *testing.T) {
 	}
 }
 
+// docsRelDir must produce the SAME docs-relative form buildLeafCardIndex's
+// cardEntry.dir uses (e.g. "Browse/kit"), and degrade to "" when docsRootDir
+// isn't set (a direct unit test, outside a full Build()) — the signal
+// kitSignatureCardHTML/kitCard rely on to no-op cleanly.
+func TestDocsRelDir(t *testing.T) {
+	t.Cleanup(func() { docsRootDir = "" })
+
+	docsRootDir = "/x/v2/docs"
+	if got, want := docsRelDir("/x/v2/docs/Browse/kit"), "Browse/kit"; got != want {
+		t.Errorf("docsRelDir = %q, want %q", got, want)
+	}
+
+	docsRootDir = ""
+	if got := docsRelDir("/x/v2/docs/Browse/kit"); got != "" {
+		t.Errorf("docsRelDir with no docsRootDir = %q, want \"\"", got)
+	}
+}
+
 // careerCard's Skills line must emit a real, resolvable anchor (directory URL),
 // not literal markdown — the regression the md_in_html-not-firing bug produced.
 func TestCareerCardSkillsRendersLink(t *testing.T) {
@@ -130,7 +148,7 @@ func TestCultureCardSkillOptions(t *testing.T) {
 func TestKitCardStatsAndEquipment(t *testing.T) {
 	fm := "---\nname: Guisarmier\ntype: kit\nequipment_text: You wear medium armor and wield a polearm.\n" +
 		"melee_damage_bonus: +2/+2/+2\nmelee_distance_bonus: \"+1\"\nstamina_bonus: +6 per echelon\n---"
-	out := kitCard(fm, "", "guisarmier.md", "Guisarmier")
+	out := kitCard(fm, "", "guisarmier.md", "Guisarmier", "")
 	for _, want := range []string{
 		"You wear medium armor and wield a polearm.",
 		"Stamina per Echelon",
@@ -151,7 +169,7 @@ func TestKitCardStatsAndEquipment(t *testing.T) {
 // first flavor line as a brief description.
 func TestKitCardIconAndDescription(t *testing.T) {
 	body := "The [Ranger](ranger.md) kit outfits you with medium armor and weapons for every challenge.\n\n## Equipment\n"
-	out := kitCard("---\nname: Ranger\ntype: kit\n---", body, "ranger.md", "Ranger")
+	out := kitCard("---\nname: Ranger\ntype: kit\n---", body, "ranger.md", "Ranger", "")
 	if !strings.Contains(out, iconPaths["kit"]) {
 		t.Errorf("kit card must use the backpack (kit) crest icon, got:\n%s", out)
 	}
@@ -173,7 +191,7 @@ func TestKitCardAbsentBonusesAreDashes(t *testing.T) {
 	// live corpus — v2/docs/Browse/kit/boren.md pre-fix showed "0" x4 on row 1
 	// and "—" x4 on row 2 for exactly this kit).
 	fm := "---\nname: Boren\ntype: kit\n---"
-	out := kitCard(fm, "", "boren.md", "Boren")
+	out := kitCard(fm, "", "boren.md", "Boren", "")
 	if strings.Contains(out, `<div class="v">0</div>`) {
 		t.Errorf("kit card must not show \"0\" for an absent bonus (SC-119), got:\n%s", out)
 	}
@@ -187,7 +205,7 @@ func TestKitCardAbsentBonusesAreDashes(t *testing.T) {
 // blanket-dashes an entirely-empty kit).
 func TestKitCardMixedBonusesRow1Dashes(t *testing.T) {
 	fm := "---\nname: Panther\ntype: kit\nspeed_bonus: \"+1\"\nstability_bonus: \"+1\"\n---"
-	out := kitCard(fm, "", "panther.md", "Panther")
+	out := kitCard(fm, "", "panther.md", "Panther", "")
 	if !strings.Contains(out, `<div class="v">—</div><div class="l">Stamina per Echelon</div>`) {
 		t.Errorf("absent Stamina bonus should render as an em dash, not 0/blank, got:\n%s", out)
 	}
@@ -199,10 +217,60 @@ func TestKitCardMixedBonusesRow1Dashes(t *testing.T) {
 	}
 }
 
+// TestKitCardSpliceSignatureAbility is the SC-115 regression: kitCard (the
+// Browse kit index tile) must splice the kit's full signature-ability card —
+// adopted from the DSE plugin's `ds-kit` sub-render — not the old one-line
+// type+name. It reads the {data-scc} marker buildKitPage preserves after the
+// closed plate, looks it up in the build's leaf-card index
+// (kitSignatureCardIndex, populated by buildLeafCardIndex in Build()), and
+// rebases the leaf's links from its own docs-relative dir to the tile's.
+func TestKitCardSpliceSignatureAbility(t *testing.T) {
+	t.Cleanup(func() { kitSignatureCardIndex = nil })
+	kitSignatureCardIndex = map[string]cardEntry{
+		"mcdm.heroes.v1/feature.ability.panther/devastating-rush": {
+			html: `<article class="sc-ability sc-fil" data-action="main">` +
+				`<a href="../../../../rule/combat/melee/">Melee</a>REPENT-CARD</article>`,
+			dir: "Browse/feature/ability/Kits/panther-devastating-rush",
+		},
+	}
+	body := "<section class=\"sc-kit sc-fil\">plate</section>\n\n" +
+		`### Devastating Rush {data-scc="mcdm.heroes.v1/feature.ability.panther/devastating-rush"}` + "\n"
+	out := kitCard("---\nname: Panther\ntype: kit\n---", body, "panther.md", "Panther", "Browse/kit")
+
+	if !strings.Contains(out, `<div class="sc-card__sig-card">`) {
+		t.Fatalf("expected the spliced signature-ability card wrapper, got:\n%s", out)
+	}
+	if !strings.Contains(out, "REPENT-CARD") {
+		t.Errorf("expected the leaf's finished ability card HTML spliced in, got:\n%s", out)
+	}
+	// Rebased from "Browse/feature/ability/Kits/panther-devastating-rush" (depth
+	// 5) to "Browse/kit" (depth 2): the link must shorten from 4 to 1 "../".
+	if !strings.Contains(out, `href="../rule/combat/melee/"`) {
+		t.Errorf("expected the ability card's link rebased to the tile's directory, got:\n%s", out)
+	}
+	if strings.Contains(out, `href="../../../../rule/combat/melee/"`) {
+		t.Errorf("ability card link was not rebased (still points at the leaf's own depth), got:\n%s", out)
+	}
+}
+
+// TestKitCardNoSpliceWithoutIndex: kitCard must not blow up or emit an empty
+// wrapper when the leaf-card index isn't populated (e.g. a direct unit test,
+// or a kit with no signature ability at all) — matching pre-SC-115 behavior.
+func TestKitCardNoSpliceWithoutIndex(t *testing.T) {
+	t.Cleanup(func() { kitSignatureCardIndex = nil })
+	kitSignatureCardIndex = nil
+	body := "<section class=\"sc-kit sc-fil\">plate</section>\n\n" +
+		`### Devastating Rush {data-scc="mcdm.heroes.v1/feature.ability.panther/devastating-rush"}` + "\n"
+	out := kitCard("---\nname: Panther\ntype: kit\n---", body, "panther.md", "Panther", "Browse/kit")
+	if strings.Contains(out, "sc-card__sig-card") {
+		t.Errorf("expected no signature-ability splice without a populated index, got:\n%s", out)
+	}
+}
+
 // kitCard must always emit the equipment line (a non-breaking space when the
 // kit has none) so cards reserve the same vertical space and stay aligned.
 func TestKitCardEquipmentAlwaysPresent(t *testing.T) {
-	out := kitCard("---\nname: Boren\ntype: kit\n---", "", "boren.md", "Boren")
+	out := kitCard("---\nname: Boren\ntype: kit\n---", "", "boren.md", "Boren", "")
 	if !strings.Contains(out, `<div class="sc-card__equip">&nbsp;</div>`) {
 		t.Errorf("expected a placeholder equipment line, got:\n%s", out)
 	}
