@@ -160,6 +160,20 @@ func runValidate(cmd *cobra.Command, args []string) error {
 	// No-op for books without a "Summoner Advancement" table.
 	issues = append(issues, checkSummonerFeatureSource(source, doc)...)
 
+	// SC-199: a named ability blockquote whose `> ` prefix runs past the end of the
+	// ability body swallows every sibling paragraph that follows it, into every output
+	// format and onto the site. Scanned on the raw source, not per-section BodySource:
+	// collectDeepHeadings promotes `> ###### Name` into its own section, so by the time
+	// the tree exists the quote's heading and its body already live in different
+	// sections and the shape is no longer visible.
+	for _, aq := range content.ScanOverExtendedAbilityQuotes(string(source)) {
+		issues = append(issues, validationIssue{
+			level: "warn",
+			msg: fmt.Sprintf("line %d: ability %q has swallowed the following sibling **%s:** — "+
+				"end the blockquote after the ability body", aq.Line, aq.Ability, aq.Label),
+		})
+	}
+
 	// --- 3. Run the pipeline to check SCC stability ---
 	if sccStable {
 		registryPath := ""
