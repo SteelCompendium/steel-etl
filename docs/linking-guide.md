@@ -52,10 +52,10 @@ cross-book links to Heroes always use the table in `docs/linking-reference.md`.
 > `devbox run -- bash -c 'cd steel-etl && go run ./cmd/steel-etl gen … --all'`
 > (a bare `devbox run -- go …` runs from the workspace root with no `go.mod` and
 > fails silently). The WARN baseline is **104 (12 distinct), all pre-existing
-> stale flat `mcdm.heroes.v1/skill/<x>` links from the beastheart source** (never
-> repointed after skill-group nesting — **deliberately deferred and not currently
-> tracked by a ticket**; the old FOLLOWUPS handle did not survive the 2026-08-27 Linear
-> migration); the gate is "no NEW
+> stale flat `mcdm.heroes.v1/skill/<x>` links from the beastheart source** (not yet
+> repointed after skill-group nesting at the time; repointed 2026-06-11 — see workspace
+> `docs/followups-archive/2026-06-11-completed.md` (was FOLLOWUPS #7) — so the baseline
+> is **0** today, per the Monsters note above); the gate was "no NEW
 > unresolved code vs. that baseline", not "0 WARN".
 >
 > **Relational-noun rule (clarified here, applies to all books).** The high-frequency
