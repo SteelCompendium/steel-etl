@@ -94,7 +94,8 @@ emit a JSON island. `buildStatblockIslandPage` (`internal/site/statblock_page.go
 the parse stage) hands the `sbIsland` to `renderStatblockCard`
 (`internal/site/statblock_card.go`), which emits the finished `.sb-wrap` DOM at build
 time — the DOM `v2/docs/javascripts/steel-statblock.js` once built client-side. That
-script is now **retired** (FOLLOWUPS #10.1, 2026-06-18): the collapsible Villain/Malice
+script is now **retired** (2026-06-18; workspace
+`docs/followups-archive/2026-06-18-completed.md`, was FOLLOWUPS #10): the collapsible Villain/Malice
 bands are native `<details>`/`<summary>` and the sticky mini-header is a CSS
 scroll-driven animation, so statblocks need no client JS. Equivalence is locked by
 `TestStatblockCard_GoldenEquivalence` — the golden HTML was originally captured from the
@@ -189,7 +190,7 @@ owning class landing page (`class/beastheart`, `class/summoner`), on both the ba
 its `-advancement-features` sibling. Added by `augmentClassOwnedBackLinks`
 (`internal/site/class_backlinks.go`), derived from the page's `scc` type-path — no
 SCC/schema/data change. The summoner retainer (Devil Detective) is a different type-path
-shape (`monster.retainer.*`) and is **not** covered (FOLLOWUPS #15 scope decision). See
+shape (`monster.retainer.*`) and is **not** covered (deliberate scope decision). See
 [`site-builder.md`](site-builder.md) → "Class-owned back-links".
 
 ## Featureblocks & dynamic terrain (structured fields)
@@ -224,8 +225,10 @@ classifies as `monster.companion.<class>.advancement-features/<species>` and emb
 own `feature.companion.<class>.<species>.level-N/<id>` codes) into `features[]` via
 `collectChildFeatures` — `{name, body, level}` per feature, render-only. Unlike malice
 blocks (features from body blockquotes via `ParseRichFeatures`), these come from child
-sub-sections, so the standalone card groups them into `.fb__band--adv` level tiers. Plan
-5b: `docs/superpowers/plans/2026-06-13-companion-advancement-featureblocks.md`.
+sub-sections, so the standalone card groups them into `.fb__band--adv` level tiers.
+Plan 5a/5b spec + plan (cross-repo, at the workspace root — not under `steel-etl/`):
+workspace `docs/superpowers/specs/2026-06-13-companion-restructure-advancement-featureblocks-design.md`
+and `docs/superpowers/plans/2026-06-13-companion-advancement-featureblocks.md`.
 
 ### Featureblock site rendering (Plan 2)
 
@@ -255,10 +258,11 @@ page renders its Level-5/9 tiers as bands.
 segment for the fixture sub-tree, so a base fixture sits at
 `Browse/monster/fixture/<element>/<id>` (parallel to hoisted statblock bases), with the
 sibling at `…/<element>/advancement-features/<id>`. `bestiaryItemType` indexes the base as
-a searchable `"fixture"` facet (the advancement-features sibling is excluded). Plan:
+a searchable `"fixture"` facet (the advancement-features sibling is excluded). Plan
+(cross-repo, at the workspace root): workspace
 `docs/superpowers/plans/2026-06-14-fixture-featureblock-restructure.md`.
 
-**Coded advancement members + on-page embed (2026-06-19 — ROADMAP #16).** Each fixture's
+**Coded advancement members + on-page embed (2026-06-19).** Each fixture's
 Level-5/9 advancement members are now individually coded
 `feature.fixture.<element>.<base-id>.level-N/<member-id>` (×12) with their own leaf pages.
 Because input headers stay faithful to the PDF (fixture group is H5) and the advancement
@@ -302,9 +306,13 @@ tolerates the one `role-advancement/` subdir and surfaces it as a folder card) w
 `.nav.yml`; `bestiaryItemType` keeps the `retainer` facet for the base and excludes the
 featureblock siblings. **Plan 4's `internal/site/retainer_page.go` body split is retired.**
 
-**Deferred (ROADMAP #15):** per-ability coding (each base/advancement/role ability its own
-`feature.ability.*`) needs the header-levels rework — abilities are H8 siblings of the H7
-statblock today, so they cannot nest under it as real sections.
+**Deferred (SC-212, was ROADMAP #15):** per-ability coding (each base/advancement/role
+ability its own `feature.ability.*`) needs the header-levels rework — abilities are H8
+siblings of the H7 statblock today, so they cannot nest under it as real sections.
+
+Spec/plan (cross-repo, at the workspace root — not under `steel-etl/`): workspace
+`docs/superpowers/specs/2026-06-18-retainer-rework-coded-entities-design.md` and
+`docs/superpowers/plans/2026-06-18-retainer-rework-containers.md`.
 
 ## Summoner book reuse
 
@@ -364,7 +372,7 @@ that point outside the per-book `data/data-summoner` repo (the heroes pages live
 one Browse tree. See `docs/linking-guide.md` (2026-06-11 note) and
 `docs/superpowers/plans/2026-06-10-summoner-content-linking.md`.
 
-## Family Malice bands + context-driven meta-cell label (FOLLOWUPS #7 — shipped 2026-07-18)
+## Family Malice bands + context-driven meta-cell label (shipped 2026-07-18)
 
 Two pieces of the High-Fantasy Steel statblock card the design handoff marked as
 non-blocking nice-to-haves are now wired in.

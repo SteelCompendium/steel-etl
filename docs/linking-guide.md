@@ -12,7 +12,7 @@ cross-book links to Heroes always use the table in `docs/linking-reference.md`.
 > links** (4,759 cross-book to Heroes, 1,189 internal `mcdm.monsters.v1`). Covers
 > the Monster Basics chapter, all ~50 creature groups (lore + malice featureblocks
 > + ~480 statblocks across echelons), Dynamic Terrain, and Retainers.
-> Done in 13 section batches (FOLLOWUPS #5 direction 1; the plan is
+> Done in 13 section batches (direction 1 of SC-219, was FOLLOWUPS #5; the plan is
 > `docs/superpowers/plans/2026-06-12-monsters-content-linking.md`).
 >
 > **New monster rule-glossary (minted first, Phase 0).** The Monster Basics chapter
@@ -53,7 +53,7 @@ cross-book links to Heroes always use the table in `docs/linking-reference.md`.
 > (a bare `devbox run -- go …` runs from the workspace root with no `go.mod` and
 > fails silently). The WARN baseline is **104 (12 distinct), all pre-existing
 > stale flat `mcdm.heroes.v1/skill/<x>` links from the beastheart source** (never
-> repointed after skill-group nesting — see FOLLOWUPS); the gate is "no NEW
+> repointed after skill-group nesting); the gate is "no NEW
 > unresolved code vs. that baseline", not "0 WARN".
 >
 > **Relational-noun rule (clarified here, applies to all books).** The high-frequency
@@ -121,7 +121,8 @@ cross-book links to Heroes always use the table in `docs/linking-reference.md`.
 > own-section excluded) and the Templar `Domain Piety and Effects` truncation.
 > **Tooling:** `scripts/link_audit.py`, `link_audit_category.py`, `link_apply.py`.
 
-> **2026-06-07 — Audit tail closed (FOLLOWUPS #6 A+B+C).** Cleared the deferred tail (+27
+> **2026-06-07 — Audit tail closed** (archived: workspace
+> `docs/followups-archive/2026-06-08-completed.md`, was FOLLOWUPS #6 A+B+C). Cleared the deferred tail (+27
 > links, ~4,595 → ~4,622; `gen` 0 WARN). (B) Read every remaining unlinked common-verb
 > maneuver/action occurrence (Hide/Charge/Grab/Defend/Heal/Knockback/…); only **7** were
 > genuine mechanic refs — the rest are mundane, the Hide/Ride *skills*, the "Disengage Bonus"

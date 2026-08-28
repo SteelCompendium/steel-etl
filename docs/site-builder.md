@@ -185,7 +185,8 @@ archived at workspace `reference/design-system/handoff/redesign/statblocks/READM
 (DOM + `data-sb-*` preference contract). Reuses ability-card body helpers
 (`parseAbilityTable`/`parseTiers`/`prHeadRe`/`labelRe`/`paraSplitRe`) + `cardHref`
 (link-target resolution). Handles labeled tiers (Monsters) and dice-in-title/bare
-tiers (Summoner). Family Malice band deferred (workspace `FOLLOWUPS.md` #7). Site-only.
+tiers (Summoner). Family Malice bands are spliced in separately by `augmentMonsterMaliceBands`
+(see below), not by this renderer. Site-only.
 
 ### `internal/site/trait_cards.go`
 
@@ -417,14 +418,14 @@ every bestiary page that belongs to a hero **class** rather than a book — beas
 companions (`monster/companion/beastheart/<species>(.md|-advancement-features.md)`)
 and summoner fixtures (`monster/fixture/<element>/<id>(.md|-advancement-features.md)`)
 — pointing at the class landing page (`class/beastheart`, `class/summoner`).
-FOLLOWUPS #15, the class-owned analog of the Rival Summoner back-link.
+The class-owned analog of the Rival Summoner back-link.
 
 - **Derivation** — `owningClass(scc)` reads the page's `scc` frontmatter and matches
   its type-path: `monster.companion.beastheart.*` (source `mcdm.beastheart.`) →
   Beastheart, `monster.fixture.*` (source `mcdm.summoner.`) → Summoner. No tree-walk,
   no per-entity data edit. `monster.retainer.*` (the Devil Detective summoner
   retainer) doesn't match either shape and is deliberately **not** covered — it's a
-  different type-path family, out of scope per the FOLLOWUPS #15 adjudication.
+  different type-path family, out of scope per the original follow-up's adjudication.
 - **Placement** — prepends `<p class="sb-backlink">A <a href="...">…</a>
   companion|fixture</p>` immediately before the page's first `.sb-wrap`/`.fb-wrap`
   card (`firstCardMarker`), reusing the Rival Summoner back-link's `.sb-backlink`
@@ -447,7 +448,7 @@ FOLLOWUPS #15, the class-owned analog of the Rival Summoner back-link.
 
 `augmentMonsterMaliceBands` splices each Monsters-book statblock's own Browse leaf
 page with its family's shared Malice featureblock, rendered as a collapsible
-`.sb__band--malice` `<details>` (FOLLOWUPS #7 piece 1) — the Villain Actions band's
+`.sb__band--malice` `<details>` — the Villain Actions band's
 existing DOM/CSS, previously unused for Malice.
 
 - **Cache** — `buildMaliceBandCache(cfg, entries)` runs in `Build`, right after

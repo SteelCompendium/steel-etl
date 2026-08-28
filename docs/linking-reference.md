@@ -619,7 +619,7 @@ The shared move actions, main actions, maneuvers, and free strikes from Chapter 
 
 ## Heroic Resources (9 terms)
 
-Each class's Heroic Resource feature (`feature.<class>.level-1/<resource>`). Added 2026-06-07 (FOLLOWUPS #6 part C). (These are plain class `feature`s, not `trait`s, post-taxonomy-refactor 2026-06-07.)
+Each class's Heroic Resource feature (`feature.<class>.level-1/<resource>`). Added 2026-06-07 (workspace `docs/followups-archive/2026-06-08-completed.md`, was FOLLOWUPS #6 part C). (These are plain class `feature`s, not `trait`s, post-taxonomy-refactor 2026-06-07.)
 
 **Disambiguation required — link sparingly.** These words are overwhelmingly used *inside their own class section* (the definition/usage site — not cross-linked, consistent with the prior passes that linked each resource only once, in its class progression table) or as ordinary English: "speed is of the **essence**", "personal **drama**", "a spirit of **wrath**", "a moment of **focus**", "**ferocity** of the Primordial Chaos". **Link only genuine cross-references *outside* the owning class** — chiefly the Introduction glossary definition line (`**Wrath:** The censor's Heroic Resource.`), the "Heroic Resources" overview list, and explicit mechanic refs in other chapters ("spend 1 **piety**", "gain 1 additional **drama**"). Do **not** link within-class mentions or flavor uses.
 

@@ -44,25 +44,8 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/scc/registry.go` | SCC registry with freeze enforcement |
 | `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
 | `internal/site/config.go` | Site builder config types (sections, groups, books) |
-| `internal/site/cards.go` | Rich `.sc-card` index cards for Browse-tab type indexes; `buildCardsContent` dispatch (routes bestiary leaves to `bestiary_cards.go`) |
-| `internal/site/bestiary_cards.go` | Bestiary entity cards + the monster group-landing assembler |
-| `internal/site/bestiary_search.go` | Bestiary tab's Search & Filter data island (`.sc-bestiary-mount`) |
-| `internal/site/card_head.go` | **Shared 6-slot card header** (`renderCardHead(cardHeadSlots)` → `<header class="sc-head">`). EVERY card renderer below builds its head through this — never hand-roll a per-card eyebrow/chip. See DESIGN.md "Card header system". |
-| `internal/site/ability_cards.go` | Renders `type: ability` page bodies into `.sc-ability` cards; head via `renderCardHead`; shared power-roll tier helpers |
-| `internal/site/statblock_page.go` | Parses `type: statblock` page bodies → the `sbIsland` model (stat grid + blockquote features) |
-| `internal/site/statblock_card.go` | Renders an `sbIsland` into the build-time `.sb-wrap` HTML card — the retired client-side `steel-statblock.js` renderer's logic, ported to Go (no JSON island; the JS file itself is gone, deleted from `v2/` 2026-06-18) |
-| `internal/site/embed_cards.go` | Site-only post-pass: transcludes finished leaf cards inline on container pages by `{data-scc}` code (Browse via `embed_card_sections`) |
-| `internal/site/trait_cards.go` | Renders `type: trait` page bodies into recessed `.sc-trait` niches |
-| `internal/site/feature_index.go` | Folder/preview-card index pages for the nested feature/treasure/rule trees; per-class ability dirs also get the sortable all-abilities table (`ability_table.go`) |
-| `internal/site/class_page.go` | `type: class` pages → `.sc-classhead` landing card (via `renderCardHead`) + `.sc-classnav` H2 jump bar; anchor slugs via `pySlugify` (matches python-markdown toc ids) |
-| `internal/site/ability_table.go` | Sortable Name/Lv/Cost/Action/Distance/Target table on `feature/ability/<class>/` indexes, read from leaf frontmatter |
-| `internal/site/conditions.go` | Condition facet: derives the Draw Steel conditions an ability's **mechanical** text mentions (flavor excluded; inflict/require/remove not distinguished), stamps `data-conditions` on the ability card, feeds the Search & Filter island. Site-only |
-| `internal/site/search_boost.go` | Per-type `search: boost:` frontmatter injection (classes 4×, rules/conditions 3×, statblocks 0.6×) — Browse only, never search-excluded sections (duplicate `search:` YAML keys) |
-| `internal/site/export_src.go` | Stashes each carded leaf's pre-card markdown in a single-line `sc-src` template (`data-src` attr, `&#10;` newlines — python-markdown mangles element content and multi-line attrs); `embed_cards.go` strips it from transclusions |
-| `internal/site/cards_book.go` | `.sc-card` index cards for the Books tab (`bookCard`, `chapterCard`) |
-| `internal/site/permalinks.go` | SCC permalink redirect-stub generator |
-
-Per-file mechanics for everything under `internal/site/`: [`docs/site-builder.md`](docs/site-builder.md).
+| `internal/site/card_head.go` | **Shared 6-slot card header** (`renderCardHead(cardHeadSlots)` → `<header class="sc-head">`). EVERY card renderer builds its head through this — never hand-roll a per-card eyebrow/chip. See DESIGN.md "Card header system". |
+| `internal/site/*.go` (the ~18 renderers: cards, bestiary, ability/trait/statblock/featureblock, indexes, conditions, permalinks…) | One section per file in [`docs/site-builder.md`](docs/site-builder.md) → "Per-file map" |
 
 ## CLI commands
 
@@ -107,7 +90,17 @@ apply the content edits, then tag the commit `<book>-printing-<version>`
 Design + the removal/tombstone lifecycle model:
 `docs/superpowers/specs/2026-06-11-printing-provenance-and-code-lifecycle-design.md`.
 
-**Scheme version (`scheme_version`).** As of SCC scheme **v1.1** (2026-06-09) the registry records a `scheme_version` int (default `1`) — the SCC *grammar* version, distinct from the registry-file `version`. The link resolver (`internal/scc/resolver.go`) tolerates an optional `scc.vN:` prefix on `scc:` links (bare `scc:` ≡ `scc.v1`) and a reserved trailing `#format` qualifier: it strips `#format` to the canonical identity before lookup, and resolves **only** links whose scheme version matches the registry's (`schemeVersionFromTag` vs `Registry.SchemeVersion()`) — a `scc.v2:` link against a v1 registry is reported unresolvable (a `gen`-time stderr `WARN:`, `resolver.go`) and left as plain text, never silently bound to v1 content. Format is never part of identity; see `reference/scc-specification.md` §2.0/§8/§9 and `docs/superpowers/specs/2026-06-09-scc-scheme-versioning-and-format-design.md`. All in-prose links in the four book sources carry the explicit `scc.v1:` prefix (restamped 2026-06-18, workspace `FOLLOWUPS.md` #4 done); bare `scc:` remains a permanent implicit-v1 alias.
+**Scheme version (`scheme_version`).** The registry records a `scheme_version` int
+(default `1`) — the SCC *grammar* version, distinct from the registry-file `version`.
+The link resolver (`internal/scc/resolver.go`) tolerates an optional `scc.vN:` prefix
+(bare `scc:` ≡ `scc.v1`) and a reserved trailing `#format` qualifier: it strips `#format`
+to the canonical identity before lookup and resolves **only** links whose scheme version
+matches the registry's (`schemeVersionFromTag` vs `Registry.SchemeVersion()`) — a
+`scc.v2:` link against a v1 registry is reported unresolvable (a `gen`-time stderr
+`WARN:`) and left as plain text, never silently bound to v1 content. Format is never part
+of identity. Scheme/prefix rules: workspace `docs/scc-reference.md` and
+`reference/scc-specification.md` §2.0/§8/§9; design:
+`docs/superpowers/specs/2026-06-09-scc-scheme-versioning-and-format-design.md`.
 
 ⚠️ **A single-book `gen` accumulates codes — it does not prune.** Because the pipeline
 merges into the existing registry (so a lone-book run preserves *other* books' codes),
@@ -124,11 +117,11 @@ regardless.
 
 Some flat glossaries nest one level via an `@group` annotation that `Classify`
 joins with a dot: `rule.<group>/<term>` (`RuleParser`) and **`skill.<group>/<item>`**
-(`SkillParser`, added 2026-06-08). The Heroes book's `rule.<group>` covers dice /
+(`SkillParser`). The Heroes book's `rule.<group>` covers dice /
 character / health / resource / combat / damage / test / downtime / negotiation /
 treasure / world / general; the **Monsters book** adds its own
-`rule.{monster,role,organization,keyword}` glossary (minted 2026-06-12 from the
-Monster Basics chapter — see `docs/monster-rule-mapping.md`). Each skill group also has a **group-landing
+`rule.{monster,role,organization,keyword}` glossary (from the Monster Basics
+chapter — see `docs/monster-rule-mapping.md`). Each skill group also has a **group-landing
 page `skill.group/<group>`** (e.g. `skill.group/crafting`) emitted by the
 **`skill-group`** parser (`internal/content/skill_group.go`) so prose can link to
 "the <group> skill group". The container pushes no path context; child skills get
@@ -136,15 +129,14 @@ their group from their own `@group`.
 
 The unified `<type>.group/<member>` landing shape (also used by monster groups,
 `monster.group/<category>`) replaced the old self-named-leaf form
-(`skill.<g>/<g>`, `monster.<cat>/<cat>`) on **2026-06-09** — see
+(`skill.<g>/<g>`, `monster.<cat>/<cat>`) — design:
 `docs/superpowers/specs/2026-06-09-group-landing-scc-migration-design.md`.
 Site-side, the landing is **relocated to the group index**
 (`<root>/group/<member>.md` → `<root>/<member>/index.md`) with its intro lore folded
 above the listing — mechanics in [`docs/site-builder.md`](docs/site-builder.md) →
 "Group-landing relocation".
 
-**Religion namespace (`religion.*`).** Gods (`GodParser`) and saints (`SaintParser`,
-added 2026-06-18) share a `religion.*` prefix — `religion.god/<id>` + `religion.saint/<id>`,
+**Religion namespace (`religion.*`).** Gods (`GodParser`) and saints (`SaintParser`) share a `religion.*` prefix — `religion.god/<id>` + `religion.saint/<id>`,
 flat within each type, with `religion.domain`/`order`/`pantheon` reserved (not minted).
 Patron/pantheon/domains/alignment are **frontmatter**, never path nesting. See the workspace
 `docs/scc-reference.md` → "Gods & Religion".
@@ -172,7 +164,7 @@ Kits and non-ability features can embed child abilities as structured nested obj
 
 Both patterns: the child ability is parsed by `AbilityParser`, stored in `ParsedContent.Children`, and embedded by the SDK transformer. The child ability also gets its own standalone output file when the pipeline walks the section tree.
 
-⚠️ **`ParsedContent.Children` (embed-only) vs `ParsedContent.CodedChildren` (own code + leaf).** `Children` is a render/SDK embed; it mints no code (the child's standalone page comes from being a *real section* the walk visits). `CodedChildren` (added 2026-06-19, ROADMAP #16) is for entities a parser mints from a container's **body** — they are NOT document sections, so the pipeline must classify + write them explicitly: it does so in **both** the main classify walk (`internal/pipeline/pipeline.go`) **and** `CollectSCCCodes` (`internal/pipeline/collect.go` — used by `validate --scc-stable`; keep the two in sync or the codes look "missing"). Today only the fixture advancement branch uses it (`fixtureCodedChildren` in `monster.go`); it generalizes to any coded blockquote member (malice/terrain/retainer abilities — ROADMAP #15).
+⚠️ **`ParsedContent.Children` (embed-only) vs `ParsedContent.CodedChildren` (own code + leaf).** `Children` is a render/SDK embed; it mints no code (the child's standalone page comes from being a *real section* the walk visits). `CodedChildren` is for entities a parser mints from a container's **body** — they are NOT document sections, so the pipeline must classify + write them explicitly: it does so in **both** the main classify walk (`internal/pipeline/pipeline.go`) **and** `CollectSCCCodes` (`internal/pipeline/collect.go` — used by `validate --scc-stable`; keep the two in sync or the codes look "missing"). Today only the fixture advancement branch uses it (`fixtureCodedChildren` in `monster.go`); it generalizes to any coded blockquote member (malice/terrain/retainer abilities — deferred, SC-212).
 
 Blockquote headings (`> ######`) get context-aware tree levels (previous regular heading + 1, capped at 6) so they nest as proper children of their parent sections.
 
@@ -207,10 +199,10 @@ body fallback, e.g. `cardFlavor`). Full checklist: `docs/card-data-parity.md`.
 
 Full reference — deep headings, SCC hierarchy, parsing, summoner reuse: [`docs/statblocks.md`](docs/statblocks.md). The headline gotchas:
 
-- ⚠️ **H7/H9 headings.** The Monsters book uses H7 for statblocks and H9 for malice/terrain blocks (beyond CommonMark's H6 cap); `collectDeepHeadings` captures them at level 6, **H8 is deliberately not collected** (it is demoted to bold labels by `demoteOverflowHeadings`). The Monsters-book retainer/role advancement abilities **no longer rely on this** — Plan 6 (2026-06-18) moved their `######## Level N …` H8 separators into sibling `@type: featureblock` sections as **blockquote** labels (`> **Level N …**`), the only form `ParseRichFeatures` collects. Per-ability coding (each ability its own section/code) is the deferred work that needs the header-levels rework (ROADMAP #15).
+- ⚠️ **H7/H9 headings.** The Monsters book uses H7 for statblocks and H9 for malice/terrain blocks (beyond CommonMark's H6 cap); `collectDeepHeadings` captures them at level 6, **H8 is deliberately not collected** (it is demoted to bold labels by `demoteOverflowHeadings`). Retainer/role advancement abilities do **not** rely on H8: their level separators are blockquote labels (`> **Level N …**`) inside sibling `@type: featureblock` sections, the only form `ParseRichFeatures` collects. Per-ability coding (each ability its own section/code) is deferred on the header-levels rework — SC-212. Detail: [`docs/statblocks.md`](docs/statblocks.md) → "Deep headings (H7/H9)".
 - ⚠️ **Code≠path.** SCC codes keep their `.statblock` segment (`monster.<category>.statblock/<id>`), but the site URL **hoists `statblock/` away** (`hoistStatblockPath`) so Browse pages sit directly under the group. Advancement-features pages additionally **flatten** beside their base entity (`flattenAdvancementFeaturesPath`: `…/advancement-features/<id>` → `…/<id>-advancement-features`) for beastheart companions + summoner fixtures — nav-only, SCC code/permalink unchanged — and the group index pairs base+advancement cards via `buildAdvancementPairContent` (see `docs/site-builder.md` → "Advancement-features flatten").
-- Both the **Monsters** book (link-swept 2026-06-12) and the Summoner statblock trees (`minion`/`fixture`/`champion`/`rival`/`retainer`) are fully link-swept. The summoner **retainer** (Devil Detective) is modeled like the Rival Summoner (2026-06-21): the conjurer is `monster.retainer.statblock/devil-detective` with a shared `monster.retainer.advancement-features/devil-detective` featureblock; its summons (Razor/Violent/Gorrre, `organization: Minion`) nest as `monster.retainer.summoner.minion.statblock/<id>` (off the index, surfaced on the detective's page by `augmentSummonerRetainerPages`). Rival summons likewise carry the `.statblock` segment (`monster.rival.<ech>.summoner.minion.statblock/<id>`). The statblock parser is hardened against `scc:` link-wrapping on **every** structured field: `sbPowerRollRe` (labeled power-roll header), the title `name`/`cost`/`ability_type` split, and the ability-table cells (`keywords`/`usage`/`distance`/`target`, via `stripBold`) — effect/tier VALUES keep their links verbatim, all structured fields are stored link-free. Never link the `**Power Roll + N:**` header line or the 4-row creature stat-grid label cells in source.
-- Fixtures' 2-column stat grid + italic role line are parsed (`applyFixtureGrid`, `monster.go`) into loose `stats[]` + `role`/`terrain_type`. Featureblocks/terrain emit structured `kind`/`level`/`flavor`/`stats[]`/`features[]` validated by `featureblock.schema.json` (both copies); build-time site rendering via `internal/site/featureblock_page.go` (Plan 2 — featureblock/dynamic-terrain scope). **Plan 5** restructures companions into `monster.companion.beastheart.*` (5a) + embeddable `monster.companion.beastheart.advancement-features/<species>` entities (5b — `FeatureblockParser` companion branch embeds the Level-3/6/10 child features via `collectChildFeatures`), and restructures **fixtures** into `monster.fixture.<element>.featureblock/<id>` + sibling `…advancement-features/<id>` (5c — `StatblockParser` reclassifies `@domain:fixture` as featureblock; **Plan 3's `fixture_page.go` adapter retired** — fixtures now render through the shared `buildFeatureblockPage`; `hoistStatblockPath` drops the `featureblock/` segment, `bestiaryItemType` indexes the base as a `"fixture"` facet). **Plan 6** (shipped 2026-06-18) moves **retainers** into the `monster.*` family — `monster.retainer.statblock/<id>` (×21) plus coded container siblings `monster.retainer.advancement-features/<id>` (×21) + `monster.retainer.role-advancement/<role>` (×9), members inline/uncoded (`StatblockParser`/`FeatureblockParser` `domain == "retainer"` branches); **Plan 4's `retainer_page.go` site split retired** in favour of the real paired entities (per-ability coding deferred — ROADMAP #15). All of 5a–5c + 6 shipped. **The 4 summoner fixtures' advancement members** are now individually coded `feature.fixture.<element>.<base>.level-N/<member>` (×12, 2026-06-19, ROADMAP #16): the `FeatureblockParser` fixture branch emits them as **parser-emitted coded children** (`ParsedContent.CodedChildren`, classified by the pipeline walk + `CollectSCCCodes`) from the faithful `> ⭐️` blockquotes + a per-member inline annotation — **no heading re-leveling / `collectDeepHeadings` / `ContextStack` change** — and the advancement card embeds on the base fixture page at build time (`embedFixtureAdvancement`; group-index pairing kept). Specs: `docs/superpowers/specs/2026-06-13-companion-restructure-advancement-featureblocks-design.md`, `…/2026-06-18-retainer-rework-coded-entities-design.md`; plans: `…/plans/2026-06-14-fixture-featureblock-restructure.md`, `…/2026-06-18-retainer-rework-containers.md`. See [`docs/statblocks.md`](docs/statblocks.md).
+- ⚠️ **Never link the `**Power Roll + N:**` header line or the 4-row creature stat-grid label cells in source.** The statblock parser is hardened against `scc:` link-wrapping on every structured field (`sbPowerRollRe`, the title `name`/`cost`/`ability_type` split, ability-table cells via `stripBold`) so structured fields store link-free while effect/tier VALUES keep their links verbatim — but the header/label lines are the two shapes that still break extraction. Detail: [`docs/linking-guide.md`](docs/linking-guide.md) and [`docs/statblocks.md`](docs/statblocks.md) → "Parsing".
+- **Companions, fixtures, retainers and the summoner trees all live in the `monster.*` family** as a coded base + a coded container sibling (`…advancement-features/<id>`, plus `monster.retainer.role-advancement/<role>`). Fixtures are `type: featureblock` and render through the shared `buildFeatureblockPage`; their advancement **members** are individually coded (`feature.fixture.<element>.<base>.level-N/<member>`) as parser-emitted `CodedChildren`, while companion/retainer/champion container members stay inline/uncoded. Structured `kind`/`level`/`flavor`/`stats[]`/`features[]` are validated by `featureblock.schema.json` (both copies); fixtures' 2-column stat grid + italic role line come from `applyFixtureGrid` (`monster.go`). Per-family codes: workspace [`docs/scc-reference.md`](../docs/scc-reference.md); full parser/site mechanics and the plan-by-plan history: [`docs/statblocks.md`](docs/statblocks.md).
 - **Summoner statblock head eyebrow.** The `sb__kw` line (above the name) is `—`/junk for summoner-book statblocks, so `summonerProvenanceEyebrow` (`summoner_provenance.go`) overrides it from the `scc` code in `buildStatblockIsland` (e.g. "Rival Summoner Summon · Echelon 4", "Summoner Minion · Undead"). Gated on the `mcdm.summoner.` source prefix so the look-alike Monsters-book `monster.rival.{ech}.statblock` tree is untouched. Detail: [`docs/statblocks.md`](docs/statblocks.md) → "Summoner book reuse".
 
 ## Architecture
@@ -228,7 +220,8 @@ Key references:
 This file is a **router: current state + pointers only, never dated history.** Deep
 subsystem detail goes in `docs/<topic>.md` (add it to `docs/index.md`); SCC
 scheme/registry/linking changes get a dated entry in the workspace `docs/scc-log.md`;
-per-effort plans/specs live in `docs/superpowers/`. Follow-ups and roadmap items go in
-the **workspace** `FOLLOWUPS.md`/`ROADMAP.md` (this repo has none of its own). If a
-section here needs a second dated sentence, it has become a log — move the entries out
-and leave a summary + pointer.
+per-effort plans/specs live in `docs/superpowers/`. Deferred bugs/gaps and larger
+planned work become **Linear Backlog tickets** (workers report the tangent to their
+ticket-owner, who files it — workers never touch the tracker). If a section here needs
+a second dated sentence, it has become a log — move the entries out and leave a
+summary + pointer.
