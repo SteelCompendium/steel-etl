@@ -79,7 +79,7 @@ Use `steel-etl classify --diff` to see what would change.
 ⚠️ **Never put the PDF errata printing in the `book:` frontmatter.** `book:` becomes the
 SCC source segment of every code minted from that document (`internal/pipeline/pipeline.go`),
 so `mcdm.heroes.v1` → `mcdm.heroes.v1_01b` re-mints all ~1,915 heroes codes and dangles
-~19k `scc:` links (tried and reverted 2026-06-11). The `.v1` is the SCC *namespace*
+~19k `scc:` links (tried once and reverted). The `.v1` is the SCC *namespace*
 version (breaking redefinitions only); the printing is recorded in the separate `printing:` frontmatter field, which flows as a
 non-identity build stamp: registry `books` map → SCC API (`index.json`/`scc.json` `books`,
 per-entry `printing`) → site page frontmatter (`printing`/`printing_book`, injected by
@@ -151,7 +151,7 @@ A **feature** is the umbrella type (`type: feature`); an **ability** is a featur
 | `trait` | ancestry or monster only (the books that say "trait") | `feature.trait.<entity>…` |
 | `feature` | class/domain/college/kit/companion/common | `feature.<entity>…` |
 
-⚠️ **`trait` was narrowed 2026-06-07.** It used to mean *any* non-ability feature; now it is reserved for ancestry traits + monster statblock passives. `FeatureParser` emits `trait` only when the home is an ancestry (monster passives come from `statblock_parse.go`); everything else is a plain `feature`. `kit` and `companion` are **not** trait homes. See `docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md` and the implementation plan alongside it.
+⚠️ **`trait` is narrow.** It does **not** mean "any non-ability feature" (it once did) — it is reserved for ancestry traits + monster statblock passives. `FeatureParser` emits `trait` only when the home is an ancestry (monster passives come from `statblock_parse.go`); everything else is a plain `feature`. `kit` and `companion` are **not** trait homes. See `docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md` and the implementation plan alongside it.
 
 ⚠️ **Schemas live in two hand-synced copies.** `schemas/*.schema.json` here is steel-etl's own copy; the published contract is `../data-sdk-npm/src/schema/*.schema.json`. steel-etl is Go and does **not** import the npm SDK — it emits SDK-shaped JSON by convention, and `internal/output/schema_validation_test.go` validates against hand-maintained allowlists, not the schema files. **Any schema edit must land in BOTH copies.** (See workspace `ARCHITECTURE.md` → "Schemas: two hand-synced copies".)
 

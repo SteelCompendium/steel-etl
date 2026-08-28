@@ -137,7 +137,8 @@ header (keeping the `+ your level` expression as the value), and `ParseRichFeatu
 populates the base (Level-0) `features[]`. The Level-5/9 advancement tiers live in a
 sibling `monster.fixture.<element>.advancement-features/<id>` featureblock (source-split
 into a `@type: featureblock | @id: <fixture-id>` section; `FeatureblockParser` fixture
-branch). Plan: `docs/superpowers/plans/2026-06-14-fixture-featureblock-restructure.md`.
+branch). Plan (cross-repo, at the workspace root): workspace
+`docs/superpowers/plans/2026-06-14-fixture-featureblock-restructure.md`.
 
 **Summoner minions / champions / rivals** are plain statblocks (no featureblock
 machinery) that `StatblockParser` likewise folds into the `monster.*` family via a
@@ -162,8 +163,8 @@ The `summoner` class segment is hardcoded (these `@domain` values appear only in
 Summoner book). Site-side, `isBestiaryGroupDir` (`internal/site/bestiary_cards.go`) was
 extended so the deeper `monster/<domain>/summoner/<portfolio>` portfolio dir is still
 recognized as a group landing (its grandparent — not its immediate parent — is the type
-root) and renders rich statblock cards. Plan:
-`docs/superpowers/plans/2026-06-14-summoner-statblocks-into-monster-family.md`.
+root) and renders rich statblock cards. Plan (cross-repo, at the workspace root):
+workspace `docs/superpowers/plans/2026-06-14-summoner-statblocks-into-monster-family.md`.
 
 **Rival Summoner ⇄ summons cross-references (site-only).** On the v2 site, each Rival
 Summoner page renders a `## Summons` card grid of its `summoner/minion/*` siblings, and
@@ -275,8 +276,8 @@ emits them as **parser-emitted coded children** (`ParsedContent.CodedChildren`,
 change. The advancement card is **embedded on the base fixture page** at build time via
 `embedFixtureAdvancement` (`build.go`) injecting the `{data-scc}` marker the `embed_cards`
 post-pass transcludes; the group-index base+advancement pairing is **kept** (full companion
-parity). Base/container codes unchanged. Spec:
-`docs/superpowers/specs/2026-06-19-fixture-advancement-coded-members-design.md`.
+parity). Base/container codes unchanged. Spec (cross-repo, at the workspace root):
+workspace `docs/superpowers/specs/2026-06-19-fixture-advancement-coded-members-design.md`.
 
 ## Retainers (Plan 6 — shipped 2026-06-18)
 
