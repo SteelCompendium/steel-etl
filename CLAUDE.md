@@ -159,7 +159,7 @@ A **feature** is the umbrella type (`type: feature`); an **ability** is a featur
 
 Kits and non-ability features can embed child abilities as structured nested objects in JSON/YAML output:
 
-- **Kits**: `signature_ability` field — KitParser finds child `@type: ability | @subtype: signature` sections via `findSignatureAbilityChild()`
+- **Kits**: `signature_ability` field — KitParser finds child `@type: ability | @subtype: signature` sections via `findSignatureAbilityChild()`. `kit_type` (Martial / Magic / Psionic) is derived at parse time from the signature ability's keywords by `deriveKitType` (SC-116); an explicit `@kit-type:` annotation wins.
 - **Traits**: `ability` field — FeatureParser finds child `@type: ability` sections via `findAbilityChild()`
 
 Both patterns: the child ability is parsed by `AbilityParser`, stored in `ParsedContent.Children`, and embedded by the SDK transformer. The child ability also gets its own standalone output file when the pipeline walks the section tree.
