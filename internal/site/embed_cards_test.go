@@ -364,6 +364,87 @@ func TestEmbedItemCards(t *testing.T) {
 	}
 }
 
+// TestEmbedItemCards_ReflectsLeafMutationAfterEarlyIndex guards the
+// pass-ordering invariant that HIGH-1 (SC-116 review round 1) broke: Build()
+// takes an early leaf-card index for kitSignatureCardIndex (SC-115), then
+// several augment-* passes (augmentRivalSummonerPages,
+// augmentSummonerRetainerPages, buildBestiarySearchPage) rewrite card-able
+// leaves — e.g. adding an sb-backlink line — before embedItemCards splices
+// leaf cards into container pages. Handing embedItemCards that STALE early
+// index reproduces the regression (the container never sees the mutation);
+// the fix is to hand it a freshly re-walked index taken after those passes.
+func TestEmbedItemCards_ReflectsLeafMutationAfterEarlyIndex(t *testing.T) {
+	setup := func(t *testing.T) (cfg *Config, classPath string, earlyCards map[string]cardEntry) {
+		docs := t.TempDir()
+		leafDir := filepath.Join(docs, "Browse", "feature", "ability", "censor", "level-1")
+		classDir := filepath.Join(docs, "Browse", "class")
+		for _, d := range []string{leafDir, classDir} {
+			if err := os.MkdirAll(d, 0755); err != nil {
+				t.Fatal(err)
+			}
+		}
+
+		leaf := "---\nname: Repent\nscc: x/feature.ability.censor.level-1/repent\ntype: ability\n---\n\n# Repent\n\n---\n\n<article class=\"sc-ability\">ORIGINAL-CARD</article>\n"
+		leafPath := filepath.Join(leafDir, "repent.md")
+		if err := os.WriteFile(leafPath, []byte(leaf), 0644); err != nil {
+			t.Fatal(err)
+		}
+
+		class := strings.Join([]string{
+			"---", "name: Censor", "scc: x/class.censor", "type: class", "---", "",
+			"# Censor", "", "---", "",
+			"## 1st-Level Features", "",
+			`### Repent {data-scc="x/feature.ability.censor.level-1/repent"}`, "",
+			"repent inlined markdown body", "",
+		}, "\n")
+		classPath = filepath.Join(classDir, "censor.md")
+		if err := os.WriteFile(classPath, []byte(class), 0644); err != nil {
+			t.Fatal(err)
+		}
+
+		cfg = &Config{DocsDir: docs}
+		var errs []string
+		earlyCards, errs = buildLeafCardIndex(cfg)
+		if len(errs) != 0 {
+			t.Fatalf("early index errs: %v", errs)
+		}
+
+		// Simulate an augment-* pass rewriting the leaf after the early index
+		// was taken (mirrors augmentSummonerRetainerPages adding a back-link).
+		mutated := strings.Replace(leaf, "ORIGINAL-CARD", `ORIGINAL-CARD<p class="sb-backlink">Summoned by X</p>`, 1)
+		if err := os.WriteFile(leafPath, []byte(mutated), 0644); err != nil {
+			t.Fatal(err)
+		}
+		return cfg, classPath, earlyCards
+	}
+
+	t.Run("stale early index misses the post-index mutation", func(t *testing.T) {
+		cfg, classPath, earlyCards := setup(t)
+		if _, errs := embedItemCards(cfg, earlyCards); len(errs) != 0 {
+			t.Fatalf("errs: %v", errs)
+		}
+		got, _ := os.ReadFile(classPath)
+		if strings.Contains(string(got), "sb-backlink") {
+			t.Fatal("test premise invalid: stale early index should NOT see the post-index leaf mutation")
+		}
+	})
+
+	t.Run("fresh re-walked index sees the mutation", func(t *testing.T) {
+		cfg, classPath, _ := setup(t)
+		freshCards, errs := buildLeafCardIndex(cfg)
+		if len(errs) != 0 {
+			t.Fatalf("fresh index errs: %v", errs)
+		}
+		if _, errs := embedItemCards(cfg, freshCards); len(errs) != 0 {
+			t.Fatalf("errs: %v", errs)
+		}
+		got, _ := os.ReadFile(classPath)
+		if !strings.Contains(string(got), "sb-backlink") {
+			t.Error("container should carry the post-index leaf mutation when embedItemCards is handed a freshly re-walked index (build.go's HIGH-1 fix)")
+		}
+	})
+}
+
 // SC-174 — headings whose attr list carries MORE than the data-scc code
 // (`data-subclass`, `data-cost`, …) must still be recognized by the splice pass.
 // The original dataSCCHeadingRe required `}` immediately after the code, so every

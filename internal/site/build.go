@@ -81,12 +81,17 @@ func Build(cfg *Config) (*BuildResult, error) {
 	}
 
 	// Leaf card index: scc -> finished card HTML (+ its docs-relative dir, for
-	// rebasing links elsewhere), built once every leaf page is on disk — the
-	// SAME map embedItemCards uses further down (buildLeafCardIndex, formerly
-	// its own "Pass A"), computed early so kitCard (cards.go, via
+	// rebasing links elsewhere), built once every leaf page is on disk. Taken
+	// early (before the augment-* passes below) so kitCard (cards.go, via
 	// generateIndexPages below) can splice a kit's signature-ability leaf card
 	// inline on the Browse kit index tile (SC-115) — the exact card the kit
-	// DETAIL page gets, just spliced a build step earlier.
+	// DETAIL page gets, just spliced a build step earlier. INVARIANT: this
+	// early index is for kitSignatureCardIndex ONLY — the augment-* passes
+	// below rewrite card-able leaves (adding "## Summons" grids,
+	// "## Advancement Features" cards, sb-backlink lines), so the index handed
+	// to embedItemCards further down must be taken fresh, after every
+	// leaf-mutating pass, or it splices stale pre-augment HTML (SC-115
+	// review round 1, HIGH-1).
 	leafCards, leafCardErrs := buildLeafCardIndex(cfg)
 	result.Errors = append(result.Errors, leafCardErrs...)
 	kitSignatureCardIndex = leafCards
@@ -160,7 +165,11 @@ func Build(cfg *Config) (*BuildResult, error) {
 	// with that item's finished leaf card. Runs after every leaf + index page is
 	// written; before the frontmatter-only passes below. Site-only — the data/
 	// repos are produced by the pipeline and are unaffected.
-	embedCount, embedErrs := embedItemCards(cfg, leafCards)
+	// Re-walk: the augment-* passes above rewrite card-able leaves after the
+	// early index was taken for kitCard (SC-115); embedding must see them.
+	freshCards, freshErrs := buildLeafCardIndex(cfg)
+	result.Errors = append(result.Errors, freshErrs...)
+	embedCount, embedErrs := embedItemCards(cfg, freshCards)
 	result.EmbeddedCards = embedCount
 	result.Errors = append(result.Errors, embedErrs...)
 
