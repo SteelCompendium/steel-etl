@@ -283,6 +283,62 @@ func TestKitParser_KitTypeFromSignatureKeywords(t *testing.T) {
 	}
 }
 
+// TestKitParser_KitTypeIgnoresLinkTargets covers LOW-1 (SC-116 review round
+// 1): keywords are unstripped markdown, so a keyword linked to a target whose
+// URL contains "Magic"/"Psionic" must not flip an otherwise-Martial kit's
+// derived kit_type -- only the link's display text counts. The real corpus's
+// "Magic; Light Weapon" keyword (no link) must still read Magic, proving the
+// fix strips link targets rather than switching to exact-equality matching.
+func TestKitParser_KitTypeIgnoresLinkTargets(t *testing.T) {
+	p := &KitParser{}
+
+	newKit := func(name, kw string) *parser.Section {
+		sig := &parser.Section{
+			Heading:      "Sig",
+			HeadingLevel: 6,
+			Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
+			BodySource: `*Flavor.*
+
+| **` + kw + `** | **Main action** |
+|---|---|
+| **Melee 1** | **One creature** |`,
+		}
+		sigHeading := &parser.Section{Heading: "Signature Ability", HeadingLevel: 5, Children: []*parser.Section{sig}}
+		sig.Parent = sigHeading
+		kit := &parser.Section{
+			Heading:      name,
+			HeadingLevel: 4,
+			Annotation:   map[string]string{"type": "kit", "id": Slugify(name)},
+			BodySource:   "A kit.\n\n##### Equipment\n\nA weapon.",
+			Children:     []*parser.Section{sigHeading},
+		}
+		sigHeading.Parent = kit
+		return kit
+	}
+
+	cases := []struct {
+		name, keywords, want string
+	}{
+		// The link target contains "Magic", but the display text ("Melee")
+		// does not -- must NOT flip this Martial kit to Magic.
+		{"Link Target Not Display Text", "[Melee](https://example.com/Magic), Strike", "Martial"},
+		// Real corpus case: no link, a literal "Magic" substring inside a
+		// combined keyword string -- must still read Magic.
+		{"Magic Light Weapon", "Magic; Light Weapon", "Magic"},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			result, err := p.Parse(context.NewContextStack(nil), newKit(tc.name, tc.keywords))
+			if err != nil {
+				t.Fatalf("Parse failed: %v", err)
+			}
+			if got := result.Frontmatter["kit_type"]; got != tc.want {
+				t.Errorf("kit_type = %v, want %v", got, tc.want)
+			}
+		})
+	}
+}
+
 // TestKitParser_KitTypeDefaultsMartialWithoutSignature covers a kit with no
 // signature ability at all — kit_type still defaults to "Martial" (matches the
 // site's pre-existing default for a kind-less kit).
@@ -319,6 +375,42 @@ func TestKitParser_KitTypeAnnotationOverride(t *testing.T) {
 	}
 	if got := result.Frontmatter["kit_type"]; got != "Stormwight" {
 		t.Errorf("kit_type = %v, want annotation override Stormwight", got)
+	}
+}
+
+// TestKitParser_KitTypeAnnotationEmptyValueFallsThroughToDerivation covers
+// LOW-2 (SC-116 review round 1): an `@kit-type:` annotation that parses to an
+// empty (or whitespace-only) value must not suppress derivation and emit
+// kit_type: "" -- it must fall through to the derived value instead.
+func TestKitParser_KitTypeAnnotationEmptyValueFallsThroughToDerivation(t *testing.T) {
+	p := &KitParser{}
+	sig := &parser.Section{
+		Heading:      "Sig",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
+		BodySource: `*Flavor.*
+
+| **Magic, Ranged, Strike** | **Main action** |
+|---|---|
+| **Melee 1** | **One creature** |`,
+	}
+	sigHeading := &parser.Section{Heading: "Signature Ability", HeadingLevel: 5, Children: []*parser.Section{sig}}
+	sig.Parent = sigHeading
+	kit := &parser.Section{
+		Heading:      "Blank Annotation Kit",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "kit", "id": "blank-annotation-kit", "kit-type": "  "},
+		BodySource:   "A kit.\n\n##### Equipment\n\nA weapon.",
+		Children:     []*parser.Section{sigHeading},
+	}
+	sigHeading.Parent = kit
+
+	result, err := p.Parse(context.NewContextStack(nil), kit)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	if got := result.Frontmatter["kit_type"]; got != "Magic" {
+		t.Errorf("kit_type = %q, want derived Magic (a blank annotation value must not suppress derivation)", got)
 	}
 }
 

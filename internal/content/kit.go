@@ -36,9 +36,12 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 		fm["flavor"] = f
 	}
 
-	// Extract kit type from annotation
+	// Extract kit type from annotation. Only honor a non-empty value — an
+	// annotation that parses to an empty string (e.g. `@kit-type:` with no
+	// value) must fall through to derivation below, not stamp kit_type: ""
+	// and silently suppress it (SC-116 review round 1, LOW-2).
 	if ann := section.Annotation; ann != nil {
-		if v, ok := ann["kit-type"]; ok {
+		if v, ok := ann["kit-type"]; ok && strings.TrimSpace(v) != "" {
 			fm["kit_type"] = v
 		}
 	}
@@ -96,8 +99,15 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 // "Martial" default (also the default for a kit with no signature ability).
 // Mirrors the site's former kitKind sniff (internal/site/kit_page.go), now run
 // once here instead of at render time (SC-116).
+//
+// Keywords are unstripped markdown (e.g. "[Melee](scc.v1:...)"), so link
+// targets are stripped to their display text before matching — otherwise a
+// keyword linked to a target containing "Magic"/"Psionic" would false-positive
+// (SC-116 review round 1, LOW-1). Matching stays substring, not exact-equality,
+// deliberately: the real corpus has a "Magic; Light Weapon" keyword, which
+// exact-equality would regress.
 func deriveKitType(keywords []string) string {
-	joined := strings.Join(keywords, " ")
+	joined := contentMdLinkRe.ReplaceAllString(strings.Join(keywords, " "), "$1")
 	switch {
 	case strings.Contains(joined, "Psionic"):
 		return "Psionic"
