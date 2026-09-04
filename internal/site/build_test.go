@@ -1440,3 +1440,60 @@ func TestDirToTitleReligion(t *testing.T) {
 		}
 	}
 }
+
+// TestBuild_EmbeddedCardsSeeSummonerRetainerAugments is the Build()-level guard
+// for the HIGH-1 pass-ordering invariant (SC-115 review round 1) that
+// TestEmbedItemCards_ReflectsLeafMutationAfterEarlyIndex (embed_cards_test.go)
+// does not actually cover: that test calls buildLeafCardIndex/embedItemCards
+// directly and never calls Build(), so it asserts nothing about the order
+// Build() itself calls them in — the regression can be reintroduced in
+// build.go with every other test staying green (SC-116 review round 2, item
+// 1b).
+//
+// This test drives the real Build(cfg) end to end over a source tree shaped
+// like the real bug: a summoner-book retainer statblock + its minion summon
+// (the exact shape augmentSummonerRetainerPages, summoner_retainer.go,
+// rewrites — adding "## Summons" to the retainer and an sb-backlink to the
+// minion) plus a class page that transcludes BOTH leaves by their {data-scc}
+// marker, the way a Read chapter transcludes a container's card. If Build()
+// hands embedItemCards the early leaf-card index (taken before
+// augmentSummonerRetainerPages runs) instead of a freshly re-walked one, the
+// class page's spliced cards are the pre-augment snapshot and this test fails.
+func TestBuild_EmbeddedCardsSeeSummonerRetainerAugments(t *testing.T) {
+	dir := t.TempDir()
+	src := filepath.Join(dir, "src")
+	docs := filepath.Join(dir, "docs")
+
+	writeFile(t, filepath.Join(src, "monster", "retainer", "devil-detective.md"),
+		"---\nname: Devil Detective\norganization: Retainer\nrole: Controller\ntype: statblock\nscc: mcdm.summoner.v1/monster.retainer.statblock/devil-detective\n---\n\nA devil detective.\n")
+	writeFile(t, filepath.Join(src, "monster", "retainer", "summoner", "minion", "razor.md"),
+		"---\nname: Razor\norganization: Minion\nrole: Harrier\ntype: statblock\nscc: mcdm.summoner.v1/monster.retainer.summoner.minion.statblock/razor\n---\n\nA razor-winged minion.\n")
+	writeFile(t, filepath.Join(src, "class", "summoner.md"), strings.Join([]string{
+		"---", "name: Summoner", "scc: mcdm.summoner.v1/class.summoner", "type: class", "---", "",
+		"# Summoner", "", "---", "",
+		"## Retainer", "",
+		`### Devil Detective {data-scc="mcdm.summoner.v1/monster.retainer.statblock/devil-detective"}`, "",
+		"devil detective inlined markdown body", "",
+		`### Razor {data-scc="mcdm.summoner.v1/monster.retainer.summoner.minion.statblock/razor"}`, "",
+		"razor inlined markdown body", "",
+	}, "\n"))
+
+	cfg := &Config{
+		SourceDir: src,
+		DocsDir:   docs,
+		Sections: []SectionConfig{
+			{Name: "Browse", Include: []string{"monster/", "class/"}},
+		},
+	}
+	if _, err := Build(cfg); err != nil {
+		t.Fatalf("Build failed: %v", err)
+	}
+
+	got := readFile(filepath.Join(docs, "Browse", "class", "summoner.md"))
+	if !strings.Contains(got, "## Summons") {
+		t.Errorf("class page missing the retainer's post-augment \"## Summons\" grid (embedItemCards spliced a stale pre-augment leaf card):\n%s", got)
+	}
+	if !strings.Contains(got, "sb-backlink") {
+		t.Errorf("class page missing the minion's post-augment sb-backlink (embedItemCards spliced a stale pre-augment leaf card):\n%s", got)
+	}
+}
