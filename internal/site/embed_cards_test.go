@@ -509,3 +509,49 @@ func TestSpliceCards_HeadingWithExtraAttributes(t *testing.T) {
 		}
 	}
 }
+
+// SC-306: a container page's embedded card is a copy of a leaf the index
+// already holds, and its id-less card heading pollutes the enclosing section
+// title in Material's indexer. Spliced copies are flagged data-search-exclude
+// and lose their nested feature ids (no duplicate DOM ids on pages that embed
+// several blocks). The {data-sb-inline} branch is NOT touched — those
+// statblocks have no leaf and must stay indexed.
+func TestSpliceCards_SearchExcludesEmbeddedCards(t *testing.T) {
+	cards := map[string]cardEntry{
+		"W": {
+			html: "<section class=\"sc-trait\" data-action=\"trait\">\n" +
+				"<h3 class=\"sc-head__slot\">Wrath</h3>\n" +
+				"<article class=\"sc-ability sb__feat\"><h3 class=\"sc-head__slot\" id=\"sc-feat-judgment\">Judgment</h3></article>\n" +
+				"</section>",
+			dir: "Browse/feature/censor/level-1/wrath",
+		},
+	}
+	body := "\n# Censor\n\n### Wrath {data-scc=\"W\"}\n\nwrath inlined body\n"
+	got, n := spliceCards(body, "", "Browse/class/censor", cards)
+	if n != 1 {
+		t.Fatalf("spliced %d, want 1:\n%s", n, got)
+	}
+	if !strings.Contains(got, `<section data-search-exclude="" class="sc-trait"`) {
+		t.Errorf("embedded card root must carry data-search-exclude:\n%s", got)
+	}
+	if strings.Contains(got, `id="sc-feat-`) {
+		t.Errorf("embedded copy must not carry nested feature ids:\n%s", got)
+	}
+	if strings.Count(got, "data-search-exclude") != 1 {
+		t.Errorf("attribute must be on the root only:\n%s", got)
+	}
+}
+
+func TestMarkSearchExcluded(t *testing.T) {
+	cases := map[string]string{
+		`<section class="a">x</section>`:      `<section data-search-exclude="" class="a">x</section>`,
+		`<article data-k="1">x</article>`:     `<article data-search-exclude="" data-k="1">x</article>`,
+		`<div class="sc-kit">x</div>`:         `<div data-search-exclude="" class="sc-kit">x</div>`,
+		`plain text with no root`:             `plain text with no root`,
+	}
+	for in, want := range cases {
+		if got := markSearchExcluded(in); got != want {
+			t.Errorf("markSearchExcluded(%q)\n got %q\nwant %q", in, got, want)
+		}
+	}
+}

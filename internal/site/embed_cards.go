@@ -147,6 +147,29 @@ func headingLevel(line string) int {
 	return 0
 }
 
+// cardRootRe matches a leaf card's opening root tag (the card HTML starts with
+// it — leafCard trims the injected heading and surrounding whitespace).
+var cardRootRe = regexp.MustCompile(`^<(section|article|div)\b`)
+
+// featIDRe matches the nested feature-card head ids minted by featID.
+var featIDRe = regexp.MustCompile(` id="sc-feat-[^"]*"`)
+
+// markSearchExcluded flags a spliced leaf card so Material's search indexer
+// skips it (SC-306). The leaf page already indexes the card; on a container
+// page the copy only adds duplicate hits, and its id-less card heading would
+// be glued onto the enclosing section's title by Material's HTML parser
+// (it compares context elements by tag name only). No root tag → unchanged.
+func markSearchExcluded(html string) string {
+	return cardRootRe.ReplaceAllString(html, `<$1 data-search-exclude=""`)
+}
+
+// stripFeatIDs removes nested feature-card ids from an embedded copy: a
+// container that embeds several statblocks would otherwise repeat
+// id="sc-feat-free-strike" and the like. The leaf keeps its ids.
+func stripFeatIDs(html string) string {
+	return featIDRe.ReplaceAllString(html, "")
+}
+
 // hrefSrcRe matches a relative-or-absolute href/src attribute value.
 var hrefSrcRe = regexp.MustCompile(`(href|src)="([^"]*)"`)
 
@@ -338,7 +361,8 @@ func spliceCards(body, ownSCC, containerDir string, cards map[string]cardEntry) 
 		}
 		// Keep the heading, drop the inlined sub-tree, insert the card (with its
 		// relative links rebased to the container's depth).
-		out = append(out, line, "", rebaseLinks(entry.html, entry.dir, containerDir), "")
+		card := markSearchExcluded(stripFeatIDs(rebaseLinks(entry.html, entry.dir, containerDir)))
+		out = append(out, line, "", card, "")
 		spliced++
 		i = sw - 1
 	}
