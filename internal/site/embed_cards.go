@@ -147,20 +147,20 @@ func headingLevel(line string) int {
 	return 0
 }
 
-// cardRootRe matches a leaf card's opening root tag (the card HTML starts with
-// it — leafCard trims the injected heading and surrounding whitespace).
-var cardRootRe = regexp.MustCompile(`^<(section|article|div)\b`)
-
 // featIDRe matches the nested feature-card head ids minted by featID.
 var featIDRe = regexp.MustCompile(` id="sc-feat-[^"]*"`)
 
-// markSearchExcluded flags a spliced leaf card so Material's search indexer
-// skips it (SC-306). The leaf page already indexes the card; on a container
-// page the copy only adds duplicate hits, and its id-less card heading would
-// be glued onto the enclosing section's title by Material's HTML parser
-// (it compares context elements by tag name only). No root tag → unchanged.
+// markSearchExcluded wraps a spliced leaf card so Material's search indexer
+// skips it (SC-306). Material's parser (plugins/search/plugin.py) keeps
+// excluded elements in a set keyed by TAG NAME, so putting the attribute on
+// the card's own <div>/<section>/<article> root stops working at the first
+// nested close of the same tag and the rest of the card leaks into the
+// container page's index entry. <address> never occurs inside a card, is
+// block-level for Python-Markdown, has no Material CSS and an implicit
+// "generic" ARIA role; v2's `.sc-embed{display:contents;font-style:inherit}`
+// keeps the rendered box tree and typography unchanged.
 func markSearchExcluded(html string) string {
-	return cardRootRe.ReplaceAllString(html, `<$1 data-search-exclude=""`)
+	return `<address class="sc-embed" data-search-exclude="">` + "\n" + html + "\n</address>"
 }
 
 // stripFeatIDs removes nested feature-card ids from an embedded copy: a

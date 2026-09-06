@@ -531,23 +531,25 @@ func TestSpliceCards_SearchExcludesEmbeddedCards(t *testing.T) {
 	if n != 1 {
 		t.Fatalf("spliced %d, want 1:\n%s", n, got)
 	}
-	if !strings.Contains(got, `<section data-search-exclude="" class="sc-trait"`) {
-		t.Errorf("embedded card root must carry data-search-exclude:\n%s", got)
+	if !strings.Contains(got, "<address class=\"sc-embed\" data-search-exclude=\"\">\n"+`<section class="sc-trait"`) {
+		t.Errorf("embedded card must be wrapped in the sc-embed address:\n%s", got)
+	}
+	if !strings.Contains(got, "</section>\n</address>") {
+		t.Errorf("wrapper must close after the card's own closing tag:\n%s", got)
 	}
 	if strings.Contains(got, `id="sc-feat-`) {
 		t.Errorf("embedded copy must not carry nested feature ids:\n%s", got)
 	}
 	if strings.Count(got, "data-search-exclude") != 1 {
-		t.Errorf("attribute must be on the root only:\n%s", got)
+		t.Errorf("attribute must appear exactly once, on the wrapper:\n%s", got)
 	}
 }
 
 func TestMarkSearchExcluded(t *testing.T) {
 	cases := map[string]string{
-		`<section class="a">x</section>`:      `<section data-search-exclude="" class="a">x</section>`,
-		`<article data-k="1">x</article>`:     `<article data-search-exclude="" data-k="1">x</article>`,
-		`<div class="sc-kit">x</div>`:         `<div data-search-exclude="" class="sc-kit">x</div>`,
-		`plain text with no root`:             `plain text with no root`,
+		`<section class="a">x</section>`: "<address class=\"sc-embed\" data-search-exclude=\"\">\n" + `<section class="a">x</section>` + "\n</address>",
+		`<article data-k="1">x</article>`: "<address class=\"sc-embed\" data-search-exclude=\"\">\n" + `<article data-k="1">x</article>` + "\n</address>",
+		`plain text with no root`: "<address class=\"sc-embed\" data-search-exclude=\"\">\n" + `plain text with no root` + "\n</address>",
 	}
 	for in, want := range cases {
 		if got := markSearchExcluded(in); got != want {
