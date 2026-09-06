@@ -29,7 +29,9 @@ func hMini(h string) cardHeadSlot { return cardHeadSlot{HTML: h, Style: "mini"} 
 // sticky-reveal view-timeline, all still keyed to those classes in the per-card
 // CSS). Only the MAIN card head sets it; nested sub-feature heads stay plain.
 type cardHeadSlots struct {
-	Crest, RoleKey, NameTag, Class        string
+	Crest, RoleKey, NameTag, Class string
+	// SC-306: id for the name slot; set only on nested feature cards (featID)
+	NameID                                string
 	LeftEyebrow, LeftPrimary, LeftDeck    cardHeadSlot
 	RightEyebrow, RightPrimary, RightDeck cardHeadSlot
 }
@@ -53,15 +55,15 @@ func renderCardHead(s cardHeadSlots) string {
 		b.WriteString(s.Crest)
 	}
 	b.WriteString(`<div class="sc-head__col sc-head__col--left">`)
-	writeCardHeadSlot(&b, "left-eyebrow", "div", s.LeftEyebrow, "")
-	writeCardHeadSlot(&b, "left-primary", nameTag, s.LeftPrimary, "")
-	writeCardHeadSlot(&b, "left-deck", "div", s.LeftDeck, "")
+	writeCardHeadSlot(&b, "left-eyebrow", "div", s.LeftEyebrow, "", "")
+	writeCardHeadSlot(&b, "left-primary", nameTag, s.LeftPrimary, "", s.NameID)
+	writeCardHeadSlot(&b, "left-deck", "div", s.LeftDeck, "", "")
 	b.WriteString(`</div></div>`)
 
 	b.WriteString(`<div class="sc-head__rail sc-head__col--right">`)
-	writeCardHeadSlot(&b, "right-eyebrow", "div", s.RightEyebrow, "")
-	writeCardHeadSlot(&b, "right-primary", "div", s.RightPrimary, s.RoleKey)
-	writeCardHeadSlot(&b, "right-deck", "div", s.RightDeck, "")
+	writeCardHeadSlot(&b, "right-eyebrow", "div", s.RightEyebrow, "", "")
+	writeCardHeadSlot(&b, "right-primary", "div", s.RightPrimary, s.RoleKey, "")
+	writeCardHeadSlot(&b, "right-deck", "div", s.RightDeck, "", "")
 	b.WriteString(`</div>`)
 
 	b.WriteString(`</header>`)
@@ -70,8 +72,8 @@ func renderCardHead(s cardHeadSlots) string {
 
 // writeCardHeadSlot writes one slot element if it has content. lane is e.g.
 // "left-eyebrow"; tag is the element name; roleKey, when non-empty, is emitted
-// as data-role.
-func writeCardHeadSlot(b *strings.Builder, lane, tag string, sl cardHeadSlot, roleKey string) {
+// as data-role; id, when non-empty, is emitted as the element's id (SC-306).
+func writeCardHeadSlot(b *strings.Builder, lane, tag string, sl cardHeadSlot, roleKey, id string) {
 	if strings.TrimSpace(sl.HTML) == "" {
 		return
 	}
@@ -82,6 +84,9 @@ func writeCardHeadSlot(b *strings.Builder, lane, tag string, sl cardHeadSlot, ro
 	fmt.Fprintf(b, `<%s class="sc-head__slot sc-head__%s sc-head__slot--%s"`, tag, lane, style)
 	if roleKey != "" {
 		fmt.Fprintf(b, ` data-role="%s"`, html.EscapeString(roleKey))
+	}
+	if id != "" {
+		fmt.Fprintf(b, ` id="%s"`, html.EscapeString(id))
 	}
 	fmt.Fprintf(b, `>%s</%s>`, sl.HTML, tag)
 }

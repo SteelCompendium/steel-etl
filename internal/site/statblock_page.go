@@ -65,6 +65,7 @@ type sbFeature struct {
 	Kind         string       `json:"kind"`   // ability | passive | villain
 	Action       string       `json:"action"` // main | maneuver | triggered | move | passive | villain
 	Name         string       `json:"name"`
+	ID           string       `json:"-"` // SC-306: id minted by featID for this rendering pass, not sourced from JSON
 	Cost         string       `json:"cost,omitempty"`
 	Usage        string       `json:"usage,omitempty"`
 	Keywords     []string     `json:"keywords,omitempty"`

@@ -48,6 +48,7 @@ type fbEnh struct {
 type fbFeature struct {
 	Icon         string       `yaml:"icon"`
 	Name         string       `yaml:"name"`
+	ID           string       `yaml:"-"` // SC-306: id minted by featID for this rendering pass, not sourced from YAML
 	Cost         string       `yaml:"cost"`
 	Usage        string       `yaml:"usage"`
 	Keywords     []string     `yaml:"keywords"`
@@ -330,7 +331,9 @@ func renderFbFeats(feats []fbFeature) string {
 	var b strings.Builder
 	b.WriteString("<div class=\"fb__feats\">\n")
 	curLevel, bandOpen := 0, false
+	seen := map[string]int{}
 	for _, f := range feats {
+		f.ID = featID(seen, f.Name)
 		if f.Level != curLevel {
 			if bandOpen {
 				b.WriteString("</div>\n") // close previous .fb__band--adv
@@ -396,6 +399,7 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 	b.WriteString(renderCardHead(cardHeadSlots{
 		Crest:        crest,
 		LeftPrimary:  hLine(html.EscapeString(strings.TrimSpace(f.Name))),
+		NameID:       f.ID,
 		RightPrimary: hMini(html.EscapeString(strings.TrimSpace(f.Cost))),
 		RightDeck:    hChip(richInline(strings.TrimSpace(f.Usage))),
 	}))

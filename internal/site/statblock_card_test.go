@@ -226,6 +226,9 @@ func TestStatblockCard_RendersFlavor(t *testing.T) {
 	if headIdx < 0 || flavorIdx < 0 || defIdx < 0 || !(headIdx < flavorIdx && flavorIdx < defIdx) {
 		t.Errorf("sb__flavor not positioned between head and defenses (head=%d flavor=%d def=%d)", headIdx, flavorIdx, defIdx)
 	}
+	if !strings.Contains(html, ` id="sc-feat-`) {
+		t.Errorf("statblock feature heads must carry sc-feat- ids (SC-306):\n%s", html)
+	}
 }
 
 // TestStatblockCard_NoFlavorBlockWhenAbsent guards against an empty .sb__flavor

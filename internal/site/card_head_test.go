@@ -60,3 +60,19 @@ func TestRenderCardHead_LegacyClass(t *testing.T) {
 		t.Errorf("empty Class should emit bare sc-head:\n%s", bare)
 	}
 }
+
+// SC-306: nested feature cards carry an id so Material's search indexer opens
+// a real section for them instead of gluing the name onto the parent title.
+func TestRenderCardHead_NameID(t *testing.T) {
+	got := renderCardHead(cardHeadSlots{
+		LeftPrimary: hLine("Grasping Appendages"),
+		NameID:      "sc-feat-grasping-appendages",
+	})
+	want := `<h3 class="sc-head__slot sc-head__left-primary sc-head__slot--line" id="sc-feat-grasping-appendages">Grasping Appendages</h3>`
+	if !strings.Contains(got, want) {
+		t.Errorf("want %s in:\n%s", want, got)
+	}
+	if got := renderCardHead(cardHeadSlots{LeftPrimary: hLine("X")}); strings.Contains(got, " id=") {
+		t.Errorf("no NameID → no id attribute:\n%s", got)
+	}
+}

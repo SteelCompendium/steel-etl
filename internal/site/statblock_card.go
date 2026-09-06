@@ -117,6 +117,7 @@ func renderStatblockFeature(f sbFeature) string {
 	b.WriteString(renderCardHead(cardHeadSlots{
 		Crest:        icon,
 		LeftPrimary:  hLine(richSb(f.Name)),
+		NameID:       f.ID,
 		RightPrimary: hChip(richSb(f.Cost)),
 	}))
 	b.WriteString(`</div>`)
@@ -333,7 +334,9 @@ func renderStatblockDefenses(defenses []sbLV) string {
 // The shared family Malice band stays omitted (not in island data; FOLLOWUPS #7).
 func renderStatblockCard(d sbIsland) string {
 	var feat, villain strings.Builder
+	seen := map[string]int{}
 	for _, f := range d.Features {
+		f.ID = featID(seen, f.Name)
 		if f.Kind == "villain" {
 			villain.WriteString(renderStatblockFeature(f))
 		} else {
