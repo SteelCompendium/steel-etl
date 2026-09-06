@@ -16,4 +16,7 @@ func TestFeatID(t *testing.T) {
 	if got := featID(seen, "  "); got != "sc-feat-feature" {
 		t.Errorf("empty name falls back, got %q", got)
 	}
+	if got := featID(seen, "[Solo](../rule/organization/solo.md) Monster"); got != "sc-feat-solo-monster" {
+		t.Errorf("markdown link must be unwrapped before slugifying, got %q", got)
+	}
 }

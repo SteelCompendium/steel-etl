@@ -547,9 +547,9 @@ func TestSpliceCards_SearchExcludesEmbeddedCards(t *testing.T) {
 
 func TestMarkSearchExcluded(t *testing.T) {
 	cases := map[string]string{
-		`<section class="a">x</section>`: "<address class=\"sc-embed\" data-search-exclude=\"\">\n" + `<section class="a">x</section>` + "\n</address>",
+		`<section class="a">x</section>`:  "<address class=\"sc-embed\" data-search-exclude=\"\">\n" + `<section class="a">x</section>` + "\n</address>",
 		`<article data-k="1">x</article>`: "<address class=\"sc-embed\" data-search-exclude=\"\">\n" + `<article data-k="1">x</article>` + "\n</address>",
-		`plain text with no root`: "<address class=\"sc-embed\" data-search-exclude=\"\">\n" + `plain text with no root` + "\n</address>",
+		`plain text with no root`:         "<address class=\"sc-embed\" data-search-exclude=\"\">\n" + `plain text with no root` + "\n</address>",
 	}
 	for in, want := range cases {
 		if got := markSearchExcluded(in); got != want {

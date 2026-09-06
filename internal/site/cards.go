@@ -350,7 +350,15 @@ func kitSignatureCardHTML(body, containerDir string) string {
 	if !ok {
 		return ""
 	}
-	return "  <div class=\"sc-card__sig-card\">" + rebaseLinks(entry.html, entry.dir, containerDir) + "</div>\n"
+	// SC-306: this splice bypasses embedItemCards (embed_cards.go), which is
+	// the only other place a leaf card gets transcluded into a container page,
+	// so it needs the same treatment that gives it there: wrapped so
+	// Material's search indexer skips the embedded copy (markSearchExcluded)
+	// and stripped of the leaf's own sc-feat- ids (stripFeatIDs) so they don't
+	// collide with the kit DETAIL page's copy of the same card. Wraps only the
+	// ability card itself, not the .sc-card__sig-card tile chrome around it.
+	cardHTML := markSearchExcluded(stripFeatIDs(rebaseLinks(entry.html, entry.dir, containerDir)))
+	return "  <div class=\"sc-card__sig-card\">" + cardHTML + "</div>\n"
 }
 
 func kitCard(fm, body, file, name, containerDir string) string {

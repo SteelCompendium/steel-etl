@@ -253,6 +253,35 @@ func TestKitCardSpliceSignatureAbility(t *testing.T) {
 	}
 }
 
+// TestKitSignatureCardHTMLExcludedFromSearch is the SC-306 fix-wave
+// regression: the kit index tile's splice (kitSignatureCardHTML) must get the
+// same search-index and duplicate-id treatment embedItemCards gives every
+// other transcluded leaf card (embed_cards.go) — wrapped in the
+// data-search-exclude <address> so Material's indexer skips the embedded
+// copy, and stripped of the leaf's own sc-feat- id.
+func TestKitSignatureCardHTMLExcludedFromSearch(t *testing.T) {
+	t.Cleanup(func() { kitSignatureCardIndex = nil })
+	kitSignatureCardIndex = map[string]cardEntry{
+		"mcdm.heroes.v1/feature.ability.panther/devastating-rush": {
+			html: `<article id="sc-feat-devastating-rush" class="sc-ability sc-fil" data-action="main">REPENT-CARD</article>`,
+			dir:  "Browse/feature/ability/Kits/panther-devastating-rush",
+		},
+	}
+	body := "<section class=\"sc-kit sc-fil\">plate</section>\n\n" +
+		`### Devastating Rush {data-scc="mcdm.heroes.v1/feature.ability.panther/devastating-rush"}` + "\n"
+	out := kitSignatureCardHTML(body, "Browse/kit")
+
+	if !strings.HasPrefix(strings.TrimSpace(out), `<div class="sc-card__sig-card"><address class="sc-embed" data-search-exclude="">`) {
+		t.Fatalf("expected the spliced ability card wrapped in the search-excluded <address>, got:\n%s", out)
+	}
+	if strings.Contains(out, `id="sc-feat-`) {
+		t.Errorf("expected the leaf's sc-feat- id stripped from the embedded copy, got:\n%s", out)
+	}
+	if !strings.Contains(out, "REPENT-CARD") {
+		t.Errorf("expected the leaf's ability card content still present, got:\n%s", out)
+	}
+}
+
 // TestKitCardNoSpliceWithoutIndex: kitCard must not blow up or emit an empty
 // wrapper when the leaf-card index isn't populated (e.g. a direct unit test,
 // or a kit with no signature ability at all) — matching pre-SC-115 behavior.

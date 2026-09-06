@@ -11,6 +11,10 @@ import "fmt"
 // "Free Strike" becomes sc-feat-free-strike-2. Top-level card heads stay
 // id-less on purpose — the page H1 already owns that title.
 func featID(seen map[string]int, name string) string {
+	// Unwrap markdown links first (mdLinkRe, ability_cards.go): a name like
+	// "[Solo](../rule/organization/solo.md) Monster" would otherwise slugify
+	// the link target into the id too (sc-feat-solo-rule-organization-solo-md-monster).
+	name = mdLinkRe.ReplaceAllString(name, "$1")
 	base := "sc-feat-" + slugify(name)
 	if base == "sc-feat-" {
 		base = "sc-feat-feature"

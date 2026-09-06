@@ -139,8 +139,12 @@ func buildMaliceBandCache(cfg *Config, entries []sourceEntry) map[string][]malic
 			// canonical Browse page (not through the embed_cards stripFeatIDs
 			// path), so its cards need the same sc-feat- id every other nested
 			// feature card gets, or Material's indexer glues the name onto the
-			// band's own title.
-			feats[i].ID = featID(seen, feats[i].Name)
+			// band's own title. Namespaced with a "malice " prefix (distinct
+			// seen map, but the same name can also appear as a plain statblock
+			// feature elsewhere on the page — e.g. "Bull Rush" on both a
+			// minotaur's own feature list and its family's malice band — which
+			// would otherwise mint the same id twice on one page.
+			feats[i].ID = featID(seen, "malice "+feats[i].Name)
 		}
 		var featHTML strings.Builder
 		for _, f := range feats {

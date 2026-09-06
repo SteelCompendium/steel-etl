@@ -53,8 +53,8 @@ flavor: At the start of any devil's turn, you can spend Malice to activate one o
 	html := candidates[0].html
 
 	for _, want := range []string{
-		` id="sc-feat-devilish-suggestion"`,
-		` id="sc-feat-devilish-suggestion-2"`,
+		` id="sc-feat-malice-devilish-suggestion"`,
+		` id="sc-feat-malice-devilish-suggestion-2"`,
 	} {
 		if !strings.Contains(html, want) {
 			t.Errorf("missing %q in malice band html:\n%s", want, html)
