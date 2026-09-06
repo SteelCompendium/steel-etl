@@ -526,3 +526,25 @@ handled. A clean `mkdocs build` (0 broken-link warnings) is the regression guard
 The card renderers are untouched — finished HTML is relocated. The shared
 `PageBody` that feeds the `data/` repos is never modified. Design:
 `docs/superpowers/specs/2026-06-16-inline-item-cards-design.md`.
+
+## Downtime project cards
+
+`project_cards.go` renders project leaves as `.pj` Steel Plate cards: the shared
+six-slot header carries the project goal, followed by a three-field ledger.
+Delegating projects introduce their child cards without wrapping the whole collection.
+The nine leveled armor/implement/weapon enhancement blocks become cards with 85
+named enhancement panels. A bold Power Roll label remains inside its enhancement.
+Granted abilities render as existing `.sc-ability` cards inside a “Grants ability”
+well. Quoted untyped grants stay inline; the typed Dragon's Fire sibling is consumed
+by its preceding Dragon Soul II panel and retains its anchor and SCC marker.
+
+`embed_cards.go` includes projects in Read/chapter transclusion. Imbue Armor and
+Imbue Implement rule leaves use the same renderer when they contain enhancement
+projects. Links, lists, tables, and non-project headings remain available. The site
+stylesheet is `v2/docs/stylesheets/steel-project.css`.
+
+The parser only promotes a quoted H6+ heading to a section when it has an explicit
+`@type`. Unannotated quoted headings remain in the owning body, preventing an H6
+ability from taking ownership of following enhancement paragraphs. This applies
+across books, including non-ability quoted headings; it does not create SCC codes.
+`internal/parser/project_scope_test.go` covers both typed and untyped cases.

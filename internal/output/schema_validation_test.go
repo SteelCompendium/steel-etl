@@ -14,6 +14,11 @@ import (
 // --- Schema property allowlists (from schemas/*.schema.json v2.0.0) ---
 
 var schemaAllowedFields = map[string]map[string]bool{
+	"project": {
+		"name": true, "type": true, "scc": true, "content": true, "metadata": true,
+		"item_prerequisite": true, "project_source": true,
+		"project_roll_characteristic": true, "project_goal": true,
+	},
 	"class": {
 		"name": true, "type": true, "scc": true, "heroic_resource": true,
 		"flavor": true, "primary_characteristics": true,
@@ -33,7 +38,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 	},
 	"perk": {
 		"name": true, "type": true, "scc": true, "prerequisites": true, "perk_group": true,
-		"flavor": true,
+		"flavor":  true,
 		"content": true, "metadata": true,
 	},
 	"career": {
@@ -41,7 +46,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 		"language": true, "renown": true, "wealth": true,
 		"project_points": true, "perk": true, "flavor": true,
 		"inciting_incidents": true,
-		"content": true, "metadata": true,
+		"content":            true, "metadata": true,
 	},
 	"ancestry": {
 		"name": true, "type": true, "scc": true,
@@ -54,7 +59,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 		"organization": true, "upbringing": true, "flavor": true,
 		"culture_benefit_type": true, "skill_options": true, "quick_build_skill": true,
 		"language": true,
-		"content": true, "metadata": true,
+		"content":  true, "metadata": true,
 	},
 	"title": {
 		"name": true, "type": true, "scc": true, "echelon": true, "benefits": true,
@@ -103,6 +108,7 @@ func TestSchema_RequiredFields(t *testing.T) {
 		fm          map[string]any
 		body        string
 	}{
+		{"project", "project", map[string]any{"name": "Road", "type": "project", "project_goal": "45 (per mile)", "item_prerequisite": "None", "project_source": "A manual", "project_roll_characteristic": "Reason"}, "Project body."},
 		{"class", "class", map[string]any{"name": "Fury", "type": "class"}, "Class body."},
 		{"kit", "kit", map[string]any{"name": "Cloak and Dagger", "type": "kit"}, "Kit body."},
 		{"perk", "perk", map[string]any{"name": "Coward", "type": "perk"}, "Perk body."},
@@ -204,7 +210,7 @@ func TestSchema_NoUnevaluatedProperties(t *testing.T) {
 			map[string]any{
 				"name": "Bag of Holding", "type": "treasure",
 				"treasure_type": "Leveled", "level": "3", "echelon": "3", "rarity": "Rare",
-				"keywords": []string{"Magic", "Container"},
+				"keywords":     []string{"Magic", "Container"},
 				"project_goal": "45", "project_roll_characteristic": "Reason",
 				"effect": "This bag can hold 500 pounds.",
 			},

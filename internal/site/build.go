@@ -405,6 +405,12 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 			wasCarded = true
 		}
 
+		// Projects and their enhancement groups use nested Steel plates.
+		if card, ok := buildProjectCardPage(data); ok {
+			data = card
+			wasCarded = true
+		}
+
 		// Class pages → landing header card + section jump bar. NOT counted as
 		// carded — the full body stays on the page, so there is no lost source
 		// for the export control to recover.

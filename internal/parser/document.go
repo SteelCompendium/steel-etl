@@ -33,7 +33,7 @@ func ParseDocument(source []byte) (*Document, error) {
 	// 4. Collect heading info by walking AST
 	headings := collectHeadings(tree, source)
 
-	// 4b. Collect blockquote headings (> ######) that goldmark doesn't parse as headings
+	// 4b. Collect quoted entity headings (> ######), skipped by our AST walk
 	bqHeadings := collectBlockquoteHeadings(source, headings)
 	headings = mergeHeadings(headings, bqHeadings)
 
@@ -44,6 +44,18 @@ func ParseDocument(source []byte) (*Document, error) {
 
 	// 5. Associate annotations with headings
 	associateAnnotations(headings, annotationByLine, source)
+
+	// Quoted, unannotated headings are body content, not section boundaries.
+	// Promoting them at the H6 cap makes them siblings of their owner and
+	// attributes subsequent owner prose to the quoted ability (SC-201).
+	filtered := headings[:0]
+	for _, h := range headings {
+		if h.blockquote && h.annotation["type"] == "" {
+			continue
+		}
+		filtered = append(filtered, h)
+	}
+	headings = filtered
 
 	// 6. Build section tree with body slicing
 	sections := buildSectionTree(headings, source)
@@ -62,6 +74,7 @@ type headingInfo struct {
 	lineNum    int // 1-based line number of the heading
 	byteOffset int // byte offset of the heading line start in source
 	annotation map[string]string
+	blockquote bool // synthetic quoted heading; only typed entities open sections
 }
 
 // indexAnnotationsByEndLine maps the annotation's EndLine to the annotation,
@@ -126,14 +139,12 @@ func collectHeadings(tree ast.Node, source []byte) []*headingInfo {
 }
 
 // blockquoteH6Re matches "> ###### Heading Text" lines (H6+ inside blockquotes).
-// Goldmark doesn't parse headings inside blockquotes regardless of level,
-// so these must be detected via regex.
+// Our AST collector skips blockquotes; scan H6+ lines to support typed entities.
 var blockquoteH6Re = regexp.MustCompile(`^>\s*(#{6,})\s+(.+)$`)
 
-// collectBlockquoteHeadings scans source for "> ######" patterns that goldmark
-// doesn't parse as heading nodes. Goldmark ignores headings inside blockquotes
-// regardless of level, so these are detected via regex and injected as synthetic
-// headings. Each blockquote heading's tree level is set to one deeper than the
+// collectBlockquoteHeadings scans source for quoted H6+ entity candidates.
+// After annotation association, only explicitly typed candidates open sections;
+// untyped quotes stay in their owner's body. Each candidate is one deeper than the
 // most recent regular heading, so it becomes a proper child of whatever section
 // it appears under (e.g., a feature at H5 gets its child ability at H6).
 func collectBlockquoteHeadings(source []byte, regularHeadings []*headingInfo) []*headingInfo {
@@ -163,9 +174,10 @@ func collectBlockquoteHeadings(source []byte, regularHeadings []*headingInfo) []
 		}
 
 		headings = append(headings, &headingInfo{
-			text:    headingText,
-			level:   level,
-			lineNum: lineNum,
+			text:       headingText,
+			blockquote: true,
+			level:      level,
+			lineNum:    lineNum,
 		})
 	}
 	return headings

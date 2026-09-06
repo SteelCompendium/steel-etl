@@ -35,6 +35,7 @@ func embedCardSections(cfg *Config) []string {
 // statblock; featureblock_page.go: featureblock/dynamic-terrain;
 // companion_statblock.go: feature-group → the beastheart companion .sb-wrap).
 var cardableType = map[string]bool{
+	"project":         true,
 	"ability":         true,
 	"feature":         true,
 	"trait":           true,
@@ -51,6 +52,7 @@ var cardableType = map[string]bool{
 // must never be swallowed by an ancestor feature — see spliceCards. Summoner
 // minions (type statblock nested under a feature) are the motivating case.
 var standaloneType = map[string]bool{
+	"project":         true,
 	"statblock":       true,
 	"featureblock":    true,
 	"dynamic-terrain": true,

@@ -86,6 +86,8 @@ type actionMeta struct{ key, label, glyph string }
 func actionInfo(actionType, contentType string) actionMeta {
 	a := strings.ToLower(strings.TrimSpace(actionType))
 	switch {
+	case strings.Contains(a, "free") && strings.Contains(a, "trigger"):
+		return actionMeta{"triggered", "Free Triggered Action", ")"}
 	case strings.Contains(a, "trigger"):
 		return actionMeta{"triggered", "Triggered Action", ")"}
 	case strings.Contains(a, "maneuver"):
