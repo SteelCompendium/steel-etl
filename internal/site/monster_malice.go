@@ -126,6 +126,7 @@ func buildMaliceBandCache(cfg *Config, entries []sourceEntry) map[string][]malic
 		flavor := strings.TrimSpace(parseFrontmatterField(rfm, "flavor"))
 
 		feats := parseStatblockIslandFeatures(body)
+		seen := map[string]int{} // SC-306: dedupes ids within this one malice band
 		for i := range feats {
 			// Malice features share the villain band's blockquote shape (icon +
 			// bold title + optional trailing-paren cost), so the same parser
@@ -134,6 +135,12 @@ func buildMaliceBandCache(cfg *Config, entries []sourceEntry) map[string][]malic
 			// accent color (steel-statblock.css [data-action="malice"] = grey,
 			// visually distinct from a plain passive trait).
 			feats[i].Action, feats[i].Kind = "malice", "malice"
+			// SC-306: this band is spliced straight into the statblock's own
+			// canonical Browse page (not through the embed_cards stripFeatIDs
+			// path), so its cards need the same sc-feat- id every other nested
+			// feature card gets, or Material's indexer glues the name onto the
+			// band's own title.
+			feats[i].ID = featID(seen, feats[i].Name)
 		}
 		var featHTML strings.Builder
 		for _, f := range feats {
