@@ -1,36 +1,36 @@
 package site
 
 // Per-type search ranking boosts (Material's `search: boost:` page
-// frontmatter). Canonical reference pages outrank the 555 monster statblocks
-// for their own names ("fury" should find the Fury class, not four Rival Fury
-// statblocks). Injected in buildSection for non-search-excluded sections only —
-// Read pages get `search: exclude` later (applySearchExclusion) and MUST NOT
-// carry a second `search:` YAML key.
-// See workspace docs/superpowers/specs/2026-07-01-v2-ux-analysis.md §2.7.
+// frontmatter). Canonical reference pages outrank statblocks for their own
+// names ("fury" should find the Fury class, not four Rival Fury statblocks).
+// Statblocks, featureblocks and dynamic terrain sit at the default boost (1):
+// the old 0.6/0.7 demotions buried monsters under their own names ("Goblin
+// Warrior" lost to "Warrior Priest") — SC-306. Injected in buildSection for
+// non-search-excluded sections only — Read pages get `search: exclude` later
+// (applySearchExclusion) and MUST NOT carry a second `search:` YAML key.
+// See workspace docs/superpowers/specs/2026-07-01-v2-ux-analysis.md §2.7 and
+// docs/superpowers/specs/2026-09-06-search-ranking-design.md.
 
 import "strings"
 
 var searchBoostByType = map[string]string{
-	"class":           "4",
-	"ancestry":        "3",
-	"condition":       "3",
-	"rule":            "3",
-	"movement":        "3",
-	"negotiation":     "3",
-	"skill":           "2",
-	"kit":             "2",
-	"culture":         "2",
-	"career":          "2",
-	"perk":            "2",
-	"title":           "2",
-	"complication":    "2",
-	"project":         "2",
-	"god":             "2",
-	"saint":           "2",
-	"treasure":        "2",
-	"statblock":       "0.6",
-	"featureblock":    "0.6",
-	"dynamic-terrain": "0.7",
+	"class":        "4",
+	"ancestry":     "3",
+	"condition":    "3",
+	"rule":         "3",
+	"movement":     "3",
+	"negotiation":  "3",
+	"skill":        "2",
+	"kit":          "2",
+	"culture":      "2",
+	"career":       "2",
+	"perk":         "2",
+	"title":        "2",
+	"complication": "2",
+	"project":      "2",
+	"god":          "2",
+	"saint":        "2",
+	"treasure":     "2",
 }
 
 // commonActionBoost ranks the book's UNIVERSAL actions with the rules glossary

@@ -294,11 +294,11 @@ as the other leaf cards (`v2/docs/stylesheets/steel-class.css`). NOT flagged
 Per-type **search ranking boosts** (P2). `applySearchBoost` injects Material's
 `search:\n  boost: <n>` at the top of the frontmatter, keyed on `type:`
 (`searchBoostByType`: class 4, ancestry/condition/rule/movement/negotiation 3, most
-entity types 2, statblock/featureblock 0.6, dynamic-terrain 0.7; feature/ability/…
-unmapped = default 1). Called in `buildSection` **only for non-search-excluded
-sections** — `applySearchExclusion` later prepends its own `search:` key and YAML
-forbids duplicates. This is why "fury" finds the Fury class before the four Rival
-Fury statblocks.
+entity types 2; feature/ability/… unmapped = default 1). Called in `buildSection`
+**only for non-search-excluded sections** — `applySearchExclusion` later prepends its
+own `search:` key and YAML forbids duplicates. This is why "fury" finds the Fury
+class before the statblocks. Statblocks, featureblocks and dynamic terrain use the
+default boost since SC-306 (the demotion buried monsters under their own names).
 
 `searchBoostFor` adds one **SCC-derived** rule on top of the type table (SC-179),
 checked first for `type: feature` / `type: ability` pages: a page whose SCC type-path

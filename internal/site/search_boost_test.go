@@ -15,10 +15,17 @@ func TestApplySearchBoost(t *testing.T) {
 		t.Errorf("class page: body lost")
 	}
 
+	// SC-306: statblocks rank at the default boost — "Goblin Warrior" must find the
+	// goblin warrior, not lose to any boosted page that merely says "warrior".
 	sb := "---\nname: Goblin Warrior\ntype: statblock\n---\nbody\n"
-	got = string(applySearchBoost([]byte(sb)))
-	if !strings.Contains(got, "search:\n  boost: 0.6\n") {
-		t.Errorf("statblock: want boost 0.6, got:\n%s", got)
+	if got := string(applySearchBoost([]byte(sb))); got != sb {
+		t.Errorf("statblock: must be unchanged (default boost), got:\n%s", got)
+	}
+	for _, typ := range []string{"featureblock", "dynamic-terrain"} {
+		page := "---\nname: X\ntype: " + typ + "\n---\nbody\n"
+		if got := string(applySearchBoost([]byte(page))); got != page {
+			t.Errorf("%s: must be unchanged (default boost), got:\n%s", typ, got)
+		}
 	}
 
 	ability := "---\nname: Brutal Slam\ntype: ability\n---\nbody\n"
