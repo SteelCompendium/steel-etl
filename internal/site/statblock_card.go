@@ -188,52 +188,33 @@ func renderStatblockFeature(f sbFeature) string {
 		b.WriteString(`</div>`)
 	}
 
-	// power roll
-	if f.PowerRoll != nil {
-		b.WriteString(renderStatblockPowerRoll(dia, f.PowerRoll))
-	}
-
-	if len(f.Post) > 0 {
-		// SC-308: a multi-roll feature — walk everything after the first roll in
-		// document order (sections/enhancements/prose/later rolls interleaved)
-		// instead of the fixed Sections-then-Trailing-then-Enhancements layout
-		// below, so a later tier table renders immediately after whatever block
-		// it follows in the source.
-		for _, blk := range f.Post {
-			switch {
-			case blk.Section != nil:
-				b.WriteString(`<div class="sc-ability__section"><div class="sc-ability__section-head">` + dia +
-					`<span class="tag">` + richSb(blk.Section.Label) + `</span></div><div class="sc-ability__section-body"><p>` +
-					richSb(blk.Section.Text) + `</p></div></div>`)
-			case blk.Enhancement != nil:
-				b.WriteString(`<div class="sc-ability__enh"><span class="cost">` + richSb(blk.Enhancement.Cost) +
-					`</span><span class="txt">` + richSb(blk.Enhancement.Text) + `</span></div>`)
-			case blk.Roll != nil:
-				b.WriteString(renderStatblockPowerRoll(dia, blk.Roll))
-			case blk.Prose != "":
-				b.WriteString(`<p class="sb__feat-trailing">` + richSb(blk.Prose) + `</p>`)
+	// SC-308: walk the ordered Effects list in exact document order — a named
+	// section, a cost enhancement, bare prose, or a roll-only panel, each with
+	// its tier panel (if any) rendered directly below/within it. No hoisting.
+	for _, e := range f.Effects {
+		switch {
+		case e.Name != "":
+			b.WriteString(`<div class="sc-ability__section"><div class="sc-ability__section-head">` + dia +
+				`<span class="tag">` + richSb(e.Name) + `</span></div><div class="sc-ability__section-body"><p>` +
+				richSb(e.Effect) + `</p></div>`)
+			if e.Roll != nil {
+				b.WriteString(renderStatblockPowerRoll(dia, e.Roll))
 			}
+			b.WriteString(`</div>`)
+		case e.Cost != "":
+			b.WriteString(`<div class="sc-ability__enh"><span class="cost">` + richSb(e.Cost) +
+				`</span><span class="txt">` + richSb(e.Effect) + `</span></div>`)
+			if e.Roll != nil {
+				b.WriteString(renderStatblockPowerRoll(dia, e.Roll))
+			}
+		case e.Effect != "":
+			b.WriteString(`<p class="sb__feat-trailing">` + richSb(e.Effect) + `</p>`)
+			if e.Roll != nil {
+				b.WriteString(renderStatblockPowerRoll(dia, e.Roll))
+			}
+		case e.Roll != nil:
+			b.WriteString(renderStatblockPowerRoll(dia, e.Roll))
 		}
-		b.WriteString(`</article>`)
-		return b.String()
-	}
-
-	// sections (Trigger / Effect / Special)
-	for _, s := range f.Sections {
-		b.WriteString(`<div class="sc-ability__section"><div class="sc-ability__section-head">` + dia +
-			`<span class="tag">` + richSb(s.Label) + `</span></div><div class="sc-ability__section-body"><p>` +
-			richSb(s.Text) + `</p></div></div>`)
-	}
-
-	// trailing note
-	if f.Trailing != "" {
-		b.WriteString(`<p class="sb__feat-trailing">` + richSb(f.Trailing) + `</p>`)
-	}
-
-	// enhancements (spend X rows)
-	for _, e := range f.Enhancements {
-		b.WriteString(`<div class="sc-ability__enh"><span class="cost">` + richSb(e.Cost) +
-			`</span><span class="txt">` + richSb(e.Text) + `</span></div>`)
 	}
 
 	b.WriteString(`</article>`)

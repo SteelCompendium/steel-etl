@@ -56,45 +56,33 @@ type sbPowerRoll struct {
 	Label   string            `json:"label,omitempty"`
 	Tiers   map[string]string `json:"tiers"`
 }
-type sbSection struct {
-	Label string `json:"label"`
-	Text  string `json:"text"`
-}
-type sbEnh struct {
-	Cost string `json:"cost"`
-	Text string `json:"text"`
-}
 
-// sbPostBlock is one block of a multi-roll feature's Post sequence — every
-// section, enhancement, prose paragraph, and later power roll encountered
-// after the first tier list, in document order (SC-308). Exactly one field is
-// set. See parseStatblockIslandFeature.
-type sbPostBlock struct {
-	Section     *sbSection   `json:"section,omitempty"`
-	Enhancement *sbEnh       `json:"enhancement,omitempty"`
-	Prose       string       `json:"prose,omitempty"`
-	Roll        *sbPowerRoll `json:"roll,omitempty"`
+// sbEffect is one entry of a feature's ordered body (SC-308 round 3b): a
+// labeled section (Name), a cost enhancement (Cost), or bare prose (neither),
+// plus the tier list (Roll) that attaches directly to it per the attachment
+// rule in parseStatblockIslandFeature. Mirrors content.RichEffect, but keeps
+// the render-friendly nested *sbPowerRoll (Label included) rather than the
+// SDK's flat roll-as-string shape — this type is purely a build-time render
+// intermediate, never serialized as data, so there is no "never store the
+// derived label" constraint here; the label IS derived once at parse time.
+type sbEffect struct {
+	Name   string       `json:"name,omitempty"`
+	Cost   string       `json:"cost,omitempty"`
+	Effect string       `json:"effect,omitempty"`
+	Roll   *sbPowerRoll `json:"roll,omitempty"`
 }
 type sbFeature struct {
-	Kind         string       `json:"kind"`   // ability | passive | villain
-	Action       string       `json:"action"` // main | maneuver | triggered | move | passive | villain
-	Name         string       `json:"name"`
-	ID           string       `json:"-"` // SC-306: id minted by featID for this rendering pass, not sourced from JSON
-	Cost         string       `json:"cost,omitempty"`
-	Usage        string       `json:"usage,omitempty"`
-	Keywords     []string     `json:"keywords,omitempty"`
-	Distance     string       `json:"distance,omitempty"`
-	Target       string       `json:"target,omitempty"`
-	PowerRoll    *sbPowerRoll `json:"powerRoll,omitempty"`
-	Sections     []sbSection  `json:"sections,omitempty"`
-	Enhancements []sbEnh      `json:"enhancements,omitempty"`
-	Body         string       `json:"body,omitempty"`
-	Trailing     string       `json:"trailing,omitempty"`
-	// Post holds everything after the FIRST tier list, in document order, for a
-	// feature with more than one (SC-308); nil for the overwhelming majority of
-	// features with zero or one, whose rendering is untouched. See
-	// parseStatblockIslandFeature.
-	Post []sbPostBlock `json:"post,omitempty"`
+	Kind     string     `json:"kind"`   // ability | passive | villain
+	Action   string     `json:"action"` // main | maneuver | triggered | move | passive | villain
+	Name     string     `json:"name"`
+	ID       string     `json:"-"` // SC-306: id minted by featID for this rendering pass, not sourced from JSON
+	Cost     string     `json:"cost,omitempty"`
+	Usage    string     `json:"usage,omitempty"`
+	Keywords []string   `json:"keywords,omitempty"`
+	Distance string     `json:"distance,omitempty"`
+	Target   string     `json:"target,omitempty"`
+	Body     string     `json:"body,omitempty"` // passive/malice-band feature: a single plain paragraph, no structure
+	Effects  []sbEffect `json:"effects,omitempty"`
 }
 type sbIsland struct {
 	ID              string      `json:"id"`
@@ -437,31 +425,40 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 	// The base name may itself be a link (e.g. "[Solo](url) Monster").
 	f.Name = name
 
-	// SC-308: a feature with more than one tier list (Snackies for Sweeties'
-	// poison-damage roll AND its header-less Agility-test outcomes, e.g.) needs
-	// every list kept, in document order, instead of the single [3]string below
-	// letting each new list overwrite the last. Pre-count them so the ORIGINAL
-	// algorithm below runs completely unchanged (byte-identical rendering) for
-	// every feature with zero or one tier list.
-	tierListCount := 0
-	for _, para := range paras[1:] {
-		if looksLikeTiers(strings.TrimSpace(para)) {
-			tierListCount++
-		}
-	}
-	if tierListCount > 1 {
-		return parseStatblockIslandFeatureMulti(f, paras[1:], diceFormula)
-	}
-
 	var (
 		tableSeen bool
 		usage     string
-		formula   = diceFormula
-		tiers     [3]string
-		tiersSeen bool
+		pending   string // "+ N" formula from a "**Power Roll + N:**" header, pending until the next tier list consumes it
+		diceTiers [3]string
 		bareIdx   int
-		prose     []string
+		prose     []string // passive-only (no table): plain paragraphs, joined into Body
+		curIdx    = -1     // index into f.Effects eligible to receive the next tier list; -1 = none
 	)
+
+	// attach fills the tier list (formula/label + tiers) onto the entry at
+	// curIdx if one is pending, else appends a fresh roll-only entry. Label is
+	// derived HERE, at parse time, from the SAME entry's own accumulated text —
+	// safe because sbFeature is a pure render intermediate, never serialized as
+	// data (see sbEffect's doc comment).
+	attach := func(formula string, t [3]string) {
+		tm := map[string]string{}
+		for i, key := range []string{"low", "mid", "high"} {
+			if t[i] != "" {
+				tm[key] = t[i]
+			}
+		}
+		label := ""
+		if formula == "" && curIdx >= 0 {
+			label = content.DeriveTestLabel(f.Effects[curIdx].Effect)
+		}
+		roll := &sbPowerRoll{Formula: formula, Label: label, Tiers: tm}
+		if curIdx >= 0 {
+			f.Effects[curIdx].Roll = roll
+			curIdx = -1
+			return
+		}
+		f.Effects = append(f.Effects, sbEffect{Roll: roll})
+	}
 
 	for _, para := range paras[1:] {
 		tp := strings.TrimSpace(para)
@@ -469,125 +466,8 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 			continue
 		}
 
-		// 2×2 spec table → keywords / usage / distance / target.
-		if strings.HasPrefix(tp, "|") {
-			kws, act, dist, tgt := parseAbilityTable(para)
-			if len(kws) > 0 {
-				f.Keywords = kws
-			}
-			if act != "" {
-				usage = act
-			}
-			if dist != "" {
-				f.Distance = dist
-			}
-			if tgt != "" {
-				f.Target = tgt
-			}
-			tableSeen = true
-			continue
-		}
-
-		// Power-roll header → formula ("+ 4"); the next list holds the tiers.
-		if m := prHeadRe.FindStringSubmatch(tp); m != nil {
-			formula = "+ " + strings.TrimSpace(m[1])
-			continue
-		}
-
-		// Labeled tier list ("- **≤11:** …") — present for both labeled rolls
-		// and bare test results (no header).
-		if looksLikeTiers(tp) {
-			parseTiers(tp, &tiers)
-			tiersSeen = true
-			continue
-		}
-
-		// Dice-in-title abilities: bare digit-led lines below the table are the
-		// ≤11 / 12-16 / 17+ tiers by position.
-		if diceFormula != "" && bareIdx < 3 && sbBareTierRe.MatchString(tp) {
-			tiers[bareIdx] = collapseLines(tp)
-			bareIdx++
-			tiersSeen = true
-			continue
-		}
-
-		// Labeled paragraph → cost enhancement (2 Malice / Spend …) or a titled
-		// Effect / Trigger / Special section.
-		if m := labelRe.FindStringSubmatch(tp); m != nil {
-			label := strings.TrimSpace(m[1])
-			text := collapseLines(m[2])
-			// Classify on the link-stripped label ("2 [Malice](url)" → "2 Malice")
-			// but keep the raw link on the stored cost/label for display (richSb
-			// resolves it at render).
-			if sbCostLabelRe.MatchString(linkText(label)) {
-				f.Enhancements = append(f.Enhancements, sbEnh{Cost: label, Text: text})
-			} else {
-				f.Sections = append(f.Sections, sbSection{Label: label, Text: text})
-			}
-			continue
-		}
-
-		// Unlabeled prose → trailing note (ability) or body (trait, no table).
-		prose = append(prose, collapseLines(tp))
-	}
-
-	if !tableSeen {
-		// No keyword/usage table → a passive trait (Monsters book trait home).
-		f.Kind, f.Action = "passive", "passive"
-		f.Body = strings.Join(prose, "\n\n")
-		return f, true
-	}
-
-	f.Action, f.Kind = sbActionKind(usage, f.Cost)
-	if usage != "" && usage != "-" {
-		// A few usage cells link "Triggered Action" etc.; the raw [text](target)
-		// is stored verbatim and richSb (statblock_card.go) resolves it to a
-		// working <a> at render, the same as distance/target.
-		f.Usage = usage
-	}
-	if tiersSeen {
-		t := map[string]string{}
-		for i, key := range []string{"low", "mid", "high"} {
-			if tiers[i] != "" {
-				t[key] = tiers[i]
-			}
-		}
-		f.PowerRoll = &sbPowerRoll{Formula: formula, Tiers: t}
-	}
-	if len(prose) > 0 {
-		f.Trailing = strings.Join(prose, " ")
-	}
-	return f, true
-}
-
-// parseStatblockIslandFeatureMulti fills f (already carrying icon/name/cost)
-// for a feature with MORE THAN ONE tier list (SC-308): the first roll still
-// lands in f.PowerRoll (same card slot as ever), and every later block —
-// sections, enhancements, bare prose, and every later roll — is recorded in
-// f.Post, in document order, so the renderer can place a later tier table
-// immediately after whatever it follows in the source instead of the fixed
-// Sections-then-Trailing-then-Enhancements layout the single-roll path above
-// uses. A header-less roll derives its head from the nearest preceding
-// paragraph's bold "**<Characteristic> test**" phrase (content.DeriveTestLabel);
-// otherwise it renders bare, exactly like the single-list convention.
-func parseStatblockIslandFeatureMulti(f sbFeature, paras []string, diceFormula string) (sbFeature, bool) {
-	var (
-		tableSeen     bool
-		usage         string
-		formula       = diceFormula
-		diceTiers     [3]string
-		bareIdx       int
-		haveFirstRoll bool
-		lastParaText  string
-	)
-
-	for _, para := range paras {
-		tp := strings.TrimSpace(para)
-		if tp == "" {
-			continue
-		}
-
-		// 2×2 spec table → keywords / usage / distance / target.
+		// 2×2 spec table → keywords / usage / distance / target. Not itself an
+		// effects entry (matches the SDK's model: table → metadata).
 		if strings.HasPrefix(tp, "|") {
 			kws, act, dist, tgt := parseAbilityTable(para)
 			if len(kws) > 0 {
@@ -608,93 +488,73 @@ func parseStatblockIslandFeatureMulti(f sbFeature, paras []string, diceFormula s
 
 		// Power-roll header → formula for the NEXT tier list; not itself a block.
 		if m := prHeadRe.FindStringSubmatch(tp); m != nil {
-			formula = "+ " + strings.TrimSpace(m[1])
+			pending = "+ " + strings.TrimSpace(m[1])
 			continue
 		}
 
-		// Labeled tier list ("- **≤11:** …") — headered (formula set above) or bare.
+		// Labeled tier list ("- **≤11:** …") — headered (pending set above) or bare.
 		if looksLikeTiers(tp) {
 			var t [3]string
 			parseTiers(tp, &t)
-			tm := map[string]string{}
-			for i, key := range []string{"low", "mid", "high"} {
-				if t[i] != "" {
-					tm[key] = t[i]
-				}
-			}
-			label := ""
-			if formula == "" {
-				label = content.DeriveTestLabel(lastParaText)
-			}
-			roll := sbPowerRoll{Formula: formula, Label: label, Tiers: tm}
-			formula = ""
-			if !haveFirstRoll {
-				f.PowerRoll = &roll
-				haveFirstRoll = true
-			} else {
-				r := roll
-				f.Post = append(f.Post, sbPostBlock{Roll: &r})
-			}
+			attach(pending, t)
+			pending = ""
 			continue
 		}
 
-		// Dice-in-title abilities: bare digit-led lines are tiers by position (the
-		// dice form never co-occurs with a second list in the corpus today; this
-		// mirrors the single-list handling for the FIRST roll only).
-		if diceFormula != "" && !haveFirstRoll && bareIdx < 3 && sbBareTierRe.MatchString(tp) {
+		// Dice-in-title abilities: bare digit-led lines below the table are the
+		// ≤11 / 12-16 / 17+ tiers by position (the dice form never co-occurs with
+		// a labeled list in the corpus).
+		if diceFormula != "" && bareIdx < 3 && sbBareTierRe.MatchString(tp) {
 			diceTiers[bareIdx] = collapseLines(tp)
 			bareIdx++
 			if bareIdx == 3 {
-				tm := map[string]string{}
-				for i, key := range []string{"low", "mid", "high"} {
-					if diceTiers[i] != "" {
-						tm[key] = diceTiers[i]
-					}
-				}
-				f.PowerRoll = &sbPowerRoll{Formula: diceFormula, Tiers: tm}
-				haveFirstRoll = true
+				attach(diceFormula, diceTiers)
 			}
 			continue
 		}
 
 		// Labeled paragraph → cost enhancement (2 Malice / Spend …) or a titled
-		// Effect / Trigger / Special section. Recorded on the feature (full data
-		// fidelity) AND on Post (render order).
+		// Effect / Trigger / Special section. Becomes its own effects entry,
+		// eligible for a following tier list to attach to.
 		if m := labelRe.FindStringSubmatch(tp); m != nil {
 			label := strings.TrimSpace(m[1])
 			text := collapseLines(m[2])
+			// Classify on the link-stripped label ("2 [Malice](url)" → "2 Malice")
+			// but keep the raw link on the stored cost/label for display (richSb
+			// resolves it at render).
 			if sbCostLabelRe.MatchString(linkText(label)) {
-				// Post gets its own copy (SC-308 review L-4) — a pointer into
-				// f.Enhancements would alias a growing slice's backing array and
-				// go stale across a later append/reallocation.
-				enh := sbEnh{Cost: label, Text: text}
-				f.Enhancements = append(f.Enhancements, enh)
-				f.Post = append(f.Post, sbPostBlock{Enhancement: &enh})
+				f.Effects = append(f.Effects, sbEffect{Cost: label, Effect: text})
 			} else {
-				sec := sbSection{Label: label, Text: text}
-				f.Sections = append(f.Sections, sec)
-				f.Post = append(f.Post, sbPostBlock{Section: &sec})
+				f.Effects = append(f.Effects, sbEffect{Name: label, Effect: text})
 			}
-			lastParaText = text
+			curIdx = len(f.Effects) - 1
 			continue
 		}
 
-		// Unlabeled prose joins Post as its own paragraph so a later roll can slot
-		// in between two of them.
+		// Unlabeled prose. No table yet seen → this feature might turn out to be
+		// a table-less passive trait (accumulated into prose for that fallback);
+		// either way it becomes its own effects entry, eligible for a following
+		// tier list to attach to (the attachment rule applies to bare prose too).
 		collapsed := collapseLines(tp)
-		lastParaText = collapsed
-		f.Post = append(f.Post, sbPostBlock{Prose: collapsed})
+		prose = append(prose, collapsed)
+		f.Effects = append(f.Effects, sbEffect{Effect: collapsed})
+		curIdx = len(f.Effects) - 1
 	}
 
 	if !tableSeen {
-		// No keyword/usage table → a passive trait (multi-roll traits don't occur
-		// in the corpus; stay consistent with the single-list path regardless).
+		// No keyword/usage table → a passive trait (Monsters book trait home):
+		// a single plain paragraph, not the structured Effects walk.
 		f.Kind, f.Action = "passive", "passive"
+		f.Body = strings.Join(prose, "\n\n")
+		f.Effects = nil
 		return f, true
 	}
 
 	f.Action, f.Kind = sbActionKind(usage, f.Cost)
 	if usage != "" && usage != "-" {
+		// A few usage cells link "Triggered Action" etc.; the raw [text](target)
+		// is stored verbatim and richSb (statblock_card.go) resolves it to a
+		// working <a> at render, the same as distance/target.
 		f.Usage = usage
 	}
 	return f, true

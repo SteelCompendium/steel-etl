@@ -35,7 +35,6 @@ import (
 // ── frontmatter shape (mirrors featureblock.schema.json) ──
 type fbPowerRoll struct {
 	Formula string            `yaml:"formula"`
-	Label   string            `yaml:"label,omitempty"`
 	Tiers   map[string]string `yaml:"tiers"`
 }
 type fbSection struct {
@@ -47,35 +46,44 @@ type fbEnh struct {
 	Text string `yaml:"text"`
 }
 
-// fbPostBlock is one block of a multi-roll feature's Post sequence (SC-308,
-// the `post` frontmatter field) — every section, enhancement, prose
-// paragraph, and later power roll after the first tier list, in document
-// order. Exactly one field is set (YAML round-trips whichever key is
-// present). See renderFbFeat, which walks Post instead of the fixed
-// Sections-then-Trailing-then-Enhancements layout when it is non-empty.
-type fbPostBlock struct {
-	Section     *fbSection   `yaml:"section,omitempty"`
-	Enhancement *fbEnh       `yaml:"enhancement,omitempty"`
-	Prose       string       `yaml:"prose,omitempty"`
-	Roll        *fbPowerRoll `yaml:"roll,omitempty"`
+// fbEffect is one entry of a feature's ordered body (SC-308 round 3b): the
+// SDK feature.schema.json `effect` shape — a labeled section (Name), a cost
+// enhancement (Cost), or bare prose (neither), plus the tier list (Roll/
+// Tier1..3) that attaches to it (see fbFeaturesFromRich). YAML tags match the
+// `effects` frontmatter key exactly (featureblock.schema.json). Roll is the
+// full "**Power Roll + N:**" header text ("Power Roll + 3") or a bare dice
+// formula ("2d10 + R"); "" for a header-less list — the site derives its
+// display head from THIS entry's own Effect text at RENDER time
+// (fbEffectRollHTML), never stored here.
+type fbEffect struct {
+	Name   string `yaml:"name,omitempty"`
+	Cost   string `yaml:"cost,omitempty"`
+	Effect string `yaml:"effect,omitempty"`
+	Roll   string `yaml:"roll,omitempty"`
+	Tier1  string `yaml:"tier1,omitempty"`
+	Tier2  string `yaml:"tier2,omitempty"`
+	Tier3  string `yaml:"tier3,omitempty"`
 }
 type fbFeature struct {
-	Icon         string        `yaml:"icon"`
-	Name         string        `yaml:"name"`
-	ID           string        `yaml:"-"` // SC-306: id minted by featID for this rendering pass, not sourced from YAML
-	Cost         string        `yaml:"cost"`
-	Usage        string        `yaml:"usage"`
-	Keywords     []string      `yaml:"keywords"`
-	Distance     string        `yaml:"distance"`
-	Target       string        `yaml:"target"`
-	PowerRoll    *fbPowerRoll  `yaml:"power_roll"`
-	Sections     []fbSection   `yaml:"sections"`
-	Enhancements []fbEnh       `yaml:"enhancements"`
-	Intro        string        `yaml:"intro"`
-	Body         string        `yaml:"body"`
-	Trailing     string        `yaml:"trailing"`
-	Level        int           `yaml:"level"`
-	Post         []fbPostBlock `yaml:"post"` // SC-308: render order past the first tier list; see renderFbFeat
+	Icon         string       `yaml:"icon"`
+	Name         string       `yaml:"name"`
+	ID           string       `yaml:"-"` // SC-306: id minted by featID for this rendering pass, not sourced from YAML
+	Cost         string       `yaml:"cost"`
+	Usage        string       `yaml:"usage"`
+	Keywords     []string     `yaml:"keywords"`
+	Distance     string       `yaml:"distance"`
+	Target       string       `yaml:"target"`
+	PowerRoll    *fbPowerRoll `yaml:"power_roll"`
+	Sections     []fbSection  `yaml:"sections"`
+	Enhancements []fbEnh      `yaml:"enhancements"`
+	Intro        string       `yaml:"intro"`
+	Body         string       `yaml:"body"`
+	Trailing     string       `yaml:"trailing"`
+	Level        int          `yaml:"level"`
+	// Effects is the AUTHORITATIVE, ordered, non-lossy render order (SC-308
+	// round 3b) — emitted IN ADDITION TO the flat fields above (kept for the
+	// SDK featureblock schema + its round-trip test). renderFbFeat walks THIS.
+	Effects []fbEffect `yaml:"effects"`
 }
 type fbStat struct {
 	Name  string `yaml:"name"`
@@ -140,19 +148,13 @@ func fbFeaturesFromRich(rfs []content.RichFeature) []fbFeature {
 			Level:    r.Level,
 		}
 		if r.PowerRoll != nil {
-			f.PowerRoll = &fbPowerRoll{Formula: r.PowerRoll.Formula, Label: r.PowerRoll.Label, Tiers: r.PowerRoll.Tiers}
+			f.PowerRoll = &fbPowerRoll{Formula: r.PowerRoll.Formula, Tiers: r.PowerRoll.Tiers}
 		}
-		for _, b := range r.Post {
-			switch {
-			case b.Section != nil:
-				f.Post = append(f.Post, fbPostBlock{Section: &fbSection{Label: b.Section.Label, Text: b.Section.Text}})
-			case b.Enhancement != nil:
-				f.Post = append(f.Post, fbPostBlock{Enhancement: &fbEnh{Cost: b.Enhancement.Cost, Text: b.Enhancement.Text}})
-			case b.Roll != nil:
-				f.Post = append(f.Post, fbPostBlock{Roll: &fbPowerRoll{Formula: b.Roll.Formula, Label: b.Roll.Label, Tiers: b.Roll.Tiers}})
-			case b.Prose != "":
-				f.Post = append(f.Post, fbPostBlock{Prose: b.Prose})
-			}
+		for _, e := range r.Effects {
+			f.Effects = append(f.Effects, fbEffect{
+				Name: e.Name, Cost: e.Cost, Effect: e.Effect, Roll: e.Roll,
+				Tier1: e.Tier1, Tier2: e.Tier2, Tier3: e.Tier3,
+			})
 		}
 		for _, s := range r.Sections {
 			f.Sections = append(f.Sections, fbSection{Label: s.Label, Text: s.Text})
@@ -432,12 +434,6 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 	}))
 	b.WriteString("</div>\n")
 
-	// lead-in prose: a test's "As a maneuver, … make a Might test." sets up the
-	// power roll and renders ABOVE it (unlike Body, which trails the card).
-	if intro := strings.TrimSpace(f.Intro); intro != "" {
-		fmt.Fprintf(b, "<div class=\"fb__feat-intro\">%s</div>\n", richInline(intro))
-	}
-
 	// keyword chips — drop placeholder dashes ("-"/"—") and empties so usage-only
 	// features (Field Ballista's Reload/Spot) don't render a chip of nothing.
 	var kw []string
@@ -463,88 +459,65 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 		b.WriteString("</div>\n")
 	}
 
-	// power roll
-	if f.PowerRoll != nil {
-		b.WriteString(fbPowerRollHTML(*f.PowerRoll))
-	}
-
-	if len(f.Post) > 0 {
-		// SC-308: a multi-roll feature — walk everything after the first roll in
-		// document order (sections/enhancements/prose/later rolls interleaved)
-		// instead of the fixed Sections-then-Enhancements-then-Body/Trailing
-		// layout below, so a later tier table renders immediately after
-		// whatever block it follows in the source.
-		for _, blk := range f.Post {
-			switch {
-			case blk.Section != nil:
-				b.WriteString("<div class=\"sc-ability__section\">")
-				if l := strings.TrimSpace(blk.Section.Label); l != "" {
-					fmt.Fprintf(b, "<div class=\"sc-ability__section-head\"><span class=\"sc-ability__dia\"></span><span class=\"tag\">%s</span></div>", html.EscapeString(l))
-				}
-				fmt.Fprintf(b, "<div class=\"sc-ability__section-body\">%s</div>", renderSectionBlock(strings.TrimSpace(blk.Section.Text)))
-				b.WriteString("</div>\n")
-			case blk.Enhancement != nil:
-				fmt.Fprintf(b, "<div class=\"sc-ability__enh\"><span class=\"cost\">%s</span><span class=\"txt\">%s</span></div>\n",
-					html.EscapeString(strings.TrimSpace(blk.Enhancement.Cost)), richInline(strings.TrimSpace(blk.Enhancement.Text)))
-			case blk.Roll != nil:
-				b.WriteString(fbPowerRollHTML(*blk.Roll))
-			case blk.Prose != "":
-				fmt.Fprintf(b, "<div class=\"fb__feat-trailing\">%s</div>\n", richInline(blk.Prose))
+	// SC-308: walk the ordered Effects list in exact document order — a named
+	// section, a cost enhancement, bare prose, or a roll-only panel, each with
+	// its tier panel (if any) rendered directly below/within it. No hoisting;
+	// no special Intro/Body/Trailing casing — they are ordinary entries now
+	// (.fb__feat-intro / .fb__feat-body / .fb__feat-trailing share the same
+	// base CSS declaration, so the render class doesn't need to distinguish
+	// "before" from "after" any more — see docs/site-builder.md).
+	for _, e := range f.Effects {
+		switch {
+		case e.Name != "":
+			b.WriteString("<div class=\"sc-ability__section\">")
+			fmt.Fprintf(b, "<div class=\"sc-ability__section-head\"><span class=\"sc-ability__dia\"></span><span class=\"tag\">%s</span></div>", html.EscapeString(e.Name))
+			fmt.Fprintf(b, "<div class=\"sc-ability__section-body\">%s</div>", renderSectionBlock(strings.TrimSpace(e.Effect)))
+			if e.Roll != "" || e.Tier1 != "" || e.Tier2 != "" || e.Tier3 != "" {
+				b.WriteString(fbEffectRollHTML(e))
 			}
+			b.WriteString("</div>\n")
+		case e.Cost != "":
+			fmt.Fprintf(b, "<div class=\"sc-ability__enh\"><span class=\"cost\">%s</span><span class=\"txt\">%s</span></div>\n",
+				html.EscapeString(strings.TrimSpace(e.Cost)), richInline(strings.TrimSpace(e.Effect)))
+			if e.Roll != "" || e.Tier1 != "" || e.Tier2 != "" || e.Tier3 != "" {
+				b.WriteString(fbEffectRollHTML(e))
+			}
+		case e.Effect != "":
+			fmt.Fprintf(b, "<div class=\"fb__feat-trailing\">%s</div>\n", richInline(strings.TrimSpace(e.Effect)))
+			if e.Roll != "" || e.Tier1 != "" || e.Tier2 != "" || e.Tier3 != "" {
+				b.WriteString(fbEffectRollHTML(e))
+			}
+		default:
+			b.WriteString(fbEffectRollHTML(e))
 		}
-		b.WriteString("</article>\n")
-		return
-	}
-
-	// titled sections (Effect / Trigger / Special …)
-	for _, s := range f.Sections {
-		b.WriteString("<div class=\"sc-ability__section\">")
-		if l := strings.TrimSpace(s.Label); l != "" {
-			fmt.Fprintf(b, "<div class=\"sc-ability__section-head\"><span class=\"sc-ability__dia\"></span><span class=\"tag\">%s</span></div>", html.EscapeString(l))
-		}
-		fmt.Fprintf(b, "<div class=\"sc-ability__section-body\">%s</div>", renderSectionBlock(strings.TrimSpace(s.Text)))
-		b.WriteString("</div>\n")
-	}
-
-	// cost enhancements (2 Malice / Spend …)
-	for _, e := range f.Enhancements {
-		fmt.Fprintf(b, "<div class=\"sc-ability__enh\"><span class=\"cost\">%s</span><span class=\"txt\">%s</span></div>\n",
-			html.EscapeString(strings.TrimSpace(e.Cost)), richInline(strings.TrimSpace(e.Text)))
-	}
-
-	// table-less prose body / post-table trailing note
-	if body := strings.TrimSpace(f.Body); body != "" {
-		fmt.Fprintf(b, "<div class=\"fb__feat-body\">%s</div>\n", richInline(body))
-	}
-	if tr := strings.TrimSpace(f.Trailing); tr != "" {
-		fmt.Fprintf(b, "<div class=\"fb__feat-trailing\">%s</div>\n", richInline(tr))
 	}
 
 	b.WriteString("</article>\n")
 }
 
-// fbPowerRollHTML renders the steel power-roll panel: an optional
-// "Power Roll <formula>" head (omitted for a bare test, where formula is "")
-// followed by the glyph-badged tier rows. Reuses tierGlyph / tierKey
-// (ability_cards.go). Unlike the ability card's tierPanelHTML (which hardcodes
-// "Power Roll +" before the characteristics), this prints the stored formula
-// verbatim — it already carries its sign ("+ 2") or full dice ("2d10 + R").
-func fbPowerRollHTML(pr fbPowerRoll) string {
+// fbEffectRollHTML renders one effects[] entry's tier panel: an optional
+// "Power Roll <formula>" head, or — for a header-less list — a head derived
+// at RENDER time from THIS entry's own Effect prose (content.DeriveTestLabel;
+// e.g. "Agility Test"), or no head at all if neither applies. e.Roll holds
+// the full header text ("Power Roll + 3") or a bare dice formula
+// ("2d10 + R"); the "Power Roll " prefix (present only for the headered form)
+// is stripped so the literal "Power Roll" label and the formula/dice always
+// render as separate spans, matching the pre-existing head markup. Reuses
+// tierGlyph / tierKey (ability_cards.go).
+func fbEffectRollHTML(e fbEffect) string {
 	var b strings.Builder
 	b.WriteString("<div class=\"sc-ability__pr\">")
-	switch {
-	case strings.TrimSpace(pr.Formula) != "":
-		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">Power Roll</span><span class=\"chars\">%s</span></div>", richInline(strings.TrimSpace(pr.Formula)))
-	case strings.TrimSpace(pr.Label) != "":
-		// SC-308: a header-less roll with a label derived from the nearest
-		// preceding "**<Characteristic> test**" phrase ("Agility Test") — the
-		// label goes in the `pre` span alone, no `chars` span, reusing the
-		// existing .sc-ability__pr-head markup.
-		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">%s</span></div>", html.EscapeString(strings.TrimSpace(pr.Label)))
+	switch formula := strings.TrimPrefix(strings.TrimSpace(e.Roll), "Power Roll "); {
+	case formula != "":
+		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">Power Roll</span><span class=\"chars\">%s</span></div>", richInline(formula))
+	default:
+		if label := content.DeriveTestLabel(e.Effect); label != "" {
+			fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">%s</span></div>", html.EscapeString(label))
+		}
 	}
 	b.WriteString("<div class=\"sc-ability__pr-rows\">")
-	for i := 0; i < 3; i++ {
-		if v := strings.TrimSpace(pr.Tiers[tierKey[i]]); v != "" {
+	for i, v := range []string{e.Tier1, e.Tier2, e.Tier3} {
+		if v = strings.TrimSpace(v); v != "" {
 			fmt.Fprintf(&b, "<div class=\"sc-ability__tier\" data-tier=\"%s\"><span class=\"badge\">%s</span><span class=\"res\">%s</span></div>",
 				tierKey[i], tierGlyph[i], richInline(v))
 		}
