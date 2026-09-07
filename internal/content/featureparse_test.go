@@ -543,3 +543,13 @@ func TestParseRichFeatures_MultiRoll_Overpower(t *testing.T) {
 		t.Fatalf("Post = %+v, want [prose, second roll labeled 'Reason Test']", f.Post)
 	}
 }
+
+// TestDeriveTestLabel_UsesLastPhrase locks the SC-308 review's INFO-2 rule: a
+// paragraph naming two characteristics picks the LAST one — the one nearest
+// the tier list that follows — not the first.
+func TestDeriveTestLabel_UsesLastPhrase(t *testing.T) {
+	got := DeriveTestLabel("Each target must make either a **Might test** or an **Agility test**.")
+	if got != "Agility Test" {
+		t.Errorf("DeriveTestLabel = %q, want 'Agility Test' (the last-named characteristic)", got)
+	}
+}

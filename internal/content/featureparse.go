@@ -79,21 +79,25 @@ var testCharacteristics = map[string]string{
 // is canonicalized against testCharacteristics.
 var testLabelRe = regexp.MustCompile(`(?i)\*\*(?:\[([A-Za-z]+)\]\([^)]*\)|([A-Za-z]+))\s+test\*\*`)
 
-// DeriveTestLabel finds the first "**<Characteristic> test**" phrase in text
-// (the nearest preceding paragraph to a header-less tier list) and returns its
-// head label ("Agility Test"), or "" if no known characteristic is named
-// (SC-308's label rule; "" means the caller renders the panel bare).
+// DeriveTestLabel finds "**<Characteristic> test**" phrases in text (the
+// nearest preceding paragraph to a header-less tier list) and returns the
+// head label ("Agility Test") for the LAST one named, or "" if none is known
+// (SC-308's label rule; "" means the caller renders the panel bare). The last
+// match wins deliberately — it is the one nearest the tier list that follows,
+// so "Each target must make either a Might test or an Agility test." heads
+// the panel "Agility Test", not "Might Test".
 func DeriveTestLabel(text string) string {
+	label := ""
 	for _, m := range testLabelRe.FindAllStringSubmatch(text, -1) {
 		char := m[1]
 		if char == "" {
 			char = m[2]
 		}
 		if canon, ok := testCharacteristics[strings.ToLower(char)]; ok {
-			return canon + " Test"
+			label = canon + " Test"
 		}
 	}
-	return ""
+	return label
 }
 
 var (
@@ -415,13 +419,16 @@ func parseRichFeatureMulti(f *RichFeature, paras []string, diceFormula string) {
 			label := strings.TrimSpace(m[1])
 			text := fbCollapse(m[2])
 			if fbCostLabelRe.MatchString(label) {
-				f.Enhancements = append(f.Enhancements, RichEnhancement{Cost: label, Text: text})
-				e := &f.Enhancements[len(f.Enhancements)-1]
-				f.Post = append(f.Post, RichPostBlock{Enhancement: e})
+				// Post gets its own copy (SC-308 review L-4) — a pointer into
+				// f.Enhancements would alias a growing slice's backing array and
+				// go stale across a later append/reallocation.
+				enh := RichEnhancement{Cost: label, Text: text}
+				f.Enhancements = append(f.Enhancements, enh)
+				f.Post = append(f.Post, RichPostBlock{Enhancement: &enh})
 			} else {
-				f.Sections = append(f.Sections, RichSection{Label: label, Text: text})
-				s := &f.Sections[len(f.Sections)-1]
-				f.Post = append(f.Post, RichPostBlock{Section: s})
+				sec := RichSection{Label: label, Text: text}
+				f.Sections = append(f.Sections, sec)
+				f.Post = append(f.Post, RichPostBlock{Section: &sec})
 			}
 			structured = true
 			lastParaText = text

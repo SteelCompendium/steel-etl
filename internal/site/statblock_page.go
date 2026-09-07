@@ -70,10 +70,10 @@ type sbEnh struct {
 // after the first tier list, in document order (SC-308). Exactly one field is
 // set. See parseStatblockIslandFeature.
 type sbPostBlock struct {
-	Section     *sbSection
-	Enhancement *sbEnh
-	Prose       string
-	Roll        *sbPowerRoll
+	Section     *sbSection   `json:"section,omitempty"`
+	Enhancement *sbEnh       `json:"enhancement,omitempty"`
+	Prose       string       `json:"prose,omitempty"`
+	Roll        *sbPowerRoll `json:"roll,omitempty"`
 }
 type sbFeature struct {
 	Kind         string       `json:"kind"`   // ability | passive | villain
@@ -94,7 +94,7 @@ type sbFeature struct {
 	// feature with more than one (SC-308); nil for the overwhelming majority of
 	// features with zero or one, whose rendering is untouched. See
 	// parseStatblockIslandFeature.
-	Post []sbPostBlock `json:"-"`
+	Post []sbPostBlock `json:"post,omitempty"`
 }
 type sbIsland struct {
 	ID              string      `json:"id"`
@@ -664,13 +664,16 @@ func parseStatblockIslandFeatureMulti(f sbFeature, paras []string, diceFormula s
 			label := strings.TrimSpace(m[1])
 			text := collapseLines(m[2])
 			if sbCostLabelRe.MatchString(linkText(label)) {
-				f.Enhancements = append(f.Enhancements, sbEnh{Cost: label, Text: text})
-				e := &f.Enhancements[len(f.Enhancements)-1]
-				f.Post = append(f.Post, sbPostBlock{Enhancement: e})
+				// Post gets its own copy (SC-308 review L-4) — a pointer into
+				// f.Enhancements would alias a growing slice's backing array and
+				// go stale across a later append/reallocation.
+				enh := sbEnh{Cost: label, Text: text}
+				f.Enhancements = append(f.Enhancements, enh)
+				f.Post = append(f.Post, sbPostBlock{Enhancement: &enh})
 			} else {
-				f.Sections = append(f.Sections, sbSection{Label: label, Text: text})
-				s := &f.Sections[len(f.Sections)-1]
-				f.Post = append(f.Post, sbPostBlock{Section: s})
+				sec := sbSection{Label: label, Text: text}
+				f.Sections = append(f.Sections, sec)
+				f.Post = append(f.Post, sbPostBlock{Section: &sec})
 			}
 			lastParaText = text
 			continue

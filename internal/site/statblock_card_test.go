@@ -373,17 +373,24 @@ func TestStatblockCard_MultiRoll_Snackies(t *testing.T) {
 	poisonIdx := strings.Index(got, "6 poison damage")
 	specialIdx := strings.Index(got, `<span class="tag">Special</span>`)
 	agilityHeadIdx := strings.Index(got, `<span class="pre">Agility Test</span>`)
-	secondPanelStart := strings.LastIndex(got[:agilityHeadIdx], `<div class="sc-ability__pr">`)
 	pcOutcomeIdx := strings.Index(got, "The hag makes the power roll for all pastries.")
 
+	// Guard every index BEFORE deriving secondPanelStart from agilityHeadIdx
+	// (SC-308 review L-5) — slicing got[:agilityHeadIdx] with agilityHeadIdx
+	// == -1 would panic on a slice-bounds error instead of failing cleanly
+	// with the diagnostic message below.
 	for name, idx := range map[string]int{
 		"first .sc-ability__pr": firstPR, "poison damage tier": poisonIdx,
 		"Special section tag": specialIdx, "Agility Test head": agilityHeadIdx,
-		"second .sc-ability__pr": secondPanelStart, "PC test outcome tier": pcOutcomeIdx,
+		"PC test outcome tier": pcOutcomeIdx,
 	} {
 		if idx < 0 {
 			t.Fatalf("missing %s in:\n%s", name, got)
 		}
+	}
+	secondPanelStart := strings.LastIndex(got[:agilityHeadIdx], `<div class="sc-ability__pr">`)
+	if secondPanelStart < 0 {
+		t.Fatalf("missing second .sc-ability__pr before the Agility Test head in:\n%s", got)
 	}
 	if !(firstPR < poisonIdx && poisonIdx < specialIdx && specialIdx < secondPanelStart &&
 		secondPanelStart < agilityHeadIdx && agilityHeadIdx < pcOutcomeIdx) {

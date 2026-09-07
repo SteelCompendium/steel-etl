@@ -3,6 +3,9 @@ package site
 import (
 	"strings"
 	"testing"
+
+	"github.com/SteelCompendium/steel-etl/internal/content"
+	"gopkg.in/yaml.v3"
 )
 
 func TestRenderFbFeats_AdvancementBands(t *testing.T) {
@@ -358,5 +361,152 @@ func TestFbOrigin_Fixture(t *testing.T) {
 	}
 	if got := fbOrigin("mcdm.monsters.v1/monster.basilisk.malice/x"); got != "" {
 		t.Errorf("fbOrigin non-fixture should be empty, got %q", got)
+	}
+}
+
+// --- SC-308 review I-1: the multi-roll `post` render path had no test at all —
+// unlike the other two parsers, buildFeatureblockPage reads ALREADY-GENERATED
+// frontmatter, so Overpower/Roll the Wheel's correct render depends on `post`
+// surviving a ToMap -> yaml.Marshal -> yaml.Unmarshal -> renderFbFeat round
+// trip. buildFbPageFromBlock puts that round trip itself under test by
+// building the frontmatter the same way the real pipeline does: parse the
+// source-shaped blockquote with content.ParseRichFeatures, convert with
+// content.RichFeatureMaps (== RichFeature.ToMap per feature), then yaml.Marshal
+// it into a page exactly like a generated md-linked page's frontmatter. ---
+
+// buildFbPageFromBlock parses a single feature blockquote and marshals it into
+// a `type: featureblock`/`dynamic-terrain` page the way `steel-etl gen` would
+// have written it, so buildFeatureblockPage's caller sees the same
+// already-generated-frontmatter shape production does.
+func buildFbPageFromBlock(t *testing.T, name, ftype, block string) []byte {
+	t.Helper()
+	feats := content.ParseRichFeatures(block)
+	if len(feats) != 1 {
+		t.Fatalf("buildFbPageFromBlock: got %d features, want 1", len(feats))
+	}
+	fm := map[string]any{"name": name, "type": ftype, "features": content.RichFeatureMaps(feats)}
+	y, err := yaml.Marshal(fm)
+	if err != nil {
+		t.Fatalf("buildFbPageFromBlock: yaml.Marshal: %v", err)
+	}
+	return []byte("---\n" + string(y) + "---\n\nbody\n")
+}
+
+const rollTheWheelBlock = "" +
+	"> 🌀 **Roll the Wheel**\n" +
+	">\n" +
+	"> | **Area**       |                  **Main action** |\n" +
+	"> |----------------|----------------------------------:|\n" +
+	"> | **📏 Special** | **🎯 Each creature in the area** |\n" +
+	">\n" +
+	"> **Effect:** The wheel rolls, moving 2 squares in a straight line.\n" +
+	">\n" +
+	"> **Power Roll + 2:**\n" +
+	">\n" +
+	"> - **≤11:** 5 damage; push 1\n" +
+	"> - **12-16:** 9 damage; push 2\n" +
+	"> - **17+:** 12 damage; push 3\n" +
+	">\n" +
+	"> If the wheel is reduced to 0 Stamina, its movement stops and it explodes.\n" +
+	">\n" +
+	"> - **≤11:** 5 damage; push 1\n" +
+	"> - **12-16:** 9 damage; push 2\n" +
+	"> - **17+:** 12 damage; push 3\n" +
+	">\n" +
+	"> A burning creature takes 1d6 fire damage at the start of each of their turns.\n"
+
+// TestBuildFeatureblockPage_MultiRoll_RollTheWheel locks the SC-308 fix on the
+// path that round-trips through generated YAML frontmatter (Roll the Wheel is
+// `type: dynamic-terrain`): two `.sc-ability__pr` panels must render, in
+// document order, with the second bare (no head at all — no preceding
+// "**<Characteristic> test**" phrase to derive a label from) and the prose
+// paragraphs interleaved between/after them exactly as in the source.
+func TestBuildFeatureblockPage_MultiRoll_RollTheWheel(t *testing.T) {
+	page := buildFbPageFromBlock(t, "Exploding Mill Wheel", "dynamic-terrain", rollTheWheelBlock)
+	out, ok := buildFeatureblockPage(page)
+	if !ok {
+		t.Fatal("dynamic-terrain page should be handled")
+	}
+	full := string(out)
+	// The page is frontmatter (which itself echoes the prose/section text
+	// inside the `post`/`sections` YAML) followed by the rendered HTML card —
+	// index only the card so a frontmatter echo of the same plain text can't
+	// masquerade as the card's own, much-later occurrence.
+	cardStart := strings.Index(full, `<div class="fb-wrap"`)
+	if cardStart < 0 {
+		t.Fatalf("no rendered card in:\n%s", full)
+	}
+	s := full[cardStart:]
+
+	if n := strings.Count(s, `<div class="sc-ability__pr">`); n != 2 {
+		t.Fatalf("got %d .sc-ability__pr panels, want 2:\n%s", n, s)
+	}
+
+	firstPR := strings.Index(s, `<div class="sc-ability__pr">`)
+	effectIdx := strings.Index(s, `<span class="tag">Effect</span>`)
+	prose1Idx := strings.Index(s, "its movement stops and it explodes")
+	secondPR := strings.LastIndex(s, `<div class="sc-ability__pr">`)
+	prose2Idx := strings.Index(s, "A burning creature takes 1d6 fire damage")
+	for name, idx := range map[string]int{
+		"first panel": firstPR, "Effect section": effectIdx, "first prose": prose1Idx,
+		"second panel": secondPR, "second prose": prose2Idx,
+	} {
+		if idx < 0 {
+			t.Fatalf("missing %s in:\n%s", name, s)
+		}
+	}
+	if !(firstPR < effectIdx && effectIdx < prose1Idx && prose1Idx < secondPR && secondPR < prose2Idx) {
+		t.Errorf("wrong DOM order (want: first panel < Effect < prose1 < second panel < prose2):\n%s", s)
+	}
+
+	// The second panel is fully bare: no .sc-ability__pr-head at all between its
+	// opening div and the first tier row.
+	secondPanel := s[secondPR:]
+	if end := strings.Index(secondPanel, `<div class="sc-ability__pr-rows">`); end >= 0 {
+		secondPanel = secondPanel[:end]
+	}
+	if strings.Contains(secondPanel, "sc-ability__pr-head") {
+		t.Errorf("second (bare) panel should have no pr-head:\n%s", secondPanel)
+	}
+}
+
+const overpowerBlock = "" +
+	"> 🌀 **Overpower (7 Malice)**\n" +
+	">\n" +
+	"> Lord Syuul sends out a psionic burst. He makes a **Reason test** (2d10 + 4).\n" +
+	">\n" +
+	"> - **≤11:** Lord Syuul has damage weakness 5.\n" +
+	"> - **12-16:** Lord Syuul has damage immunity 2.\n" +
+	"> - **17+:** Lord Syuul has damage immunity 5.\n" +
+	">\n" +
+	"> Whenever an Overpower effect is active, a hero can push back by making a **Reason test**.\n" +
+	">\n" +
+	"> - **≤11:** Lord Syuul has damage immunity 5.\n" +
+	"> - **12-16:** Lord Syuul has damage immunity 2.\n" +
+	"> - **17+:** Lord Syuul has damage weakness 5.\n"
+
+// TestBuildFeatureblockPage_MultiRoll_Overpower covers a malice featureblock
+// with NO spec table and no first-roll formula: both tier lists are
+// header-less, each labeled "Reason Test" from the "**Reason test**" phrase it
+// follows (the label rule applies to the first list too within a multi-roll
+// feature — see docs/statblocks.md).
+func TestBuildFeatureblockPage_MultiRoll_Overpower(t *testing.T) {
+	page := buildFbPageFromBlock(t, "Lord Syuul's Malice", "featureblock", overpowerBlock)
+	out, ok := buildFeatureblockPage(page)
+	if !ok {
+		t.Fatal("featureblock page should be handled")
+	}
+	s := string(out)
+
+	if n := strings.Count(s, `<span class="pre">Reason Test</span>`); n != 2 {
+		t.Fatalf("got %d 'Reason Test' heads, want 2:\n%s", n, s)
+	}
+	if strings.Contains(s, `class="chars"`) {
+		t.Errorf("a derived-label head must have no chars span:\n%s", s)
+	}
+	firstHead := strings.Index(s, `<span class="pre">Reason Test</span>`)
+	secondHead := strings.LastIndex(s, `<span class="pre">Reason Test</span>`)
+	if firstHead == secondHead {
+		t.Fatalf("expected two distinct Reason Test heads:\n%s", s)
 	}
 }

@@ -146,9 +146,11 @@ algorithm, so existing output stays byte-identical:
 the head from a bold `**<Characteristic> test**` phrase (Might/Agility/Reason/Intuition/
 Presence, case-insensitive, tolerant of a link-wrapped characteristic —
 `**[Agility](scc:…) test**`) in the nearest preceding paragraph — "Agility Test",
-"Reason Test", … — via `content.DeriveTestLabel`, shared by all three parsers above. No
-such phrase → the panel renders fully bare (no head at all), the pre-existing
-single-list convention. The label only ever applies within a feature that has more than
+"Reason Test", … — via `content.DeriveTestLabel`, shared by all three parsers above. When
+a paragraph names more than one characteristic (e.g. "makes either a **Might test** or an
+**Agility test**"), the LAST one wins — it's the one nearest the tier list that follows;
+no corpus instance hits this today. No matching phrase at all → the panel renders fully
+bare (no head at all), the pre-existing single-list convention. The label only ever applies within a feature that has more than
 one tier list — a lone bare list (the common case, e.g. Pavise Shield's Deactivate)
 is untouched even when a "test" phrase happens to precede it. `RichPowerRoll`/
 `sbPowerRoll`/`fbPowerRoll` carry the label in a `Label` field distinct from `Formula`;
