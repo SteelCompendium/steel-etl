@@ -600,3 +600,32 @@ The parser only promotes a quoted H6+ heading to a section when it has an explic
 ability from taking ownership of following enhancement paragraphs. This applies
 across books, including non-ability quoted headings; it does not create SCC codes.
 `internal/parser/project_scope_test.go` covers both typed and untyped cases.
+
+## Footgun: `site` needs the real site config, and `cleanDocsDir` trusts `docs_dir`
+
+`site.Build` (`build.go`) starts by calling `cleanDocsDir(cfg.DocsDir)`, which deletes
+every entry in `docs_dir` except a short protected-names list (`javascripts`,
+`stylesheets`, `Media`, `index.md`, `preferences.md`, `.nav.yml`) — it does not check
+that the directory looks anything like a docs tree first. `Config.DocsDir` comes from
+the site config's `docs_dir` key, resolved relative to the config file's own directory
+(`ResolvePath`); an **empty or missing `docs_dir` resolves to the config file's
+directory itself**.
+
+This bit for real (SC-308): `./steel-etl site --config pipeline.yaml`, run from inside
+the `steel-etl` checkout. `pipeline.yaml` is the ETL pipeline config, not a site
+config — it has no `docs_dir` — so `cfg.DocsDir` resolved to the `steel-etl` checkout
+directory, and `cleanDocsDir` deleted everything in it, including the submodule's
+`.git` file, wiping the whole checkout's working tree (the git object database
+survived elsewhere and the checkout was recoverable, but the day's uncommitted work
+was not).
+
+**The only site config in this workspace is `../v2/site.yaml`** (run as
+`./steel-etl site --config ../v2/site.yaml` with cwd `steel-etl`) — never pass
+`pipeline.yaml` (or any ETL pipeline config) to `site`.
+
+`Build` now calls `validateDocsDir(cfg)` before `cleanDocsDir` and refuses to build
+when `docs_dir` is empty, resolves to the current working directory, resolves to the
+site config file's own directory, or contains a `.git` entry — see
+`internal/site/build_test.go`'s `TestValidateDocsDir_*` cases. This catches the
+pipeline.yaml mixup and similar misconfigurations before anything is deleted, but it
+is not a substitute for passing the right config file.

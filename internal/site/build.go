@@ -45,6 +45,10 @@ func Build(cfg *Config) (*BuildResult, error) {
 	docsRootDir = cfg.DocsDir
 	result := &BuildResult{}
 
+	if err := validateDocsDir(cfg); err != nil {
+		return nil, err
+	}
+
 	// Clean docs dir (except protected paths)
 	if err := cleanDocsDir(cfg.DocsDir); err != nil {
 		return nil, fmt.Errorf("clean docs: %w", err)
@@ -1110,6 +1114,39 @@ func applyPrintingStamps(cfg *Config) (int, []string) {
 		return nil
 	})
 	return count, errs
+}
+
+// validateDocsDir guards cleanDocsDir against a misconfigured `docs_dir`
+// (SC-308 footgun): an empty docs_dir resolves (via Config.ResolvePath) to
+// the config file's own directory, and cleanDocsDir then deletes every entry
+// in it except its protected MkDocs names — including, if the resolved dir
+// happens to be a git checkout, the repo's own `.git`. This has already
+// happened once (`steel-etl site --config pipeline.yaml`, a config with no
+// docs_dir, run from inside the steel-etl checkout: it wiped the checkout).
+// Refuse to build rather than repeat that.
+func validateDocsDir(cfg *Config) error {
+	docsDir := cfg.DocsDir
+	if strings.TrimSpace(docsDir) == "" {
+		return fmt.Errorf("site: docs_dir is empty (check the site config's docs_dir setting)")
+	}
+	abs, err := filepath.Abs(docsDir)
+	if err != nil {
+		return fmt.Errorf("site: resolve docs_dir %q: %w", docsDir, err)
+	}
+	if cwd, err := os.Getwd(); err == nil {
+		if cwdAbs, err := filepath.Abs(cwd); err == nil && abs == cwdAbs {
+			return fmt.Errorf("site: docs_dir %q resolves to the current working directory; refusing to build (check the site config's docs_dir setting)", abs)
+		}
+	}
+	if cfg.ConfigDir != "" {
+		if cfgDirAbs, err := filepath.Abs(cfg.ConfigDir); err == nil && abs == cfgDirAbs {
+			return fmt.Errorf("site: docs_dir %q resolves to the site config file's own directory; refusing to build (docs_dir is likely unset — check the site config's docs_dir setting)", abs)
+		}
+	}
+	if _, err := os.Stat(filepath.Join(abs, ".git")); err == nil {
+		return fmt.Errorf("site: docs_dir %q contains a .git entry; refusing to build into what looks like a repository checkout (check the site config's docs_dir setting)", abs)
+	}
+	return nil
 }
 
 // cleanDocsDir removes generated content from the docs directory,

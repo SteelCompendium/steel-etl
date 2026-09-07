@@ -319,6 +319,69 @@ func TestCleanDocsDir_PreservesProtected(t *testing.T) {
 	checkNotExists(t, dir, "Browse/test.md")
 }
 
+// SC-308: `steel-etl site --config pipeline.yaml` (a config with no docs_dir)
+// resolved DocsDir to the config file's own directory (steel-etl checkout)
+// and cleanDocsDir wiped it, including the submodule's .git file. These lock
+// the guard that refuses to build in that situation.
+func TestValidateDocsDir_EmptyRejected(t *testing.T) {
+	cfg := &Config{DocsDir: "", ConfigDir: t.TempDir()}
+	err := validateDocsDir(cfg)
+	if err == nil {
+		t.Fatal("expected error for empty docs_dir, got nil")
+	}
+	if !strings.Contains(err.Error(), "empty") {
+		t.Errorf("error should mention empty docs_dir, got: %v", err)
+	}
+}
+
+func TestValidateDocsDir_ConfigFileDirRejected(t *testing.T) {
+	// Mirrors the actual bug: docs_dir unset -> ResolvePath("") -> ConfigDir.
+	dir := t.TempDir()
+	cfg := &Config{ConfigDir: dir}
+	cfg.DocsDir = cfg.ResolvePath(cfg.DocsDir)
+	err := validateDocsDir(cfg)
+	if err == nil {
+		t.Fatal("expected error when docs_dir resolves to the config file's directory, got nil")
+	}
+	if !strings.Contains(err.Error(), dir) {
+		t.Errorf("error should name the resolved path %q, got: %v", dir, err)
+	}
+}
+
+func TestValidateDocsDir_CwdRejected(t *testing.T) {
+	cwd, err := os.Getwd()
+	if err != nil {
+		t.Fatal(err)
+	}
+	cfg := &Config{DocsDir: cwd, ConfigDir: t.TempDir()}
+	if err := validateDocsDir(cfg); err == nil {
+		t.Fatal("expected error when docs_dir resolves to the cwd, got nil")
+	}
+}
+
+func TestValidateDocsDir_GitEntryRejected(t *testing.T) {
+	dir := t.TempDir()
+	if err := os.Mkdir(filepath.Join(dir, ".git"), 0755); err != nil {
+		t.Fatal(err)
+	}
+	cfg := &Config{DocsDir: dir, ConfigDir: t.TempDir()}
+	err := validateDocsDir(cfg)
+	if err == nil {
+		t.Fatal("expected error for docs_dir containing a .git entry, got nil")
+	}
+	if !strings.Contains(err.Error(), ".git") {
+		t.Errorf("error should mention .git, got: %v", err)
+	}
+}
+
+func TestValidateDocsDir_OrdinaryDirAccepted(t *testing.T) {
+	dir := t.TempDir()
+	cfg := &Config{DocsDir: dir, ConfigDir: t.TempDir()}
+	if err := validateDocsDir(cfg); err != nil {
+		t.Errorf("expected an ordinary empty docs_dir to be accepted, got: %v", err)
+	}
+}
+
 func TestApplySearchExclusion_WithFrontmatter(t *testing.T) {
 	dir := t.TempDir()
 	sectionDir := filepath.Join(dir, "Read")
