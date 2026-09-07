@@ -59,6 +59,8 @@ features:
       name: Walleye
       cost: 7 Malice
       body: A basilisk spews reflective spittle across an adjacent vertical surface.
+      effects:
+          - effect: A basilisk spews reflective spittle across an adjacent vertical surface.
 ---
 
 At the start of any basilisk's turn, you can spend Malice to activate one of the following features.
@@ -121,6 +123,8 @@ features:
     - icon: "🌀"
       name: Deactivate
       body: The beehive can't be deactivated.
+      effects:
+          - effect: The beehive can't be deactivated.
     - icon: "❗️"
       name: Your Fears Become Manifest
       usage: Main action
@@ -134,6 +138,11 @@ features:
             low: P < 1 slowed (EoT)
             mid: P < 2 slowed and weakened (EoT)
             high: P < 3 frightened (EoT)
+      effects:
+          - roll: Power Roll + 2
+            tier1: P < 1 slowed (EoT)
+            tier2: P < 2 slowed and weakened (EoT)
+            tier3: P < 3 frightened (EoT)
 ---
 
 body
@@ -174,7 +183,10 @@ func TestRenderFbFeats_PassiveMalice(t *testing.T) {
 		`class="fb__feat-icon"`, "🔳",
 		`sc-head__left-primary sc-head__slot--line" id="sc-feat-walleye">Walleye</h3>`,
 		`sc-head__right-primary sc-head__slot--mini">7 Malice</div>`, // cost is now the right-primary mini
-		`class="fb__feat-body"`, "reflective spittle",
+		// SC-308 round 3b: a passive's single paragraph renders as an ordinary
+		// nameless effects entry (.fb__feat-trailing), not the old dedicated
+		// .fb__feat-body class — they shared the same base CSS declaration.
+		`class="fb__feat-trailing"`, "reflective spittle",
 	} {
 		if !strings.Contains(s, want) {
 			t.Errorf("missing %q in:\n%s", want, s)
@@ -315,23 +327,37 @@ func TestRenderFbFeat_DashRailDropped(t *testing.T) {
 	}
 }
 
-// A test feature's lead-in (Intro) must render ABOVE the power roll. Regression
-// for Pavise Shield's Deactivate, whose "As a maneuver, … Might test." rendered
-// below the tiers because it was stored as Body.
-func TestRenderFbFeat_IntroAbovePowerRoll(t *testing.T) {
+// SC-308 round 3b: a test's lead-in prose ("As a maneuver, … Might test.")
+// attaches to the tier list that directly follows it (the attachment rule) —
+// ONE effects entry, prose then panel, inside the same fb__feat-trailing
+// paragraph's sibling panel — no special .fb__feat-intro styling any more
+// (.fb__feat-intro/.fb__feat-body/.fb__feat-trailing shared the same base CSS
+// declaration; the render class no longer needs to distinguish before/after,
+// since attachment already places the panel correctly). Regression for
+// Pavise Shield's Deactivate.
+func TestRenderFbFeat_ProseWithAttachedRoll(t *testing.T) {
 	feat := fbFeature{
 		Icon: "🌀", Name: "Deactivate",
-		Intro:     "As a maneuver, a creature can make a **Might test**.",
-		PowerRoll: &fbPowerRoll{Tiers: map[string]string{"low": "retains control", "high": "grabs the shield"}},
+		Effects: []fbEffect{{
+			Effect: "As a maneuver, a creature can make a **Might test**.",
+			Tier1:  "retains control", Tier3: "grabs the shield",
+		}},
 	}
 	s := renderFbFeats([]fbFeature{feat})
-	if !strings.Contains(s, `class="fb__feat-intro"`) {
-		t.Fatalf("missing fb__feat-intro in:\n%s", s)
+	if strings.Contains(s, "fb__feat-intro") {
+		t.Errorf("no fb__feat-intro class should remain in the SC-308 model:\n%s", s)
 	}
-	idxIntro := strings.Index(s, `class="fb__feat-intro"`)
+	if !strings.Contains(s, `class="fb__feat-trailing">As a maneuver`) {
+		t.Fatalf("missing the prose paragraph in:\n%s", s)
+	}
+	idxProse := strings.Index(s, "As a maneuver")
 	idxPR := strings.Index(s, `class="sc-ability__pr"`)
-	if idxPR < 0 || idxIntro > idxPR {
-		t.Errorf("intro (%d) must render before power roll (%d):\n%s", idxIntro, idxPR, s)
+	if idxPR < 0 || idxProse > idxPR {
+		t.Errorf("prose (%d) must render before its attached power roll (%d):\n%s", idxProse, idxPR, s)
+	}
+	// Header-less: the site derives "Might Test" from this entry's own prose.
+	if !strings.Contains(s, `<span class="pre">Might Test</span>`) {
+		t.Errorf("expected a derived 'Might Test' head in:\n%s", s)
 	}
 }
 
@@ -442,21 +468,25 @@ func TestBuildFeatureblockPage_MultiRoll_RollTheWheel(t *testing.T) {
 		t.Fatalf("got %d .sc-ability__pr panels, want 2:\n%s", n, s)
 	}
 
-	firstPR := strings.Index(s, `<div class="sc-ability__pr">`)
+	// SC-308 round 3b: the Effect paragraph and the first roll MERGE into one
+	// entry (attachment rule) — the panel nests INSIDE the Effect section, not
+	// hoisted above it. The trailing prose paragraph and the second roll merge
+	// too.
 	effectIdx := strings.Index(s, `<span class="tag">Effect</span>`)
+	firstPR := strings.Index(s, `<div class="sc-ability__pr">`)
 	prose1Idx := strings.Index(s, "its movement stops and it explodes")
 	secondPR := strings.LastIndex(s, `<div class="sc-ability__pr">`)
 	prose2Idx := strings.Index(s, "A burning creature takes 1d6 fire damage")
 	for name, idx := range map[string]int{
-		"first panel": firstPR, "Effect section": effectIdx, "first prose": prose1Idx,
-		"second panel": secondPR, "second prose": prose2Idx,
+		"Effect section": effectIdx, "first panel": firstPR, "second prose (attaches the second roll)": prose1Idx,
+		"second panel": secondPR, "trailing prose": prose2Idx,
 	} {
 		if idx < 0 {
 			t.Fatalf("missing %s in:\n%s", name, s)
 		}
 	}
-	if !(firstPR < effectIdx && effectIdx < prose1Idx && prose1Idx < secondPR && secondPR < prose2Idx) {
-		t.Errorf("wrong DOM order (want: first panel < Effect < prose1 < second panel < prose2):\n%s", s)
+	if !(effectIdx < firstPR && firstPR < prose1Idx && prose1Idx < secondPR && secondPR < prose2Idx) {
+		t.Errorf("wrong DOM order (want: Effect < first panel (nested inside it) < prose1 < second panel (nested inside it) < trailing prose):\n%s", s)
 	}
 
 	// The second panel is fully bare: no .sc-ability__pr-head at all between its

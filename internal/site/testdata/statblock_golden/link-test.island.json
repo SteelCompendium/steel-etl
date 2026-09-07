@@ -78,24 +78,24 @@
       ],
       "distance": "Melee 1",
       "target": "One creature",
-      "powerRoll": {
-        "formula": "+ 3",
-        "tiers": {
-          "high": "11 damage",
-          "low": "5 damage",
-          "mid": "8 damage"
-        }
-      },
-      "sections": [
+      "effects": [
         {
-          "label": "[End Effect](end-effect.md)",
-          "text": "The effect ends."
-        }
-      ],
-      "enhancements": [
+          "roll": {
+            "formula": "+ 3",
+            "tiers": {
+              "high": "11 damage",
+              "low": "5 damage",
+              "mid": "8 damage"
+            }
+          }
+        },
         {
           "cost": "2 [Malice](malice.md)",
-          "text": "The target is weakened."
+          "effect": "The target is weakened."
+        },
+        {
+          "name": "[End Effect](end-effect.md)",
+          "effect": "The effect ends."
         }
       ]
     },
@@ -109,10 +109,10 @@
       ],
       "distance": "5 burst",
       "target": "Each enemy",
-      "sections": [
+      "effects": [
         {
-          "label": "Effect",
-          "text": "Massive damage."
+          "name": "Effect",
+          "effect": "Massive damage."
         }
       ]
     },

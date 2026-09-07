@@ -80,18 +80,20 @@
       ],
       "distance": "Ranged 12",
       "target": "Three creatures or objects",
-      "powerRoll": {
-        "formula": "+ 4",
-        "tiers": {
-          "high": "19 damage; P \u003c 4 the target can't hide (save ends)",
-          "low": "10 damage; P \u003c 2 the target can't hide (save ends)",
-          "mid": "15 damage; P \u003c 3 the target can't hide (save ends)"
-        }
-      },
-      "enhancements": [
+      "effects": [
+        {
+          "roll": {
+            "formula": "+ 4",
+            "tiers": {
+              "high": "19 damage; P \u003c 4 the target can't hide (save ends)",
+              "low": "10 damage; P \u003c 2 the target can't hide (save ends)",
+              "mid": "15 damage; P \u003c 3 the target can't hide (save ends)"
+            }
+          }
+        },
         {
           "cost": "2 Malice",
-          "text": "While a target is unable to hide this way, any strike against them made by a devil gains an edge."
+          "effect": "While a target is unable to hide this way, any strike against them made by a devil gains an edge."
         }
       ]
     },
@@ -107,25 +109,28 @@
       ],
       "distance": "Ranged 5",
       "target": "The triggering creature",
-      "powerRoll": {
-        "formula": "",
-        "tiers": {
-          "high": "The target takes a bane on the strike.",
-          "low": "The target is charmed (save ends).",
-          "mid": "The high judge chooses a new target for the strike."
-        }
-      },
-      "sections": [
+      "effects": [
         {
-          "label": "Trigger",
-          "text": "A creature targets the high judge with a strike."
+          "name": "Trigger",
+          "effect": "A creature targets the high judge with a strike."
         },
         {
-          "label": "Effect",
-          "text": "The target makes a **Presence test**."
+          "name": "Effect",
+          "effect": "The target makes a **Presence test**.",
+          "roll": {
+            "formula": "",
+            "label": "Presence Test",
+            "tiers": {
+              "high": "The target takes a bane on the strike.",
+              "low": "The target is charmed (save ends).",
+              "mid": "The high judge chooses a new target for the strike."
+            }
+          }
+        },
+        {
+          "effect": "While charmed this way, a creature treats the high judge as an ally."
         }
-      ],
-      "trailing": "While charmed this way, a creature treats the high judge as an ally."
+      ]
     },
     {
       "kind": "passive",
@@ -144,18 +149,19 @@
       ],
       "distance": "3 burst",
       "target": "Each enemy in the area",
-      "powerRoll": {
-        "formula": "",
-        "tiers": {
-          "high": "7 psychic damage",
-          "low": "15 psychic damage; the target is charmed (save ends)",
-          "mid": "12 psychic damage; the target is charmed (save ends)"
-        }
-      },
-      "sections": [
+      "effects": [
         {
-          "label": "Effect",
-          "text": "The target makes a **Presence test**."
+          "name": "Effect",
+          "effect": "The target makes a **Presence test**.",
+          "roll": {
+            "formula": "",
+            "label": "Presence Test",
+            "tiers": {
+              "high": "7 psychic damage",
+              "low": "15 psychic damage; the target is charmed (save ends)",
+              "mid": "12 psychic damage; the target is charmed (save ends)"
+            }
+          }
         }
       ]
     }

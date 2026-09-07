@@ -164,14 +164,19 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	if dec.Distance != "Ranged 12" || dec.Target != "Three creatures or objects" {
 		t.Errorf("decree dist/target = %q / %q", dec.Distance, dec.Target)
 	}
-	if dec.PowerRoll == nil || dec.PowerRoll.Formula != "+ 4" {
-		t.Fatalf("decree powerRoll = %+v", dec.PowerRoll)
+	// SC-308 round 3b: Effects = [roll-only (table-adjacent, nothing to attach
+	// to), cost enhancement (nothing follows it)].
+	if len(dec.Effects) != 2 {
+		t.Fatalf("decree effects = %+v, want 2 entries (roll, cost enhancement)", dec.Effects)
 	}
-	if dec.PowerRoll.Tiers["low"] == "" || dec.PowerRoll.Tiers["high"] == "" {
-		t.Errorf("decree tiers = %+v", dec.PowerRoll.Tiers)
+	if dec.Effects[0].Roll == nil || dec.Effects[0].Roll.Formula != "+ 4" {
+		t.Fatalf("decree effects[0].Roll = %+v", dec.Effects[0].Roll)
 	}
-	if len(dec.Enhancements) != 1 || dec.Enhancements[0].Cost != "2 Malice" {
-		t.Errorf("decree enhancements = %+v", dec.Enhancements)
+	if dec.Effects[0].Roll.Tiers["low"] == "" || dec.Effects[0].Roll.Tiers["high"] == "" {
+		t.Errorf("decree tiers = %+v", dec.Effects[0].Roll.Tiers)
+	}
+	if dec.Effects[1].Cost != "2 Malice" {
+		t.Errorf("decree effects[1] = %+v, want the 2 Malice cost entry", dec.Effects[1])
 	}
 
 	// ── Test-result ability: no power-roll header → formula "" + sections + trailing ──
@@ -190,14 +195,23 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	if sug.Cost != "2 Malice" {
 		t.Errorf("suggestion cost = %q", sug.Cost)
 	}
-	if sug.PowerRoll == nil || sug.PowerRoll.Formula != "" {
-		t.Errorf("suggestion powerRoll (want test, formula \"\") = %+v", sug.PowerRoll)
+	// SC-308 round 3b: Effects = [Trigger, Effect+header-less roll (attaches to
+	// the paragraph immediately before it), trailing bare prose] — exact
+	// document order, nothing hoisted.
+	if len(sug.Effects) != 3 {
+		t.Fatalf("suggestion effects = %+v, want 3 entries (Trigger, Effect+roll, trailing prose)", sug.Effects)
 	}
-	if len(sug.Sections) != 2 || sug.Sections[0].Label != "Trigger" || sug.Sections[1].Label != "Effect" {
-		t.Errorf("suggestion sections = %+v", sug.Sections)
+	if sug.Effects[0].Name != "Trigger" {
+		t.Errorf("suggestion effects[0] = %+v, want the Trigger entry FIRST", sug.Effects[0])
 	}
-	if !strings.HasPrefix(sug.Trailing, "While charmed") {
-		t.Errorf("suggestion trailing = %q", sug.Trailing)
+	if sug.Effects[1].Name != "Effect" || sug.Effects[1].Roll == nil || sug.Effects[1].Roll.Formula != "" {
+		t.Fatalf("suggestion effects[1] = %+v, want Effect+header-less roll", sug.Effects[1])
+	}
+	if sug.Effects[1].Roll.Label != "Presence Test" {
+		t.Errorf("suggestion effects[1].Roll.Label = %q, want 'Presence Test' (derived from its own Effect text)", sug.Effects[1].Roll.Label)
+	}
+	if !strings.HasPrefix(sug.Effects[2].Effect, "While charmed") {
+		t.Errorf("suggestion effects[2] = %+v, want the trailing prose", sug.Effects[2])
 	}
 
 	// ── Passive trait: no table → kind passive, body set ──
@@ -208,8 +222,8 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	if tn.Kind != "passive" || tn.Action != "passive" {
 		t.Errorf("true name kind/action = %q/%q", tn.Kind, tn.Action)
 	}
-	if !strings.Contains(tn.Body, "true name") || tn.PowerRoll != nil {
-		t.Errorf("true name body = %q powerRoll=%v", tn.Body, tn.PowerRoll)
+	if !strings.Contains(tn.Body, "true name") || len(tn.Effects) != 0 {
+		t.Errorf("true name body = %q effects=%v", tn.Body, tn.Effects)
 	}
 
 	// ── Villain action: cost "Villain Action 1" → kind villain ──
@@ -312,25 +326,28 @@ func TestBuildStatblockIsland_PreservesRawLinksInAllFields(t *testing.T) {
 	if bite.Cost != "Signature" {
 		t.Errorf("bite cost = %q, want Signature", bite.Cost)
 	}
-	// ── enhancement cost: "2 [Malice](…)" link kept raw, not stripped ──
-	if len(bite.Enhancements) != 1 {
-		t.Fatalf("bite enhancements = %+v", bite.Enhancements)
+	// SC-308 round 3b: Effects = [roll-only, cost enhancement, End Effect
+	// section] — the table-adjacent roll has nothing to attach to; the cost and
+	// section paragraphs each have nothing following them.
+	if len(bite.Effects) != 3 {
+		t.Fatalf("bite effects = %+v, want 3 entries (roll, cost, End Effect)", bite.Effects)
 	}
-	if want := "2 [Malice](malice.md)"; bite.Enhancements[0].Cost != want {
-		t.Errorf("enhancement cost = %q, want %q", bite.Enhancements[0].Cost, want)
+	// ── enhancement cost: "2 [Malice](…)" link kept raw, not stripped ──
+	if want := "2 [Malice](malice.md)"; bite.Effects[1].Cost != want {
+		t.Errorf("enhancement cost = %q, want %q", bite.Effects[1].Cost, want)
 	}
 	// ── section label: "[End Effect](…)" link kept raw ──
-	var endEff *sbSection
-	for i := range bite.Sections {
-		if strings.Contains(bite.Sections[i].Label, "End Effect") {
-			endEff = &bite.Sections[i]
+	var endEff *sbEffect
+	for i := range bite.Effects {
+		if strings.Contains(bite.Effects[i].Name, "End Effect") {
+			endEff = &bite.Effects[i]
 		}
 	}
 	if endEff == nil {
-		t.Fatalf("End Effect section missing; sections = %+v", bite.Sections)
+		t.Fatalf("End Effect entry missing; effects = %+v", bite.Effects)
 	}
-	if want := "[End Effect](end-effect.md)"; endEff.Label != want {
-		t.Errorf("section label = %q, want %q", endEff.Label, want)
+	if want := "[End Effect](end-effect.md)"; endEff.Name != want {
+		t.Errorf("section label = %q, want %q", endEff.Name, want)
 	}
 
 	// ── villain action: linked "[Villain Action](…) 3" still classifies villain,

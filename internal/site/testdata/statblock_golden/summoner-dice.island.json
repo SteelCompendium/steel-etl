@@ -78,14 +78,18 @@
       ],
       "distance": "Ranged 10",
       "target": "One creature",
-      "powerRoll": {
-        "formula": "2d10 + R",
-        "tiers": {
-          "high": "21 damage; pushed 2",
-          "low": "11 damage",
-          "mid": "16 damage; pushed 1"
+      "effects": [
+        {
+          "roll": {
+            "formula": "2d10 + R",
+            "tiers": {
+              "high": "21 damage; pushed 2",
+              "low": "11 damage",
+              "mid": "16 damage; pushed 1"
+            }
+          }
         }
-      }
+      ]
     }
   ]
 }

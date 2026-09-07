@@ -78,14 +78,18 @@
       ],
       "distance": "Melee 1",
       "target": "One creature",
-      "powerRoll": {
-        "formula": "+ 2",
-        "tiers": {
-          "high": "6 damage",
-          "low": "2 damage",
-          "mid": "4 damage"
+      "effects": [
+        {
+          "roll": {
+            "formula": "+ 2",
+            "tiers": {
+              "high": "6 damage",
+              "low": "2 damage",
+              "mid": "4 damage"
+            }
+          }
         }
-      }
+      ]
     },
     {
       "kind": "passive",

@@ -44,11 +44,19 @@ func TestCompanionFeatures_Panther(t *testing.T) {
 	if pounce.Distance != "Melee 1" || pounce.Target != "One enemy" {
 		t.Errorf("pounce dist/target = %q/%q", pounce.Distance, pounce.Target)
 	}
-	if len(pounce.Sections) == 0 || pounce.Sections[0].Label != "Effect" {
-		t.Errorf("pounce sections = %+v", pounce.Sections)
+	// The italic flavor line ("*The panther bunches up…*") precedes the spec
+	// table as bare prose, so it becomes its own effects[0] entry (a
+	// pre-existing quirk — the text wasn't lost before either, just silently
+	// joined into Trailing; SC-308 round 3b's document-order model makes it a
+	// visible, separate entry instead).
+	if len(pounce.Effects) != 3 {
+		t.Fatalf("pounce effects = %+v, want 3 entries (flavor, Effect, Spend enhancement)", pounce.Effects)
 	}
-	if len(pounce.Enhancements) == 0 || !strings.Contains(pounce.Enhancements[0].Cost, "Spend 1 Ferocity") {
-		t.Errorf("pounce enhancements = %+v", pounce.Enhancements)
+	if pounce.Effects[1].Name != "Effect" {
+		t.Errorf("pounce effects[1] = %+v, want the Effect entry", pounce.Effects[1])
+	}
+	if !strings.Contains(pounce.Effects[2].Cost, "Spend 1 Ferocity") {
+		t.Errorf("pounce effects[2] = %+v, want the Spend cost entry", pounce.Effects[2])
 	}
 	spring := feats[1]
 	if spring.Name != "Mighty Spring" || spring.Kind != "passive" || spring.Body == "" {
