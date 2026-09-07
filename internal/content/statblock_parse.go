@@ -331,113 +331,101 @@ func parseOneFeature(block string) map[string]any {
 		f["usage"] = stripBold(rows[0][1])
 	}
 
-	// SC-308: a feature with more than one tier list (Snackies for Sweeties'
-	// poison-damage roll AND its header-less Agility-test outcomes, e.g.) needs
-	// every roll kept, in order, instead of the single `tiers` map below letting
-	// each new list overwrite the last. Pre-count "≤11:" lines (one per list) so
-	// the ORIGINAL single-roll algorithm runs unchanged for every other feature.
-	tierListTotal := 0
-	for _, line := range rest {
-		if tm := sbTierRe.FindStringSubmatch(strings.TrimSpace(line)); tm != nil && strings.HasPrefix(tm[1], "≤") {
-			tierListTotal++
-		}
+	effects, trigger := parseStatblockEffects(rest, diceRoll)
+	if trigger != "" {
+		// feature.schema.json has a dedicated top-level `trigger` field
+		// (inherited by statblock.schema.json's features[] via its $ref); the
+		// SDK's own MarkdownFeatureWriter always emits it first, ahead of
+		// `effects` — matching every real Trigger paragraph's position (always
+		// the first paragraph after the spec table). Routed here rather than
+		// left as an ordinary effects entry.
+		f["trigger"] = trigger
 	}
-
-	if tierListTotal > 1 {
-		if effects := parseStatblockEffectsMulti(rest, diceRoll); len(effects) > 0 {
-			f["effects"] = effects
-		}
-		return f
-	}
-
-	// Effects: power-roll tiers or plain trait text.
-	tiers := map[string]string{}
-	var prose []string
-	roll := diceRoll
-	tierKeys := []string{"tier1", "tier2", "tier3"}
-	bareTierIdx := 0 // next positional tier slot for the dice-in-title form
-	bareTiersDone := false
-	for _, line := range rest {
-		t := strings.TrimSpace(line)
-		if pr := sbPowerRollRe.FindStringSubmatch(t); pr != nil {
-			roll = strings.TrimSuffix(strings.TrimSpace(linkDisplay(pr[1])), ":")
-			continue
-		}
-		if tm := sbTierRe.FindStringSubmatch(t); tm != nil {
-			switch {
-			case strings.HasPrefix(tm[1], "≤"):
-				tiers["tier1"] = strings.TrimSpace(tm[2])
-			case strings.Contains(tm[1], "-"):
-				tiers["tier2"] = strings.TrimSpace(tm[2])
-			case strings.HasSuffix(tm[1], "+"):
-				tiers["tier3"] = strings.TrimSpace(tm[2])
+	if len(effects) > 0 {
+		f["effects"] = effects
+		// No power roll anywhere and no keyword/usage table → a trait (the
+		// narrowed taxonomy: docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md).
+		_, hasUsage := f["usage"]
+		hasRoll := false
+		for _, e := range effects {
+			if _, ok := e["tier1"]; ok {
+				hasRoll = true
+				break
 			}
-			continue
 		}
-		if t == "" || strings.HasPrefix(t, "|") {
-			continue
-		}
-		// Dice-in-title abilities: the first run of up to three bare digit-led
-		// lines below the table are the ≤11 / 12-16 / 17+ tiers, by position.
-		if diceRoll != "" && !bareTiersDone && bareTierIdx < len(tierKeys) && sbBareTierRe.MatchString(t) {
-			tiers[tierKeys[bareTierIdx]] = t
-			bareTierIdx++
-			continue
-		}
-		if bareTierIdx > 0 {
-			bareTiersDone = true // a non-tier line ends the tier run
-		}
-		prose = append(prose, t)
-	}
-
-	if len(tiers) > 0 {
-		eff := map[string]any{"roll": roll}
-		for k, v := range tiers {
-			eff[k] = v
-		}
-		f["effects"] = []map[string]any{eff}
-	} else if len(prose) > 0 {
-		// No power roll and no keyword/usage table → a trait.
-		if _, hasUsage := f["usage"]; !hasUsage {
-			// Monster statblocks ARE a trait home (Monsters book defines traits
-			// as passive creature features), so this stays `trait` under the
-			// narrowed taxonomy: docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md
+		if !hasUsage && !hasRoll {
 			f["feature_type"] = "trait"
 		}
-		f["effects"] = []map[string]any{{"effect": strings.Join(prose, "\n")}}
 	}
 
 	return f
 }
 
-// parseStatblockEffectsMulti builds the SDK `effects[]` roll entries for a
-// feature with MORE THAN ONE tier list (SC-308): one {roll, tier1..3} map per
-// list, in document order — the pre-existing single-roll shape and its
-// Effect/Special/enhancement prose loss (SC-309, out of scope here) are
-// otherwise unchanged. A header-less list (no preceding "**Power Roll + N:**")
-// derives its `roll` label from the nearest preceding line's bold
-// "**<Characteristic> test**" phrase (DeriveTestLabel); with no such phrase it
-// stays "" (bare), matching the single-list convention.
-func parseStatblockEffectsMulti(rest []string, diceRoll string) []map[string]any {
-	type rollTiers struct {
-		roll  string
-		tiers map[string]string
-	}
-	var effects []rollTiers
-	var cur *rollTiers
-	flush := func() {
-		if cur != nil {
-			effects = append(effects, *cur)
-			cur = nil
+// parseStatblockEffects builds the SDK `effects[]` list for a statblock
+// feature's body in document order (SC-308 round 3b, folds SC-309): every
+// labeled paragraph (Effect/Special/…), cost enhancement ("3 Malice:"), and
+// bare prose paragraph becomes its own entry, carrying the tier list that
+// directly attaches to it. A `**Trigger:**` paragraph is routed to the
+// separate return value instead — feature.schema.json's dedicated top-level
+// `trigger` field, not an effects entry (see parseOneFeature). A tier list
+// right after the spec table (nothing eligible before it) becomes its own
+// {roll, tier1..3} entry, unchanged from before. curIdx tracks attachment by
+// INDEX (not pointer) because effects keeps growing via append (SC-308 review
+// round 2, finding L-4: a pointer into a growing slice goes stale across a
+// reallocation).
+func parseStatblockEffects(rest []string, diceRoll string) (effects []map[string]any, trigger string) {
+	curIdx := -1
+	pendingRoll := diceRoll // a header's text, seen but not yet attached to a list
+	rollKeysSet := map[string]bool{}
+	bareTierIdx := 0
+	bareTiers := [3]string{}
+	bareTiersDone := false
+
+	newEntry := func(name, cost, text string) {
+		e := map[string]any{}
+		if name != "" {
+			e["name"] = name
 		}
+		if cost != "" {
+			e["cost"] = cost
+		}
+		if text != "" {
+			e["effect"] = text
+		}
+		effects = append(effects, e)
+		curIdx = len(effects) - 1
+		rollKeysSet = map[string]bool{}
+	}
+	attach := func(roll string, key, val string) {
+		var target map[string]any
+		if curIdx >= 0 && !rollKeysSet[key] {
+			target = effects[curIdx]
+		} else {
+			target = map[string]any{}
+			effects = append(effects, target)
+			curIdx = len(effects) - 1
+			rollKeysSet = map[string]bool{}
+		}
+		if roll != "" {
+			target["roll"] = roll
+		}
+		target[key] = val
+		rollKeysSet[key] = true
 	}
 
-	pendingRoll := diceRoll // a header's label, seen but not yet attached to a list
-	lastLine := ""
+	lastWasPlainProse := false // true only right after a bare-prose LINE with no
+	// intervening blank line/table/roll/tier/label — lets a word-wrapped prose
+	// paragraph that spans multiple physical lines join into ONE effects entry
+	// instead of becoming one entry per line.
 	for _, line := range rest {
 		t := strings.TrimSpace(line)
+		if t == "" || strings.HasPrefix(t, "|") {
+			lastWasPlainProse = false
+			continue
+		}
 		if pr := sbPowerRollRe.FindStringSubmatch(t); pr != nil {
 			pendingRoll = strings.TrimSuffix(strings.TrimSpace(linkDisplay(pr[1])), ":")
+			lastWasPlainProse = false
 			continue
 		}
 		if tm := sbTierRe.FindStringSubmatch(t); tm != nil {
@@ -452,42 +440,56 @@ func parseStatblockEffectsMulti(rest []string, diceRoll string) []map[string]any
 			default:
 				continue
 			}
-			exists := false
-			if cur != nil {
-				_, exists = cur.tiers[key]
-			}
-			if cur == nil || exists {
-				// Either the very first list, or this key is already filled on the
-				// in-progress roll (a new list has begun). Flush the finished one
-				// and start fresh: an explicit header seen since the last flush
-				// wins; otherwise derive a label from the nearest preceding line.
-				flush()
-				label := pendingRoll
-				if label == "" {
-					label = DeriveTestLabel(lastLine)
+			attach(pendingRoll, key, strings.TrimSpace(tm[2]))
+			pendingRoll = ""
+			lastWasPlainProse = false
+			continue
+		}
+		// Dice-in-title abilities: the first run of up to three bare digit-led
+		// lines below the table are the ≤11 / 12-16 / 17+ tiers, by position.
+		if diceRoll != "" && !bareTiersDone && bareTierIdx < 3 && sbBareTierRe.MatchString(t) {
+			bareTiers[bareTierIdx] = t
+			bareTierIdx++
+			if bareTierIdx == 3 {
+				keys := []string{"tier1", "tier2", "tier3"}
+				for i, v := range bareTiers {
+					attach(diceRoll, keys[i], v)
+					pendingRoll = ""
 				}
-				cur = &rollTiers{roll: label, tiers: map[string]string{}}
-				pendingRoll = ""
 			}
-			cur.tiers[key] = strings.TrimSpace(tm[2])
+			lastWasPlainProse = false
 			continue
 		}
-		if t == "" || strings.HasPrefix(t, "|") {
+		if bareTierIdx > 0 {
+			bareTiersDone = true // a non-tier line ends the tier run
+		}
+		if m := fbLabelRe.FindStringSubmatch(t); m != nil {
+			label := strings.TrimSpace(m[1])
+			text := fbCollapse(m[2])
+			if strings.EqualFold(label, "Trigger") {
+				trigger = text
+				curIdx = -1
+				lastWasPlainProse = false
+				continue
+			}
+			if fbCostLabelRe.MatchString(label) {
+				newEntry("", label, text)
+			} else {
+				newEntry(label, "", text)
+			}
+			lastWasPlainProse = false
 			continue
 		}
-		lastLine = t
-	}
-	flush()
-
-	out := make([]map[string]any, 0, len(effects))
-	for _, e := range effects {
-		eff := map[string]any{"roll": e.roll}
-		for k, v := range e.tiers {
-			eff[k] = v
+		if lastWasPlainProse && curIdx >= 0 {
+			if s, ok := effects[curIdx]["effect"].(string); ok {
+				effects[curIdx]["effect"] = s + " " + t
+				continue
+			}
 		}
-		out = append(out, eff)
+		newEntry("", "", t)
+		lastWasPlainProse = true
 	}
-	return out
+	return effects, trigger
 }
 
 // featureTableRows extracts non-separator markdown table rows (2 cells each).

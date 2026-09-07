@@ -331,9 +331,11 @@ func TestParseStatblockFeatureDiceInTitle(t *testing.T) {
 	if a["feature_type"] != "ability" {
 		t.Errorf("feature_type: got %v, want ability", a["feature_type"])
 	}
+	// SC-309 fold-in: the trailing Effect paragraph is now its own entry
+	// instead of being silently dropped (the pre-SC-308 behavior).
 	effects, _ := a["effects"].([]map[string]any)
-	if len(effects) != 1 {
-		t.Fatalf("effects: got %v, want 1 entry", a["effects"])
+	if len(effects) != 2 {
+		t.Fatalf("effects: got %v, want 2 entries (roll, Effect)", a["effects"])
 	}
 	e := effects[0]
 	if e["roll"] != "2d10 + R" {
@@ -347,6 +349,9 @@ func TestParseStatblockFeatureDiceInTitle(t *testing.T) {
 	}
 	if e["tier3"] != "8 fire damage; shift 5" {
 		t.Errorf("tier3: got %v", e["tier3"])
+	}
+	if effects[1]["name"] != "Effect" || effects[1]["effect"] != "Each square that the flow shifts into becomes wreathed in flames." {
+		t.Errorf("effects[1] = %+v, want the Effect entry", effects[1])
 	}
 }
 
@@ -643,6 +648,13 @@ const snackiesFeature = "" +
 	"> - **12-16:** The pastry is not removed.\n" +
 	"> - **17+:** The pastry is removed and can no longer explode.\n"
 
+// TestParseStatblockFeatures_MultiRoll_Snackies locks the exact expected
+// wode-hag.yaml shape from the SC-308 round 3b brief: the Effect paragraph and
+// the poison roll merge into ONE entry (the tier list attaches to the
+// paragraph immediately before it), and likewise the Special paragraph and
+// its header-less Agility-test roll merge into a second entry with no `roll`
+// key at all (the site derives the "Agility Test" head from this SAME
+// entry's own `effect` text at render time, never stored in data).
 func TestParseStatblockFeatures_MultiRoll_Snackies(t *testing.T) {
 	got := ParseStatblockFeatures(snackiesFeature)
 	if len(got) != 1 {
@@ -650,16 +662,165 @@ func TestParseStatblockFeatures_MultiRoll_Snackies(t *testing.T) {
 	}
 	effects, _ := got[0]["effects"].([]map[string]any)
 	if len(effects) != 2 {
-		t.Fatalf("effects = %+v, want 2 roll entries", got[0]["effects"])
+		t.Fatalf("effects = %+v, want 2 entries (Effect+roll, Special+roll)", got[0]["effects"])
 	}
-	if effects[0]["roll"] != "Power Roll + 3" || effects[0]["tier1"] != "6 poison damage" {
-		t.Errorf("effects[0] = %+v, want the poison-damage roll", effects[0])
+	e0 := effects[0]
+	if e0["name"] != "Effect" || e0["effect"] != "The hag attaches an ornate explosive pastry to each target." {
+		t.Errorf("effects[0] name/effect = %+v", e0)
 	}
-	if effects[1]["roll"] != "Agility Test" {
-		t.Errorf("effects[1].roll = %v, want 'Agility Test' (derived from the Special text)", effects[1]["roll"])
+	if e0["roll"] != "Power Roll + 3" || e0["tier1"] != "6 poison damage" || e0["tier2"] != "10 poison damage" || e0["tier3"] != "13 poison damage" {
+		t.Errorf("effects[0] roll/tiers = %+v", e0)
 	}
-	if effects[1]["tier1"] != "The hag makes the power roll for all pastries." {
-		t.Errorf("effects[1].tier1 = %v", effects[1]["tier1"])
+	e1 := effects[1]
+	if e1["name"] != "Special" {
+		t.Errorf("effects[1].name = %v, want Special", e1["name"])
+	}
+	if _, hasRoll := e1["roll"]; hasRoll {
+		t.Errorf("effects[1] has roll = %v, want omitted (header-less; site derives the label from effect prose)", e1["roll"])
+	}
+	if e1["tier1"] != "The hag makes the power roll for all pastries." {
+		t.Errorf("effects[1].tier1 = %v", e1["tier1"])
+	}
+	if e1["tier2"] != "The pastry is not removed." || e1["tier3"] != "The pastry is removed and can no longer explode." {
+		t.Errorf("effects[1] tier2/tier3 = %+v", e1)
+	}
+}
+
+// Soul Steal-shaped: a table-adjacent roll (no preceding paragraph — its own
+// {roll, tier1..3} entry, unchanged), then an Effect paragraph with no
+// trailing roll, then a cost-labeled enhancement paragraph ("3 Malice:").
+// Locks the brief's `[{roll, tiers}, {name: Effect, effect}, {cost: "3
+// Malice", effect}]` shape — SC-309 folded in: the statblock data path used
+// to drop the Effect/cost prose entirely.
+const soulStealFeature = "" +
+	"> 🔳 **Soul Steal**\n" +
+	">\n" +
+	"> | **Area, Magic**        |               **Main action** |\n" +
+	"> |------------------------|------------------------------:|\n" +
+	"> | **📏 4 cube within 1** | **🎯 Each enemy in the area** |\n" +
+	">\n" +
+	"> **Power Roll + 3:**\n" +
+	">\n" +
+	"> - **≤11:** 5 corruption damage\n" +
+	"> - **12-16:** 8 corruption damage\n" +
+	"> - **17+:** 10 corruption damage\n" +
+	">\n" +
+	"> **Effect:** This ability gains an edge against a target who has a soul.\n" +
+	">\n" +
+	"> **3 Malice:** The hag regains Stamina equal to half the damage dealt.\n"
+
+func TestParseStatblockFeatures_SoulSteal(t *testing.T) {
+	got := ParseStatblockFeatures(soulStealFeature)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	effects, _ := got[0]["effects"].([]map[string]any)
+	if len(effects) != 3 {
+		t.Fatalf("effects = %+v, want 3 entries (roll, Effect, cost)", got[0]["effects"])
+	}
+	if _, hasName := effects[0]["name"]; hasName {
+		t.Errorf("effects[0] should have no name (table-adjacent roll, nothing to attach to): %+v", effects[0])
+	}
+	if effects[0]["roll"] != "Power Roll + 3" || effects[0]["tier1"] != "5 corruption damage" {
+		t.Errorf("effects[0] = %+v", effects[0])
+	}
+	if effects[1]["name"] != "Effect" || effects[1]["effect"] != "This ability gains an edge against a target who has a soul." {
+		t.Errorf("effects[1] = %+v", effects[1])
+	}
+	if _, hasRoll := effects[1]["roll"]; hasRoll {
+		t.Errorf("effects[1] should have no roll (nothing follows it): %+v", effects[1])
+	}
+	if effects[2]["cost"] != "3 Malice" || effects[2]["effect"] != "The hag regains Stamina equal to half the damage dealt." {
+		t.Errorf("effects[2] = %+v, want cost entry", effects[2])
+	}
+	if _, hasName := effects[2]["name"]; hasName {
+		t.Errorf("effects[2] should have no name (cost, not name): %+v", effects[2])
+	}
+}
+
+// Corrosive Claws-shaped: table → Power Roll header → tiers, nothing else.
+// Stays a single roll-only entry, exactly as before SC-308 round 3b.
+const corrosiveClawsFeature = "" +
+	"> 🗡 **Corrosive Claws (Signature Ability)**\n" +
+	">\n" +
+	"> | **Melee, Strike, Weapon** |                 **Main action** |\n" +
+	"> |---------------------------|--------------------------------:|\n" +
+	"> | **📏 Melee 1**            | **🎯 Two creatures or objects** |\n" +
+	">\n" +
+	"> **Power Roll + 3:**\n" +
+	">\n" +
+	"> - **≤11:** 9 corruption damage\n" +
+	"> - **12-16:** 13 corruption damage\n" +
+	"> - **17+:** 16 corruption damage\n"
+
+func TestParseStatblockFeatures_CorrosiveClaws(t *testing.T) {
+	got := ParseStatblockFeatures(corrosiveClawsFeature)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	effects, _ := got[0]["effects"].([]map[string]any)
+	if len(effects) != 1 {
+		t.Fatalf("effects = %+v, want exactly 1 roll-only entry (unchanged)", got[0]["effects"])
+	}
+	e := effects[0]
+	if _, hasName := e["name"]; hasName {
+		t.Errorf("effects[0] should have no name: %+v", e)
+	}
+	if e["roll"] != "Power Roll + 3" || e["tier1"] != "9 corruption damage" || e["tier2"] != "13 corruption damage" || e["tier3"] != "16 corruption damage" {
+		t.Errorf("effects[0] = %+v", e)
+	}
+}
+
+// Turned Upside Down-shaped: a single-roll triggered action whose Trigger
+// paragraph precedes the roll header, and an Effect paragraph follows the
+// tiers. Trigger must route to the top-level `trigger` field (statblock.
+// schema.json's features[] inherit it via feature.schema.json's $ref), NOT
+// into the effects list — and it must NOT reset which entry a later prose
+// paragraph is eligible to be, i.e. it doesn't interfere with the ordinary
+// attachment rule for what follows.
+const turnedUpsideDownFeature = "" +
+	"> ❗️ **Turned Upside Down (2 Malice)**\n" +
+	">\n" +
+	"> | **Area, Magic** |          **Triggered action** |\n" +
+	"> |-----------------|------------------------------:|\n" +
+	"> | **📏 1 burst**  | **🎯 Each enemy in the area** |\n" +
+	">\n" +
+	"> **Trigger:** A creature targets the hag with a melee strike.\n" +
+	">\n" +
+	"> **Power Roll + 3:**\n" +
+	">\n" +
+	"> - **≤11:** Slide 2\n" +
+	"> - **12-16:** Slide 3\n" +
+	"> - **17+:** Vertical slide 5\n" +
+	">\n" +
+	"> **Effect:** While restrained this way, a creature is suspended in midair.\n"
+
+func TestParseStatblockFeatures_TriggerRoutesTopLevel(t *testing.T) {
+	got := ParseStatblockFeatures(turnedUpsideDownFeature)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	f := got[0]
+	if f["trigger"] != "A creature targets the hag with a melee strike." {
+		t.Errorf("trigger = %v, want the Trigger paragraph text", f["trigger"])
+	}
+	effects, _ := f["effects"].([]map[string]any)
+	if len(effects) != 2 {
+		t.Fatalf("effects = %+v, want 2 entries (roll, Effect) — Trigger must NOT be one of them", f["effects"])
+	}
+	for _, e := range effects {
+		if e["effect"] == "A creature targets the hag with a melee strike." {
+			t.Errorf("Trigger text leaked into effects: %+v", e)
+		}
+	}
+	if _, hasName := effects[0]["name"]; hasName {
+		t.Errorf("effects[0] should have no name (table-adjacent roll): %+v", effects[0])
+	}
+	if effects[0]["roll"] != "Power Roll + 3" || effects[0]["tier1"] != "Slide 2" {
+		t.Errorf("effects[0] = %+v", effects[0])
+	}
+	if effects[1]["name"] != "Effect" {
+		t.Errorf("effects[1] = %+v, want the Effect entry", effects[1])
 	}
 }
 
@@ -696,12 +857,21 @@ func TestParseStatblockFeatures_MultiRoll_NoEscape(t *testing.T) {
 	}
 	effects, _ := got[0]["effects"].([]map[string]any)
 	if len(effects) != 2 {
-		t.Fatalf("effects = %+v, want 2 roll entries", got[0]["effects"])
+		t.Fatalf("effects = %+v, want 2 entries (Effect+roll, prose+roll)", got[0]["effects"])
 	}
-	if effects[0]["roll"] != "Power Roll + 3" || effects[0]["tier1"] != "5 damage; prone" {
+	// The Effect paragraph and the first roll merge (attachment rule).
+	if effects[0]["name"] != "Effect" || effects[0]["roll"] != "Power Roll + 3" || effects[0]["tier1"] != "5 damage; prone" {
 		t.Errorf("effects[0] = %+v", effects[0])
 	}
+	// The bare prose lead-in to the second roll merges with it too — both
+	// already have their own header, so neither derives a label from prose.
+	if _, hasName := effects[1]["name"]; hasName {
+		t.Errorf("effects[1] should have no name (bare prose, not a labeled section): %+v", effects[1])
+	}
+	if effects[1]["effect"] != "The cryptic then makes a second power roll that raises stone pillars from the floor." {
+		t.Errorf("effects[1].effect = %v", effects[1]["effect"])
+	}
 	if effects[1]["roll"] != "Power Roll + 3" || effects[1]["tier1"] != "2 damage; vertical slide 2" {
-		t.Errorf("effects[1] = %+v, want the second roll's own header label", effects[1])
+		t.Errorf("effects[1] roll/tiers = %+v, want the second roll's own header label", effects[1])
 	}
 }
