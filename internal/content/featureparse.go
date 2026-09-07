@@ -28,17 +28,73 @@ type RichFeature struct {
 	Body         string            // prose of a table-less (passive) feature
 	Trailing     string            // prose after the structured parts of an ability
 	Level        int               // advancement group level ("Level 5 Fixture Advancement Feature")
+	// Post holds every block that follows the FIRST power roll's own tier list, in
+	// document order, for a feature with MORE THAN ONE tier list (SC-308): later
+	// sections/enhancements/prose paragraphs and any later power rolls, interleaved
+	// exactly as they sit in the source. Sections/Enhancements above still carry
+	// every entry regardless of position (ToMap/data-fidelity stays non-lossy);
+	// Post is the render-order guide for anything past the first roll and is nil
+	// for the overwhelming majority of features that have zero or one tier list —
+	// existing single-roll rendering is untouched (see parseRichFeature).
+	Post []RichPostBlock
 }
 
 // RichPowerRoll is a power roll: Formula "+ 2" (labeled form) or "2d10 + R"
-// (dice-in-title form); "" means a bare test result (renderer omits the head).
+// (dice-in-title form); "" means a bare test result (renderer omits the head)
+// UNLESS Label is set (SC-308): a header-less tier list that is NOT the
+// feature's only one derives a head from the bold "**<Characteristic> test**"
+// phrase in the nearest preceding paragraph (e.g. "Agility Test") instead of
+// rendering fully bare, so a reader can tell two later tier tables apart.
 type RichPowerRoll struct {
 	Formula string
+	Label   string
 	Tiers   map[string]string // keys: low / mid / high
 }
 
 type RichSection struct{ Label, Text string }
 type RichEnhancement struct{ Cost, Text string }
+
+// RichPostBlock is one block of a multi-roll feature's Post sequence: exactly
+// one of the four fields is set. Section/Enhancement point at the SAME entry
+// already appended to RichFeature.Sections/Enhancements (render-order pointer,
+// not a data copy); Prose is a single collapsed paragraph; Roll is a tier list
+// after the feature's first (rendered as its own panel).
+type RichPostBlock struct {
+	Section     *RichSection
+	Enhancement *RichEnhancement
+	Prose       string
+	Roll        *RichPowerRoll
+}
+
+// testCharacteristics are the five characteristics a "**<Char> test**" phrase
+// can name (SC-308 label rule), keyed lower-case → canonical display form.
+var testCharacteristics = map[string]string{
+	"might": "Might", "agility": "Agility", "reason": "Reason",
+	"intuition": "Intuition", "presence": "Presence",
+}
+
+// testLabelRe matches a bold "**<Characteristic> test**" phrase, tolerant of a
+// link-wrapped characteristic ("**[Agility](scc:…) test**" — the Monsters book
+// links some but not all occurrences). Matched case-insensitively; the result
+// is canonicalized against testCharacteristics.
+var testLabelRe = regexp.MustCompile(`(?i)\*\*(?:\[([A-Za-z]+)\]\([^)]*\)|([A-Za-z]+))\s+test\*\*`)
+
+// DeriveTestLabel finds the first "**<Characteristic> test**" phrase in text
+// (the nearest preceding paragraph to a header-less tier list) and returns its
+// head label ("Agility Test"), or "" if no known characteristic is named
+// (SC-308's label rule; "" means the caller renders the panel bare).
+func DeriveTestLabel(text string) string {
+	for _, m := range testLabelRe.FindAllStringSubmatch(text, -1) {
+		char := m[1]
+		if char == "" {
+			char = m[2]
+		}
+		if canon, ok := testCharacteristics[strings.ToLower(char)]; ok {
+			return canon + " Test"
+		}
+	}
+	return ""
+}
 
 var (
 	fbParaSplitRe = regexp.MustCompile(`\n[ \t]*\n`)
@@ -130,6 +186,24 @@ func parseRichFeature(block string) (RichFeature, bool) {
 			f.Name = strings.TrimSpace(pm[1])
 			f.Cost = parenToCost(strings.TrimSpace(pm[2]))
 		}
+	}
+
+	// SC-308: a feature with more than one tier list (e.g. Snackies for Sweeties'
+	// poison-damage roll AND its header-less Agility-test outcomes) needs every
+	// list kept, in document order, instead of the single [3]string below letting
+	// each new list silently overwrite the last. Pre-count them so the ORIGINAL
+	// single-list algorithm runs completely unchanged (byte-identical output) for
+	// the overwhelming majority of features that have zero or one list; only a
+	// genuinely multi-list feature takes the ordered parseRichFeatureMulti path.
+	tierListCount := 0
+	for _, para := range paras[1:] {
+		if fbLooksLikeTiers(strings.TrimSpace(para)) {
+			tierListCount++
+		}
+	}
+	if tierListCount > 1 {
+		parseRichFeatureMulti(&f, paras[1:], diceFormula)
+		return f, true
 	}
 
 	var (
@@ -239,6 +313,138 @@ func parseRichFeature(block string) (RichFeature, bool) {
 	return f, true
 }
 
+// parseRichFeatureMulti fills f for a feature with MORE THAN ONE tier list
+// (SC-308): the first roll still lands in f.PowerRoll (same card slot as ever),
+// and every later block — sections, enhancements, bare prose, and every later
+// roll — is additionally recorded in f.Post, in document order, so the
+// renderer can place a later tier table immediately after whatever it follows
+// in the source instead of the fixed Sections-then-Trailing-then-Enhancements
+// layout the single-roll path uses. A header-less roll (no preceding
+// "**Power Roll + N:**") derives its head from the nearest preceding
+// paragraph's bold "**<Characteristic> test**" phrase (DeriveTestLabel);
+// otherwise it renders bare, exactly like the single-list convention.
+func parseRichFeatureMulti(f *RichFeature, paras []string, diceFormula string) {
+	var (
+		formula       = diceFormula
+		diceTiers     [3]string
+		bareIdx       int
+		structured    bool
+		haveFirstRoll bool
+		introProse    []string
+		lastParaText  string
+	)
+
+	for _, para := range paras {
+		tp := strings.TrimSpace(para)
+		if tp == "" {
+			continue
+		}
+
+		// Spec table → keywords / usage (row 1), distance / target (row 2).
+		if strings.HasPrefix(tp, "|") {
+			rows := featureTableRows(strings.Split(para, "\n"))
+			if len(rows) >= 1 {
+				f.Keywords = splitCommaList(stripBold(rows[0][0]))
+				f.Usage = stripBold(rows[0][1])
+			}
+			if len(rows) >= 2 {
+				f.Distance = cleanIconCell(rows[1][0])
+				f.Target = cleanIconCell(rows[1][1])
+			}
+			structured = true
+			continue
+		}
+
+		// Power-roll header → formula for the NEXT tier list; not itself a block.
+		if m := fbPRHeadRe.FindStringSubmatch(tp); m != nil {
+			formula = "+ " + linkDisplay(strings.TrimSpace(m[1]))
+			structured = true
+			continue
+		}
+
+		// Labeled tier list ("- **≤11:** …") — headered (formula set above) or bare.
+		if fbLooksLikeTiers(tp) {
+			var t [3]string
+			fbParseTiers(tp, &t)
+			tm := map[string]string{}
+			for i, key := range []string{"low", "mid", "high"} {
+				if t[i] != "" {
+					tm[key] = t[i]
+				}
+			}
+			label := ""
+			if formula == "" {
+				label = DeriveTestLabel(lastParaText)
+			}
+			roll := RichPowerRoll{Formula: formula, Label: label, Tiers: tm}
+			formula = ""
+			structured = true
+			if !haveFirstRoll {
+				f.PowerRoll = &roll
+				haveFirstRoll = true
+			} else {
+				r := roll
+				f.Post = append(f.Post, RichPostBlock{Roll: &r})
+			}
+			continue
+		}
+
+		// Dice-in-title abilities: bare digit-led lines are tiers by position (the
+		// dice form never co-occurs with a second list in the corpus today; this
+		// mirrors the single-list handling for the FIRST roll only).
+		if diceFormula != "" && !haveFirstRoll && bareIdx < 3 && sbBareTierRe.MatchString(tp) {
+			diceTiers[bareIdx] = fbCollapse(tp)
+			bareIdx++
+			structured = true
+			if bareIdx == 3 {
+				tm := map[string]string{}
+				for i, key := range []string{"low", "mid", "high"} {
+					if diceTiers[i] != "" {
+						tm[key] = diceTiers[i]
+					}
+				}
+				f.PowerRoll = &RichPowerRoll{Formula: diceFormula, Tiers: tm}
+				haveFirstRoll = true
+			}
+			continue
+		}
+
+		// Labeled paragraph → cost enhancement or titled section. Recorded on the
+		// feature (full data fidelity, any position) AND on Post (render order).
+		if m := fbLabelRe.FindStringSubmatch(tp); m != nil {
+			label := strings.TrimSpace(m[1])
+			text := fbCollapse(m[2])
+			if fbCostLabelRe.MatchString(label) {
+				f.Enhancements = append(f.Enhancements, RichEnhancement{Cost: label, Text: text})
+				e := &f.Enhancements[len(f.Enhancements)-1]
+				f.Post = append(f.Post, RichPostBlock{Enhancement: e})
+			} else {
+				f.Sections = append(f.Sections, RichSection{Label: label, Text: text})
+				s := &f.Sections[len(f.Sections)-1]
+				f.Post = append(f.Post, RichPostBlock{Section: s})
+			}
+			structured = true
+			lastParaText = text
+			continue
+		}
+
+		// Bare prose: a lead-in (before any structured block) sets up the first
+		// roll and renders above it (Intro, unchanged); everything else joins Post
+		// as its own paragraph so a later roll can slot in between two of them.
+		collapsed := fbCollapse(tp)
+		lastParaText = collapsed
+		if !structured {
+			introProse = append(introProse, collapsed)
+		} else {
+			f.Post = append(f.Post, RichPostBlock{Prose: collapsed})
+		}
+	}
+
+	if len(introProse) > 0 {
+		f.Intro = strings.Join(introProse, "\n\n")
+	}
+}
+
 // fbLooksLikeTiers reports whether a paragraph is a labeled tier list.
 func fbLooksLikeTiers(para string) bool {
 	return sbTierRe.MatchString(strings.TrimSpace(strings.Split(para, "\n")[0]))
@@ -289,7 +495,20 @@ func (f RichFeature) ToMap() map[string]any {
 		if f.PowerRoll.Formula != "" {
 			pr["formula"] = f.PowerRoll.Formula
 		}
+		if f.PowerRoll.Label != "" {
+			pr["label"] = f.PowerRoll.Label
+		}
 		m["power_roll"] = pr
+	}
+	// SC-308: everything after the first tier list, in document order — sections/
+	// enhancements/prose/later rolls interleaved exactly as in the source, so a
+	// consumer that needs true render order (the site card) doesn't have to
+	// reconstruct it from the flattened sections/enhancements/trailing arrays
+	// below (which stay unordered relative to each other, as always). Present
+	// only for a feature with more than one tier list; the pre-existing
+	// single-effect data shape (SC-309) is otherwise unchanged.
+	if post := postMaps(f.Post); len(post) > 0 {
+		m["post"] = post
 	}
 	if len(f.Sections) > 0 {
 		ss := make([]map[string]any, 0, len(f.Sections))
@@ -318,6 +537,33 @@ func (f RichFeature) ToMap() map[string]any {
 		m["level"] = f.Level
 	}
 	return m
+}
+
+// postMaps converts a multi-roll feature's ordered Post blocks to the
+// featureblock.schema.json `post` shape: one map per block, holding exactly
+// one of "section" / "enhancement" / "prose" / "roll".
+func postMaps(post []RichPostBlock) []map[string]any {
+	var out []map[string]any
+	for _, b := range post {
+		switch {
+		case b.Section != nil:
+			out = append(out, map[string]any{"section": map[string]any{"label": b.Section.Label, "text": b.Section.Text}})
+		case b.Enhancement != nil:
+			out = append(out, map[string]any{"enhancement": map[string]any{"cost": b.Enhancement.Cost, "text": b.Enhancement.Text}})
+		case b.Roll != nil:
+			pr := map[string]any{"tiers": b.Roll.Tiers}
+			if b.Roll.Formula != "" {
+				pr["formula"] = b.Roll.Formula
+			}
+			if b.Roll.Label != "" {
+				pr["label"] = b.Roll.Label
+			}
+			out = append(out, map[string]any{"roll": pr})
+		case b.Prose != "":
+			out = append(out, map[string]any{"prose": b.Prose})
+		}
+	}
+	return out
 }
 
 // RichFeatureMaps converts a parsed feature list to schema-shaped maps.

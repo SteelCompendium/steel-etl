@@ -612,3 +612,96 @@ func TestBookSources_StatblockFeatureTitlesParse(t *testing.T) {
 		t.Errorf("only %d feature titles scanned; the guard is not seeing the corpus", checked)
 	}
 }
+
+// --- SC-308: a statblock ability with more than one tier list must keep every
+// roll in the `effects[]` output, in document order, instead of the second
+// list silently overwriting the first (the Wode Hag "Snackies for Sweeties"
+// bug). ---
+
+// Snackies-shaped: a labeled roll, then a Special section whose prose names an
+// "Agility test", then a header-less second list. Both must appear as separate
+// {roll, tier1..3} entries in document order; the second derives its `roll`
+// label from the Special text it follows.
+const snackiesFeature = "" +
+	"> ☠️ **Snackies for Sweeties (Villain Action 1)**\n" +
+	">\n" +
+	"> | **Area, Magic** |                            **-** |\n" +
+	"> |-----------------|---------------------------------:|\n" +
+	"> | **📏 5 burst**  | **🎯 Each creature in the area** |\n" +
+	">\n" +
+	"> **Effect:** The hag attaches an ornate explosive pastry to each target.\n" +
+	">\n" +
+	"> **Power Roll + 3:**\n" +
+	">\n" +
+	"> - **≤11:** 6 poison damage\n" +
+	"> - **12-16:** 10 poison damage\n" +
+	"> - **17+:** 13 poison damage\n" +
+	">\n" +
+	"> **Special:** A creature wearing a pastry can attempt an **Agility test** to remove the pastry as a maneuver.\n" +
+	">\n" +
+	"> - **≤11:** The hag makes the power roll for all pastries.\n" +
+	"> - **12-16:** The pastry is not removed.\n" +
+	"> - **17+:** The pastry is removed and can no longer explode.\n"
+
+func TestParseStatblockFeatures_MultiRoll_Snackies(t *testing.T) {
+	got := ParseStatblockFeatures(snackiesFeature)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	effects, _ := got[0]["effects"].([]map[string]any)
+	if len(effects) != 2 {
+		t.Fatalf("effects = %+v, want 2 roll entries", got[0]["effects"])
+	}
+	if effects[0]["roll"] != "Power Roll + 3" || effects[0]["tier1"] != "6 poison damage" {
+		t.Errorf("effects[0] = %+v, want the poison-damage roll", effects[0])
+	}
+	if effects[1]["roll"] != "Agility Test" {
+		t.Errorf("effects[1].roll = %v, want 'Agility Test' (derived from the Special text)", effects[1]["roll"])
+	}
+	if effects[1]["tier1"] != "The hag makes the power roll for all pastries." {
+		t.Errorf("effects[1].tier1 = %v", effects[1]["tier1"])
+	}
+}
+
+// No Escape-shaped: two LABELED power rolls (each its own header) with a bare
+// prose paragraph between them. Both keep their own header label; neither
+// derives one from prose.
+const noEscapeFeature = "" +
+	"> ☠️ **No Escape (Villain Action 3)**\n" +
+	">\n" +
+	"> | **Ranged**       |                           **-** |\n" +
+	"> |------------------|--------------------------------:|\n" +
+	"> | **📏 Ranged 10** | **🎯 Two creatures or objects** |\n" +
+	">\n" +
+	"> **Effect:** The cryptic makes an initial power roll that calls down stone pillars from the ceiling.\n" +
+	">\n" +
+	"> **Power Roll + 3:**\n" +
+	">\n" +
+	"> - **≤11:** 5 damage; prone\n" +
+	"> - **12-16:** 9 damage; prone\n" +
+	"> - **17+:** 12 damage; prone\n" +
+	">\n" +
+	"> The cryptic then makes a second power roll that raises stone pillars from the floor.\n" +
+	">\n" +
+	"> **Power Roll + 3:**\n" +
+	">\n" +
+	"> - **≤11:** 2 damage; vertical slide 2\n" +
+	"> - **12-16:** 3 damage; vertical slide 4\n" +
+	"> - **17+:** 4 damage; vertical slide 6\n"
+
+func TestParseStatblockFeatures_MultiRoll_NoEscape(t *testing.T) {
+	got := ParseStatblockFeatures(noEscapeFeature)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	effects, _ := got[0]["effects"].([]map[string]any)
+	if len(effects) != 2 {
+		t.Fatalf("effects = %+v, want 2 roll entries", got[0]["effects"])
+	}
+	if effects[0]["roll"] != "Power Roll + 3" || effects[0]["tier1"] != "5 damage; prone" {
+		t.Errorf("effects[0] = %+v", effects[0])
+	}
+	if effects[1]["roll"] != "Power Roll + 3" || effects[1]["tier1"] != "2 damage; vertical slide 2" {
+		t.Errorf("effects[1] = %+v, want the second roll's own header label", effects[1])
+	}
+}

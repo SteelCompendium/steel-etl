@@ -25,6 +25,8 @@ package site
 import (
 	"regexp"
 	"strings"
+
+	"github.com/SteelCompendium/steel-etl/internal/content"
 )
 
 // ── statblock model (the intermediate the parse stage builds; renderStatblockCard
@@ -51,6 +53,7 @@ type sbMeta struct {
 }
 type sbPowerRoll struct {
 	Formula string            `json:"formula"` // "" → a test result (renderer omits the head)
+	Label   string            `json:"label,omitempty"`
 	Tiers   map[string]string `json:"tiers"`
 }
 type sbSection struct {
@@ -60,6 +63,17 @@ type sbSection struct {
 type sbEnh struct {
 	Cost string `json:"cost"`
 	Text string `json:"text"`
+}
+
+// sbPostBlock is one block of a multi-roll feature's Post sequence — every
+// section, enhancement, prose paragraph, and later power roll encountered
+// after the first tier list, in document order (SC-308). Exactly one field is
+// set. See parseStatblockIslandFeature.
+type sbPostBlock struct {
+	Section     *sbSection
+	Enhancement *sbEnh
+	Prose       string
+	Roll        *sbPowerRoll
 }
 type sbFeature struct {
 	Kind         string       `json:"kind"`   // ability | passive | villain
@@ -76,6 +90,11 @@ type sbFeature struct {
 	Enhancements []sbEnh      `json:"enhancements,omitempty"`
 	Body         string       `json:"body,omitempty"`
 	Trailing     string       `json:"trailing,omitempty"`
+	// Post holds everything after the FIRST tier list, in document order, for a
+	// feature with more than one (SC-308); nil for the overwhelming majority of
+	// features with zero or one, whose rendering is untouched. See
+	// parseStatblockIslandFeature.
+	Post []sbPostBlock `json:"-"`
 }
 type sbIsland struct {
 	ID              string      `json:"id"`
@@ -418,6 +437,22 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 	// The base name may itself be a link (e.g. "[Solo](url) Monster").
 	f.Name = name
 
+	// SC-308: a feature with more than one tier list (Snackies for Sweeties'
+	// poison-damage roll AND its header-less Agility-test outcomes, e.g.) needs
+	// every list kept, in document order, instead of the single [3]string below
+	// letting each new list overwrite the last. Pre-count them so the ORIGINAL
+	// algorithm below runs completely unchanged (byte-identical rendering) for
+	// every feature with zero or one tier list.
+	tierListCount := 0
+	for _, para := range paras[1:] {
+		if looksLikeTiers(strings.TrimSpace(para)) {
+			tierListCount++
+		}
+	}
+	if tierListCount > 1 {
+		return parseStatblockIslandFeatureMulti(f, paras[1:], diceFormula)
+	}
+
 	var (
 		tableSeen bool
 		usage     string
@@ -521,6 +556,143 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 	}
 	if len(prose) > 0 {
 		f.Trailing = strings.Join(prose, " ")
+	}
+	return f, true
+}
+
+// parseStatblockIslandFeatureMulti fills f (already carrying icon/name/cost)
+// for a feature with MORE THAN ONE tier list (SC-308): the first roll still
+// lands in f.PowerRoll (same card slot as ever), and every later block —
+// sections, enhancements, bare prose, and every later roll — is recorded in
+// f.Post, in document order, so the renderer can place a later tier table
+// immediately after whatever it follows in the source instead of the fixed
+// Sections-then-Trailing-then-Enhancements layout the single-roll path above
+// uses. A header-less roll derives its head from the nearest preceding
+// paragraph's bold "**<Characteristic> test**" phrase (content.DeriveTestLabel);
+// otherwise it renders bare, exactly like the single-list convention.
+func parseStatblockIslandFeatureMulti(f sbFeature, paras []string, diceFormula string) (sbFeature, bool) {
+	var (
+		tableSeen     bool
+		usage         string
+		formula       = diceFormula
+		diceTiers     [3]string
+		bareIdx       int
+		haveFirstRoll bool
+		lastParaText  string
+	)
+
+	for _, para := range paras {
+		tp := strings.TrimSpace(para)
+		if tp == "" {
+			continue
+		}
+
+		// 2×2 spec table → keywords / usage / distance / target.
+		if strings.HasPrefix(tp, "|") {
+			kws, act, dist, tgt := parseAbilityTable(para)
+			if len(kws) > 0 {
+				f.Keywords = kws
+			}
+			if act != "" {
+				usage = act
+			}
+			if dist != "" {
+				f.Distance = dist
+			}
+			if tgt != "" {
+				f.Target = tgt
+			}
+			tableSeen = true
+			continue
+		}
+
+		// Power-roll header → formula for the NEXT tier list; not itself a block.
+		if m := prHeadRe.FindStringSubmatch(tp); m != nil {
+			formula = "+ " + strings.TrimSpace(m[1])
+			continue
+		}
+
+		// Labeled tier list ("- **≤11:** …") — headered (formula set above) or bare.
+		if looksLikeTiers(tp) {
+			var t [3]string
+			parseTiers(tp, &t)
+			tm := map[string]string{}
+			for i, key := range []string{"low", "mid", "high"} {
+				if t[i] != "" {
+					tm[key] = t[i]
+				}
+			}
+			label := ""
+			if formula == "" {
+				label = content.DeriveTestLabel(lastParaText)
+			}
+			roll := sbPowerRoll{Formula: formula, Label: label, Tiers: tm}
+			formula = ""
+			if !haveFirstRoll {
+				f.PowerRoll = &roll
+				haveFirstRoll = true
+			} else {
+				r := roll
+				f.Post = append(f.Post, sbPostBlock{Roll: &r})
+			}
+			continue
+		}
+
+		// Dice-in-title abilities: bare digit-led lines are tiers by position (the
+		// dice form never co-occurs with a second list in the corpus today; this
+		// mirrors the single-list handling for the FIRST roll only).
+		if diceFormula != "" && !haveFirstRoll && bareIdx < 3 && sbBareTierRe.MatchString(tp) {
+			diceTiers[bareIdx] = collapseLines(tp)
+			bareIdx++
+			if bareIdx == 3 {
+				tm := map[string]string{}
+				for i, key := range []string{"low", "mid", "high"} {
+					if diceTiers[i] != "" {
+						tm[key] = diceTiers[i]
+					}
+				}
+				f.PowerRoll = &sbPowerRoll{Formula: diceFormula, Tiers: tm}
+				haveFirstRoll = true
+			}
+			continue
+		}
+
+		// Labeled paragraph → cost enhancement (2 Malice / Spend …) or a titled
+		// Effect / Trigger / Special section. Recorded on the feature (full data
+		// fidelity) AND on Post (render order).
+		if m := labelRe.FindStringSubmatch(tp); m != nil {
+			label := strings.TrimSpace(m[1])
+			text := collapseLines(m[2])
+			if sbCostLabelRe.MatchString(linkText(label)) {
+				f.Enhancements = append(f.Enhancements, sbEnh{Cost: label, Text: text})
+				e := &f.Enhancements[len(f.Enhancements)-1]
+				f.Post = append(f.Post, sbPostBlock{Enhancement: e})
+			} else {
+				f.Sections = append(f.Sections, sbSection{Label: label, Text: text})
+				s := &f.Sections[len(f.Sections)-1]
+				f.Post = append(f.Post, sbPostBlock{Section: s})
+			}
+			lastParaText = text
+			continue
+		}
+
+		// Unlabeled prose joins Post as its own paragraph so a later roll can slot
+		// in between two of them.
+		collapsed := collapseLines(tp)
+		lastParaText = collapsed
+		f.Post = append(f.Post, sbPostBlock{Prose: collapsed})
+	}
+
+	if !tableSeen {
+		// No keyword/usage table → a passive trait (multi-roll traits don't occur
+		// in the corpus; stay consistent with the single-list path regardless).
+		f.Kind, f.Action = "passive", "passive"
+		return f, true
+	}
+
+	f.Action, f.Kind = sbActionKind(usage, f.Cost)
+	if usage != "" && usage != "-" {
+		f.Usage = usage
 	}
 	return f, true
 }

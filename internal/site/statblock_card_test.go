@@ -273,9 +273,9 @@ func TestRenderStatblockHead_SixSlot(t *testing.T) {
 
 func TestStatblockKindNoun(t *testing.T) {
 	cases := map[string]string{
-		"mcdm.monsters.v1/monster.goblin.statblock/cutter":              "Monster",
+		"mcdm.monsters.v1/monster.goblin.statblock/cutter":               "Monster",
 		"mcdm.beastheart.v1/monster.companion.beastheart.statblock/wolf": "Companion",
-		"mcdm.monsters.v1/monster.retainer.statblock/squire":            "Retainer",
+		"mcdm.monsters.v1/monster.retainer.statblock/squire":             "Retainer",
 		"mcdm.summoner.v1/monster.minion.summoner.fire.statblock/x":      "Summon",
 	}
 	for scc, want := range cases {
@@ -315,5 +315,84 @@ func TestStatblockFeature_SixSlotHead(t *testing.T) {
 		if strings.Contains(head, notWant) {
 			t.Errorf("head should not contain %q:\n%s", notWant, head)
 		}
+	}
+}
+
+// snackiesPage is the Wode Hag's "Snackies for Sweeties" villain action
+// (SC-308): a labeled poison-damage roll, an Effect section, a Special section
+// naming an "Agility test", and a header-less second tier list with the PC
+// outcomes. Before the fix the second list silently overwrote the first.
+const snackiesPage = `---
+name: Wode Hag
+organization: Solo
+role: Controller
+level: "5"
+ev: "56"
+size: 1M
+speed: 5
+stamina: "100"
+stability: "1"
+free_strike: "3"
+might: "0"
+agility: "2"
+reason: "1"
+intuition: "1"
+presence: "2"
+type: statblock
+---
+
+> ☠️ **Snackies for Sweeties (Villain Action 1)**
+>
+> | **Area, Magic** |                            **-** |
+> |-----------------|---------------------------------:|
+> | **📏 5 burst**  | **🎯 Each creature in the area** |
+>
+> **Effect:** The hag attaches an ornate explosive pastry to each target who has A < 2. At the end of the round, the hag makes one power roll against each creature with a pastry attached to them.
+>
+> **Power Roll + 3:**
+>
+> - **≤11:** 6 poison damage
+> - **12-16:** 10 poison damage
+> - **17+:** 13 poison damage
+>
+> **Special:** A creature wearing a pastry or adjacent to a creature wearing a pastry can attempt an **Agility test** to remove the pastry as a maneuver.
+>
+> - **≤11:** The hag makes the power roll for all pastries.
+> - **12-16:** The pastry is not removed.
+> - **17+:** The pastry is removed and can no longer explode.
+`
+
+// TestStatblockCard_MultiRoll_Snackies locks the SC-308 fix end to end: the
+// rendered card must show BOTH tier tables — the poison-damage roll in the
+// first .sc-ability__pr and an "Agility Test" head (pre span, no chars span)
+// on the second — with the Special section between them, in that DOM order.
+func TestStatblockCard_MultiRoll_Snackies(t *testing.T) {
+	got := renderStatblockCard(islandFor(snackiesPage))
+
+	firstPR := strings.Index(got, `<div class="sc-ability__pr">`)
+	poisonIdx := strings.Index(got, "6 poison damage")
+	specialIdx := strings.Index(got, `<span class="tag">Special</span>`)
+	agilityHeadIdx := strings.Index(got, `<span class="pre">Agility Test</span>`)
+	secondPanelStart := strings.LastIndex(got[:agilityHeadIdx], `<div class="sc-ability__pr">`)
+	pcOutcomeIdx := strings.Index(got, "The hag makes the power roll for all pastries.")
+
+	for name, idx := range map[string]int{
+		"first .sc-ability__pr": firstPR, "poison damage tier": poisonIdx,
+		"Special section tag": specialIdx, "Agility Test head": agilityHeadIdx,
+		"second .sc-ability__pr": secondPanelStart, "PC test outcome tier": pcOutcomeIdx,
+	} {
+		if idx < 0 {
+			t.Fatalf("missing %s in:\n%s", name, got)
+		}
+	}
+	if !(firstPR < poisonIdx && poisonIdx < specialIdx && specialIdx < secondPanelStart &&
+		secondPanelStart < agilityHeadIdx && agilityHeadIdx < pcOutcomeIdx) {
+		t.Errorf("wrong DOM order (want: first pr < poison tier < Special < second pr < Agility Test head < PC outcome):\n%s", got)
+	}
+	// The derived-label head reuses the existing pr-head markup with the label
+	// in the `pre` span and no `chars` span (no new CSS class).
+	secondHead := got[secondPanelStart:agilityHeadIdx] + `<span class="pre">Agility Test</span></div>`
+	if strings.Contains(secondHead, `class="chars"`) {
+		t.Errorf("derived-label head should have no chars span:\n%s", secondHead)
 	}
 }

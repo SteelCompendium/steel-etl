@@ -35,6 +35,7 @@ import (
 // ── frontmatter shape (mirrors featureblock.schema.json) ──
 type fbPowerRoll struct {
 	Formula string            `yaml:"formula"`
+	Label   string            `yaml:"label,omitempty"`
 	Tiers   map[string]string `yaml:"tiers"`
 }
 type fbSection struct {
@@ -45,22 +46,36 @@ type fbEnh struct {
 	Cost string `yaml:"cost"`
 	Text string `yaml:"text"`
 }
+
+// fbPostBlock is one block of a multi-roll feature's Post sequence (SC-308,
+// the `post` frontmatter field) — every section, enhancement, prose
+// paragraph, and later power roll after the first tier list, in document
+// order. Exactly one field is set (YAML round-trips whichever key is
+// present). See renderFbFeat, which walks Post instead of the fixed
+// Sections-then-Trailing-then-Enhancements layout when it is non-empty.
+type fbPostBlock struct {
+	Section     *fbSection   `yaml:"section,omitempty"`
+	Enhancement *fbEnh       `yaml:"enhancement,omitempty"`
+	Prose       string       `yaml:"prose,omitempty"`
+	Roll        *fbPowerRoll `yaml:"roll,omitempty"`
+}
 type fbFeature struct {
-	Icon         string       `yaml:"icon"`
-	Name         string       `yaml:"name"`
-	ID           string       `yaml:"-"` // SC-306: id minted by featID for this rendering pass, not sourced from YAML
-	Cost         string       `yaml:"cost"`
-	Usage        string       `yaml:"usage"`
-	Keywords     []string     `yaml:"keywords"`
-	Distance     string       `yaml:"distance"`
-	Target       string       `yaml:"target"`
-	PowerRoll    *fbPowerRoll `yaml:"power_roll"`
-	Sections     []fbSection  `yaml:"sections"`
-	Enhancements []fbEnh      `yaml:"enhancements"`
-	Intro        string       `yaml:"intro"`
-	Body         string       `yaml:"body"`
-	Trailing     string       `yaml:"trailing"`
-	Level        int          `yaml:"level"`
+	Icon         string        `yaml:"icon"`
+	Name         string        `yaml:"name"`
+	ID           string        `yaml:"-"` // SC-306: id minted by featID for this rendering pass, not sourced from YAML
+	Cost         string        `yaml:"cost"`
+	Usage        string        `yaml:"usage"`
+	Keywords     []string      `yaml:"keywords"`
+	Distance     string        `yaml:"distance"`
+	Target       string        `yaml:"target"`
+	PowerRoll    *fbPowerRoll  `yaml:"power_roll"`
+	Sections     []fbSection   `yaml:"sections"`
+	Enhancements []fbEnh       `yaml:"enhancements"`
+	Intro        string        `yaml:"intro"`
+	Body         string        `yaml:"body"`
+	Trailing     string        `yaml:"trailing"`
+	Level        int           `yaml:"level"`
+	Post         []fbPostBlock `yaml:"post"` // SC-308: render order past the first tier list; see renderFbFeat
 }
 type fbStat struct {
 	Name  string `yaml:"name"`
@@ -125,7 +140,19 @@ func fbFeaturesFromRich(rfs []content.RichFeature) []fbFeature {
 			Level:    r.Level,
 		}
 		if r.PowerRoll != nil {
-			f.PowerRoll = &fbPowerRoll{Formula: r.PowerRoll.Formula, Tiers: r.PowerRoll.Tiers}
+			f.PowerRoll = &fbPowerRoll{Formula: r.PowerRoll.Formula, Label: r.PowerRoll.Label, Tiers: r.PowerRoll.Tiers}
+		}
+		for _, b := range r.Post {
+			switch {
+			case b.Section != nil:
+				f.Post = append(f.Post, fbPostBlock{Section: &fbSection{Label: b.Section.Label, Text: b.Section.Text}})
+			case b.Enhancement != nil:
+				f.Post = append(f.Post, fbPostBlock{Enhancement: &fbEnh{Cost: b.Enhancement.Cost, Text: b.Enhancement.Text}})
+			case b.Roll != nil:
+				f.Post = append(f.Post, fbPostBlock{Roll: &fbPowerRoll{Formula: b.Roll.Formula, Label: b.Roll.Label, Tiers: b.Roll.Tiers}})
+			case b.Prose != "":
+				f.Post = append(f.Post, fbPostBlock{Prose: b.Prose})
+			}
 		}
 		for _, s := range r.Sections {
 			f.Sections = append(f.Sections, fbSection{Label: s.Label, Text: s.Text})
@@ -441,6 +468,34 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 		b.WriteString(fbPowerRollHTML(*f.PowerRoll))
 	}
 
+	if len(f.Post) > 0 {
+		// SC-308: a multi-roll feature — walk everything after the first roll in
+		// document order (sections/enhancements/prose/later rolls interleaved)
+		// instead of the fixed Sections-then-Enhancements-then-Body/Trailing
+		// layout below, so a later tier table renders immediately after
+		// whatever block it follows in the source.
+		for _, blk := range f.Post {
+			switch {
+			case blk.Section != nil:
+				b.WriteString("<div class=\"sc-ability__section\">")
+				if l := strings.TrimSpace(blk.Section.Label); l != "" {
+					fmt.Fprintf(b, "<div class=\"sc-ability__section-head\"><span class=\"sc-ability__dia\"></span><span class=\"tag\">%s</span></div>", html.EscapeString(l))
+				}
+				fmt.Fprintf(b, "<div class=\"sc-ability__section-body\">%s</div>", renderSectionBlock(strings.TrimSpace(blk.Section.Text)))
+				b.WriteString("</div>\n")
+			case blk.Enhancement != nil:
+				fmt.Fprintf(b, "<div class=\"sc-ability__enh\"><span class=\"cost\">%s</span><span class=\"txt\">%s</span></div>\n",
+					html.EscapeString(strings.TrimSpace(blk.Enhancement.Cost)), richInline(strings.TrimSpace(blk.Enhancement.Text)))
+			case blk.Roll != nil:
+				b.WriteString(fbPowerRollHTML(*blk.Roll))
+			case blk.Prose != "":
+				fmt.Fprintf(b, "<div class=\"fb__feat-trailing\">%s</div>\n", richInline(blk.Prose))
+			}
+		}
+		b.WriteString("</article>\n")
+		return
+	}
+
 	// titled sections (Effect / Trigger / Special …)
 	for _, s := range f.Sections {
 		b.WriteString("<div class=\"sc-ability__section\">")
@@ -477,8 +532,15 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 func fbPowerRollHTML(pr fbPowerRoll) string {
 	var b strings.Builder
 	b.WriteString("<div class=\"sc-ability__pr\">")
-	if f := strings.TrimSpace(pr.Formula); f != "" {
-		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">Power Roll</span><span class=\"chars\">%s</span></div>", richInline(f))
+	switch {
+	case strings.TrimSpace(pr.Formula) != "":
+		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">Power Roll</span><span class=\"chars\">%s</span></div>", richInline(strings.TrimSpace(pr.Formula)))
+	case strings.TrimSpace(pr.Label) != "":
+		// SC-308: a header-less roll with a label derived from the nearest
+		// preceding "**<Characteristic> test**" phrase ("Agility Test") — the
+		// label goes in the `pre` span alone, no `chars` span, reusing the
+		// existing .sc-ability__pr-head markup.
+		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">%s</span></div>", html.EscapeString(strings.TrimSpace(pr.Label)))
 	}
 	b.WriteString("<div class=\"sc-ability__pr-rows\">")
 	for i := 0; i < 3; i++ {

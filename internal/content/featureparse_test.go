@@ -286,10 +286,10 @@ func TestRichFeature_ToMap(t *testing.T) {
 		Icon: "🔳", Name: "Upchuck", Cost: "5 Malice", Usage: "Main action",
 		Keywords: []string{"Area", "Weapon"},
 		Distance: "3 cube within 10", Target: "Each enemy in the area",
-		PowerRoll: &RichPowerRoll{Formula: "+ 2", Tiers: map[string]string{"low": "4 damage"}},
-		Sections:  []RichSection{{Label: "Effect", Text: "Spits a stone."}},
+		PowerRoll:    &RichPowerRoll{Formula: "+ 2", Tiers: map[string]string{"low": "4 damage"}},
+		Sections:     []RichSection{{Label: "Effect", Text: "Spits a stone."}},
 		Enhancements: []RichEnhancement{{Cost: "2 Malice", Text: "More."}},
-		Level: 5,
+		Level:        5,
 	}
 	m := f.ToMap()
 	if m["name"] != "Upchuck" || m["icon"] != "🔳" || m["cost"] != "5 Malice" {
@@ -318,5 +318,228 @@ func TestRichFeature_ToMap(t *testing.T) {
 	}
 	if mm["body"] != "Text." {
 		t.Errorf("body = %v", mm["body"])
+	}
+}
+
+// --- SC-308: multi-roll features (a second, later tier list must not silently
+// overwrite the first) ---
+
+// Snackies-shaped: a labeled roll, then a Special section whose prose names an
+// "Agility test", then a header-less second list. Both rolls must survive, the
+// first keeping its usual PowerRoll slot, and the second recorded in Post
+// (labeled "Agility Test", derived from the Special section it follows)
+// immediately after that Special section — not overwriting the first.
+func TestParseRichFeatures_MultiRoll_Snackies(t *testing.T) {
+	body := "> ☠️ **Snackies for Sweeties (Villain Action 1)**\n" +
+		">\n" +
+		"> | **Area, Magic** |                            **-** |\n" +
+		"> |-----------------|---------------------------------:|\n" +
+		"> | **📏 5 burst**  | **🎯 Each creature in the area** |\n" +
+		">\n" +
+		"> **Effect:** The hag attaches an ornate explosive pastry to each target.\n" +
+		">\n" +
+		"> **Power Roll + 3:**\n" +
+		">\n" +
+		"> - **≤11:** 6 poison damage\n" +
+		"> - **12-16:** 10 poison damage\n" +
+		"> - **17+:** 13 poison damage\n" +
+		">\n" +
+		"> **Special:** A creature wearing a pastry can attempt an **Agility test** to remove the pastry as a maneuver.\n" +
+		">\n" +
+		"> - **≤11:** The hag makes the power roll for all pastries.\n" +
+		"> - **12-16:** The pastry is not removed.\n" +
+		"> - **17+:** The pastry is removed and can no longer explode.\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+
+	if f.PowerRoll == nil || f.PowerRoll.Formula != "+ 3" || f.PowerRoll.Tiers["low"] != "6 poison damage" {
+		t.Fatalf("first PowerRoll = %+v, want formula '+ 3' with the poison tiers", f.PowerRoll)
+	}
+	if f.PowerRoll.Label != "" {
+		t.Errorf("first PowerRoll.Label = %q, want empty (it has its own header)", f.PowerRoll.Label)
+	}
+
+	// Post must be [Effect section, Special section, second roll] in document
+	// order — the second roll attached immediately after the Special section it
+	// follows (not the Effect section, which precedes the first roll).
+	if len(f.Post) != 3 {
+		t.Fatalf("Post = %+v, want 3 blocks (Effect section, Special section, second roll)", f.Post)
+	}
+	if f.Post[0].Section == nil || f.Post[0].Section.Label != "Effect" {
+		t.Fatalf("Post[0] = %+v, want the Effect section", f.Post[0])
+	}
+	if f.Post[1].Section == nil || f.Post[1].Section.Label != "Special" {
+		t.Fatalf("Post[1] = %+v, want the Special section", f.Post[1])
+	}
+	second := f.Post[2].Roll
+	if second == nil {
+		t.Fatalf("Post[2] = %+v, want the second roll", f.Post[2])
+	}
+	if second.Label != "Agility Test" {
+		t.Errorf("second roll Label = %q, want 'Agility Test'", second.Label)
+	}
+	if second.Formula != "" {
+		t.Errorf("second roll Formula = %q, want empty (header-less)", second.Formula)
+	}
+	if second.Tiers["low"] != "The hag makes the power roll for all pastries." {
+		t.Errorf("second roll tiers = %+v", second.Tiers)
+	}
+
+	// ToMap must carry both: the first roll under power_roll, the second inside
+	// the ordered `post` sequence (SC-308) — nothing silently dropped.
+	m := f.ToMap()
+	post, ok := m["post"].([]map[string]any)
+	if !ok || len(post) != 3 {
+		t.Fatalf("ToMap post = %+v, want 3 entries", m["post"])
+	}
+	roll2, ok := post[2]["roll"].(map[string]any)
+	if !ok || roll2["label"] != "Agility Test" {
+		t.Fatalf("ToMap post[2].roll = %+v, want label 'Agility Test'", post[2]["roll"])
+	}
+}
+
+// No Escape-shaped: two LABELED power rolls (each its own "**Power Roll + N:**"
+// header) with a bare prose paragraph between them. Neither roll derives a
+// label from prose (both already have an explicit header); the prose lands in
+// Post between the two rolls, matching document order.
+func TestParseRichFeatures_MultiRoll_NoEscape(t *testing.T) {
+	body := "> ☠️ **No Escape (Villain Action 3)**\n" +
+		">\n" +
+		"> | **Ranged**       |                           **-** |\n" +
+		"> |------------------|--------------------------------:|\n" +
+		"> | **📏 Ranged 10** | **🎯 Two creatures or objects** |\n" +
+		">\n" +
+		"> **Effect:** The cryptic makes an initial power roll that calls down stone pillars from the ceiling.\n" +
+		">\n" +
+		"> **Power Roll + 3:**\n" +
+		">\n" +
+		"> - **≤11:** 5 damage; prone\n" +
+		"> - **12-16:** 9 damage; prone\n" +
+		"> - **17+:** 12 damage; prone\n" +
+		">\n" +
+		"> The cryptic then makes a second power roll that raises stone pillars from the floor.\n" +
+		">\n" +
+		"> **Power Roll + 3:**\n" +
+		">\n" +
+		"> - **≤11:** 2 damage; vertical slide 2\n" +
+		"> - **12-16:** 3 damage; vertical slide 4\n" +
+		"> - **17+:** 4 damage; vertical slide 6\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+
+	if f.PowerRoll == nil || f.PowerRoll.Tiers["low"] != "5 damage; prone" {
+		t.Fatalf("first PowerRoll = %+v", f.PowerRoll)
+	}
+	if len(f.Post) != 3 {
+		t.Fatalf("Post = %+v, want 3 blocks (Effect section, prose, second roll)", f.Post)
+	}
+	if f.Post[0].Section == nil || f.Post[0].Section.Label != "Effect" {
+		t.Fatalf("Post[0] = %+v, want the Effect section", f.Post[0])
+	}
+	if f.Post[1].Prose == "" {
+		t.Fatalf("Post[1] = %+v, want the prose paragraph between the two rolls", f.Post[1])
+	}
+	second := f.Post[2].Roll
+	if second == nil {
+		t.Fatalf("Post[2] = %+v, want the second roll", f.Post[2])
+	}
+	if second.Formula != "+ 3" {
+		t.Errorf("second roll Formula = %q, want '+ 3' (it has its own header)", second.Formula)
+	}
+	if second.Label != "" {
+		t.Errorf("second roll Label = %q, want empty (a headered roll doesn't derive a label)", second.Label)
+	}
+	if second.Tiers["low"] != "2 damage; vertical slide 2" {
+		t.Errorf("second roll tiers = %+v", second.Tiers)
+	}
+}
+
+// Roll-the-Wheel-shaped: a labeled first roll, then a bare second list with no
+// preceding "**<Characteristic> test**" phrase — it must render bare (no
+// derived label), per the existing bare-test convention.
+func TestParseRichFeatures_MultiRoll_BareSecondPanel(t *testing.T) {
+	body := "> 🌀 **Roll the Wheel**\n" +
+		">\n" +
+		"> | **Area**       |                  **Main action** |\n" +
+		"> |----------------|----------------------------------:|\n" +
+		"> | **📏 Special** | **🎯 Each creature in the area** |\n" +
+		">\n" +
+		"> **Effect:** The wheel rolls, moving 2 squares in a straight line.\n" +
+		">\n" +
+		"> **Power Roll + 2:**\n" +
+		">\n" +
+		"> - **≤11:** 5 damage; push 1\n" +
+		"> - **12-16:** 9 damage; push 2\n" +
+		"> - **17+:** 12 damage; push 3\n" +
+		">\n" +
+		"> If the wheel is reduced to 0 Stamina, its movement stops and it explodes.\n" +
+		">\n" +
+		"> - **≤11:** 5 damage; push 1\n" +
+		"> - **12-16:** 9 damage; push 2\n" +
+		"> - **17+:** 12 damage; push 3\n" +
+		">\n" +
+		"> A burning creature takes 1d6 fire damage at the start of each of their turns.\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+
+	if len(f.Post) != 4 {
+		t.Fatalf("Post = %+v, want 4 blocks (Effect section, prose, second roll, prose)", f.Post)
+	}
+	second := f.Post[2].Roll
+	if second == nil {
+		t.Fatalf("Post[2] = %+v, want the second roll", f.Post[2])
+	}
+	if second.Label != "" || second.Formula != "" {
+		t.Errorf("second roll = %+v, want fully bare (no preceding test phrase to derive from)", second)
+	}
+}
+
+// Overpower-shaped: no spec table at all; BOTH tier lists are header-less,
+// each preceded by its own prose paragraph naming "**Reason test**". Both
+// rolls derive the same label — the first keeps its PowerRoll slot (with the
+// derived label, since the ruling doesn't exempt the first list of a
+// multi-list feature), the second lands in Post.
+func TestParseRichFeatures_MultiRoll_Overpower(t *testing.T) {
+	body := "> 🌀 **Overpower (7 Malice)**\n" +
+		">\n" +
+		"> Lord Syuul sends out a psionic burst. He makes a **Reason test** (2d10 + 4).\n" +
+		">\n" +
+		"> - **≤11:** Lord Syuul has damage weakness 5.\n" +
+		"> - **12-16:** Lord Syuul has damage immunity 2.\n" +
+		"> - **17+:** Lord Syuul has damage immunity 5.\n" +
+		">\n" +
+		"> Whenever an Overpower effect is active, a hero can push back by making a **Reason test**.\n" +
+		">\n" +
+		"> - **≤11:** Lord Syuul has damage immunity 5.\n" +
+		"> - **12-16:** Lord Syuul has damage immunity 2.\n" +
+		"> - **17+:** Lord Syuul has damage weakness 5.\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+
+	if f.PowerRoll == nil || f.PowerRoll.Label != "Reason Test" {
+		t.Fatalf("first PowerRoll = %+v, want Label 'Reason Test'", f.PowerRoll)
+	}
+	if want := "Lord Syuul sends out a psionic burst. He makes a **Reason test** (2d10 + 4)."; f.Intro != want {
+		t.Errorf("Intro = %q, want %q", f.Intro, want)
+	}
+	// Post = [prose lead-in to the second test, second roll].
+	if len(f.Post) != 2 || f.Post[1].Roll == nil || f.Post[1].Roll.Label != "Reason Test" {
+		t.Fatalf("Post = %+v, want [prose, second roll labeled 'Reason Test']", f.Post)
 	}
 }

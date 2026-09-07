@@ -97,6 +97,34 @@ func renderStatblockSpecField(mod, label, valueHTML string) string {
 		sbEsc(label) + `</span><span class="sb__field-v">` + valueHTML + `</span></div>`
 }
 
+// renderStatblockPowerRoll renders one .sc-ability__pr panel: a headered roll
+// ("Power Roll" + formula, e.g. "+ 3"), a header-less roll with a derived
+// label (SC-308 — "Agility Test", pre span only, no chars span, reusing the
+// existing .sc-ability__pr-head markup), or a fully bare panel (no head at
+// all) when neither is set — the pre-existing convention for a header-less
+// test result with no derivable characteristic.
+func renderStatblockPowerRoll(dia string, pr *sbPowerRoll) string {
+	var b strings.Builder
+	b.WriteString(`<div class="sc-ability__pr">`)
+	switch {
+	case pr.Formula != "":
+		b.WriteString(`<div class="sc-ability__pr-head">` + dia +
+			`<span class="pre">Power Roll</span><span class="chars">` + sbEsc(pr.Formula) + `</span></div>`)
+	case pr.Label != "":
+		b.WriteString(`<div class="sc-ability__pr-head">` + dia +
+			`<span class="pre">` + sbEsc(pr.Label) + `</span></div>`)
+	}
+	b.WriteString(`<div class="sc-ability__pr-rows">`)
+	for _, t := range []string{"low", "mid", "high"} {
+		if v, ok := pr.Tiers[t]; ok { // map only holds non-empty tiers; mirrors JS != null
+			b.WriteString(`<div class="sc-ability__tier" data-tier="` + t + `"><span class="badge">` +
+				sbTierGlyph[t] + `</span><span class="res">` + richSb(v) + `</span></div>`)
+		}
+	}
+	b.WriteString(`</div></div>`)
+	return b.String()
+}
+
 // renderStatblockFeature ports renderFeature(): the flattened steel feature article.
 func renderStatblockFeature(f sbFeature) string {
 	a, ok := sbACT[f.Action]
@@ -162,19 +190,32 @@ func renderStatblockFeature(f sbFeature) string {
 
 	// power roll
 	if f.PowerRoll != nil {
-		b.WriteString(`<div class="sc-ability__pr">`)
-		if f.PowerRoll.Formula != "" {
-			b.WriteString(`<div class="sc-ability__pr-head">` + dia +
-				`<span class="pre">Power Roll</span><span class="chars">` + sbEsc(f.PowerRoll.Formula) + `</span></div>`)
-		}
-		b.WriteString(`<div class="sc-ability__pr-rows">`)
-		for _, t := range []string{"low", "mid", "high"} {
-			if v, ok := f.PowerRoll.Tiers[t]; ok { // map only holds non-empty tiers; mirrors JS != null
-				b.WriteString(`<div class="sc-ability__tier" data-tier="` + t + `"><span class="badge">` +
-					sbTierGlyph[t] + `</span><span class="res">` + richSb(v) + `</span></div>`)
+		b.WriteString(renderStatblockPowerRoll(dia, f.PowerRoll))
+	}
+
+	if len(f.Post) > 0 {
+		// SC-308: a multi-roll feature — walk everything after the first roll in
+		// document order (sections/enhancements/prose/later rolls interleaved)
+		// instead of the fixed Sections-then-Trailing-then-Enhancements layout
+		// below, so a later tier table renders immediately after whatever block
+		// it follows in the source.
+		for _, blk := range f.Post {
+			switch {
+			case blk.Section != nil:
+				b.WriteString(`<div class="sc-ability__section"><div class="sc-ability__section-head">` + dia +
+					`<span class="tag">` + richSb(blk.Section.Label) + `</span></div><div class="sc-ability__section-body"><p>` +
+					richSb(blk.Section.Text) + `</p></div></div>`)
+			case blk.Enhancement != nil:
+				b.WriteString(`<div class="sc-ability__enh"><span class="cost">` + richSb(blk.Enhancement.Cost) +
+					`</span><span class="txt">` + richSb(blk.Enhancement.Text) + `</span></div>`)
+			case blk.Roll != nil:
+				b.WriteString(renderStatblockPowerRoll(dia, blk.Roll))
+			case blk.Prose != "":
+				b.WriteString(`<p class="sb__feat-trailing">` + richSb(blk.Prose) + `</p>`)
 			}
 		}
-		b.WriteString(`</div></div>`)
+		b.WriteString(`</article>`)
+		return b.String()
 	}
 
 	// sections (Trigger / Effect / Special)

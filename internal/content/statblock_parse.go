@@ -331,6 +331,25 @@ func parseOneFeature(block string) map[string]any {
 		f["usage"] = stripBold(rows[0][1])
 	}
 
+	// SC-308: a feature with more than one tier list (Snackies for Sweeties'
+	// poison-damage roll AND its header-less Agility-test outcomes, e.g.) needs
+	// every roll kept, in order, instead of the single `tiers` map below letting
+	// each new list overwrite the last. Pre-count "≤11:" lines (one per list) so
+	// the ORIGINAL single-roll algorithm runs unchanged for every other feature.
+	tierListTotal := 0
+	for _, line := range rest {
+		if tm := sbTierRe.FindStringSubmatch(strings.TrimSpace(line)); tm != nil && strings.HasPrefix(tm[1], "≤") {
+			tierListTotal++
+		}
+	}
+
+	if tierListTotal > 1 {
+		if effects := parseStatblockEffectsMulti(rest, diceRoll); len(effects) > 0 {
+			f["effects"] = effects
+		}
+		return f
+	}
+
 	// Effects: power-roll tiers or plain trait text.
 	tiers := map[string]string{}
 	var prose []string
@@ -389,6 +408,86 @@ func parseOneFeature(block string) map[string]any {
 	}
 
 	return f
+}
+
+// parseStatblockEffectsMulti builds the SDK `effects[]` roll entries for a
+// feature with MORE THAN ONE tier list (SC-308): one {roll, tier1..3} map per
+// list, in document order — the pre-existing single-roll shape and its
+// Effect/Special/enhancement prose loss (SC-309, out of scope here) are
+// otherwise unchanged. A header-less list (no preceding "**Power Roll + N:**")
+// derives its `roll` label from the nearest preceding line's bold
+// "**<Characteristic> test**" phrase (DeriveTestLabel); with no such phrase it
+// stays "" (bare), matching the single-list convention.
+func parseStatblockEffectsMulti(rest []string, diceRoll string) []map[string]any {
+	type rollTiers struct {
+		roll  string
+		tiers map[string]string
+	}
+	var effects []rollTiers
+	var cur *rollTiers
+	flush := func() {
+		if cur != nil {
+			effects = append(effects, *cur)
+			cur = nil
+		}
+	}
+
+	pendingRoll := diceRoll // a header's label, seen but not yet attached to a list
+	lastLine := ""
+	for _, line := range rest {
+		t := strings.TrimSpace(line)
+		if pr := sbPowerRollRe.FindStringSubmatch(t); pr != nil {
+			pendingRoll = strings.TrimSuffix(strings.TrimSpace(linkDisplay(pr[1])), ":")
+			continue
+		}
+		if tm := sbTierRe.FindStringSubmatch(t); tm != nil {
+			var key string
+			switch {
+			case strings.HasPrefix(tm[1], "≤"):
+				key = "tier1"
+			case strings.Contains(tm[1], "-"):
+				key = "tier2"
+			case strings.HasSuffix(tm[1], "+"):
+				key = "tier3"
+			default:
+				continue
+			}
+			exists := false
+			if cur != nil {
+				_, exists = cur.tiers[key]
+			}
+			if cur == nil || exists {
+				// Either the very first list, or this key is already filled on the
+				// in-progress roll (a new list has begun). Flush the finished one
+				// and start fresh: an explicit header seen since the last flush
+				// wins; otherwise derive a label from the nearest preceding line.
+				flush()
+				label := pendingRoll
+				if label == "" {
+					label = DeriveTestLabel(lastLine)
+				}
+				cur = &rollTiers{roll: label, tiers: map[string]string{}}
+				pendingRoll = ""
+			}
+			cur.tiers[key] = strings.TrimSpace(tm[2])
+			continue
+		}
+		if t == "" || strings.HasPrefix(t, "|") {
+			continue
+		}
+		lastLine = t
+	}
+	flush()
+
+	out := make([]map[string]any, 0, len(effects))
+	for _, e := range effects {
+		eff := map[string]any{"roll": e.roll}
+		for k, v := range e.tiers {
+			eff[k] = v
+		}
+		out = append(out, eff)
+	}
+	return out
 }
 
 // featureTableRows extracts non-separator markdown table rows (2 cells each).
