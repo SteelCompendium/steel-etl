@@ -106,56 +106,100 @@ with `STEEL_UPDATE_GOLDEN=1` after an intentional DOM change; inputs under
 Design: workspace `docs/superpowers/specs/2026-06-14-statblock-build-time-render-design.md`
 (cross-repo spec, so it lives at the workspace root, not under `steel-etl/`).
 
-Power rolls come in **two forms**, both extracted to `effects.roll/tier1-3`: the
-Monsters labeled form (`**Power Roll + N:**` + `- **≤11:** …` bullets) and the
-**summoner dice-in-title form** (`🏹 **Name Nd10 + <char>**` followed by three bare
-digit-led tier lines) — `sbDiceRe` lifts the dice from the title into `roll` and cleans
-`name`, and the bare lines map to `tier1/2/3` by position.
+Power rolls come in **two forms**: the Monsters labeled form (`**Power Roll + N:**` +
+`- **≤11:** …` bullets) and the **summoner dice-in-title form** (`🏹 **Name Nd10 +
+<char>**` followed by three bare digit-led tier lines) — `sbDiceRe` lifts the dice from
+the title into `roll` and cleans `name`, and the bare lines map to `tier1/2/3` by
+position.
 
-**A feature can carry MORE THAN ONE tier list** (SC-308 — the Wode Hag's "Snackies
-for Sweeties" bug: the pastry-explosion `**Power Roll + 3:**` and a second, header-less
-`≤11/12-16/17+` list giving the PC's Agility-test outcomes for removing the pastry).
-All three parsers that walk a feature's tiers pre-count the `- **≤11:** …` lists in the
-block; with two or more, they switch from the single `[3]string`/`tiers` map that a
-later list would silently overwrite onto an ordered path that keeps every list — the
-overwhelming majority of features (zero or one list) run the **original, untouched**
-algorithm, so existing output stays byte-identical:
+### The `effects[]` list is the authoritative body order (SC-308 round 3b, folds SC-309)
 
-- `internal/content/featureparse.go` (`parseRichFeature` → `parseRichFeatureMulti`,
-  featureblock/dynamic-terrain): the FIRST roll still lands in `RichFeature.PowerRoll`
-  (same card slot as ever, right after Distance/Target); every later block — sections,
-  enhancements, bare prose, and every later roll — is ALSO recorded in the new
-  `RichFeature.Post` (Go) / `post` (ToMap/schema) ordered sequence, in document order, so
-  a later tier table renders immediately after whatever it follows in the source (a
-  Special section, a prose paragraph, …) instead of the fixed
-  Sections-then-Trailing-then-Enhancements layout the single-roll path uses.
-  `internal/site/featureblock_page.go`'s `renderFbFeat` walks `Post` (round-tripped
-  through the page's YAML frontmatter) when it is non-empty, in place of that fixed
-  layout.
-- `internal/site/statblock_page.go` (`parseStatblockIslandFeature` →
-  `parseStatblockIslandFeatureMulti`, the `type: statblock` site card): the same
-  first-roll-plus-ordered-`Post` shape, parsed straight from the page body (no YAML
-  round-trip) and rendered by `statblock_card.go`'s `renderStatblockFeature`.
-- `internal/content/statblock_parse.go` (`parseOneFeature` → `parseStatblockEffectsMulti`,
-  the `type: statblock` JSON/YAML `effects[]`): one `{roll, tier1-3}` map per list, in
-  document order — the pre-existing loss of Effect/Special/enhancement prose from this
-  data path when tiers are present (SC-309) is unchanged; this only stops a later list
-  from overwriting an earlier one.
+A feature's body is an **ordered list of entries** — the SDK `feature.schema.json`
+`effect` shape (`definitions.effect`): `{name?, cost?, effect?, roll?, tier1-3?}`. One
+entry per labeled section (`**Effect:**`, `**Special:**`, `**Trigger:**`, …), cost
+enhancement (`**3 Malice:**`), or bare prose paragraph, **in exact document order** —
+the fix for the Wode Hag's "Snackies for Sweeties" bug (a second, header-less tier list
+used to silently overwrite the first) generalizes to a universal rule: **nothing ever
+hoists above what precedes it in the source**, single-roll features included.
 
-**Label rule for a header-less tier list** (no preceding `**Power Roll + N:**`): derive
-the head from a bold `**<Characteristic> test**` phrase (Might/Agility/Reason/Intuition/
-Presence, case-insensitive, tolerant of a link-wrapped characteristic —
-`**[Agility](scc:…) test**`) in the nearest preceding paragraph — "Agility Test",
-"Reason Test", … — via `content.DeriveTestLabel`, shared by all three parsers above. When
-a paragraph names more than one characteristic (e.g. "makes either a **Might test** or an
-**Agility test**"), the LAST one wins — it's the one nearest the tier list that follows;
-no corpus instance hits this today. No matching phrase at all → the panel renders fully
-bare (no head at all), the pre-existing single-list convention. The label only ever applies within a feature that has more than
-one tier list — a lone bare list (the common case, e.g. Pavise Shield's Deactivate)
-is untouched even when a "test" phrase happens to precede it. `RichPowerRoll`/
-`sbPowerRoll`/`fbPowerRoll` carry the label in a `Label` field distinct from `Formula`;
-the render reuses the existing `.sc-ability__pr-head` markup with the label alone in the
-`pre` span (no `chars` span) rather than adding a class.
+**Attachment rule.** A tier list — headered (`**Power Roll + N:**`) or not — attaches to
+the entry created by the paragraph immediately before it (a labeled section, a cost
+enhancement, or bare prose), becoming that entry's `roll`/`tier1-3`. A tier list with
+nothing eligible before it (right after the spec table, or after an entry that already
+consumed a roll) becomes its own `{roll, tier1-3}` entry — the pre-existing, unchanged
+shape for the common single-roll-right-after-the-table case (e.g. Corrosive Claws).
+Concretely, Snackies for Sweeties becomes:
+
+```yaml
+effects:
+  - name: Effect
+    effect: The hag attaches an ornate explosive pastry to each target who has A < 2. …
+    roll: Power Roll + 3
+    tier1: 6 poison damage
+    tier2: 10 poison damage
+    tier3: 13 poison damage
+  - name: Special
+    effect: A creature wearing a pastry … can attempt an **Agility test** to remove it …
+    tier1: The hag makes the power roll for all pastries.
+    tier2: The pastry is not removed.
+    tier3: The pastry is removed and can no longer explode.
+```
+
+**`roll`'s data value** is the `**Power Roll + N:**` header text verbatim
+(`"Power Roll + 3"`) when the source had one; **omitted entirely** for a header-less
+list — never a stored label. The site derives the display head for a header-less panel
+at RENDER time only, from a bold `**<Characteristic> test**` phrase
+(Might/Agility/Reason/Intuition/Presence, case-insensitive, tolerant of a link-wrapped
+characteristic) in **that same entry's own `effect` text** (`content.DeriveTestLabel`) —
+"Agility Test" for Special above. When a paragraph names more than one characteristic
+(e.g. "makes either a **Might test** or an **Agility test**"), the LAST one wins — it's
+the one nearest the tier list that follows. No matching phrase at all → the panel
+renders fully bare (no head at all). The rule applies to every header-less list
+universally now (single- or multi-roll feature alike) — there is no "≥2 lists" gate.
+
+**Trigger routing (statblock only).** `statblock.schema.json`'s `features[]` inherit a
+dedicated top-level `trigger` string from `feature.schema.json`'s own `$ref` (the SDK's
+`MarkdownFeatureWriter` always emits it first, ahead of `effects` — matching every real
+Trigger paragraph's position in the book, always the first paragraph after the spec
+table). `internal/content/statblock_parse.go`'s `parseStatblockEffects` routes a
+`**Trigger:**` paragraph there instead of into `effects[]`. `internal/content/
+featureparse.go`'s `RichFeature` (featureblock/dynamic-terrain) has **no such top-level
+field** in its schema, so Trigger stays an ordinary named `effects[]` entry there —
+subject to the same attachment rule as any other labeled section (a roll that
+immediately follows it attaches, rendering "Trigger with the Power Roll below/within
+it").
+
+**Three parsers build/render the same model, independently** (SC-311 tracks future
+unification):
+
+- `internal/content/statblock_parse.go` (`parseOneFeature` → `parseStatblockEffects`,
+  the `type: statblock` JSON/YAML `effects[]`) — the data path. SC-309 fold-in: this used
+  to drop Effect/Special/enhancement prose entirely once tiers were present; it now
+  carries the full ordered body.
+- `internal/content/featureparse.go` (`parseRichFeature`, featureblock/dynamic-terrain):
+  builds `RichFeature.Effects` (Go) / `effects` (`ToMap`/schema) as the authoritative
+  order, IN ADDITION TO the pre-existing flat `PowerRoll`/`Sections`/`Enhancements`/
+  `Intro`/`Body`/`Trailing` convenience fields (kept, unordered, for the SDK
+  featureblock schema + its round-trip test). `internal/site/featureblock_page.go`'s
+  `renderFbFeat` walks `Effects` exclusively (round-tripped through the page's YAML
+  frontmatter) — the flat fields are data-only now, not read at render.
+- `internal/site/statblock_page.go` (`parseStatblockIslandFeature`, the `type:
+  statblock` site card): the same ordered-entry model, parsed straight from the page
+  body (no YAML round-trip; `sbFeature.Effects`), rendered by `statblock_card.go`'s
+  `renderStatblockFeature`. `sbEffect.Roll` stays a render-friendly nested
+  `*sbPowerRoll` (label included) rather than the SDK's flat roll-as-string — this type
+  is a pure build-time intermediate, never serialized as data, so labels ARE derived
+  once at parse time here (no "never store the label" constraint applies).
+
+**Render walk (all three renderers).** Each entry renders in order: a named entry gets
+its `.sc-ability__section` (head = name, body = prose) with the tier panel — when
+present — directly below/within that same section container; a nameless entry with
+prose renders the prose paragraph then the panel as siblings; an entry with only
+roll/tiers (nothing preceding it to attach to) renders the panel alone. No hoisting,
+ever — `featureblock_page.go`'s previously-special `.fb__feat-intro` styling is gone
+(`.fb__feat-intro`/`.fb__feat-body`/`.fb__feat-trailing` shared the same base CSS
+declaration; the render class no longer needs to distinguish "before" from "after" the
+first roll, since attachment already places the panel correctly).
 
 **The statblock regexes are hardened against scc link-wrapping** (2026-06-11, when the
 Summoner book became the first link-swept statblock source): `sbDiceRe` accepts a
