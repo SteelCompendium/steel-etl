@@ -492,8 +492,22 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 				b.WriteString(fbEffectRollHTML(e))
 			}
 		case e.Effect != "":
-			fmt.Fprintf(b, "<div class=\"fb__feat-trailing\">%s</div>\n", richInline(strings.TrimSpace(e.Effect)))
-			if e.Roll != "" || e.Tier1 != "" || e.Tier2 != "" || e.Tier3 != "" {
+			// SC-308 review r3, L-2: the attachment rule already merges a tier
+			// list into the SAME entry as the prose it attaches to — so "a
+			// bare-prose entry that precedes the first roll" is now, by
+			// construction, exactly a nameless entry that itself carries a
+			// roll/tier. Keep it `.fb__feat-intro` (its own bottom margin in
+			// steel-featureblock.css) instead of `.fb__feat-trailing`; a
+			// roll-less bare-prose entry (a plain passive's only paragraph, or
+			// trailing prose after a roll already rendered) stays
+			// `.fb__feat-trailing`.
+			hasRoll := e.Roll != "" || e.Tier1 != "" || e.Tier2 != "" || e.Tier3 != ""
+			class := "fb__feat-trailing"
+			if hasRoll {
+				class = "fb__feat-intro"
+			}
+			fmt.Fprintf(b, "<div class=\"%s\">%s</div>\n", class, richInline(strings.TrimSpace(e.Effect)))
+			if hasRoll {
 				b.WriteString(fbEffectRollHTML(e))
 			}
 		default:

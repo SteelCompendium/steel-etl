@@ -335,6 +335,10 @@ func TestRenderFbFeat_DashRailDropped(t *testing.T) {
 // declaration; the render class no longer needs to distinguish before/after,
 // since attachment already places the panel correctly). Regression for
 // Pavise Shield's Deactivate.
+// SC-308 review r3, L-2: a bare-prose entry that carries an attached tier
+// list (the attachment rule already merged them into ONE effects entry) is
+// the lead-in to a test — it renders `.fb__feat-intro` (its own bottom
+// margin in steel-featureblock.css), not `.fb__feat-trailing`.
 func TestRenderFbFeat_ProseWithAttachedRoll(t *testing.T) {
 	feat := fbFeature{
 		Icon: "🌀", Name: "Deactivate",
@@ -344,11 +348,11 @@ func TestRenderFbFeat_ProseWithAttachedRoll(t *testing.T) {
 		}},
 	}
 	s := renderFbFeats([]fbFeature{feat})
-	if strings.Contains(s, "fb__feat-intro") {
-		t.Errorf("no fb__feat-intro class should remain in the SC-308 model:\n%s", s)
+	if !strings.Contains(s, `class="fb__feat-intro">As a maneuver`) {
+		t.Fatalf("missing the lead-in prose paragraph (want .fb__feat-intro) in:\n%s", s)
 	}
-	if !strings.Contains(s, `class="fb__feat-trailing">As a maneuver`) {
-		t.Fatalf("missing the prose paragraph in:\n%s", s)
+	if strings.Contains(s, "fb__feat-trailing") {
+		t.Errorf("this entry has an attached roll — it must not render fb__feat-trailing:\n%s", s)
 	}
 	idxProse := strings.Index(s, "As a maneuver")
 	idxPR := strings.Index(s, `class="sc-ability__pr"`)
@@ -358,6 +362,24 @@ func TestRenderFbFeat_ProseWithAttachedRoll(t *testing.T) {
 	// Header-less: the site derives "Might Test" from this entry's own prose.
 	if !strings.Contains(s, `<span class="pre">Might Test</span>`) {
 		t.Errorf("expected a derived 'Might Test' head in:\n%s", s)
+	}
+}
+
+// A bare-prose entry with NO attached roll (a plain passive's only paragraph,
+// or trailing prose after a roll already rendered) keeps `.fb__feat-trailing`
+// — L-2 only restores `.fb__feat-intro` for an entry that itself carries a
+// tier list.
+func TestRenderFbFeat_RollessProseStaysTrailing(t *testing.T) {
+	feat := fbFeature{
+		Icon: "⭐", Name: "Flavor Text",
+		Effects: []fbEffect{{Effect: "This creature has no roll at all."}},
+	}
+	s := renderFbFeats([]fbFeature{feat})
+	if !strings.Contains(s, `class="fb__feat-trailing">This creature has no roll`) {
+		t.Errorf("roll-less prose should stay fb__feat-trailing:\n%s", s)
+	}
+	if strings.Contains(s, "fb__feat-intro") {
+		t.Errorf("no roll attached — must not render fb__feat-intro:\n%s", s)
 	}
 }
 
