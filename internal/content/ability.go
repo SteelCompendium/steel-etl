@@ -181,7 +181,28 @@ var (
 	// Persistent N, Strained, Special, …) — the label is non-greedy up to the
 	// first ":**", so a colon inside the effect text doesn't truncate it.
 	namedEffectRe = regexp.MustCompile(`^\*\*([^*]+?):\*\*\s*(.+)$`)
+	// A tier-outcome bullet line ("- **≤11:** …"), for extractOrderedEffects
+	// (SC-310). Requires the leading bullet marker — unlike tierRe (used only
+	// once already inside extractPowerRoll's recognized power-roll block) —
+	// so it never misfires on an ordinary "**Label:** text" paragraph.
+	orderedTierLineRe = regexp.MustCompile(`^[-*]\s*\*\*([^*]+):\*\*\s*(.+)$`)
 )
+
+// classifyOrderedTier maps a tier bullet's bold key text to its effects[]
+// field name, mirroring extractPowerRoll's own key matching (≤11/12-16/17+
+// and their "11 or lower"/"12–16"/"17 or higher" spellings).
+func classifyOrderedTier(key string) (string, bool) {
+	switch {
+	case strings.Contains(key, "≤11") || strings.Contains(key, "11 or lower"):
+		return "tier1", true
+	case strings.Contains(key, "12-16") || strings.Contains(key, "12–16"):
+		return "tier2", true
+	case strings.Contains(key, "17+") || strings.Contains(key, "17 or higher"):
+		return "tier3", true
+	default:
+		return "", false
+	}
+}
 
 // extractAbilityFields parses the body text to extract structured fields.
 // Only fills in fields that aren't already set (annotation overrides take precedence).
@@ -228,75 +249,154 @@ func extractAbilityFields(body string, fm map[string]any) {
 	}
 }
 
-// extractOrderedEffects walks the body and builds the complete effects list in
-// document order: the power-roll entry is emitted at the position where its
-// header appears, and every standalone named-effect line ("**<Label>:** <text>")
-// is emitted where it appears. Each entry is shaped to match the SDK effect
-// schema: the power roll becomes {roll, tier1..3}; a "Spend N <Resource>" label
-// becomes {cost, effect}; any other label becomes {name, effect}. The Trigger
-// line is surfaced separately as a top-level field and is skipped here.
+// extractOrderedEffects builds the effects[] list for an ability body in exact
+// document order (SC-310, mirroring SC-308's statblock/featureblock model —
+// see docs/statblocks.md's "The effects[] list is the authoritative body
+// order"): one entry per labeled paragraph (**Effect:**, **Special:**, a
+// "Spend N <Resource>:" cost, …) and per bare prose paragraph, plus the
+// attachment rule — a tier list (headered "**Power Roll + <Char>:**" or bare)
+// attaches to the entry created by the paragraph immediately before it,
+// becoming that entry's roll/tier1..3; a tier list with nothing eligible
+// before it (right after the spec table, or after an entry that already
+// consumed a roll) becomes its own {roll, tier1..3} entry — the pre-existing
+// shape for the common single-roll-right-after-the-table case.
 //
-// Preserving position matters: some abilities (e.g. Instantaneous Excavation)
-// state an Effect before the power roll, so the array must be [Effect, roll],
-// not [roll, Effect]. This also keeps multiple riders of the same kind (two
-// "Spend X" lines) and arbitrary labels (Persistent, Strained, Special, …) that
-// the older single-value effect/spend extraction dropped.
+// The `roll` value is the header text verbatim ("Power Roll + Reason") when
+// the source had one, omitted entirely for a header-less list — never a
+// derived label (the site derives a header-less panel's display head at
+// render time from this SAME entry's own effect text,
+// content.DeriveTestLabel).
+//
+// The Trigger line and the ability's single flavor paragraph (the first
+// bare-italic line, already captured separately by extractAbilityFields as
+// fm["flavor"]) are excluded here — both are top-level feature.schema.json
+// fields, not effects[] entries.
+//
+// curIdx tracks the entry eligible for the next attach BY INDEX, not a
+// pointer, because effects keeps growing via append (SC-308 review round 2,
+// finding L-4: a pointer into a growing slice goes stale across a
+// reallocation). rollKeysSet tracks which tier keys curIdx has already
+// received so a tier list's three bullet lines all land on the SAME entry,
+// while a second list immediately following (nothing new to attach to) still
+// starts its own standalone entry — mirrors statblock_parse.go's
+// parseStatblockEffects exactly (the closest existing model: also a per-line,
+// not per-paragraph, walk). lastWasPlainProse folds a run of consecutive
+// non-blank, non-special lines with no intervening blank line into ONE bare
+// entry — the same mechanism that lets an ordinary (non-tier) bulleted list
+// join its preceding lead-in sentence into a single entry (e.g. Judgment's
+// "Additionally, you can spend 1 wrath…" + its four-item list) rather than
+// spawning one entry per physical line.
 func extractOrderedEffects(lines []string, fm map[string]any) []map[string]any {
 	var effects []map[string]any
-	rollEmitted := false
+	curIdx := -1
+	rollKeysSet := map[string]bool{}
+	pendingRoll := ""
+	flavorSkipped := false
+	lastWasPlainProse := false
+
+	newEntry := func(name, cost, text string) {
+		e := map[string]any{}
+		if name != "" {
+			e["name"] = name
+		}
+		if cost != "" {
+			e["cost"] = cost
+		}
+		if text != "" {
+			e["effect"] = text
+		}
+		effects = append(effects, e)
+		curIdx = len(effects) - 1
+		rollKeysSet = map[string]bool{}
+	}
+	attach := func(roll, key, val string) {
+		var target map[string]any
+		if curIdx >= 0 && !rollKeysSet[key] {
+			target = effects[curIdx]
+		} else {
+			target = map[string]any{}
+			effects = append(effects, target)
+			curIdx = len(effects) - 1
+			rollKeysSet = map[string]bool{}
+		}
+		if roll != "" {
+			target["roll"] = roll
+		}
+		target[key] = val
+		rollKeysSet[key] = true
+	}
+
 	for _, line := range lines {
 		trimmed := strings.TrimSpace(line)
+		if trimmed == "" || strings.HasPrefix(trimmed, "|") {
+			lastWasPlainProse = false
+			continue
+		}
 
-		// Power-roll header at the start of the line: emit the roll entry here,
-		// once, from the tiers extractPowerRoll already stored on fm.
-		if !rollEmitted {
-			if loc := powerRollHeaderRe.FindStringIndex(trimmed); loc != nil && loc[0] == 0 {
-				if roll := rollEffectEntry(fm); roll != nil {
-					effects = append(effects, roll)
-					rollEmitted = true
-				}
+		// The ability's single flavor paragraph (the first bare-italic line) is
+		// a top-level field (fm["flavor"]), not an effects entry — skip exactly
+		// the first occurrence, matching extractAbilityFields' own flavor scan.
+		if !flavorSkipped && strings.HasPrefix(trimmed, "*") && strings.HasSuffix(trimmed, "*") && !strings.HasPrefix(trimmed, "**") {
+			flavorSkipped = true
+			lastWasPlainProse = false
+			continue
+		}
+
+		// Power-roll header → formula pending for the next tier list; not
+		// itself a block.
+		if m := powerRollHeaderRe.FindStringSubmatch(trimmed); m != nil {
+			pendingRoll = "Power Roll + " + strings.TrimSpace(m[1])
+			lastWasPlainProse = false
+			continue
+		}
+
+		// A tier bullet line ("- **≤11:** …") attaches to curIdx per the rule
+		// above, or starts a standalone roll entry.
+		if tm := orderedTierLineRe.FindStringSubmatch(trimmed); tm != nil {
+			if key, ok := classifyOrderedTier(tm[1]); ok {
+				attach(pendingRoll, key, strings.TrimSpace(tm[2]))
+				pendingRoll = ""
+				lastWasPlainProse = false
 				continue
 			}
 		}
 
-		matches := namedEffectRe.FindStringSubmatch(trimmed)
-		if matches == nil {
+		// Labeled paragraph ("**Effect:**", "**Spend N X:**", …) → its own
+		// entry, eligible for a following tier list to attach to. Trigger is
+		// routed to the top-level `trigger` field (extractAbilityFields), not
+		// here — and, like the statblock data path, resets curIdx so a roll
+		// that follows a Trigger paragraph doesn't reach back to whatever
+		// entry preceded it.
+		if m := namedEffectRe.FindStringSubmatch(trimmed); m != nil {
+			label := strings.TrimSpace(m[1])
+			if label == "Trigger" {
+				curIdx = -1
+				lastWasPlainProse = false
+				continue
+			}
+			text := strings.TrimSpace(m[2])
+			if strings.HasPrefix(label, "Spend ") {
+				newEntry("", label, text)
+			} else {
+				newEntry(label, "", text)
+			}
+			lastWasPlainProse = false
 			continue
 		}
-		label := strings.TrimSpace(matches[1])
-		text := strings.TrimSpace(matches[2])
-		if label == "Trigger" {
-			continue // surfaced as the top-level `trigger` field
+
+		// Bare prose → its own entry too (Divine Dragon's rolls sit under bare
+		// prose, not a labeled section), joining a run of consecutive plain
+		// lines (no intervening blank line) into the SAME entry.
+		if lastWasPlainProse && curIdx >= 0 {
+			if s, ok := effects[curIdx]["effect"].(string); ok {
+				effects[curIdx]["effect"] = s + " " + trimmed
+				continue
+			}
 		}
-		entry := map[string]any{"effect": text}
-		if strings.HasPrefix(label, "Spend ") {
-			entry["cost"] = label
-		} else {
-			entry["name"] = label
-		}
-		effects = append(effects, entry)
+		newEntry("", "", trimmed)
+		lastWasPlainProse = true
 	}
 	return effects
-}
-
-// rollEffectEntry builds the {roll, tier1..3} effect entry from the power-roll
-// fields extractPowerRoll stored on fm, or nil if there is no power roll.
-func rollEffectEntry(fm map[string]any) map[string]any {
-	char, ok := fm["power_roll_characteristic"].(string)
-	if !ok || char == "" {
-		return nil
-	}
-	entry := map[string]any{"roll": "Power Roll + " + char}
-	if v, ok := fm["tier1"].(string); ok {
-		entry["tier1"] = v
-	}
-	if v, ok := fm["tier2"].(string); ok {
-		entry["tier2"] = v
-	}
-	if v, ok := fm["tier3"].(string); ok {
-		entry["tier3"] = v
-	}
-	return entry
 }
 
 // extractAbilityTable parses the 2x2 keyword/action/distance/target table.

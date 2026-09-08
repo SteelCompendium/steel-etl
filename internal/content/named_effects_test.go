@@ -118,8 +118,13 @@ func TestAbilityParser_NamedEffectStrained(t *testing.T) {
 }
 
 // The effects array must mirror document order, including where the power roll
-// sits. Instantaneous Excavation states its Effect BEFORE the power roll, so the
-// array must be [Effect, roll], not [roll, Effect].
+// sits. Instantaneous Excavation states its Effect BEFORE the power roll — per
+// the SC-310 attachment rule (mirroring SC-308) the roll list attaches to the
+// entry created by the paragraph immediately before it, so the array is ONE
+// merged {name, effect, roll, tier1..3} entry, not [Effect, roll] (SC-308's
+// landed model; this ability was the OLD extractOrderedEffects doc comment's
+// worked example for keeping [Effect, roll] in that order — it is now nested
+// rather than split, per SC-310).
 func TestAbilityParser_EffectBeforePowerRollOrder(t *testing.T) {
 	body := `*The surface of the world opens up to swallow foes.*
 
@@ -135,17 +140,98 @@ func TestAbilityParser_EffectBeforePowerRollOrder(t *testing.T) {
 - **17+:** The target falls in and is restrained.`
 
 	effects := effectsList(t, parseAbility(t, body))
-	if len(effects) != 2 {
-		t.Fatalf("expected 2 effects (Effect then roll), got %d: %v", len(effects), effects)
+	if len(effects) != 1 {
+		t.Fatalf("expected 1 merged effect (Effect+roll nested), got %d: %v", len(effects), effects)
 	}
 	if effects[0]["name"] != "Effect" {
 		t.Errorf("effects[0] should be the Effect (document order), got %v", effects[0])
 	}
-	if effects[1]["roll"] != "Power Roll + Reason" {
-		t.Errorf("effects[1] should be the power roll, got %v", effects[1])
+	if effects[0]["roll"] != "Power Roll + Reason" {
+		t.Errorf("effects[0] should carry the attached power roll, got %v", effects[0])
 	}
-	if effects[1]["tier1"] != "The target shifts 1 square." {
-		t.Errorf("effects[1] tier1: got %v", effects[1]["tier1"])
+	if effects[0]["tier1"] != "The target shifts 1 square." {
+		t.Errorf("effects[0] tier1: got %v", effects[0]["tier1"])
+	}
+}
+
+// Divine Dragon (SC-310): two "Power Roll + Intuition" tier lists, each one
+// sitting under its own bare-prose paragraph (not a labeled section) rather
+// than a header. The attachment rule must produce 3 entries — Effect (no
+// roll, since the paragraph right after it is bare prose, not a tier list),
+// then each bare-prose paragraph fused with the roll immediately below it —
+// in exact source order, both rolls intact (the pre-fix bug: only one
+// tier1..3 triple ever survived, and neither bare-prose lead-in was captured
+// at all).
+func TestAbilityParser_DivineDragonTwoRolls(t *testing.T) {
+	body := `*From nothing but divine will, you create a powerful ally.*
+
+| **Magic, Ranged** | **Main action** |
+| --- | ---: |
+| **Ranged 10** | **Special** |
+
+**Effect:** You conjure a size 4 dragon that appears in an unoccupied space.
+
+On subsequent turns, you can use a main action to command the dragon to breathe magic fire. Make the following power roll targeting each enemy in the area.
+
+**Power Roll + Intuition:**
+- **≤11:** 5 fire damage
+- **12-16:** 9 fire damage
+- **17+:** 12 fire damage
+
+Additionally, you can use a maneuver to move the dragon, or to make a melee weapon strike with their claw.
+
+**Power Roll + Intuition:**
+- **≤11:** 3 + I damage
+- **12-16:** 5 + I damage
+- **17+:** 8 + I damage`
+
+	effects := effectsList(t, parseAbility(t, body))
+	if len(effects) != 3 {
+		t.Fatalf("expected 3 effects (Effect, prose+breath-roll, prose+claw-roll), got %d: %v", len(effects), effects)
+	}
+	if effects[0]["name"] != "Effect" || effects[0]["roll"] != nil {
+		t.Errorf("effects[0] should be the bare Effect (no roll attached), got %v", effects[0])
+	}
+	if effects[1]["roll"] != "Power Roll + Intuition" || effects[1]["tier1"] != "5 fire damage" || effects[1]["tier3"] != "12 fire damage" {
+		t.Errorf("effects[1] should be the breath prose+roll, got %v", effects[1])
+	}
+	if effects[1]["effect"] != "On subsequent turns, you can use a main action to command the dragon to breathe magic fire. Make the following power roll targeting each enemy in the area." {
+		t.Errorf("effects[1] effect text: got %v", effects[1]["effect"])
+	}
+	if effects[2]["roll"] != "Power Roll + Intuition" || effects[2]["tier1"] != "3 + I damage" || effects[2]["tier3"] != "8 + I damage" {
+		t.Errorf("effects[2] should be the claw prose+roll, got %v", effects[2])
+	}
+	// The FIRST list still wins the flat fm fields (SC-308's contract).
+	fm := parseAbility(t, body)
+	if fm["tier1"] != "5 fire damage" {
+		t.Errorf("flat fm tier1 should keep the FIRST list, got %v", fm["tier1"])
+	}
+}
+
+// A header-less tier list (no "**Power Roll + N:**" line) must attach with NO
+// `roll` key at all — never a stored/synthesized label (the site derives the
+// display head at render time instead).
+func TestAbilityParser_HeaderlessListNoRollKey(t *testing.T) {
+	body := `Make a Reason test:
+
+- **≤11:** A false rumor.
+- **12-16:** A likely rumor.
+- **17+:** An obscure rumor.
+
+**Effect:** You learn something.`
+
+	effects := effectsList(t, parseAbility(t, body))
+	if len(effects) != 2 {
+		t.Fatalf("expected 2 effects (prose+headerless-roll, Effect), got %d: %v", len(effects), effects)
+	}
+	if _, ok := effects[0]["roll"]; ok {
+		t.Errorf("header-less list must not store a `roll` key, got %v", effects[0])
+	}
+	if effects[0]["tier1"] != "A false rumor." {
+		t.Errorf("effects[0] tier1: got %v", effects[0])
+	}
+	if effects[1]["name"] != "Effect" {
+		t.Errorf("effects[1] should be the trailing Effect, got %v", effects[1])
 	}
 }
 
