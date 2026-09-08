@@ -25,6 +25,8 @@ import (
 	"html"
 	"regexp"
 	"strings"
+
+	"github.com/SteelCompendium/steel-etl/internal/content"
 )
 
 // buildAbilityCardPage replaces an ability/trait/feature page's body with its
@@ -176,24 +178,23 @@ func renderAbilityCard(fm, body, originOverride string) string {
 
 	var keywords []string
 	var distance, target string
-	var prChars string
-	var tiers [3]string
-	hasPR := false
 
-	// A section holds one or more raw paragraph/list blocks rendered inside a
-	// single panel. Consecutive unlabeled paragraphs (and lists) following a
-	// labeled paragraph fold into that section's blocks — so e.g. a multi-
-	// paragraph Effect renders as one container, not several.
-	type section struct {
-		label  string
-		blocks []string
-	}
-	var sections []section
-	type enhancement struct{ cost, text string }
-	var enhancements []enhancement
-	cur := -1 // index of the open section unlabeled prose appends to (-1 = none)
+	// items is the card body in exact document order (SC-310, mirroring
+	// SC-308's statblock_card.go renderStatblockFeature model): a labeled
+	// section, a cost enhancement, or bare prose, each optionally carrying the
+	// tier panel that attaches directly to it (see attachCardTier). cur tracks
+	// the SITE-only "folding" convenience — consecutive unlabeled paragraphs
+	// (and lists) following a labeled one collapse into that SAME entry's
+	// Blocks, so a multi-paragraph Effect renders as one container — kept
+	// separate from attachIdx (which entry the NEXT tier list attaches to,
+	// mirroring the data path's curIdx) because a cost enhancement is
+	// attach-eligible but never fold-eligible (today's behavior, unchanged).
+	var items []cardItem
+	cur := -1
+	attachIdx := -1
 
 	expectTiers := false
+	pendingChars := ""
 	for _, p := range paraSplitRe.Split(body, -1) {
 		tp := strings.TrimSpace(p)
 		if tp == "" {
@@ -215,7 +216,7 @@ func renderAbilityCard(fm, body, originOverride string) string {
 			if tgt != "" {
 				target = tgt
 			}
-			expectTiers, cur = false, -1
+			expectTiers, cur, attachIdx = false, -1, -1
 			continue
 		}
 
@@ -224,32 +225,42 @@ func renderAbilityCard(fm, body, originOverride string) string {
 			if flavor == "" {
 				flavor = strings.TrimSpace(strings.Trim(tp, "*"))
 			}
-			expectTiers, cur = false, -1
+			expectTiers, cur, attachIdx = false, -1, -1
 			continue
 		}
 
 		// power-roll header → the next list paragraph holds the tiers
 		if m := prHeadRe.FindStringSubmatch(tp); m != nil {
-			prChars = strings.TrimSpace(m[1])
-			hasPR = true
-			expectTiers, cur = true, -1
+			pendingChars = strings.TrimSpace(m[1])
+			expectTiers = true
 			continue
 		}
 
-		// power-roll tier list
+		// power-roll tier list → attaches to the entry immediately before it
+		// (labeled section, Spend enhancement, or bare prose), or stands alone
+		// when nothing is eligible (right after the table, or after an entry
+		// that already consumed a roll) — no hoisting above what precedes it.
 		if expectTiers && looksLikeTiers(tp) {
-			parseTiers(tp, &tiers)
+			var t [3]string
+			parseTiers(tp, &t)
+			items = attachCardTier(items, attachIdx, pendingChars, t)
+			cur, attachIdx = -1, -1
+			pendingChars = ""
 			expectTiers = false
 			continue
 		}
 		expectTiers = false
 
 		// header-less tier triple: a "test" whose outcomes reuse the
-		// ≤11/12-16/17+ tiers but with no "**Power Roll +**" header line. Render
-		// the same panel (prChars stays empty, so no synthesized header).
-		if !hasPR && isTierListBlock(tp) {
-			parseTiers(tp, &tiers)
-			hasPR = true
+		// ≤11/12-16/17+ tiers but with no "**Power Roll +**" header line. The
+		// same attachment rule applies (SC-310: no "≥2 lists" gate, mirroring
+		// SC-308) — Chars stays "" so the render walk derives the display head
+		// from this entry's own prose (content.DeriveTestLabel), never here.
+		if isTierListBlock(tp) {
+			var t [3]string
+			parseTiers(tp, &t)
+			items = attachCardTier(items, attachIdx, "", t)
+			cur, attachIdx = -1, -1
 			continue
 		}
 
@@ -257,22 +268,24 @@ func renderAbilityCard(fm, body, originOverride string) string {
 		if m := labelRe.FindStringSubmatch(tp); m != nil {
 			label := strings.TrimSpace(m[1])
 			if strings.HasPrefix(strings.ToLower(label), "spend") {
-				enhancements = append(enhancements, enhancement{cost: label, text: collapseLines(m[2])})
+				items = append(items, cardItem{Cost: label, Blocks: []string{collapseLines(m[2])}})
 				cur = -1
 			} else {
-				sections = append(sections, section{label: label, blocks: []string{m[2]}})
-				cur = len(sections) - 1
+				items = append(items, cardItem{Label: label, Blocks: []string{m[2]}})
+				cur = len(items) - 1
 			}
+			attachIdx = len(items) - 1
 			continue
 		}
 
-		// unlabeled prose / list → fold into the open section, or start an
+		// unlabeled prose / list → fold into the open entry, or start an
 		// untitled one (common for traits).
 		if cur >= 0 {
-			sections[cur].blocks = append(sections[cur].blocks, tp)
+			items[cur].Blocks = append(items[cur].Blocks, tp)
 		} else {
-			sections = append(sections, section{blocks: []string{tp}})
-			cur = len(sections) - 1
+			items = append(items, cardItem{Blocks: []string{tp}})
+			cur = len(items) - 1
+			attachIdx = cur
 		}
 	}
 
@@ -342,29 +355,105 @@ func renderAbilityCard(fm, body, originOverride string) string {
 		b.WriteString("</div>\n")
 	}
 
-	if hasPR {
-		b.WriteString(tierPanelHTML(dia, prChars, tiers, richInline))
-	}
-
-	for _, s := range sections {
-		b.WriteString("<div class=\"sc-ability__section\">\n")
-		if s.label != "" {
-			fmt.Fprintf(&b, "<div class=\"sc-ability__section-head\">%s<span class=\"tag\">%s</span></div>\n", dia, html.EscapeString(s.label))
+	// SC-310: walk the ordered body in exact document order — a labeled
+	// section, a cost enhancement, bare prose, or a roll-only panel, each with
+	// its tier panel (if any) rendered directly below/within it. No hoisting.
+	for _, it := range items {
+		switch {
+		case it.Cost != "":
+			fmt.Fprintf(&b, "<div class=\"sc-ability__enh\"><span class=\"cost\">%s</span><span class=\"txt\">%s</span></div>\n",
+				html.EscapeString(it.Cost), richInline(strings.Join(it.Blocks, " ")))
+			if it.Roll {
+				b.WriteString(rollPanelHTML(dia, it, richInline))
+			}
+		case it.Label == "" && len(it.Blocks) == 0 && it.Roll:
+			// standalone roll-only entry — no container (today's common
+			// single-roll-right-after-the-table shape, unchanged).
+			b.WriteString(rollPanelHTML(dia, it, richInline))
+		default:
+			b.WriteString("<div class=\"sc-ability__section\">\n")
+			if it.Label != "" {
+				fmt.Fprintf(&b, "<div class=\"sc-ability__section-head\">%s<span class=\"tag\">%s</span></div>\n", dia, html.EscapeString(it.Label))
+			}
+			b.WriteString("<div class=\"sc-ability__section-body\">")
+			for _, blk := range it.Blocks {
+				b.WriteString(renderSectionBlock(blk))
+			}
+			b.WriteString("</div>\n")
+			if it.Roll {
+				b.WriteString(rollPanelHTML(dia, it, richInline))
+			}
+			b.WriteString("</div>\n")
 		}
-		b.WriteString("<div class=\"sc-ability__section-body\">")
-		for _, blk := range s.blocks {
-			b.WriteString(renderSectionBlock(blk))
-		}
-		b.WriteString("</div>\n")
-		b.WriteString("</div>\n")
-	}
-
-	for _, e := range enhancements {
-		fmt.Fprintf(&b, "<div class=\"sc-ability__enh\"><span class=\"cost\">%s</span><span class=\"txt\">%s</span></div>\n",
-			html.EscapeString(e.cost), richInline(e.text))
 	}
 
 	b.WriteString("</article>\n")
+	return b.String()
+}
+
+// cardItem is one entry of renderAbilityCard's body walk, in document order
+// (SC-310, mirroring SC-308's RichEffect/sbEffect model): a labeled section
+// (Label), a cost enhancement (Cost), or bare prose (neither — and Blocks may
+// still hold folded continuation paragraphs), each optionally carrying the
+// tier panel attached directly to it. Roll==false means no tier list
+// attached; Roll==true with Chars=="" is a header-less list (rollPanelHTML
+// derives its display head from Blocks at render time, content.
+// DeriveTestLabel — "" → the panel renders fully bare).
+type cardItem struct {
+	Label  string
+	Cost   string
+	Blocks []string
+	Roll   bool
+	Chars  string
+	Tiers  [3]string
+}
+
+// attachCardTier applies the SC-310 attachment rule: the tier list becomes
+// the entry at attachIdx's Roll/Chars/Tiers (the labeled section, Spend
+// enhancement, or bare prose paragraph immediately before it) when that entry
+// hasn't already consumed a roll, else its own standalone roll-only entry —
+// the pre-existing shape for the common single-roll-right-after-the-table
+// case. Mirrors RichEffect/sbEffect's attach(): curIdx (here, the caller's
+// cur/attachIdx) always resets to -1 after a successful attach.
+func attachCardTier(items []cardItem, attachIdx int, chars string, t [3]string) []cardItem {
+	if attachIdx >= 0 && !items[attachIdx].Roll {
+		items[attachIdx].Roll = true
+		items[attachIdx].Chars = chars
+		items[attachIdx].Tiers = t
+		return items
+	}
+	return append(items, cardItem{Roll: true, Chars: chars, Tiers: t})
+}
+
+// rollPanelHTML renders one body item's attached tier panel. A headered roll
+// (Chars != "") renders the fixed "Power Roll +" eyebrow via tierPanelHTML,
+// unchanged. A header-less list (SC-310, mirroring SC-308's DeriveTestLabel
+// rule — no "≥2 lists" gate) derives its display head from the item's OWN
+// prose — the LAST bold "<Characteristic> test" phrase in its Blocks —
+// rendering it as a bare "pre" label with no synthesized "Power Roll +"
+// prefix; no match renders the panel fully bare (today's header-less
+// behavior, unchanged).
+func rollPanelHTML(dia string, it cardItem, inline func(string) string) string {
+	if it.Chars != "" {
+		return tierPanelHTML(dia, it.Chars, it.Tiers, inline)
+	}
+	label := content.DeriveTestLabel(strings.Join(it.Blocks, " "))
+	if label == "" {
+		return tierPanelHTML(dia, "", it.Tiers, inline)
+	}
+	var b strings.Builder
+	b.WriteString("<div class=\"sc-ability__pr\">\n")
+	fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\">%s<span class=\"pre\">%s</span></div>\n", dia, html.EscapeString(label))
+	b.WriteString("<div class=\"sc-ability__pr-rows\">\n")
+	for i := 0; i < 3; i++ {
+		if it.Tiers[i] == "" {
+			continue
+		}
+		fmt.Fprintf(&b, "<div class=\"sc-ability__tier\" data-tier=\"%s\"><span class=\"badge\">%s</span><span class=\"res\">%s</span></div>\n",
+			tierKey[i], tierGlyph[i], inline(it.Tiers[i]))
+	}
+	b.WriteString("</div>\n")
+	b.WriteString("</div>\n")
 	return b.String()
 }
 

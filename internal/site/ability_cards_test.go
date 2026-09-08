@@ -143,6 +143,98 @@ Make a Reason test:
 	}
 }
 
+// Divine Dragon (SC-310): two "Power Roll + Intuition" tier panels, each
+// sitting below its own bare-prose paragraph, must BOTH render — in source
+// order, neither overwriting the other (the pre-fix bug: the tier loop
+// overwrote, so only the second list's values ever reached the card).
+func TestRenderAbilityCard_DivineDragonTwoRolls(t *testing.T) {
+	fm := "action_type: Main action\nname: Divine Dragon\ncost: 11 Piety\ntype: ability"
+	body := `
+*From nothing but divine will, you create a powerful ally.*
+
+| **Magic, Ranged**  | **Main action** |
+|---------------------|----------------:|
+| **📏 Ranged 10**   |  **🎯 Special** |
+
+**Effect:** You conjure a size 4 dragon that appears in an unoccupied space.
+
+On subsequent turns, you can use a main action to command the dragon to breathe magic fire. Make the following power roll targeting each enemy in the area.
+
+**Power Roll + Intuition:**
+
+- **≤11:** 5 fire damage
+- **12-16:** 9 fire damage
+- **17+:** 12 fire damage
+
+Additionally, you can use a maneuver to move the dragon, or to make a melee weapon strike with their claw.
+
+**Power Roll + Intuition:**
+
+- **≤11:** 3 + I damage
+- **12-16:** 5 + I damage
+- **17+:** 8 + I damage
+`
+	got := renderAbilityCard(fm, body, "")
+	if n := strings.Count(got, `class="sc-ability__pr"`); n != 2 {
+		t.Fatalf("expected 2 power-roll panels, got %d\n--- got ---\n%s", n, got)
+	}
+	for _, w := range []string{
+		`data-tier="low"><span class="badge">!</span><span class="res">5 fire damage</span>`,
+		`data-tier="high"><span class="badge">#</span><span class="res">12 fire damage</span>`,
+		`data-tier="low"><span class="badge">!</span><span class="res">3 + I damage</span>`,
+		`data-tier="high"><span class="badge">#</span><span class="res">8 + I damage</span>`,
+		`<span class="tag">Effect</span>`,
+	} {
+		if !strings.Contains(got, w) {
+			t.Errorf("card missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+	// Document order: Effect, then the breath roll, then the claw roll.
+	effectIdx := strings.Index(got, ">Effect<")
+	breathIdx := strings.Index(got, "5 fire damage")
+	clawIdx := strings.Index(got, "3 + I damage")
+	if effectIdx < 0 || breathIdx < 0 || clawIdx < 0 || !(effectIdx < breathIdx && breathIdx < clawIdx) {
+		t.Errorf("expected Effect, then breath tiers, then claw tiers, in that order:\n%s", got)
+	}
+}
+
+// Instantaneous Excavation states its Effect BEFORE the power roll. Per the
+// SC-310 attachment rule (mirroring SC-308) the roll must nest inside/below
+// the Effect section it attaches to — it must NOT hoist above the Effect (the
+// pre-fix behavior: a single global power roll rendered right after the
+// rail, before every section).
+func TestRenderAbilityCard_EffectBeforeRollNested(t *testing.T) {
+	fm := "action_type: Maneuver\nname: Instantaneous Excavation\ntype: ability"
+	body := `
+| **Earth, Magic** | **Maneuver** |
+| --- | ---: |
+| **Ranged 10** | **Special** |
+
+**Effect:** You open up two holes with 1-square openings.
+
+**Power Roll + Reason:**
+
+- **≤11:** The target shifts 1 square.
+- **12-16:** The target falls in.
+- **17+:** The target falls in and is restrained.
+`
+	got := renderAbilityCard(fm, body, "")
+	if n := strings.Count(got, `class="sc-ability__section"`); n != 1 {
+		t.Fatalf("expected 1 section container (Effect, roll attached to it), got %d\n--- got ---\n%s", n, got)
+	}
+	if n := strings.Count(got, `class="sc-ability__pr"`); n != 1 {
+		t.Fatalf("expected 1 power-roll panel, got %d\n--- got ---\n%s", n, got)
+	}
+	effectIdx := strings.Index(got, ">Effect<")
+	rollIdx := strings.Index(got, `class="sc-ability__pr"`)
+	if effectIdx < 0 || rollIdx < 0 || rollIdx < effectIdx {
+		t.Errorf("the power-roll panel must not hoist above the Effect section it attaches to:\n%s", got)
+	}
+	if !strings.Contains(got, `data-tier="low"><span class="badge">!</span><span class="res">The target shifts 1 square.</span>`) {
+		t.Errorf("tier1 missing:\n%s", got)
+	}
+}
+
 func TestRenderAbilityCard_TriggeredCostAndSections(t *testing.T) {
 	fm := "action_type: Triggered\ncost: 11 Wrath\nname: Fulfill Your Destiny\ntype: ability"
 	body := `
