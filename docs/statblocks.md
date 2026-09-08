@@ -181,7 +181,7 @@ roll physically nested under `trigger`. A Trigger paragraph that is NOT the sour
 first paragraph would lose its position on the data path (not observed in the corpus
 today — Trigger is always first).
 
-**Three parsers build/render the same model, independently** (SC-311 tracks future
+**Four parsers build/render the same model, independently** (SC-311 tracks future
 unification):
 
 - `internal/content/statblock_parse.go` (`parseOneFeature` → `parseStatblockEffects`,
@@ -212,8 +212,23 @@ unification):
   `*sbPowerRoll` (label included) rather than the SDK's flat roll-as-string — this type
   is a pure build-time intermediate, never serialized as data, so labels ARE derived
   once at parse time here (no "never store the label" constraint applies).
+- `internal/content/ability.go` (`extractOrderedEffects`, the Heroes book's `type:
+  ability` JSON/YAML `effects[]`) / `internal/site/ability_cards.go`
+  (`renderAbilityCard`, the `.sc-ability` card): SC-310 mirrors the same attachment
+  rule onto the Heroes ability path, a separate parser pair from the three above
+  (Heroes abilities are the book's own line-based blockquote format, not a
+  statblock/featureblock). Fixed the same bug class as the Wode Hag's "Snackies for
+  Sweeties": Divine Dragon's two `Power Roll + Intuition` tier lists (breath, then
+  claw) each sit under their own bare-prose lead-in, not a labeled section — the old
+  extractOrderedEffects only ever emitted ONE roll entry (first-list-wins, from the
+  flat fm fields) and never captured bare prose at all, so the second list vanished
+  from both the JSON/YAML and the card. `ability_cards.go` independently re-parses
+  the page body (paragraph-based, like `statblock_page.go`) rather than reading
+  `effects[]`; its own pre-fix bug was a single global tier panel unconditionally
+  rendered right after the spec rail, hoisting above any preceding Effect/prose
+  section (e.g. Instantaneous Excavation) instead of nesting where it attaches.
 
-**Render walk (all three renderers).** Each entry renders in order: a named entry gets
+**Render walk (all four renderers).** Each entry renders in order: a named entry gets
 its `.sc-ability__section` (head = name, body = prose) with the tier panel — when
 present — directly below/within that same section container; a nameless entry with
 prose renders the prose paragraph then the panel as siblings; an entry with only
