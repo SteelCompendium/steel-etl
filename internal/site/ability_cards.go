@@ -437,7 +437,18 @@ func rollPanelHTML(dia string, it cardItem, inline func(string) string) string {
 	if it.Chars != "" {
 		return tierPanelHTML(dia, it.Chars, it.Tiers, inline)
 	}
-	label := content.DeriveTestLabel(strings.Join(it.Blocks, " "))
+	// SC-310 review r1, LOW-4: derive from the LAST block only, not every folded
+	// block joined — docs/statblocks.md's rule reads the label from "that same
+	// entry's own effect text", the paragraph nearest the tier list that
+	// follows. The site's own "folding" convenience (multi-paragraph Effect
+	// containers, unlike the data path's one-entry-per-paragraph model) means
+	// joining ALL blocks could pull a "**<Char> test**" phrase from a paragraph
+	// two blocks above the list — a non-adjacent label the data path would
+	// never emit for that same source.
+	label := ""
+	if n := len(it.Blocks); n > 0 {
+		label = content.DeriveTestLabel(it.Blocks[n-1])
+	}
 	if label == "" {
 		return tierPanelHTML(dia, "", it.Tiers, inline)
 	}

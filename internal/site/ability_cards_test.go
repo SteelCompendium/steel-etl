@@ -143,6 +143,33 @@ Make a Reason test:
 	}
 }
 
+// SC-310 review r1, LOW-3: a header-less tier list attached to a paragraph
+// whose OWN prose names a bold "**<Char> test**" phrase must derive that
+// phrase as the panel's display head (content.DeriveTestLabel), rendering it
+// as a bare "pre" label with no synthesized "Power Roll +" — the branch
+// TestRenderAbilityCard_HeaderlessTierTest never reaches (its lead-in is
+// unbolded prose, so it only pins the "no label found" fallback).
+func TestRenderAbilityCard_HeaderlessTierDerivedLabel(t *testing.T) {
+	fm := "type: ability\nname: Foresight"
+	body := `
+You glimpse the immediate future and make an **Agility test**:
+
+- **≤11:** You are surprised.
+- **12-16:** You are not surprised.
+- **17+:** You are not surprised and gain an edge on your first strike.
+`
+	got := renderAbilityCard(fm, body, "")
+	if !strings.Contains(got, `<span class="pre">Agility Test</span>`) {
+		t.Errorf("expected the derived Agility Test label, got:\n%s", got)
+	}
+	if strings.Contains(got, "Power Roll +") {
+		t.Errorf("a derived test label must not read as a synthesized Power Roll + header\n%s", got)
+	}
+	if !strings.Contains(got, `data-tier="low"><span class="badge">!</span><span class="res">You are surprised.</span>`) {
+		t.Errorf("tier1 missing:\n%s", got)
+	}
+}
+
 // Divine Dragon (SC-310): two "Power Roll + Intuition" tier panels, each
 // sitting below its own bare-prose paragraph, must BOTH render — in source
 // order, neither overwriting the other (the pre-fix bug: the tier loop
