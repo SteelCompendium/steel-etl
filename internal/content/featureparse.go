@@ -110,7 +110,12 @@ var (
 	// (mirrors internal/site prHeadRe).
 	fbPRHeadRe = regexp.MustCompile(`(?s)^\*\*(?:\[Power Roll\]\([^)]*\)|Power Roll)\s*\+\s*(.+?):\*\*\s*$`)
 	// a labeled paragraph: "**Effect:** text…" (mirrors internal/site labelRe).
-	fbLabelRe = regexp.MustCompile(`(?s)^\*\*([^*:]+):\*\*\s*(.+)$`)
+	// The label class tolerates an scc-linked label ("**3 [Malice](scc.v1:…):**",
+	// "**[End Effect](scc.v1:…):**") — the book links some Malice costs and rule
+	// terms, and an scc.v1: URL carries a colon that a bare [^*:]+ class would
+	// stop at, silently falling the whole paragraph through to bare prose (SC-308
+	// review r3, I-1). Callers classify on linkDisplay(label), never the raw match.
+	fbLabelRe = regexp.MustCompile(`(?s)^\*\*((?:\[[^\]]*\]\([^)]*\)|[^*:])+?):\*\*\s*(.+)$`)
 	// a label that is a cost ("2 Malice", "5+ Malice", "Spend …").
 	fbCostLabelRe = regexp.MustCompile(`(?i)^(?:\d+\+?\s+\S+.*|spend\b.*)$`)
 	// a standalone bold level-group label inside a blockquote:
@@ -311,7 +316,10 @@ func parseRichFeature(block string) (RichFeature, bool) {
 		// Labeled paragraph → cost enhancement or titled section. Becomes its own
 		// effects entry, eligible for a following tier list to attach to.
 		if m := fbLabelRe.FindStringSubmatch(tp); m != nil {
-			label := strings.TrimSpace(m[1])
+			// Link-free: name/cost are structured fields (SC-308 review r3, I-1 —
+			// mirrors the title-parenthetical stripping above). effect/tier VALUES
+			// keep their links verbatim.
+			label := linkDisplay(strings.TrimSpace(m[1]))
 			text := fbCollapse(m[2])
 			if fbCostLabelRe.MatchString(label) {
 				f.Enhancements = append(f.Enhancements, RichEnhancement{Cost: label, Text: text})

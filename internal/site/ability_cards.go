@@ -115,8 +115,13 @@ var (
 	// so accept either the bare "Power Roll" or a link-wrapped "[Power Roll](…)"
 	// before the "+". The captured characteristics may themselves carry links
 	// (rendered via richInline, not escaped).
-	prHeadRe    = regexp.MustCompile(`(?s)^\*\*(?:\[Power Roll\]\([^)]*\)|Power Roll)\s*\+\s*(.+?):\*\*\s*$`)
-	labelRe     = regexp.MustCompile(`(?s)^\*\*([^*:]+):\*\*\s*(.+)$`)
+	prHeadRe = regexp.MustCompile(`(?s)^\*\*(?:\[Power Roll\]\([^)]*\)|Power Roll)\s*\+\s*(.+?):\*\*\s*$`)
+	// labelRe tolerates an scc-linked label ("**3 [Malice](scc.v1:…):**") — an
+	// scc.v1: URL carries a colon a bare [^*:]+ class would stop at (SC-308 review
+	// r3, I-1). In practice the SITE parser reads already-link-swept md-linked
+	// pages (relative-path links, no colon) so this rarely fires here, but the
+	// class stays consistent with the content-package copy.
+	labelRe     = regexp.MustCompile(`(?s)^\*\*((?:\[[^\]]*\]\([^)]*\)|[^*:])+?):\*\*\s*(.+)$`)
 	tierLineRe  = regexp.MustCompile(`^\s*[-*]?\s*\*\*([^*]+?):\*\*\s*(.+?)\s*$`)
 	mdLinkRe    = regexp.MustCompile(`\[([^\]]*)\]\(([^)]*)\)`)
 	mdBoldRe    = regexp.MustCompile(`\*\*([^*]+)\*\*`)

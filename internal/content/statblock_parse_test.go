@@ -738,6 +738,74 @@ func TestParseStatblockFeatures_SoulSteal(t *testing.T) {
 	}
 }
 
+// TestParseStatblockFeatures_SoulSteal_LinkedLabels locks SC-308 review r3's
+// I-1 fix, using the ACTUAL book source (the brief's own worked example,
+// which review found wrong in production): the Malice cost label links
+// "Malice" ("**3 [Malice](scc.v1:…):**"), and the End Effect trait elsewhere
+// links its whole label ("**[End Effect](scc.v1:…):**"). An scc.v1: URL
+// carries a colon that the unwidened fbLabelRe stopped at, silently falling
+// the whole paragraph through to bare prose — the entry's `effect` then kept
+// the raw "**3 [Malice](…):**" markdown inline instead of extracting `cost`.
+func TestParseStatblockFeatures_SoulSteal_LinkedLabels(t *testing.T) {
+	body := "" +
+		"> 🔳 **Soul Steal**\n" +
+		">\n" +
+		"> | **Area, Magic**        |               **Main action** |\n" +
+		"> |------------------------|------------------------------:|\n" +
+		"> | **📏 4 cube within 1** | **🎯 Each enemy in the area** |\n" +
+		">\n" +
+		"> **Power Roll + 3:**\n" +
+		">\n" +
+		"> - **≤11:** 5 corruption damage\n" +
+		"> - **12-16:** 8 corruption damage\n" +
+		"> - **17+:** 10 corruption damage\n" +
+		">\n" +
+		"> **Effect:** This ability gains an edge against a target who has a soul.\n" +
+		">\n" +
+		"> **3 [Malice](scc.v1:mcdm.monsters.v1/rule.monster/malice):** The hag regains Stamina equal to half the damage dealt.\n"
+
+	got := ParseStatblockFeatures(body)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	effects, _ := got[0]["effects"].([]map[string]any)
+	if len(effects) != 3 {
+		t.Fatalf("effects = %+v, want 3 entries (roll, Effect, cost) — a linked label must not fall through to bare prose", got[0]["effects"])
+	}
+	if effects[2]["cost"] != "3 Malice" {
+		t.Errorf("effects[2].cost = %v, want '3 Malice' (link-free)", effects[2]["cost"])
+	}
+	if effects[2]["effect"] != "The hag regains Stamina equal to half the damage dealt." {
+		t.Errorf("effects[2].effect = %v, want the prose WITHOUT the raw '**3 [Malice](…):**' markdown inline", effects[2]["effect"])
+	}
+}
+
+// TestParseStatblockFeatures_LinkedEndEffectName locks I-1 for a linked NAME
+// label (not a cost) — the arixx/ashen-hoarder "Solo Monster" trait's
+// "**[End Effect](scc.v1:…):**" paragraph.
+func TestParseStatblockFeatures_LinkedEndEffectName(t *testing.T) {
+	body := "> ☠️ **Solo Monster**\n" +
+		">\n" +
+		"> **[End Effect](scc.v1:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the creature can take 5 damage to end one effect on them that can be ended by a saving throw.\n" +
+		">\n" +
+		"> **Solo Turns:** The creature can take two turns each round.\n"
+
+	got := ParseStatblockFeatures(body)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	effects, _ := got[0]["effects"].([]map[string]any)
+	if len(effects) != 2 {
+		t.Fatalf("effects = %+v, want 2 named entries", got[0]["effects"])
+	}
+	if effects[0]["name"] != "End Effect" {
+		t.Errorf("effects[0].name = %v, want 'End Effect' (link-free)", effects[0]["name"])
+	}
+	if effects[1]["name"] != "Solo Turns" {
+		t.Errorf("effects[1].name = %v, want 'Solo Turns'", effects[1]["name"])
+	}
+}
+
 // Corrosive Claws-shaped: table → Power Roll header → tiers, nothing else.
 // Stays a single roll-only entry, exactly as before SC-308 round 3b.
 const corrosiveClawsFeature = "" +

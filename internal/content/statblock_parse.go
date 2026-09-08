@@ -464,7 +464,8 @@ func parseStatblockEffects(rest []string, diceRoll string) (effects []map[string
 			bareTiersDone = true // a non-tier line ends the tier run
 		}
 		if m := fbLabelRe.FindStringSubmatch(t); m != nil {
-			label := strings.TrimSpace(m[1])
+			// Link-free: name/cost are structured fields (SC-308 review r3, I-1).
+			label := linkDisplay(strings.TrimSpace(m[1]))
 			text := fbCollapse(m[2])
 			if strings.EqualFold(label, "Trigger") {
 				trigger = text

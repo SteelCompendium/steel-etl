@@ -88,6 +88,42 @@ func TestParseRichFeatures_LinkedMaliceCost(t *testing.T) {
 	}
 }
 
+// TestParseRichFeatures_LinkedLabelParagraph locks SC-308 review r3's I-1 fix
+// for a LABELED PARAGRAPH's link (distinct from TestParseRichFeatures_
+// LinkedMaliceCost above, which covers the title's parenthetical cost): a
+// cost-enhancement paragraph whose label links "Malice" must still classify
+// as Cost (link-free), not fall through to a nameless bare-prose Effect
+// entry carrying the raw "**1+ [Malice](…):**" markdown inline.
+func TestParseRichFeatures_LinkedLabelParagraph(t *testing.T) {
+	body := "> 🗡 **Blade of the Gol King (Signature Ability)**\n" +
+		">\n" +
+		"> | **Charge, Magic, Melee, Strike, Weapon** |                 **Main Action** |\n" +
+		"> |------------------------------------------|--------------------------------:|\n" +
+		"> | **📏 Melee 1**                           | **🎯 Two creatures or objects** |\n" +
+		">\n" +
+		"> **Effect:** Ajax shifts up to 2 squares between striking each target.\n" +
+		">\n" +
+		"> **1+ [Malice](scc.v1:mcdm.monsters.v1/rule.monster/malice):** Ajax can strike one additional target for each Malice spent.\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+	if len(f.Effects) != 2 {
+		t.Fatalf("Effects = %+v, want 2 entries (Effect, cost)", f.Effects)
+	}
+	if f.Effects[1].Cost != "1+ Malice" {
+		t.Errorf("Effects[1].Cost = %q, want '1+ Malice' (link-free)", f.Effects[1].Cost)
+	}
+	if f.Effects[1].Effect != "Ajax can strike one additional target for each Malice spent." {
+		t.Errorf("Effects[1].Effect = %q, want the prose without the raw label markdown", f.Effects[1].Effect)
+	}
+	if len(f.Enhancements) != 1 || f.Enhancements[0].Cost != "1+ Malice" {
+		t.Errorf("Enhancements = %+v, want 1 entry '1+ Malice' (link-free)", f.Enhancements)
+	}
+}
+
 func TestParseRichFeatures_AbilityWithTableAndTiers(t *testing.T) {
 	body := "> 🔳 **Upchuck (5 Malice)**\n" +
 		">\n" +
