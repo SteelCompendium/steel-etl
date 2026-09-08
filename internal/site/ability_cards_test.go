@@ -170,6 +170,40 @@ You glimpse the immediate future and make an **Agility test**:
 	}
 }
 
+// SC-310 review r2, LOW-5 (regression coverage for LOW-4): the previous
+// HeaderlessTierDerivedLabel test used a single-paragraph item, where
+// len(it.Blocks)==1 and "last block" == "all blocks joined" — it passed even
+// with the pre-LOW-4-fix `strings.Join(it.Blocks, " ")` behavior, so it never
+// actually pinned the fix. Here the labeled Effect section FOLDS two
+// paragraphs: the FIRST names a bold "**Might test**", the SECOND does not.
+// Deriving from the last block only (the fix) must find no test phrase and
+// render the panel fully bare; deriving from all blocks joined (the bug)
+// would find "Might test" in the first block and synthesize a
+// "sc-ability__pr-head" — exactly the review's probe S_E
+// (S_E_headerless_label_in_other_entry).
+func TestRenderAbilityCard_HeaderlessTierDerivedLabel_LastBlockOnly(t *testing.T) {
+	fm := "type: ability\nname: Probe"
+	body := `
+**Effect:** Make a **Might test** somewhere else.
+
+A second paragraph with no test phrase.
+
+- **≤11:** bad
+- **12-16:** ok
+- **17+:** good
+`
+	got := renderAbilityCard(fm, body, "")
+	if strings.Contains(got, "sc-ability__pr-head") {
+		t.Errorf("label must be derived from the LAST folded block only — a bold test phrase in an EARLIER block must not surface a head:\n%s", got)
+	}
+	if strings.Contains(got, "Might Test") || strings.Contains(got, "Power Roll +") {
+		t.Errorf("no label should have been derived at all:\n%s", got)
+	}
+	if !strings.Contains(got, `data-tier="low"><span class="badge">!</span><span class="res">bad</span>`) {
+		t.Errorf("tier1 missing:\n%s", got)
+	}
+}
+
 // Divine Dragon (SC-310): two "Power Roll + Intuition" tier panels, each
 // sitting below its own bare-prose paragraph, must BOTH render — in source
 // order, neither overwriting the other (the pre-fix bug: the tier loop
