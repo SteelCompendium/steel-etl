@@ -459,13 +459,22 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 		b.WriteString("</div>\n")
 	}
 
+	// SC-308 review r3, C-2: not every producer of fbFeature goes through
+	// parseRichFeature — collectChildFeatures (internal/content/monster.go, the
+	// beastheart companion advancement blocks) builds a RichFeature by hand from
+	// a heading + prose body with no Effects at all. Walking Effects exclusively
+	// then rendered those cards as a bare heading. Fall back to the flat fields
+	// (the pre-r3b render shape) whenever Effects is empty, so ANY current or
+	// future producer that only fills Body/Sections/etc. still renders.
+	if len(f.Effects) == 0 {
+		renderFbFeatFlatFallback(b, f)
+		b.WriteString("</article>\n")
+		return
+	}
+
 	// SC-308: walk the ordered Effects list in exact document order — a named
 	// section, a cost enhancement, bare prose, or a roll-only panel, each with
-	// its tier panel (if any) rendered directly below/within it. No hoisting;
-	// no special Intro/Body/Trailing casing — they are ordinary entries now
-	// (.fb__feat-intro / .fb__feat-body / .fb__feat-trailing share the same
-	// base CSS declaration, so the render class doesn't need to distinguish
-	// "before" from "after" any more — see docs/site-builder.md).
+	// its tier panel (if any) rendered directly below/within it. No hoisting.
 	for _, e := range f.Effects {
 		switch {
 		case e.Name != "":
@@ -493,6 +502,57 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 	}
 
 	b.WriteString("</article>\n")
+}
+
+// renderFbFeatFlatFallback renders a feature that carries no Effects at all
+// from its flat frontmatter fields — the pre-r3b render shape, kept so a
+// producer that never populates Effects (SC-308 review r3, C-2) still shows
+// its content instead of a bare heading.
+func renderFbFeatFlatFallback(b *strings.Builder, f fbFeature) {
+	if intro := strings.TrimSpace(f.Intro); intro != "" {
+		fmt.Fprintf(b, "<div class=\"fb__feat-intro\">%s</div>\n", richInline(intro))
+	}
+	if f.PowerRoll != nil {
+		b.WriteString(fbFlatPowerRollHTML(*f.PowerRoll))
+	}
+	for _, s := range f.Sections {
+		b.WriteString("<div class=\"sc-ability__section\">")
+		if l := strings.TrimSpace(s.Label); l != "" {
+			fmt.Fprintf(b, "<div class=\"sc-ability__section-head\"><span class=\"sc-ability__dia\"></span><span class=\"tag\">%s</span></div>", html.EscapeString(l))
+		}
+		fmt.Fprintf(b, "<div class=\"sc-ability__section-body\">%s</div>", renderSectionBlock(strings.TrimSpace(s.Text)))
+		b.WriteString("</div>\n")
+	}
+	for _, e := range f.Enhancements {
+		fmt.Fprintf(b, "<div class=\"sc-ability__enh\"><span class=\"cost\">%s</span><span class=\"txt\">%s</span></div>\n",
+			html.EscapeString(strings.TrimSpace(e.Cost)), richInline(strings.TrimSpace(e.Text)))
+	}
+	if body := strings.TrimSpace(f.Body); body != "" {
+		fmt.Fprintf(b, "<div class=\"fb__feat-body\">%s</div>\n", richInline(body))
+	}
+	if tr := strings.TrimSpace(f.Trailing); tr != "" {
+		fmt.Fprintf(b, "<div class=\"fb__feat-trailing\">%s</div>\n", richInline(tr))
+	}
+}
+
+// fbFlatPowerRollHTML renders the flat fbPowerRoll convenience field (used only
+// by renderFbFeatFlatFallback — a producer with no Effects has no label
+// mechanism either, so this always renders bare when header-less, matching
+// how such flat-only data rendered before the effects[] model existed).
+func fbFlatPowerRollHTML(pr fbPowerRoll) string {
+	var b strings.Builder
+	b.WriteString("<div class=\"sc-ability__pr\">")
+	if f := strings.TrimSpace(pr.Formula); f != "" {
+		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">Power Roll</span><span class=\"chars\">%s</span></div>", richInline(f))
+	}
+	b.WriteString("<div class=\"sc-ability__pr-rows\">")
+	for i, key := range tierKey {
+		if v := strings.TrimSpace(pr.Tiers[key]); v != "" {
+			fmt.Fprintf(&b, "<div class=\"sc-ability__tier\" data-tier=\"%s\"><span class=\"badge\">%s</span><span class=\"res\">%s</span></div>", key, tierGlyph[i], richInline(v))
+		}
+	}
+	b.WriteString("</div></div>\n")
+	return b.String()
 }
 
 // fbEffectRollHTML renders one effects[] entry's tier panel: an optional

@@ -361,6 +361,23 @@ func TestRenderFbFeat_ProseWithAttachedRoll(t *testing.T) {
 	}
 }
 
+// TestRenderFbFeat_NoEffectsFallsBackToFlatBody locks SC-308 review r3's C-2
+// fix: not every fbFeature producer goes through parseRichFeature —
+// collectChildFeatures (internal/content/monster.go, the beastheart companion
+// advancement blocks) builds a {name, body, level}-only feature with no
+// Effects at all. renderFbFeat must fall back to the flat fields instead of
+// rendering a bare heading.
+func TestRenderFbFeat_NoEffectsFallsBackToFlatBody(t *testing.T) {
+	feat := fbFeature{Name: "Foes Forever Frozen", Body: "The gaze turns a foe to stone.", Level: 3}
+	s := renderFbFeats([]fbFeature{feat})
+	if !strings.Contains(s, "Foes Forever Frozen") {
+		t.Fatalf("missing feature name in:\n%s", s)
+	}
+	if !strings.Contains(s, `class="fb__feat-body">The gaze turns a foe to stone.</div>`) {
+		t.Errorf("missing the fallback-rendered body in:\n%s", s)
+	}
+}
+
 func TestFeatureblockCard_SixSlotHead(t *testing.T) {
 	doc := fbDoc{
 		Kind: "dynamic-terrain", Name: "Spike Pit", TerrainType: "Trap", Role: "Hazard", Level: 1,

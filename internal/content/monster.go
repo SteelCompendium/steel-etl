@@ -416,9 +416,16 @@ func collectChildFeatures(section *parser.Section) []RichFeature {
 	for _, child := range section.Children {
 		switch child.Type() {
 		case "feature":
+			body := strings.TrimSpace(child.FullBodySource())
 			rf := RichFeature{
 				Name: CleanHeading(child.Heading),
-				Body: strings.TrimSpace(child.FullBodySource()),
+				Body: body,
+			}
+			// SC-308 review r3 C-2: renderFbFeat walks Effects exclusively now —
+			// a RichFeature built by hand here (not through parseRichFeature) must
+			// carry an Effects entry too, or the card renders as a bare heading.
+			if body != "" {
+				rf.Effects = []RichEffect{{Effect: body}}
 			}
 			if lv, ok := child.Annotation["level"]; ok {
 				if n, err := strconv.Atoi(lv); err == nil {

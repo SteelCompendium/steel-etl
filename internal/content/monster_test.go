@@ -559,3 +559,40 @@ func TestFixtureAdvancementCodedChildren_ViaParseDocument(t *testing.T) {
 			got.CodedChildren[0].TypePath, got.CodedChildren[0].ItemID)
 	}
 }
+
+// TestCollectChildFeatures_PopulatesEffects locks SC-308 review r3's C-2 fix:
+// collectChildFeatures builds a RichFeature by hand (name + prose body) rather
+// than through parseRichFeature, so it never got an Effects entry — and
+// renderFbFeat now walks Effects exclusively, meaning these beastheart
+// companion advancement features (Foes Forever Frozen, Rock Smasher, …)
+// rendered as a bare heading with no body at all. ToMap must carry `effects`
+// alongside the flat `body`.
+func TestCollectChildFeatures_PopulatesEffects(t *testing.T) {
+	child := newSection("Foes Forever Frozen", 4, map[string]string{"type": "feature", "level": "3"},
+		"The basilisk's gaze turns a foe to stone.")
+	parent := &parser.Section{Heading: "Basilisk Advancement Features", HeadingLevel: 3, Children: []*parser.Section{child}}
+
+	feats := collectChildFeatures(parent)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+	if f.Name != "Foes Forever Frozen" || f.Level != 3 {
+		t.Errorf("name/level = %q/%d", f.Name, f.Level)
+	}
+	if f.Body != "The basilisk's gaze turns a foe to stone." {
+		t.Errorf("Body = %q", f.Body)
+	}
+	if len(f.Effects) != 1 || f.Effects[0].Effect != f.Body {
+		t.Fatalf("Effects = %+v, want 1 entry mirroring Body", f.Effects)
+	}
+
+	m := f.ToMap()
+	effs, ok := m["effects"].([]map[string]any)
+	if !ok || len(effs) != 1 || effs[0]["effect"] != f.Body {
+		t.Errorf("ToMap effects = %+v, want 1 entry mirroring body", m["effects"])
+	}
+	if m["body"] != f.Body {
+		t.Errorf("ToMap body = %v, want the flat body kept alongside effects", m["body"])
+	}
+}
