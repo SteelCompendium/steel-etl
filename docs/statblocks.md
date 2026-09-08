@@ -169,6 +169,18 @@ subject to the same attachment rule as any other labeled section (a roll that
 immediately follows it attaches, rendering "Trigger with the Power Roll below/within
 it").
 
+**Data/site disagree about Trigger's attachment, deliberately (SC-308 review r3, L-1).**
+Because Trigger is routed to the top-level field on the DATA path, a roll that follows it
+becomes its own standalone `effects[]` entry there — but the SITE's own
+`internal/site/statblock_page.go` parser keeps Trigger as an ordinary named entry and
+lets the same attachment rule nest the following roll inside it (matching the ruling:
+"Trigger with the Power Roll below/within it"). Both are correct for their own contract:
+`draw-steel-elements` (the SDK consumer) renders `trigger` before `effects` too, so
+document order is preserved either way, and nothing outside the site render needs the
+roll physically nested under `trigger`. A Trigger paragraph that is NOT the source's
+first paragraph would lose its position on the data path (not observed in the corpus
+today — Trigger is always first).
+
 **Three parsers build/render the same model, independently** (SC-311 tracks future
 unification):
 
@@ -181,8 +193,18 @@ unification):
   order, IN ADDITION TO the pre-existing flat `PowerRoll`/`Sections`/`Enhancements`/
   `Intro`/`Body`/`Trailing` convenience fields (kept, unordered, for the SDK
   featureblock schema + its round-trip test). `internal/site/featureblock_page.go`'s
-  `renderFbFeat` walks `Effects` exclusively (round-tripped through the page's YAML
-  frontmatter) — the flat fields are data-only now, not read at render.
+  `renderFbFeat` walks `Effects` when present (round-tripped through the page's YAML
+  frontmatter) — but NOT every producer of an `fbFeature` goes through
+  `parseRichFeature`: `collectChildFeatures` (`internal/content/monster.go`, the
+  beastheart companion advancement blocks) builds one by hand from a heading + prose
+  body and populates both `Body` and a matching one-entry `Effects`. `renderFbFeat`
+  falls back to the flat fields whenever `Effects` is empty (SC-308 review r3, C-2), so
+  any current or future producer that only fills the flat fields still renders.
+  **`PowerRoll` holds the FIRST tier list now** (`!firstSeen` in `parseRichFeature`); base
+  let the LAST list win — an intentional, more-correct choice for a multi-list feature
+  (e.g. the exploding mill wheel's "Roll the Wheel"), but an unannounced change in VALUE
+  for any consumer still reading the flat `power_roll` instead of `effects` (SC-308
+  review r3, L-3).
 - `internal/site/statblock_page.go` (`parseStatblockIslandFeature`, the `type:
   statblock` site card): the same ordered-entry model, parsed straight from the page
   body (no YAML round-trip; `sbFeature.Effects`), rendered by `statblock_card.go`'s
@@ -196,10 +218,14 @@ its `.sc-ability__section` (head = name, body = prose) with the tier panel — w
 present — directly below/within that same section container; a nameless entry with
 prose renders the prose paragraph then the panel as siblings; an entry with only
 roll/tiers (nothing preceding it to attach to) renders the panel alone. No hoisting,
-ever — `featureblock_page.go`'s previously-special `.fb__feat-intro` styling is gone
-(`.fb__feat-intro`/`.fb__feat-body`/`.fb__feat-trailing` shared the same base CSS
-declaration; the render class no longer needs to distinguish "before" from "after" the
-first roll, since attachment already places the panel correctly).
+ever. `featureblock_page.go` restores `.fb__feat-intro` for a nameless entry that
+carries an attached roll (the lead-in-to-a-test shape, e.g. Pavise Shield's
+Deactivate) — its own bottom margin in `steel-featureblock.css` — and keeps
+`.fb__feat-trailing` for a roll-less nameless entry (a plain passive's only paragraph,
+or trailing prose after a roll already rendered elsewhere in the feature); since
+attachment merges a tier list into the SAME entry as the prose it attaches to, "does
+this entry carry a roll" is now a direct, entry-local check rather than a lookahead
+(SC-308 review r3, L-2).
 
 **The statblock regexes are hardened against scc link-wrapping** (2026-06-11, when the
 Summoner book became the first link-swept statblock source): `sbDiceRe` accepts a
