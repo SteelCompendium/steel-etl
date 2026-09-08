@@ -222,8 +222,17 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	if tn.Kind != "passive" || tn.Action != "passive" {
 		t.Errorf("true name kind/action = %q/%q", tn.Kind, tn.Action)
 	}
-	if !strings.Contains(tn.Body, "true name") || len(tn.Effects) != 0 {
-		t.Errorf("true name body = %q effects=%v", tn.Body, tn.Effects)
+	// SC-308 review r3, C-1: Effects is no longer nulled for an all-bare-prose
+	// passive — Body stays the render path for this case (unchanged rendering),
+	// but the underlying data now also carries the same text as one effects
+	// entry (harmless; a table-less feature with any LABELED section instead
+	// falls through to the Effects walk, covered by TestBuildStatblockIsland_
+	// SoloMonsterTrait below).
+	if !strings.Contains(tn.Body, "true name") {
+		t.Errorf("true name body = %q", tn.Body)
+	}
+	if len(tn.Effects) != 1 || tn.Effects[0].Effect != tn.Body {
+		t.Errorf("true name effects = %+v, want 1 entry mirroring Body", tn.Effects)
 	}
 
 	// ── Villain action: cost "Villain Action 1" → kind villain ──
@@ -236,6 +245,57 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	}
 	if ar.Cost != "Villain Action 1" {
 		t.Errorf("all rise cost = %q", ar.Cost)
+	}
+}
+
+// TestBuildStatblockIsland_SoloMonsterTrait locks SC-308 review r3's C-1 fix:
+// a table-less trait whose ENTIRE body is labeled paragraphs (no bare prose at
+// all — the "Solo Monster" shape: End Effect + Solo Turns) must keep both
+// sections on the site card. Verbatim shape from the Monsters book (arixx,
+// ashen-hoarder, …) — the SITE parser reads already-link-swept md-linked pages
+// (relative-path links only), so this fixture is unlinked; the source book's
+// linked "**[End Effect](scc.v1:…):**" label is covered for the DATA path by
+// TestParseStatblockFeatures_SoulSteal_LinkedCost / the Effect-label case in
+// internal/content (I-1).
+const soloMonsterTrait = "> ☠️ **Solo Monster**\n" +
+	">\n" +
+	"> **End Effect:** At the end of each of their turns, the creature can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.\n" +
+	">\n" +
+	"> **Solo Turns:** The creature can take two turns each round. They can't take turns consecutively.\n"
+
+func TestBuildStatblockIsland_SoloMonsterTrait(t *testing.T) {
+	feats := parseStatblockIslandFeatures(soloMonsterTrait)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+	if f.Kind != "passive" || f.Action != "passive" {
+		t.Errorf("kind/action = %q/%q, want passive/passive", f.Kind, f.Action)
+	}
+	if f.Body != "" {
+		t.Errorf("Body = %q, want empty (a labeled-section trait renders through Effects, not Body)", f.Body)
+	}
+	if len(f.Effects) != 2 {
+		t.Fatalf("Effects = %+v, want 2 named entries (End Effect, Solo Turns)", f.Effects)
+	}
+	if f.Effects[0].Name != "End Effect" {
+		t.Errorf("Effects[0].Name = %q, want 'End Effect'", f.Effects[0].Name)
+	}
+	if !strings.Contains(f.Effects[0].Effect, "take 5 damage to end one effect") {
+		t.Errorf("Effects[0].Effect = %q", f.Effects[0].Effect)
+	}
+	if f.Effects[1].Name != "Solo Turns" {
+		t.Errorf("Effects[1].Name = %q, want 'Solo Turns'", f.Effects[1].Name)
+	}
+
+	// Render: both sections must appear on the card (the actual bug — the
+	// data was already correct; only the site render dropped them).
+	html := renderStatblockFeature(f)
+	if !strings.Contains(html, `<span class="tag">End Effect</span>`) {
+		t.Errorf("rendered card is missing the End Effect section:\n%s", html)
+	}
+	if !strings.Contains(html, `<span class="tag">Solo Turns</span>`) {
+		t.Errorf("rendered card is missing the Solo Turns section:\n%s", html)
 	}
 }
 

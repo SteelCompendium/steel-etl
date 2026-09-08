@@ -136,7 +136,12 @@
       "kind": "passive",
       "action": "passive",
       "name": "True Name",
-      "body": "If a creature within 10 squares speaks the high judge's true name, the high judge loses their damage immunities until the end of the encounter."
+      "body": "If a creature within 10 squares speaks the high judge's true name, the high judge loses their damage immunities until the end of the encounter.",
+      "effects": [
+        {
+          "effect": "If a creature within 10 squares speaks the high judge's true name, the high judge loses their damage immunities until the end of the encounter."
+        }
+      ]
     },
     {
       "kind": "villain",

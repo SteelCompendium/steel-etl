@@ -95,7 +95,12 @@
       "kind": "passive",
       "action": "passive",
       "name": "Mob Tactics",
-      "body": "The cutter deals 1 extra damage for each other goblin adjacent to its target."
+      "body": "The cutter deals 1 extra damage for each other goblin adjacent to its target.",
+      "effects": [
+        {
+          "effect": "The cutter deals 1 extra damage for each other goblin adjacent to its target."
+        }
+      ]
     }
   ]
 }

@@ -542,11 +542,27 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 	}
 
 	if !tableSeen {
-		// No keyword/usage table → a passive trait (Monsters book trait home):
-		// a single plain paragraph, not the structured Effects walk.
+		// No keyword/usage table → a passive trait (Monsters book trait home).
 		f.Kind, f.Action = "passive", "passive"
-		f.Body = strings.Join(prose, "\n\n")
-		f.Effects = nil
+		// SC-308 review r3 C-1: a table-less trait whose body is one or more
+		// LABELED paragraphs (the "Solo Monster" shape — End Effect, Solo Turns,
+		// …) must keep every one of them; nulling Effects here silently dropped
+		// them (renderStatblockFeature has no other path to a named section).
+		// Body stays the render path ONLY for the all-bare-prose case (every
+		// effects entry nameless and cost-less) — that keeps today's plain
+		// single-paragraph passive rendering (`.sb__feat-body`) byte-identical;
+		// a feature carrying any labeled/cost entry instead falls through to the
+		// ordinary Effects walk, same as an ability.
+		structured := false
+		for _, e := range f.Effects {
+			if e.Name != "" || e.Cost != "" {
+				structured = true
+				break
+			}
+		}
+		if !structured {
+			f.Body = strings.Join(prose, "\n\n")
+		}
 		return f, true
 	}
 
