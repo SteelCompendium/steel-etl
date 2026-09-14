@@ -500,6 +500,42 @@ func TestSCCAPINoPrintings(t *testing.T) {
 	}
 }
 
+func TestSCCAPIGrantedByInResolvePayload(t *testing.T) {
+	// SC-323 round-2 MED-3: granted_by must reach the resolve/*.json API
+	// payload, not just markdown/JSON/YAML — omitted (omitempty) for entries
+	// that aren't treasure-granted.
+	dir := t.TempDir()
+	gen := &SCCAPIGenerator{OutputDir: dir, BaseURL: "https://steelcompendium.io/v2"}
+
+	if err := gen.WriteSection("mcdm.heroes.v1/feature.ability.treasure/dragons-fire", &content.ParsedContent{
+		Frontmatter: map[string]any{"name": "Dragon's Fire", "type": "ability", "granted_by": "mcdm.heroes.v1/rule.treasure/enhancement"},
+	}); err != nil {
+		t.Fatal(err)
+	}
+	if err := gen.WriteSection("mcdm.heroes.v1/feature.ability.common/grab", &content.ParsedContent{
+		Frontmatter: map[string]any{"name": "Grab", "type": "ability"},
+	}); err != nil {
+		t.Fatal(err)
+	}
+	if err := gen.Finalize(); err != nil {
+		t.Fatal(err)
+	}
+
+	var treasure apiResolveEntry
+	readJSON(t, filepath.Join(dir, "v1", "resolve", "mcdm.heroes.v1", "feature.ability.treasure", "dragons-fire.json"), &treasure)
+	if treasure.GrantedBy != "mcdm.heroes.v1/rule.treasure/enhancement" {
+		t.Errorf("granted_by = %q, want mcdm.heroes.v1/rule.treasure/enhancement", treasure.GrantedBy)
+	}
+
+	grabRaw, err := os.ReadFile(filepath.Join(dir, "v1", "resolve", "mcdm.heroes.v1", "feature.ability.common", "grab.json"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if strings.Contains(string(grabRaw), "granted_by") {
+		t.Errorf("non-treasure-granted entry must omit granted_by entirely:\n%s", grabRaw)
+	}
+}
+
 func readJSON(t *testing.T, path string, v any) {
 	t.Helper()
 	data, err := os.ReadFile(path)

@@ -36,6 +36,10 @@ type apiEntry struct {
 	Type     string `json:"type"`
 	Source   string `json:"source"`
 	Printing string `json:"printing,omitempty"`
+	// GrantedBy is the SCC code of a granting treasure rule page (SC-323),
+	// e.g. an armor/weapon/implement enhancement — omitted for every entry
+	// that isn't treasure-granted.
+	GrantedBy string `json:"granted_by,omitempty"`
 }
 
 // apiBook is per-book non-identity provenance metadata surfaced by the API.
@@ -96,17 +100,19 @@ func (g *SCCAPIGenerator) WriteSection(sccCode string, parsed *content.ParsedCon
 
 	name, _ := parsed.Frontmatter["name"].(string)
 	typeName, _ := parsed.Frontmatter["type"].(string)
+	grantedBy, _ := parsed.Frontmatter["granted_by"].(string)
 
 	source := extractSource(sccCode)
 	url := g.resolveURL(sccCode)
 
 	g.entries[sccCode] = apiEntry{
-		SCC:      sccCode,
-		URL:      url,
-		Name:     name,
-		Type:     typeName,
-		Source:   source,
-		Printing: g.Printings[source],
+		SCC:       sccCode,
+		URL:       url,
+		Name:      name,
+		Type:      typeName,
+		Source:    source,
+		Printing:  g.Printings[source],
+		GrantedBy: grantedBy,
 	}
 
 	return nil
