@@ -30,6 +30,33 @@ func findAncestorID(ctx *context.ContextStack, fromLevel int, targetType string)
 	return ""
 }
 
+// findTreasureRuleAncestor walks the context stack upward from the given
+// level looking for the nearest recognised ancestor, and returns the @id of a
+// `rule` ancestor tagged `@group: treasure` (SC-323 — e.g. an armor/weapon/
+// implement enhancement granting a bonus ability/feature). A closer
+// class/kit/ancestry/treasure ancestor takes precedence and yields "" (the
+// caller's own class/kit/ancestry/treasure lookup already covers that case);
+// a `rule` ancestor with any OTHER group is not "recognised" here and is
+// skipped over so the walk continues upward, matching the pre-SC-323
+// behaviour of treating unrelated `rule` ancestors as transparent.
+func findTreasureRuleAncestor(ctx *context.ContextStack, fromLevel int) string {
+	for level := fromLevel - 1; level >= 1; level-- {
+		cur := ctx.Current(level)
+		if cur == nil {
+			continue
+		}
+		switch cur["type"] {
+		case "class", "kit", "ancestry", "treasure":
+			return ""
+		case "rule":
+			if cur["group"] == "treasure" && cur["id"] != "" {
+				return cur["id"]
+			}
+		}
+	}
+	return ""
+}
+
 // CleanHeading strips the cost suffix from a heading.
 // "Alacrity of the Heart (11 Piety)" → "Alacrity of the Heart"
 func CleanHeading(s string) string {

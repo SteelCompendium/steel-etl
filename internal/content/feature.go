@@ -5,6 +5,7 @@ import (
 
 	"github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
 
 // featureSource returns the feature_source frontmatter value for a feature or
@@ -98,6 +99,15 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	// Companion species (beastheart book) takes precedence over class in the path.
 	companionID, _ := ctx.Lookup(section.HeadingLevel, "companion")
 
+	// A plain feature with no class/kit/ancestry/companion ancestor may still be
+	// granted by a treasure rule page (mirrors AbilityParser's rule-ancestor
+	// check, SC-323) — checked lazily below, only when the common-feature
+	// fallback would otherwise apply.
+	treasureRuleID := ""
+	if classID == "" && kitID == "" && ancestryID == "" && companionID == "" {
+		treasureRuleID = findTreasureRuleAncestor(ctx, section.HeadingLevel)
+	}
+
 	// Trait is reserved for the rulebook's trait homes. The only trait home
 	// reachable through FeatureParser is an ancestry (monster traits are emitted
 	// by statblock_parse.go; companions are NOT a trait home — the Beastheart
@@ -150,6 +160,13 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	if fs := featureSource(ctx, section); fs != "" {
 		fm["feature_source"] = fs
 	}
+	if treasureRuleID != "" {
+		// Relationship is a frontmatter link, never path nesting (scc-reference
+		// "relationships are frontmatter links, never path nesting").
+		if book, ok := ctx.Lookup(section.HeadingLevel, "book"); ok && book != "" {
+			fm["granted_by"] = scc.Classify(book, []string{"rule", "treasure"}, treasureRuleID)
+		}
+	}
 
 	// Build the hub-and-spoke type path. The base case is unmarked; the `trait`
 	// marker is inserted only for trait homes (ancestry). Plain features take
@@ -174,6 +191,12 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		typePath = append(typePath, classID)
 	} else if ancestryID != "" {
 		typePath = append(typePath, ancestryID)
+	} else if treasureRuleID != "" {
+		// Treasure-granted features are flat under `feature.treasure`, mirroring
+		// AbilityParser's `feature.ability.treasure` bucket (SC-323); the
+		// granting rule page is carried as the `granted_by` frontmatter link
+		// above, not nested into the path.
+		typePath = append(typePath, "treasure")
 	} else if kitID == "" {
 		groupID := findAncestorID(ctx, section.HeadingLevel, "feature-group")
 		typePath = append(typePath, "common")

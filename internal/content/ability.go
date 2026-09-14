@@ -6,6 +6,7 @@ import (
 
 	"github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
 
 // AbilityParser handles @type: ability sections.
@@ -63,9 +64,17 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 	// Auto-extract from body content (only fill in what annotations didn't provide)
 	extractAbilityFields(body, fm)
 
-	// Look up parent class/kit/ancestry/treasure from context
+	// Look up parent class/kit/ancestry/treasure from context. When none of
+	// those is the nearest recognised ancestor, an ability may instead sit
+	// directly under a `rule` section tagged `@group: treasure` (e.g. an
+	// armor/weapon/implement enhancement granting a bonus ability, like Imbue
+	// Armor's Dragon Soul II granting Dragon's Fire) — that's a
+	// treasure-granted ability (SC-323). A rule ancestor with any OTHER group
+	// is not "recognised" here and is skipped over, same as before.
 	parentID := ""
 	parentType := ""
+	treasureRuleGroup := ""
+	treasureRuleID := ""
 	for level := section.HeadingLevel - 1; level >= 1; level-- {
 		cur := ctx.Current(level)
 		if cur == nil {
@@ -75,14 +84,25 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 		case "class", "kit", "ancestry", "treasure":
 			parentID = cur["id"]
 			parentType = cur["type"]
+		case "rule":
+			if cur["group"] == "treasure" && cur["id"] != "" {
+				treasureRuleGroup = cur["group"]
+				treasureRuleID = cur["id"]
+			}
 		}
-		if parentID != "" {
+		if parentID != "" || treasureRuleID != "" {
 			break
 		}
 	}
 
 	if parentID != "" {
 		fm[parentType] = parentID
+	} else if treasureRuleID != "" {
+		// Relationship is a frontmatter link, never path nesting (scc-reference
+		// "relationships are frontmatter links, never path nesting").
+		if book, ok := ctx.Lookup(section.HeadingLevel, "book"); ok && book != "" {
+			fm["granted_by"] = scc.Classify(book, []string{"rule", treasureRuleGroup}, treasureRuleID)
+		}
 	}
 
 	// Look up level from context
@@ -121,6 +141,12 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 		typePath = append(typePath, companionID)
 	} else if parentID != "" {
 		typePath = append(typePath, parentID)
+	} else if treasureRuleID != "" {
+		// Treasure-granted abilities are flat under `feature.ability.treasure`,
+		// mirroring the flatness of the common bucket below — the granting rule
+		// page is carried as the `granted_by` frontmatter link above, not nested
+		// into the path (SC-323).
+		typePath = append(typePath, "treasure")
 	} else {
 		// Common abilities are flat under `feature.ability.common` regardless of
 		// any feature-group ancestor (the Combat chapter's "Maneuvers" /

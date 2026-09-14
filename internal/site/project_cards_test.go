@@ -26,7 +26,7 @@ func TestProjectCardsCorpusNesting(t *testing.T) {
 				imbue = s
 			}
 			if s.Heading == "Dragon's Fire" {
-				codes[s] = "mcdm.heroes.v1/feature.ability.common/dragons-fire"
+				codes[s] = "mcdm.heroes.v1/feature.ability.treasure/dragons-fire"
 			}
 		}
 	}

@@ -228,6 +228,39 @@ func TestFeatureParser_TaxonomyPaths(t *testing.T) {
 	}
 }
 
+func TestFeatureParserTreasureRuleAncestor(t *testing.T) {
+	// A plain feature (no class/kit/ancestry/companion ancestor) whose nearest
+	// recognised ancestor is a `rule` tagged `@group: treasure` mirrors
+	// AbilityParser's treasure-granted carve-out (SC-323): flat
+	// feature.treasure, `granted_by` frontmatter link, still a plain "feature"
+	// (not "trait" — trait stays reserved for ancestry homes).
+	section := &parser.Section{
+		Heading:      "Bonus Trick",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "feature"},
+		BodySource:   "Some body",
+	}
+
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	ctx.Push(5, context.Metadata{"type": "rule", "group": "treasure", "id": "enhancement"})
+
+	p := &FeatureParser{}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("FeatureParser.Parse failed: %v", err)
+	}
+
+	if result.Frontmatter["type"] != "feature" {
+		t.Errorf("type = %v, want feature", result.Frontmatter["type"])
+	}
+	if len(result.TypePath) != 2 || result.TypePath[0] != "feature" || result.TypePath[1] != "treasure" {
+		t.Errorf("expected TypePath=[feature, treasure], got %v", result.TypePath)
+	}
+	if got := result.Frontmatter["granted_by"]; got != "mcdm.heroes.v1/rule.treasure/enhancement" {
+		t.Errorf("granted_by = %v, want mcdm.heroes.v1/rule.treasure/enhancement", got)
+	}
+}
+
 func TestAbilityParserBasic(t *testing.T) {
 	body := `*You slam your weapon into a foe with awesome might.*
 
@@ -508,6 +541,70 @@ func TestAbilityParserCommonAbilityUnderFeatureGroupStaysFlat(t *testing.T) {
 	if len(result.TypePath) != 3 || result.TypePath[0] != "feature" ||
 		result.TypePath[1] != "ability" || result.TypePath[2] != "common" {
 		t.Errorf("expected flat TypePath=[feature, ability, common], got %v", result.TypePath)
+	}
+}
+
+func TestAbilityParserTreasureRuleAncestor(t *testing.T) {
+	// An ability whose nearest recognised ancestor is a `rule` tagged
+	// `@group: treasure` (e.g. Imbue Armor's Dragon Soul II granting Dragon's
+	// Fire) is treasure-granted: flat feature.ability.treasure, with the
+	// granting rule page carried as a `granted_by` frontmatter link rather than
+	// nested into the path (SC-323).
+	section := &parser.Section{
+		Heading:      "Dragon's Fire",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "ability"},
+		BodySource:   "You open your maw and unleash hell.",
+	}
+
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	ctx.Push(5, context.Metadata{"type": "rule", "group": "treasure", "id": "enhancement"})
+
+	p := &AbilityParser{}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("AbilityParser.Parse failed: %v", err)
+	}
+
+	if len(result.TypePath) != 3 || result.TypePath[0] != "feature" ||
+		result.TypePath[1] != "ability" || result.TypePath[2] != "treasure" {
+		t.Errorf("expected TypePath=[feature, ability, treasure], got %v", result.TypePath)
+	}
+	if got := result.Frontmatter["granted_by"]; got != "mcdm.heroes.v1/rule.treasure/enhancement" {
+		t.Errorf("granted_by = %v, want mcdm.heroes.v1/rule.treasure/enhancement", got)
+	}
+	if _, ok := result.Frontmatter["treasure"]; ok {
+		t.Errorf("did not expect a `treasure` frontmatter field, got %v", result.Frontmatter["treasure"])
+	}
+}
+
+func TestAbilityParserRuleAncestorOtherGroupStaysCommon(t *testing.T) {
+	// A `rule` ancestor with any group OTHER than "treasure" is not a
+	// recognised ancestor — the ability still falls through to the common
+	// bucket, same as if there were no rule ancestor at all (SC-323 must not
+	// widen the treasure carve-out to every rule-nested ability).
+	section := &parser.Section{
+		Heading:      "Grab",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "ability"},
+		BodySource:   "Some body",
+	}
+
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	ctx.Push(5, context.Metadata{"type": "rule", "group": "combat", "id": "maneuver"})
+
+	p := &AbilityParser{}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("AbilityParser.Parse failed: %v", err)
+	}
+
+	if len(result.TypePath) != 3 || result.TypePath[0] != "feature" ||
+		result.TypePath[1] != "ability" || result.TypePath[2] != "common" {
+		t.Errorf("expected flat TypePath=[feature, ability, common], got %v", result.TypePath)
+	}
+	if _, ok := result.Frontmatter["granted_by"]; ok {
+		t.Errorf("did not expect granted_by, got %v", result.Frontmatter["granted_by"])
 	}
 }
 
