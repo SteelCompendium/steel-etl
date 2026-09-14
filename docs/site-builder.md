@@ -304,12 +304,14 @@ default boost since SC-306 (the demotion buried monsters under their own names).
 checked first for `type: feature` / `type: ability` pages: a page whose SCC type-path
 is `feature.ability.common` or starts with `feature.common.`
 (`main-actions` / `maneuvers` / `move-actions`) gets `commonActionBoost` = 3, the same
-tier as the rules glossary. These 24 pages are the book's **universal** actions —
+tier as the rules glossary. These 23 pages are the book's **universal** actions —
 Free Strike, Charge, Grab, Hide, and the common ability cards every creature has —
 and at the default 1× they tied with the ~3,000 class-specific features and lost to
 every statblock whose text merely mentions the term. (The bucket is frontmatter-flat:
-`claw-dirt` / `dragons-fire` are ancestry-granted but carry no owning-entity field, so
-they ride along. Harmless at this size.)
+`claw-dirt` is a burrow-movement ability any groupless creature can use, with no
+owning-entity field, so it rides along. `dragons-fire` — Dragon Soul II's granted
+ability — moved OUT of this bucket to `feature.ability.treasure` (SC-323): it's
+treasure-granted, not a universal action, so losing the boost is correct.)
 
 ### `internal/site/export_src.go`
 
