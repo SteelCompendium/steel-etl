@@ -317,7 +317,15 @@ func TestBuildFeatureIndex_FolderCards(t *testing.T) {
 func TestBuildFeatureIndex_TreasureBucketNotClaimedByRichCards(t *testing.T) {
 	root := t.TempDir()
 	dir := filepath.Join(root, "feature", "ability", "treasure")
-	writeFile(t, filepath.Join(dir, "dragons-fire.md"), abilityLeaf("Dragon's Fire", "Main action", ""))
+	// No class/ancestry/kit field — treasure-granted abilities carry none (only
+	// granted_by), so the deck label falls back to klassFromDir("treasure") →
+	// dirToTitle → "Treasures" (LOW-2: pin that fallback, not a fixture-supplied
+	// class field masking it, the way the shared abilityLeaf() helper would).
+	writeFile(t, filepath.Join(dir, "dragons-fire.md"),
+		"---\nname: Dragon's Fire\ntype: ability\ngranted_by: mcdm.heroes.v1/rule.treasure/enhancement\n"+
+			"action_type: Main action\ndistance: 5 x 1 line within 1\ntarget: Each enemy in the area\n"+
+			"flavor: You open your maw and unleash hell.\nkeywords:\n    - Area\n    - Magic\n"+
+			"---\n\n<article class=\"sc-ability\"></article>\n")
 
 	if _, ok := buildCardsContent(dir, "treasure", []string{"dragons-fire.md"}, nil); ok {
 		t.Fatal("buildCardsContent claimed a feature/ability/treasure leaf — dirName collides with the treasure entity type")
@@ -327,6 +335,7 @@ func TestBuildFeatureIndex_TreasureBucketNotClaimedByRichCards(t *testing.T) {
 	for _, want := range []string{
 		`<div class="sc-prevs">`,
 		`class="sc-prev sc-prev--ability sc-fil"`,
+		`sc-head__left-deck sc-head__slot--line">Treasures</div>`,
 	} {
 		if !strings.Contains(content, want) {
 			t.Errorf("treasure bucket index missing %q (rendered as treasure-item cards instead?):\n%s", want, content)
