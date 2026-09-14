@@ -608,6 +608,110 @@ func TestAbilityParserRuleAncestorOtherGroupStaysCommon(t *testing.T) {
 	}
 }
 
+func TestAbilityParserNearestTreasureRuleBeatsFartherClass(t *testing.T) {
+	// Owner ruling (round-2 review MED-2): NEAREST recognised ancestor wins —
+	// a treasure rule nested inside a class section (class farther out than
+	// the rule) still yields the treasure bucket, not the class. A closer
+	// class would win instead (covered by the existing common/class tests);
+	// this pins the "class farther, rule nearer" ordering.
+	section := &parser.Section{
+		Heading:      "Bonus Trick",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "ability"},
+		BodySource:   "Some body",
+	}
+
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "fury"})
+	ctx.Push(5, context.Metadata{"type": "rule", "group": "treasure", "id": "enhancement"})
+
+	p := &AbilityParser{}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("AbilityParser.Parse failed: %v", err)
+	}
+
+	if len(result.TypePath) != 3 || result.TypePath[0] != "feature" ||
+		result.TypePath[1] != "ability" || result.TypePath[2] != "treasure" {
+		t.Errorf("expected TypePath=[feature, ability, treasure], got %v", result.TypePath)
+	}
+	if got := result.Frontmatter["granted_by"]; got != "mcdm.heroes.v1/rule.treasure/enhancement" {
+		t.Errorf("granted_by = %v, want mcdm.heroes.v1/rule.treasure/enhancement", got)
+	}
+	if _, ok := result.Frontmatter["class"]; ok {
+		t.Errorf("did not expect class frontmatter (farther-out ancestor should be dropped), got %v", result.Frontmatter["class"])
+	}
+}
+
+func TestFeatureParserNearestTreasureRuleBeatsFartherClass(t *testing.T) {
+	// Parity with TestAbilityParserNearestTreasureRuleBeatsFartherClass
+	// (round-2 review MED-2): FeatureParser must apply the same
+	// nearest-ancestor-wins rule as AbilityParser, not pre-gate on whether a
+	// class exists ANYWHERE in the ancestry.
+	section := &parser.Section{
+		Heading:      "Bonus Trick",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "feature"},
+		BodySource:   "Some body",
+	}
+
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "fury"})
+	ctx.Push(5, context.Metadata{"type": "rule", "group": "treasure", "id": "enhancement"})
+
+	p := &FeatureParser{}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("FeatureParser.Parse failed: %v", err)
+	}
+
+	if result.Frontmatter["type"] != "feature" {
+		t.Errorf("type = %v, want feature", result.Frontmatter["type"])
+	}
+	if len(result.TypePath) != 2 || result.TypePath[0] != "feature" || result.TypePath[1] != "treasure" {
+		t.Errorf("expected TypePath=[feature, treasure], got %v", result.TypePath)
+	}
+	if got := result.Frontmatter["granted_by"]; got != "mcdm.heroes.v1/rule.treasure/enhancement" {
+		t.Errorf("granted_by = %v, want mcdm.heroes.v1/rule.treasure/enhancement", got)
+	}
+	if _, ok := result.Frontmatter["class"]; ok {
+		t.Errorf("did not expect class frontmatter (farther-out ancestor should be dropped), got %v", result.Frontmatter["class"])
+	}
+}
+
+func TestFeatureParserCompanionAncestorBeatsFartherTreasureRule(t *testing.T) {
+	// findTreasureRuleAncestor must recognise a `companion` ancestor (carried
+	// on a `feature-group` context's @companion annotation, not a `type:
+	// companion` value) as a nearer stop, or a companion feature would
+	// spuriously pick up a `granted_by` link from a treasure rule further out
+	// (round-2 review MED-2: "companion missing from the helper's precedence
+	// switch").
+	section := &parser.Section{
+		Heading:      "Wolf Trick",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "feature"},
+		BodySource:   "Some body",
+	}
+
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "rule", "group": "treasure", "id": "enhancement"})
+	ctx.Push(3, context.Metadata{"type": "feature-group", "companion": "wolf"})
+
+	p := &FeatureParser{}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("FeatureParser.Parse failed: %v", err)
+	}
+
+	if len(result.TypePath) != 3 || result.TypePath[0] != "feature" ||
+		result.TypePath[1] != "companion" || result.TypePath[2] != "wolf" {
+		t.Errorf("expected TypePath=[feature, companion, wolf], got %v", result.TypePath)
+	}
+	if _, ok := result.Frontmatter["granted_by"]; ok {
+		t.Errorf("did not expect granted_by (companion ancestor is nearer than the treasure rule), got %v", result.Frontmatter["granted_by"])
+	}
+}
+
 func TestRegistryGetAndHas(t *testing.T) {
 	r := NewRegistry()
 

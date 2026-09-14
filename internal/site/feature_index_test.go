@@ -308,6 +308,35 @@ func TestBuildFeatureIndex_FolderCards(t *testing.T) {
 	}
 }
 
+// SC-323 HIGH-1 regression: feature.ability.treasure's leaf dirName ("treasure")
+// collides with richCardTypes' "treasure" (the top-level treasure-ITEM type).
+// buildCardsContent must not claim any feature/** leaf, so buildIndexContent
+// falls through to buildFeatureIndexContent and the bucket renders ability
+// preview cards (sc-prevs / sc-prev--ability), never treasure-item stat-cards
+// (sc-cards / sc-card__type).
+func TestBuildFeatureIndex_TreasureBucketNotClaimedByRichCards(t *testing.T) {
+	root := t.TempDir()
+	dir := filepath.Join(root, "feature", "ability", "treasure")
+	writeFile(t, filepath.Join(dir, "dragons-fire.md"), abilityLeaf("Dragon's Fire", "Main action", ""))
+
+	if _, ok := buildCardsContent(dir, "treasure", []string{"dragons-fire.md"}, nil); ok {
+		t.Fatal("buildCardsContent claimed a feature/ability/treasure leaf — dirName collides with the treasure entity type")
+	}
+
+	content := buildIndexContent(dir, "treasure", []string{"dragons-fire.md"}, nil)
+	for _, want := range []string{
+		`<div class="sc-prevs">`,
+		`class="sc-prev sc-prev--ability sc-fil"`,
+	} {
+		if !strings.Contains(content, want) {
+			t.Errorf("treasure bucket index missing %q (rendered as treasure-item cards instead?):\n%s", want, content)
+		}
+	}
+	if strings.Contains(content, `sc-card__type`) {
+		t.Error("treasure bucket index rendered as treasure-item stat-cards, not ability previews")
+	}
+}
+
 func TestBuildFeatureIndex_PreviewCards(t *testing.T) {
 	root := t.TempDir()
 	lvlDir := filepath.Join(root, "feature", "ability", "censor", "level-1")

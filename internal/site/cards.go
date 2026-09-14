@@ -62,6 +62,13 @@ var wideCardTypes = map[string]bool{
 // buildCardsContent returns rich-card index markup for a supported flat type.
 // ok=false → caller falls back to the default browse-index list.
 func buildCardsContent(dir, dirName string, files, subdirs []string) (content string, ok bool) {
+	// feature/** leaves are ability/trait preview cards (buildFeatureIndexContent),
+	// never entity stat-cards — a leaf dirName can collide with richCardTypes (e.g.
+	// the feature.ability.treasure bucket's dirName == "treasure", SC-323 HIGH-1).
+	// Bail out before the dirName/pathHasSegment switch below can claim it.
+	if featureKind(dir) != "" {
+		return "", false
+	}
 	leaf := len(subdirs) == 0 && len(files) > 0
 	var cardType string
 	switch {

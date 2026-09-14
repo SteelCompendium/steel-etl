@@ -224,6 +224,9 @@ func buildAbilityMetadata(sccCode string, parsed *content.ParsedContent) map[str
 
 	// Fields that move into metadata
 	setIfPresent(meta, "class", fm, "class")
+	// Relationship link to a granting treasure rule page (SC-323) — frontmatter-
+	// only until here would leave JSON/YAML/API consumers unable to recover it.
+	setIfPresent(meta, "granted_by", fm, "granted_by")
 	setIfPresent(meta, "feature_type", fm, "type") // original type before transform
 	setIfPresent(meta, "source", fm, "source")
 
@@ -285,6 +288,9 @@ func buildTraitMetadata(sccCode string, parsed *content.ParsedContent) map[strin
 
 	setIfPresent(meta, "class", fm, "class")
 	setIfPresent(meta, "kit", fm, "kit")
+	// Relationship link to a granting treasure rule page (SC-323) — frontmatter-
+	// only until here would leave JSON/YAML/API consumers unable to recover it.
+	setIfPresent(meta, "granted_by", fm, "granted_by")
 	setIfPresent(meta, "feature_type", fm, "type") // original type before transform
 	setIfPresent(meta, "source", fm, "source")
 	// Subclass is reference metadata (e.g. beastheart Wild Nature passives); not in

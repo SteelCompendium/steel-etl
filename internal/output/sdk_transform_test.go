@@ -360,6 +360,42 @@ func TestTransformTrait_SubclassInMetadata(t *testing.T) {
 	assertEqual(t, meta["subclass"], "spark")
 }
 
+func TestTransformAbility_GrantedByInMetadata(t *testing.T) {
+	// SC-323 round-2 MED-2: granted_by must reach the JSON/YAML/API metadata
+	// object, not just markdown frontmatter.
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":       "Dragon's Fire",
+			"type":       "ability",
+			"granted_by": "mcdm.heroes.v1/rule.treasure/enhancement",
+		},
+		Body:     "body",
+		TypePath: []string{"feature", "ability", "treasure"},
+		ItemID:   "dragons-fire",
+	}
+	out := TransformToSDKFormat("mcdm.heroes.v1/feature.ability.treasure/dragons-fire", parsed)
+	meta := out["metadata"].(map[string]any)
+	assertEqual(t, meta["granted_by"], "mcdm.heroes.v1/rule.treasure/enhancement")
+}
+
+func TestTransformFeature_GrantedByInMetadata(t *testing.T) {
+	// Parity with TestTransformAbility_GrantedByInMetadata — plain features
+	// (and traits) route through buildTraitMetadata, which needs the same field.
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":       "Bonus Trick",
+			"type":       "feature",
+			"granted_by": "mcdm.heroes.v1/rule.treasure/enhancement",
+		},
+		Body:     "body",
+		TypePath: []string{"feature", "treasure"},
+		ItemID:   "bonus-trick",
+	}
+	out := TransformToSDKFormat("mcdm.heroes.v1/feature.treasure/bonus-trick", parsed)
+	meta := out["metadata"].(map[string]any)
+	assertEqual(t, meta["granted_by"], "mcdm.heroes.v1/rule.treasure/enhancement")
+}
+
 func TestTransformTrait_EmptyBody(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{

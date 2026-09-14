@@ -99,13 +99,24 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	// Companion species (beastheart book) takes precedence over class in the path.
 	companionID, _ := ctx.Lookup(section.HeadingLevel, "companion")
 
-	// A plain feature with no class/kit/ancestry/companion ancestor may still be
-	// granted by a treasure rule page (mirrors AbilityParser's rule-ancestor
-	// check, SC-323) — checked lazily below, only when the common-feature
-	// fallback would otherwise apply.
-	treasureRuleID := ""
-	if classID == "" && kitID == "" && ancestryID == "" && companionID == "" {
-		treasureRuleID = findTreasureRuleAncestor(ctx, section.HeadingLevel)
+	// A feature may be granted by a treasure rule page (mirrors AbilityParser's
+	// rule-ancestor check, SC-323). Nearest-recognised-ancestor-wins, exactly
+	// like AbilityParser's own combined walk: findTreasureRuleAncestor returns
+	// non-"" only when the treasure rule is NEARER than any class/kit/
+	// ancestry/companion ancestor (it returns "" the moment its own walk hits
+	// one of those first), so calling it unconditionally — not gated on
+	// whether classID/kitID/ancestryID/companionID are empty, which are
+	// whole-tree lookups, not nearest-specific — is what gives a treasure rule
+	// nested inside e.g. a class section correct precedence over a class
+	// ancestor further out (round-2 review MED-2).
+	treasureRuleID := findTreasureRuleAncestor(ctx, section.HeadingLevel)
+	if treasureRuleID != "" {
+		// The whole-tree lookups above are stale once a NEARER treasure rule
+		// wins: clear them so a farther-out class/kit/ancestry/companion
+		// doesn't leak into frontmatter or the path. Mirrors AbilityParser,
+		// where a treasure-rule win means parentID/parentType are never set at
+		// all (single combined walk, only one of the two can be non-empty).
+		classID, kitID, ancestryID, companionID = "", "", "", ""
 	}
 
 	// Trait is reserved for the rulebook's trait homes. The only trait home
@@ -195,7 +206,10 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		// Treasure-granted features are flat under `feature.treasure`, mirroring
 		// AbilityParser's `feature.ability.treasure` bucket (SC-323); the
 		// granting rule page is carried as the `granted_by` frontmatter link
-		// above, not nested into the path.
+		// above, not nested into the path. Deliberately flat even when a
+		// `feature-group` sits between the feature and the treasure rule —
+		// unlike the `common` branch below, this never appends a group id
+		// (round-2 review LOW-6: no behaviour change, just documenting it).
 		typePath = append(typePath, "treasure")
 	} else if kitID == "" {
 		groupID := findAncestorID(ctx, section.HeadingLevel, "feature-group")
