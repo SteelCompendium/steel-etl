@@ -259,8 +259,8 @@ Distinct headings confirmed (kept separate `new-rule`, no collapse needed):
 
 ## Judgment calls a reviewer should double-check
 
-- **Movement** → mapped (`reuse`) to `movement/walk` to keep the movement family unified; could
-  instead be a `rule.combat/movement` at `### Movement` (21436).
+- **Movement** → minted as `rule.combat/movement` at `### Movement` (21524) (SC-329); was a
+  `reuse` of `movement/walk`.
 - **Artisan / Sage** → mapped to the `career/<id>` entities; the glossary defines them as
   follower roles. If a generic "follower-kind" rule is preferred, revisit alongside
   **Follower** (`#### Follower Types` 26894) / **Retainer** (`##### Retainer` 26904).
