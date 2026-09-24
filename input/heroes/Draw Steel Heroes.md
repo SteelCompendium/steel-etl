@@ -4548,6 +4548,7 @@ Whenever you make an [ability roll](scc.v1:mcdm.heroes.v1/rule.dice/ability-roll
 
 You can't score a critical hit with an [ability roll](scc.v1:mcdm.heroes.v1/rule.dice/ability-roll) made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). For example, an [opportunity attack](scc.v1:mcdm.heroes.v1/rule.combat/opportunity-attack) made as a [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) or a [signature ability](scc.v1:mcdm.heroes.v1/rule.combat/signature-ability) used as a free [triggered action](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action) with the assistance of the [tactician's](scc.v1:mcdm.heroes.v1/class/tactician) [Strike Now](scc.v1:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability can be critical hits.
 
+<!-- @type: rule | @group: dice | @id: multiple-targets -->
 #### Roll Against Multiple Creatures
 
 When an ability has multiple targets (whether a [strike](scc.v1:mcdm.heroes.v1/rule.combat/strike) with more than one target or an area affect), you make one [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) and apply the total to all targets. If you have [edges](scc.v1:mcdm.heroes.v1/rule.dice/edge) or [banes](scc.v1:mcdm.heroes.v1/rule.dice/bane) (see Chapter 1: [The Basics](scc.v1:mcdm.heroes.v1/chapter/the-basics)) against some but not all of your targets, you might apply a different [tier outcome](scc.v1:mcdm.heroes.v1/rule.dice/tier-outcome) to individual targets.
@@ -4578,6 +4579,7 @@ If an ability's effect allows you to take a main action, a maneuver, a move acti
 
 Some abilities have a "Spend X [Heroic Resource]" entry in the body of the ability. These grant additional effects to an ability, where X is the amount of your [Heroic Resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource) you must spend to activate those effects. If an entry reads "Spend X+ [Heroic Resource]," you can spend as much of your available [Heroic Resource](scc.v1:mcdm.heroes.v1/rule.resource/heroic-resource) as you like in multiples of X to increase the effect's impact, as described in the entry's details.
 
+<!-- @type: rule | @group: combat | @id: stacking-effects -->
 #### Stacking Unique Effects
 
 The unique effects of different abilities are combined—effectively stacking on top of each other—if their durations and targets overlap. However, the effects of the same ability used multiple times don't stack. Instead, the most impactful effect—such as the highest [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties)—from each use of the ability applies. The most recently used ability applies for determining duration.
@@ -4586,6 +4588,7 @@ For example, the [null's](scc.v1:mcdm.heroes.v1/class/null) [Null Field](scc.v1:
 
 Different effects that impose the same [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) (see [Conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition) below) don't stack to impose the [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) twice. For instance, if a hero is targeted by numerous creatures whose abilities cause a target to become [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) (imposing a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on the target's [power rolls](scc.v1:mcdm.heroes.v1/rule.dice/power-roll)), the target isn't [weakened](scc.v1:mcdm.heroes.v1/condition/weakened) twice to impose a double [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on those rolls. A character who is [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) by an enemy can't be [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) again by another enemy. The same holds true for game effects that aren't [conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition). For example, if a hero is targeted by multiple abilities or effects that can halve their [recovery value](scc.v1:mcdm.heroes.v1/rule.health/recoveries), the hero's [recovery value](scc.v1:mcdm.heroes.v1/rule.health/recoveries) is halved only once.
 
+<!-- @type: rule | @group: combat | @id: ending-effects -->
 #### Ending Effects
 
 When a creature suffers a lasting effect, whatever ability, feature, hazard, or other mechanic imposed the effect specifies how long the effect lasts. Unless otherwise noted, all effects and [conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition) that are imposed on heroes during a combat encounter end when the encounter is over if the hero wants them to, except for being [winded](scc.v1:mcdm.heroes.v1/rule.health/winded), unconscious, or [dying](scc.v1:mcdm.heroes.v1/rule.health/dying). After combat, effects and [conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition) imposed on other creatures end when it's convenient for the heroes, allowing characters to easily bind or slip away from unconscious foes. However, the Director is free to decide that an unconscious dragon doesn't stay that way long enough to be tied up.
@@ -15605,7 +15608,7 @@ As a 3rd-level [talent](scc.v1:mcdm.heroes.v1/class/talent), you gain the follow
 <!-- @type: feature -->
 #### Scan
 
-You can extend your psionic senses beyond their usual range. Once on each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can search for hidden creatures as a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests)). Additionally, once you establish [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to a thinking creature within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [Mind Spike](scc.v1:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability, you always have [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to that creature until they move beyond that [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance).
+You can extend your psionic senses beyond their usual range. Once on each of your [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn), you can search for hidden creatures as a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) (see [Hide and Sneak](scc.v1:mcdm.heroes.v1/rule.test/hide-and-sneak) in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests)). Additionally, once you establish [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to a thinking creature within [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance) of your [Mind Spike](scc.v1:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability, you always have [line of effect](scc.v1:mcdm.heroes.v1/rule.combat/line-of-effect) to that creature until they move beyond that [distance](scc.v1:mcdm.heroes.v1/rule.combat/distance).
 
 <!-- @type: feature -->
 #### 7-Clarity Ability
@@ -17127,7 +17130,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc.v1:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in the area doesn't take a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment). Once during their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), they can search for hidden creatures as a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests)).
+> **Effect:** While this performance is active, each target who starts their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) in the area doesn't take a [bane](scc.v1:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment). Once during their [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), they can search for hidden creatures as a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) (see [Hide and Sneak](scc.v1:mcdm.heroes.v1/rule.test/hide-and-sneak) in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests)).
 
 <!-- @type: ability | @subclass: virtuoso -->
 > ###### "Never-Ending Hero"
@@ -21181,6 +21184,7 @@ The Director then decides to make the failure potentially more interesting, by a
 
 **Director:** *As Jorn yanks Korvo off the ground and pulls him up to the top of the wall, a guard [turns](scc.v1:mcdm.heroes.v1/rule.combat/turn) a bullseye lantern your way, calling out, "Who goes there?"*
 
+<!-- @type: rule | @group: test | @id: assist-a-test -->
 ### Assist a Test
 
 You can attempt to assist another creature with a [test](scc.v1:mcdm.heroes.v1/rule.test/test) they make, provided you have a skill that applies to the [test](scc.v1:mcdm.heroes.v1/rule.test/test), the other creature isn't using that same skill on the [test](scc.v1:mcdm.heroes.v1/rule.test/test), and you can describe how your character helps to the Director's satisfaction. In other words, your attempt to help has to make sense, and you have to bring some useful expertise to the table. Helping another creature sneak by shouting encouragement at them isn't going to make them stealthier.
@@ -21193,6 +21197,7 @@ When you attempt to assist another creature, make a [test](scc.v1:mcdm.heroes.v1
 
 For example, when an ally tries to pick a jailer's pocket, you might attempt to assist by using the [Flirt](scc.v1:mcdm.heroes.v1/skill.interpersonal/flirt) skill to distract the jailer. The Director accepts this, and asks you to make a [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) [test](scc.v1:mcdm.heroes.v1/rule.test/test) using Flirt. The outcome of that [test](scc.v1:mcdm.heroes.v1/rule.test/test) determines the [bonus](scc.v1:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) you provide to the other hero's [Agility](scc.v1:mcdm.heroes.v1/rule.character/agility) [test](scc.v1:mcdm.heroes.v1/rule.test/test) to pick the jailer's pocket—or whether you fumble the distraction and potentially draw attention to the attempt.
 
+<!-- @type: rule | @group: test | @id: hide-and-sneak -->
 ### Hide and Sneak
 
 Hiding and sneaking are important tools for heroes and their foes. You might want to avoid another creature's notice to eavesdrop on conver sations, steal items, set up an ambush, or avoid a combat encounter.
@@ -21515,6 +21520,7 @@ Any effect that prevents you from using maneuvers also prevents you from using f
 
 The Director can limit what kinds of no-action activities you can attempt when it isn't your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn). For instance, shouting out a warning about an unseen foe to an ally on the ally's or the foe's [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) requires no action. But the Director might stop you from giving that ally complex tactical advice when it isn't your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn), saying that doing so instead requires a [free maneuver](scc.v1:mcdm.heroes.v1/rule.combat/free-maneuver) on your [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn).
 
+<!-- @type: rule | @group: combat | @id: movement -->
 ### Movement
 
 During combat, creatures can employ multiple mechanics that allow them to move around the battlefield. The most common of those mechanics is the [Advance](scc.v1:mcdm.heroes.v1/feature.common.move-actions/advance) or [Disengage](scc.v1:mcdm.heroes.v1/feature.common.move-actions/disengage) move action (detailed under Move Actions below), but abilities granted by your class, equipment, ancestry, title, or other options might allow you other ways to move.
@@ -21872,7 +21878,7 @@ See [Conditions](scc.v1:mcdm.heroes.v1/rule.combat/condition) in Chapter 5: [Cla
 <!-- @type: feature | @id: hide -->
 #### Hide
 
-Using the [Hide](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver, a creature attempts to hide from other creatures who aren't observing them while they have [cover](scc.v1:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment). See Hide and Sneak in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests) for full details.
+Using the [Hide](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver, a creature attempts to hide from other creatures who aren't observing them while they have [cover](scc.v1:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc.v1:mcdm.heroes.v1/rule.combat/concealment). See [Hide and Sneak](scc.v1:mcdm.heroes.v1/rule.test/hide-and-sneak) in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests) for full details.
 
 <!-- @type: feature | @id: knockback -->
 #### Knockback
@@ -21904,7 +21910,7 @@ Complex or time-consuming [tests](scc.v1:mcdm.heroes.v1/rule.test/test) might re
 <!-- @type: feature | @id: search-for-hidden-creatures -->
 #### Search for Hidden Creatures
 
-The [Search for Hidden Creatures](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures) maneuver allows a creature to attempt to locate creatures hidden from them (see Hide and Sneak in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests)).
+The [Search for Hidden Creatures](scc.v1:mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures) maneuver allows a creature to attempt to locate creatures hidden from them (see [Hide and Sneak](scc.v1:mcdm.heroes.v1/rule.test/hide-and-sneak) in Chapter 9: [Tests](scc.v1:mcdm.heroes.v1/chapter/tests)).
 
 <!-- @type: feature | @id: stand-up -->
 #### Stand Up
@@ -22142,6 +22148,7 @@ If a creature riding a mount is [force moved](scc.v1:mcdm.heroes.v1/movement/for
 
 If your mount dies, they [fall prone](scc.v1:mcdm.heroes.v1/condition/prone), and you fall off them and l[and prone](scc.v1:mcdm.heroes.v1/condition/prone) in the nearest unoccupied space of your choice.
 
+<!-- @type: rule | @group: combat | @id: end-of-combat -->
 ### End of Combat
 
 At the end of combat, the Director determines if the heroes earn any [Victories](scc.v1:mcdm.heroes.v1/rule.resource/victories). Any effect or [condition](scc.v1:mcdm.heroes.v1/rule.combat/condition) on you that you suffered during combat (except for being [winded](scc.v1:mcdm.heroes.v1/rule.health/winded), unconscious, or [dying](scc.v1:mcdm.heroes.v1/rule.health/dying)) ends if you want it to.
@@ -22281,7 +22288,7 @@ If one or more heroes negotiating with an [NPC](scc.v1:mcdm.heroes.v1/rule.gener
 <!-- @type: rule | @group: negotiation | @id: motivation -->
 #### Motivations
 
-Each [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) has at least two motivations the heroes can appeal to with their arguments. Arguments that appeal to an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s motivation require an easier [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) to increase the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s [interest](scc.v1:mcdm.heroes.v1/rule.negotiation/interest). Arguments that don't appeal to a motivation require a more difficult [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll). See Making Arguments below for more information.
+Each [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) has at least two motivations the heroes can appeal to with their arguments. Arguments that appeal to an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s motivation require an easier [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll) to increase the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s [interest](scc.v1:mcdm.heroes.v1/rule.negotiation/interest). Arguments that don't appeal to a motivation require a more difficult [power roll](scc.v1:mcdm.heroes.v1/rule.dice/power-roll). See [Making Arguments](scc.v1:mcdm.heroes.v1/rule.negotiation/argument) below for more information.
 
 Each motivation can be successfully appealed to only once during a negotiation. To successfully appeal to a motivation, the heroes must use the motivation in an argument without mentioning one of the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s [pitfalls](scc.v1:mcdm.heroes.v1/rule.negotiation/pitfall) or being caught in a lie.
 
@@ -22450,6 +22457,7 @@ Arguments that appeal to the [vengeance](scc.v1:mcdm.heroes.v1/negotiation/venge
 >
 > Just like the heroes, [NPCs](scc.v1:mcdm.heroes.v1/rule.general/npc) in negotiations are complex individuals who can change over time. It's possible that the heroes might have to negotiate with the same [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) for several different favors during the course of a campaign, over which time the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation) and [pitfalls](scc.v1:mcdm.heroes.v1/rule.negotiation/pitfall) might change. If the heroes [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) a bandit captain with the [greed](scc.v1:mcdm.heroes.v1/negotiation/greed) and [power](scc.v1:mcdm.heroes.v1/negotiation/power) [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation) into a temporary ally, that criminal might learn from them, changing their ways to rob only those who exploit the poor and giving those earnings to people in need. The next time the heroes negotiate with the bandit captain, they have the [benevolence](scc.v1:mcdm.heroes.v1/negotiation/benevolence) and [protection](scc.v1:mcdm.heroes.v1/negotiation/protection) [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation).
 
+<!-- @type: rule | @group: negotiation | @id: opening -->
 ### Opening a Negotiation
 
 A negotiation begins when the heroes ask something of an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) and the Director deems that the circumstances require a negotiation. Those circumstances always involve the heroes requiring assistance that could change the course of the adventure, and having the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) conflicted about working with them. Unlike combat, which can be thrust upon the heroes by violent allies or unexpected circumstances, the heroes must be the ones to willingly start a negotiation. Characters must want something from an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc). Otherwise they have no reason to negotiate!
@@ -22495,6 +22503,7 @@ After this [test](scc.v1:mcdm.heroes.v1/rule.test/test) is made, the heroes can'
 
 While the heroes can discover an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation) or [pitfalls](scc.v1:mcdm.heroes.v1/rule.negotiation/pitfall) through [tests](scc.v1:mcdm.heroes.v1/rule.test/test) made during negotiation, they can employ other methods of investigating [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation) or [pitfalls](scc.v1:mcdm.heroes.v1/rule.negotiation/pitfall) before negotiation. Research or a little reconnaissance (for instance, reading the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s diary or talking to their closest friends) can reveal quite a bit about a person!
 
+<!-- @type: rule | @group: negotiation | @id: argument -->
 ### Making Arguments
 
 As part of their initial request to an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) in a negotiation, a hero makes an argument as to why the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) should give the heroes what they want. The hero might offer to do something in exchange as part of their argument, such as clearing bandits from a forest, handing over a piece of treasure, or slaying a dragon for the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc). Or instead of offering something, the hero could attempt to convince the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) that it's in their own best [interest](scc.v1:mcdm.heroes.v1/rule.negotiation/interest) to help—or even that it's a moral imperative. For example, a hero could appeal to a knight's sense of duty, the potential wealth a mercenary could make, or the final wish of a queen's dearly departed grandmother as part of an argument. [NPCs](scc.v1:mcdm.heroes.v1/rule.general/npc) who admire the heroes are more likely to respond to compliments and buttering up, while those who fear the heroes are more likely to respond to intimidation and awe.
@@ -22582,6 +22591,7 @@ If a hero has enough [Renown](scc.v1:mcdm.heroes.v1/rule.resource/renown) for th
 
 If a hero is famous to an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc), they gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) when making arguments to which the [Flirt](scc.v1:mcdm.heroes.v1/skill.interpersonal/flirt), Lead, or [Persuade](scc.v1:mcdm.heroes.v1/skill.interpersonal/persuade) skill could be applied. If they are infamous to the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc), they gain an [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) on [tests](scc.v1:mcdm.heroes.v1/rule.test/test) when making arguments to which the [Brag](scc.v1:mcdm.heroes.v1/skill.interpersonal/brag), [Interrogate](scc.v1:mcdm.heroes.v1/skill.interpersonal/interrogate), or [Intimidate](scc.v1:mcdm.heroes.v1/skill.interpersonal/intimidate) skill could be applied. A hero gains this [edge](scc.v1:mcdm.heroes.v1/rule.dice/edge) even if they don't have the appropriate skill.
 
+<!-- @type: rule | @group: negotiation | @id: offer -->
 ### NPC Response and Offer
 
 After a hero makes an argument, an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) responds in one of three ways:
