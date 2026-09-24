@@ -2737,17 +2737,15 @@ The following leveled weapon treasures are presented in alphabetical order.
 
 **1st Level:** Only a beastheart can wield this weapon. Any weapon ability that deals rolled damage using this weapon deals an extra 1 poison damage. Additionally, you and your companion can use the following maneuver.
 
-*Your scorpion tail lashes out.*
-
----
-
-**Melee, Strike**
-
-Might score.
-
-**Melee, Strike Maneuver** o Melee 2 x One creature
-
-**Effect:** The target takes poison damage equal to 3 + your
+> ###### Scorpion Tail
+>
+> *Your scorpion tail lashes out.*
+>
+> | **Melee, Strike** | **[Maneuver](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
+> |-------------------|-----------------------:|
+> | **📏 Melee 2**    |   **🎯 One creature** |
+>
+> **Effect:** The target takes poison damage equal to 3 + your Might score.
 
 **5th Level:** The weapon's extra poison damage increases to 2. Additionally, the Scorpion Tail ability's distance increases to melee 3.
 
