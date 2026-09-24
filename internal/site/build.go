@@ -25,15 +25,17 @@ type SCCMapEntry struct {
 
 // BuildResult holds the outcome of a site build.
 type BuildResult struct {
-	CopiedFiles    int
-	Sections       int
-	NavFiles       int
-	SearchExclude  int
-	IndexPages     int
-	SCCStubs       int
-	PrintingStamps int
-	EmbeddedCards  int
-	Errors         []string
+	CopiedFiles            int
+	Sections               int
+	NavFiles               int
+	SearchExclude          int
+	SearchUncoveredPages   int
+	SearchExcludedHeadings int
+	IndexPages             int
+	SCCStubs               int
+	PrintingStamps         int
+	EmbeddedCards          int
+	Errors                 []string
 }
 
 // Build generates the MkDocs site structure from steel-etl output.
@@ -233,6 +235,24 @@ func Build(cfg *Config) (*BuildResult, error) {
 		count, errs := applySearchExclusion(cfg.DocsDir, sectionName)
 		result.SearchExclude += count
 		result.Errors = append(result.Errors, errs...)
+	}
+
+	// SC-329: uncovered-only sections are indexed minus every heading that a
+	// fully-indexed section (Browse) already carries (search_coverage.go).
+	if len(cfg.SearchUncoveredOnly) > 0 {
+		covered := map[string]bool{}
+		for _, s := range cfg.Sections {
+			if searchExcluded(cfg.SearchExclude, s.Name) || searchExcluded(cfg.SearchUncoveredOnly, s.Name) {
+				continue
+			}
+			result.Errors = append(result.Errors, collectIndexedCodes(filepath.Join(cfg.DocsDir, s.Name), covered)...)
+		}
+		for _, sectionName := range cfg.SearchUncoveredOnly {
+			pages, headings, errs := applyUncoveredOnlySearch(cfg.DocsDir, sectionName, covered)
+			result.SearchUncoveredPages += pages
+			result.SearchExcludedHeadings += headings
+			result.Errors = append(result.Errors, errs...)
+		}
 	}
 
 	// Copy static content overrides
@@ -462,9 +482,10 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 			data = appendSourceTemplate(data, origBody)
 		}
 
-		// Per-type search ranking boost — skipped for search-excluded sections
+		// Per-type search ranking boost — skipped for search_exclude sections
 		// (applySearchExclusion later prepends its own `search:` key and YAML
-		// forbids duplicate keys).
+		// forbids duplicate keys). search_uncovered_only sections (Read) get the
+		// normal per-type boost; their `chapter` type is unmapped, so default 1.
 		if !searchExcluded(cfg.SearchExclude, section.Name) {
 			data = applySearchBoost(data)
 		}

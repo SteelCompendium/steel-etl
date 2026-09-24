@@ -26,6 +26,12 @@ type Config struct {
 	// SearchExclude lists sections where pages get search: exclude: true frontmatter
 	SearchExclude []string `yaml:"search_exclude"`
 
+	// SearchUncoveredOnly lists sections (v2: Read) that are search-indexed
+	// except for the headings whose section a fully-indexed section (Browse)
+	// already carries — those are marked data-search-exclude (search_coverage.go,
+	// SC-329).
+	SearchUncoveredOnly []string `yaml:"search_uncovered_only,omitempty"`
+
 	// EmbedCardSections lists section names (e.g. "Browse") whose container
 	// pages get embeddable items (abilities/features/traits/statblocks/
 	// featureblocks) replaced inline with their finished leaf cards

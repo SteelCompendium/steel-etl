@@ -145,6 +145,25 @@ func TestLoadSiteConfig_NonexistentFile(t *testing.T) {
 	}
 }
 
+func TestLoadSiteConfig_SearchUncoveredOnly(t *testing.T) {
+	dir := t.TempDir()
+	path := filepath.Join(dir, "site.yaml")
+	content := "docs_dir: ./docs\nsearch_uncovered_only:\n  - Read\n"
+	if err := os.WriteFile(path, []byte(content), 0644); err != nil {
+		t.Fatal(err)
+	}
+	cfg, err := LoadSiteConfig(path)
+	if err != nil {
+		t.Fatalf("LoadSiteConfig failed: %v", err)
+	}
+	if len(cfg.SearchUncoveredOnly) != 1 || cfg.SearchUncoveredOnly[0] != "Read" {
+		t.Errorf("SearchUncoveredOnly = %v", cfg.SearchUncoveredOnly)
+	}
+	if len(cfg.SearchExclude) != 0 {
+		t.Errorf("SearchExclude = %v, want empty", cfg.SearchExclude)
+	}
+}
+
 func TestLoadSCCMap(t *testing.T) {
 	dir := t.TempDir()
 	path := filepath.Join(dir, "scc-map.json")

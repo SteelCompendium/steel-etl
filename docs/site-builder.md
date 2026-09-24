@@ -43,7 +43,11 @@ Site builder entry point: maps ETL output to the MkDocs structure. Key mechanics
   map — "Ancestries", "Careers", "Classes") instead of title-casing the singular SCC type
   slug. `title:` only; sort/other options inherit from the section-root `.nav.yml`.
 - **H1 injection**: adds `# Name` headers from frontmatter when the body lacks one.
-- **Search exclusion**: injects `search: exclude: true` frontmatter into Read section pages.
+- **Uncovered-only search indexing** (`search_coverage.go`, SC-329): sections listed in
+  `search_uncovered_only` (v2: Read) stay indexed, except each heading whose SCC code a
+  fully-indexed section (Browse) already carries — those get `data-search-exclude=""` in
+  their attr_list. `search_exclude` (whole-section `search: exclude: true` frontmatter)
+  is still supported but unused by v2.
 - **Static content overrides**: copies hand-authored pages last, overriding generated content.
 - **Rival Summoner ⇄ summons cross-references** (`augmentRivalSummonerPages`, post-write
   pass after index generation): appends a `## Summons` card block to each Rival Summoner
@@ -294,11 +298,14 @@ as the other leaf cards (`v2/docs/stylesheets/steel-class.css`). NOT flagged
 Per-type **search ranking boosts** (P2). `applySearchBoost` injects Material's
 `search:\n  boost: <n>` at the top of the frontmatter, keyed on `type:`
 (`searchBoostByType`: class 4, ancestry/condition/rule/movement/negotiation 3, most
-entity types 2; feature/ability/… unmapped = default 1). Called in `buildSection`
-**only for non-search-excluded sections** — `applySearchExclusion` later prepends its
-own `search:` key and YAML forbids duplicates. This is why "fury" finds the Fury
+entity types 2; feature/ability/… unmapped = default 1). Called in `buildSection` for
+every section **not in `search_exclude`** — `applySearchExclusion` later prepends its
+own `search:` key there and YAML forbids duplicates. This is why "fury" finds the Fury
 class before the statblocks. Statblocks, featureblocks and dynamic terrain use the
-default boost since SC-306 (the demotion buried monsters under their own names).
+default boost since SC-306 (the demotion buried monsters under their own names). v2's
+Read tab is `search_uncovered_only` (SC-329), not `search_exclude`, so its chapter
+pages DO get boosted — unmapped `chapter` type keeps the default 1, so Browse pages
+still win ties.
 
 `searchBoostFor` adds one **SCC-derived** rule on top of the type table (SC-179),
 checked first for `type: feature` / `type: ability` pages: a page whose SCC type-path

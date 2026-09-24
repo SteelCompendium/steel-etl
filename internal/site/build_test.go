@@ -124,6 +124,73 @@ func TestBuild_SearchExclusion(t *testing.T) {
 	}
 }
 
+// SC-329: an uncovered-only section is indexed except the headings a Browse
+// page already carries.
+func TestBuild_SearchUncoveredOnly(t *testing.T) {
+	srcDir := t.TempDir()
+	files := map[string]string{
+		"rule/character/size.md": "---\nname: Size and Space\nscc: mcdm.heroes.v1/rule.character/size\ntype: rule\n---\n\nSize text.\n",
+		"chapter/combat.md": "---\nname: Combat\nscc: mcdm.heroes.v1/chapter/combat\ntype: chapter\n---\n\n# Combat\n\n" +
+			"#### Size and Space {data-scc=\"mcdm.heroes.v1/rule.character/size\"}\n\nSize text.\n\n" +
+			"### Movement\n\nMove freely through an ally's space.\n",
+	}
+	for rel, content := range files {
+		path := filepath.Join(srcDir, rel)
+		if err := os.MkdirAll(filepath.Dir(path), 0755); err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(path, []byte(content), 0644); err != nil {
+			t.Fatal(err)
+		}
+	}
+	docsDir := filepath.Join(t.TempDir(), "docs")
+	os.MkdirAll(docsDir, 0755)
+
+	cfg := &Config{
+		SourceDir: srcDir,
+		DocsDir:   docsDir,
+		Sections: []SectionConfig{
+			{Name: "Browse", Include: []string{"rule/"}},
+			{Name: "Read", Include: []string{"chapter/"}},
+		},
+		SearchUncoveredOnly: []string{"Read"},
+	}
+	result, err := Build(cfg)
+	if err != nil {
+		t.Fatalf("Build failed: %v", err)
+	}
+	if result.SearchExcludedHeadings != 1 {
+		t.Errorf("SearchExcludedHeadings = %d, want 1 (errors: %v)", result.SearchExcludedHeadings, result.Errors)
+	}
+	if result.SearchUncoveredPages == 0 {
+		t.Error("SearchUncoveredPages = 0, want the Read pages counted")
+	}
+
+	read, err := os.ReadFile(filepath.Join(docsDir, "Read", "chapter", "combat.md"))
+	if err != nil {
+		t.Fatalf("read Read page: %v", err)
+	}
+	content := string(read)
+	if !strings.Contains(content, `#### Size and Space {data-scc="mcdm.heroes.v1/rule.character/size" data-search-exclude=""}`) {
+		t.Errorf("covered heading not marked:\n%s", content)
+	}
+	if !strings.Contains(content, "### Movement\n") {
+		t.Errorf("uncovered heading must stay unmarked:\n%s", content)
+	}
+	fm, _ := splitFrontmatter(content)
+	if strings.Contains(fm, "search:") {
+		t.Errorf("Read page must not carry a search: frontmatter key:\n%s", fm)
+	}
+
+	browse, err := os.ReadFile(filepath.Join(docsDir, "Browse", "rule", "character", "size.md"))
+	if err != nil {
+		t.Fatalf("read Browse page: %v", err)
+	}
+	if strings.Contains(string(browse), "data-search-exclude") {
+		t.Errorf("Browse page must never be marked:\n%s", browse)
+	}
+}
+
 func TestBuild_StaticContentOverride(t *testing.T) {
 	srcDir := setupSourceDir(t)
 	docsDir := filepath.Join(t.TempDir(), "docs")

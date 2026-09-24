@@ -6,8 +6,10 @@ package site
 // Statblocks, featureblocks and dynamic terrain sit at the default boost (1):
 // the old 0.6/0.7 demotions buried monsters under their own names ("Goblin
 // Warrior" lost to "Warrior Priest") — SC-306. Injected in buildSection for
-// non-search-excluded sections only — Read pages get `search: exclude` later
-// (applySearchExclusion) and MUST NOT carry a second `search:` YAML key.
+// every section not in search_exclude (those get `search: exclude` later via
+// applySearchExclusion and MUST NOT carry a second `search:` YAML key). v2's
+// Read tab is search_uncovered_only (SC-329): its chapter pages are unmapped
+// here, so they keep the default boost 1 and Browse pages win ties.
 // See workspace docs/superpowers/specs/2026-07-01-v2-ux-analysis.md §2.7 and
 // docs/superpowers/specs/2026-09-06-search-ranking-design.md.
 
