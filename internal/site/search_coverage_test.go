@@ -178,3 +178,60 @@ func TestApplyUncoveredOnlySearch(t *testing.T) {
 		t.Errorf("missing section: got %d %d %v", p, h, e)
 	}
 }
+
+func TestWalkErrors(t *testing.T) {
+	// Skip if running as root (chmod has no effect)
+	if os.Geteuid() == 0 {
+		t.Skip("test requires non-root user")
+	}
+
+	dir := t.TempDir()
+	subdir := filepath.Join(dir, "subdir")
+	if err := os.MkdirAll(subdir, 0755); err != nil {
+		t.Fatal(err)
+	}
+	writeCoverageFile(t, subdir, "test.md", "---\nscc: test.code\n---\n# Test\n")
+
+	// Remove read permissions from subdirectory
+	if err := os.Chmod(subdir, 0); err != nil {
+		t.Fatal(err)
+	}
+	// Restore permissions in cleanup
+	t.Cleanup(func() { os.Chmod(subdir, 0755) })
+
+	// collectIndexedCodes should report walk error
+	codes := map[string]bool{}
+	errs := collectIndexedCodes(dir, codes)
+	if len(errs) == 0 {
+		t.Errorf("collectIndexedCodes must report walk error, got none")
+	}
+	found := false
+	for _, err := range errs {
+		if strings.Contains(err, subdir) {
+			found = true
+			break
+		}
+	}
+	if !found {
+		t.Errorf("collectIndexedCodes errors don't mention subdir: %v", errs)
+	}
+
+	// applyUncoveredOnlySearch should report walk error
+	p, h, errs := applyUncoveredOnlySearch(dir, "subdir", nil)
+	if len(errs) == 0 {
+		t.Errorf("applyUncoveredOnlySearch must report walk error, got none")
+	}
+	found = false
+	for _, err := range errs {
+		if strings.Contains(err, subdir) {
+			found = true
+			break
+		}
+	}
+	if !found {
+		t.Errorf("applyUncoveredOnlySearch errors don't mention subdir: %v", errs)
+	}
+	if p != 0 || h != 0 {
+		t.Errorf("applyUncoveredOnlySearch on unreadable dir: got p=%d h=%d, want 0 0", p, h)
+	}
+}

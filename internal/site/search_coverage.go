@@ -73,14 +73,20 @@ func forEachHeading(lines []string, fn func(i, level int)) {
 	}
 }
 
-// collectIndexedCodes adds every SCC code represented in sectionDir to codes:
-// each page's `scc:` frontmatter, plus each heading's data-scc (a container
-// page renders its coded children inline under their own headings — e.g.
-// rule.combat/condition carries every condition/*). A missing dir adds nothing.
-func collectIndexedCodes(sectionDir string, codes map[string]bool) []string {
+// walkMarkdown walks dir, executing fn for each markdown file found. Returns
+// any walk, stat, or read errors encountered. A missing root directory is a
+// silent no-op (returns empty errs).
+func walkMarkdown(dir string, fn func(path, content string)) []string {
+	if _, err := os.Stat(dir); os.IsNotExist(err) {
+		return nil
+	}
 	var errs []string
-	filepath.Walk(sectionDir, func(path string, info os.FileInfo, err error) error {
-		if err != nil || info.IsDir() || !strings.HasSuffix(path, ".md") {
+	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			errs = append(errs, fmt.Sprintf("walk %s: %v", path, err))
+			return nil
+		}
+		if info.IsDir() || !strings.HasSuffix(path, ".md") {
 			return nil
 		}
 		data, readErr := os.ReadFile(path)
@@ -88,7 +94,18 @@ func collectIndexedCodes(sectionDir string, codes map[string]bool) []string {
 			errs = append(errs, fmt.Sprintf("read %s: %v", path, readErr))
 			return nil
 		}
-		content := string(data)
+		fn(path, string(data))
+		return nil
+	})
+	return errs
+}
+
+// collectIndexedCodes adds every SCC code represented in sectionDir to codes:
+// each page's `scc:` frontmatter, plus each heading's data-scc (a container
+// page renders its coded children inline under their own headings — e.g.
+// rule.combat/condition carries every condition/*). A missing dir adds nothing.
+func collectIndexedCodes(sectionDir string, codes map[string]bool) []string {
+	return walkMarkdown(sectionDir, func(path, content string) {
 		fm, _ := splitFrontmatter(content)
 		if code := parseFrontmatterField(fm, "scc"); code != "" {
 			codes[code] = true
@@ -99,9 +116,7 @@ func collectIndexedCodes(sectionDir string, codes map[string]bool) []string {
 				codes[m[1]] = true
 			}
 		})
-		return nil
 	})
-	return errs
 }
 
 // markCoveredHeadings adds data-search-exclude="" to every covered heading: one
@@ -149,30 +164,18 @@ func withSearchExclude(line string) string {
 // pages with nothing to mark are not rewritten.
 func applyUncoveredOnlySearch(docsDir, sectionName string, covered map[string]bool) (int, int, []string) {
 	sectionDir := filepath.Join(docsDir, sectionName)
-	if _, err := os.Stat(sectionDir); os.IsNotExist(err) {
-		return 0, 0, nil
-	}
 	pages, headings := 0, 0
 	var errs []string
-	filepath.Walk(sectionDir, func(path string, info os.FileInfo, err error) error {
-		if err != nil || info.IsDir() || !strings.HasSuffix(path, ".md") {
-			return nil
-		}
-		data, readErr := os.ReadFile(path)
-		if readErr != nil {
-			errs = append(errs, fmt.Sprintf("read %s: %v", path, readErr))
-			return nil
-		}
+	walkErrs := walkMarkdown(sectionDir, func(path, content string) {
 		pages++
-		out, n := markCoveredHeadings(string(data), covered)
+		out, n := markCoveredHeadings(content, covered)
 		if n == 0 {
-			return nil
+			return
 		}
 		headings += n
 		if writeErr := os.WriteFile(path, []byte(out), 0644); writeErr != nil {
 			errs = append(errs, fmt.Sprintf("write %s: %v", path, writeErr))
 		}
-		return nil
 	})
-	return pages, headings, errs
+	return pages, headings, append(walkErrs, errs...)
 }
