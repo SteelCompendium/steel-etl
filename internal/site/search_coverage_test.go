@@ -78,6 +78,62 @@ func TestMarkCoveredHeadings(t *testing.T) {
 	}
 }
 
+// F1: python-markdown's attr_list recognizes a trailing {…} block inside a
+// blockquote too, so a blockquoted heading under a covered heading must be
+// marked just like an unblockquoted one (real shape: perks/complications/
+// treasures render their ability card as a blockquote — v2/docs/Read/heroes/
+// perks.md "Arcane Trick").
+func TestMarkCoveredHeadings_Blockquote(t *testing.T) {
+	covered := map[string]bool{covSize: true}
+	in := strings.Join([]string{
+		`#### Size and Space {data-scc="` + covSize + `"}`,
+		"",
+		"You have the following ability.",
+		"",
+		"> ###### Arcane Trick",
+		">",
+		"> Ability text.",
+		"",
+		"### Uncovered Section",
+		"",
+		"Intro text.",
+		"",
+		"> ###### Blockquoted Under Uncovered",
+	}, "\n")
+	got, n := markCoveredHeadings(in, covered)
+	if !strings.Contains(got, `> ###### Arcane Trick {data-search-exclude=""}`) {
+		t.Errorf("blockquoted heading under a covered heading must be marked:\n%s", got)
+	}
+	if strings.Contains(got, "Blockquoted Under Uncovered {data-search-exclude") {
+		t.Errorf("blockquoted heading under an uncovered heading must stay unmarked:\n%s", got)
+	}
+	if n != 2 {
+		t.Errorf("marked %d headings, want 2 (Size and Space + the blockquoted Arcane Trick)\n%s", n, got)
+	}
+}
+
+// F4: a fence longer than 3 chars must only close on a run of the same
+// character at least as long as the opener; a shorter run of the same
+// character (or any content) inside it, including a line that looks like a
+// heading, stays fence content.
+func TestForEachHeading_FenceRunLength(t *testing.T) {
+	covered := map[string]bool{covSize: true}
+	in := strings.Join([]string{
+		"````",
+		"```",
+		"# not a heading",
+		"````",
+		`#### Size and Space {data-scc="` + covSize + `"}`,
+	}, "\n")
+	got, n := markCoveredHeadings(in, covered)
+	if strings.Contains(got, "not a heading {data-search-exclude") {
+		t.Errorf("line inside a 4-backtick fence must not be treated as a heading:\n%s", got)
+	}
+	if n != 1 {
+		t.Errorf("marked %d headings, want 1 (only the heading after the fence closes)\n%s", n, got)
+	}
+}
+
 func TestMarkCoveredHeadings_Idempotent(t *testing.T) {
 	covered := map[string]bool{covSize: true}
 	in := `#### Size and Space {data-scc="` + covSize + `"}` + "\n###### Creature Sizes Table\n"
@@ -131,6 +187,26 @@ func TestCollectIndexedCodes(t *testing.T) {
 	}
 	if len(codes) != len(want) {
 		t.Errorf("got %d codes, want %d: %v", len(codes), len(want), codes)
+	}
+}
+
+// F1: a Browse page's coded heading can itself be blockquoted (e.g. a card
+// rendered inside a blockquote); its data-scc must still be collected.
+func TestCollectIndexedCodes_Blockquote(t *testing.T) {
+	dir := t.TempDir()
+	// The page's own frontmatter code differs from the blockquoted heading's,
+	// so the assertion can only pass if forEachHeading itself finds the
+	// blockquoted heading (not just the frontmatter scc: value).
+	writeCoverageFile(t, dir, "perk/arcane-trick.md",
+		"---\nname: Perks\nscc: mcdm.heroes.v1/chapter/perks\ntype: chapter\n---\n\n# Perks\n\n"+
+			"> ###### Arcane Trick {data-scc=\"mcdm.heroes.v1/perk/arcane-trick\"}\n>\n> Ability text.\n")
+
+	codes := map[string]bool{}
+	if errs := collectIndexedCodes(dir, codes); len(errs) > 0 {
+		t.Fatalf("errors: %v", errs)
+	}
+	if !codes["mcdm.heroes.v1/perk/arcane-trick"] {
+		t.Errorf("blockquoted heading's data-scc not collected: %v", codes)
 	}
 }
 

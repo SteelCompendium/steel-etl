@@ -3,9 +3,13 @@ package site
 // Book-text search gap-fill (SC-329). Sections listed in `search_uncovered_only`
 // (v2: Read) are indexed by Material's search EXCEPT headings whose section a
 // fully-indexed section (v2: Browse) already carries: those get
-// data-search-exclude="" in their attr_list, so every piece of book text is
-// findable exactly once — from its Browse page when it has one, from the book
-// otherwise. Material opens a new index section at EVERY heading
+// data-search-exclude="" in their attr_list, so covered book text is findable
+// from its Browse page and uncovered book text from the book itself, without
+// duplicates. Not quite every word: a container page's own intro prose (e.g. a
+// Monsters group landing's per-echelon introduction) is itself excluded as
+// covered while its Browse copy renders only the coded children, not the
+// container's own prose — deferred to Backlog SC-345. Material opens a new
+// index section at EVERY heading
 // (material/plugins/search/plugin.py Parser), so every covered heading is
 // marked, not only the root of a covered subtree. Heading-level exclusion is
 // safe from the tag-name-keyed skip-set bug that forced markSearchExcluded's
@@ -21,15 +25,28 @@ import (
 	"strings"
 )
 
+// scBlockquotePrefixRe is the leading-blockquote-marker portion shared by
+// scAtxHeadingRe and scFenceRe: perks/complications/treasures render their
+// ability card as a blockquote (e.g. `> ###### Arcane Trick`), and
+// Python-Markdown recognizes a heading (or a fence) inside one just like an
+// unindented one. Known divergence, harmless: Python-Markdown also treats
+// "#Heading" (no space before the text) as a heading; the pipeline never
+// emits that form, so scAtxHeadingRe does not need to match it.
+const scBlockquotePrefixRe = `(?:[ \t]{0,3}>[ \t]?)*`
+
 var (
-	// scAtxHeadingRe matches an ATX heading line ("### Title {attrs}").
-	scAtxHeadingRe = regexp.MustCompile(`^(#{1,6})[ \t]+\S`)
+	// scAtxHeadingRe matches an ATX heading line ("### Title {attrs}"),
+	// optionally nested inside one or more blockquote markers.
+	scAtxHeadingRe = regexp.MustCompile(`^` + scBlockquotePrefixRe + `(#{1,6})[ \t]+\S`)
 	// scHeadingSCCRe extracts the code RenderSubtree stamps on a coded heading.
 	scHeadingSCCRe = regexp.MustCompile(`data-scc="([^"]+)"`)
 	// scTrailingAttrListRe matches a heading's trailing attr_list block.
 	scTrailingAttrListRe = regexp.MustCompile(`\{[^{}]*\}$`)
-	// scFenceRe matches a fenced-code delimiter line.
-	scFenceRe = regexp.MustCompile("^[ \t]{0,3}(```|~~~)")
+	// scFenceRe matches a fenced-code delimiter line, optionally inside a
+	// blockquote, capturing the whole run of the fence character (3 or more)
+	// so the caller can apply CommonMark's closing rule: same character, run
+	// length >= the opener's.
+	scFenceRe = regexp.MustCompile("^" + scBlockquotePrefixRe + "[ \t]{0,3}(`{3,}|~{3,})")
 )
 
 // searchExcludeAttr is the explicit key="" form: it does not rely on
@@ -59,7 +76,10 @@ func forEachHeading(lines []string, fn func(i, level int)) {
 			switch {
 			case fence == "":
 				fence = m[1]
-			case m[1] == fence:
+			// Close only on a run of the SAME character at least as long as
+			// the opener's (CommonMark's rule) — a shorter or different-char
+			// run (e.g. a ``` line inside a ```` fence) is fence content.
+			case m[1][0] == fence[0] && len(m[1]) >= len(fence):
 				fence = ""
 			}
 			continue
@@ -150,7 +170,10 @@ func markCoveredHeadings(content string, covered map[string]bool) (string, int) 
 }
 
 // withSearchExclude appends the exclusion attribute inside a heading's
-// trailing attr_list, or adds a new one.
+// trailing attr_list, or adds a new one. Appending at line end works the same
+// way inside a blockquote (`> ###### Title {…}`): Python-Markdown's attr_list
+// extension applies a trailing {…} block to a blockquoted heading exactly as
+// it does to an unindented one.
 func withSearchExclude(line string) string {
 	line = strings.TrimRight(line, " \t")
 	if scTrailingAttrListRe.MatchString(line) {
