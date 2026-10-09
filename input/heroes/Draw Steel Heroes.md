@@ -3077,7 +3077,7 @@ Your undead body grants you immunity to cold, corruption, lightning, and poison 
 
 Additionally, when your [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) reaches the negative of your [winded](scc.v1:mcdm.heroes.v1/rule.health/winded) value, you become inert instead of [dying](scc.v1:mcdm.heroes.v1/rule.health/dying). You fall [prone](scc.v1:mcdm.heroes.v1/condition/prone) and can't stand. You continue to observe your surroundings, but you can't speak, take main actions, maneuvers, move actions, or [triggered actions](scc.v1:mcdm.heroes.v1/rule.combat/triggered-action). While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain [Stamina](scc.v1:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc.v1:mcdm.heroes.v1/rule.health/recoveries).
 
-##### Purchased Revenant Traits
+#### Purchased Revenant Traits
 
 You have 2 ancestry points to spend on the following traits, or 3 ancestry points if your [size](scc.v1:mcdm.heroes.v1/rule.character/size) is 1S. (*Quick Build:* Bloodless, plus Undead Influence if [size](scc.v1:mcdm.heroes.v1/rule.character/size) 1S.)
 
@@ -22472,10 +22472,6 @@ If a hero wants to halt hostilities to negotiate with the other side, they can u
 
 An [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s starting negotiation stats depend on their attitude toward the heroes, as shown on the Negotiation Starting Attitudes table, and can be adjusted by the Director as they see fit. A naturally irascible [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) might have lower [patience](scc.v1:mcdm.heroes.v1/rule.negotiation/patience), while a hostile [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) with a greater-than-expected stake in the negotiation topic might have a higher-than-typical [interest](scc.v1:mcdm.heroes.v1/rule.negotiation/interest).
 
-### Uncovering Motivations
-
-If a hero wishes to figure out an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation), they can begin by simply asking, "What do you want out of this deal?" In response, the
-
 ###### Negotiation Starting Attitudes Table
 
 | Attitude   | Description                                                                                              | [Interest](scc.v1:mcdm.heroes.v1/rule.negotiation/interest) | [Patience](scc.v1:mcdm.heroes.v1/rule.negotiation/patience) |
@@ -22487,7 +22483,9 @@ If a hero wishes to figure out an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'
 | Friendly   | The heroes seem like the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s people. The [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) is willing to give them the benefit of the doubt.         | 3        | 4        |
 | Trusting   | The [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) has reason to take the heroes at their word and will help if the characters don't screw this up. | 3        | 5        |
 
-[NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) can willingly hint at or reveal one of their [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation), usually by asking for something. For instance, a monarch [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) with the [greed](scc.v1:mcdm.heroes.v1/negotiation/greed) [motivation](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation) and a penchant for collecting rare animals might suggest that the heroes retrieving a griffon egg would earn the monarch's gratitude. The Director can also decide that during the natural course of the negotiation, the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) might offer up similar suggestions without the heroes asking, provided the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) already has an [interest](scc.v1:mcdm.heroes.v1/rule.negotiation/interest) of 3 or higher.
+### Uncovering Motivations
+
+If a hero wishes to figure out an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation), they can begin by simply asking, "What do you want out of this deal?" In response, the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) can willingly hint at or reveal one of their [motivations](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation), usually by asking for something. For instance, a monarch [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) with the [greed](scc.v1:mcdm.heroes.v1/negotiation/greed) [motivation](scc.v1:mcdm.heroes.v1/rule.negotiation/motivation) and a penchant for collecting rare animals might suggest that the heroes retrieving a griffon egg would earn the monarch's gratitude. The Director can also decide that during the natural course of the negotiation, the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) might offer up similar suggestions without the heroes asking, provided the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) already has an [interest](scc.v1:mcdm.heroes.v1/rule.negotiation/interest) of 3 or higher.
 
 If an [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) isn't as forthcoming, or if the heroes want to learn one of the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc)'s [pitfalls](scc.v1:mcdm.heroes.v1/rule.negotiation/pitfall), a hero can make a [Reason](scc.v1:mcdm.heroes.v1/rule.character/reason), [Intuition](scc.v1:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc.v1:mcdm.heroes.v1/rule.character/presence) [test](scc.v1:mcdm.heroes.v1/rule.test/test) while interacting with the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc) during the negotiation, based on the tactics used to draw out the [NPC](scc.v1:mcdm.heroes.v1/rule.general/npc). The [test](scc.v1:mcdm.heroes.v1/rule.test/test) has the following outcomes:
 
