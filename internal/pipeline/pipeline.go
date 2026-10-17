@@ -126,6 +126,9 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 	// (a parent is visited before its children, so its descendants' codes are not
 	// yet known at parent-render time).
 	sccBySection := make(map[*parser.Section]string)
+	// parsedBySection records every classified section's parsed content so a
+	// container can link its coded member sections after the walk (companions).
+	parsedBySection := make(map[*parser.Section]*content.ParsedContent)
 	type pendingWrite struct {
 		section *parser.Section
 		parsed  *content.ParsedContent
@@ -196,6 +199,7 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 				// Record the final code so coded descendant headings can be marked
 				// in PageBody, and defer the render + writes until the walk is done.
 				sccBySection[section] = sccCode
+				parsedBySection[section] = parsed
 				pending = append(pending, pendingWrite{section: section, parsed: parsed, sccCode: sccCode})
 			}
 
@@ -231,6 +235,7 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 	// back to the lore-only Body. The book-faithful, everything-inline view still
 	// exists on the Read tab via the chapter page's PageBody (rendered separately).
 	for _, pw := range pending {
+		attachCompanionMembers(pw.section, pw.parsed, parsedBySection)
 		if t, _ := pw.parsed.Frontmatter["type"].(string); pw.section != nil && t != "monster" {
 			pw.parsed.PageBody = content.RenderSubtree(pw.section, sccBySection)
 		}
@@ -268,6 +273,33 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 	}
 
 	return result, nil
+}
+
+// attachCompanionMembers links a beastheart companion statblock to its coded
+// Level-1 member entities so the statblock's features[] (json/yaml) and ds-sb
+// block (md-dse) carry the companion's base abilities (SC-390). The members are
+// the companion section's DIRECT classified ability/feature children, in document
+// order; the "<Species> Advancement Features" featureblock child (and the
+// Level 3/6/10 features inside it) is a separate entity and is excluded. A no-op
+// for every non-companion section.
+func attachCompanionMembers(section *parser.Section, parsed *content.ParsedContent, parsedBySection map[*parser.Section]*content.ParsedContent) {
+	if section == nil || parsed == nil {
+		return
+	}
+	if t, _ := parsed.Frontmatter["type"].(string); t != "statblock" {
+		return
+	}
+	if c, _ := parsed.Frontmatter["companion"].(string); c == "" {
+		return
+	}
+	for _, child := range section.Children {
+		if t := child.Type(); t != "ability" && t != "feature" {
+			continue
+		}
+		if member := parsedBySection[child]; member != nil {
+			parsed.Members = append(parsed.Members, member)
+		}
+	}
 }
 
 // RunSharedOutputs regenerates the cross-book shared outputs (aggregate / scc_map /

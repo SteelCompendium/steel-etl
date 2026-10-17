@@ -11,7 +11,7 @@ var statblockScalarKeys = []string{
 	"name", "type", "flavor", "level", "role", "organization", "keywords", "ev", "cost",
 	"stamina", "speed", "movement", "size", "stability", "free_strike",
 	"might", "agility", "reason", "intuition", "presence",
-	"immunities", "weaknesses", "with_captain",
+	"immunities", "weaknesses", "with_captain", "skills",
 	"statblock_kind", "terrain_type", // fixture statblocks (Summoner book)
 }
 
@@ -40,10 +40,35 @@ func transformStatblock(sccCode string, parsed *content.ParsedContent) map[strin
 		}
 	}
 
-	if feats := content.ParseStatblockFeatures(parsed.Body); len(feats) > 0 {
+	feats := content.ParseStatblockFeatures(parsed.Body)
+	// Coded member entities (a beastheart companion's Level-1 abilities/features,
+	// SC-390) are embedded in document order after any blockquote features.
+	for _, member := range parsed.Members {
+		if f := statblockMemberFeature(member); f != nil {
+			feats = append(feats, f)
+		}
+	}
+	if len(feats) > 0 {
 		out["features"] = feats
 	}
 
 	out["metadata"] = map[string]any{"scc": sccCode, "source": extractSource(sccCode)}
 	return out
+}
+
+// statblockMemberFeature renders a coded member entity (ability/feature) as an
+// embedded statblock feature: the same SDK feature object the member's own json
+// file carries, with the signature-ability wording statblock features use
+// ("Signature Ability", as ParseStatblockFeatures emits for monsters) instead of
+// the standalone ability's "Signature".
+func statblockMemberFeature(member *content.ParsedContent) map[string]any {
+	if member == nil {
+		return nil
+	}
+	code, _ := member.Frontmatter["scc"].(string)
+	f := TransformToSDKFormat(code, member)
+	if at, _ := f["ability_type"].(string); at == "Signature" {
+		f["ability_type"] = "Signature Ability"
+	}
+	return f
 }

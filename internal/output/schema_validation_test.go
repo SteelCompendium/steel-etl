@@ -91,6 +91,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 		"might": true, "agility": true, "reason": true, "intuition": true, "presence": true,
 		"with_captain": true, "features": true, "metadata": true,
 		"statblock_kind": true, "terrain_type": true,
+		"skills": true, // beastheart companions (SC-390)
 	},
 	"featureblock": {
 		"name": true, "type": true, "kind": true, "level": true, "flavor": true,
@@ -239,6 +240,18 @@ func TestSchema_NoUnevaluatedProperties(t *testing.T) {
 				"might": 2, "agility": 1, "reason": 0, "intuition": 0, "presence": 0,
 			},
 			"> ⭐️ **Tough**\n>\n> Hardy.\n",
+		},
+		{
+			// Beastheart companion: text free_strike/stamina + skills (SC-390).
+			"statblock with companion text stats and skills",
+			map[string]any{
+				"name": "Panther", "type": "statblock", "level": 1,
+				"organization": "Companion", "keywords": []string{"Animal", "Companion"},
+				"stamina": "= yours", "speed": 7, "size": "1M", "stability": 1,
+				"free_strike": "1 + M", "skills": []string{"Sneak"}, "movement": "Climb",
+				"might": 2, "agility": 2, "reason": -1, "intuition": 2, "presence": 1,
+			},
+			"",
 		},
 	}
 

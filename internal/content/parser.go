@@ -35,6 +35,14 @@ type ParsedContent struct {
 	// For example, a kit's signature ability is stored under "signature_ability".
 	Children map[string]*ParsedContent
 
+	// Members are the ordered, already-parsed coded child entities (abilities and
+	// features) that an owning entity embeds in its structured output: a beastheart
+	// companion's Level-1 base abilities/features become its statblock's features[]
+	// (SC-390). Unlike CodedChildren they are real document sections that the walk
+	// classifies and writes on their own; the pipeline only links them to the
+	// owner after the walk (each carries its own scc in Frontmatter["scc"]).
+	Members []*ParsedContent
+
 	// CodedChildren holds extra entities the parser mints from a container's body
 	// (e.g. fixture advancement members parsed from blockquotes) that are NOT real
 	// document sections but still get their own SCC code + leaf page. The pipeline

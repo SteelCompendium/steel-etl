@@ -78,3 +78,77 @@ func TestTransformStatblock(t *testing.T) {
 		t.Errorf("feature: %+v", feats[0])
 	}
 }
+
+// companionFixture is a beastheart companion statblock with its attached coded
+// Level-1 members (an ability then a feature, in book order), as the pipeline
+// builds it. The advancement-features featureblock is deliberately NOT a member.
+func companionFixture() *content.ParsedContent {
+	pounce := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name": "Pounce", "type": "ability", "subtype": "signature", "action_type": "Maneuver",
+			"flavor": "The panther bunches up.", "distance": "Melee 1", "target": "One enemy",
+			"keywords": []string{"Companion", "Melee"}, "level": "1",
+			"effects": []map[string]any{{"name": "Effect", "effect": "The target takes damage."}},
+			"scc":     "mcdm.beastheart.v1/feature.ability.companion.beastheart.panther.level-1/pounce",
+		},
+		TypePath: []string{"feature", "ability", "companion", "beastheart", "panther", "level-1"},
+		ItemID:   "pounce",
+	}
+	spring := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name": "Mighty Spring", "type": "feature", "level": "1",
+			"scc": "mcdm.beastheart.v1/feature.companion.beastheart.panther.level-1/mighty-spring",
+		},
+		Body:     "They can jump.",
+		TypePath: []string{"feature", "companion", "beastheart", "panther", "level-1"},
+		ItemID:   "mighty-spring",
+	}
+	return &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name": "Panther", "type": "statblock", "level": 1, "organization": "Companion",
+			"keywords": []string{"Animal", "Companion"}, "size": "1M", "speed": 7,
+			"stamina": "= yours", "stability": 1, "free_strike": "1 + M", "movement": "Climb",
+			"skills": []string{"Sneak"}, "might": 2, "agility": 2, "reason": -1, "intuition": 2,
+			"presence": 1, "companion": "panther",
+		},
+		Body:     "| Animal, Companion | - | Level 1 | - | - |\n|:-:|:-:|:-:|:-:|:-:|\n",
+		TypePath: []string{"monster", "companion", "beastheart", "statblock"},
+		ItemID:   "panther",
+		Members:  []*content.ParsedContent{pounce, spring},
+	}
+}
+
+// TestTransformStatblock_CompanionMembers: a companion's attached members become
+// its features[] in book order, as the members' own SDK feature objects, with the
+// ability's "Signature" worded "Signature Ability" like every statblock feature;
+// text free_strike / stamina and the skills list pass through (SC-390).
+func TestTransformStatblock_CompanionMembers(t *testing.T) {
+	out := TransformToSDKFormat("mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther", companionFixture())
+
+	if out["free_strike"] != "1 + M" || out["stamina"] != "= yours" || out["organization"] != "Companion" {
+		t.Errorf("text stats not passed through: free_strike=%v stamina=%v org=%v", out["free_strike"], out["stamina"], out["organization"])
+	}
+	if sk, _ := out["skills"].([]string); len(sk) != 1 || sk[0] != "Sneak" {
+		t.Errorf("skills = %v, want [Sneak]", out["skills"])
+	}
+	if out["role"] != "" || out["ev"] != "" {
+		t.Errorf("role/ev must default to empty, got %q/%q", out["role"], out["ev"])
+	}
+	feats, ok := out["features"].([]map[string]any)
+	if !ok || len(feats) != 2 {
+		t.Fatalf("features = %#v, want 2 members", out["features"])
+	}
+	if feats[0]["name"] != "Pounce" || feats[1]["name"] != "Mighty Spring" {
+		t.Errorf("member order = %v, %v; want Pounce, Mighty Spring", feats[0]["name"], feats[1]["name"])
+	}
+	if feats[0]["feature_type"] != "ability" || feats[0]["ability_type"] != "Signature Ability" {
+		t.Errorf("pounce feature_type/ability_type = %v/%v", feats[0]["feature_type"], feats[0]["ability_type"])
+	}
+	if feats[1]["feature_type"] != "feature" {
+		t.Errorf("mighty spring feature_type = %v, want feature", feats[1]["feature_type"])
+	}
+	meta, _ := feats[0]["metadata"].(map[string]any)
+	if scc, _ := meta["scc"].([]string); len(scc) != 1 || scc[0] != "mcdm.beastheart.v1/feature.ability.companion.beastheart.panther.level-1/pounce" {
+		t.Errorf("member metadata.scc = %v", meta["scc"])
+	}
+}

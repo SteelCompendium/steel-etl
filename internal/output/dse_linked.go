@@ -31,6 +31,7 @@ func (g *DSELinkedGenerator) WriteSection(sccCode string, parsed *content.Parsed
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,
 		Children:    g.resolveChildren(parsed.Children, sccCode),
+		Members:     g.resolveMembers(parsed.Members, sccCode),
 	}
 
 	relPath := SCCToFilePath(sccCode, ".md")
@@ -72,6 +73,31 @@ func (g *DSELinkedGenerator) resolveChildren(children map[string]*content.Parsed
 			ItemID:      child.ItemID,
 			Children:    g.resolveChildren(child.Children, sccCode),
 		}
+	}
+	return resolved
+}
+
+// resolveMembers returns copies of an owner's embedded Members (a companion
+// statblock's Level-1 abilities/features) with scc: links resolved relative to the
+// OWNER's SCC code, like resolveChildren: the members are embedded inline in the
+// owner's own file. Frontmatter["scc"] (the member's own code) is preserved by
+// ResolveFrontmatter since it is not a link.
+func (g *DSELinkedGenerator) resolveMembers(members []*content.ParsedContent, sccCode string) []*content.ParsedContent {
+	if len(members) == 0 {
+		return nil
+	}
+	resolved := make([]*content.ParsedContent, 0, len(members))
+	for _, m := range members {
+		if m == nil {
+			continue
+		}
+		resolved = append(resolved, &content.ParsedContent{
+			Frontmatter: g.Resolver.ResolveFrontmatter(m.Frontmatter, sccCode, g.LinkMode),
+			Body:        g.Resolver.ResolveLinks(m.Body, sccCode, g.LinkMode),
+			TypePath:    m.TypePath,
+			ItemID:      m.ItemID,
+			Children:    g.resolveChildren(m.Children, sccCode),
+		})
 	}
 	return resolved
 }

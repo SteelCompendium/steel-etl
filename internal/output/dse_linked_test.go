@@ -207,3 +207,36 @@ func TestDSELinkedGenerator_NilAndEmpty(t *testing.T) {
 		t.Errorf("expected nil error for empty SCC, got %v", err)
 	}
 }
+
+// A companion statblock's embedded members are rendered by the linked DSE writer
+// too, with their scc: links resolved (the owner's resolver pass must reach the
+// members, or the ds-sb features keep raw scc: links) (SC-390).
+func TestDSELinkedGenerator_CompanionMembersResolved(t *testing.T) {
+	dir := t.TempDir()
+	registry := scc.NewRegistry()
+	registry.Add("mcdm.heroes.v1/condition/prone")
+	gen := &DSELinkedGenerator{BaseDir: dir, Resolver: scc.NewResolver(registry, ".md"), LinkMode: scc.LinkAll}
+
+	parsed := companionFixture()
+	parsed.Members[0].Frontmatter["effects"] = []map[string]any{
+		{"name": "Effect", "effect": "The target is knocked [prone](scc:mcdm.heroes.v1/condition/prone)."},
+	}
+	code := "mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther"
+	if err := gen.WriteSection(code, parsed); err != nil {
+		t.Fatalf("WriteSection failed: %v", err)
+	}
+	data, err := os.ReadFile(filepath.Join(dir, "monster", "companion", "beastheart", "statblock", "panther.md"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	out := string(data)
+	if !strings.Contains(out, "name: Pounce") || !strings.Contains(out, "name: Mighty Spring") {
+		t.Errorf("members missing from the linked ds-sb block:\n%s", out)
+	}
+	if strings.Contains(out, "scc:mcdm.heroes.v1/condition/prone") {
+		t.Errorf("member effect link was not resolved:\n%s", out)
+	}
+	if !strings.Contains(out, "(../../../../condition/prone.md)") {
+		t.Errorf("expected a relative resolved link in the member effect:\n%s", out)
+	}
+}

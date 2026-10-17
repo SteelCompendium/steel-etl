@@ -220,12 +220,30 @@ func ParseStatblockFields(name, body string) map[string]any {
 	}
 	// Integer labels.
 	for label, key := range map[string]string{
-		"Speed": "speed", "Stability": "stability", "Free Strike": "free_strike",
+		"Speed": "speed", "Stability": "stability",
 		"Might": "might", "Agility": "agility", "Reason": "reason",
 		"Intuition": "intuition", "Presence": "presence",
 	} {
 		if n, ok := intField(grid.labels[label]); ok {
 			fm[key] = n
+		}
+	}
+	// Free Strike is an integer for monsters but formula text for beastheart
+	// companions ("1 + M", the companion's Might bonus is added at play time), so a
+	// non-integer value is kept verbatim as a string rather than dropped
+	// (statblock.schema.json: free_strike is integer | string).
+	if raw, ok := grid.labels["Free Strike"]; ok && !isDashPlaceholder(raw) {
+		if n, ok := intField(raw); ok {
+			fm["free_strike"] = n
+		} else {
+			fm["free_strike"] = raw
+		}
+	}
+	// Skills (beastheart companions): a comma list of skill names. Links are
+	// already stripped by parseStatGrid, so "[Sneak](scc…)" arrives as "Sneak".
+	if v, ok := grid.labels["Skills"]; ok {
+		if skills := splitCommaList(v); len(skills) > 0 {
+			fm["skills"] = skills
 		}
 	}
 	// Flavor: the prose paragraph under the heading, before the stat grid (e.g.

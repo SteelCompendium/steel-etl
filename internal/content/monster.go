@@ -77,6 +77,12 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	body := section.FullBodySource()
 	fm := ParseStatblockFields(name, body)
 
+	// Beastheart companion species (`@companion: <species>`) are statblocks in the
+	// monster.companion.<class>.statblock namespace (SC-390).
+	if companion := section.Annotation["companion"]; companion != "" {
+		return parseCompanionStatblock(ctx, section, fm, body, companion), nil
+	}
+
 	domain, category, subcategory := statblockDomain(ctx, section.HeadingLevel)
 
 	if domain == "fixture" {
@@ -145,6 +151,44 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 		TypePath:    typePath,
 		ItemID:      id,
 	}, nil
+}
+
+// parseCompanionStatblock finishes a beastheart companion species section
+// (`@type: statblock | @companion: <species> | @level: 1`) as a real statblock
+// entity. The stats come from the same grid parser every statblock uses
+// (ParseStatblockFields: size, speed, stamina "= yours", stability, free strike
+// "1 + M", movement, skills, immunity, the five characteristics, keywords, level);
+// a companion has no role and no EV, and its organization is the literal
+// "Companion" (set here rather than in knownOrganizations, whose word-match would
+// otherwise read the "Companion" keyword in the header cell as an organization).
+// The companion's coded Level-1 member abilities/features are attached afterwards
+// by the pipeline (ParsedContent.Members); the "<Species> Advancement Features"
+// featureblock stays its own entity.
+func parseCompanionStatblock(ctx *context.ContextStack, section *parser.Section, fm map[string]any, body, companion string) *ParsedContent {
+	fm["organization"] = "Companion"
+	fm["companion"] = companion
+	if _, ok := fm["level"]; !ok {
+		if n, err := strconv.Atoi(section.Annotation["level"]); err == nil {
+			fm["level"] = n
+		}
+	}
+	// The grid prints an em-dash for "none" (Immunity, Movement). ParseStatblockFields
+	// only treats an ASCII "-" as empty, so drop the em-dash placeholders here — a
+	// companion must not carry `movement: "—"` or `immunities: null`. (Other
+	// statblocks keep the long-standing behaviour; see the SC-390 follow-up.)
+	if mv, _ := fm["movement"].(string); isDashPlaceholder(mv) {
+		delete(fm, "movement")
+	}
+	if im, ok := fm["immunities"].([]string); ok && len(im) == 0 {
+		delete(fm, "immunities")
+	}
+	classID := findAncestorID(ctx, section.HeadingLevel, "class")
+	return &ParsedContent{
+		Frontmatter: fm,
+		Body:        body,
+		TypePath:    compactPath("monster", "companion", classID, "statblock"),
+		ItemID:      companion,
+	}
 }
 
 // fixtureStats builds the stats[] list from frontmatter fields already populated

@@ -1,11 +1,14 @@
 package content
 
 import (
+	"os"
+	"reflect"
 	"strings"
 	"testing"
 
 	"github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
 
 // newSection builds a Section with the given heading, level, annotation, and body.
@@ -594,5 +597,141 @@ func TestCollectChildFeatures_PopulatesEffects(t *testing.T) {
 	}
 	if m["body"] != f.Body {
 		t.Errorf("ToMap body = %v, want the flat body kept alongside effects", m["body"])
+	}
+}
+
+// companionWant is the expected parse of one beastheart companion's stat grid.
+type companionWant struct {
+	keywords   []string
+	size       string
+	speed      int
+	stability  int
+	movement   string // "" = none (em-dash in the source)
+	immunities []string
+	skills     []string
+	chars      [5]int // might, agility, reason, intuition, presence
+}
+
+// TestStatblockParser_CompanionGrids_AllSpecies parses the 14 real companion
+// species from the Beastheart book source through StatblockParser and checks every
+// grid shape: 1S/1M/1L sizes, em-dash movement/immunity (omitted), the drake's
+// linked immunity (link text kept, link stripped), Skills link-stripping, and the
+// constants every companion shares (SC-390). It also pins the SCC identity: the
+// entity moved from feature-group to statblock WITHOUT changing its code.
+func TestStatblockParser_CompanionGrids_AllSpecies(t *testing.T) {
+	data, err := os.ReadFile("../../input/beastheart/Draw Steel Beastheart.md")
+	if err != nil {
+		t.Skipf("skipping book-source test: %v", err)
+	}
+	doc, err := parser.ParseDocument(data)
+	if err != nil {
+		t.Fatalf("ParseDocument: %v", err)
+	}
+	want := map[string]companionWant{
+		"basilisk":        {[]string{"Beast", "Companion"}, "1L", 5, 2, "", []string{"Poison 3"}, []string{"Alertness"}, [5]int{2, 1, -1, 2, 2}},
+		"bear":            {[]string{"Animal", "Companion"}, "1L", 5, 2, "Climb", nil, []string{"Intimidate"}, [5]int{2, 1, -1, 2, 2}},
+		"boar":            {[]string{"Animal", "Companion"}, "1M", 5, 2, "", nil, []string{"Search"}, [5]int{2, 1, -1, 2, 2}},
+		"condor":          {[]string{"Animal", "Companion"}, "1M", 7, 0, "Fly", nil, []string{"Alertness"}, [5]int{2, 1, -1, 2, 1}},
+		"deinonychus":     {[]string{"Animal", "Companion"}, "1M", 7, 1, "", nil, []string{"Track"}, [5]int{2, 2, -1, 2, 1}},
+		"drake":           {[]string{"Companion", "Dragon"}, "1M", 5, 1, "Fly", []string{"Attuned damage type 3 (see Elementally Attuned)"}, []string{"Intimidate"}, [5]int{2, 1, -1, 2, 2}},
+		"elemental-spark": {[]string{"Companion", "Elemental"}, "1M", 7, 1, "", []string{"Lightning 3"}, []string{"Magic"}, [5]int{2, 2, -1, 2, 1}},
+		"gummy-ball":      {[]string{"Companion", "Ooze"}, "1L", 5, 2, "", []string{"Acid 3"}, []string{"Sneak"}, [5]int{2, 2, -1, 2, 1}},
+		"hellhound":       {[]string{"Companion", "Infernal"}, "1M", 7, 1, "", []string{"Fire 3"}, []string{"Intimidate"}, [5]int{2, 2, -1, 2, 1}},
+		"lightbender":     {[]string{"Beast", "Companion"}, "1L", 7, 2, "", nil, []string{"Hide"}, [5]int{2, 1, -1, 2, 2}},
+		"panther":         {[]string{"Animal", "Companion"}, "1M", 7, 1, "Climb", nil, []string{"Sneak"}, [5]int{2, 2, -1, 2, 1}},
+		"spider":          {[]string{"Animal", "Companion"}, "1M", 5, 1, "Climb", nil, []string{"Sneak"}, [5]int{2, 2, -1, 2, 1}},
+		"sporeling":       {[]string{"Beast", "Companion"}, "1S", 5, 0, "", []string{"Poison 3"}, []string{"Track"}, [5]int{2, 2, -1, 2, 1}},
+		"wolf":            {[]string{"Animal", "Companion"}, "1M", 7, 1, "", nil, []string{"Track"}, [5]int{2, 2, -1, 2, 1}},
+	}
+
+	seen := 0
+	for _, top := range doc.Sections {
+		for _, sec := range top.AllSections() {
+			species := sec.Annotation["companion"]
+			if species == "" {
+				continue
+			}
+			seen++
+			if sec.Type() != "statblock" {
+				t.Errorf("%s: annotated @type %q, want statblock", species, sec.Type())
+			}
+			w, ok := want[species]
+			if !ok {
+				t.Errorf("unexpected companion %q", species)
+				continue
+			}
+			ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+			ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+			got, err := (&StatblockParser{}).Parse(ctx, sec)
+			if err != nil {
+				t.Fatalf("%s: parse: %v", species, err)
+			}
+			fm := got.Frontmatter
+			if code := scc.Classify("mcdm.beastheart.v1", got.TypePath, got.ItemID); code != "mcdm.beastheart.v1/monster.companion.beastheart.statblock/"+species {
+				t.Errorf("%s: scc = %s (code must not change)", species, code)
+			}
+			if fm["type"] != "statblock" || fm["organization"] != "Companion" || fm["companion"] != species {
+				t.Errorf("%s: type/org/companion = %v/%v/%v", species, fm["type"], fm["organization"], fm["companion"])
+			}
+			// Shared by all 14: level, "= yours" stamina, "1 + M" free strike (text).
+			if fm["level"] != 1 || fm["stamina"] != "= yours" || fm["free_strike"] != "1 + M" {
+				t.Errorf("%s: level/stamina/free_strike = %v/%v/%v", species, fm["level"], fm["stamina"], fm["free_strike"])
+			}
+			if _, ok := fm["role"]; ok {
+				t.Errorf("%s: companions have no role, got %v", species, fm["role"])
+			}
+			if _, ok := fm["ev"]; ok {
+				t.Errorf("%s: companions have no EV, got %v", species, fm["ev"])
+			}
+			if !reflect.DeepEqual(fm["keywords"], w.keywords) || fm["size"] != w.size || fm["speed"] != w.speed || fm["stability"] != w.stability {
+				t.Errorf("%s: keywords/size/speed/stability = %v/%v/%v/%v", species, fm["keywords"], fm["size"], fm["speed"], fm["stability"])
+			}
+			if mv, _ := fm["movement"].(string); mv != w.movement {
+				t.Errorf("%s: movement = %q, want %q (em-dash is omitted)", species, mv, w.movement)
+			}
+			imm, hasImm := fm["immunities"]
+			if (w.immunities == nil) == hasImm || (hasImm && !reflect.DeepEqual(imm, w.immunities)) {
+				t.Errorf("%s: immunities = %v, want %v", species, imm, w.immunities)
+			}
+			if !reflect.DeepEqual(fm["skills"], w.skills) {
+				t.Errorf("%s: skills = %v, want %v", species, fm["skills"], w.skills)
+			}
+			chars := [5]int{}
+			for i, k := range []string{"might", "agility", "reason", "intuition", "presence"} {
+				chars[i], _ = fm[k].(int)
+			}
+			if chars != w.chars {
+				t.Errorf("%s: characteristics = %v, want %v", species, chars, w.chars)
+			}
+		}
+	}
+	if seen != len(want) {
+		t.Errorf("found %d companion sections, want %d", seen, len(want))
+	}
+}
+
+// TestParseStatblockFields_FreeStrikeTextAndSkills covers the two shared-parser
+// extensions (SC-390): a non-integer Free Strike is kept as text ("1 + M") instead
+// of being dropped, an integer one stays an int, and Skills become a link-free list.
+func TestParseStatblockFields_FreeStrikeTextAndSkills(t *testing.T) {
+	grid := "" +
+		"| Animal, Companion | - | Level 1 | - | - |\n" +
+		"|:-:|:-:|:-:|:-:|:-:|\n" +
+		"| **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |\n" +
+		"| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc.v1:x/skill/sneak), [Hide](scc.v1:x/skill/hide)**<br>Skills | | |\n"
+	fm := ParseStatblockFields("Panther", grid)
+	if fm["free_strike"] != "1 + M" {
+		t.Errorf("free_strike = %#v, want text \"1 + M\"", fm["free_strike"])
+	}
+	if !reflect.DeepEqual(fm["skills"], []string{"Sneak", "Hide"}) {
+		t.Errorf("skills = %#v, want [Sneak Hide]", fm["skills"])
+	}
+	// A plain integer Free Strike is unchanged (the monsters' shape).
+	fm = ParseStatblockFields("Goblin", cursespitterGrid)
+	if fm["free_strike"] != 1 {
+		t.Errorf("integer free_strike = %#v, want int 1", fm["free_strike"])
+	}
+	if _, ok := fm["skills"]; ok {
+		t.Errorf("skills must be absent when the grid has no Skills cell, got %v", fm["skills"])
 	}
 }

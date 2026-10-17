@@ -40,7 +40,8 @@ func findAncestorID(ctx *context.ContextStack, fromLevel int, targetType string)
 // whether one of those exists ANYWHERE in the ancestry, or a treasure rule
 // nested inside e.g. a class section would be wrongly out-ranked by a class
 // ancestor further out (round-2 review MED-2). Companion context lives on a
-// `feature-group` ancestor's `@companion` annotation, not a `type: companion`
+// companion statblock ancestor's `@companion` annotation (`@type: statblock`, SC-390;
+// formerly a feature-group), not a `type: companion`
 // value, so it's checked as its own condition rather than a switch case; a
 // `rule` ancestor with any OTHER group is not "recognised" here and is
 // skipped over so the walk continues upward, matching the pre-SC-323

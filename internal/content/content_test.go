@@ -852,26 +852,6 @@ func TestFeatureCompanionTypePath(t *testing.T) {
 	}
 }
 
-func TestFeatureGroupCompanionClassified(t *testing.T) {
-	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
-	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
-
-	section := &parser.Section{
-		Heading:      "Wolf",
-		HeadingLevel: 4,
-		Annotation:   map[string]string{"type": "feature-group", "companion": "wolf", "level": "1"},
-	}
-	parsed, err := (&FeatureGroupParser{}).Parse(ctx, section)
-	if err != nil {
-		t.Fatalf("parse: %v", err)
-	}
-	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/monster.companion.beastheart.statblock/wolf"
-	if got != want {
-		t.Errorf("got %q, want %q", got, want)
-	}
-}
-
 func TestFeatureGroupPlainUnclassified(t *testing.T) {
 	ctx := context.NewContextStack(context.Metadata{})
 	section := &parser.Section{

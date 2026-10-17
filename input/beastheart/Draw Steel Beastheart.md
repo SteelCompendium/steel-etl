@@ -352,7 +352,7 @@ With the Director's permission, you can also change the damage types of your com
 
 ### Companion Stat Blocks
 
-<!-- @type: feature-group | @companion: basilisk | @level: 1 -->
+<!-- @type: statblock | @companion: basilisk | @level: 1 -->
 #### Basilisk
 
 |     Beast, Companion     |         -         |                            Level 1                            |          -          |            -             |
@@ -397,7 +397,7 @@ Whenever you deal rolled damage to a stoned creature while the basilisk is rampa
 
 While the basilisk is rampaging, you and the basilisk have damage immunity 10 as you become nearly impervious living statues.
 
-<!-- @type: feature-group | @companion: bear | @level: 1 -->
+<!-- @type: statblock | @companion: bear | @level: 1 -->
 #### Bear
 
 | Animal, Companion |           -           |                             Level 1                             |          -          |            -             |
@@ -442,7 +442,7 @@ While the bear is rampaging, you have damage immunity 5 and your size increases 
 
 While the bear is rampaging, you gain a +1 bonus to distance with melee weapon abilities, your size increases to match the bear's size (to a maximum of 3), and your strikes deal an extra 5 damage.
 
-<!-- @type: feature-group | @companion: boar | @level: 1 -->
+<!-- @type: statblock | @companion: boar | @level: 1 -->
 #### Boar
 
 | Animal, Companion |         -         |                         Level 1                         |          -          |            -             |
@@ -487,7 +487,7 @@ While the boar is rampaging, you can use their Gore maneuver, and you and the bo
 
 Whenever you or the boar use an ability that deals damage while the boar is rampaging, you gain 10 temporary Stamina.
 
-<!-- @type: feature-group | @companion: condor | @level: 1 -->
+<!-- @type: statblock | @companion: condor | @level: 1 -->
 #### Condor
 
 | Animal, Companion |          -          |                            Level 1                            |          -          |            -             |
@@ -532,7 +532,7 @@ While the condor is rampaging, you gain wings and can [fly](scc.v1:mcdm.heroes.v
 
 While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 
-<!-- @type: feature-group | @companion: deinonychus | @level: 1 -->
+<!-- @type: statblock | @companion: deinonychus | @level: 1 -->
 #### Deinonychus
 
 | Animal, Companion |         -         |                        Level 1                        |          -          |            -             |
@@ -577,7 +577,7 @@ Whenever you use an ability that deals rolled damage to a [bleeding](scc.v1:mcdm
 
 The deinonychus's claws slash at creatures underfoot. When the deinonychus moves adjacent to an enemy or enters an enemy's space for the first time on a turn while rampaging, the deinonychus deals damage to that enemy equal to the deinonychus's Might score.
 
-<!-- @type: feature-group | @companion: drake | @level: 1 -->
+<!-- @type: statblock | @companion: drake | @level: 1 -->
 #### Drake
 
 |                                                                  Companion, Dragon                                                                  |          -          |                             Level 1                             |          -          |            -             |
@@ -627,7 +627,7 @@ While the drake is rampaging, you gain draconic wings and can [fly](scc.v1:mcdm.
 
 While the drake is rampaging, you and the drake have immunity all to the drake's attuned damage type, and whenever you or the drake make a strike against a creature you can cause the target to be dragonsealed (save ends). A dragonsealed creature has weakness 10 to the drake's attuned damage type.
 
-<!-- @type: feature-group | @companion: elemental-spark | @level: 1 -->
+<!-- @type: statblock | @companion: elemental-spark | @level: 1 -->
 #### Elemental Spark
 
 |    Companion, Elemental     |         -         |                        Level 1                        |          -          |            -             |
@@ -672,7 +672,7 @@ While the spark is rampaging, lightning sings through your blood, and whenever y
 
 While the spark is rampaging, you and the spark can [shift](scc.v1:mcdm.heroes.v1/movement/shifting) up to your speed as a free maneuver once on each of your turns.
 
-<!-- @type: feature-group | @companion: gummy-ball | @level: 1 -->
+<!-- @type: statblock | @companion: gummy-ball | @level: 1 -->
 #### Gummy Ball
 
 |    Companion, Ooze     |         -         |                        Level 1                        |          -          |            -             |
@@ -717,7 +717,7 @@ While the ball is rampaging, your arms and legs become viscous and stretchy, and
 
 While the ball is rampaging, you and the ball have acid immunity 10, and whenever a creature is reduced to 0 Stamina while inside the ball, the ball's size increases by 1 (to a maximum of 5). The ball's size can't increase this way more than once a turn, and the ball shrinks back to their original size when their rampage ends.
 
-<!-- @type: feature-group | @companion: hellhound | @level: 1 -->
+<!-- @type: statblock | @companion: hellhound | @level: 1 -->
 #### Hellhound
 
 |  Companion, Infernal   |         -         |                             Level 1                             |          -          |            -             |
@@ -762,7 +762,7 @@ While the hellhound is rampaging, your mouth foams with acidic ichor, and whenev
 
 While the hellhound is rampaging, you and the hellhound are surrounded by an aura of flames, and each enemy who starts their turn adjacent to you or the hellhound takes fire damage equal to the hellhound's Might score.
 
-<!-- @type: feature-group | @companion: lightbender | @level: 1 -->
+<!-- @type: statblock | @companion: lightbender | @level: 1 -->
 #### Lightbender
 
 | Beast, Companion  |         -         |                       Level 1                       |          -          |            -             |
@@ -807,7 +807,7 @@ While the lightbender is rampaging, you can use a free maneuver to glow with bli
 
 While the lightbender is rampaging, your grip on spatial reality is [weakened](scc.v1:mcdm.heroes.v1/condition/weakened), and once on each of your turns, you or the lightbender can teleport up to 3 spaces as a free maneuver. Additionally, strikes made against you and the lightbender have a double bane until the lightbender's rampage ends.
 
-<!-- @type: feature-group | @companion: panther | @level: 1 -->
+<!-- @type: statblock | @companion: panther | @level: 1 -->
 #### Panther
 
 | Animal, Companion |           -           |                        Level 1                        |          -          |            -             |
@@ -852,7 +852,7 @@ While the panther is rampaging, you can [jump](scc.v1:mcdm.heroes.v1/movement/ju
 
 While the panther is rampaging, you and the panther are invisible and can move through objects and terrain, which are [difficult terrain](scc.v1:mcdm.heroes.v1/movement/difficult-terrain) for you both. A creature who ends their turn inside a solid object from moving this way is [teleported](scc.v1:mcdm.heroes.v1/movement/teleport) to the last unoccupied space they previously occupied.
 
-<!-- @type: feature-group | @companion: spider | @level: 1 -->
+<!-- @type: statblock | @companion: spider | @level: 1 -->
 #### Spider
 
 | Animal, Companion |           -           |                        Level 1                        |          -          |            -             |
@@ -897,7 +897,7 @@ Once on each of your turns while the spider is rampaging, you can shoot a web to
 
 Whenever you or the spider deals damage with a maneuver while the spider is rampaging, the attacker regains Stamina equal to the damage dealt.
 
-<!-- @type: feature-group | @companion: sporeling | @level: 1 -->
+<!-- @type: statblock | @companion: sporeling | @level: 1 -->
 #### Sporeling
 
 |     Beast, Companion     |         -         |                        Level 1                        |          -          |            -             |
@@ -942,7 +942,7 @@ Once on each of your turns while the sporeling is rampaging, you can [teleport](
 
 While the sporeling is rampaging, you and the sporeling sprout rootlike, gripping mycelia along your limbs, and whenever you or the sporeling makes a strike against a creature who has M < STRONG, the creature is [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed) by the attacker. Additionally, you and the sporeling can't be force moved or knocked [prone](scc.v1:mcdm.heroes.v1/condition/prone) until the sporeling's rampage ends.
 
-<!-- @type: feature-group | @companion: wolf | @level: 1 -->
+<!-- @type: statblock | @companion: wolf | @level: 1 -->
 #### Wolf
 
 | Animal, Companion |         -         |                        Level 1                        |          -          |            -             |
