@@ -320,7 +320,7 @@ func walkSourceDirs(dirs []string) ([]sourceEntry, error) {
 }
 
 // standaloneCodeSet scans the source entries for pages whose own frontmatter type
-// is a standalone card (statblock/featureblock/dynamic-terrain/feature-group, per
+// is a standalone card (statblock/featureblock/dynamic-terrain, per
 // standaloneType in embed_cards.go) and returns the set of their scc codes. Used
 // by buildAbilityCardPage to leave feature/trait containers that hold such a
 // descendant for the embedItemCards post-pass instead of carding them inline.

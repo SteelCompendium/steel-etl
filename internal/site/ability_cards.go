@@ -45,7 +45,7 @@ func buildAbilityCardPage(data []byte, standalone map[string]bool) ([]byte, bool
 		card = renderAbilityCard(fm, body, "")
 	case "trait", "feature":
 		// A feature/trait page whose subtree contains a STANDALONE item
-		// (statblock/featureblock/dynamic-terrain/feature-group) is left uncarded:
+		// (statblock/featureblock/dynamic-terrain) is left uncarded:
 		// renderTraitCard would render those items as generic .sc-trait niches —
 		// mangling their `>`-blockquote stat/feature content into escaped text —
 		// AND consume the {data-scc} markers the embedItemCards post-pass needs.
@@ -65,7 +65,7 @@ func buildAbilityCardPage(data []byte, standalone map[string]bool) ([]byte, bool
 
 // bodyHasStandaloneDescendant reports whether a feature/trait page body carries a
 // {data-scc} descendant heading whose code names a standalone leaf
-// (statblock/featureblock/dynamic-terrain/feature-group, per standaloneType). The
+// (statblock/featureblock/dynamic-terrain, per standaloneType). The
 // page's own code is never standalone, so it never matches itself.
 func bodyHasStandaloneDescendant(body string, standalone map[string]bool) bool {
 	if len(standalone) == 0 {

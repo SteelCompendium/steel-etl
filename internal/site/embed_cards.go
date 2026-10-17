@@ -33,7 +33,7 @@ func embedCardSections(cfg *Config) []string {
 // a finished card eligible for inline transclusion. Mirrors the leaf transforms
 // in buildSection (ability_cards.go: ability/feature/trait; statblock_card.go:
 // statblock; featureblock_page.go: featureblock/dynamic-terrain;
-// companion_statblock.go: feature-group → the beastheart companion .sb-wrap).
+// companion_statblock.go: statblock pages whose scc is a beastheart companion (SC-390)).
 var cardableType = map[string]bool{
 	"project":         true,
 	"ability":         true,
@@ -42,7 +42,6 @@ var cardableType = map[string]bool{
 	"statblock":       true,
 	"featureblock":    true,
 	"dynamic-terrain": true,
-	"feature-group":   true,
 }
 
 // standaloneType is the subset of card-able types whose card is NOT reproduced
@@ -56,11 +55,10 @@ var standaloneType = map[string]bool{
 	"statblock":       true,
 	"featureblock":    true,
 	"dynamic-terrain": true,
-	"feature-group":   true,
 }
 
 // cardEntry is a leaf's finished card HTML plus whether it is a standalone card
-// (statblock/featureblock/feature-group) that an ancestor feature card cannot
+// (statblock/featureblock) that an ancestor feature card cannot
 // contain, plus the leaf's URL directory (docs-relative path, ".md" stripped)
 // that its relative links were computed against — needed to rebase those links
 // when the card is transcluded into a container page at a different depth.
@@ -87,7 +85,7 @@ func leafCard(content string) (scc string, entry cardEntry, ok bool) {
 		return "", cardEntry{}, false
 	}
 	html := strings.TrimSpace(stripLeadingHeading(strings.TrimLeft(body, "\n")))
-	// A container leaf (the beastheart companion feature-group) keeps a nested
+	// A container leaf (the beastheart companion statblock) keeps a nested
 	// standalone coded sub-entity inline below its own card: the companion's
 	// advancement-features featureblock, under a {data-scc} heading. That
 	// sub-entity is embedded on its own under its sibling heading in any container
@@ -245,7 +243,7 @@ func rebaseLinks(html, fromURLDir, toURLDir string) string {
 }
 
 // subtreeHasStandalone reports whether any {data-scc} heading in lines maps to a
-// standalone card (statblock/featureblock/feature-group) in cards.
+// standalone card (statblock/featureblock) in cards.
 func subtreeHasStandalone(lines []string, cards map[string]cardEntry) bool {
 	for _, line := range lines {
 		if m := dataSCCHeadingRe.FindStringSubmatch(line); m != nil {
