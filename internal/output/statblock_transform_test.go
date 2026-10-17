@@ -148,6 +148,9 @@ func TestTransformStatblock_CompanionMembers(t *testing.T) {
 		t.Errorf("mighty spring feature_type = %v, want feature", feats[1]["feature_type"])
 	}
 	meta, _ := feats[0]["metadata"].(map[string]any)
+	if len(meta) != 1 {
+		t.Errorf("member metadata must be scc-only, got %v", meta)
+	}
 	if scc, _ := meta["scc"].([]string); len(scc) != 1 || scc[0] != "mcdm.beastheart.v1/feature.ability.companion.beastheart.panther.level-1/pounce" {
 		t.Errorf("member metadata.scc = %v", meta["scc"])
 	}

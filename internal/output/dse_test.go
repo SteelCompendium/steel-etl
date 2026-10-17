@@ -262,21 +262,8 @@ func TestDSEGenerator_CompanionStatblock(t *testing.T) {
 		"        - Companion\n" +
 		"        - Melee\n" +
 		"      metadata:\n" +
-		"        ability_type: Signature\n" +
-		"        action_type: Maneuver\n" +
-		"        distance: Melee 1\n" +
-		"        feature_type: ability\n" +
-		"        flavor: The panther bunches up.\n" +
-		"        item_id: pounce\n" +
-		"        item_name: Pounce\n" +
-		"        keywords:\n" +
-		"            - Companion\n" +
-		"            - Melee\n" +
-		"        level: 1\n" +
 		"        scc:\n" +
 		"            - mcdm.beastheart.v1/feature.ability.companion.beastheart.panther.level-1/pounce\n" +
-		"        target: One enemy\n" +
-		"        type: feature/ability/companion/beastheart/panther/level-1\n" +
 		"      name: Pounce\n" +
 		"      target: One enemy\n" +
 		"      type: feature\n" +
@@ -285,14 +272,8 @@ func TestDSEGenerator_CompanionStatblock(t *testing.T) {
 		"        - effect: They can jump.\n" +
 		"      feature_type: feature\n" +
 		"      metadata:\n" +
-		"        action_type: feature\n" +
-		"        feature_type: feature\n" +
-		"        item_id: mighty-spring\n" +
-		"        item_name: Mighty Spring\n" +
-		"        level: 1\n" +
 		"        scc:\n" +
 		"            - mcdm.beastheart.v1/feature.companion.beastheart.panther.level-1/mighty-spring\n" +
-		"        type: feature/companion/beastheart/panther/level-1\n" +
 		"      name: Mighty Spring\n" +
 		"      type: feature\n" +
 		"free_strike: 1 + M\n" +

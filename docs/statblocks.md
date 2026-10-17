@@ -372,7 +372,7 @@ em-dash placeholders (`movement`, `immunities`), and leaves `role`/`ev` empty. T
 Level-1 member abilities/features (the companion section's direct `ability`/`feature`
 children — NOT the `…advancement-features` featureblock, which stays its own `ds-fb`
 entity) are linked after the walk by `attachCompanionMembers` (`pipeline.go`) onto
-`ParsedContent.Members`; `transformStatblock` embeds each as its own SDK feature object in
+`ParsedContent.Members`; `transformStatblock` embeds each as its own SDK feature object (metadata trimmed to the member's `scc`) in
 `features[]` (signature ability → `ability_type: "Signature Ability"`), and
 `DSELinkedGenerator` link-resolves them. The SCC code is unchanged
 (`monster.companion.beastheart.statblock/<species>`). Site: the page body is still the

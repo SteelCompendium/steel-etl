@@ -70,5 +70,13 @@ func statblockMemberFeature(member *content.ParsedContent) map[string]any {
 	if at, _ := f["ability_type"].(string); at == "Signature" {
 		f["ability_type"] = "Signature Ability"
 	}
+	// Statblock features carry no metadata (house pattern: no monster/retainer/minion/
+	// champion/rival statblock feature does). Keep only the member's own SCC identity —
+	// the one thing no uncoded statblock feature has (SC-390 R2a).
+	if meta, ok := f["metadata"].(map[string]any); ok && meta["scc"] != nil {
+		f["metadata"] = map[string]any{"scc": meta["scc"]}
+	} else {
+		delete(f, "metadata")
+	}
 	return f
 }
