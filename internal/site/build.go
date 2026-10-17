@@ -419,10 +419,18 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 			wasCarded = true
 		}
 
-		// Statblock pages → the High-Fantasy Steel .sb-wrap card, rendered to
-		// HTML at build time (renderStatblockCard); steel-statblock.js only wires
-		// runtime behavior. Site-only; runs before injectH1 like the cards above.
-		if card, ok := buildStatblockIslandPage(data); ok {
+		// Beastheart companion pages (type: statblock since SC-390, keyed on their
+		// SCC code) → the .sb-wrap statblock card built from the body stat table,
+		// keeping the advancement-features section. MUST run before the generic
+		// statblock page below: that path would claim the page first and render a
+		// features-less card with no Skills. Site-only; runs before injectH1.
+		if card, ok := buildCompanionStatblockPage(data); ok {
+			data = card
+			wasCarded = true
+		} else if card, ok := buildStatblockIslandPage(data); ok {
+			// Statblock pages → the High-Fantasy Steel .sb-wrap card, rendered to
+			// HTML at build time (renderStatblockCard); steel-statblock.js only wires
+			// runtime behavior. Site-only; runs before injectH1 like the cards above.
 			data = card
 			wasCarded = true
 		}
@@ -467,14 +475,6 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry, sta
 		// Fixture + champion base pages → embed their sibling advancement-features
 		// (build-time on-page embedding; the embed_cards post-pass does the transclude).
 		data = embedSiblingAdvancement(data)
-
-		// Beastheart companion feature-group pages → the .sb-wrap statblock card
-		// (replacing the raw stat table), keeping the advancement-features section.
-		// Site-only; runs before injectH1 like the cards above.
-		if card, ok := buildCompanionStatblockPage(data); ok {
-			data = card
-			wasCarded = true
-		}
 
 		// Stash the pre-card markdown for the client-side export control
 		// (sc-export.js reads the sc-src template).

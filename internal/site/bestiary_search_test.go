@@ -119,6 +119,24 @@ func TestBestiaryItemType_SummonerTrees(t *testing.T) {
 	}
 }
 
+// Beastheart companions are type: statblock under monster/ since SC-390, but they
+// were never bestiary creatures and must stay out of the search index (the site
+// is meant to render identically); a real monster beside them is still indexed.
+func TestCollectBestiaryItems_ExcludesCompanions(t *testing.T) {
+	if got := bestiaryItemType("monster/companion/beastheart/panther.md", "statblock"); got != "" {
+		t.Errorf("companion bestiaryItemType = %q, want excluded", got)
+	}
+	browse := filepath.Join(t.TempDir(), "Browse")
+	writeBrowseMD(t, filepath.Join(browse, "monster", "companion", "beastheart", "panther.md"),
+		"keywords:\n    - Animal\n    - Companion\nlevel: 1\nname: Panther\norganization: Companion\nsize: 1M\ntype: statblock\n")
+	writeBrowseMD(t, filepath.Join(browse, "monster", "goblins", "goblin-warrior.md"),
+		"ev: \"3\"\nlevel: 1\nname: Goblin Warrior\nrole: Harrier\nsize: 1S\ntype: statblock\n")
+	items := collectBestiaryItems(browse)
+	if len(items) != 1 || items[0].Name != "Goblin Warrior" {
+		t.Fatalf("expected only the goblin, got %+v", items)
+	}
+}
+
 func TestCollectBestiaryItems_SummonerSource(t *testing.T) {
 	docs := t.TempDir()
 	dir := filepath.Join(docs, "Browse", "minion", "demon")

@@ -1,6 +1,8 @@
 package site
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 )
@@ -65,7 +67,7 @@ func TestCompanionFeatures_Panther(t *testing.T) {
 }
 
 func TestBuildCompanionStatblockIsland_Panther(t *testing.T) {
-	fm := "name: Panther\nlevel: \"1\"\ncompanion: panther\ntype: feature-group\nscc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther"
+	fm := "name: Panther\nlevel: 1\ncompanion: panther\ntype: statblock\nscc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther"
 	d := buildCompanionStatblockIsland(fm, pantherCompanionBody)
 	if d.Name != "Panther" || d.ID != "panther" {
 		t.Errorf("name/id = %q/%q", d.Name, d.ID)
@@ -105,10 +107,10 @@ func TestBuildCompanionStatblockIsland_Panther(t *testing.T) {
 func TestBuildCompanionStatblockPage_Panther(t *testing.T) {
 	page := `---
 companion: panther
-level: "1"
+level: 1
 name: Panther
 scc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther
-type: feature-group
+type: statblock
 ---
 
 # Panther
@@ -134,7 +136,7 @@ Whenever the panther makes a strike while rampaging, the panther can knock the t
 	if !strings.Contains(s, `class="sb-wrap"`) || strings.Contains(s, "<br>Size") {
 		t.Errorf("expected .sb-wrap card and no raw stat table; got:\n%s", s)
 	}
-	if !strings.HasPrefix(s, "---\n") || !strings.Contains(s, "type: feature-group") {
+	if !strings.HasPrefix(s, "---\n") || !strings.Contains(s, "type: statblock") {
 		t.Error("frontmatter not preserved verbatim")
 	}
 	if !strings.Contains(s, "## Panther Advancement Features") || !strings.Contains(s, "### Cat and Mouse") {
@@ -142,6 +144,52 @@ Whenever the panther makes a strike while rampaging, the panther can knock the t
 	}
 	if _, hit := companionStatblockCache["mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther"]; !hit {
 		t.Error("companion island not cached by scc")
+	}
+}
+
+// Since SC-390 a companion page is `type: statblock` and carries the stats in
+// frontmatter, which is exactly what the generic statblock page would claim. The
+// companion adapter (SCC-gated, body-table driven) must win in buildSection so the
+// card keeps its Skills slot and ability sections; the generic path must NOT run
+// (it would cache the page's features and render a features-less card).
+func TestBuild_CompanionStatblockTakesCompanionPath(t *testing.T) {
+	const code = "mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther"
+	srcDir := t.TempDir()
+	docsDir := filepath.Join(t.TempDir(), "docs")
+	page := "---\nname: Panther\nscc: " + code + "\ntype: statblock\nlevel: 1\ncompanion: panther\n" +
+		"organization: Companion\nsize: 1M\nspeed: 7\nstamina: = yours\nstability: 1\nfree_strike: 1 + M\n" +
+		"movement: Climb\nskills:\n    - Sneak\nmight: 2\nagility: 2\nreason: -1\nintuition: 2\npresence: 1\n---\n\n" +
+		pantherCompanionBody + "\n\n## Panther Advancement Features {data-scc=\"x/monster.companion.beastheart.advancement-features/panther\"}\n\nAdvancement body."
+	path := filepath.Join(srcDir, "monster/companion/beastheart/statblock/panther.md")
+	os.MkdirAll(filepath.Dir(path), 0755)
+	os.WriteFile(path, []byte(page), 0644)
+
+	result, err := Build(&Config{
+		SourceDir: srcDir, DocsDir: docsDir,
+		Sections: []SectionConfig{{Name: "Browse", Include: []string{"monster/"}}},
+	})
+	if err != nil {
+		t.Fatalf("Build failed: %v", err)
+	}
+	for _, e := range result.Errors {
+		t.Errorf("Error: %s", e)
+	}
+	data, err := os.ReadFile(filepath.Join(docsDir, "Browse/monster/companion/beastheart/panther.md"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	out := string(data)
+	if !strings.Contains(out, `class="sb-wrap"`) || !strings.Contains(out, "Skills") || !strings.Contains(out, "Pounce") || !strings.Contains(out, "Mighty Spring") {
+		t.Errorf("expected the companion card with Skills + both abilities:\n%s", out)
+	}
+	if !strings.Contains(out, "type: statblock") || !strings.Contains(out, "## Panther Advancement Features") {
+		t.Errorf("frontmatter type / advancement section not preserved:\n%s", out)
+	}
+	if _, hit := companionStatblockCache[code]; !hit {
+		t.Error("companion adapter did not run (island not cached)")
+	}
+	if _, hit := statblockFeatureCache[code]; hit {
+		t.Error("generic statblock page ran for a companion (feature cache populated)")
 	}
 }
 

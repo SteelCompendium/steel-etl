@@ -35,11 +35,11 @@ func TestBuildAdvancementPairContent(t *testing.T) {
 	write := func(name, fm string) {
 		os.WriteFile(filepath.Join(dir, name), []byte("---\n"+fm+"\n---\n\nbody"), 0644)
 	}
-	write("wolf.md", "name: Wolf\ntype: feature-group")
+	write("wolf.md", "name: Wolf\ntype: statblock")
 	write("wolf-advancement-features.md",
 		"name: Wolf Advancement Features\ntype: featureblock\n"+
 			"features:\n    - name: Pack Tactics\n      level: 3\n      body: x\n")
-	write("boar.md", "name: Boar\ntype: feature-group")
+	write("boar.md", "name: Boar\ntype: statblock")
 	write("boar-advancement-features.md", "name: Boar Advancement Features\ntype: featureblock")
 
 	files := []string{"boar.md", "boar-advancement-features.md", "wolf.md", "wolf-advancement-features.md"}
@@ -231,7 +231,7 @@ func TestAdvancementPairNavOrder_RetainerRoleAdvancement(t *testing.T) {
 
 func TestBuildAdvancementPairContent_CompanionPreview(t *testing.T) {
 	dir := t.TempDir()
-	base := "---\nname: Panther\nscc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther\ntype: feature-group\n---\n\n# Panther\n\n<div class=\"sb-wrap\">…</div>\n"
+	base := "---\nname: Panther\nscc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther\ntype: statblock\n---\n\n# Panther\n\n<div class=\"sb-wrap\">…</div>\n"
 	adv := "---\nname: Panther\ntype: featureblock\n---\n\n# Panther\n"
 	if err := os.WriteFile(filepath.Join(dir, "panther.md"), []byte(base), 0644); err != nil {
 		t.Fatal(err)

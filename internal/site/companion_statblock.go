@@ -1,9 +1,12 @@
 package site
 
 // High-Fantasy Steel COMPANION statblock adapter. Beastheart companion pages are
-// type: feature-group (SCC monster.companion.beastheart.statblock/<species>), not
-// type: statblock — their stats live in a body table and their abilities are ##
-// sections. This file parses that shape into the shared sbIsland model
+// type: statblock (SCC monster.companion.beastheart.statblock/<species>) since
+// SC-390 — the data now carries the stats — but the page body is still the
+// book-order render: the stats live in a body table and the abilities are ##
+// sections. The gate is therefore the SCC code, not the type, and this adapter runs
+// BEFORE the generic statblock page (build.go) so that path never claims a
+// companion. This file parses the body shape into the shared sbIsland model
 // (statblock_page.go) so the companion renders as the .sb-wrap card on its own
 // page (replacing the raw table) and as the .sb-prev preview on the index. The
 // advancement-features section (## … {data-scc=…advancement-features…}) is left
@@ -90,9 +93,10 @@ func splitCompanionCell(cell string) (val, label string, ok bool) {
 	return val, label, true
 }
 
-// buildCompanionStatblockIsland maps a companion feature-group page (frontmatter +
+// buildCompanionStatblockIsland maps a companion page (frontmatter +
 // base-region body) onto the shared sbIsland. Stats come from the body grid
-// (companions carry no stat frontmatter); abilities from the ## sections. Role is
+// (the site-only parse is kept for now — SC-394 retires it in favour of the
+// frontmatter); abilities from the ## sections. Role is
 // the literal "Companion" (grey "leader" accent — not a knownRoleKey); EV is empty
 // (omitted by renderStatblockHead). The Skills grid cell rides in the meta block's
 // Captain slot, relabeled "Skills"; Weakness is "—".
@@ -216,16 +220,13 @@ func splitCompanionAdvancement(body string) (base, advancement string) {
 	return body, ""
 }
 
-// buildCompanionStatblockPage rewrites a companion feature-group page body into the
+// buildCompanionStatblockPage rewrites a companion page body into the
 // build-time .sb-wrap card (replacing the raw stat table + ability sections),
 // keeping the advancement-features section verbatim below it. Returns (data, false)
 // for any non-companion page so the caller writes it unchanged. Caches the island
 // by scc for the index pass. injectH1 (next in buildSection) prepends "# Name".
 func buildCompanionStatblockPage(data []byte) ([]byte, bool) {
 	fm, body := splitFrontmatter(string(data))
-	if strings.TrimSpace(parseFrontmatterField(fm, "type")) != "feature-group" {
-		return data, false
-	}
 	scc := strings.TrimSpace(parseFrontmatterField(fm, "scc"))
 	if !strings.Contains(scc, companionMarker) {
 		return data, false

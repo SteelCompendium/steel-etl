@@ -67,7 +67,7 @@ func TestOwningClass(t *testing.T) {
 const wolfCompanionFM = `companion: wolf
 name: Wolf
 scc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/wolf
-type: feature-group
+type: statblock
 `
 
 const wolfAdvFM = `name: Wolf Advancement Features

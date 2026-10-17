@@ -1495,8 +1495,8 @@ func TestBuild_FlattensAdvancementFeatures(t *testing.T) {
 	os.MkdirAll(docsDir, 0755)
 
 	files := map[string]string{
-		"monster/companion/beastheart/statblock/wolf.md":            "---\nname: Wolf\ntype: feature-group\n---\n\nWolf statblock.",
-		"monster/companion/beastheart/advancement-features/wolf.md": "---\nname: Wolf Advancement Features\ntype: feature-group\n---\n\nSee [the wolf](../statblock/wolf.md).",
+		"monster/companion/beastheart/statblock/wolf.md":            "---\nname: Wolf\ntype: statblock\n---\n\nWolf statblock.",
+		"monster/companion/beastheart/advancement-features/wolf.md": "---\nname: Wolf Advancement Features\ntype: featureblock\n---\n\nSee [the wolf](../statblock/wolf.md).",
 	}
 	for rel, content := range files {
 		path := filepath.Join(srcDir, rel)

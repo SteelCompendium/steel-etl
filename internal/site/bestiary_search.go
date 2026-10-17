@@ -41,6 +41,11 @@ func bestiaryItemType(relSlash, fmType string) string {
 		return ""
 	}
 	switch {
+	case fmType == "statblock" && strings.HasPrefix(relSlash, "monster/companion/"):
+		// Beastheart companions are type: statblock (SC-390) but are not
+		// bestiary creatures: they stay out of search, as they always were (a
+		// "companion" facet is a separate decision).
+		return ""
 	case fmType == "statblock" && strings.HasPrefix(relSlash, "retainer/"):
 		return "retainer"
 	case fmType == "statblock" && strings.HasPrefix(relSlash, "monster/retainer/"):
