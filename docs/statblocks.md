@@ -361,6 +361,25 @@ Plan 5a/5b spec + plan (cross-repo, at the workspace root — not under `steel-e
 workspace `docs/superpowers/specs/2026-06-13-companion-restructure-advancement-featureblocks-design.md`
 and `docs/superpowers/plans/2026-06-13-companion-advancement-featureblocks.md`.
 
+**Beastheart companions are statblocks (SC-390).** Each species is annotated
+`@type: statblock | @companion: <species> | @level: 1` and `StatblockParser` hands it to
+`parseCompanionStatblock` (`monster.go`): the stats come from the shared grid parser
+(`ParseStatblockFields`), which keeps a non-integer Free Strike as text (`free_strike: "1 +
+M"` — the schema is integer|string) and lifts a `Skills` cell to a link-free `skills[]`;
+the companion branch adds `organization: Companion` (never put it in `knownOrganizations`:
+the word-match would read the "Companion" *keyword* as an organization), drops the grid's
+em-dash placeholders (`movement`, `immunities`), and leaves `role`/`ev` empty. The coded
+Level-1 member abilities/features (the companion section's direct `ability`/`feature`
+children — NOT the `…advancement-features` featureblock, which stays its own `ds-fb`
+entity) are linked after the walk by `attachCompanionMembers` (`pipeline.go`) onto
+`ParsedContent.Members`; `transformStatblock` embeds each as its own SDK feature object in
+`features[]` (signature ability → `ability_type: "Signature Ability"`), and
+`DSELinkedGenerator` link-resolves them. The SCC code is unchanged
+(`monster.companion.beastheart.statblock/<species>`). Site: the page body is still the
+book-order render, so `companion_statblock.go` keeps parsing the body table (SC-394 retires
+that) but is gated on the SCC code, runs before the generic statblock page in
+`buildSection`, and `bestiaryItemType` keeps companions out of the bestiary search.
+
 ### Featureblock site rendering (Plan 2)
 
 `internal/site/featureblock_page.go` turns `type: featureblock` and `type:
