@@ -7164,7 +7164,7 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 
 | Domain     | Feature                     |
 |------------|-----------------------------|
-| Creation   | Improved [Hands of the Maker](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-1/hands-of-the-maker) |
+| Creation   | Improved [Hands of the Maker](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-1/hands-of-the-maker) |
 | Death      | Seance                      |
 | Fate       | [Oracular Warning](scc.v1:mcdm.heroes.v1/feature.censor.level-4/oracular-warning)            |
 | Knowledge  | [Saint](scc.v1:mcdm.heroes.v1/rule.world/saint)'s Epiphany            |
@@ -7174,7 +7174,7 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 | Protection | [Impervious Touch](scc.v1:mcdm.heroes.v1/feature.censor.level-4/impervious-touch)            |
 | Storm      | Windwalk                    |
 | Sun        | [Light of Revelation](scc.v1:mcdm.heroes.v1/feature.censor.level-4/light-of-revelation)         |
-| Trickery   | [Blessing of Secrets](scc.v1:mcdm.heroes.v1/feature.ability.censor.level-4/blessing-of-secrets)         |
+| Trickery   | [Blessing of Secrets](scc.v1:mcdm.heroes.v1/feature.ability.conduit.level-4/blessing-of-secrets)         |
 | War        | [Improved Sanctified Weapon](scc.v1:mcdm.heroes.v1/feature.censor.level-4/improved-sanctified-weapon)  |
 
 ###### Blessing of Life
@@ -15864,7 +15864,7 @@ You gain one interpersonal, lore, or [supernatural](scc.v1:mcdm.heroes.v1/rule.g
 <!-- @type: feature -->
 #### Psi Boost
 
-Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional discipline to apply a [psi boost](scc.v1:mcdm.heroes.v1/feature.null.level-7/psi-boost) to it and enhance its effects. A [psi boost](scc.v1:mcdm.heroes.v1/feature.null.level-7/psi-boost)'s effects only last until the end of the [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.
+Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional clarity to apply a [psi boost](scc.v1:mcdm.heroes.v1/feature.talent.level-6/psi-boost) to it and enhance its effects. A [psi boost](scc.v1:mcdm.heroes.v1/feature.talent.level-6/psi-boost)'s effects only last until the end of the [turn](scc.v1:mcdm.heroes.v1/rule.combat/turn) which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.
 
 <!-- @type: feature -->
 ##### Dynamic Power (1 Clarity)
@@ -16442,8 +16442,8 @@ The whole world's a stage, and everyone on it, an actor. No one knows this bette
 | 4th   | [Characteristic Increase](scc.v1:mcdm.heroes.v1/feature.troubadour.level-4/characteristic-increase), [Melodrama](scc.v1:mcdm.heroes.v1/feature.troubadour.level-4/melodrama), [Perk](scc.v1:mcdm.heroes.v1/feature.troubadour.level-4/perk), [Skill](scc.v1:mcdm.heroes.v1/feature.troubadour.level-4/skill), [Zeitgeist](scc.v1:mcdm.heroes.v1/feature.troubadour.level-4/zeitgeist)                                                                      | Signature, 3, 5, 7        | 5                   |
 | 5th   | [Class Act Feature](scc.v1:mcdm.heroes.v1/feature.troubadour.level-5/5th-level-class-act-feature), [9-Drama Ability](scc.v1:mcdm.heroes.v1/feature.troubadour.level-5/9-drama-ability)                                                                                              | Signature, 3, 5, 7, 9     | 5                   |
 | 6th   | [Perk](scc.v1:mcdm.heroes.v1/feature.troubadour.level-6/perk), [Spotlight](scc.v1:mcdm.heroes.v1/feature.troubadour.level-6/spotlight), [Class Act Ability](scc.v1:mcdm.heroes.v1/feature.troubadour.level-6/6th-level-class-act-ability)                                                                                              | Signature, 3, 5, 7, 9     | 5, 9                |
-| 7th   | [Characteristic Increase](scc.v1:mcdm.heroes.v1/feature.troubadour.level-7/characteristic-increase), [A Muse's Muse](scc.v1:mcdm.heroes.v1/feature.troubadour.level-7/a-muses-muse), [Equal Billing](scc.v1:mcdm.heroes.v1/feature.troubadour.level-7/equal-billing), [Skill](scc.v1:mcdm.heroes.v1/feature.troubadour.level-7/skill)                                                                    | Signature, 5, 7, 9        | 5, 9                |
-| 8th   | [Perk](scc.v1:mcdm.heroes.v1/feature.troubadour.level-8/perk), [Class Act Feature](scc.v1:mcdm.heroes.v1/feature.troubadour.level-8/8th-level-class-act-feature), [11-Drama Ability](scc.v1:mcdm.heroes.v1/feature.troubadour.level-8/11-drama-ability)                                                                                       | Signature, 3, 5, 7, 9, 11 | 5, 9, 11            |
+| 7th   | [Characteristic Increase](scc.v1:mcdm.heroes.v1/feature.troubadour.level-7/characteristic-increase), [A Muse's Muse](scc.v1:mcdm.heroes.v1/feature.troubadour.level-7/a-muses-muse), [Equal Billing](scc.v1:mcdm.heroes.v1/feature.troubadour.level-7/equal-billing), [Skill](scc.v1:mcdm.heroes.v1/feature.troubadour.level-7/skill)                                                                    | Signature, 3, 5, 7, 9     | 5, 9                |
+| 8th   | [Perk](scc.v1:mcdm.heroes.v1/feature.troubadour.level-8/perk), [Class Act Feature](scc.v1:mcdm.heroes.v1/feature.troubadour.level-8/8th-level-class-act-feature), [11-Drama Ability](scc.v1:mcdm.heroes.v1/feature.troubadour.level-8/11-drama-ability)                                                                                       | Signature, 3, 5, 7, 9, 11 | 5, 9                |
 | 9th   | [Roar of the Crowd](scc.v1:mcdm.heroes.v1/feature.troubadour.level-9/roar-of-the-crowd), [Class Act Ability](scc.v1:mcdm.heroes.v1/feature.troubadour.level-9/9th-level-class-act-ability)                                                                                            | Signature, 3, 5, 7, 9, 11 | 5, 9, 11            |
 | 10th  | [Applause](scc.v1:mcdm.heroes.v1/feature.troubadour.level-10/applause), [Characteristic Increase](scc.v1:mcdm.heroes.v1/feature.troubadour.level-10/characteristic-increase), [Dramaturgy](scc.v1:mcdm.heroes.v1/feature.troubadour.level-10/dramaturgy), [Greatest of All Time](scc.v1:mcdm.heroes.v1/feature.troubadour.level-10/greatest-of-all-time), [Perk](scc.v1:mcdm.heroes.v1/feature.troubadour.level-10/perk), [Skill](scc.v1:mcdm.heroes.v1/feature.troubadour.level-10/skill)                                                | Signature, 3, 5, 7, 9, 11 | 5, 9, 11            |
 

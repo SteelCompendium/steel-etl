@@ -27562,8 +27562,8 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** While the target is cursed this way, whenever they make a strike that targets only one creature, the retainer can use a free triggered action to choose a second target for the strike within its distance.
 
-> ######## Level 7 Role Advancement Ability
->
+> **Level 7 Role Advancement Ability**
+
 > 🏹 **Take Root (Encounter)**
 >
 > | **Magic, Ranged, Strike** |     **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
@@ -28033,20 +28033,6 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 8 fire damage
 > - **17+:** 11 fire damage
 
-> **Level 10 Retainer Advancement Ability**
-
-> 🔳 **Pacifier Shell (Encounter)**
->
-> | **Area, Ranged, Weapon** |               **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
-> |--------------------------|------------------------------:|
-> | **📏 3 cube within 15**  | **🎯 Each enemy in the area** |
->
-> **Power Roll + highest characteristic:**
->
-> - **≤11:** 8 damage; I < WEAK [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends
-> - **12-16:** 12 damage; I < AVERAGE [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends)
-> - **17+:** 16 damage; I < STRONG [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends) and [prone](scc.v1:mcdm.heroes.v1/condition/prone)
-
 > **Level 7 Retainer Advancement Ability**
 
 > 🔳 **Screaming Shell (Encounter)**
@@ -28062,6 +28048,20 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **17+:** 13 damage; P < STRONG [frightened](scc.v1:mcdm.heroes.v1/condition/frightened)
 >
 > **Effect:** Until the start of the mortar's next turn, [strikes](scc.v1:mcdm.heroes.v1/rule.combat/strike) made against the mortar or any ally [adjacent](scc.v1:mcdm.heroes.v1/rule.combat/adjacent) to them take a bane.
+
+> **Level 10 Retainer Advancement Ability**
+
+> 🔳 **Pacifier Shell (Encounter)**
+>
+> | **Area, Ranged, Weapon** |               **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
+> |--------------------------|------------------------------:|
+> | **📏 3 cube within 15**  | **🎯 Each enemy in the area** |
+>
+> **Power Roll + highest characteristic:**
+>
+> - **≤11:** 8 damage; I < WEAK [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends
+> - **12-16:** 12 damage; I < AVERAGE [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 16 damage; I < STRONG [dazed](scc.v1:mcdm.heroes.v1/condition/dazed) ([save](scc.v1:mcdm.heroes.v1/rule.general/saving-throw) ends) and [prone](scc.v1:mcdm.heroes.v1/condition/prone)
 
 <!-- @type: statblock -->
 ####### High Elf Weatherwise
@@ -28279,7 +28279,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 <!-- @type: statblock -->
 ####### Gnoll Gnasher
 
-|  Abyssal, Gnoll   |         -         |      Level 2      |   Harrier Retainer    |        EV 60         |
+|  Abyssal, Gnoll   |         -         |      Level 2      |   Harrier Retainer    |         EV -         |
 |:-----------------:|:-----------------:|:-----------------:|:---------------------:|:--------------------:|
 |  **1M**<br>Size   |  **7**<br>Speed   | **30**<br>Stamina |  **1**<br>Stability   | **3**<br>Free Strike |
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
@@ -28333,7 +28333,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 
 > **Level 10 Retainer Advancement Ability**
 
-> 👤 **Horrific Feas (Encounter)**
+> 👤 **Horrific Feast (Encounter)**
 >
 > | **-**       | **[Main action](scc.v1:mcdm.heroes.v1/rule.combat/turn)** |
 > |-------------|----------------:|
@@ -28421,7 +28421,6 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -          |      Level 4      |  Controller Retainer  |         EV -         |
 |:-------------------------------------:|:------------------:|:-----------------:|:---------------------:|:--------------------:|
-|            **1M**<br>Size             |   **5**<br>Speed   | **48**<br>Stamina |  **0**<br>Stability   | **5**<br>Free Strike |
 |            **1M**<br>Size             |   **5**<br>Speed   | **48**<br>Stamina |  **0**<br>Stability   | **5**<br>Free Strike |
 |        **Fire 4**<br>Immunity         | **- **<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+1**<br>Might            |  **0**<br>Agility  | **+2**<br>Reason  |  **+1**<br>Intuition  |  **+3**<br>Presence  |
@@ -29016,7 +29015,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 11 damage; M < AVERAGE [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed)
 > - **17+:** 16 damage; M < STRONG [grabbed](scc.v1:mcdm.heroes.v1/condition/grabbed)
 
-########Level 7 Retainer Advancement Ability
+> **Level 7 Retainer Advancement Ability**
 
 > 🏹 **Death to Death (Encounter)**
 >
